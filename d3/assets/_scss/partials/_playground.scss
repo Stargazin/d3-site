@@ -1,0 +1,80 @@
+/*------------------------------
+ = NAVIGATION
+ ------------------------------*/
+
+.dropdownMenu {
+  background: #efefef; 
+  background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+  background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+  background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+  box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+  border-radius: 10px;  
+  list-style: none;
+  position: relative;  /* allow us to absolutely position the sub menus according to this main nav bar */
+  display: block; 
+}
+  
+.dropdownMenu:after {
+  content: ""; clear: both; display: block;
+}
+
+/*
+The individual menu items are styled up with CSS rules added to the <li> and the nested anchor. 
+In the browser this will make the link change to a blue gradient background and white text.
+*/
+
+.dropdownMenu li {
+  float: left;
+  display:block;
+  line-height:50px;
+  text-align:center;
+  vertical-align:top;
+  width:120px;
+}
+
+.dropdownMenu li:hover > ul {   /* reappear sub menus on hover*/
+  display: block;
+}
+
+.dropdownMenu li a {
+  display: block;
+  color: #757575; text-decoration: none;
+}
+
+.dropdownMenu li:hover {
+  background: #4b545f;
+  background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+  background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+  background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+}
+
+.dropdownMenu li:hover a {
+  color: #fff;
+}
+
+.droprightMenu {
+  display: none; /* hide the sub menus */
+  background: #5f6975; border-radius: 0px; padding: 0;
+  position: absolute; top: 100%;
+}
+
+.droprightMenu li {
+  float: none; 
+  border-top: 1px solid #6b727c;
+  border-bottom: 1px solid #575f6a;
+  position: relative;
+  
+}
+
+.droprightMenu li a {
+  color: #fff;
+} 
+
+.droprightMenu li a:hover {
+  background: #4b545f;
+}
+
+.droprightMenu li ul {
+    left:120px;
+    top:0px;
+}

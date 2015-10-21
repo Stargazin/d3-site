@@ -1,0 +1,66 @@
+/* partials/header
+ =========================================================================== 
+ =========================================================================== */
+header {
+  height: 100rem;
+  background: rgba(0,0,0,0.2)
+}
+
+.link-container {
+  //background: rgba(0,0,0,0.2);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  //align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.4em;
+
+  li {
+    vertical-align: top;
+    text-align: center;
+    width: 10rem;
+
+    a {
+      display: block;
+      color: #fff;
+    }
+
+    a:hover {
+      background: #4b545f;
+    }
+  }
+
+  li:hover {
+    background: #4b545f;
+  }
+}
+
+.link {
+  flex: 0 1 auto;
+  background: blue;
+}
+
+
+.drop2-container, .drop3-container {
+  position: absolute;
+  top: 100%;
+
+  li {
+    border-top: 1px solid #6b727c;
+    border-bottom: 1px solid #575f6a;
+    position: relative;
+  }
+}
+
+.drop-container li ul {
+  left: 10rem;
+  top: 0rem;
+}
+
+.drop-container, .drop2-container, .drop3-container {
+  display: none;
+}
+
+.drop:hover > .drop-container, .drop2:hover > .drop2-container, .drop3:hover > .drop3-container {
+  display: block;
+}

@@ -1,0 +1,53 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static "css/playground.min.css" %}">
+  <title>Playground</title>
+</head>
+<body>
+
+  <nav> <!-- Navigation -->
+    <ul class="dropdownMenu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">New Article</a></li>
+      
+      <li><a href="#">Categories</a>
+        <ul class="droprightMenu">
+          <li><a href="#">All</a>
+            <ul class="droprightMenu">
+              <li><a href="#">Category 1</a>
+                <ul class="droprightMenu">
+                  <li><a href="#">Category 1.1</a></li>   
+                  <li><a href="#">Category 1.2</a></li>   
+                  <li><a href="#">Category 1.3</a></li>   
+                  <li><a href="#">Category 1.4</a></li>   
+                </ul>         
+              </li>   
+              <li><a href="#">Category 2</a></li>   
+              <li><a href="#">Category 3</a></li>   
+              <li><a href="#">Category 4</a></li>   
+            </ul>         
+          </li>  
+          <li><a href="#">Manage</a></li>   
+        </ul>
+      </li>
+      
+      <li><a href="#">My Profile</a>
+        <ul class="droprightMenu">
+          <li><a href="#">Login</a></li>   
+          <li><a href="#">Edit</a></li>   
+          <li><a href="#">My Posts</a></li>   
+          <li><a href="#">Logout</a></li>   
+        </ul>     
+      </li>     
+      
+      <li><a href="#">Help</a></li>
+    </ul>
+  </nav>
+  
+</body>
+</html>

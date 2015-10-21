@@ -1,0 +1,36 @@
+/* partials/global
+ =========================================================================== 
+ =========================================================================== */
+
+html {
+  //font-family: $base-font-family;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Clear-fix
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}

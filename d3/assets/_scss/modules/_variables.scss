@@ -1,0 +1,34 @@
+/* modules/variables
+ =========================================================================== 
+ =========================================================================== */
+
+
+// /* Typography
+//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+$base-font-size: 62.5%;
+
+$font-light: 100;
+$font-regular: 400;
+$font-bold: 700;
+
+// /* Breakpoints
+//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+// /* Large Devices, Wide Screens */
+$break-xl: "only screen and (max-width: 1200px)"; //1320px/horipad
+
+// /* Medium Devices, Desktops */
+$break-l: "only screen and (max-width: 992px)"; //1091px
+
+// /* Small Devices, Tablets */
+$break-m: "only screen and (max-width: 768px)"; //844px/vertipad
+
+// /* Extra Small Devices, Phones */ 
+$break-s: "only screen and (max-width: 480px)"; //528px
+
+// /* Custom, iPhone Retina */ 
+$break-xs: "only screen and (max-width: 320px)";
+
+$break-tablet: "only screen and (max-device-width: 768px)";
+$break-phone: "only screen and (max-device-width: 480px)";

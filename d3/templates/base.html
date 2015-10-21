@@ -1,0 +1,175 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/base.min.css' %}">
+  <title>{% block title %}D3 Kings{% endblock title%}</title>
+</head>
+<body>
+<header>
+  <nav>
+    <ul class="link-container">
+      <li class="link"><a href="">News</a></li>
+
+      <li class="link drop"><a href="">Items</a>
+        <ul class="drop-container">
+          <li class="drop__link drop2"><a href="">Legendaries</a>
+            <ul class="drop2-container">
+              <!-- add a dropdown header where applicable -->
+              <li class="drop2__link drop3"><a href="">1-H Weapons</a>
+                <ul class="drop3-container">
+                  <li class="drop3__link"><a href="">Axes</a></li>
+                  <li class="drop3__link"><a href="">Ceremonial Knives</a></li>
+                  <li class="drop3__link"><a href="">Daggers</a></li>
+                  <li class="drop3__link"><a href="">Fist Weapons</a></li>
+                  <li class="drop3__link"><a href="">Flails</a></li>
+                  <li class="drop3__link"><a href="">Hand Crossbows</a></li>
+                  <li class="drop3__link"><a href="">Maces</a></li>
+                  <li class="drop3__link"><a href="">Mighty Weapons</a></li>
+                  <li class="drop3__link"><a href="">Spears</a></li>
+                  <li class="drop3__link"><a href="">Swords</a></li>
+                  <li class="drop3__link"><a href="">Wands</a></li>
+                </ul> <!-- ul.drop3-container -->
+              </li> <!-- li.drop2__link.drop3 -->
+
+              <li class="drop2__link drop3"><a href="">2-H Weapons</a>
+                <ul class="drop3-container">
+                  <li class="drop3__link"><a href="">Axes</a></li>
+                  <li class="drop3__link"><a href="">Bows</a></li>
+                  <li class="drop3__link"><a href="">Crossbows</a></li>
+                  <li class="drop3__link"><a href="">Daibos</a></li>
+                  <li class="drop3__link"><a href="">Flails</a></li>
+                  <li class="drop3__link"><a href="">Maces</a></li>
+                  <li class="drop3__link"><a href="">Mighty Weapons</a></li>
+                  <li class="drop3__link"><a href="">Polearms</a></li>
+                  <li class="drop3__link"><a href="">Staves</a></li>
+                  <li class="drop3__link"><a href="">Swords</a></li>
+                </ul> <!-- ul.drop3-container -->
+              </li> <!-- li.drop2__link.drop3 -->
+
+              <li class="drop2__link drop3"><a href="">Off-hands</a>
+                <ul class="drop3-container">
+                  <li class="drop3__link"><a href="">Crusader Shields</a></li>
+                  <li class="drop3__link"><a href="">Mojos</a></li>
+                  <li class="drop3__link"><a href="">Orbs</a></li>
+                  <li class="drop3__link"><a href="">Quivers</a></li>
+                  <li class="drop3__link"><a href="">Shields</a></li>
+                </ul> <!-- ul.drop3-container -->
+              </li> <!-- li.drop2__link.drop3 -->
+
+              <li class="drop2__link"><a href="">Rings</a></li>
+              <li class="drop2__link"><a href="">Amulets</a></li>
+
+              <li class="drop2__link drop3"><a href="">Head</a>
+                <ul class="drop3-container">
+                  <li class="drop3__link"><a href="">Helmets</a></li>
+                  <li class="drop3__link"><a href="">Spirit Stones</a></li>
+                  <li class="drop3__link"><a href="">Voodoo Masks</a></li>
+                  <li class="drop3__link"><a href="">Wizard Hats</a></li>
+                </ul> <!-- ul.drop3-container -->
+              </li> <!-- li.drop2__link.drop3 -->
+
+              <li class="drop2__link"><a href="">Shoulder</a></li>
+
+              <li class="drop2__link drop3"><a href="">Torso</a>
+                <ul class="drop3-container">
+                  <li class="drop3__link"><a href=""></a>Chest Armor</li>
+                  <li class="drop3__link"><a href=""></a>Cloak</li>
+                </ul> <!-- ul.drop3-container -->
+              </li> <!-- li.drop2__link.drop3 -->
+
+              <li class="drop2__link"><a href="">Wrist</a></li>
+              <li class="drop2__link"><a href="">Hand</a></li>
+
+              <li class="drop2__link drop3"><a href="">Waist</a>
+                <ul class="drop3-container">
+                  <li class="drop3__link"><a href="">Belt</a></li>
+                  <li class="drop3__link"><a href="">Mighty Belt</a></li>
+                </ul> <!-- ul.drop3-container -->
+              </li> <!-- li.drop2__link.drop3 -->
+
+              <li class="drop2__link"><a href="">Legs</a></li>
+              <li class="drop2__link"><a href="">Feet</a></li>
+              <li class="drop2__link"><a href="">Follower</a></li>
+            </ul> <!-- ul.drop2-container -->
+          </li> <!-- li.drop__link.drop2 -->
+
+          <li class="drop__link drop2"><a href="">Set</a>
+            <ul class="drop2-container">
+              <li class="drop2__link"><a href="">Barbarian</a></li>
+              <li class="drop2__link"><a href="">Crusader</a></li>
+              <li class="drop2__link"><a href="">Demon Hunter</a></li>
+              <li class="drop2__link"><a href="">Monk</a></li>
+              <li class="drop2__link"><a href="">Witch Doctor</a></li>
+              <li class="drop2__link"><a href="">Wizard</a></li>
+              <li class="drop2__link"><a href="">Universal</a></li>
+            </ul> <!-- ul.drop2-container -->
+          </li> <!-- li.drop__link.drop2 -->
+
+          <li class="drop__link drop2"><a href="">Gem</a>
+            <ul class="drop2-container">
+              <li class="drop2__link"><a href="">Legendary Gem</a></li>
+              <li class="drop2__link"><a href="">Regular Gem</a></li>
+            </ul> <!-- ul.drop2-container -->
+          </li> <!-- li.drop__link.drop2 -->
+          <li class="drop__link"><a href="">Materials</a></li>
+          <li class="drop__link"><a href="">Potions</a></li>
+          <li class="drop__link"><a href="">Misc</a></li>
+        </ul> <!-- ul.drop-container -->
+      </li> <!-- li.link.drop -->
+
+      <li class="link drop"><a href="">Classes</a>
+        <ul class="drop-container">
+          <li class="drop__link"><a href="">Barbarian</a></li>
+          <li class="drop__link"><a href="">Crusader</a></li>
+          <li class="drop__link"><a href="">Demon Hunter</a></li>
+          <li class="drop__link"><a href="">Monk</a></li>
+          <li class="drop__link"><a href="">Witch Doctor</a></li>
+          <li class="drop__link"><a href="">Wizard</a></li>
+        </ul> <!-- ul.drop-container -->
+      </li> <!-- li.link.drop -->
+
+      <li class="link drop"><a href="">More</a>
+        <ul class="drop-container">
+          <li class="drop__link drop2"><a href="">Guides</a>
+            <ul class="drop2-container">
+              <li class="drop2__link"><a href="">Bounties</a></li>
+              <li class="drop2__link"><a href="">Cow Level</a></li>
+              <li class="drop2__link"><a href="">Followers</a></li>
+              <li class="drop2__link"><a href="">Greed's Realm</a></li>
+              <li class="drop2__link"><a href="">Kanai's Cube</a></li>
+              <li class="drop2__link"><a href="">Murloc</a></li>
+              <li class="drop2__link"><a href="">Seasons</a></li>
+              <li class="drop2__link"><a href="">Story Mode</a></li>
+              <li class="drop2__link"><a href="">Whimsyshire</a></li>
+            </ul> <!-- ul.drop2-container -->
+          </li> <!-- li.drop__link.drop2 -->
+
+          <li class="drop__link drop2"><a href="">Patch Notes</a>
+            <ul class="drop2-container">
+              <li class="drop2__link"><a href="">Live</a></li>
+              <li class="drop2__link"><a href="">PTR</a></li>
+            </ul> <!-- ul.drop2-container -->
+          </li> <!-- li.drop__link.drop2 -->
+        </ul> <!-- ul.drop-container -->
+      </li> <!-- li.link.drop -->
+
+      <li class="link"><a href="">Search</a></li>
+    </ul> <!-- ul.link-container -->
+  </nav>
+</header>
+
+{% block main %}
+<main style="min-height: 1000px;background-color: rgba(0,0,0,1);"></main>
+{% endblock main %}
+
+<footer></footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="{% static 'js/tst.js' %}"></script>
+<script src="http://192.168.1.5:35729/livereload.js?snipver=1"></script>
+</body>
+</html>
