@@ -10,44 +10,52 @@
 </head>
 <body>
 
-  <nav> <!-- Navigation -->
-    <ul class="dropdownMenu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">New Article</a></li>
+  <nav>
+    <ul class="link-container">
+      <li class="link"><a href="#">Home</a></li>
+      <li class="link"><a href="#">New Article</a></li>
       
-      <li><a href="#">Categories</a>
-        <ul class="droprightMenu">
-          <li><a href="#">All</a>
-            <ul class="droprightMenu">
-              <li><a href="#">Category 1</a>
-                <ul class="droprightMenu">
-                  <li><a href="#">Category 1.1</a></li>   
-                  <li><a href="#">Category 1.2</a></li>   
-                  <li><a href="#">Category 1.3</a></li>   
-                  <li><a href="#">Category 1.4</a></li>   
-                </ul>         
-              </li>   
-              <li><a href="#">Category 2</a></li>   
-              <li><a href="#">Category 3</a></li>   
-              <li><a href="#">Category 4</a></li>   
-            </ul>         
-          </li>  
-          <li><a href="#">Manage</a></li>   
+      <li class="link"><a href="#">Categories</a>
+        <ul class="drop">
+          <li class="link drop__link"><a href="#">All</a>
+            <ul class="drop drop--right">
+              <li class="link drop__link"><a href="#">Category 1</a>
+                <ul class="drop drop--right">
+                  <li class="link drop__link"><a href="#">Category 1.1</a></li>
+                  <li class="link drop__link"><a href="#">Category 1.2</a></li>
+                  <li class="link drop__link"><a href="#">Category 1.3</a></li>
+                  <li class="link drop__link"><a href="#">Category 1.4</a></li>
+                </ul>
+              </li>
+              <li class="link drop__link"><a href="#">Category 2</a>
+                <ul class="drop drop--right">
+                  <li class="link drop__link"><a href="#">Category 2.1</a></li>
+                  <li class="link drop__link"><a href="#">Category 2.2</a></li>
+                  <li class="link drop__link"><a href="#">Category 2.3</a></li>
+                  <li class="link drop__link"><a href="#">Category 2.4</a></li>
+                </ul>
+              </li>
+              <li class="link drop__link"><a href="#">Category 3</a></li>
+              <li class="link drop__link"><a href="#">Category 4</a></li>
+            </ul>
+          </li>
+          <li class="link drop__link"><a href="#">Manage</a></li>
         </ul>
       </li>
       
-      <li><a href="#">My Profile</a>
-        <ul class="droprightMenu">
-          <li><a href="#">Login</a></li>   
-          <li><a href="#">Edit</a></li>   
-          <li><a href="#">My Posts</a></li>   
-          <li><a href="#">Logout</a></li>   
-        </ul>     
-      </li>     
+      <li class="link"><a href="#">My Profile</a>
+        <ul class="drop">
+          <li class="link drop__link"><a href="#">Login</a></li>
+          <li class="link drop__link"><a href="#">Edit</a></li>
+          <li class="link drop__link"><a href="#">My Posts</a></li>
+          <li class="link drop__link"><a href="#">Logout</a></li>
+        </ul>
+      </li>
       
-      <li><a href="#">Help</a></li>
+      <li class="link"><a href="#">Help</a></li>
     </ul>
   </nav>
   
+<script src="http://192.168.1.5:35729/livereload.js?snipver=1"></script>
 </body>
 </html>

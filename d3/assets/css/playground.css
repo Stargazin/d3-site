@@ -1,34 +1,7 @@
 /* modules/variables
  =========================================================================== 
  =========================================================================== */
-/* partials/global
- =========================================================================== 
- =========================================================================== */
-html {
-  font-size: 62.5%; }
-
-body {
-  width: 100%; }
-
-ul {
-  list-style: none; }
-
-a {
-  color: black;
-  text-decoration: none; }
-
-button:hover {
-  cursor: pointer; }
-
-/* Clear-fix
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.cf:before, .cf:after {
-  content: " ";
-  display: table; }
-
-.cf:after {
-  clear: both; }
-
+@import url(https://fonts.googleapis.com/css?family=Lato);
 /* partials/reset
  =========================================================================== 
  =========================================================================== */
@@ -164,75 +137,94 @@ select {
  * normalize.css
  * https://github.com/necolas/normalize.css/
  */
+/* partials/global
+ =========================================================================== 
+ =========================================================================== */
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 62.5%; }
+
+body {
+  width: 100%; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+button:hover {
+  cursor: pointer; }
+
+/* Clear-fix
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.cf:before, .cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
 /*------------------------------
  = NAVIGATION
  ------------------------------*/
-.dropdownMenu {
-  background: #efefef;
-  background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
-  background: -webkit-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
-  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-  list-style: none;
+.link-container {
   position: relative;
-  /* allow us to absolutely position the sub menus according to this main nav bar */
-  display: block; }
+  /* !! */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #efefef; }
 
-.dropdownMenu:after {
-  content: "";
-  clear: both;
-  display: block; }
+.link-container > .link {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto; }
 
-/*
-The individual menu items are styled up with CSS rules added to the <li> and the nested anchor. 
-In the browser this will make the link change to a blue gradient background and white text.
-*/
-.dropdownMenu li {
-  float: left;
+.link {
   display: block;
+  /* !! */
   line-height: 50px;
-  text-align: center;
-  vertical-align: top;
-  width: 120px; }
+  /* !! */
+  width: 120px;
+  /* !! */
+  text-align: center; }
+  .link:hover {
+    background: #4b545f; }
+    .link:hover > .drop {
+      display: block;
+      /* !! */ }
+    .link:hover a {
+      color: #fff; }
+  .link a {
+    display: block;
+    /* !! */
+    color: #757575; }
 
-.dropdownMenu li:hover > ul {
-  /* reappear sub menus on hover*/
-  display: block; }
-
-.dropdownMenu li a {
-  display: block;
-  color: #757575;
-  text-decoration: none; }
-
-.dropdownMenu li:hover {
-  background: #4b545f;
-  background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
-  background: -webkit-linear-gradient(top, #4f5964 0%, #5f6975 40%); }
-
-.dropdownMenu li:hover a {
-  color: #fff; }
-
-.droprightMenu {
-  display: none;
-  /* hide the sub menus */
-  background: #5f6975;
-  border-radius: 0px;
-  padding: 0;
+.drop {
   position: absolute;
-  top: 100%; }
+  /* !! */
+  display: none;
+  /* !! */
+  background: #5f6975; }
 
-.droprightMenu li {
-  float: none;
+.drop__link {
   border-top: 1px solid #6b727c;
-  border-bottom: 1px solid #575f6a;
-  position: relative; }
+  border-bottom: 1px solid #575f6a; }
+  .drop__link a {
+    color: #fff; }
+    .drop__link a:hover {
+      background: #4b545f; }
 
-.droprightMenu li a {
-  color: #fff; }
-
-.droprightMenu li a:hover {
-  background: #4b545f; }
-
-.droprightMenu li ul {
+.drop--right {
   left: 120px;
-  top: 0px; }
+  /* !! */
+  top: 0px;
+  /* !! */ }

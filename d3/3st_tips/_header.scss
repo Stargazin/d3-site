@@ -1,0 +1,273 @@
+/* partials/header
+ =========================================================================== 
+ =========================================================================== */
+
+header {
+  width: 100%;
+  //max-width: 1300px;
+  //margin: 0 auto;
+  min-height: 75rem;
+  background: url(../media/eric-sunset2.jpg) no-repeat center;
+  background-size: cover;
+  font-size: 1.5rem;
+  text-align: center;
+
+  @media #{$break-l} {
+    font-size: 1.4rem;
+  }
+
+  @media #{$break-m} {
+    font-size: 1.3rem;
+  }
+}
+
+/* Nav
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+nav {
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  // justify-content: space-around;
+
+  @media #{$break-m} {
+    justify-content: space-around;
+  }
+}
+
+.dropdown {
+  flex: 0 1 auto;
+  // right: 5rem;
+}
+
+.dropdown__button {
+  display: none;
+  border: solid transparent;
+  //border-radius: 2.1rem 0 0;
+  background: transparent;
+  color: white;
+  padding: 0.2rem 3.0rem;
+  width: 100%;
+  text-transform: uppercase;
+
+  @media #{$break-m} {
+    display: inline-block;
+  }
+
+  @media #{$break-s} {
+    content: "Menu";
+  }
+
+  &:after {
+
+    @media #{$break-m} {
+      content: "explore";
+    }
+
+    @media #{$break-s} {
+      content: "menu";
+    }
+  }
+
+  &:hover {
+    //background-color: rgba(0,0,0,0.6);
+    //color: #FF9025;
+  }
+}
+
+@media #{$break-m} {
+  .dropdown:hover .dropdown__menu {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.nav__link--home {
+  flex: 0 1 auto;
+  border-radius: 0.3rem 2.5rem !important;
+  margin-right: 5rem;
+
+  a {
+    padding: 0.6rem 3.1rem !important;
+    background-color: transparent !important;
+  }
+
+  @media #{$break-l} {
+    margin-right: 2rem;
+  }
+
+  @media #{$break-m} {
+    margin-right: 0;
+  }
+}
+
+.nav__link {
+  padding: 0.5rem 0;
+  border: solid transparent;
+  border-radius: 2.5rem 0.3rem;
+
+  @media #{$break-m} {
+    border: none;
+  }
+
+  &:hover {
+    background-color: rgba(0,0,0,0.6);
+
+    @media #{$break-tablet} {
+      background-color: transparent;
+    }
+  }
+
+  a {
+    color: white;
+    padding: 0.6rem 4rem;
+
+    @media #{$break-l} {
+      padding: 0.6rem 2.0rem;
+    }
+
+    &:hover {
+      color: #FF9025;
+
+      @media #{$break-tablet} {
+        color: white;
+      }
+    }
+  }
+}
+
+@media #{$break-m} {
+  .dropdown__menu {
+    position: absolute;
+    display: none;
+    padding-top: 0.1rem;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 0 0 2.5rem 0;
+    padding: 0.3rem 0.4rem 0.5rem 0.4rem;
+
+    .nav__link {
+      display: block;
+      padding: 0.2rem;
+
+      &:hover {
+        background-color: rgba (0,0,0,0.2);
+      }
+
+      a {
+        //display: block;
+        z-index: 100;
+        padding: 0.1rem 0;
+        //font-size: 0.9em;
+        //color: orange;
+        //background-color: rgba(0,0,0,0.6);
+      }
+    }
+  }
+}
+
+@media #{$break-s} {
+  .nav__link {
+    a {
+      font-size: 0.9em;
+    }
+  }
+}
+
+/**
+ * @media #{$break-m} {
+ *   .nav__link:hover .dropdown__button {
+ *     // do something about this with js to leave a hover effect
+ *   }
+ * }
+ */
+
+
+/* Hero
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.hero {
+  top: 14rem;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+
+  @media #{$break-xl} {
+    top: 11.5rem;
+  }
+}
+
+.hero__text-container {
+  width: 70%;
+  background-color: rgba(0,0,0,0.5);
+  color: rgb(240,240,240);
+
+  @media #{$break-m} {
+    width: 85%;
+  }
+}
+
+.hero__text__content {
+  padding: 0 3rem;
+  border: 0.4rem solid;
+  border-radius: 0.3rem;
+  border-top-color: rgb(55,55,55);
+  border-right-color: rgb(200,200,200);
+  border-bottom-color: rgb(200,200,200);
+  border-left-color: rgb(55,55,55);
+  font-size: 1.2em;
+  font-weight: $font-regular + 100;
+
+  @media #{$break-s} {
+  }
+
+  h1 {
+    padding: 2rem 0;
+    font-size: 2.5em;
+  }
+
+  p {
+    padding-bottom: 2.5rem;
+    font-weight: $font-regular + 100;
+  }
+}
+
+.hero__button-container {
+  display: flex;
+  // justify-content: space-around;
+  // width: 35%;
+}
+
+.hero__button {
+  margin: 0 0.2rem;
+  padding: 1.6rem 3.3rem;
+  border: 0.2rem solid rgba(255,255,255,0);
+  border-radius: 0.7rem;
+  background-color: rgba(255,255,255,0.6);
+  font-size: 1.3em;
+  font-weight: $font-bold;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+
+  &:hover {
+    border: solid rgba(255,255,255,1);
+    background-color: rgba(0,0,0,0.5);
+    color: #FF9025;
+    font-weight: $font-bold + 100;
+  }
+
+  @media #{$break-tablet} {
+    &:hover {
+      border: 0.2rem solid rgba(255,255,255,0);
+      background-color: rgba(255,255,255,0.6);
+      color: black;
+      font-weight: $font-bold;
+    }
+  }
+}

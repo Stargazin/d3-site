@@ -55,3 +55,13 @@ docs/_build/
 
 # PyBuilder
 target/
+
+
+#CUSTOM
+
+# Secrets
+secrets.json
+
+# Sublime
+d3_project.sublime-project
+d3_project.sublime-workspace

@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3 Steps Taken</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/index.min.css' %}">
+</head>
+<body>
+  <header>
+
+    <nav>
+      <span class="nav__link nav__link--home"><a href="#home">3 Steps Taken</a></span>
+      <div class="dropdown">
+        <button class="dropdown__button"></button>
+        <div class="dropdown__menu">
+          <span class="nav__link"><a href="#about">About</a></span>
+          <span class="nav__link"><a href="#blog">Blog</a></span>
+          <span class="nav__link"><a href="#portfolio">Portfolio</a></span>
+          <span class="nav__link"><a href="#contact">Contact</a></span>
+        </div> <!-- .dropdown__menu -->
+      </div> <!-- .dropdown-container -->
+    </nav> <!-- nav -->
+
+    <div class="hero">
+      <div class="hero__text-container">
+        <div class="hero__text__content">
+          <h1>3 Steps Taken</h1>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div> <!-- .hero__text__content -->
+      </div> <!-- .hero__text -->
+      <br><br>
+      <div class="hero__button-container">
+        <a class="hero__button" href="https://www.linkedin.com/pub/alex-sun/85/a36/693" target="_blank">LinkedIn</a>
+        <a class="hero__button" href="https://github.com/Stargazin" target="_blank">GitHub</a>
+      </div> <!-- hero__button-container -->
+    </div> <!-- .hero -->
+
+    <div class="steps">
+      
+    </div> <!-- .steps -->
+
+  </header>
+
+  <main>
+
+    <section class="section--about">
+      <img src="{% static 'media/poro.jpg' %}">
+
+      <div class="about-container">
+        <div class="about about--purpose">
+          <h2>Purpose</h2>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div> <!-- .about.about-purpose -->
+
+        <div class="about about--seeking">
+          <h2>Seeking</h2>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div> <!-- .about.about-seeking -->
+
+        <div class="about about--more">
+          <h2>More</h2>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div> <!-- .about.about-more -->
+
+      </div> <!-- .about-container -->
+    </section> <!-- .section-about -->
+
+    <section class="section--resume" style="height:1000px;background:white;">
+
+    </section> <!-- .section-resume -->
+  </main>
+
+  <footer>
+    
+  </footer>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://192.168.1.5:35729/livereload.js?snipver=1"></script>
+  <script src="{% static 'js/tst.js' %}"></script>
+</body>
+</html>

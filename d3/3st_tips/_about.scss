@@ -1,0 +1,42 @@
+/* partials/about
+ =========================================================================== 
+ =========================================================================== */
+
+.section--about {
+  width: 100%;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  > img {
+    margin: 1.5rem 3rem;
+    border-radius: 50%;
+    height: 31rem;
+    width: 30rem;
+
+    @media #{$break-m} {
+      margin: 3rem 3rem 2rem 3rem;
+    }
+  }
+}
+
+.about-container {
+  width: 40%;
+
+  @media #{$break-m} {
+    width: 70%;
+  }
+}
+
+.about {
+  
+  h2 {
+    padding: 1rem;
+  }
+
+  p {
+    padding-bottom: 1rem;
+  }
+}

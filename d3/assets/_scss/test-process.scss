@@ -1,0 +1,18 @@
+@mixin bp($size) {
+  @if $size == small {
+    @media (max-width: 400px) {
+      @content;
+    }
+  }
+
+  @else if $size == medium {
+    @media (max-width: 460px) {
+      @content;
+    }
+  }
+}
+
+
+@include bp(small) {
+  background-color: #fff;
+}
