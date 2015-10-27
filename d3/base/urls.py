@@ -5,4 +5,5 @@ urlpatterns = [
 	#general
 	url(r'^$', views.index, name='index'),
 	url(r'^playground/$', views.playground, name='playground'),
+	url(r'^amulets/$', views.amulets, name='amulets'),
 ]

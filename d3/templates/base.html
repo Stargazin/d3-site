@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{% static 'css/base.min.css' %}">
+  {% block css %}{% endblock css %}
   <title>{% block title %}D3 Kings{% endblock title%}</title>
 </head>
 <body>
@@ -32,6 +33,8 @@
               <li class="link drop__link"><a href="">Spears</a></li>
               <li class="link drop__link"><a href="">Swords</a></li>
               <li class="link drop__link"><a href="">Wands</a></li>
+              <li class="link drop__link drop__link--all">
+                <a href="">Show All</a></li>
             </ul> <!-- .drop~~right -->
           </li> <!-- .link.drop__link -->
 
@@ -47,8 +50,53 @@
               <li class="link drop__link"><a href="">Polearms</a></li>
               <li class="link drop__link"><a href="">Staves</a></li>
               <li class="link drop__link"><a href="">Swords</a></li>
+              <li class="link drop__link drop__link--all">
+                <a href="">Show All</a></li>
             </ul> <!-- .drop~~right -->
           </li> <!-- .link.drop__link -->
+
+          <li class="link drop__link"><a href="">Armor</a>
+            <ul class="drop drop--right">
+              <li class="link drop__link"><a href="">Head</a>
+                <ul class="drop drop--right">
+                  <li class="link drop__link"><a href="">Helmets</a></li>
+                  <li class="link drop__link"><a href="">Spirit Stones</a></li>
+                  <li class="link drop__link"><a href="">Voodoo Masks</a></li>
+                  <li class="link drop__link"><a href="">Wizard Hats</a></li>
+                  <li class="link drop__link drop__link--all">
+                    <a href="">Show All</a></li>
+                </ul> <!-- .drop~~right -->
+              </li> <!-- .link.drop__link -->
+
+              <li class="link drop__link"><a href="">Shoulder</a></li>
+
+              <li class="link drop__link"><a href="">Torso</a>
+                <ul class="drop drop--right">
+                  <li class="link drop__link"><a href="">Chest Armor</a></li>
+                  <li class="link drop__link"><a href="">Cloak</a></li>
+                  <li class="link drop__link drop__link--all">
+                    <a href="">Show All</a></li>
+                </ul> <!-- .drop~~right -->
+              </li> <!-- .link.drop__link -->
+
+              <li class="link drop__link"><a href="">Wrist</a></li>
+              <li class="link drop__link"><a href="">Hand</a></li>
+
+              <li class="link drop__link"><a href="">Waist</a>
+                <ul class="drop drop--right">
+                  <li class="link drop__link"><a href="">Belt</a></li>
+                  <li class="link drop__link"><a href="">Mighty Belt</a></li>
+                  <li class="link drop__link drop__link--all">
+                    <a href="">Show All</a></li>
+                </ul> <!-- .drop~~right -->
+              </li> <!-- .link.drop__link -->
+
+              <li class="link drop__link"><a href="">Legs</a></li>
+              <li class="link drop__link"><a href="">Feet</a></li>
+              <li class="link drop__link drop__link--all">
+                <a href="">Show All</a></li>
+            </ul>
+          </li>
 
           <li class="link drop__link"><a href="">Off-hands</a>
             <ul class="drop drop--right">
@@ -57,47 +105,27 @@
               <li class="link drop__link"><a href="">Orbs</a></li>
               <li class="link drop__link"><a href="">Quivers</a></li>
               <li class="link drop__link"><a href="">Shields</a></li>
+              <li class="link drop__link drop__link--all">
+                <a href="">Show All</a></li>
             </ul> <!-- .drop~~right -->
           </li> <!-- .link.drop__link -->
 
-          <li class="link drop__link"><a href="">Rings</a></li>
-          <li class="link drop__link"><a href="">Amulets</a></li>
-
-          <li class="link drop__link"><a href="">Head</a>
+          <li class="link drop__link"><a href="">Accessories</a>
             <ul class="drop drop--right">
-              <li class="link drop__link"><a href="">Helmets</a></li>
-              <li class="link drop__link"><a href="">Spirit Stones</a></li>
-              <li class="link drop__link"><a href="">Voodoo Masks</a></li>
-              <li class="link drop__link"><a href="">Wizard Hats</a></li>
+              <li class="link drop__link"><a href="">Rings</a></li>
+              <li class="link drop__link"><a href="">Amulets</a></li>
+              <li class="link drop__link"><a href="">Follower</a></li>
+              <li class="link drop__link drop__link--all">
+                <a href="">Show All</a></li>
             </ul> <!-- .drop~~right -->
           </li> <!-- .link.drop__link -->
-
-          <li class="link drop__link"><a href="">Shoulder</a></li>
-
-          <li class="link drop__link"><a href="">Torso</a>
-            <ul class="drop drop--right">
-              <li class="link drop__link"><a href="">Chest Armor</a></li>
-              <li class="link drop__link"><a href="">Cloak</a></li>
-            </ul> <!-- .drop~~right -->
-          </li> <!-- .link.drop__link -->
-
-          <li class="link drop__link"><a href="">Wrist</a></li>
-          <li class="link drop__link"><a href="">Hand</a></li>
-
-          <li class="link drop__link"><a href="">Waist</a>
-            <ul class="drop drop--right">
-              <li class="link drop__link"><a href="">Belt</a></li>
-              <li class="link drop__link"><a href="">Mighty Belt</a></li>
-            </ul> <!-- .drop~~right -->
-          </li> <!-- .link.drop__link -->
-
-          <li class="link drop__link"><a href="">Legs</a></li>
-          <li class="link drop__link"><a href="">Feet</a></li>
-          <li class="link drop__link"><a href="">Follower</a></li>
+          
+          <li class="link drop__link drop__link--all">
+            <a href="">Show All</a></li>
         </ul> <!-- .drop~~right -->
       </li> <!-- .link.drop__link -->
 
-      <li class="link drop__link"><a href="">Set</a>
+      <li class="link drop__link"><a href="">Sets</a>
         <ul class="drop drop--right">
           <li class="link drop__link"><a href="">Barbarian</a></li>
           <li class="link drop__link"><a href="">Crusader</a></li>
@@ -106,13 +134,17 @@
           <li class="link drop__link"><a href="">Witch Doctor</a></li>
           <li class="link drop__link"><a href="">Wizard</a></li>
           <li class="link drop__link"><a href="">Universal</a></li>
+          <li class="link drop__link drop__link--all">
+            <a href="">Show All</a></li>
         </ul> <!-- .drop~~right -->
       </li> <!-- .link.drop__link -->
 
-      <li class="link drop__link"><a href="">Gem</a>
+      <li class="link drop__link"><a href="">Gems</a>
         <ul class="drop drop--right">
-          <li class="link drop__link"><a href="">Legendary Gem</a></li>
-          <li class="link drop__link"><a href="">Regular Gem</a></li>
+          <li class="link drop__link"><a href="">Legendary Gems</a></li>
+          <li class="link drop__link"><a href="">Regular Gems</a></li>
+          <li class="link drop__link drop__link--all">
+            <a href="">Show All</a></li>
         </ul> <!-- .drop~~right -->
       </li> <!-- .link.drop__link -->
       <li class="link drop__link"><a href="">Materials</a></li>
@@ -163,7 +195,7 @@
 </header>
 
 {% block main %}
-<main style="min-height: 1000px;background-color: #EEEEEE;"></main>
+<main style="min-height: 1000px"></main>
 {% endblock main %}
 
 <footer></footer>
@@ -171,5 +203,6 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="{% static 'js/tst.js' %}"></script>
 <script src="http://192.168.1.5:35729/livereload.js?snipver=1"></script>
+{% block js %}{% endblock js %}
 </body>
 </html>

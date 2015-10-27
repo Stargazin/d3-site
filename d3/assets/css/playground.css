@@ -2,6 +2,7 @@
  =========================================================================== 
  =========================================================================== */
 @import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
 /* partials/reset
  =========================================================================== 
  =========================================================================== */
@@ -145,7 +146,9 @@ html {
   font-size: 62.5%; }
 
 body {
-  width: 100%; }
+  width: 100%;
+  background: url(../media/reaper-of-souls-1.jpg) no-repeat center;
+  background-size: cover; }
 
 ul {
   list-style: none; }

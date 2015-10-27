@@ -1,0 +1,14 @@
+filters for legendaries:
+--crafting
+--cache
+
+blood shards:
+drop rates in rift
+
+nav bar:
+use js to keep nav bar open for a few seconds after hovering away (see wowhead)
+add small arrows to indivcate expandable.
+
+pick a class:
+have portrait to select class and prefilter
+
