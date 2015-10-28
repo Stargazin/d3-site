@@ -13,6 +13,26 @@ header {
   text-align: center;
   position: relative;
   background-color: $alice-blue;
+  border-radius: 0 0 1rem 1rem;
+
+  margin: auto;
+  width: 97%;
+
+  @media #{$break-xl} {
+    width: 92%;
+  }
+
+  @media #{$break-l} {
+    width: 97%;
+  }
+
+  @media #{$break-m} {
+    width: 95%;
+  }
+
+  @media #{$break-s} {
+    width: 97%;
+  }
 
   & > .link {
     flex: 0 1 auto;

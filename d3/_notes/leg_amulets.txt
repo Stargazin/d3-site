@@ -7,10 +7,8 @@ General
 Column
   Primary
     ((guarenteed affix))
-    ((+x affix))
   Secondary
     ((guarenteed affix))
-    ((+y affix))
 
 Lightbox
   Primary
@@ -41,6 +39,29 @@ Lightbox
     [5-8]% resource cost reduction
     sockets (1)
 
++15 - 20% Elemental Damage
+  +15 - 20% Physical Damage
+  +15 - 20% Lightning Damage
+  +15 - 20% Cold Damage
+  +15 - 20% Fire Damage
+  +15 - 20% Arcane Damage
+  +15 - 20% Poison Damage
+  +15 - 20% Holy Damage
++626 - 750 Main Stat
++626 - 750 Vitality
++91 - 100 All Resist
++5.0 - 7.0% Attack Speed
++14 - 18% Life
++559 - 595 Armor
++6.0 - 10.0% Crit Chance
++51.0 - 100.0% Crit Hit Damage
++6,448 - 7,678 Life per Second
++15,474 - 18,429 Life per Hit
++5.0 - 8.0% Cooldown Reduction
++5 - 8% Resource Cost Reduction
+Socket (1)
+
+
   Secondary
     *[141-160] single element resist
       {A}[176-210]
@@ -58,6 +79,8 @@ Lightbox
     [1.0-5.1]% chance to blind
     [20,001-29,713] health globe/potion heal increase
       {A}[32,684-38,625]
+
++75 – 100% Extra Gold from Monsters (Secondary)
 
 
 
