@@ -1,8 +1,8 @@
 /* modules/variables
  =========================================================================== 
  =========================================================================== */
-@import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC);
 /* partials/reset
  =========================================================================== 
  =========================================================================== */
@@ -94,7 +94,8 @@ img {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0; }
 
 /* Forms
@@ -142,7 +143,7 @@ select {
  =========================================================================== 
  =========================================================================== */
 html {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 62.5%; }
 
 body {

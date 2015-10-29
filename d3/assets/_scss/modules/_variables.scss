@@ -2,14 +2,20 @@
  =========================================================================== 
  =========================================================================== */
 
-@import url(https://fonts.googleapis.com/css?family=Lato);
+// @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+// @import url(https://fonts.googleapis.com/css?family=Mate+SC);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC);
 
 // /* Typography
 //  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-$base-font-family: 'Lato', sans-serif;
+// $lato: 'Lato', sans-serif;
 $roboto: 'Roboto', sans-serif;
+// $poiret-one: 'Poiret One', cursive;
+// $mate-sc: 'Mate SC', serif;
+$playfair: 'Playfair Display SC', serif;
+$arial: Arial, Helvetica, sans-serif;
 
 $base-font-size: 62.5%;
 

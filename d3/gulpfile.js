@@ -26,7 +26,7 @@ gulp.task('sass', function() {
 
 	return gulp.src(['assets/_scss/*.scss', 'assets/_scss/*.sass'])
 		.pipe(sass()).on('e', errorHandler)
-		.pipe(prefix(['last 5 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+		.pipe(prefix(['last 10 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
 		.pipe(gulp.dest('assets/css'))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(minifycss())
