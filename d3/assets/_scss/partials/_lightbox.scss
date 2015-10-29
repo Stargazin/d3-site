@@ -12,7 +12,7 @@
   width: 100%;
   text-align: center;
   font-size: 1.5em;
-  background: rgba($ebony-clay, 0.8);
+  background: rgba($madison, 0.9);
 
   &:target {
     display: block;
@@ -37,7 +37,6 @@
   @media #{$break-s} {
     width: 33rem; // 88%
   }
-
 }
 
 .lb__leg__info {
@@ -83,7 +82,6 @@
 }
 
 .lb__leg__info__details {
-  // top: -0.5rem;
   margin-left: 3rem;
   text-align: left;
   color: #F28700;
@@ -97,7 +95,6 @@
 }
 
 .lb__leg__info__details__type {
-  // line-height: 4.5rem;
   margin: 3rem 0 0 0.7rem;
   font-size: 1.1em;
   font-style: italic;
@@ -126,7 +123,6 @@
     line-height: 2.5rem;
   }
 
-
   li {
     margin-left: 1.7rem;
     text-indent: -1rem;
@@ -148,7 +144,6 @@
 
 .lb__leg__affix--secondary {
   padding: 1.2rem 0 3rem 0;
-  // margin: 1.2rem 0 2.5rem 0;
 }
 
 .lb__leg__note {}
