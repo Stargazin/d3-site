@@ -6,53 +6,36 @@
   display: none;
   position: fixed;
   z-index: 999;
-  width: 100%;
-  height: 100%;
-  text-align: center;
   top: 0;
   left: 0;
-  // background: rgba(0,0,0,0.8);
-  background: rgba($ebony-clay,0.8);
-  // background: rgba($madison, 0.8);
+  height: 100%;
+  width: 100%;
+  text-align: center;
   font-size: 1.5em;
+  background: rgba($ebony-clay, 0.8);
 
   &:target {
     display: block;
-    outline: none;
   }
 }
 
 .lb__leg {
-  width: 30%;
-  // background-color: $hoki;
-  // background-color: $humming-bird;
-  // background-color: $jordy-blue;
-  // background-color: $malibu;
-  background-color: $ebony-clay;
-  border: 2px solid #F2F2F2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  // z-index: 9999;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border-radius: 1rem;
-
-  @media #{$break-xl} {
-    width: 35%;
-  }
-
-  @media #{$break-l} {
-    width: 45%;
-  }
+  width: 46rem;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 2px solid #F0F0F0;
+  background-color: $ebony-clay;
 
   @media #{$break-m} {
-    width: 65%;
+    width: 44rem; // 65%
   }
 
   @media #{$break-s} {
-    width: 80%;
+    width: 33rem; // 88%
   }
 
 }
@@ -60,9 +43,9 @@
 .lb__leg__info {
   display: flex;
   justify-content: space-around;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
-  padding: 3rem 0 2rem 0;
+  padding: 3rem 0 3rem 0;
 
   @media #{$break-m} {
     width: 75%;
@@ -76,121 +59,96 @@
 .lb__leg__info__pic {
   display: block;
   height: 134px;
-  width: 70px;
-  background-color: $madison;
-  // background-color: $hoki;
+  min-width: 70px;
   border: 2px solid #EC7211;
   border-radius: 9px;
+  background-color: $madison;
+  margin-left: 1.8rem;
 
-  @media #{$break-s} {
-    border-width: 2px;
+  @media #{$break-m} {
+    margin-left: 0.8rem;
   }
 
-  img {
-    height: 64px;
-    width: 64px;
+  @media #{$break-s} {
+    margin-left: 0.2rem;
+  }
+
+  &>img {
+    display: inline-block;
     top: 50%;
     transform: translateY(-50%);
-    display: inline-block;
+    height: 64px;
+    width: 64px;
   }
 }
 
 .lb__leg__info__details {
+  // top: -0.5rem;
+  margin-left: 3rem;
   text-align: left;
-  padding: 0 0 0 1.8rem;
-  // color: #EC7211;
-  // color: rgb(199,111,0);
   color: #F28700;
   width: 75%;
-  // top: -0.5rem;
-  left: 1rem;
 }
 
 .lb__leg__info__details__name {
-  // font-size: 1.5em;
-
   font-size: 1.4em;
-  // letter-spacing: 1px;
   font-weight: 500;
   font-family: $playfair;
-
-  // font-family: $mate-sc;
-  // font-weight: 600;
-  // font-size: 1.6em;
-
-  span {
-
-  }
 }
 
 .lb__leg__info__details__type {
-  line-height: 4.5rem;
-  font-style: italic;
+  // line-height: 4.5rem;
+  margin: 3rem 0 0 0.7rem;
   font-size: 1.1em;
+  font-style: italic;
 
   @media #{$break-xl} {
     font-size: 1em;
   }
+
+  @media #{$break-m} {
+    margin: 2rem 0 0 0.3rem;
+  }
 }
 
-
-.lb__leg__primary {
-  width: 65%;
+.lb__leg__affix {
+  width: 63%;
   text-align: left;
-  margin-left: 19%;
-  // font-family: $arial;
+  margin-left: 17%;
 
-  & > span {
-    color: rgb(234,234,255);
+  @media #{$break-s} {
+    margin-left: 15%;
+    width: 69%;
   }
 
-  span {
+  & > span {
+    color: rgb(250,250,255);
     line-height: 2.5rem;
   }
 
-  li {
-    padding-left: 1rem;
-    text-indent: -1rem;
-    line-height: 2.2rem;
-    // color: #7979d4;
-    // color: rgb(234,234,255);
-    color: #7D7DFF;
 
-    & > span {
-      // color: #BDA6DB;
+  li {
+    margin-left: 1.7rem;
+    text-indent: -1rem;
+    line-height: 2rem;
+    padding-top: 0.2rem;
+    color: rgb(245,245,255);
+
+    p {
+    color: #7D7DFF;
+    }
+
+    span {
       color: #C89DFF;
     }
   }
 }
 
-.lb__leg__secondary {
-  padding: 1.2rem 0 2.5rem 0;
-  width: 65%;
-  text-align: left;
-  margin-left: 19%;
+.lb__leg__affix--primary {}
 
-  & > span {
-    color: rgb(234,234,255);
-  }
-
-  span {
-    line-height: 2.5rem;
-  }
-
-  li {
-    padding-left: 1rem;
-    text-indent: -1rem;
-    line-height: 2.2rem;
-    // color: #7979d4;
-    color: #7D7DFF;
-
-    & > span {
-      // color: #BDA6DB;
-      color: #C89DFF;
-    }
-  }
+.lb__leg__affix--secondary {
+  padding: 1.2rem 0 3rem 0;
+  // margin: 1.2rem 0 2.5rem 0;
 }
 
-.lb__leg__note {
-
-}
+.lb__leg__note {}

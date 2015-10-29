@@ -383,26 +383,17 @@ main {
   display: none;
   position: fixed;
   z-index: 999;
-  width: 100%;
-  height: 100%;
-  text-align: center;
   top: 0;
   left: 0;
-  background: rgba(34, 49, 63, 0.8);
-  font-size: 1.5em; }
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  background: rgba(34, 49, 63, 0.8); }
   .lb:target {
-    display: block;
-    outline: none; }
+    display: block; }
 
 .lb__leg {
-  width: 30%;
-  background-color: #22313f;
-  border: 2px solid #F2F2F2;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -415,20 +406,20 @@ main {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  -webkit-border-radius: 1rem;
-          border-radius: 1rem; }
-  @media only screen and (max-width: 1200px) {
-    .lb__leg {
-      width: 35%; } }
-  @media only screen and (max-width: 992px) {
-    .lb__leg {
-      width: 45%; } }
+  width: 46rem;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 2px solid #F0F0F0;
+  background-color: #22313f; }
   @media only screen and (max-width: 768px) {
     .lb__leg {
-      width: 65%; } }
+      width: 44rem; } }
   @media only screen and (max-width: 480px) {
     .lb__leg {
-      width: 80%; } }
+      width: 33rem; } }
 
 .lb__leg__info {
   display: -webkit-box;
@@ -438,9 +429,9 @@ main {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
-  padding: 3rem 0 2rem 0; }
+  padding: 3rem 0 3rem 0; }
   @media only screen and (max-width: 768px) {
     .lb__leg__info {
       width: 75%; } }
@@ -451,29 +442,32 @@ main {
 .lb__leg__info__pic {
   display: block;
   height: 134px;
-  width: 70px;
-  background-color: #2c3e50;
+  min-width: 70px;
   border: 2px solid #EC7211;
   -webkit-border-radius: 9px;
-          border-radius: 9px; }
+          border-radius: 9px;
+  background-color: #2c3e50;
+  margin-left: 1.8rem; }
+  @media only screen and (max-width: 768px) {
+    .lb__leg__info__pic {
+      margin-left: 0.8rem; } }
   @media only screen and (max-width: 480px) {
     .lb__leg__info__pic {
-      border-width: 2px; } }
-  .lb__leg__info__pic img {
-    height: 64px;
-    width: 64px;
+      margin-left: 0.2rem; } }
+  .lb__leg__info__pic > img {
+    display: inline-block;
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    display: inline-block; }
+    height: 64px;
+    width: 64px; }
 
 .lb__leg__info__details {
+  margin-left: 3rem;
   text-align: left;
-  padding: 0 0 0 1.8rem;
   color: #F28700;
-  width: 75%;
-  left: 1rem; }
+  width: 75%; }
 
 .lb__leg__info__details__name {
   font-size: 1.4em;
@@ -481,42 +475,37 @@ main {
   font-family: "Playfair Display SC", serif; }
 
 .lb__leg__info__details__type {
-  line-height: 4.5rem;
-  font-style: italic;
-  font-size: 1.1em; }
+  margin: 3rem 0 0 0.7rem;
+  font-size: 1.1em;
+  font-style: italic; }
   @media only screen and (max-width: 1200px) {
     .lb__leg__info__details__type {
       font-size: 1em; } }
+  @media only screen and (max-width: 768px) {
+    .lb__leg__info__details__type {
+      margin: 2rem 0 0 0.3rem; } }
 
-.lb__leg__primary {
-  width: 65%;
+.lb__leg__affix {
+  width: 63%;
   text-align: left;
-  margin-left: 19%; }
-  .lb__leg__primary > span {
-    color: #eaeaff; }
-  .lb__leg__primary span {
+  margin-left: 17%; }
+  @media only screen and (max-width: 480px) {
+    .lb__leg__affix {
+      margin-left: 15%;
+      width: 69%; } }
+  .lb__leg__affix > span {
+    color: #fafaff;
     line-height: 2.5rem; }
-  .lb__leg__primary li {
-    padding-left: 1rem;
+  .lb__leg__affix li {
+    margin-left: 1.7rem;
     text-indent: -1rem;
-    line-height: 2.2rem;
-    color: #7D7DFF; }
-    .lb__leg__primary li > span {
+    line-height: 2rem;
+    padding-top: 0.2rem;
+    color: #f5f5ff; }
+    .lb__leg__affix li p {
+      color: #7D7DFF; }
+    .lb__leg__affix li span {
       color: #C89DFF; }
 
-.lb__leg__secondary {
-  padding: 1.2rem 0 2.5rem 0;
-  width: 65%;
-  text-align: left;
-  margin-left: 19%; }
-  .lb__leg__secondary > span {
-    color: #eaeaff; }
-  .lb__leg__secondary span {
-    line-height: 2.5rem; }
-  .lb__leg__secondary li {
-    padding-left: 1rem;
-    text-indent: -1rem;
-    line-height: 2.2rem;
-    color: #7D7DFF; }
-    .lb__leg__secondary li > span {
-      color: #C89DFF; }
+.lb__leg__affix--secondary {
+  padding: 1.2rem 0 3rem 0; }
