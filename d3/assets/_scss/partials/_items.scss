@@ -2,64 +2,47 @@
  =========================================================================== 
  =========================================================================== */
 
-main {
-  width: 94%;
-  margin: auto;
-  top: 4rem;
-  font-size: 1.5em;
-  font-family: $roboto;
-
-  @media #{$break-xl} {
-    width: 85%;
-  }
-
-  @media #{$break-l} {
-    width: 95%;
-  }
-
-  @media #{$break-m} {
-    width: 90%;
-  }
-
-  @media #{$break-s} {
-    width: 96%;
-  }
-}
-
 .legendary-container {
-  height: 2350px;
-  padding: 3rem 0;
   flex: 0 1 auto;
   display: flex;
   justify-content: space-around;
-  align-items: space-around;
   flex-wrap: wrap;
+  max-width: 138rem;
+  margin: 4rem auto;
+  padding: 2rem 0;
   text-align: center;
-  background-color: $hoki;
-  border-radius: 1rem;
+  font-size: 1.5em;
+  font-family: $roboto;
   border: 2px solid rgb(200,205,210);
+  border-radius: 1rem;
+  background-color: $hoki;
+
+  @media #{$break-xxl} {
+    max-width: 103rem;
+  }
 
   @media #{$break-xl} {
-    height: 3200px;
+    max-width: 95rem;
   }
 
   @media #{$break-l} {
-    height: 3200px;
+    max-width: 65rem;
   }
 
   @media #{$break-m} {
-    height: 6300px;
+    max-width: 58rem;
   }
 
   @media #{$break-s} {
-    height: 6150px;
+    border: none;
+    border-radius: 0.5rem;
   }
 }
 
-
 .legendary {
-  width: 31%;
-  height: 250px;
+  width: 32%;
+  height: 30rem;
+  margin: 1rem 0;
   flex: 0 1 auto;
   display: flex;
   justify-content: space-around;
@@ -67,20 +50,26 @@ main {
   border: 2px solid black;
   background-color: rgb(218,231,244);
 
-  @media #{$break-xl} {
-    width: 47%;
+  @media #{$break-xxl} {
+    width: 48%;
+    height: 28rem;
   }
 
+  @media #{$break-xl} {}
+
   @media #{$break-l} {
-    width: 48%;
+    width: 88%;
+    height: 25rem;
+    margin: 0.8rem 0;
   }
 
   @media #{$break-m} {
-    width: 90%;
+    width: 93%;
+    margin: 0.7rem 0;
   }
 
   @media #{$break-s} {
-    width: 94%;
+    height: 26.5rem;
   }
 }
 
@@ -90,7 +79,6 @@ main {
   width: 70px;
   background-color: $madison;
   border: 3px solid #EC7211;
-  // border-width: 3px;
   border-radius: 9px;
 
   @media #{$break-s} {
@@ -114,9 +102,7 @@ main {
     text-indent: -1em;
   }
 
-  span {
-
-  }
+  span {}
 }
 
 .legendary__details__name {

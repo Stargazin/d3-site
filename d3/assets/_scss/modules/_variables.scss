@@ -23,6 +23,9 @@ $font-bold: 700;
 // /* Breakpoints
 //  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+// /* Very Large Devices, Wide Screens */
+$break-xxl: "only screen and (max-width: 1450px)";
+
 // /* Large Devices, Wide Screens */
 $break-xl: "only screen and (max-width: 1200px)"; //1320px/horipad
 
