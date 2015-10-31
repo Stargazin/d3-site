@@ -5,7 +5,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% block playground-css %}
   <link rel="stylesheet" href="{% static 'css/base.min.css' %}">
+  {% endblock playground-css %}
   {% block css %}{% endblock css %}
   <title>{% block title %}D3 Kings{% endblock title%}</title>
 </head>

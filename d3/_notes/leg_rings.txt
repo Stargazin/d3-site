@@ -1,0 +1,12 @@
++416 - 500 Main Stat
++416 - 500 Vitality
++91 - 100 All Resist
++5.0 - 7.0% Attack Speed
++10 - 15% Life
++373 - 397 Armor
++4.5 - 6.0% Crit Chance
++26.0 - 50.0% Crit Hit Damage
++6,448 - 7,678 Life per Second
++5.0 - 8.0% Cooldown Reduction
++5 - 8% Resource Cost Reduction
+Sockets (1)

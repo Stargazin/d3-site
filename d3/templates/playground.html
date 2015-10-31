@@ -1,61 +1,264 @@
+{% extends "base.html" %}
 {% load staticfiles %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{% static "css/playground.min.css" %}">
-  <title>Playground</title>
-</head>
-<body>
+{% block playground-css %}
+<link rel="stylesheet" href="{% static 'css/playground.min.css' %}">
+{% endblock playground-css %}
 
-  <nav>
-    <ul class="link-container">
-      <li class="link"><a href="#">Home</a></li>
-      <li class="link"><a href="#">New Article</a></li>
-      
-      <li class="link"><a href="#">Categories</a>
-        <ul class="drop">
-          <li class="link drop__link"><a href="#">All</a>
-            <ul class="drop drop--right">
-              <li class="link drop__link"><a href="#">Category 1</a>
-                <ul class="drop drop--right">
-                  <li class="link drop__link"><a href="#">Category 1.1</a></li>
-                  <li class="link drop__link"><a href="#">Category 1.2</a></li>
-                  <li class="link drop__link"><a href="#">Category 1.3</a></li>
-                  <li class="link drop__link"><a href="#">Category 1.4</a></li>
-                </ul>
-              </li>
-              <li class="link drop__link"><a href="#">Category 2</a>
-                <ul class="drop drop--right">
-                  <li class="link drop__link"><a href="#">Category 2.1</a></li>
-                  <li class="link drop__link"><a href="#">Category 2.2</a></li>
-                  <li class="link drop__link"><a href="#">Category 2.3</a></li>
-                  <li class="link drop__link"><a href="#">Category 2.4</a></li>
-                </ul>
-              </li>
-              <li class="link drop__link"><a href="#">Category 3</a></li>
-              <li class="link drop__link"><a href="#">Category 4</a></li>
-            </ul>
-          </li>
-          <li class="link drop__link"><a href="#">Manage</a></li>
-        </ul>
-      </li>
-      
-      <li class="link"><a href="#">My Profile</a>
-        <ul class="drop">
-          <li class="link drop__link"><a href="#">Login</a></li>
-          <li class="link drop__link"><a href="#">Edit</a></li>
-          <li class="link drop__link"><a href="#">My Posts</a></li>
-          <li class="link drop__link"><a href="#">Logout</a></li>
-        </ul>
-      </li>
-      
-      <li class="link"><a href="#">Help</a></li>
-    </ul>
-  </nav>
-  
-<script src="http://192.168.1.5:35729/livereload.js?snipver=1"></script>
-</body>
-</html>
+{% block main %}
+
+<main>
+  <div class="leg-container">
+
+    <div class="leg">
+      <a class="leg__name" href="#">Ancestors' Grace</a>
+      <div class="leg__details">
+        <a class="leg__details__pic" href="#ancestors-grace">
+          <span class="pic--sm" style="background: url(../assets/media/items/legendaries/accessories/amulets/ancestors_grace.png);"></span>
+        </a> <!-- .leg__details__pic -->
+        <div class="leg__details__affix">
+          <span class="leg__details__affix--unique">
+            <li><p>When receiving fatal damage, you are instead restored to <span>100%</span> of maximum life and resources. This item is destroyed in the process.</p></li>
+          </span> <!-- .leg__details__affix-unique -->
+          <span class="leg__details__affix--guarenteed">
+            <li><p><span>+626 - 750</span> Vitality</p></li>
+          </span> <!-- .leg__details__affix-guarenteed -->
+        </div> <!-- .leg__details__affix -->
+      </div> <!-- .leg__details -->
+    </div> <!-- .leg -->
+
+
+    <div class="leg">
+      <a class="leg__name" href="#">Dovu Energy Trap</a>
+      <div class="leg__details">
+        <a class="leg__details__pic" href="#_">
+          <span class="pic--sm" style="background: url(../assets/media/items/legendaries/accessories/amulets/dovu_energy_trap.png)"></span>
+        </a> <!-- .leg__details__pic -->
+        <div class="leg__details__affix">
+          <span class="leg__details__affix--unique">
+            <li><p>Increases duration of Stun effects by <span>20 – 25%</span>.</p></li>
+          </span> <!-- .leg__details__affix-unique -->
+          <span class="leg__details__affix--guarenteed">
+            <li><p><span>+626 - 750</span> Main Stat</p></li>
+            <li><p><span>+5.0 - 8.0%</span> Cooldown Reduction</p></li>
+          </span> <!-- .leg__details__affix-guarenteed -->
+        </div> <!-- .leg__details__affix -->
+      </div> <!-- .leg__details -->
+    </div> <!-- .leg -->
+
+    <div class="leg">
+      <a class="leg__name" href="#">Eye of Elitch</a>
+      <div class="leg__details">
+        <a class="leg__details__pic" href="#_">
+          <span class="pic--sm" style="background: url(../assets/media/items/legendaries/accessories/amulets/eye_of_elitch.png)"></span>
+        </a> <!-- .leg__details__pic -->
+        <div class="leg__details__affix">
+          <span class="leg__details__affix--guarenteed">
+            <li><p><span>+15 - 20%</span> Increased <span><em>Elemental</em></span> Damage</p></li>
+            <li><p><span>+27.7 - 32.9%</span> Range Damage Reduction</p></li>
+          </span> <!-- .leg__details__affix-guarenteed -->
+        </div> <!-- .leg__details__affix -->
+      </div> <!-- .leg__details -->
+    </div> <!-- .leg -->
+
+    <div class="leg">
+      <a class="leg__name" href="#">Golden Gorget of Leoric</a>
+      <div class="leg__details">
+        <a class="leg__details__pic" href="#_">
+          <span class="pic--sm" style="background: url(../assets/media/items/legendaries/accessories/amulets/golden_gorget_of_leoric.png)"></span>
+        </a> <!-- .leg__details__pic -->
+        <div class="leg__details__affix">
+          <span class="leg__details__affix--unique">
+            <li><p>After earning a massacre bonus, <span>4–6</span> Skeletons are summoned to fight by your side for 10 seconds.</p></li>
+          </span> <!-- .leg__details__affix-unique -->
+          <span class="leg__details__affix--guarenteed">
+            <li><p><span>+626 - 750</span> Main Stat</p></li>
+            <li><p><span>+91 - 100</span> All Resist</p></li>
+            <li><p><span>+6.0 - 10.0%</span> Crit Chance</p></li>
+          </span> <!-- .leg__details__affix-guarenteed -->
+        </div> <!-- .leg__details__affix -->
+      </div> <!-- .leg__details -->
+    </div> <!-- .leg -->
+
+    <div class="leg">
+      <a class="leg__name" href="#">Halcyon's Ascent</a>
+      <div class="leg__details">
+        <a class="leg__details__pic" href="#_">
+          <span class="pic--sm" style="background: url(../assets/media/items/legendaries/accessories/amulets/halcyons_ascent.png)"></span>
+        </a> <!-- .leg__details__pic -->
+        <div class="leg__details__affix">
+          <span class="leg__details__affix--unique">
+            <li><p>When you use <span><em>Class Skill</em></span>, you mepic--smerize nearby enemies with your skill, causing them to jump uncontrollably for <span>6–8</span> seconds.</p></li>
+          </span> <!-- .leg__details__affix-unique -->
+          <span class="leg__details__affix--guarenteed">
+            <li><p><span>+626 - 750</span> Main Stat</p></li>
+            <li><p><span>+5.0 - 8.0%</span> Cooldown Reduction</p></li>
+          </span> <!-- .leg__details__affix-guarenteed -->
+        </div> <!-- .leg__details__affix -->
+      </div> <!-- .leg__details -->
+    </div> <!-- .leg -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- class="leg-container" -->
+    <div class="leg temp-leg" id="countess">
+      <a class="temp-lb" href=""></a>
+      <a class="leg__name" href="#countess">Countess Julia's Cameo</a>
+      <div class="leg__details">
+        <a class="leg__details__pic" href="#countess">
+          <img class="pic--sm" src="../assets/media/items/legendaries/accessories/amulets/countess_julias_cameo.png" alt="">
+        </a>
+        <div class="leg__details__affix">
+          <span class="leg__details__affix--unique">
+            <li><p>Prevent all Arcane damage taken and heal yourself for <span>20 – 25%</span> of the amount prevented.</p></li>
+          </span>
+          <span class="leg__details__affix--guarenteed">
+            <li><p><span>+626 - 750</span> Main Stat</p></li>
+            <li><p><span>+5.0 - 7.0%</span> Attack Speed</p></li>
+          </span>
+        </div>
+      </div>
+    </div>
+  <!---->
+
+    <div class="leg">
+      <a class="leg__name" href="#countess-julias-cameo">Countess Julia's Cameo</a>
+      <div class="leg__details">
+        <a class="leg__details__pic" href="#countess-julias-cameo">
+          <img class="pic--sm" src="../assets/media/items/legendaries/accessories/amulets/countess_julias_cameo.png">
+        </a> <!-- .leg__details__pic -->
+        <div class="leg__details__affix">
+          <span class="leg__details__affix--unique">
+            <li><p>Prevent all Arcane damage taken and heal yourself for <span>20 – 25%</span> of the amount prevented.</p></li>
+          </span> <!-- .leg__details__affix-unique -->
+          <span class="leg__details__affix--guarenteed">
+            <li><p><span>+626 - 750</span> Main Stat</p></li>
+            <li><p><span>+5.0 - 7.0%</span> Attack Speed</p></li>
+          </span> <!-- .leg__details__affix-guarenteed -->
+        </div> <!-- .leg__details__affix -->
+      </div> <!-- .leg__details -->
+    </div> <!-- .leg -->
+
+  </div> <!-- .leg-container -->
+</main>
+
+<a href="" class="lb" id="countess-julias-cameo">
+  <div class="lb__leg">
+
+    <div class="lb__leg__info">
+      <div class="lb__leg__info__pic">
+        <img class="pic--sm" src="../assets/media/items/legendaries/accessories/amulets/countess_julias_cameo.png">
+      </div> <!-- .lb__leg__info__pic -->
+
+      <div class="lb__leg__info__details">
+        <div class="lb__leg__info__details__name">
+          <span>Countess Julia's Cameo</span>
+        </div> <!-- .lb__leg__info__details__name -->
+        <div class="lb__leg__info__details__type">
+          <span>Amulet</span>
+        </div> <!-- lb__leg__info__details__type -->
+      </div> <!-- .lb__leg__info__details -->
+    </div> <!-- .lb__leg__info-container -->
+
+    <div class="lb__leg__affix lb__leg__affix--primary">
+      <span>Primary</span>
+      <li><p><span>+5.0 - 7.0%</span> Attack Speed</p></li>
+      <li><p><span>+626 - 750</span> Main Stat</p></li>
+      <li><p><span>+2</span> Random Affixes</p></li>
+    </div> <!-- .lb__leg__affix-primary -->
+
+    <div class="lb__leg__affix lb__leg__affix--secondary">
+      <span>Secondary</span>
+      <li><p>Prevent all Arcane damage taken and heal yourself for <span>20 - 25%</span> of the amount prevented.</p></li>
+      <li><p><span>+2</span> Random Affixes</p></li>
+    </div> <!-- .lb__leg__affix-secondary -->
+
+    <div class="lb__leg__note">
+    </div> <!-- .lb__leg__note -->
+
+  </div> <!-- .lb__leg -->
+</a> <!-- .lb -->
+
+{% endblock main %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{# 
+    <div class="leg">
+      <a class="leg__name" href="#countess-julias-cameo">Countess Julia's Cameo</a>
+      <div class="leg__details">
+        <a class="leg__details__pic" href="#countess-julias-cameo">
+          <span class="pic--sm" style="background: url(../assets/media/items/legendaries/accessories/amulets/countess_julias_cameo.png)"></span>
+        </a> <!-- .leg__details__pic -->
+        <div class="leg__details__affix">
+          <span class="leg__details__affix--unique">
+            <li><p>Prevent all Arcane damage taken and heal yourself for <span>20 – 25%</span> of the amount prevented.</li
+          ></span> <!-- .leg__details__affix-unique -->
+          <span class="leg__details__affix--guarenteed">
+            <li><p><span>+626 - 750</span> Main Stat</p></li>
+            <li><p><span>+5.0 - 7.0%</span> Attack Speed</p></li>
+          </span> <!-- .leg__details__affix-guarenteed -->
+        </div> <!-- .leg__details__affix -->
+      </div> <!-- .leg__details -->
+    </div> <!-- .leg -->
+
+  </div> <!-- .leg-container -->
+</main>
+
+<a href="" class="lb" id="countess-julias-cameo">
+  <div class="lb__leg">
+
+    <div class="lb__leg__info">
+      <div class="lb__leg__info__pic">
+        <img class="pic--sm" src="../assets/media/items/legendaries/accessories/amulets/countess_julias_cameo.png">
+      </div> <!-- .lb__leg__info__pic -->
+
+      <div class="lb__leg__info__details">
+        <div class="lb__leg__info__details__name">
+          <span>Countess Julia's Cameo</span>
+        </div> <!-- .lb__leg__info__details__name -->
+        <div class="lb__leg__info__details__type">
+          <span>Amulet</span>
+        </div> <!-- lb__leg__info__details__type -->
+      </div> <!-- .lb__leg__info__details -->
+    </div> <!-- .lb__leg__info-container -->
+
+    <div class="lb__leg__affix lb__leg__affix--primary">
+      <span>Primary</span>
+      <li><p><span>+5.0 - 7.0%</span> Attack Speed</p></li>
+      <li><p><span>+626 - 750</span> Main Stat</p></li>
+      <li><p><span>+2</span> Random Affixes</p></li>
+    </div> <!-- .lb__leg__affix-primary -->
+
+    <div class="lb__leg__affix lb__leg__affix--secondary">
+      <span>Secondary</span>
+      <li><p>Prevent all Arcane damage taken and heal yourself for <span>20 - 25%</span> of the amount prevented.</p></li>
+      <li><p><span>+2</span> Random Affixes</p></li>
+    </div> <!-- .lb__leg__affix-secondary -->
+
+    <div class="lb__leg__note">
+    </div> <!-- .lb__leg__note -->
+
+  </div> <!-- .lb__leg -->
+</a> <!-- .lb --> #}

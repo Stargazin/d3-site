@@ -3,20 +3,20 @@
  =========================================================================== */
 
 header {
-  font-size: 1.6em;
   z-index: 100;
+  font-size: 1.8em;
+  font-weight: 500;
 }
 
 .link-container {
   display: flex;
-  justify-content: center;
-  text-align: center;
   position: relative;
-  background-color: $alice-blue;
-  border-radius: 0 0 1rem 1rem;
-
+  justify-content: center;
   margin: auto;
+  border-radius: 0 0 1rem 1rem;
   width: 97%;
+  text-align: center;
+  background-color: $alice-blue;
 
   @media #{$break-xl} {
     width: 92%;
@@ -31,7 +31,7 @@ header {
   }
 
   @media #{$break-s} {
-    width: 97%;
+    width: 100%;
   }
 
   & > .link {
@@ -44,8 +44,9 @@ header {
 }
 
 .link {
-  line-height: 4rem;
   width: 14rem;
+  line-height: 4rem;
+  font-family: $playfair;
 
   &:hover {
     background-color: $lynch;
@@ -75,9 +76,12 @@ header {
 }
 
 .drop__link {
-  border-bottom: 0.1rem solid #62707F;
   width: 14rem;
+  border-bottom: 0.1rem solid #62707F;
   line-height: 3.4rem !important;
+  font-size: 0.95em;
+  font-weight: 400;
+  font-family: $roboto;
 
   &:hover {
     background-color: $madison;
@@ -85,9 +89,7 @@ header {
 }
 
 .drop--right {
-  left: 14rem;
   top: 0;
+  left: 14rem;
   border-left: 0.1rem solid $gallery;
 }
-
-
