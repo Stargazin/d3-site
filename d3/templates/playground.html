@@ -107,104 +107,6 @@
 
 
 
-
-  <!-- class="leg-container" -->
-    <div class="leg temp-leg" id="countess">
-      <a class="temp-lb" href=""></a>
-      <a class="leg__name" href="#countess">Countess Julia's Cameo</a>
-      <div class="leg__details">
-        <a class="leg__details__pic" href="#countess">
-          <img class="pic--sm" src="../assets/media/items/legendaries/accessories/amulets/countess_julias_cameo.png" alt="">
-        </a>
-        <div class="leg__details__affix">
-          <span class="leg__details__affix--unique">
-            <li><p>Prevent all Arcane damage taken and heal yourself for <span>20 – 25%</span> of the amount prevented.</p></li>
-          </span>
-          <span class="leg__details__affix--guarenteed">
-            <li><p><span>+626 - 750</span> Main Stat</p></li>
-            <li><p><span>+5.0 - 7.0%</span> Attack Speed</p></li>
-          </span>
-        </div>
-      </div>
-    </div>
-  <!---->
-
-    <div class="leg">
-      <a class="leg__name" href="#countess-julias-cameo">Countess Julia's Cameo</a>
-      <div class="leg__details">
-        <a class="leg__details__pic" href="#countess-julias-cameo">
-          <img class="pic--sm" src="../assets/media/items/legendaries/accessories/amulets/countess_julias_cameo.png">
-        </a> <!-- .leg__details__pic -->
-        <div class="leg__details__affix">
-          <span class="leg__details__affix--unique">
-            <li><p>Prevent all Arcane damage taken and heal yourself for <span>20 – 25%</span> of the amount prevented.</p></li>
-          </span> <!-- .leg__details__affix-unique -->
-          <span class="leg__details__affix--guarenteed">
-            <li><p><span>+626 - 750</span> Main Stat</p></li>
-            <li><p><span>+5.0 - 7.0%</span> Attack Speed</p></li>
-          </span> <!-- .leg__details__affix-guarenteed -->
-        </div> <!-- .leg__details__affix -->
-      </div> <!-- .leg__details -->
-    </div> <!-- .leg -->
-
-  </div> <!-- .leg-container -->
-</main>
-
-<a href="" class="lb" id="countess-julias-cameo">
-  <div class="lb__leg">
-
-    <div class="lb__leg__info">
-      <div class="lb__leg__info__pic">
-        <img class="pic--sm" src="../assets/media/items/legendaries/accessories/amulets/countess_julias_cameo.png">
-      </div> <!-- .lb__leg__info__pic -->
-
-      <div class="lb__leg__info__details">
-        <div class="lb__leg__info__details__name">
-          <span>Countess Julia's Cameo</span>
-        </div> <!-- .lb__leg__info__details__name -->
-        <div class="lb__leg__info__details__type">
-          <span>Amulet</span>
-        </div> <!-- lb__leg__info__details__type -->
-      </div> <!-- .lb__leg__info__details -->
-    </div> <!-- .lb__leg__info-container -->
-
-    <div class="lb__leg__affix lb__leg__affix--primary">
-      <span>Primary</span>
-      <li><p><span>+5.0 - 7.0%</span> Attack Speed</p></li>
-      <li><p><span>+626 - 750</span> Main Stat</p></li>
-      <li><p><span>+2</span> Random Affixes</p></li>
-    </div> <!-- .lb__leg__affix-primary -->
-
-    <div class="lb__leg__affix lb__leg__affix--secondary">
-      <span>Secondary</span>
-      <li><p>Prevent all Arcane damage taken and heal yourself for <span>20 - 25%</span> of the amount prevented.</p></li>
-      <li><p><span>+2</span> Random Affixes</p></li>
-    </div> <!-- .lb__leg__affix-secondary -->
-
-    <div class="lb__leg__note">
-    </div> <!-- .lb__leg__note -->
-
-  </div> <!-- .lb__leg -->
-</a> <!-- .lb -->
-
-{% endblock main %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{# 
     <div class="leg">
       <a class="leg__name" href="#countess-julias-cameo">Countess Julia's Cameo</a>
       <div class="leg__details">
@@ -226,9 +128,10 @@
   </div> <!-- .leg-container -->
 </main>
 
-<a href="" class="lb" id="countess-julias-cameo">
+<div class="lb" id="countess-julias-cameo">
+  <a class="lb__back" href=""></a>
   <div class="lb__leg">
-
+  
     <div class="lb__leg__info">
       <div class="lb__leg__info__pic">
         <img class="pic--sm" src="../assets/media/items/legendaries/accessories/amulets/countess_julias_cameo.png">
@@ -250,7 +153,6 @@
       <li><p><span>+626 - 750</span> Main Stat</p></li>
       <li><p><span>+2</span> Random Affixes</p></li>
     </div> <!-- .lb__leg__affix-primary -->
-
     <div class="lb__leg__affix lb__leg__affix--secondary">
       <span>Secondary</span>
       <li><p>Prevent all Arcane damage taken and heal yourself for <span>20 - 25%</span> of the amount prevented.</p></li>
@@ -259,6 +161,11 @@
 
     <div class="lb__leg__note">
     </div> <!-- .lb__leg__note -->
-
   </div> <!-- .lb__leg -->
-</a> <!-- .lb --> #}
+</div> <!-- .lb -->
+
+
+
+
+
+{% endblock main %}
