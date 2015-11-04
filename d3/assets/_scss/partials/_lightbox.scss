@@ -102,6 +102,7 @@
     @media #{$break-m} {
       margin: 2rem 0 0 0.3rem;
     }
+
   }
 
   .leg__affix {
@@ -129,6 +130,13 @@
   .leg__affix--primary {}
 
   .leg__affix--secondary {}
+
+  .unique {
+
+    p {
+      color: #EC7211;
+    }
+  }
 
   .leg__note {}
 }

@@ -303,7 +303,7 @@ header {
     width: 100%;
     margin: 1.2rem 0;
     text-align: center;
-    color: #F28700; }
+    color: #EC7211; }
   .leg-container .leg__info {
     display: -webkit-box;
     display: -webkit-flex;
@@ -333,6 +333,8 @@ header {
             flex: 0 1 auto;
     margin-top: 0.8rem;
     text-align: left; }
+  .leg-container .leg__affix--unique p {
+    color: #F28700; }
 
 .leg {
   background-color: #22313f; }
@@ -363,6 +365,8 @@ header {
 .leg__affix {
   padding-bottom: 1.2rem;
   line-height: 2rem; }
+  .leg__affix .silver {
+    color: #dadfe1; }
   .leg__affix .unique {
     /*
      * override .lightbox.scss
@@ -481,3 +485,5 @@ header {
     .lb .leg__affix li {
       margin-left: 1.7rem;
       padding-top: 0.2rem; }
+  .lb .unique p {
+    color: #EC7211; }

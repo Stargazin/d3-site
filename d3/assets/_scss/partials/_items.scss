@@ -60,7 +60,8 @@
     width: 100%;
     margin: 1.2rem 0;
     text-align: center;
-    color: #F28700;
+    // color: #F28700;
+    color: #EC7211;
   }
 
   .leg__info {
@@ -87,7 +88,12 @@
     text-align: left;
   }
 
-  .leg__affix--unique {}
+  .leg__affix--unique {
+
+    p {
+      color: #F28700;
+    }
+  }
 
   .leg__affix-guarenteed {}
 }
@@ -123,6 +129,14 @@
 .leg__affix {
   padding-bottom: 1.2rem;
   line-height: 2rem;
+
+  .silver {
+    // color: $white-smoke;
+    // color: $silver-sand;
+    color: $iron;
+    // color: $silver;
+    // color: $lynch;
+  }
 
   .unique {
     /*

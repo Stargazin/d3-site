@@ -1,0 +1,140 @@
+/* partials/items
+ =========================================================================== 
+ =========================================================================== */
+
+.leg-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 138rem;
+  margin: 5rem auto 3rem auto;
+  border: 1px solid rgb(200,205,210);
+  border-radius: 1rem;
+  padding: 0.3rem 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: $roboto;
+  background-color: $alice-blue;
+
+  @media #{$break-xxl} {
+    max-width: 103rem;
+    padding: 0.7rem 0;
+  }
+
+  @media #{$break-xl} {
+    max-width: 95rem;
+  }
+
+  @media #{$break-l} {
+    max-width: 65rem;
+  }
+
+  @media #{$break-m} {
+    max-width: 58rem;
+  }
+
+  @media #{$break-s} {
+    border: none;
+    border-radius: 0.5rem;
+  }
+}
+
+.leg {
+  flex: 0 1 auto;
+  width: 32.6%;
+  min-height: 22rem;
+  margin: 0.5rem 0;
+  border: 2px solid rgb(175,180,185);
+  background-color: $ebony-clay;
+
+  @media #{$break-xxl} {
+    width: 48.8%;
+  }
+
+  @media #{$break-xl} {}
+
+  @media #{$break-l} {
+    width: 96%;
+    margin: 0.4rem 0;
+  }
+
+  @media #{$break-m} {}
+
+  @media #{$break-s} {}
+}
+
+.leg__name {
+  display: block;
+  width: 100%;
+  margin: 1.2rem 0;
+  text-align: center;
+  font-size: 135%;
+  font-family: $playfair;
+  color: #F28700;
+  text-decoration: underline;
+}
+
+.leg__details {
+  display: flex;
+  justify-content: flex-start;
+  width: 86%;
+  margin: auto;
+  padding-bottom: 2.2rem;
+
+  @media #{$break-s} {
+    width: 91%;
+  }
+}
+
+.leg__details__pic {
+  min-width: 70px;
+  height: 134px;
+  margin-top: 0.8rem;
+  margin-right: 3.2rem;
+  border: 2px solid #EC7211;
+  border-radius: 9px;
+  background-color: $madison;
+
+  @media #{$break-s} {
+    border-width: 2px;
+  }
+}
+
+.pic--sm {
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 64px;
+  height: 64px;
+}
+
+.leg__details__affix {
+  margin-top: 0.8rem;
+  text-align: left;
+
+  &>span {
+    display: block;
+  }
+
+  li {
+    text-indent: -1em;
+    color: rgb(245,245,255);
+
+    p {
+      color: #7D7DFF;
+    }
+
+    span {
+      color: #CEA7FF;
+    }
+  }
+}
+
+.leg__details__affix--unique {
+  padding-bottom: 1.2rem;
+}
+
+.leg__details__affix--guarenteed {
+  padding-bottom: 1.2rem;
+  line-height: 2rem;
+}
