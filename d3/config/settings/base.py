@@ -20,15 +20,18 @@ from django.core.exceptions import ImproperlyConfigured
 
 ##BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 #__file__ is base.py; ancestor(3) = 3 directories above:
-#settings -> config -> tst
+#settings -> config -> d3
 BASE_DIR = Path(__file__).ancestor(3)
 MEDIA_ROOT = BASE_DIR.child("media")
+#static_root is where collectstatic pulls everything
 STATIC_ROOT = BASE_DIR.child("static")
+#staticfiles_dirs is what {% load staticfiles %} pulls from
 STATICFILES_DIRS = (
     BASE_DIR.child("assets"),
 )
-#staticfiles_dirs is what {% load staticfiles %} pulls from
+#static_url is for URL conf
 STATIC_URL = '/assets/'
+# MEDIA_URL = '/media/'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -64,7 +67,7 @@ SECRET_KEY = get_secret("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 # Application definition
 
@@ -78,7 +81,9 @@ PREREQ_APPS = (
 )
 
 PROJECT_APPS = (
+    'core',
     'legendaryitems',
+    'miscitems',
 )
 
 INSTALLED_APPS = PREREQ_APPS + PROJECT_APPS

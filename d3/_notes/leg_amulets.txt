@@ -19,35 +19,35 @@ Column
   Secondary
     ((guarenteed affix))
 
-Lightbox
-  Primary
-    [60-80]-[120-160] dmg
-      {A}[88-105]-[168-210]
-    [15-20]% elemental dmg
-      cold/fire/lightning/arcane
-      holy/phys
-    [626-750] main stat
-      {A}[825-1,000]
-      int/dex/str
-    [626-750] vit
-      {A}[825-1,000]
-    *[91-100] all resist
-      {A}[??-??]
-    [5.0-7.0]% atk spd
-    [14-18]% life
-    [559-595] armor
-      {A}[654-775]
-    [51.0-100.0]% CHD
-    [6,448-7,678] LPS
-      {A}[8,845-10,000]
-    [8.0-10.0]% CHC
-    [10-20]% chance for area dmg
-    **[15,474-18,429] LPH
-      {A}[20,271-23,950]
-    [5.0-8.0]% CDR
-    [5-8]% resource cost reduction
-    sockets (1)
+Primary
+  [60-80]-[120-160] dmg
+    {A}[88-105]-[168-210]
+  [15-20]% elemental dmg
+    cold/fire/lightning/arcane
+    holy/phys/poison
+  [626-750] main stat
+    {A}[825-1,000]
+    int/dex/str
+  [626-750] vit
+    {A}[825-1,000]
+  *[91-100] all resist
+    {A}[??-??]
+  [5.0-7.0]% atk spd
+  [14-18]% life
+  [559-595] armor
+    {A}[654-775]
+  [51.0-100.0]% CHD
+  [6,448-7,678] LPS
+    {A}[8,845-10,000]
+  [8.0-10.0]% CHC
+  [10-20]% chance for area dmg
+  **[15,474-18,429] LPH
+    {A}[20,271-23,950]
+  [5.0-8.0]% CDR
+  [5-8]% resource cost reduction
+  sockets (1)
 
++[60-80] - [120-160] Damage
 +15 - 20% Elemental Damage
   +15 - 20% Physical Damage
   +15 - 20% Lightning Damage
@@ -57,40 +57,40 @@ Lightbox
   +15 - 20% Poison Damage
   +15 - 20% Holy Damage
 +626 - 750 Main Stat
+  +626 - 750 Dexterity
+  +626 - 750 Intelligence
+  +626 - 750 Strength
 +626 - 750 Vitality
-+91 - 100 All Resist
-+5.0 - 7.0% Attack Speed
 +14 - 18% Life
 +559 - 595 Armor
-+6.0 - 10.0% Crit Chance
-+51.0 - 100.0% Crit Hit Damage
++91 - 100 All Resist
 +6,448 - 7,678 Life per Second
 +15,474 - 18,429 Life per Hit
++5.0 - 7.0% Attack Speed
++8.0 - 10.0% Crit Chance
++51.0 - 100.0% Crit Hit Damage
 +5.0 - 8.0% Cooldown Reduction
 +5 - 8% Resource Cost Reduction
 Socket (1)
 
 
-  Secondary
-    *[141-160] single element resist
-      {A}[176-210]
-      phys/cold/fire/lightning/arcane/poison
-    [6.0-7.0]% reduced range dmg
-    [6.0-7.0]% reduced melee dmg
-    **[6,428-8,914] LPK
-      {A}[9,805-11,590]
-    [71-80]% extra gold
-    [2,667-3,498] thorns
-      {A}[3,847-4,550]
-    [140-200] exp/kill
-      {A}[220-260]
-    [20-40]% cc reduction
-    [1.0-5.1]% chance to blind
-    [20,001-29,713] health globe/potion heal increase
-      {A}[32,684-38,625]
-
-+75 – 100% Extra Gold from Monsters (Secondary)
-
+Secondary
+  *[141-160] single element resist
+    {A}[176-210]
+    phys/cold/fire/lightning/arcane/poison
+  [6.0-7.0]% reduced range dmg
+  [6.0-7.0]% reduced melee dmg
+  **[6,428-8,914] LPK
+    {A}[9,805-11,590]
+  [71-80]% extra gold
+  [2,667-3,498] thorns
+    {A}[3,847-4,550]
+  [140-200] exp/kill
+    {A}[220-260]
+  [20-40]% cc reduction
+  [1.0-5.1]% chance to blind
+  [20,001-29,713] health globe/potion heal increase
+    {A}[32,684-38,625]
 
 
 

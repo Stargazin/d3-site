@@ -12,4 +12,4 @@ def playground(request):
 	return render(request, 'playground.html', {})
 
 def amulets(request):
-	return render(request, 'amulets.html', {})
+	return render(request, 'legendaryitems/amulets.html', {})
