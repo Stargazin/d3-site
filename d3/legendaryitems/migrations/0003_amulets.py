@@ -12,7 +12,8 @@ def load_amulets(apps, schema_editor):
 		name='Ancestors\' Grace',
 		pic='/assets/media/items/legendaries/accessories/amulets/ancestors_grace.png',
 		unique='When receiving fatal damage, you are instead restored to 100% of maximum Life and resources. This item is destroyed in the process.',
-		unique_is_primary=False)
+		unique_is_primary=True,
+		affixes=)
 	ancestors.save()
 
 	countess = Amulet(id=1,
