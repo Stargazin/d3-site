@@ -2,6 +2,9 @@ filters for legendaries:
 --crafting
 --cache
 
+!!split uniques with "//"
+split into list
+
 blood shards:
 drop rates in rift
 
@@ -15,9 +18,11 @@ have portrait to select class and prefilter
 
 
 
+
 TODODOODO
 --1)delete + remake db
 --2)edit amulet_affixes to proper names
 --3)check other files (admin, etc)
 --4)make commits and push
-5)do amulet affixes
+--5)do amulet affixes
+6)go back and get rid of brackets in 0002_amulet_affixes.py

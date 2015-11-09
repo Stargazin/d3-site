@@ -6,15 +6,59 @@ from django.db import migrations, models
 
 def load_amulets(apps, schema_editor):
 	Amulet = apps.get_model("legendaryitems", "Amulet")
+	AmuletAffix = apps.get_model("legendaryitems", "AmuletAffix")
+
+	dmg = AmuletAffix.objects.get(pk=0)
+	eleDmg = AmuletAffix.objects.get(pk=1)
+	physDmg = AmuletAffix.objects.get(pk=2)
+	coldDmg = AmuletAffix.objects.get(pk=3)
+	fireDmg = AmuletAffix.objects.get(pk=4)
+	lightDmg = AmuletAffix.objects.get(pk=5)
+	poisDmg = AmuletAffix.objects.get(pk=6)
+	arcaneDmg = AmuletAffix.objects.get(pk=7)
+	holyDmg = AmuletAffix.objects.get(pk=8)
+	mainStat = AmuletAffix.objects.get(pk=9)
+	dext = AmuletAffix.objects.get(pk=10)
+	inte = AmuletAffix.objects.get(pk=11)
+	stre = AmuletAffix.objects.get(pk=12)
+	vita = AmuletAffix.objects.get(pk=13)
+	life = AmuletAffix.objects.get(pk=14)
+	armor = AmuletAffix.objects.get(pk=15)
+	allRes = AmuletAffix.objects.get(pk=16)
+	lps = AmuletAffix.objects.get(pk=17)
+	lph = AmuletAffix.objects.get(pk=18)
+	ias = AmuletAffix.objects.get(pk=19)
+	chc = AmuletAffix.objects.get(pk=20)
+	chd = AmuletAffix.objects.get(pk=21)
+	cdr = AmuletAffix.objects.get(pk=22)
+	rcr = AmuletAffix.objects.get(pk=23)
+	sockets = AmuletAffix.objects.get(pk=24)
+
+	eleRes = AmuletAffix.objects.get(pk=25)
+	physRes = AmuletAffix.objects.get(pk=26)
+	coldRes = AmuletAffix.objects.get(pk=27)
+	fireRes = AmuletAffix.objects.get(pk=28)
+	lightRes = AmuletAffix.objects.get(pk=29)
+	poisRes = AmuletAffix.objects.get(pk=30)
+	arcaneRes = AmuletAffix.objects.get(pk=31)
+	reducedRange = AmuletAffix.objects.get(pk=32)
+	reducedMelee = AmuletAffix.objects.get(pk=33)
+	lpk = AmuletAffix.objects.get(pk=34)
+	extraGold = AmuletAffix.objects.get(pk=35)
+	thorns = AmuletAffix.objects.get(pk=36)
+	ccReduction = AmuletAffix.objects.get(pk=37)
+	blindChance = AmuletAffix.objects.get(pk=38)
+	itemHealing = AmuletAffix.objects.get(pk=39)
+
 
 	ancestors = Amulet(id=0,
 		category='Amulet',
 		name='Ancestors\' Grace',
 		pic='/assets/media/items/legendaries/accessories/amulets/ancestors_grace.png',
 		unique='When receiving fatal damage, you are instead restored to 100% of maximum Life and resources. This item is destroyed in the process.',
-		unique_is_primary=True,
-		affixes=)
+		unique_is_primary=True)
 	ancestors.save()
+	ancestors.affixes.add(vita)
 
 	countess = Amulet(id=1,
 		category='Amulet',
@@ -23,6 +67,8 @@ def load_amulets(apps, schema_editor):
 		unique='Prevent all Arcane damage taken and heal yourself for <span>20 - 25%</span> of the amount prevented.',
 		unique_is_primary=False)
 	countess.save()
+	countess.affixes.add(mainStat, ias)
+
 
 	dovu = Amulet(id=2,
 		category='Amulet',
@@ -31,6 +77,7 @@ def load_amulets(apps, schema_editor):
 		unique='Increases duration of Stun effects by <span>20 - 25%</span>.',
 		unique_is_primary=False)
 	dovu.save()
+	dovu.affixes.add(mainStat, cdr)
 
 	eye = Amulet(id=3,
 		category='Amulet',
@@ -39,6 +86,7 @@ def load_amulets(apps, schema_editor):
 		unique='Reduces damage from ranged attacks by <span>27.7 - 32.9%</span>.',
 		unique_is_primary=False)
 	eye.save()
+	eye.affixes.add(eleDmg)
 
 	gorget = Amulet(id=4,
 		category='Amulet',
@@ -47,6 +95,7 @@ def load_amulets(apps, schema_editor):
 		unique='After earning a massacre bonus, <span>4 - 6</span> Skeletons are summoned to fight by your side for 10 seconds.',
 		unique_is_primary=False)
 	gorget.save()
+	gorget.affixes.add(mainStat, allRes, chc)
 
 	halcyon = Amulet(id=5,
 		category='Amulet',
@@ -55,6 +104,7 @@ def load_amulets(apps, schema_editor):
 		unique='When you use <span><em>Class Skill</em></span>, you mesmerize nearby enemies with your skill, causing them to jump uncontrollably for <span>6 - 8</span> seconds.',
 		unique_is_primary=False)
 	halcyon.save()
+	halcyon.affixes.add(mainStat, cdr)
 
 	haunt = Amulet(id=6,
 		category='Amulet',
@@ -63,6 +113,7 @@ def load_amulets(apps, schema_editor):
 		unique='Summons shadow clones to your aid when you Stun an enemy. This effect may occur once every 30 seconds.',
 		unique_is_primary=False)
 	haunt.save()
+	haunt.affixes.add(mainStat, chc)
 
 	hellfire = Amulet(id=7,
 		category='Amulet',
@@ -71,6 +122,7 @@ def load_amulets(apps, schema_editor):
 		unique='Gain a random <span><em>Class Specific</em></span> passive.',
 		unique_is_primary=False)
 	hellfire.save()
+	hellfire.affixes.add(mainStat, sockets)
 
 	holy = Amulet(id=8,
 		category='Amulet',
@@ -79,14 +131,16 @@ def load_amulets(apps, schema_editor):
 		unique='<span>+2.2 - 3.0</span> Spirit Regeneration per Second',
 		unique_is_primary=True)
 	holy.save()
+	holy.affixes.add(holyDmg)
 
 	kymbos = Amulet(id=9,
 		category='Amulet',
 		name='Kymbo\'s Gold',
 		pic='/assets/media/items/legendaries/accessories/amulets/kymbos_gold.png',
-		unique='Picking up gold heals you for an amount equal to the gold that was picked up.',
+		unique='Picking up gold heals you for an amount equal to the gold that was picked up.//<span>+75 - 100%</span> Extra Gold from Monsters',
 		unique_is_primary=False)
 	kymbos.save()
+	# kymbos.affixes.add()
 
 	maras = Amulet(id=10,
 		category='Amulet',
@@ -95,20 +149,23 @@ def load_amulets(apps, schema_editor):
 		unique='Prevent all Poison damage taken and heal yourself for <span>10 - 15%</span> of the amount prevented.',
 		unique_is_primary=False)
 	maras.save()
+	maras.affixes.add(mainStat, chc)
 
 	moonlight = Amulet(id=11,
 		category='Amulet',
 		name='Moonlight Ward',
 		pic='/assets/media/items/legendaries/accessories/amulets/moonlight_ward.png',
-		unique='Hitting an enemy within 15 yards has a chance to ward you with Arcane shards that explode when enemies get close, dealing <span>240 - 320%</span> weapon damage as Arcane to enemies within 15 yards.',
+		unique='Hitting an enemy within 15 yards has a chance to ward you with Arcane shards that explode when enemies get close, dealing <span>240 - 320%</span> weapon damage as Arcane to enemies within 15 yards.//Arcane skills do <span>+20 - 25%</span> more damage.',
 		unique_is_primary=False)
 	moonlight.save()
+	moonlight.affixes.add(chc)
 
 	ouroboros = Amulet(id=12,
 		category='Amulet',
 		name='Ouroboros',
 		pic='/assets/media/items/legendaries/accessories/amulets/ouroboros.png')
 	ouroboros.save()
+	ouroboros.affixes.add(mainStat, chc)
 
 	overwhelming = Amulet(id=13,
 		category='Amulet',
@@ -117,6 +174,7 @@ def load_amulets(apps, schema_editor):
 		unique='Chance on hit to charm the enemy. While charmed, the enemy takes 35% more damage.',
 		unique_is_primary=False)
 	overwhelming.save()
+	overwhelming.affixes.add(mainStat, cdr)
 
 	rakoffs = Amulet(id=14,
 		category='Amulet',
@@ -125,18 +183,23 @@ def load_amulets(apps, schema_editor):
 		unique='Enemies you kill have a <span>3 - 4%</span> additional chance to drop a health globe.',
 		unique_is_primary=False)
 	rakoffs.save()
+	rakoffs.affixes.add(mainStat, itemHealing)
 
 	rondals = Amulet(id=15,
 		category='Amulet',
 		name='Rondal\'s Locket',
-		pic='/assets/media/items/legendaries/accessories/amulets/rondals_locket.png')
+		pic='/assets/media/items/legendaries/accessories/amulets/rondals_locket.png',
+		unique='<span>+4 - 6</span> Yards to Gold and Health Pickup',
+		unique_is_primary=False)
 	rondals.save()
+	rondals.affixes.add(mainStat, itemHealing)
 
 	squirts = Amulet(id=16,
 		category='Amulet',
 		name='Squirt\'s Necklace',
 		pic='/assets/media/items/legendaries/accessories/amulets/squirts_necklace.png')
 	squirts.save()
+	squirts.affixes.add(mainStat, chd, extraGold)
 
 	talisman = Amulet(id=17,
 		category='Amulet',
@@ -145,6 +208,7 @@ def load_amulets(apps, schema_editor):
 		unique='Prevent all Cold damage taken and heal yourself for <span>10 - 15%</span> of the amount prevented.',
 		unique_is_primary=False)
 	talisman.save()
+	talisman.affixes.add(mainStat)
 
 	ess = Amulet(id=18,
 		category='Amulet',
@@ -153,12 +217,16 @@ def load_amulets(apps, schema_editor):
 		unique='Chance on hit to pull in enemies toward your target and Slow them by <span>60 - 80%</span>.',
 		unique_is_primary=False)
 	ess.save()
+	ess.affixes.add(mainStat, cdr)
 
 	flavor = Amulet(id=19,
 		category='Amulet',
 		name='The Flavor of Time',
-		pic='/assets/media/items/legendaries/accessories/amulets/the_flavor_of_time.png')
+		pic='/assets/media/items/legendaries/accessories/amulets/the_flavor_of_time.png',
+		unique='<span>+10 - 12%</span> Movement Speed',
+		unique_is_primary=True)
 	flavor.save()
+	flavor.affixes.add(cdr)
 
 	star = Amulet(id=20,
 		category='Amulet',
@@ -167,6 +235,7 @@ def load_amulets(apps, schema_editor):
 		unique='Prevent all Fire damage taken and heal yourself for <span>10 - 15%</span> of the amount prevented.',
 		unique_is_primary=False)
 	star.save()
+	star.affixes.add(mainStat, cdr)
 
 	xephirian = Amulet(id=22,
 		category='Amulet',
@@ -175,7 +244,7 @@ def load_amulets(apps, schema_editor):
 		unique='Prevent all Lightning damage taken and heal yourself for <span>10 - 15%</span> of the amount prevented.',
 		unique_is_primary=False)
 	xephirian.save()
-
+	xephirian.affixes.add(mainStat, ias)
 
 
 class Migration(migrations.Migration):
