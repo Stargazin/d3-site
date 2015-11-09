@@ -4,10 +4,10 @@ from models import Amulet, AmuletAffix
 
 
 class AmuletAdmin(admin.ModelAdmin):
-	list_display = ('name', 'category', 'pic')
+	list_display = ('name', 'category', 'pic', 'pk')
 
 class AmuletAffixAdmin(admin.ModelAdmin):
-	list_display = ('affix', 'is_primary', 'desc', 'ancient')
+	list_display = ('affix', 'is_primary', 'desc', 'ancient', 'pk')
 	list_filter = ('is_primary',)
 
 
