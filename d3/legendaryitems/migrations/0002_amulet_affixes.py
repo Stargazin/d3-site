@@ -17,8 +17,8 @@ def load_amulet_affixes(apps, schema_editor):
 	element_dmg = Affix(id=1,
 		affix='Element Dmg',
 		is_primary=True,
-		desc='Skills of <span><em>One Element</em></span> do <span>15 - 20%</span> more damage',
-		ancient='Skills of <span><em>One Element</em></span> do <span>15 - 20%</span> more damage')
+		desc='Skills of <span>[One Element]</span> do <span>15 - 20%</span> more damage',
+		ancient='Skills of <span>[One Element]</span> do <span>15 - 20%</span> more damage')
 	element_dmg.save()
 
 	physical_dmg = Affix(id=2,
@@ -73,8 +73,8 @@ def load_amulet_affixes(apps, schema_editor):
 	main_stat = Affix(id=9,
 		affix='Main Stat',
 		is_primary=True,
-		desc='<span>+626 - 750 <em>Main Stat</em></span>',
-		ancient='<span>+825 - 1,000 <em>Main Stat</em></span>')
+		desc='<span>+626 - 750 [Main Stat]</span>',
+		ancient='<span>+825 - 1,000 [Main Stat]</span>')
 	main_stat.save()
 
 	dexterity = Affix(id=10,
@@ -187,113 +187,113 @@ def load_amulet_affixes(apps, schema_editor):
 	element_res = Affix(id=25,
 		affix='Element Res',
 		is_primary=False,
-		desc='<span>+[141 - 160]</span> Resistance to <span>[<em>One Element</em>]</span>',
-		ancient='<span>+[176 - 210]</span> Resistance to <span>[<em>One Element</em>]</span>')
+		desc='<span>+141 - 160</span> Resistance to <span>[One Element]</span>',
+		ancient='<span>+176 - 210</span> Resistance to <span>[One Element]</span>')
 	element_res.save()
 
 	physical_res = Affix(id=26,
 		affix='Physical Res',
 		is_primary=False,
-		desc='<span>+[141 - 160]</span> Physical Resistance',
-		ancient='<span>+[176 - 210]</span> Physical Resistance')
+		desc='<span>+141 - 160</span> Physical Resistance',
+		ancient='<span>+176 - 210</span> Physical Resistance')
 	physical_res.save()
 
 	cold_res = Affix(id=27,
 		affix='Cold Res',
 		is_primary=False,
-		desc='<span>+[141 - 160]</span> Cold Resistance',
-		ancient='<span>+[176 - 210]</span> Cold Resistance')
+		desc='<span>+141 - 160</span> Cold Resistance',
+		ancient='<span>+176 - 210</span> Cold Resistance')
 	cold_res.save()
 
 	fire_res = Affix(id=28,
 		affix='Fire Res',
 		is_primary=False,
-		desc='<span>+[141 - 160]</span> Fire Resistance',
-		ancient='<span>+[176 - 210]</span> Fire Resistance')
+		desc='<span>+141 - 160</span> Fire Resistance',
+		ancient='<span>+176 - 210</span> Fire Resistance')
 	fire_res.save()
 
 	lightning_res = Affix(id=29,
 		affix='Lightning Res',
 		is_primary=False,
-		desc='<span>+[141 - 160]</span> Lightning Resistance',
-		ancient='<span>+[176 - 210]</span> Lightning Resistance')
+		desc='<span>+141 - 160</span> Lightning Resistance',
+		ancient='<span>+176 - 210</span> Lightning Resistance')
 	lightning_res.save()
 
 	poison_res = Affix(id=30,
 		affix='Poison Res',
 		is_primary=False,
-		desc='<span>+[141 - 160]</span> Poison Resistance',
-		ancient='<span>+[176 - 210]</span> Poison Resistance')
+		desc='<span>+141 - 160</span> Poison Resistance',
+		ancient='<span>+176 - 210</span> Poison Resistance')
 	poison_res.save()
 
 	arcane_res = Affix(id=31,
 		affix='Arcane Res',
 		is_primary=False,
-		desc='<span>+[141 - 160]</span> Arcane Resistance',
-		ancient='<span>+[176 - 210]</span> Arcane Resistance')
+		desc='<span>+141 - 160</span> Arcane Resistance',
+		ancient='<span>+176 - 210</span> Arcane Resistance')
 	arcane_res.save()
 
 	reduced_ranged_damage = Affix(id=32,
 		affix='Reduced Ranged Dmg',
 		is_primary=False,
-		desc='<span>+[6.0 - 7.0]%</span> Ranged Damage Reduction',
-		ancient='<span>+[6.0 - 7.0]%</span> Ranged Damage Reduction')
+		desc='<span>+6.0 - 7.0%</span> Ranged Damage Reduction',
+		ancient='<span>+6.0 - 7.0%</span> Ranged Damage Reduction')
 	reduced_ranged_damage.save()
 
 	reduced_melee_damage = Affix(id=33,
 		affix='Reduced Melee Dmg',
 		is_primary=False,
-		desc='<span>+[6.0 - 7.0]%</span> Melee Damage Reduction',
-		ancient='<span>+[6.0 - 7.0]%</span> Melee Damage Reduction')
+		desc='<span>+6.0 - 7.0%</span> Melee Damage Reduction',
+		ancient='<span>+6.0 - 7.0%</span> Melee Damage Reduction')
 	reduced_melee_damage.save()
 
 	life_per_kill = Affix(id=34,
 		affix='LPK',
 		is_primary=False,
-		desc='<span>+[6,428 - 8,914] Life per Kill',
-		ancient='<span>+[9,805 - 11,590] Life per Kill')
+		desc='<span>+6,428 - 8,914 Life per Kill',
+		ancient='<span>+9,805 - 11,590 Life per Kill')
 	life_per_kill.save()
 
 	extra_gold = Affix(id=35,
 		affix='Extra Gold',
 		is_primary=False,
-		desc='<span>+[71 - 80]%</span> Extra Gold from Monsters',
-		ancient='<span>+[71 - 80]%</span> Extra Gold from Monsters')
+		desc='<span>+71 - 80%</span> Extra Gold from Monsters',
+		ancient='<span>+71 - 80%</span> Extra Gold from Monsters')
 	extra_gold.save()
 
 	thorns = Affix(id=36,
 		affix='Thorns',
 		is_primary=False,
-		desc='Attackers take <span>[2,667 - 3,498]</span> damage',
-		ancient='Attackers take <span>[3,847 - 4,550]</span> damage')
+		desc='Attackers take <span>2,667 - 3,498</span> damage',
+		ancient='Attackers take <span>3,847 - 4,550</span> damage')
 	thorns.save()
 
 	exp_per_kill = Affix(id=37,
 		affix='Kill EXP',
 		is_primary=False,
-		desc='<span>+[140 - 200]</span> Experience per Kill',
-		ancient='<span>+[220 - 260]</span> Experience per Kill')
+		desc='<span>+140 - 200</span> Experience per Kill',
+		ancient='<span>+220 - 260</span> Experience per Kill')
 	exp_per_kill.save()
 
 	cc_reduction = Affix(id=38,
 		affix='CC Reduction',
 		is_primary=False,
-		desc='<span>+[20 - 40]%</span> Crowd Control Duration Reduction',
-		ancient='<span>+[20 - 40]%</span> Crowd Control Duration Reduction')
+		desc='<span>+20 - 40%</span> Crowd Control Duration Reduction',
+		ancient='<span>+20 - 40%</span> Crowd Control Duration Reduction')
 	cc_reduction.save()
 
 	blind_chance = Affix(id=39,
 		affix='Blind Chance',
 		is_primary=False,
-		desc='<span>+[1.0 - 5.1]%</span> Chance to Blind',
-		ancient='<span>+[1.0 - 5.1]%</span> Chance to Blind')
+		desc='<span>+1.0 - 5.1%</span> Chance to Blind',
+		ancient='<span>+1.0 - 5.1%</span> Chance to Blind')
 	blind_chance.save()
 
 	item_healing = Affix(id=40,
 		affix='Item Healing',
 		is_primary=False,
-		desc='<span>+[20,001 - 29.713]</span> Healing from Health Globes and Potions',
-		ancient='<span>+[32,684 - 38,625]</span> Healing from Health Globes and Potions')
+		desc='<span>+20,001 - 29.713</span> Healing from Health Globes and Potions',
+		ancient='<span>+32,684 - 38,625</span> Healing from Health Globes and Potions')
 	item_healing.save()
 
 
