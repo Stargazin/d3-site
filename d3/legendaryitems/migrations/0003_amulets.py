@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 from django.db import migrations, models
+from django.template.defaultfilters import slugify
 
 
 def load_amulets(apps, schema_editor):
@@ -137,7 +138,7 @@ def load_amulets(apps, schema_editor):
 		category='Amulet',
 		name='Kymbo\'s Gold',
 		pic='/assets/media/items/legendaries/accessories/amulets/kymbos_gold.png',
-		unique='Picking up gold heals you for an amount equal to the gold that was picked up.//<span>+75 - 100%</span> Extra Gold from Monsters',
+		unique='Picking up gold heals you for an amount equal to the gold that was picked up.///<span>+75 - 100%</span> Extra Gold from Monsters',
 		unique_is_primary=False)
 	kymbos.save()
 	# kymbos.affixes.add()
@@ -155,7 +156,7 @@ def load_amulets(apps, schema_editor):
 		category='Amulet',
 		name='Moonlight Ward',
 		pic='/assets/media/items/legendaries/accessories/amulets/moonlight_ward.png',
-		unique='Hitting an enemy within 15 yards has a chance to ward you with Arcane shards that explode when enemies get close, dealing <span>240 - 320%</span> weapon damage as Arcane to enemies within 15 yards.//Arcane skills do <span>+20 - 25%</span> more damage.',
+		unique='Hitting an enemy within 15 yards has a chance to ward you with Arcane shards that explode when enemies get close, dealing <span>240 - 320%</span> weapon damage as Arcane to enemies within 15 yards.///Arcane skills do <span>+20 - 25%</span> more damage.',
 		unique_is_primary=False)
 	moonlight.save()
 	moonlight.affixes.add(chc)
@@ -246,6 +247,10 @@ def load_amulets(apps, schema_editor):
 	xephirian.save()
 	xephirian.affixes.add(mainStat, ias)
 
+
+	for amulet in Amulet.objects.all():
+		amulet.slug = slugify(amulet.name)
+		amulet.save()
 
 class Migration(migrations.Migration):
 

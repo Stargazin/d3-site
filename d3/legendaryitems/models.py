@@ -19,17 +19,21 @@ class AmuletAffix(AffixModel):
 	def __str__(self):
 		return self.affix
 
+	class Meta:
+		verbose_name_plural = 'Amulet Affixes'
+
 
 class LegendaryModel(models.Model):
 	category = models.CharField(max_length=255)
 	name = models.CharField(max_length=255)
-	#name_slug = models.SlugField()
 	pic = models.ImageField(blank=True)
 	unique = models.TextField(blank=True)
 	unique_is_primary = models.NullBooleanField()
 	mats = models.ManyToManyField(Material, blank=True)
-		#if import problem (circular imports), use str 'miscitems.Material'
+		##if import problem (circular imports), use str 'miscitems.Material'
 	number_of_mats = models.CommaSeparatedIntegerField(max_length=32, blank=True)
+	notes = models.TextField(blank=True)
+	slug = models.SlugField(blank=True)
 
 	class Meta:
 		abstract = True
@@ -48,6 +52,11 @@ class Amulet(LegendaryModel):
 	## else put in secondary
 	## for affix in primary/secondary:
 	##   <li><p>{{ affix }}</p></li>
+
+	##not sure why but this doesn't work
+	## def save(self, *args, **kwargs):
+	## 	self.slug = slugify(self.name)
+	## 	super(Amulet, self).save(*args, **kwargs)
 
 	def __str__(self):
 		return self.name

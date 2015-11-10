@@ -4,7 +4,7 @@ from models import Amulet, AmuletAffix
 
 
 class AmuletAdmin(admin.ModelAdmin):
-	list_display = ('name', 'category', 'pic', 'pk')
+	list_display = ('name', 'slug', 'category', 'pic', 'pk')
 
 class AmuletAffixAdmin(admin.ModelAdmin):
 	list_display = ('affix', 'is_primary', 'desc', 'ancient', 'pk')

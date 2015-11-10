@@ -13,3 +13,6 @@ def playground(request):
 
 def amulets(request):
 	return render(request, 'legendaryitems/amulets.html', {})
+
+# def legendary_amulets(request):
+# 	

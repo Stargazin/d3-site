@@ -21,6 +21,8 @@ class Migration(migrations.Migration):
                 ('unique', models.TextField(blank=True)),
                 ('unique_is_primary', models.NullBooleanField()),
                 ('number_of_mats', models.CommaSeparatedIntegerField(max_length=32, blank=True)),
+                ('notes', models.TextField(blank=True)),
+                ('slug', models.SlugField(blank=True)),
             ],
             options={
                 'abstract': False,
@@ -36,7 +38,7 @@ class Migration(migrations.Migration):
                 ('ancient', models.TextField(blank=True)),
             ],
             options={
-                'abstract': False,
+                'verbose_name_plural': 'Amulet Affixes',
             },
         ),
         migrations.AddField(
