@@ -2,7 +2,8 @@ from __future__ import absolute_import
 	#from .models import x
 
 from django.http import HttpResponse
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_list_or_404, get_object_or_404
+from .models import Amulet
 
 
 def index(request):
@@ -11,8 +12,11 @@ def index(request):
 def playground(request):
 	return render(request, 'playground.html', {})
 
-def amulets(request):
+def amuletsss(request):
 	return render(request, 'legendaryitems/amulets.html', {})
 
-# def legendary_amulets(request):
-# 	
+def amulets(request):
+	context = {}
+	items = Amulet.objects.all()
+	context['items'] = items
+	return render(request, 'legendaryitems.html', context)

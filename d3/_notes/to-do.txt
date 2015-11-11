@@ -2,9 +2,6 @@ filters for legendaries:
 --crafting
 --cache
 
-!!split uniques with "//"
-split into list
-
 blood shards:
 drop rates in rift
 
@@ -17,7 +14,9 @@ have portrait to select class and prefilter
 
 
 
-
-
 TODODOODO
-view... ahh...
+{# primary and secondary randoms add to database and model -> remigrate #}
+add hrefs to anchor tags using slugs
+lightbox with template tags
+change color of uniques
+add tiny tiny bit of padding to guarenteed stats?

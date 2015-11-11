@@ -17,8 +17,8 @@ def load_amulet_affixes(apps, schema_editor):
 	element_dmg = Affix(id=1,
 		affix='Element Dmg',
 		is_primary=True,
-		desc='Skills of <span>[One Element]</span> do <span>15 - 20%</span> more damage',
-		ancient='Skills of <span>[One Element]</span> do <span>15 - 20%</span> more damage')
+		desc='Skills of [<span>One Element</span>] do <span>15 - 20%</span> more damage',
+		ancient='Skills of <span>[<span>One Element</span>]</span> do <span>15 - 20%</span> more damage')
 	element_dmg.save()
 
 	physical_dmg = Affix(id=2,
@@ -73,8 +73,8 @@ def load_amulet_affixes(apps, schema_editor):
 	main_stat = Affix(id=9,
 		affix='Main Stat',
 		is_primary=True,
-		desc='<span>+626 - 750 [Main Stat]</span>',
-		ancient='<span>+825 - 1,000 [Main Stat]</span>')
+		desc='<span>+626 - 750</span> [<span>Main Stat</span>]',
+		ancient='<span>+825 - 1,000</span> [<span>Main Stat</span>]')
 	main_stat.save()
 
 	dexterity = Affix(id=10,
@@ -187,8 +187,8 @@ def load_amulet_affixes(apps, schema_editor):
 	element_res = Affix(id=25,
 		affix='Element Res',
 		is_primary=False,
-		desc='<span>+141 - 160</span> Resistance to <span>[One Element]</span>',
-		ancient='<span>+176 - 210</span> Resistance to <span>[One Element]</span>')
+		desc='<span>+141 - 160</span> Resistance to [<span>One Element</span>]',
+		ancient='<span>+176 - 210</span> Resistance to [<span>One Element</span>]')
 	element_res.save()
 
 	physical_res = Affix(id=26,

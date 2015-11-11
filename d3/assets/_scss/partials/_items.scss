@@ -41,7 +41,7 @@
   .leg {
     flex: 0 1 auto;
     width: 32.6%;
-    min-height: 22rem;
+    min-height: 25rem;
     margin: 0.5rem 0;
     border: 2px solid rgb(175,180,185);
 
@@ -80,7 +80,9 @@
     flex: 0 1 auto;
     margin-top: 0.8rem;
     margin-right: 3.2rem;
+    // align-self: center;
   }
+
 
   .leg__info__affix {
     flex: 0 1 auto;
@@ -90,12 +92,18 @@
 
   .leg__affix--unique {
 
+    .unique {
+      padding-bottom: 1.2rem;
+    }
+
     p {
       color: #F28700;
     }
   }
 
-  .leg__affix-guarenteed {}
+  .leg__affix-guarenteed {
+    padding-bottom: 1.2rem;
+  }
 }
 
 
@@ -127,7 +135,7 @@
 }
 
 .leg__affix {
-  padding-bottom: 1.2rem;
+  // padding-bottom: 1.2rem;
   line-height: 2rem;
 
   .silver {

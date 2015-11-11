@@ -22,6 +22,7 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'', include('legendaryitems.urls')),
+    url(r'^items/', include('legendaryitems.urls')),
 ]
 
 # if settings.DEBUG:
