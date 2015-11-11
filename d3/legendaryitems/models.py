@@ -39,14 +39,14 @@ class LegendaryModel(models.Model):
 	notes = models.TextField(blank=True)
 	slug = models.SlugField(blank=True)
 
-	def uniques(self):
-		return self.unique.split("///")
-	#usage: {% for unique in item.uniques %}
-	#		{{ unique }}
-	#		{% endfor %}
-
 	class Meta:
 		abstract = True
+
+	# def uniques(self):
+	# 	return self.unique.split("///")
+	## usage: {% for unique in item.uniques %}
+	##		{{ unique }}
+	##		{% endfor %}
 
 class WeaponsModel(LegendaryModel):
 	attacks_per_second = models.DecimalField()
@@ -57,16 +57,25 @@ class WeaponsModel(LegendaryModel):
 @python_2_unicode_compatible
 class Amulet(LegendaryModel):
 	affixes = models.ManyToManyField(AmuletAffix, blank=True)
-	## figure out how to get queryset into list
-	## query for primary = list(Amulet.affixes.is_primary==True)
-	## else put in secondary
-	## for affix in primary/secondary:
-	##   <li><p>{{ affix }}</p></li>
 
 	##not sure why but this doesn't work
 	## def save(self, *args, **kwargs):
 	## 	self.slug = slugify(self.name)
 	## 	super(Amulet, self).save(*args, **kwargs)
+
+	def primary_affixes(self):
+		affixes = []
+		for affix in self.affixes.all():
+			if affix.is_primary:
+				affixes.append(affix)
+		return affixes
+
+	def secondary_affixes(self):
+		affixes = []
+		for affix in self.affixes.all():
+			if not affix.is_primary:
+				affixes.append(affix)
+		return affixes
 
 	def __str__(self):
 		return self.name

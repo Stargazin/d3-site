@@ -16,7 +16,11 @@ have portrait to select class and prefilter
 
 TODODOODO
 {# primary and secondary randoms add to database and model -> remigrate #}
-add hrefs to anchor tags using slugs
-lightbox with template tags
+{# add hrefs to anchor tags using slugs #}
+{# lightbox with template tags #}
+
+swap [] with {}
+make scss file for items
+lightbox pic-sm is off-center by 1px... why?
 change color of uniques
 add tiny tiny bit of padding to guarenteed stats?

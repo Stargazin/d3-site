@@ -116,7 +116,7 @@ def load_amulets(apps, schema_editor):
 		category='Amulet',
 		name='Halcyon\'s Ascent',
 		pic='/assets/media/items/legendaries/accessories/amulets/halcyons_ascent.png',
-		unique='When you use [<span>Class Skill</span>], you mesmerize nearby enemies with your skill, causing them to jump uncontrollably for <span>6 - 8</span> seconds.',
+		unique='When you use {<span>Class Skill</span>}, you mesmerize nearby enemies with your skill, causing them to jump uncontrollably for <span>6 - 8</span> seconds.',
 		unique_is_primary=False,
 		random_primaries='2',
 		random_secondaries='1',
@@ -141,7 +141,7 @@ def load_amulets(apps, schema_editor):
 		category='Amulet',
 		name='Hellfire Amulet',
 		pic='/assets/media/items/legendaries/accessories/amulets/hellfire_amulet.png',
-		unique='Gain a [<span>Class Specific</span>] passive.',
+		unique='Gain a {<span>Class Specific</span>} passive.',
 		unique_is_primary=False,
 		random_primaries='2',
 		random_secondaries='1')

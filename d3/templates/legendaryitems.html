@@ -41,79 +41,75 @@
 
   </div> <!-- .leg-container -->
 
-
-  <div class="lb" id="countess-julias-cameo">
+  {% for item in items %}
+  <div class="lb" id="{{ item.slug }}">
     <a class="lb__back" href="#"></a>
     <div class="leg">
 
       <div class="leg__info">
         <div class="leg__info__pic">
-          <img class="pic-sm" src="../assets/media/items/legendaries/accessories/amulets/countess_julias_cameo.png">
+          <span class="pic-sm" style="background: url({{ item.pic }})"></span>
         </div> <!-- leg__info__pic -->
 
         <div class="leg__info__details">
           <div class="leg__info__details__name leg__name">
-            <span>Countess Julia's Cameo</span>
+            <span>{{ item.name }}</span>
           </div> <!-- leg__info__details__name.leg__name -->
           <div class="leg__info__details__type">
-            <span>Amulet</span>
+            <span>{{ item.category }}</span> 
           </div> <!-- leg__info__details__type -->
-        </div> <!-- leg__info__details -->
-      </div> <!-- leg__info-container -->
+        </div> <!-- leg__info__details__name -->
+      </div> <!-- leg__info__details -->
 
-        <div class="leg__affix leg__affix--primary">
-          <span>Primary</span>
-          <li><p><span>+5.0 - 7.0%</span> Attack Speed</p></li>
-          <li><p><span>+626 - 750</span> Main Stat</p></li>
-          <li><p><span>+2</span> Random Affixes</p></li>
-        </div> <!-- leg__affix-primary -->
-        <div class="leg__affix leg__affix--secondary">
-          <span>Secondary</span>
-          <li class="unique"><p>Prevent all Arcane damage taken and heal yourself for <span>20 - 25%</span> of the amount prevented.</p></li>
-          <li><p><span>+2</span> Random Affixes</p></li>
-        </div> <!-- leg__affix-secondary -->
+      <div class="leg__affix leg__affix--primary">
+        <span>Primary</span>
+
+        {% if item.unique and item.unique_is_primary %}
+        <li class="unique"><p>{{ item.unique|safe }}</p></li>
+        {% endif %}
+
+        {% if item.unique2 and item.unique2_is_primary %}
+        <li class="unique"><p>{{ item.unique2|safe }}</p></li>
+        {% endif %}
+
+        {% if item.primary_affixes %}
+        {% for affix in item.primary_affixes %}
+        <li><p>{{ affix.desc|safe }}</p></li>
+        {% endfor %}
+        {% endif %}
+
+        <li>
+          <p><span>+{{ item.random_primaries }}</span> Random Affixes</p>
+        </li>
+      </div> <!-- leg__affix-primary -->
+
+      <div class="leg__affix leg__affix--secondary">
+        <span>Secondary</span>
+        {% if item.unique and not item.unique_is_primary %}
+        <li class="unique"><p>{{ item.unique|safe }}</p></li>
+        {% endif %}
+
+        {% if item.unique2 and not item.unique2_is_primary %}
+        <li class="unique"><p>{{ item.unique2|safe }}</p></li>
+        {% endif %}
+
+        {% if item.secondary_affixes %}
+        {% for affix in item.secondary_affixes %}
+        <li><p>{{ affix.desc|safe }}</p></li>
+        {% endfor %}
+        {% endif %}
+        
+        <li>
+          <p><span>+{{ item.random_secondaries }}</span> Random Affixes</p>
+        </li>
+      </div> <!-- leg__affix-secondary -->
 
       <div class="leg__note">
       </div> <!-- leg__note -->
+
     </div> <!-- leg -->
   </div> <!-- .lb -->
-
-
-  <div class="lb" id="countess-julias-cameo">
-    <a class="lb__back" href="#"></a>
-    <div class="leg">
-
-      <div class="leg__info">
-        <div class="leg__info__pic">
-          <img class="pic-sm" src="../assets/media/items/legendaries/accessories/amulets/countess_julias_cameo.png">
-        </div> <!-- leg__info__pic -->
-
-        <div class="leg__info__details">
-          <div class="leg__info__details__name leg__name">
-            <span>Countess Julia's Cameo</span>
-          </div> <!-- leg__info__details__name.leg__name -->
-          <div class="leg__info__details__type">
-            <span>Amulet</span>
-          </div> <!-- leg__info__details__type -->
-        </div> <!-- leg__info__details -->
-      </div> <!-- leg__info-container -->
-
-        <div class="leg__affix leg__affix--primary">
-          <span>Primary</span>
-          <li><p><span>+5.0 - 7.0%</span> Attack Speed</p></li>
-          <li><p><span>+626 - 750</span> Main Stat</p></li>
-          <li><p><span>+2</span> Random Affixes</p></li>
-        </div> <!-- leg__affix-primary -->
-        <div class="leg__affix leg__affix--secondary">
-          <span>Secondary</span>
-          <li class="unique"><p>Prevent all Arcane damage taken and heal yourself for <span>20 - 25%</span> of the amount prevented.</p></li>
-          <li><p><span>+2</span> Random Affixes</p></li>
-        </div> <!-- leg__affix-secondary -->
-
-      <div class="leg__note">
-      </div> <!-- leg__note -->
-    </div> <!-- leg -->
-  </div> <!-- .lb -->
+  {% endfor %}
 
 </main>
 
