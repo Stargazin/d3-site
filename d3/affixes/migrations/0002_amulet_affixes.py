@@ -129,7 +129,7 @@ def load_amulet_affixes(apps, schema_editor):
 	life_per_second = Affix(id=17,
 		affix='LPS',
 		is_primary=True,
-		desc='<span>+6448 - 7678</span> Life Regeneration per Second',
+		desc='<span>+6,448 - 7,678</span> Life Regeneration per Second',
 		ancient='<span>+8,845 - 10,000</span> Life Regeneration per Second')
 	life_per_second.save()
 
@@ -247,54 +247,54 @@ def load_amulet_affixes(apps, schema_editor):
 		ancient='<span>+6.0 - 7.0%</span> Melee Damage Reduction')
 	reduced_melee_damage.save()
 
-	life_per_kill = Affix(id=34,
-		affix='LPK',
-		is_primary=False,
-		desc='<span>+6,428 - 8,914 Life per Kill',
-		ancient='<span>+9,805 - 11,590 Life per Kill')
-	life_per_kill.save()
-
-	extra_gold = Affix(id=35,
-		affix='Extra Gold',
-		is_primary=False,
-		desc='<span>+71 - 80%</span> Extra Gold from Monsters',
-		ancient='<span>+71 - 80%</span> Extra Gold from Monsters')
-	extra_gold.save()
-
-	thorns = Affix(id=36,
-		affix='Thorns',
-		is_primary=False,
-		desc='Attackers take <span>2,667 - 3,498</span> damage',
-		ancient='Attackers take <span>3,847 - 4,550</span> damage')
-	thorns.save()
-
-	exp_per_kill = Affix(id=37,
-		affix='Kill EXP',
-		is_primary=False,
-		desc='<span>+140 - 200</span> Experience per Kill',
-		ancient='<span>+220 - 260</span> Experience per Kill')
-	exp_per_kill.save()
-
-	cc_reduction = Affix(id=38,
+	cc_reduction = Affix(id=34,
 		affix='CC Reduction',
 		is_primary=False,
 		desc='<span>+20 - 40%</span> Crowd Control Duration Reduction',
 		ancient='<span>+20 - 40%</span> Crowd Control Duration Reduction')
 	cc_reduction.save()
 
-	blind_chance = Affix(id=39,
+	thorns = Affix(id=35,
+		affix='Thorns',
+		is_primary=False,
+		desc='Attackers take <span>2,667 - 3,498</span> damage',
+		ancient='Attackers take <span>3,847 - 4,550</span> damage')
+	thorns.save()
+
+	blind_chance = Affix(id=36,
 		affix='Blind Chance',
 		is_primary=False,
 		desc='<span>+1.0 - 5.1%</span> Chance to Blind',
 		ancient='<span>+1.0 - 5.1%</span> Chance to Blind')
 	blind_chance.save()
 
-	item_healing = Affix(id=40,
+	item_healing = Affix(id=37,
 		affix='Item Healing',
 		is_primary=False,
 		desc='<span>+20,001 - 29.713</span> Healing from Health Globes and Potions',
 		ancient='<span>+32,684 - 38,625</span> Healing from Health Globes and Potions')
 	item_healing.save()
+
+	life_per_kill = Affix(id=38,
+		affix='LPK',
+		is_primary=False,
+		desc='<span>+6,428 - 8,914</span> Life per Kill',
+		ancient='<span>+9,805 - 11,590</span> Life per Kill')
+	life_per_kill.save()
+
+	exp_per_kill = Affix(id=39,
+		affix='Kill EXP',
+		is_primary=False,
+		desc='<span>+140 - 200</span> Experience per Kill',
+		ancient='<span>+220 - 260</span> Experience per Kill')
+	exp_per_kill.save()
+
+	extra_gold = Affix(id=40,
+		affix='Extra Gold',
+		is_primary=False,
+		desc='<span>+71 - 80%</span> Extra Gold from Monsters',
+		ancient='<span>+71 - 80%</span> Extra Gold from Monsters')
+	extra_gold.save()
 
 
 class Migration(migrations.Migration):

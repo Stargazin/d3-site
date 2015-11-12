@@ -15,8 +15,18 @@ TODODODO
 --decide before getting all items
 ---b/c you may have to add spans or something #}
 
-check this out for snapping lightboxes back
-https://forums.adobe.com/thread/1545164
+
+rings fixture
+
+
+** may have to do each type in seperate model/admin
+--can still do them in same migration file if needed?
+---probably not a big deal to just seperate them == just more files
+follower relics
+--do seperate models/admin if affixes are diff
+
+offhands
+--see above follower relics
 
 add tiny tiny bit of padding to guarenteed stats?
 
@@ -38,3 +48,5 @@ pick a class:
 have portrait to select class and prefilter
 
 use js to make lightbox snap back to item location after exiting
+check this out for snapping lightboxes back
+https://forums.adobe.com/thread/1545164
