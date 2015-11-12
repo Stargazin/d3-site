@@ -22,6 +22,15 @@ class AmuletAffix(AffixModel):
 	class Meta:
 		verbose_name_plural = 'Amulet Affixes'
 
+@python_2_unicode_compatible
+class RingAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Ring Affixes'
+
 
 class LegendaryModel(models.Model):
 	category = models.CharField(max_length=255)
@@ -38,6 +47,20 @@ class LegendaryModel(models.Model):
 	number_of_mats = models.CommaSeparatedIntegerField(max_length=32, blank=True)
 	notes = models.TextField(blank=True)
 	slug = models.SlugField(blank=True)
+
+	def primary_affixes(self):
+		affixes = []
+		for affix in self.affixes.all():
+			if affix.is_primary:
+				affixes.append(affix)
+		return affixes
+
+	def secondary_affixes(self):
+		affixes = []
+		for affix in self.affixes.all():
+			if not affix.is_primary:
+				affixes.append(affix)
+		return affixes
 
 	class Meta:
 		abstract = True
@@ -58,24 +81,12 @@ class WeaponsModel(LegendaryModel):
 class Amulet(LegendaryModel):
 	affixes = models.ManyToManyField(AmuletAffix, blank=True)
 
-	##not sure why but this doesn't work
-	## def save(self, *args, **kwargs):
-	## 	self.slug = slugify(self.name)
-	## 	super(Amulet, self).save(*args, **kwargs)
+	def __str__(self):
+		return self.name
 
-	def primary_affixes(self):
-		affixes = []
-		for affix in self.affixes.all():
-			if affix.is_primary:
-				affixes.append(affix)
-		return affixes
-
-	def secondary_affixes(self):
-		affixes = []
-		for affix in self.affixes.all():
-			if not affix.is_primary:
-				affixes.append(affix)
-		return affixes
+@python_2_unicode_compatible
+class Ring(LegendaryModel):
+	affixes = models.ManyToManyField(RingAffix, blank=True)
 
 	def __str__(self):
 		return self.name

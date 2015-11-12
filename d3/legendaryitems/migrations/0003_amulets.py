@@ -56,7 +56,7 @@ def load_amulets(apps, schema_editor):
 		category='Amulet',
 		name='Ancestors\' Grace',
 		pic='/assets/media/items/legendaries/accessories/amulets/ancestors_grace.png',
-		unique='When receiving fatal damage, you are instead restored to 100% of maximum Life and resources. This item is destroyed in the process.',
+		unique='When receiving fatal damage, you are instead restored to <span class="silver">100%</span> of maximum Life and resources. This item is destroyed in the process.',
 		unique_is_primary=True,
 		random_primaries='2',
 		random_secondaries='1',)
@@ -104,7 +104,7 @@ def load_amulets(apps, schema_editor):
 		category='Amulet',
 		name='Golden Gorget of Leoric',
 		pic='/assets/media/items/legendaries/accessories/amulets/golden_gorget_of_leoric.png',
-		unique='After earning a massacre bonus, <span>4 - 6</span> Skeletons are summoned to fight by your side for 10 seconds.',
+		unique='After earning a massacre bonus, <span>4 - 6</span> Skeletons are summoned to fight by your side for <span class="silver>10</span> seconds.',
 		unique_is_primary=False,
 		random_primaries='1',
 		random_secondaries='1')
@@ -129,7 +129,7 @@ def load_amulets(apps, schema_editor):
 		category='Amulet',
 		name='Haunt of Vaxo',
 		pic='/assets/media/items/legendaries/accessories/amulets/haunt_of_vaxo.png',
-		unique='Summons shadow clones to your aid when you Stun an enemy. This effect may occur once every 30 seconds.',
+		unique='Summons shadow clones to your aid when you Stun an enemy. This effect may occur once every <span class="silver">30</span> seconds.',
 		unique_is_primary=False,
 		random_primaries='2',
 		random_secondaries='1')
@@ -192,7 +192,7 @@ def load_amulets(apps, schema_editor):
 		pic='/assets/media/items/legendaries/accessories/amulets/moonlight_ward.png',
 		unique='Arcane skills do <span>+20 - 25%</span> more damage.',
 		unique_is_primary=True,
-		unique2='Enemies hit within 15 yards have a chance to spawn Arcane shards that explode and deal <span>240 - 320%</span> Arcane damage to enemies within 15 yards.',
+		unique2='Enemies hit within <span class="silver">15</span> yards have a chance to spawn Arcane shards that explode and deal <span>240 - 320%</span> Arcane damage to enemies within <span class="silver">15</span> yards.',
 		unique2_is_primary=False,
 		random_primaries='2',
 		random_secondaries='1')
@@ -214,7 +214,7 @@ def load_amulets(apps, schema_editor):
 		category='Amulet',
 		name='Overwhelming Desire',
 		pic='/assets/media/items/legendaries/accessories/amulets/overwhelming_desire.png',
-		unique='Chance on hit to charm the enemy. While charmed, the enemy takes 35% more damage.',
+		unique='Chance on hit to charm the enemy. While charmed, the enemy takes <span class="silver">35%</span> more damage.',
 		unique_is_primary=False,
 		random_primaries='2',
 		random_secondaries='1')
@@ -303,7 +303,7 @@ def load_amulets(apps, schema_editor):
 	star.affixes.add(mainStat, cdr)
 
 
-	xephirian = Amulet(id=22,
+	xephirian = Amulet(id=21,
 		category='Amulet',
 		name='Xephirian Amulet',
 		pic='/assets/media/items/legendaries/accessories/amulets/xephirian_amulet.png',

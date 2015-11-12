@@ -5,10 +5,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% block playground-css %}
+  {% block css %}
   <link rel="stylesheet" href="{% static 'css/base.min.css' %}">
-  {% endblock playground-css %}
-  {% block css %}{% endblock css %}
+  {% endblock css %}
   <title>{% block title %}D3 Kings{% endblock title%}</title>
 </head>
 <body>
@@ -115,7 +114,7 @@
           <li class="link drop__link"><a href="">Accessories</a>
             <ul class="drop drop--right">
               <li class="link drop__link"><a href="">Rings</a></li>
-              <li class="link drop__link"><a href="/amulets">Amulets</a></li>
+              <li class="link drop__link"><a href="{% url 'amulets' %}">Amulets</a></li>
               <li class="link drop__link"><a href="">Follower</a></li>
               <li class="link drop__link drop__link--all">
                 <a href="">Show All</a></li>

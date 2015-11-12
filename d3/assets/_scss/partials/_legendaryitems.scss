@@ -1,0 +1,147 @@
+/* partials/items
+ =========================================================================== 
+ =========================================================================== */
+
+.leg-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 138rem;
+  margin: 5rem auto 3rem auto;
+  border: 1px solid rgb(200,205,210);
+  border-radius: 1rem;
+  padding: 0.3rem 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: $roboto;
+  background-color: $alice-blue;
+
+  @media #{$break-xxl} {
+    max-width: 103rem;
+    padding: 0.7rem 0;
+  }
+
+  @media #{$break-xl} {
+    max-width: 95rem;
+  }
+
+  @media #{$break-l} {
+    max-width: 65rem;
+  }
+
+  @media #{$break-m} {
+    max-width: 58rem;
+  }
+
+  @media #{$break-s} {
+    border: none;
+    border-radius: 0.5rem;
+  }
+}
+
+.leg {
+  flex: 0 1 auto;
+  width: 32.6%;
+  min-height: 25rem;
+  margin: 0.5rem 0;
+  border: 2px solid rgb(175,180,185);
+  background-color: $ebony-clay;
+
+  @media #{$break-xxl} {
+    width: 48.8%;
+  }
+
+  @media #{$break-l} {
+    width: 96%;
+    margin: 0.4rem 0;
+  }
+}
+
+.leg__name {
+  display: block;
+  width: 100%;
+  margin: 1.2rem 0;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.4em;
+  font-family: $playfair;
+  // color: #F28700;
+  color: #EC7211;
+}
+
+.leg__info {
+  display: flex;
+  justify-content: flex-start;
+  width: 86%;
+  margin: auto;
+  padding-bottom: 2.2rem;
+
+  @media #{$break-s} {
+    width: 91%;
+  }
+}
+
+.leg__info__pic {
+  flex: 0 1 auto;
+  margin-top: 0.8rem;
+  margin-right: 3.2rem;
+  min-width: 70px;
+  height: 134px;
+  border: 2px solid #EC7211;
+  border-radius: 9px;
+  background-color: $madison;
+}
+
+.pic-sm {
+  display: inline-block;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.leg__info__affix-container {
+  flex: 0 1 auto;
+  margin-top: 0.8rem;
+  text-align: left;
+}
+
+.leg__info__affix {
+  line-height: 2rem;
+
+  li {
+    text-indent: -1em;
+    color: rgb(245,245,255);
+
+    p {
+      color: #7D7DFF;
+    }
+
+    span {
+      display: inline-block;
+      text-indent: 0;
+      color: #C89DFF;
+    }
+  }
+}
+
+.leg__info__affix--unique {
+  .unique {
+    padding-bottom: 1.2rem;
+    line-height: normal;
+
+    .silver {
+      color: $iron;
+    }
+
+    p {
+      // color: #F28700;
+      color: #D27500;
+    }
+  }
+}
+
+.leg__info__affix-guarenteed {
+  padding-bottom: 1.2rem;
+}

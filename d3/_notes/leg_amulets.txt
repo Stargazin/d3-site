@@ -1,24 +1,3 @@
-don't think this will work...
-1) try adding margins to .legendary if
-margin -> border -> padding -> width
-2) if not, try .legendary-outer w/ padding top/bot
-and .legendary-inner (still want a set height--use rem)
--> goal is to get rid of set height on .legendary-container
-
-
-
-General
-  Type--Amulet
-  (LB) Start by showing ancient; toggle to norm
-  Name
-  Crafted (+mats)
-
-Column
-  Primary
-    ((guarenteed affix))
-  Secondary
-    ((guarenteed affix))
-
 Primary
   [60-80]-[120-160] dmg
     {A}[88-105]-[168-210]

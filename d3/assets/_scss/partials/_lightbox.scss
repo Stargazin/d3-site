@@ -21,18 +21,19 @@
     position: fixed;
     width: 100%;
     height: 100%;
+    cursor: crosshair;
     background: rgba($madison, 0.9);
   }
 
-  .leg {
+  .lb__leg {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 46rem;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
     border: 2px solid #F0F0F0;
+    transform: translate(-50%,-50%);
     background-color: $ebony-clay;
 
     @media #{$break-m} {
@@ -48,7 +49,7 @@
     }
   }
 
-  .leg__info {
+  .lb__leg__info {
     display: flex;
     justify-content: space-around;
     width: 80%;
@@ -64,7 +65,7 @@
     }
   }
 
-  .leg__info__pic {
+  .lb__leg__info__pic {
     display: block;
     margin-left: 1.8rem;
     min-width: 70px;
@@ -83,24 +84,25 @@
 
     .pic-sm {
       left: 1px;
+      //partials/legendaryitems
     }
   }
 
-  .leg__info__details {
+  .lb__leg__info__details {
+    position: relative;
     margin-left: 2.7rem;
+    width: 80%;
     text-align: left;
     color: #F28700;
-    width: 80%;
-    position: relative;
   }
 
-  .leg__info__details__name {
+  .lb__leg__info__details__name {
+    text-decoration: underline;
     font-size: 1.4em;
     font-family: $playfair;
-    text-decoration: underline;
   }
 
-  .leg__info__details__type {
+  .lb__leg__info__details__type {
     margin: 1.5rem 0 0 0.7rem;
     font-size: 1.1em;
     font-style: italic;
@@ -113,31 +115,30 @@
     @media #{$break-m} {
       margin: 2rem 0 0 0.3rem;
     }
-
   }
 
-  .leg__affix {
+  .lb__leg__affix {
     width: 63%;
-    text-align: left;
     margin-left: 17%;
     padding-bottom: 1.2rem;
+    text-align: left;
     line-height: 2rem;
 
     @media #{$break-s} {
-      margin-left: 15%;
       width: 69%;
+      margin-left: 15%;
     }
 
     & > span {
-      color: rgb(250,250,255);
       line-height: 2.5rem;
+      color: rgb(250,250,255);
     }
 
     li {
       margin-left: 1.7rem;
       padding-top: 0.2rem;
-      color: rgb(245,245,255);
       text-indent: -1em;
+      color: rgb(245,245,255);
     }
 
     p {
@@ -153,6 +154,10 @@
     .unique {
       line-height: normal;
 
+      .silver {
+        color: $iron;
+      }
+
       p {
         // color: #EC7211;
         color: #D27500;
@@ -160,9 +165,9 @@
     }
   }
 
-  .leg__affix--primary {}
+  .lb__leg__affix--primary {}
 
-  .leg__affix--secondary {}
+  .lb__leg__affix--secondary {}
 
-  .leg__note {}
+  .lb__leg__note {}
 }

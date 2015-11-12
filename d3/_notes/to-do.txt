@@ -1,3 +1,28 @@
+TODODODO
+{# primary and secondary randoms add to database and model -> remigrate #}
+{# add hrefs to anchor tags using slugs #}
+{# lightbox with template tags #}
+{# swap [] with {} #}
+{# add href to nav links
+--do as you go along; not all at once #}
+{# refactor legendaryitems template classes #}
+{# refactor/get rid of amulets
+++extend css files from base for items #}
+{# make scss file for items
+--combine lightbox and items into legendaryitems
+--or idk... just refactor the two and see #}
+{# add color to fixed stat or something?
+--decide before getting all items
+---b/c you may have to add spans or something #}
+
+check this out for snapping lightboxes back
+https://forums.adobe.com/thread/1545164
+
+add tiny tiny bit of padding to guarenteed stats?
+
+
+===============================================
+
 filters for legendaries:
 --crafting
 --cache
@@ -12,15 +37,4 @@ add small arrows to indivcate expandable.
 pick a class:
 have portrait to select class and prefilter
 
-
-
-TODODOODO
-{# primary and secondary randoms add to database and model -> remigrate #}
-{# add hrefs to anchor tags using slugs #}
-{# lightbox with template tags #}
-
-swap [] with {}
-make scss file for items
-lightbox pic-sm is off-center by 1px... why?
-change color of uniques
-add tiny tiny bit of padding to guarenteed stats?
+use js to make lightbox snap back to item location after exiting

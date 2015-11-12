@@ -120,15 +120,6 @@ button,
 select {
   text-transform: none; }
 
-/* Reset sources
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/**
- * box-sizing: border-box
- * http://stackoverflow.com/questions/29605843/how-do-you-add-box-sizing-border-box-to-normalize-css-file
-
- * normalize.css
- * https://github.com/necolas/normalize.css/
- */
 /* partials/global
  =========================================================================== 
  =========================================================================== */
@@ -165,7 +156,7 @@ button:hover {
  =========================================================================== */
 header {
   z-index: 100;
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: 500; }
 
 .link-container {
@@ -173,14 +164,14 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: auto;
+  position: relative;
   -webkit-border-radius: 0 0 1rem 1rem;
           border-radius: 0 0 1rem 1rem;
+  margin: auto;
   width: 97%;
   text-align: center;
   background-color: #e4f1fe; }
@@ -222,6 +213,9 @@ header {
   position: absolute;
   background: #6c7a89; }
 
+.drop--down {
+  font-size: 0.85em; }
+
 .drop--down > .drop__link:nth-child(1) {
   border-top: 0.1rem solid #5B6978; }
 
@@ -229,7 +223,6 @@ header {
   width: 14rem;
   border-bottom: 0.1rem solid #62707F;
   line-height: 3.4rem !important;
-  font-size: 0.95em;
   font-weight: 400;
   font-family: "Roboto", sans-serif; }
   .drop__link:hover {
