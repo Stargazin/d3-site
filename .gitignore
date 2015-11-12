@@ -65,3 +65,7 @@ secrets.json
 # Sublime
 d3_project.sublime-project
 d3_project.sublime-workspace
+
+# Project Files
+d3/assets/media/*
+d3/_legacy/*

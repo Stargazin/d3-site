@@ -83,7 +83,7 @@ PREREQ_APPS = (
 PROJECT_APPS = (
     'core',
     'affixes',
-    'legendaryitems',
+    'legendaries',
     'miscitems',
 )
 

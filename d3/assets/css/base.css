@@ -435,7 +435,7 @@ header {
             justify-content: space-around;
     width: 80%;
     margin: 0 auto;
-    padding: 3rem 0; }
+    padding: 3rem 0 2rem; }
     @media only screen and (max-width: 768px) {
       .lb .lb__leg__info {
         width: 75%; } }
