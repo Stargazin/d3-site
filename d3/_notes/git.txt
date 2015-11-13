@@ -1,4 +1,0 @@
-git checkout -f
-
-don't use git reset (it's hard reset)
-use git revert
