@@ -3,7 +3,7 @@ from django.contrib import admin
 from .models import AmuletAffix, RingAffix, SourceAffix
 
 class AffixAdmin(admin.ModelAdmin):
-	list_display = ('affix', 'is_primary', 'desc', 'ancient', 'pk')
+	list_display = ('affix', 'pk', 'is_primary', 'desc', 'ancient',)
 	list_filter = ('is_primary',)
 
 class AmuletAffixAdmin(AffixAdmin):

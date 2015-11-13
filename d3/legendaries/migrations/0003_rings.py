@@ -9,38 +9,44 @@ def load_rings(apps, schema_editor):
 	Ring = apps.get_model("legendaries", "Ring")
 	RingAffix = apps.get_model("affixes", "RingAffix")
 
-	dmg = RingAffix.objects.get(pk=0)
-	mainStat = RingAffix.objects.get(pk=1)
-	dext = RingAffix.objects.get(pk=2)
-	inte = RingAffix.objects.get(pk=3)
-	stre = RingAffix.objects.get(pk=4)
-	vita = RingAffix.objects.get(pk=5)
-	life = RingAffix.objects.get(pk=6)
-	armor = RingAffix.objects.get(pk=7)
-	allRes = RingAffix.objects.get(pk=8)
-	lps = RingAffix.objects.get(pk=9)
-	lph = RingAffix.objects.get(pk=10)
-	ias = RingAffix.objects.get(pk=11)
-	chc = RingAffix.objects.get(pk=12)
-	chd = RingAffix.objects.get(pk=13)
-	areaDmg = RingAffix.objects.get(pk=14)
-	cdr = RingAffix.objects.get(pk=15)
-	rcr = RingAffix.objects.get(pk=16)
-	sockets = RingAffix.objects.get(pk=17)
+	dmg = RingAffix.objects.get(affix='dmg')
+	mainStat = RingAffix.objects.get(affix='mainStat')
+	dext = RingAffix.objects.get(affix='dext')
+	inte = RingAffix.objects.get(affix='inte')
+	stre = RingAffix.objects.get(affix='stre')
+	vita = RingAffix.objects.get(affix='vita')
 
-	eleRes = RingAffix.objects.get(pk=18)
-	physRes = RingAffix.objects.get(pk=19)
-	coldRes = RingAffix.objects.get(pk=20)
-	fireRes = RingAffix.objects.get(pk=21)
-	lightRes = RingAffix.objects.get(pk=22)
-	poisRes = RingAffix.objects.get(pk=23)
-	arcaneRes = RingAffix.objects.get(pk=24)
-	ccReduction = RingAffix.objects.get(pk=25)
-	thorns = RingAffix.objects.get(pk=26)
-	itemHealing = RingAffix.objects.get(pk=27)
-	lpk = RingAffix.objects.get(pk=28)
-	exp = RingAffix.objects.get(pk=29)
-	extraGold = RingAffix.objects.get(pk=30)
+	life = RingAffix.objects.get(affix='life')
+	armor = RingAffix.objects.get(affix='armor')
+	allRes = RingAffix.objects.get(affix='allRes')
+	lps = RingAffix.objects.get(affix='lps')
+	lph = RingAffix.objects.get(affix='lph')
+
+	ias = RingAffix.objects.get(affix='ias')
+	chc = RingAffix.objects.get(affix='chc')
+	chd = RingAffix.objects.get(affix='chd')
+	areaDmg = RingAffix.objects.get(affix='areaDmg')
+
+	cdr = RingAffix.objects.get(affix='cdr')
+	rcr = RingAffix.objects.get(affix='rcr')
+	sockets = RingAffix.objects.get(affix='sockets')
+
+
+	eleRes = RingAffix.objects.get(affix='eleRes')
+	physRes = RingAffix.objects.get(affix='physRes')
+	coldRes = RingAffix.objects.get(affix='coldRes')
+	fireRes = RingAffix.objects.get(affix='fireRes')
+	lightRes = RingAffix.objects.get(affix='lightRes')
+	poisRes = RingAffix.objects.get(affix='poisRes')
+	arcaneRes = RingAffix.objects.get(affix='arcaneRes')
+
+	ccReduction = RingAffix.objects.get(affix='ccReduction')
+	thorns = RingAffix.objects.get(affix='thorns')
+	itemHealing = RingAffix.objects.get(affix='itemHealing')
+	lpk = RingAffix.objects.get(affix='lpk')
+
+	killExp = RingAffix.objects.get(affix='killExp')
+	extraGold = RingAffix.objects.get(affix='extraGold')
 
 
 	arcstone = Ring(id=0,
@@ -166,7 +172,7 @@ def load_rings(apps, schema_editor):
 		random_primaries='4',
 		random_secondaries='1')
 	hellfire_45.save()
-	hellfire_45.affixes.add()
+	# hellfire_45.affixes.add()
 
 	justice = Ring(id=11,
 		category='Ring',
