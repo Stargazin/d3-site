@@ -28,3 +28,12 @@ class RingAffix(AffixModel):
 
 	class Meta:
 		verbose_name_plural = 'Ring Affixes'
+
+@python_2_unicode_compatible
+class SourceAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Source Affixes'

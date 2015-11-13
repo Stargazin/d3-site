@@ -2,7 +2,7 @@ from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
 
 from miscitems.models import Material
-from affixes.models import AmuletAffix, RingAffix
+from affixes.models import AmuletAffix, RingAffix, SourceAffix
 
 
 class LegendaryModel(models.Model):
@@ -13,6 +13,8 @@ class LegendaryModel(models.Model):
 	unique_is_primary = models.NullBooleanField()
 	unique2 = models.TextField(blank=True)
 	unique2_is_primary = models.NullBooleanField()
+	unique3 = models.TextField(blank=True)
+	unique3_is_primary = models.NullBooleanField()
 	random_primaries = models.CharField(blank=True, max_length=1)
 	random_secondaries = models.CharField(blank=True, max_length=1)
 	mats = models.ManyToManyField(Material, blank=True)
@@ -44,11 +46,6 @@ class LegendaryModel(models.Model):
 	##		{{ unique }}
 	##		{% endfor %}
 
-class WeaponsModel(LegendaryModel):
-	attacks_per_second = models.DecimalField()
-
-	class Meta:
-		abstract = True
 
 @python_2_unicode_compatible
 class Amulet(LegendaryModel):
@@ -63,3 +60,31 @@ class Ring(LegendaryModel):
 
 	def __str__(self):
 		return self.name
+
+
+@python_2_unicode_compatible
+class Source(LegendaryModel):
+	affixes = models.ManyToManyField(SourceAffix, blank=True)
+
+	def __str__(self):
+		return self.name
+
+
+# @python_2_unicode_compatible
+# class (LegendaryModel):
+# 	affixes = models.ManyToManyField(Affix, blank=True)
+
+# 	def __str__(self):
+# 		return self.name
+
+
+
+
+
+
+
+class WeaponsModel(LegendaryModel):
+	attacks_per_second = models.DecimalField()
+
+	class Meta:
+		abstract = True

@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Amulet, Ring
+from .models import Amulet, Ring, Source
 
 
 class LegendaryAdmin(admin.ModelAdmin):
@@ -12,6 +12,15 @@ class AmuletAdmin(LegendaryAdmin):
 class RingAdmin(LegendaryAdmin):
 	pass
 
+class SourceAdmin(LegendaryAdmin):
+	pass
+
+
+# class Admin(LegendaryAdmin):
+# 	pass
+
 
 admin.site.register(Amulet, AmuletAdmin)
 admin.site.register(Ring, RingAdmin)
+admin.site.register(Source, SourceAdmin)
+# admin.site.register(, Admin)

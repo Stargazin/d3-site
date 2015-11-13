@@ -15,7 +15,6 @@ TODODODO
 --decide before getting all items
 ---b/c you may have to add spans or something #}
 
-
 rings fixture
 
 

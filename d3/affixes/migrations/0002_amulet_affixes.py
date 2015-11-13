@@ -14,102 +14,93 @@ def load_amulet_affixes(apps, schema_editor):
 		ancient='<span>+88 - 105</span>-<span>168 - 210</span> Damage')
 	dmg.save()
 
-	element_dmg = Affix(id=1,
+	eleDmg = Affix(id=1,
 		affix='Element Dmg',
 		is_primary=True,
-		desc='Skills of {<span>One Element</span>} do <span>15 - 20%</span> more damage',
-		ancient='Skills of {<span>One Element</span>} do <span>15 - 20%</span> more damage')
-	element_dmg.save()
+		desc='Skills of {<span>One Element</span>} do <span>15 - 20%</span> more damage')
+	eleDmg.save()
 
-	physical_dmg = Affix(id=2,
+	physDmg = Affix(id=2,
 		affix='Physical Dmg',
 		is_primary=True,
-		desc='Physical skills do <span>15 - 20%</span> more damage',
-		ancient='Physical skills do <span>15 - 20%</span> more damage')
-	physical_dmg.save()
+		desc='Physical skills do <span>15 - 20%</span> more damage')
+	physDmg.save()
 
-	cold_dmg = Affix(id=3,
+	coldDmg = Affix(id=3,
 		affix='Cold Dmg',
 		is_primary=True,
-		desc='Cold skills do <span>15 - 20%</span> more damage',
-		ancient='Cold skills do <span>15 - 20%</span> more damage')
-	cold_dmg.save()
+		desc='Cold skills do <span>15 - 20%</span> more damage')
+	coldDmg.save()
 
-	fire_dmg = Affix(id=4,
+	fireDmg = Affix(id=4,
 		affix='Fire Dmg',
 		is_primary=True,
-		desc='Fire skills do <span>15 - 20%</span> more damage',
-		ancient='Fire skills do <span>15 - 20%</span> more damage')
-	fire_dmg.save()
+		desc='Fire skills do <span>15 - 20%</span> more damage')
+	fireDmg.save()
 
-	lightning_dmg = Affix(id=5,
+	lightDmg = Affix(id=5,
 		affix='Lightning Dmg',
 		is_primary=True,
-		desc='Lightning skills do <span>15 - 20%</span> more damage',
-		ancient='Lightning skills do <span>15 - 20%</span> more damage')
-	lightning_dmg.save()
+		desc='Lightning skills do <span>15 - 20%</span> more damage')
+	lightDmg.save()
 
-	poison_dmg = Affix(id=6,
+	poisDmg = Affix(id=6,
 		affix='Poison Dmg',
 		is_primary=True,
-		desc='Poison skills do <span>15 - 20%</span> more damage',
-		ancient='Poison skills do <span>15 - 20%</span> more damage')
-	poison_dmg.save()
+		desc='Poison skills do <span>15 - 20%</span> more damage')
+	poisDmg.save()
 
-	arcane_dmg = Affix(id=7,
+	arcaneDmg = Affix(id=7,
 		affix='Arcane Dmg',
 		is_primary=True,
-		desc='Arcane skills do <span>15 - 20%</span> more damage',
-		ancient='Arcane skills do <span>15 - 20%</span> more damage')
-	arcane_dmg.save()
+		desc='Arcane skills do <span>15 - 20%</span> more damage')
+	arcaneDmg.save()
 
-	holy_dmg = Affix(id=8,
+	holyDmg = Affix(id=8,
 		affix='Holy Dmg',
 		is_primary=True,
-		desc='Holy skills do <span>15 - 20%</span> more damage',
-		ancient='Holy skills do <span>15 - 20%</span> more damage')
-	holy_dmg.save()
+		desc='Holy skills do <span>15 - 20%</span> more damage')
+	holyDmg.save()
 
-	main_stat = Affix(id=9,
+	mainStat = Affix(id=9,
 		affix='Main Stat',
 		is_primary=True,
 		desc='<span>+626 - 750</span> {<span>Main Stat</span>}',
 		ancient='<span>+825 - 1,000</span> {<span>Main Stat</span>}')
-	main_stat.save()
+	mainStat.save()
 
-	dexterity = Affix(id=10,
+	dext = Affix(id=10,
 		affix='Dex',
 		is_primary=True,
 		desc='<span>+626 - 750</span> Dexterity',
 		ancient='<span>+825 - 1,000 Dexterity')
-	dexterity.save()
+	dext.save()
 
-	intelligence = Affix(id=11,
+	inte = Affix(id=11,
 		affix='Int',
 		is_primary=True,
 		desc='<span>+626 - 750</span> Intelligence',
 		ancient='<span>+825 - 1,000 Intelligence')
-	intelligence.save()
+	inte.save()
 
-	strength = Affix(id=12,
+	stre = Affix(id=12,
 		affix='Str',
 		is_primary=True,
 		desc='<span>+626 - 750</span> Strength',
 		ancient='<span>+825 - 1,000 Strength')
-	strength.save()
+	stre.save()
 
-	vitality = Affix(id=13,
+	vita = Affix(id=13,
 		affix='Vit',
 		is_primary=True,
 		desc='<span>+626 - 750</span> Vitality',
 		ancient='<span>+825 - 1,000 Vitality')
-	vitality.save()
+	vita.save()
 
 	life = Affix(id=14,
 		affix='Life',
 		is_primary=True,
-		desc='<span>+14 - 18%</span> Life',
-		ancient='<span>+14 - 18%</span> Life')
+		desc='<span>+14 - 18%</span> Life')
 	life.save()
 
 	armor = Affix(id=15,
@@ -119,140 +110,131 @@ def load_amulet_affixes(apps, schema_editor):
 		ancient='<span>+654 - 775</span> Armor')
 	armor.save()
 
-	all_res = Affix(id=16,
+	allRes = Affix(id=16,
 		affix='All Res',
 		is_primary=True,
 		desc='<span>+91 - 100</span> Resistance to All Elements',
 		ancient='<span>+110 - 130</span> Resistance to All Elements')
-	all_res.save()
+	allRes.save()
 
-	life_per_second = Affix(id=17,
+	lps = Affix(id=17,
 		affix='LPS',
 		is_primary=True,
 		desc='<span>+6,448 - 7,678</span> Life Regeneration per Second',
 		ancient='<span>+8,845 - 10,000</span> Life Regeneration per Second')
-	life_per_second.save()
+	lps.save()
 
-	life_per_hit = Affix(id=18,
+	lph = Affix(id=18,
 		affix='LPH',
 		is_primary=True,
 		desc='<span>+15,474 - 18,429</span> Life per Hit',
 		ancient='<span>+20,271 - 23,950</span> Life per Hit')
-	life_per_hit.save()
+	lph.save()
 
-	attack_speed = Affix(id=19,
+	ias = Affix(id=19,
 		affix='AS',
 		is_primary=True,
-		desc='<span>+5.0 - 7.0%</span> Attack Speed',
-		ancient='<span>+5.0 - 7.0%</span> Attack Speed')
-	attack_speed.save()
+		desc='<span>+5.0 - 7.0%</span> Attack Speed')
+	ias.save()
 
 	chc = Affix(id=20,
 		affix='CHC',
 		is_primary=True,
-		desc='<span>+8.0 - 10.0%</span> Critical Hit Chance',
-		ancient='<span>+8.0 - 10.0%</span> Critical Hit Chance')
+		desc='<span>+8.0 - 10.0%</span> Critical Hit Chance')
 	chc.save()
 
 	chd = Affix(id=21,
 		affix='CHD',
 		is_primary=True,
-		desc='<span>+51.0 - 100.0%</span> Critical Hit Damage',
-		ancient='<span>+51.0 - 100.0%</span> Critical Hit Damage')
+		desc='<span>+51.0 - 100.0%</span> Critical Hit Damage')
 	chd.save()
 
 	cdr = Affix(id=22,
 		affix='CDR',
 		is_primary=True,
-		desc='<span>+5.0 - 8.0%</span> Cooldown Reduction',
-		ancient='<span>+5.0 - 8.0%</span> Cooldown Reduction')
+		desc='<span>+5.0 - 8.0%</span> Cooldown Reduction')
 	cdr.save()
 
 	rcr = Affix(id=23,
 		affix='RCR',
 		is_primary=True,
-		desc='<span>+5 - 8%<span> Resource Cost Reduction',
-		ancient='<span>+5 - 8%</span> Resource Cost Reduction')
+		desc='<span>+5 - 8%<span> Resource Cost Reduction')
 	rcr.save()
 
 	sockets = Affix(id=24,
 		affix='Sockets',
 		is_primary=True,
-		desc='Sockets (<span>1</span>)',
-		ancient='Sockets (<span>1</span>')
+		desc='Sockets (<span>1</span>)')
 	sockets.save()
 
 
 
-	element_res = Affix(id=25,
+	eleRes = Affix(id=25,
 		affix='Element Res',
 		is_primary=False,
 		desc='<span>+141 - 160</span> Resistance to {<span>One Element</span>}',
 		ancient='<span>+176 - 210</span> Resistance to {<span>One Element</span>}')
-	element_res.save()
+	eleRes.save()
 
-	physical_res = Affix(id=26,
+	physRes = Affix(id=26,
 		affix='Physical Res',
 		is_primary=False,
 		desc='<span>+141 - 160</span> Physical Resistance',
 		ancient='<span>+176 - 210</span> Physical Resistance')
-	physical_res.save()
+	physRes.save()
 
-	cold_res = Affix(id=27,
+	coldRes = Affix(id=27,
 		affix='Cold Res',
 		is_primary=False,
 		desc='<span>+141 - 160</span> Cold Resistance',
 		ancient='<span>+176 - 210</span> Cold Resistance')
-	cold_res.save()
+	coldRes.save()
 
-	fire_res = Affix(id=28,
+	fireRes = Affix(id=28,
 		affix='Fire Res',
 		is_primary=False,
 		desc='<span>+141 - 160</span> Fire Resistance',
 		ancient='<span>+176 - 210</span> Fire Resistance')
-	fire_res.save()
+	fireRes.save()
 
-	lightning_res = Affix(id=29,
+	lightRes = Affix(id=29,
 		affix='Lightning Res',
 		is_primary=False,
 		desc='<span>+141 - 160</span> Lightning Resistance',
 		ancient='<span>+176 - 210</span> Lightning Resistance')
-	lightning_res.save()
+	lightRes.save()
 
-	poison_res = Affix(id=30,
+	poisRes = Affix(id=30,
 		affix='Poison Res',
 		is_primary=False,
 		desc='<span>+141 - 160</span> Poison Resistance',
 		ancient='<span>+176 - 210</span> Poison Resistance')
-	poison_res.save()
+	poisRes.save()
 
-	arcane_res = Affix(id=31,
+	arcaneRes = Affix(id=31,
 		affix='Arcane Res',
 		is_primary=False,
 		desc='<span>+141 - 160</span> Arcane Resistance',
 		ancient='<span>+176 - 210</span> Arcane Resistance')
-	arcane_res.save()
+	arcaneRes.save()
 
-	reduced_ranged_damage = Affix(id=32,
+	reducedRange = Affix(id=32,
 		affix='Reduced Ranged Dmg',
 		is_primary=False,
-		desc='<span>+6.0 - 7.0%</span> Ranged Damage Reduction',
-		ancient='<span>+6.0 - 7.0%</span> Ranged Damage Reduction')
-	reduced_ranged_damage.save()
+		desc='<span>+6.0 - 7.0%</span> Ranged Damage Reduction')
+	reducedRange.save()
 
-	reduced_melee_damage = Affix(id=33,
+	reducedMelee = Affix(id=33,
 		affix='Reduced Melee Dmg',
 		is_primary=False,
-		desc='<span>+6.0 - 7.0%</span> Melee Damage Reduction',
-		ancient='<span>+6.0 - 7.0%</span> Melee Damage Reduction')
-	reduced_melee_damage.save()
+		desc='<span>+6.0 - 7.0%</span> Melee Damage Reduction')
+	reducedMelee.save()
 
-	cc_reduction = Affix(id=34,
+	ccReduction = Affix(id=34,
 		affix='CC Reduction',
 		is_primary=False,
-		desc='<span>+20 - 40%</span> Crowd Control Duration Reduction',
-		ancient='<span>+20 - 40%</span> Crowd Control Duration Reduction')
-	cc_reduction.save()
+		desc='<span>+20 - 40%</span> Crowd Control Duration Reduction')
+	ccReduction.save()
 
 	thorns = Affix(id=35,
 		affix='Thorns',
@@ -261,40 +243,46 @@ def load_amulet_affixes(apps, schema_editor):
 		ancient='Attackers take <span>3,847 - 4,550</span> damage')
 	thorns.save()
 
-	blind_chance = Affix(id=36,
-		affix='Blind Chance',
+	blindChance = Affix(id=36,
+		affix='blindChance',
 		is_primary=False,
-		desc='<span>+1.0 - 5.1%</span> Chance to Blind',
-		ancient='<span>+1.0 - 5.1%</span> Chance to Blind')
-	blind_chance.save()
+		desc='<span>+1.0 - 5.1%</span> chance to Blind on Hit')
+	blindChance.save()
 
-	item_healing = Affix(id=37,
+	itemHealing = Affix(id=37,
 		affix='Item Healing',
 		is_primary=False,
 		desc='<span>+20,001 - 29.713</span> Healing from Health Globes and Potions',
 		ancient='<span>+32,684 - 38,625</span> Healing from Health Globes and Potions')
-	item_healing.save()
+	itemHealing.save()
 
-	life_per_kill = Affix(id=38,
+	lpk = Affix(id=38,
 		affix='LPK',
 		is_primary=False,
 		desc='<span>+6,428 - 8,914</span> Life per Kill',
 		ancient='<span>+9,805 - 11,590</span> Life per Kill')
-	life_per_kill.save()
+	lpk.save()
 
-	exp_per_kill = Affix(id=39,
+	exp = Affix(id=39,
 		affix='Kill EXP',
 		is_primary=False,
 		desc='<span>+140 - 200</span> Experience per Kill',
 		ancient='<span>+220 - 260</span> Experience per Kill')
-	exp_per_kill.save()
+	exp.save()
 
-	extra_gold = Affix(id=40,
+	extraGold = Affix(id=40,
 		affix='Extra Gold',
 		is_primary=False,
-		desc='<span>+71 - 80%</span> Extra Gold from Monsters',
-		ancient='<span>+71 - 80%</span> Extra Gold from Monsters')
-	extra_gold.save()
+		desc='<span>+71 - 80%</span> Extra Gold from Monsters')
+	extraGold.save()
+
+
+	for affix in Affix.objects.all():
+		if not affix.ancient:
+			affix.ancient = affix.desc
+			affix.save()
+		else:
+			pass
 
 
 class Migration(migrations.Migration):

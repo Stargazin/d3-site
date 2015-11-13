@@ -36,4 +36,17 @@ class Migration(migrations.Migration):
                 'verbose_name_plural': 'Ring Affixes',
             },
         ),
+        migrations.CreateModel(
+            name='SourceAffix',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('affix', models.CharField(max_length=255)),
+                ('is_primary', models.BooleanField()),
+                ('desc', models.TextField()),
+                ('ancient', models.TextField(blank=True)),
+            ],
+            options={
+                'verbose_name_plural': 'Source Affixes',
+            },
+        ),
     ]

@@ -78,6 +78,10 @@
         <li class="unique"><p>{{ item.unique2|safe }}</p></li>
         {% endif %}
 
+        {% if item.unique3 and item.unique3_is_primary %}
+        <li class="unique"><p>{{ item.unique3|safe }}</p></li>
+        {% endif %}
+
         {% if item.primary_affixes %}
         {% for affix in item.primary_affixes %}
         <li><p>{{ affix.desc|safe }}</p></li>
@@ -97,6 +101,10 @@
 
         {% if item.unique2 and not item.unique2_is_primary %}
         <li class="unique"><p>{{ item.unique2|safe }}</p></li>
+        {% endif %}
+
+        {% if item.unique3 and not item.unique3_is_primary %}
+        <li class="unique"><p>{{ item.unique3|safe }}</p></li>
         {% endif %}
 
         {% if item.secondary_affixes %}

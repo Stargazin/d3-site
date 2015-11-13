@@ -10,7 +10,7 @@ def load_amulets(apps, schema_editor):
 	AmuletAffix = apps.get_model("affixes", "AmuletAffix")
 
 	dmg = AmuletAffix.objects.get(pk=0)
-	eleDmg = AmuletAffix.objects.get(pk=1)
+	eleDmg = AmuletAffix.objects.get(affix='Element Dmg')
 	physDmg = AmuletAffix.objects.get(pk=2)
 	coldDmg = AmuletAffix.objects.get(pk=3)
 	fireDmg = AmuletAffix.objects.get(pk=4)
@@ -44,12 +44,13 @@ def load_amulets(apps, schema_editor):
 	arcaneRes = AmuletAffix.objects.get(pk=31)
 	reducedRange = AmuletAffix.objects.get(pk=32)
 	reducedMelee = AmuletAffix.objects.get(pk=33)
-	lpk = AmuletAffix.objects.get(pk=34)
-	extraGold = AmuletAffix.objects.get(pk=35)
-	thorns = AmuletAffix.objects.get(pk=36)
-	ccReduction = AmuletAffix.objects.get(pk=37)
-	blindChance = AmuletAffix.objects.get(pk=38)
-	itemHealing = AmuletAffix.objects.get(pk=39)
+	ccReduction = AmuletAffix.objects.get(pk=34)
+	thorns = AmuletAffix.objects.get(pk=35)
+	blindChance = AmuletAffix.objects.get(pk=36)
+	itemHealing = AmuletAffix.objects.get(pk=37)
+	lpk = AmuletAffix.objects.get(pk=38)
+	exp = AmuletAffix.objects.get(pk=39)
+	extraGold = AmuletAffix.objects.get(pk=40)
 
 
 	ancestors = Amulet(id=0,
@@ -63,7 +64,6 @@ def load_amulets(apps, schema_editor):
 	ancestors.save()
 	ancestors.affixes.add(mainStat, vita)
 
-
 	countess = Amulet(id=1,
 		category='Amulet',
 		name='Countess Julia\'s Cameo',
@@ -74,7 +74,6 @@ def load_amulets(apps, schema_editor):
 		random_secondaries='1')
 	countess.save()
 	countess.affixes.add(mainStat, ias)
-
 
 	dovu = Amulet(id=2,
 		category='Amulet',
@@ -87,7 +86,6 @@ def load_amulets(apps, schema_editor):
 	dovu.save()
 	dovu.affixes.add(mainStat, cdr)
 
-
 	eye = Amulet(id=3,
 		category='Amulet',
 		name='Eye of Elitch',
@@ -99,7 +97,6 @@ def load_amulets(apps, schema_editor):
 	eye.save()
 	eye.affixes.add(eleDmg)
 
-
 	gorget = Amulet(id=4,
 		category='Amulet',
 		name='Golden Gorget of Leoric',
@@ -110,7 +107,6 @@ def load_amulets(apps, schema_editor):
 		random_secondaries='1')
 	gorget.save()
 	gorget.affixes.add(mainStat, allRes, chc)
-
 
 	halcyon = Amulet(id=5,
 		category='Amulet',
@@ -124,7 +120,6 @@ def load_amulets(apps, schema_editor):
 	halcyon.save()
 	halcyon.affixes.add(mainStat, cdr)
 
-
 	haunt = Amulet(id=6,
 		category='Amulet',
 		name='Haunt of Vaxo',
@@ -135,7 +130,6 @@ def load_amulets(apps, schema_editor):
 		random_secondaries='1')
 	haunt.save()
 	haunt.affixes.add(mainStat, chc)
-
 
 	hellfire = Amulet(id=7,
 		category='Amulet',
@@ -148,7 +142,6 @@ def load_amulets(apps, schema_editor):
 	hellfire.save()
 	hellfire.affixes.add(mainStat, sockets)
 
-
 	holy = Amulet(id=8,
 		category='Amulet',
 		name='Holy Beacon',
@@ -159,7 +152,6 @@ def load_amulets(apps, schema_editor):
 		random_secondaries='2')
 	holy.save()
 	holy.affixes.add(mainStat, holyDmg)
-
 
 	kymbos = Amulet(id=9,
 		category='Amulet',
@@ -173,7 +165,6 @@ def load_amulets(apps, schema_editor):
 	kymbos.save()
 	# kymbos.affixes.add()
 
-
 	maras = Amulet(id=10,
 		category='Amulet',
 		name='Mara\'s Kaleidoscope',
@@ -184,7 +175,6 @@ def load_amulets(apps, schema_editor):
 		random_secondaries='1')
 	maras.save()
 	maras.affixes.add(mainStat, chc)
-
 
 	moonlight = Amulet(id=11,
 		category='Amulet',
@@ -199,7 +189,6 @@ def load_amulets(apps, schema_editor):
 	moonlight.save()
 	moonlight.affixes.add(chc)
 
-
 	ouroboros = Amulet(id=12,
 		category='Amulet',
 		name='Ouroboros',
@@ -208,7 +197,6 @@ def load_amulets(apps, schema_editor):
 		random_secondaries='2')
 	ouroboros.save()
 	ouroboros.affixes.add(mainStat, chc)
-
 
 	overwhelming = Amulet(id=13,
 		category='Amulet',
@@ -221,7 +209,6 @@ def load_amulets(apps, schema_editor):
 	overwhelming.save()
 	overwhelming.affixes.add(mainStat, cdr)
 
-
 	rakoffs = Amulet(id=14,
 		category='Amulet',
 		name='Rakoff\'s Glass of Life',
@@ -233,7 +220,6 @@ def load_amulets(apps, schema_editor):
 	rakoffs.save()
 	rakoffs.affixes.add(mainStat, itemHealing)
 
-
 	rondals = Amulet(id=15,
 		category='Amulet',
 		name='Rondal\'s Locket',
@@ -244,7 +230,6 @@ def load_amulets(apps, schema_editor):
 	rondals.save()
 	rondals.affixes.add(mainStat, itemHealing)
 
-
 	squirts = Amulet(id=16,
 		category='Amulet',
 		name='Squirt\'s Necklace',
@@ -253,7 +238,6 @@ def load_amulets(apps, schema_editor):
 		random_secondaries='1')
 	squirts.save()
 	squirts.affixes.add(mainStat, chd, extraGold)
-
 
 	talisman = Amulet(id=17,
 		category='Amulet',
@@ -266,7 +250,6 @@ def load_amulets(apps, schema_editor):
 	talisman.save()
 	talisman.affixes.add(mainStat)
 
-
 	ess = Amulet(id=18,
 		category='Amulet',
 		name='The Ess of Johan',
@@ -277,7 +260,6 @@ def load_amulets(apps, schema_editor):
 		random_secondaries='1')
 	ess.save()
 	ess.affixes.add(mainStat, cdr)
-
 
 	flavor = Amulet(id=19,
 		category='Amulet',
@@ -290,7 +272,6 @@ def load_amulets(apps, schema_editor):
 	flavor.save()
 	flavor.affixes.add(cdr)
 
-
 	star = Amulet(id=20,
 		category='Amulet',
 		name='The Star of Azkaranth',
@@ -301,7 +282,6 @@ def load_amulets(apps, schema_editor):
 		random_secondaries='1')
 	star.save()
 	star.affixes.add(mainStat, cdr)
-
 
 	xephirian = Amulet(id=21,
 		category='Amulet',

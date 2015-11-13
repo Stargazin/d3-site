@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, get_list_or_404, get_object_or_404
 from django.views.generic import TemplateView
 
-from .models import Amulet
+from .models import Amulet, Ring, Source
 
 
 class PlaygroundView(TemplateView):
@@ -20,10 +20,22 @@ class AmuletsView(LegendaryItemsMixin, TemplateView):
 		context['items'] = Amulet.objects.all()
 		return context
 
-# class RingsView(LegendaryItemsMixin, TemplateView):
+class RingsView(LegendaryItemsMixin, TemplateView):
+	def get_context_data(self, **kwargs):
+		context = super(RingsView, self).get_context_data(**kwargs)
+		context['items'] = Ring.objects.all()
+		return context
+
+class SourcesView(LegendaryItemsMixin, TemplateView):
+	def get_context_data(self, **kwargs):
+		context = super(SourcesView, self).get_context_data(**kwargs)
+		context['items'] = Source.objects.all()
+		return context
+
+# class CrusaderShieldsView(LegendaryItemsMixin, TemplateView):
 # 	def get_context_data(self, **kwargs):
-# 		context = super(RingsView, self).get_context_data(**kwargs)
-# 		context['items'] = Ring.objects.all()
+# 		context = super(CrusaderShieldsView, self).get_context_data(**kwargs)
+# 		context['items'] = CrusaderShield.objects.all()
 # 		return context
 
 # class FollowerRelicsView(LegendaryItemsMixin, TemplateView):
@@ -33,7 +45,7 @@ class AmuletsView(LegendaryItemsMixin, TemplateView):
 # 		return context
 
 
-# class View(LegendaryItemsMixin, TemplateView):
+# class ||View(LegendaryItemsMixin, TemplateView):
 # 	def get_context_data(self, **kwargs):
 # 		context = super(||View, self).get_context_data(**kwargs)
 # 		context['items'] = ||.objects.all()
