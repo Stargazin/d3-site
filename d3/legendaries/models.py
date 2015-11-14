@@ -7,6 +7,7 @@ from affixes.models import AmuletAffix, RingAffix, SourceAffix, CrusaderShieldAf
 
 class LegendaryModel(models.Model):
 	category = models.CharField(max_length=255, blank=True)
+	# owner = models.TextField(blank=True)
 	name = models.CharField(max_length=255)
 	pic = models.ImageField(blank=True)
 	unique = models.TextField(blank=True)

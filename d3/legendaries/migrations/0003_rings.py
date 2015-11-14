@@ -7,46 +7,48 @@ from django.template.defaultfilters import slugify
 
 def load_rings(apps, schema_editor):
 	Ring = apps.get_model("legendaries", "Ring")
-	RingAffix = apps.get_model("affixes", "RingAffix")
+	Affix = apps.get_model("affixes", "RingAffix")
 
-	dmg = RingAffix.objects.get(affix='dmg')
-	mainStat = RingAffix.objects.get(affix='mainStat')
-	dext = RingAffix.objects.get(affix='dext')
-	inte = RingAffix.objects.get(affix='inte')
-	stre = RingAffix.objects.get(affix='stre')
-	vita = RingAffix.objects.get(affix='vita')
+	sockets = Affix.objects.get(affix='sockets')
 
-	life = RingAffix.objects.get(affix='life')
-	armor = RingAffix.objects.get(affix='armor')
-	allRes = RingAffix.objects.get(affix='allRes')
-	lps = RingAffix.objects.get(affix='lps')
-	lph = RingAffix.objects.get(affix='lph')
+	dmg = Affix.objects.get(affix='dmg')
+	mainStat = Affix.objects.get(affix='mainStat')
+	dext = Affix.objects.get(affix='dext')
+	inte = Affix.objects.get(affix='inte')
+	stre = Affix.objects.get(affix='stre')
+	vita = Affix.objects.get(affix='vita')
 
-	ias = RingAffix.objects.get(affix='ias')
-	chc = RingAffix.objects.get(affix='chc')
-	chd = RingAffix.objects.get(affix='chd')
-	areaDmg = RingAffix.objects.get(affix='areaDmg')
+	armor = Affix.objects.get(affix='armor')
+	allRes = Affix.objects.get(affix='allRes')
+	life = Affix.objects.get(affix='life')
+	lps = Affix.objects.get(affix='lps')
+	lph = Affix.objects.get(affix='lph')
 
-	cdr = RingAffix.objects.get(affix='cdr')
-	rcr = RingAffix.objects.get(affix='rcr')
-	sockets = RingAffix.objects.get(affix='sockets')
+	ias = Affix.objects.get(affix='ias')
+	chc = Affix.objects.get(affix='chc')
+	chd = Affix.objects.get(affix='chd')
+	cdr = Affix.objects.get(affix='cdr')
+	areaDmg = Affix.objects.get(affix='areaDmg')
+
+	rcr = Affix.objects.get(affix='rcr')
 
 
-	eleRes = RingAffix.objects.get(affix='eleRes')
-	physRes = RingAffix.objects.get(affix='physRes')
-	coldRes = RingAffix.objects.get(affix='coldRes')
-	fireRes = RingAffix.objects.get(affix='fireRes')
-	lightRes = RingAffix.objects.get(affix='lightRes')
-	poisRes = RingAffix.objects.get(affix='poisRes')
-	arcaneRes = RingAffix.objects.get(affix='arcaneRes')
+	eleRes = Affix.objects.get(affix='eleRes')
+	physRes = Affix.objects.get(affix='physRes')
+	coldRes = Affix.objects.get(affix='coldRes')
+	fireRes = Affix.objects.get(affix='fireRes')
+	lightRes = Affix.objects.get(affix='lightRes')
+	poisRes = Affix.objects.get(affix='poisRes')
+	arcaneRes = Affix.objects.get(affix='arcaneRes')
 
-	ccReduction = RingAffix.objects.get(affix='ccReduction')
-	thorns = RingAffix.objects.get(affix='thorns')
-	itemHealing = RingAffix.objects.get(affix='itemHealing')
-	lpk = RingAffix.objects.get(affix='lpk')
+	ccReduction = Affix.objects.get(affix='ccReduction')
 
-	killExp = RingAffix.objects.get(affix='killExp')
-	extraGold = RingAffix.objects.get(affix='extraGold')
+	lpk = Affix.objects.get(affix='lpk')
+	itemHealing = Affix.objects.get(affix='itemHealing')
+
+	extraGold = Affix.objects.get(affix='extraGold')
+	thorns = Affix.objects.get(affix='thorns')
+	killExp = Affix.objects.get(affix='killExp')
 
 
 	arcstone = Ring(id=0,		name='Arcstone',

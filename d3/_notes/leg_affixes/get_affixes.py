@@ -1,6 +1,8 @@
 #Primaries
 #==============================================================================
 #==============================================================================
+	sockets = Affix.objects.get(affix='sockets')
+
 	dmg = Affix.objects.get(affix='dmg')
 	mainStat = Affix.objects.get(affix='mainStat')
 	dext = Affix.objects.get(affix='dext')
@@ -17,44 +19,104 @@
 	arcaneDmg = Affix.objects.get(affix='arcaneDmg')
 	holyDmg = Affix.objects.get(affix='holyDmg')
 
-	life = Affix.objects.get(affix='life')
 	armor = Affix.objects.get(affix='armor')
 	allRes = Affix.objects.get(affix='allRes')
+	blockChance = Affix.objects.get(affix='blockChance')
+	reducedEliteDmg = Affix.objects.get(affix='reducedEliteDmg')
+	life = Affix.objects.get(affix='life')
 	lps = Affix.objects.get(affix='lps')
 	lph = Affix.objects.get(affix='lph')
+	lifePerWrath = Affix.objects.get(affix='lifePerWrath')
 
 	ias = Affix.objects.get(affix='ias')
 	chc = Affix.objects.get(affix='chc')
 	chd = Affix.objects.get(affix='chd')
-	areaDmg = Affix.objects.get(affix='areaDmg')
+	cdr = Affix.objects.get(affix='cdr')
 	eliteDmg = Affix.objects.get(affix='eliteDmg')
-
+	areaDmg = Affix.objects.get(affix='areaDmg')
 	bleedChance = Affix.objects.get(affix='bleedChance')
 
-	cdr = Affix.objects.get(affix='cdr')
 	rcr = Affix.objects.get(affix='rcr')
-	sockets = Affix.objects.get(affix='sockets')
-
+	wrathRegen = Affix.objects.get(affix='wrathRegen')
+	hatredRegen = Affix.objects.get(affix='hatredRegen')
 	apCrit = Affix.objects.get(affix='apCrit')
+	manaRegen = Affix.objects.get(affix='manaRegen')
 
-#Wizard
+#Crusader Skills
+#==============================================================================
+	blessedHammer = Affix.objects.get(affix='blessedHammer')
+	blessedShield = Affix.objects.get(affix='blessedShield')
+	bombardment = Affix.objects.get(affix='bombardment')
+	condemn = Affix.objects.get(affix='condemn')
+	fallingSword = Affix.objects.get(affix='fallingSword')
+	fistOfTheHeavens = Affix.objects.get(affix='fistOfTheHeavens')
+	heavensFury = Affix.objects.get(affix='heavensFury')
+	justice = Affix.objects.get(affix='justice')
+	phalanx = Affix.objects.get(affix='phalanx')
+	punish = Affix.objects.get(affix='punish')
+	shieldBash = Affix.objects.get(affix='shieldBash')
+	slash = Affix.objects.get(affix='slash')
+	smite = Affix.objects.get(affix='smite')
+	sweepAttack = Affix.objects.get(affix='sweepAttack')
+
+#Demon Hunter Skills
+#==============================================================================
+	bolas = Affix.objects.get(affix='bolas')
+	chakram = Affix.objects.get(affix='chakram')
+	clusterArrow = Affix.objects.get(affix='clusterArrow')
+	companion = Affix.objects.get(affix='companion')
+	elementalArrow = Affix.objects.get(affix='elementalArrow')
+	entanglingShot = Affix.objects.get(affix='entanglingShot')
+	evasiveFire = Affix.objects.get(affix='evasiveFire')
+	fanOfKnives = Affix.objects.get(affix='fanOfKnives')
+	grenade = Affix.objects.get(affix='grenade')
+	hungeringArrow = Affix.objects.get(affix='hungeringArrow')
+	impale = Affix.objects.get(affix='impale')
+	multishot = Affix.objects.get(affix='multishot')
+	rainOfVengeance = Affix.objects.get(affix='rainOfVengeance')
+	rapidFire = Affix.objects.get(affix='rapidFire')
+	sentry = Affix.objects.get(affix='sentry')
+	spikeTrap = Affix.objects.get(affix='spikeTrap')
+	strafe = Affix.objects.get(affix='strafe')
+
+#Witch Doctor Skills
+#==============================================================================
+	acidCloud = Affix.objects.get(affix='acidCloud')
+	corpseSpiders = Affix.objects.get(affix='corpseSpiders')
+	fetishArmy = Affix.objects.get(affix='fetishArmy')
+	firebats = Affix.objects.get(affix='firebats')
+	firebomb = Affix.objects.get(affix='firebomb')
+	gargantuan = Affix.objects.get(affix='gargantuan')
+	graspOfTheDead = Affix.objects.get(affix='graspOfTheDead')
+	haunt = Affix.objects.get(affix='haunt')
+	locustSwarm = Affix.objects.get(affix='locustSwarm')
+	piranhas = Affix.objects.get(affix='piranhas')
+	plagueOfToads = Affix.objects.get(affix='plagueOfToads')
+	poisonDart = Affix.objects.get(affix='poisonDart')
+	sacrifice = Affix.objects.get(affix='sacrifice')
+	spiritBarrage = Affix.objects.get(affix='spiritBarrage')
+	summonZombieDogs = Affix.objects.get(affix='summonZombieDogs')
+	wallOfDeath = Affix.objects.get(affix='wallOfDeath')
+	zombieCharger = Affix.objects.get(affix='zombieCharger')
+
+#Wizard Skills
 #==============================================================================
 	arcaneOrb = Affix.objects.get(affix='arcaneOrb')
-	electrocute = Affix.objects.get(affix='electrocute')
-	rayOfFrost = Affix.objects.get(affix='rayOfFrost')
-	spectralBlade = Affix.objects.get(affix='spectralBlade')
-	blackHole = Affix.objects.get(affix='blackHole')
-	meteor = Affix.objects.get(affix='meteor')
-	waveOfForce = Affix.objects.get(affix='waveOfForce')
 	arcaneTorrent = Affix.objects.get(affix='arcaneTorrent')
-	shockPulse = Affix.objects.get(affix='shockPulse')
-	familiar = Affix.objects.get(affix='familiar')
-	magicMissle = Affix.objects.get(affix='magicMissle')
-	energyTwister = Affix.objects.get(affix='energyTwister')
+	blackHole = Affix.objects.get(affix='blackHole')
 	blizzard = Affix.objects.get(affix='blizzard')
 	disintegrate = Affix.objects.get(affix='disintegrate')
+	electrocute = Affix.objects.get(affix='electrocute')
+	energyTwister = Affix.objects.get(affix='energyTwister')
 	explosiveBlast = Affix.objects.get(affix='explosiveBlast')
+	familiar = Affix.objects.get(affix='familiar')
 	hydra = Affix.objects.get(affix='hydra')
+	magicMissle = Affix.objects.get(affix='magicMissle')
+	meteor = Affix.objects.get(affix='meteor')
+	rayOfFrost = Affix.objects.get(affix='rayOfFrost')
+	shockPulse = Affix.objects.get(affix='shockPulse')
+	spectralBlade = Affix.objects.get(affix='spectralBlade')
+	waveOfForce = Affix.objects.get(affix='waveOfForce')
 
 #Secondaries
 #==============================================================================
@@ -67,10 +129,17 @@
 	poisRes = Affix.objects.get(affix='poisRes')
 	arcaneRes = Affix.objects.get(affix='arcaneRes')
 
+	maxWrath = Affix.objects.get(affix='maxWrath')
+	maxDisc = Affix.objects.get(affix='maxDisc')
+	maxAP = Affix.objects.get(affix='maxAP')
+	maxMana = Affix.objects.get(affix='maxMana')
+
 	reducedRangeDmg = Affix.objects.get(affix='reducedRangeDmg')
 	reducedMeleeDmg = Affix.objects.get(affix='reducedMeleeDmg')
+	ccReduction = Affix.objects.get(affix='ccReduction')
 
-	maxAP = Affix.objects.get(affix='maxAP')
+	lpk = Affix.objects.get(affix='lpk')
+	itemHealing = Affix.objects.get(affix='itemHealing')
 
 	fearChance = Affix.objects.get(affix='fearChance')
 	stunChance = Affix.objects.get(affix='stunChance')
@@ -81,12 +150,8 @@
 	immobilizeChance = Affix.objects.get(affix='immobilizeChance')
 	knockbackChance = Affix.objects.get(affix='knockbackChance')
 
-	ccReduction = Affix.objects.get(affix='ccReduction')
-	thorns = Affix.objects.get(affix='thorns')
-	itemHealing = Affix.objects.get(affix='itemHealing')
-	lpk = Affix.objects.get(affix='lpk')
-
-	killExp = Affix.objects.get(affix='killExp')
 	extraGold = Affix.objects.get(affix='extraGold')
-	durability = Affix.objects.get(affix='durability')
+	thorns = Affix.objects.get(affix='thorns')
+	killExp = Affix.objects.get(affix='killExp')
 	lvlReq = Affix.objects.get(affix='lvlReq')
+	durability = Affix.objects.get(affix='durability')

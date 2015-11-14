@@ -1,6 +1,12 @@
 def load__affixes(apps, schema_editor):
 	Affix = apps.get_model("affixes", "Affix")
 
+	sockets = Affix(id=,
+		affix='sockets',
+		is_primary=True,
+		desc='Sockets (<span></span>)')
+	sockets.save()
+
 
 	dmg = Affix(id=,
 		affix='dmg',
@@ -24,7 +30,7 @@ def load__affixes(apps, schema_editor):
 	dext.save()
 
 	inte = Affix(id=,
-		affix='inte',
+		affix='inte', 
 		is_primary=True,
 		desc='<span>+</span> Intelligence',
 		ancient='<span>+</span> Intelligence')
@@ -94,12 +100,6 @@ def load__affixes(apps, schema_editor):
 	holyDmg.save()
 
 
-	life = Affix(id=,
-		affix='life',
-		is_primary=True,
-		desc='<span>+%</span> Life')
-	life.save()
-
 	armor = Affix(id=,
 		affix='armor',
 		is_primary=True,
@@ -114,6 +114,24 @@ def load__affixes(apps, schema_editor):
 		ancient='<span>+</span> Resistance to All Elements')
 	allRes.save()
 
+	blockChance = Affix(id=,
+		affix='blockChance',
+		is_primary=True,
+		desc='<span class="silver">+11%</span> Chance to Block')
+	blockChance.save()
+
+	reducedEliteDmg = Affix(id=,
+		affix='reducedEliteDmg',
+		is_primary=True,
+		desc='<span>+10.0 - 11.0%</span> Elite Damage Reduction')
+	reducedEliteDmg.save()
+
+	life = Affix(id=,
+		affix='life',
+		is_primary=True,
+		desc='<span>+%</span> Life')
+	life.save()
+
 	lps = Affix(id=,
 		affix='lps',
 		is_primary=True,
@@ -127,6 +145,13 @@ def load__affixes(apps, schema_editor):
 		desc='<span>+</span> Life per Hit',
 		ancient='<span>+</span> Life per Hit')
 	lph.save()
+
+	lifePerWrath = Affix(id=,
+		affix='lifePerWrath',
+		is_primary=True,
+		desc='<span>+</span> Life per Wrath spent',
+		ancient='<span>+</span> Life per Wrath spent')
+	lifePerWrath.save()
 
 
 	ias = Affix(id=,
@@ -147,11 +172,11 @@ def load__affixes(apps, schema_editor):
 		desc='<span>+%</span> Critical Hit Damage')
 	chd.save()
 
-	areaDmg = Affix(id=,
-		affix='areaDmg',
+	cdr = Affix(id=,
+		affix='cdr',
 		is_primary=True,
-		desc='<span>+%</span> Area Damage')
-	areaDmg.save()
+		desc='<span>+%</span> Cooldown Reduction')
+	cdr.save()
 
 	eliteDmg = Affix(id=,
 		affix='eliteDmg',
@@ -159,19 +184,18 @@ def load__affixes(apps, schema_editor):
 		desc='Increases damage against elites by <span>%</span>')
 	eliteDmg.save()
 
+	areaDmg = Affix(id=,
+		affix='areaDmg',
+		is_primary=True,
+		desc='<span>+%</span> Area Damage')
+	areaDmg.save()
 
 	bleedChance = Affix(id=,
 		affix='bleedChance',
 		is_primary=True,
-		desc='<span>%</span> chance to inflict Bleed for <span>%</span> weapon damage over <span class="silver">5</span> seconds')
+		desc='<span>34.0 - 39.0%</span> chance to inflict Bleed for <span>400%</span> weapon damage over <span class="silver">5</span> seconds')
 	bleedChance.save()
 
-
-	cdr = Affix(id=,
-		affix='cdr',
-		is_primary=True,
-		desc='<span>+%</span> Cooldown Reduction')
-	cdr.save()
 
 	rcr = Affix(id=,
 		affix='rcr',
@@ -179,12 +203,17 @@ def load__affixes(apps, schema_editor):
 		desc='<span>+%<span> Resource Cost Reduction')
 	rcr.save()
 
-	sockets = Affix(id=,
-		affix='sockets',
+	wrathRegen = Affix(id=,
+		affix='wrathRegen',
 		is_primary=True,
-		desc='Sockets (<span></span>)')
-	sockets.save()
+		desc='<span>+1.85 - 2.00</span> Wrath Regeneration')
+	wrathRegen.save()
 
+	hatredRegen = Affix(id=,
+		affix='hatredRegen',
+		is_primary=True,
+		desc='<span>+1.35 - 1.50</span> Hatred Regeneration per Second')
+	hatredRegen.save()
 
 	apCrit = Affix(id=,
 		affix='apCrit',
@@ -192,11 +221,313 @@ def load__affixes(apps, schema_editor):
 		desc='<span>+3 - 4</span> Arcane Power on Critical Hits')
 	apCrit.save()
 
+	manaRegen = Affix(id=,
+		affix='manaRegen',
+		is_primary=True,
+		desc='<span>+12.00 - 14.00</span> Mana Regeneratioin per Second')
+	manaRegen.save()
+
+#Crusader Skills
+#==============================================================================
+#==============================================================================
+	blessedHammer = Affix(id=,
+		affix='blessedHammer',
+		is_primary=True,
+		desc='Increase Blessed Hammer damage by <span>10 - 15%</span>')
+	blessedHammer.save()
+
+	blessedShield = Affix(id=,
+		affix='blessedShield',
+		is_primary=True,
+		desc='Increase Blessed Shield damage by <span>10 - 15%</span>')
+	blessedShield.save()
+
+	bombardment = Affix(id=,
+		affix='bombardment',
+		is_primary=True,
+		desc='Increase Bombardment damage by <span>10 - 15%</span>')
+	bombardment.save()
+
+	condemn = Affix(id=,
+		affix='condemn',
+		is_primary=True,
+		desc='Increase Condemn damage by <span>10 - 15%</span>')
+	condemn.save()
+
+	fallingSword = Affix(id=,
+		affix='fallingSword',
+		is_primary=True,
+		desc='Increase Falling Sword damage by <span>10 - 15%</span>')
+	fallingSword.save()
+
+	fistOfTheHeavens = Affix(id=,
+		affix='fistOfTheHeavens',
+		is_primary=True,
+		desc='Increase Fist of the  Heavens damage by <span>10 - 15%</span>')
+	fistOfTheHeavens.save()
+
+	heavensFury = Affix(id=,
+		affix='heavensFury',
+		is_primary=True,
+		desc='Increase Heaven\'s Fury damage by <span>10 - 15%</span>')
+	heavensFury.save()
+
+	justice = Affix(id=,
+		affix='justice',
+		is_primary=True,
+		desc='Increase Justice damage by <span>10 - 15%</span>')
+	justice.save()
+
+	phalanx = Affix(id=,
+		affix='phalanx',
+		is_primary=True,
+		desc='Increase Phalanx damage by <span>10 - 15%</span>')
+	phalanx.save()
+
+	 punish= Affix(id=,
+		affix='punish',
+		is_primary=True,
+		desc='Increase Punish damage by <span>10 - 15%</span>')
+	punish.save()
+
+	 shieldBash= Affix(id=,
+		affix='shieldBash',
+		is_primary=True,
+		desc='Increase Shield Bash damage by <span>10 - 15%</span>')
+	shieldBash.save()
+
+	slash = Affix(id=,
+		affix='slash',
+		is_primary=True,
+		desc='Increase Slash damage by <span>10 - 15%</span>')
+	slash.save()
+
+	smite = Affix(id=,
+		affix='smite',
+		is_primary=True,
+		desc='Increase Smite damage by <span>10 - 15%</span>')
+	smite.save()
+
+	sweepAttack = Affix(id=,
+		affix='sweepAttack',
+		is_primary=True,
+		desc='Increase Sweep Attack damage by <span>10 - 15%</span>')
+	sweepAttack.save()
+
+#Demon Hunter Skills
+#==============================================================================
+#==============================================================================
+	bolas = Affix(id=,
+		affix='bolas',
+		is_primary=True,
+		desc='Increase Bola damage by <span>10 - 15%</span>')
+	bolas.save()
+
+	chakram = Affix(id=,
+		affix='chakram',
+		is_primary=True,
+		desc='Increase Chakram damage by <span>10 - 15%</span>')
+	chakram.save()
+
+	clusterArrow = Affix(id=,
+		affix='clusterArrow',
+		is_primary=True,
+		desc='Increase Cluster Arrow damage by <span>10 - 15%</span>')
+	clusterArrow.save()
+
+	companion = Affix(id=,
+		affix='companion',
+		is_primary=True,
+		desc='Increase Companion damage by <span>10 - 15%</span>')
+	companion.save()
+
+	elementalArrow = Affix(id=,
+		affix='elementalArrow',
+		is_primary=True,
+		desc='Increase Elemental Arrow damage by <span>10 - 15%</span>')
+	elementalArrow.save()
+
+	entanglingShot = Affix(id=,
+		affix='entanglingShot',
+		is_primary=True,
+		desc='Increase Entangling Shot damage by <span>10 - 15%</span>')
+	entanglingShot.save()
+
+	evasiveFire = Affix(id=,
+		affix='evasiveFire',
+		is_primary=True,
+		desc='Increase Evasive Fire damage by <span>10 - 15%</span>')
+	evasiveFire.save()
+
+	fanOfKnives = Affix(id=,
+		affix='fanOfKnives',
+		is_primary=True,
+		desc='Increase Fan of Knives damage by <span>10 - 15%</span>')
+	fanOfKnives.save()
+
+	grenade = Affix(id=,
+		affix='grenade',
+		is_primary=True,
+		desc='Increase Grenade damage by <span>10 - 15%</span>')
+	grenade.save()
+
+	hungeringArrow = Affix(id=,
+		affix='hungeringArrow',
+		is_primary=True,
+		desc='Increase Hungering Arrow damage by <span>10 - 15%</span>')
+	hungeringArrow.save()
+
+	impale = Affix(id=,
+		affix='impale',
+		is_primary=True,
+		desc='Increase Impale damage by <span>10 - 15%</span>')
+	impale.save()
+
+	multishot = Affix(id=,
+		affix='multishot',
+		is_primary=True,
+		desc='Increase Multishot damage by <span>10 - 15%</span>')
+	multishot.save()
+
+	rainOfVengeance = Affix(id=,
+		affix='rainOfVengeance',
+		is_primary=True,
+		desc='Increase Rain of Vengeance damage by <span>10 - 15%</span>')
+	rainOfVengeance.save()
+
+	rapidFire = Affix(id=,
+		affix='rapidFire',
+		is_primary=True,
+		desc='Increase Rapid Fire damage by <span>10 - 15%</span>')
+	rapidFire.save()
+
+	sentry = Affix(id=,
+		affix='sentry',
+		is_primary=True,
+		desc='Increase Sentry damage by <span>10 - 15%</span>')
+	sentry.save()
+
+	spikeTrap = Affix(id=,
+		affix='spikeTrap',
+		is_primary=True,
+		desc='Increase Spike Trap damage by <span>10 - 15%</span>')
+	spikeTrap.save()
+
+	strafe = Affix(id=,
+		affix='strafe',
+		is_primary=True,
+		desc='Increase Strafe damage by <span>10 - 15%</span>')
+	strafe.save()
+
+#Witch Doctor Skills
+#==============================================================================
+#==============================================================================
+	acidCloud = Affix(id=,
+		affix='acidCloud',
+		is_primary=True,
+		desc='Increase Acid Cloud damage by <span>10 - 15%</span>')
+	acidCloud.save()
+
+	corpseSpiders = Affix(id=,
+		affix='corpseSpiders',
+		is_primary=True,
+		desc='Increase Corpse Spiders damage by <span>10 - 15%</span>')
+	corpseSpiders.save()
+
+	fetishArmy = Affix(id=,
+		affix='fetishArmy',
+		is_primary=True,
+		desc='Increase Fetish Army damage by <span>10 - 15%</span>')
+	fetishArmy.save()
+
+	firebats = Affix(id=,
+		affix='firebats',
+		is_primary=True,
+		desc='Increase Fire Bats damage by <span>10 - 15%</span>')
+	firebats.save()
+
+	firebomb = Affix(id=,
+		affix='firebomb',
+		is_primary=True,
+		desc='Increase Fire Bomb damage by <span>10 - 15%</span>')
+	firebomb.save()
+
+	gargantuan = Affix(id=,
+		affix='gargantuan',
+		is_primary=True,
+		desc='Increase Gargantuan damage by <span>10 - 15%</span>')
+	gargantuan.save()
+
+	graspOfTheDead = Affix(id=,
+		affix='graspOfTheDead',
+		is_primary=True,
+		desc='Increase Grasp of the Dead damage by <span>10 - 15%</span>')
+	graspOfTheDead.save()
+
+	haunt = Affix(id=,
+		affix='haunt',
+		is_primary=True,
+		desc='Increase Haunt damage by <span>10 - 15%</span>')
+	haunt.save()
+
+	locustSwarm = Affix(id=,
+		affix='locustSwarm',
+		is_primary=True,
+		desc='Increase Locust Swarm damage by <span>10 - 15%</span>')
+	locustSwarm.save()
+
+	piranhas = Affix(id=,
+		affix='piranhas',
+		is_primary=True,
+		desc='Increase Piranhas damage by <span>10 - 15%</span>')
+	piranhas.save()
+
+	plagueOfToads = Affix(id=,
+		affix='plagueOfToads',
+		is_primary=True,
+		desc='Increase Plague of Toads damage by <span>10 - 15%</span>')
+	plagueOfToads.save()
+
+	poisonDart = Affix(id=,
+		affix='poisonDart',
+		is_primary=True,
+		desc='Increase Poison Dart damage by <span>10 - 15%</span>')
+	poisonDart.save()
+
+	sacrifice = Affix(id=,
+		affix='sacrifice',
+		is_primary=True,
+		desc='Increase Sacrifice damage by <span>10 - 15%</span>')
+	sacrifice.save()
+
+	spiritBarrage = Affix(id=,
+		affix='spiritBarrage',
+		is_primary=True,
+		desc='Increase Spirit Barrage damage by <span>10 - 15%</span>')
+	spiritBarrage.save()
+
+	summonZombieDogs = Affix(id=,
+		affix='summonZombieDogs',
+		is_primary=True,
+		desc='Increase Summon Zombie Dogs damage by <span>10 - 15%</span>')
+	summonZombieDogs.save()
+
+	wallOfDeath = Affix(id=,
+		affix='wallOfDeath',
+		is_primary=True,
+		desc='Increase Wall of Death damage by <span>10 - 15%</span>')
+	wallOfDeath.save()
+
+	zombieCharger = Affix(id=,
+		affix='zombieCharger',
+		is_primary=True,
+		desc='Increase Zombie Charger damage by <span>10 - 15%</span>')
+	zombieCharger.save()
 
 
 #Wizard Skills
 #==============================================================================
-
+#==============================================================================
 	arcaneOrb = Affix(id=,
 		affix='arcaneOrb',
 		is_primary=True,
@@ -296,7 +627,6 @@ def load__affixes(apps, schema_editor):
 #Secondaries
 #==============================================================================
 #==============================================================================
-
 	eleRes = Affix(id=,
 		affix='eleRes',
 		is_primary=False,
@@ -347,6 +677,31 @@ def load__affixes(apps, schema_editor):
 	arcaneRes.save()
 
 
+	maxWrath = Affix(id=,
+		affix='maxWrath',
+		is_primary=False,
+		desc='<span>+</span> Max Wrath')
+	maxWrath.save()
+
+	maxDisc = Affix(id=,
+		affix='maxDisc',
+		is_primary=False,
+		desc='<span>+</span> Max Discipline')
+	maxDisc.save()
+
+	maxAP = Affix(id=,
+		affix='maxAP',
+		is_primary=False,
+		desc='<span>+</span> Max Arcane Power')
+	maxAP.save()
+
+	maxMana = Affix(id=,
+		affix='maxMana',
+		is_primary=False,
+		desc='<span>+</span> Max Mana')
+	maxMana.save()
+
+
 	reducedRangeDmg = Affix(id=,
 		affix='reducedRangeDmg',
 		is_primary=False,
@@ -359,12 +714,26 @@ def load__affixes(apps, schema_editor):
 		desc='<span>+6.0 - 7.0%</span> Melee Damage Reduction')
 	reducedMeleeDmg.save()
 
-
-	maxAP = Affix(id=,
-		affix='maxAP',
+	ccReduction = Affix(id=,
+		affix='ccReduction',
 		is_primary=False,
-		desc='<span>+</span> Max Arcane Power')
-	maxAP.save()
+		desc='<span>+20 - 40%</span> Crowd Control Duration Reduction')
+	ccReduction.save()
+
+
+	lpk = Affix(id=,
+		affix='lpk',
+		is_primary=False,
+		desc='<span>+</span> Life per Kill',
+		ancient='<span>+</span> Life per Kill')
+	lpk.save()
+
+	itemHealing = Affix(id=,
+		affix='itemHealing',
+		is_primary=False,
+		desc='<span>+</span> Healing from Health Globes and Potions',
+		ancient='<span>+3</span> Healing from Health Globes and Potions')
+	itemHealing.save()
 
 
 	fearChance = Affix(id=,
@@ -416,11 +785,11 @@ def load__affixes(apps, schema_editor):
 	knockbackChance.save()
 
 
-	ccReduction = Affix(id=,
-		affix='ccReduction',
+	extraGold = Affix(id=,
+		affix='extraGold',
 		is_primary=False,
-		desc='<span>+20 - 40%</span> Crowd Control Duration Reduction')
-	ccReduction.save()
+		desc='<span>+%</span> Extra Gold from Monsters')
+	extraGold.save()
 
 	thorns = Affix(id=,
 		affix='thorns',
@@ -429,21 +798,6 @@ def load__affixes(apps, schema_editor):
 		ancient='Attackers take <span></span> damage')
 	thorns.save()
 
-	itemHealing = Affix(id=,
-		affix='itemHealing',
-		is_primary=False,
-		desc='<span>+</span> Healing from Health Globes and Potions',
-		ancient='<span>+3</span> Healing from Health Globes and Potions')
-	itemHealing.save()
-
-	lpk = Affix(id=,
-		affix='lpk',
-		is_primary=False,
-		desc='<span>+</span> Life per Kill',
-		ancient='<span>+</span> Life per Kill')
-	lpk.save()
-
-
 	killExp = Affix(id=,
 		affix='killExp',
 		is_primary=False,
@@ -451,70 +805,14 @@ def load__affixes(apps, schema_editor):
 		ancient='<span>+220 - 260</span> Experience per Kill')
 	killExp.save()
 
-	extraGold = Affix(id=,
-		affix='extraGold',
-		is_primary=False,
-		desc='<span>+%</span> Extra Gold from Monsters')
-	extraGold.save()
-
-	durability = Affix(id=,
-		affix='durability',
-		is_primary=False,
-		desc='Item ignores Durability Loss')
-	durability.save()
-
 	lvlReq = Affix(id=,
 		affix='lvlReq',
 		is_primary=False,
 		desc='Lower item level requirement by <span>2 - 30</span>')
 	lvlReq.save()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	for affix in Affix.objects.all():
-		if not affix.ancient:
-			affix.ancient = affix.desc
-			affix.save()
-		else:
-			pass
-
-	migrations.RunPython(load__affixes)
+	durability = Affix(id=,
+		affix='durability',
+		is_primary=False,
+		desc='Item ignores Durability Loss')
+	durability.save()
