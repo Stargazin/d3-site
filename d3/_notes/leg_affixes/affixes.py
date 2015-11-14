@@ -5,8 +5,8 @@ def load__affixes(apps, schema_editor):
 	dmg = Affix(id=,
 		affix='dmg',
 		is_primary=True,
-		desc='<span>+</span>-<span></span> Damage',
-		ancient='<span>+</span>-<span></span> Damage')
+		desc='<span>+</span> -- <span></span> Damage',
+		ancient='<span>+</span> -- <span></span> Damage')
 	dmg.save()
 
 	mainStat = Affix(id=,

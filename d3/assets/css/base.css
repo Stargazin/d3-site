@@ -344,6 +344,12 @@ header {
           transform: translateY(-50%);
   text-align: center; }
 
+.pic-lg {
+  display: inline-block;
+  height: 128px;
+  width: 64px;
+  text-align: center; }
+
 .leg__info__affix-container {
   -webkit-box-flex: 0;
   -webkit-flex: 0 1 auto;
@@ -458,6 +464,8 @@ header {
       .lb .lb__leg__info__pic {
         margin-left: 0.2rem; } }
     .lb .lb__leg__info__pic .pic-sm {
+      left: 1px; }
+    .lb .lb__leg__info__pic .pic-lg {
       left: 1px; }
   .lb .lb__leg__info__details {
     position: relative;

@@ -10,8 +10,8 @@ def load_amulet_affixes(apps, schema_editor):
 	dmg = Affix(id=0,
 		affix='dmg',
 		is_primary=True,
-		desc='<span>+60 - 80</span>-<span>120 - 160</span> Damage',
-		ancient='<span>+88 - 105</span>-<span>168 - 210</span> Damage')
+		desc='<span>+60 - 80</span> -- <span>120 - 160</span> Damage',
+		ancient='<span>+88 - 105</span> -- <span>168 - 210</span> Damage')
 	dmg.save()
 
 	mainStat = Affix(id=1,

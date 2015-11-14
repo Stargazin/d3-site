@@ -2,19 +2,19 @@ from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
 
 from miscitems.models import Material
-from affixes.models import AmuletAffix, RingAffix, SourceAffix
+from affixes.models import AmuletAffix, RingAffix, SourceAffix, CrusaderShieldAffix, MojoAffix, QuiverAffix, ShieldAffix
 
 
 class LegendaryModel(models.Model):
-	category = models.CharField(max_length=255)
+	category = models.CharField(max_length=255, blank=True)
 	name = models.CharField(max_length=255)
 	pic = models.ImageField(blank=True)
 	unique = models.TextField(blank=True)
-	unique_is_primary = models.NullBooleanField()
+	unique_is_primary = models.NullBooleanField(default=False)
 	unique2 = models.TextField(blank=True)
-	unique2_is_primary = models.NullBooleanField()
+	unique2_is_primary = models.NullBooleanField(default=False)
 	unique3 = models.TextField(blank=True)
-	unique3_is_primary = models.NullBooleanField()
+	unique3_is_primary = models.NullBooleanField(default=False)
 	random_primaries = models.CharField(blank=True, max_length=1)
 	random_secondaries = models.CharField(blank=True, max_length=1)
 	mats = models.ManyToManyField(Material, blank=True)
@@ -61,10 +61,23 @@ class Ring(LegendaryModel):
 	def __str__(self):
 		return self.name
 
-
 @python_2_unicode_compatible
 class Source(LegendaryModel):
 	affixes = models.ManyToManyField(SourceAffix, blank=True)
+
+	def __str__(self):
+		return self.name
+
+@python_2_unicode_compatible
+class Mojo(LegendaryModel):
+	affixes = models.ManyToManyField(MojoAffix, blank=True)
+
+	def __str__(self):
+		return self.name
+
+@python_2_unicode_compatible
+class Quiver(LegendaryModel):
+	affixes = models.ManyToManyField(QuiverAffix, blank=True)
 
 	def __str__(self):
 		return self.name
@@ -78,13 +91,33 @@ class Source(LegendaryModel):
 # 		return self.name
 
 
+class ShieldModel(LegendaryModel):
+	armor = models.TextField(blank=True)
+	block_chance = models.TextField(blank=True)
+	block_amount = models.TextField(blank=True)
+
+	class Meta:
+		abstract = True
+
+@python_2_unicode_compatible
+class CrusaderShield(ShieldModel):
+	affixes = models.ManyToManyField(CrusaderShieldAffix, blank=True)
+
+	def __str__(self):
+		return self.name
+
+@python_2_unicode_compatible
+class Shield(ShieldModel):
+	affixes = models.ManyToManyField(ShieldAffix, blank=True)
+
+	def __str__(self):
+		return self.name
 
 
-
-
-
-class WeaponsModel(LegendaryModel):
-	attacks_per_second = models.DecimalField()
+class WeaponModel(LegendaryModel):
+	dps = models.TextField(blank=True)
+	damage = models.TextField(blank=True)
+	aps = models.TextField(blank=True)
 
 	class Meta:
 		abstract = True

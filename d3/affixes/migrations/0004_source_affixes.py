@@ -10,8 +10,8 @@ def load_source_affixes(apps, schema_editor):
 	dmg = Affix(id=0,
 		affix='dmg',
 		is_primary=True,
-		desc='<span>+340 - 370</span>-<span>380 - 450</span> Damage',
-		ancient='<span>+407- 485</span>-<span>495 - 600</span> Damage')
+		desc='<span>+340 - 370</span> -- <span>380 - 450</span> Damage',
+		ancient='<span>+407- 485</span> -- <span>495 - 600</span> Damage')
 	dmg.save()
 
 	inte = Affix(id=1,

@@ -37,3 +37,49 @@ class SourceAffix(AffixModel):
 
 	class Meta:
 		verbose_name_plural = 'Source Affixes'
+
+@python_2_unicode_compatible
+class CrusaderShieldAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Crusader Shield Affixes'
+
+@python_2_unicode_compatible
+class MojoAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Mojo Affixes'
+
+@python_2_unicode_compatible
+class QuiverAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Quiver Affixes'
+
+@python_2_unicode_compatible
+class ShieldAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Shield Affixes'
+
+
+# @python_2_unicode_compatible
+# class Affix(AffixModel):
+
+# 	def __str__(self):
+# 		return self.affix
+
+# 	class Meta:
+# 		verbose_name_plural = 'Affixes'

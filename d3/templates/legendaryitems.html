@@ -17,7 +17,11 @@
     <a href="#{{ item.slug }}" class="leg__name">{{ item.name }}</a>
     <div class="leg__info">
       <a href="#{{ item.slug }}" class="leg__info__pic">
+        {% if pic == 1 %}
         <span class="pic-sm" style="background: url({{ item.pic }})"></span>
+        {% else %}
+        <span class="pic-lg" style="background: url({{ item.pic }})"></span>
+        {% endif %}
       </a> <!-- .leg__info__pic -->
       <div class="leg__info__affix-container">
 
@@ -54,7 +58,11 @@
 
       <div class="lb__leg__info">
         <div class="lb__leg__info__pic">
+          {% if pic == 1 %}
           <span class="pic-sm" style="background: url({{ item.pic }})"></span>
+          {% else %}
+          <span class="pic-lg" style="background: url({{ item.pic }})"></span>
+          {% endif %}
         </div> <!-- .lb__leg__info__pic -->
 
         <div class="lb__leg__info__details">
