@@ -41,13 +41,21 @@ class LegendaryModel(models.Model):
 	class Meta:
 		abstract = True
 
-	# def uniques(self):
-	# 	return self.unique.split("///")
-	## usage: {% for unique in item.uniques %}
-	##		{{ unique }}
-	##		{% endfor %}
+#Armor
+#==============================================================================
+#==============================================================================
+
+# @python_2_unicode_compatible
+# class (LegendaryModel):
+# 	affixes = models.ManyToManyField(Affix, blank=True)
+
+# 	def __str__(self):
+# 		return self.name
 
 
+#Accessories
+#==============================================================================
+#==============================================================================
 @python_2_unicode_compatible
 class Amulet(LegendaryModel):
 	affixes = models.ManyToManyField(AmuletAffix, blank=True)
@@ -62,6 +70,9 @@ class Ring(LegendaryModel):
 	def __str__(self):
 		return self.name
 
+#Off-Hands
+#==============================================================================
+#==============================================================================
 @python_2_unicode_compatible
 class Source(LegendaryModel):
 	affixes = models.ManyToManyField(SourceAffix, blank=True)
@@ -83,19 +94,10 @@ class Quiver(LegendaryModel):
 	def __str__(self):
 		return self.name
 
-
-# @python_2_unicode_compatible
-# class (LegendaryModel):
-# 	affixes = models.ManyToManyField(Affix, blank=True)
-
-# 	def __str__(self):
-# 		return self.name
-
-
 class ShieldModel(LegendaryModel):
-	armor = models.TextField(blank=True)
 	block_chance = models.TextField(blank=True)
-	block_amount = models.TextField(blank=True)
+	block_amount = models.TextField(default="17000-19000 -- 21000-25000")
+	ancient_block_amount = models.TextField(default="20900-25000 -- 27500-32800")
 
 	class Meta:
 		abstract = True
@@ -103,18 +105,20 @@ class ShieldModel(LegendaryModel):
 @python_2_unicode_compatible
 class CrusaderShield(ShieldModel):
 	affixes = models.ManyToManyField(CrusaderShieldAffix, blank=True)
-
+	base_armor = models.TextField(default="1,980 - 2,277")
 	def __str__(self):
 		return self.name
 
 @python_2_unicode_compatible
 class Shield(ShieldModel):
 	affixes = models.ManyToManyField(ShieldAffix, blank=True)
-
+	base_armor = models.TextField(default="1,760 - 2,024")
 	def __str__(self):
 		return self.name
 
-
+#Weapons
+#==============================================================================
+#==============================================================================
 class WeaponModel(LegendaryModel):
 	dps = models.TextField(blank=True)
 	damage = models.TextField(blank=True)
@@ -122,3 +126,11 @@ class WeaponModel(LegendaryModel):
 
 	class Meta:
 		abstract = True
+
+
+# @python_2_unicode_compatible
+# class (LegendaryModel):
+# 	affixes = models.ManyToManyField(Affix, blank=True)
+
+# 	def __str__(self):
+# 		return self.name

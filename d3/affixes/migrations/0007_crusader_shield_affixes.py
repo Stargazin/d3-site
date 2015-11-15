@@ -374,5 +374,5 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-    	# migrations.RunPython(load_crusader_shield)
+    	migrations.RunPython(load_crusader_shield_affixes)
     ]

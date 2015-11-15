@@ -11,6 +11,22 @@ class AffixModel(models.Model):
 	class Meta:
 		abstract = True
 
+#Armor
+#==============================================================================
+#==============================================================================
+
+# @python_2_unicode_compatible
+# class Affix(AffixModel):
+
+# 	def __str__(self):
+# 		return self.affix
+
+# 	class Meta:
+# 		verbose_name_plural = 'Affixes'
+
+#Accessories
+#==============================================================================
+#==============================================================================
 @python_2_unicode_compatible
 class AmuletAffix(AffixModel):
 
@@ -29,6 +45,9 @@ class RingAffix(AffixModel):
 	class Meta:
 		verbose_name_plural = 'Ring Affixes'
 
+#Off-Hands
+#==============================================================================
+#==============================================================================
 @python_2_unicode_compatible
 class SourceAffix(AffixModel):
 
@@ -73,6 +92,10 @@ class ShieldAffix(AffixModel):
 
 	class Meta:
 		verbose_name_plural = 'Shield Affixes'
+
+#Weapons
+#==============================================================================
+#==============================================================================
 
 
 # @python_2_unicode_compatible

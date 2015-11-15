@@ -676,6 +676,11 @@ def load__affixes(apps, schema_editor):
 		ancient='<span>+</span> Arcane Resistance')
 	arcaneRes.save()
 
+	maxResource = Affix(id=,
+		affix='maxResource',
+		is_primary=False,
+		desc='Increase Max {<span>Resource</span>}')
+	maxResource.save()
 
 	maxWrath = Affix(id=,
 		affix='maxWrath',

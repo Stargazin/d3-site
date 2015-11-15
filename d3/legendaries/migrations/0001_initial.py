@@ -7,8 +7,8 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
+        ('affixes', '0008_shield_affixes'),
         ('miscitems', '0003_crafting_mats'),
-        ('affixes', '0001_initial'),
     ]
 
     operations = [
@@ -55,9 +55,10 @@ class Migration(migrations.Migration):
                 ('number_of_mats', models.CommaSeparatedIntegerField(max_length=32, blank=True)),
                 ('notes', models.TextField(blank=True)),
                 ('slug', models.SlugField(blank=True)),
-                ('armor', models.TextField(blank=True)),
                 ('block_chance', models.TextField(blank=True)),
-                ('block_amount', models.TextField(blank=True)),
+                ('block_amount', models.TextField(default=b'17000-19000 -- 21000-25000')),
+                ('ancient_block_amount', models.TextField(default=b'20900-25000 -- 27500-32800')),
+                ('base_armor', models.TextField(default=b'1,980 - 2,277')),
                 ('affixes', models.ManyToManyField(to='affixes.CrusaderShieldAffix', blank=True)),
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
@@ -158,9 +159,10 @@ class Migration(migrations.Migration):
                 ('number_of_mats', models.CommaSeparatedIntegerField(max_length=32, blank=True)),
                 ('notes', models.TextField(blank=True)),
                 ('slug', models.SlugField(blank=True)),
-                ('armor', models.TextField(blank=True)),
                 ('block_chance', models.TextField(blank=True)),
-                ('block_amount', models.TextField(blank=True)),
+                ('block_amount', models.TextField(default=b'17000-19000 -- 21000-25000')),
+                ('ancient_block_amount', models.TextField(default=b'20900-25000 -- 27500-32800')),
+                ('base_armor', models.TextField(default=b'1,760 - 2,024')),
                 ('affixes', models.ManyToManyField(to='affixes.ShieldAffix', blank=True)),
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],

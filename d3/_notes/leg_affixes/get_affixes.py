@@ -129,6 +129,7 @@
 	poisRes = Affix.objects.get(affix='poisRes')
 	arcaneRes = Affix.objects.get(affix='arcaneRes')
 
+	maxResource = Affix.objects.get(affix='maxResource')
 	maxWrath = Affix.objects.get(affix='maxWrath')
 	maxDisc = Affix.objects.get(affix='maxDisc')
 	maxAP = Affix.objects.get(affix='maxAP')
