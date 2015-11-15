@@ -14,15 +14,122 @@ class AffixModel(models.Model):
 #Armor
 #==============================================================================
 #==============================================================================
+@python_2_unicode_compatible
+class HelmetAffix(AffixModel):
 
-# @python_2_unicode_compatible
-# class Affix(AffixModel):
+	def __str__(self):
+		return self.affix
 
-# 	def __str__(self):
-# 		return self.affix
+	class Meta:
+		verbose_name_plural = 'Helmet Affixes'
 
-# 	class Meta:
-# 		verbose_name_plural = 'Affixes'
+@python_2_unicode_compatible
+class SpiritStoneAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Spirit Stone Affixes'
+
+@python_2_unicode_compatible
+class VoodooMaskAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Voodoo Mask Affixes'
+
+@python_2_unicode_compatible
+class WizardHatAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Wizard Hat Affixes'
+
+@python_2_unicode_compatible
+class ShouldersAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Shoulders Affixes'
+
+@python_2_unicode_compatible
+class ChestArmorAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Chest Armor Affixes'
+
+@python_2_unicode_compatible
+class CloakAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Cloak Affixes'
+
+@python_2_unicode_compatible
+class BracersAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Bracers Affixes'
+
+@python_2_unicode_compatible
+class GlovesAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Gloves Affixes'
+
+@python_2_unicode_compatible
+class BeltAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Belt Affixes'
+
+@python_2_unicode_compatible
+class MightyBeltAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Mighty Belt Affixes'
+
+@python_2_unicode_compatible
+class PantsAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Pants Affixes'
+
+@python_2_unicode_compatible
+class BootsAffix(AffixModel):
+
+	def __str__(self):
+		return self.affix
+
+	class Meta:
+		verbose_name_plural = 'Boots Affixes'
 
 #Accessories
 #==============================================================================
@@ -105,4 +212,4 @@ class ShieldAffix(AffixModel):
 # 		return self.affix
 
 # 	class Meta:
-# 		verbose_name_plural = 'Affixes'
+# 		verbose_name_plural = ' Affixes'

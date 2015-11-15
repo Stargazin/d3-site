@@ -1,0 +1,21 @@
+HEAD
+Helmet
+Spirit Stone
+Voodoo Mask
+Wizard Hat
+
+Shoulders
+
+TORSO
+Chest Armor
+Cloak
+
+Bracers
+Gloves
+
+WAIST
+Belt
+Mighty Belt
+
+Pants
+Boots

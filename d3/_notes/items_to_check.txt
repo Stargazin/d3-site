@@ -8,4 +8,20 @@ SoJ
 MOJOS
 Gazing Demise
 Shukrani's Triumph
-secondaries + primaries
+secondaries + primaries+
+
+SHOULDERS
+Pauldron of the Skeleton King
+-base_armor='959-1071'
+
+BELTS
+T-gods
+-base_armor='516-675'
+
+BOOTS
+Boots of Disregard
+-base_armor='886-987'
+
+CLOAKS
+Cloak of Deception
+-base_armor='1033-1354'
