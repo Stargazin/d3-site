@@ -18,6 +18,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Amulet Affixes',
@@ -31,6 +32,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Belt Affixes',
@@ -44,6 +46,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Boots Affixes',
@@ -57,6 +60,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Bracers Affixes',
@@ -70,6 +74,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Chest Armor Affixes',
@@ -83,6 +88,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Cloak Affixes',
@@ -96,6 +102,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Crusader Shield Affixes',
@@ -109,6 +116,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Gloves Affixes',
@@ -122,6 +130,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Helmet Affixes',
@@ -135,6 +144,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Mighty Belt Affixes',
@@ -148,6 +158,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Mojo Affixes',
@@ -161,6 +172,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Pants Affixes',
@@ -174,6 +186,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Quiver Affixes',
@@ -187,6 +200,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Ring Affixes',
@@ -200,6 +214,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Shield Affixes',
@@ -213,6 +228,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Shoulders Affixes',
@@ -226,6 +242,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Source Affixes',
@@ -239,6 +256,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Spirit Stone Affixes',
@@ -252,6 +270,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Voodoo Mask Affixes',
@@ -265,6 +284,7 @@ class Migration(migrations.Migration):
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
                 ('ancient', models.TextField(blank=True)),
+                ('notes', models.TextField(blank=True)),
             ],
             options={
                 'verbose_name_plural': 'Wizard Hat Affixes',

@@ -15,7 +15,8 @@ TODODODO
 --decide before getting all items
 ---b/c you may have to add spans or something #}
 
-sources and everything else lelz
+start from rings... go back and get rid of everything that is NOT unique
+see amulets if needed
 
 
 ** may have to do each type in seperate model/admin

@@ -65,6 +65,9 @@ def load_sources(apps, schema_editor):
 	durability = Affix.objects.get(affix='durability')
 
 
+	winterColdDmg = Affix.objects.get(affix='winterColdDmg')
+
+
 	cosmicStrand = Source(id=0,
 		name='Cosmic Strand',
 		pic='/assets/media/items/legendaries/offhands/sources/cosmic_strand.png',
@@ -128,13 +131,11 @@ def load_sources(apps, schema_editor):
 	winterFlurry = Source(id=6,
 		name='Winter Flurry',
 		pic='/assets/media/items/legendaries/offhands/sources/winter_flurry.png',
-		unique='Cold skills deal <span>15 - 20%</span> more damage',
-		unique_is_primary=True,
-		unique2='Enemies killed by Cold damage have a <span>15 - 20%</span> chance to release a Frost Nova.',
+		unique='Enemies killed by Cold damage have a <span>15 - 20%</span> chance to release a Frost Nova.',
 		random_primaries='2',
 		random_secondaries='1')
 	winterFlurry.save()
-	winterFlurry.affixes.add(dmg, inte, chc)
+	winterFlurry.affixes.add(dmg, inte, chc, winterColdDmg)
 
 	# singularity = Source(id=7,
 	# 	name='Singularity',

@@ -7,6 +7,7 @@ class AffixModel(models.Model):
 	is_primary = models.BooleanField()
 	desc = models.TextField()
 	ancient = models.TextField(blank=True)
+	notes = models.TextField(blank=True)
 
 	class Meta:
 		abstract = True

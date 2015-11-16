@@ -1,21 +1,12 @@
-HEAD
-Helmet
-Spirit Stone
-Voodoo Mask
-Wizard Hat
-
-Shoulders
-
-TORSO
-Chest Armor
-Cloak
-
+{# Shoulders #}
+{# ChestArmor #}
+{# Cloak #}
 Bracers
+
 Gloves
 
-WAIST
 Belt
-Mighty Belt
+MightyBelt
 
 Pants
 Boots

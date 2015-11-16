@@ -86,7 +86,7 @@ class Migration(migrations.Migration):
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
-                'abstract': False,
+                'verbose_name_plural': 'Boots',
             },
         ),
         migrations.CreateModel(
@@ -112,7 +112,7 @@ class Migration(migrations.Migration):
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
-                'abstract': False,
+                'verbose_name_plural': 'Bracers',
             },
         ),
         migrations.CreateModel(
@@ -138,7 +138,7 @@ class Migration(migrations.Migration):
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
-                'abstract': False,
+                'verbose_name_plural': 'Chest Armor',
             },
         ),
         migrations.CreateModel(
@@ -195,7 +195,7 @@ class Migration(migrations.Migration):
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
-                'abstract': False,
+                'verbose_name_plural': 'Crusader Shields',
             },
         ),
         migrations.CreateModel(
@@ -221,7 +221,7 @@ class Migration(migrations.Migration):
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
-                'abstract': False,
+                'verbose_name_plural': 'Gloves',
             },
         ),
         migrations.CreateModel(
@@ -274,7 +274,7 @@ class Migration(migrations.Migration):
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
-                'abstract': False,
+                'verbose_name_plural': 'Mighty Belts',
             },
         ),
         migrations.CreateModel(
@@ -326,7 +326,7 @@ class Migration(migrations.Migration):
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
-                'abstract': False,
+                'verbose_name_plural': 'Pants',
             },
         ),
         migrations.CreateModel(
@@ -432,7 +432,7 @@ class Migration(migrations.Migration):
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
-                'abstract': False,
+                'verbose_name_plural': 'Shoulders',
             },
         ),
         migrations.CreateModel(
@@ -485,7 +485,7 @@ class Migration(migrations.Migration):
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
-                'abstract': False,
+                'verbose_name_plural': 'Spirit Stones',
             },
         ),
         migrations.CreateModel(
@@ -512,7 +512,7 @@ class Migration(migrations.Migration):
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
-                'abstract': False,
+                'verbose_name_plural': 'Voodoo Masks',
             },
         ),
         migrations.CreateModel(
@@ -539,7 +539,7 @@ class Migration(migrations.Migration):
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
-                'abstract': False,
+                'verbose_name_plural': 'Wizard Hats',
             },
         ),
     ]

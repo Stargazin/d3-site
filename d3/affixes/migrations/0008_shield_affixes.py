@@ -10,8 +10,9 @@ def load_shield_affixes(apps, schema_editor):
 
 	mainStat = Affix(affix='mainStat',
 		is_primary=True,
-		desc='<span>+626 - 750</span> {<span>Main Stat</span>}',
-		ancient='<span>+825 - 1,000</span> {<span>Main Stat</span>}')
+		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}',
+		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}',
+		notes='Dexterity<br>Intelligence<br>Strength')
 	mainStat.save()
 
 	vita = Affix(affix='vita',
@@ -37,6 +38,26 @@ def load_shield_affixes(apps, schema_editor):
 		desc='Attackers take <span>2,667 - 3,498</span> damage',
 		ancient='Attackers take <span>3,847 - 4,550</span> damage')
 	thorns.save()
+
+
+#Lidless Wall
+	lidlessEleDmg = Affix(affix='lidlessEleDmg',
+		is_primary=True,
+		desc='Skills of {<span class="vary">One Element</span>} do <span>15 - 20%</span> more damage',
+		notes='Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane<br>Holy')
+	lidlessEleDmg.save()
+
+	lidlessMaxResource = Affix(affix='lidlessMaxResource',
+		is_primary=False,
+		desc='Increase Max {<span class="vary">Resource</span>}',
+		notes='Fury<br>Wrath<br>Discipline<br>Spirit<br>Mana<br>Arcane Power')
+	lidlessMaxResource.save()
+
+#Storm Shield
+	stormReducedMeleeDmg = Affix(affix='stormReducedMeleeDmg',
+		is_primary=False,
+		desc='Reduces damage from melee attacks by <span>25.0 - 30.0%</span>')
+	stormReducedMeleeDmg.save()
 
 
 	for affix in Affix.objects.all():

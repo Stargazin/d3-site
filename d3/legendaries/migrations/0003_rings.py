@@ -51,6 +51,22 @@ def load_rings(apps, schema_editor):
 	killExp = Affix.objects.get(affix='killExp')
 
 
+	justiceBlockChance = Affix.objects.get(affix='justiceBlockChance')
+	justiceCCReduction = Affix.objects.get(affix='justiceCCReduction')
+	hellfireBonusExp = Affix.objects.get(affix='hellfireBonusExp')
+	leoricsBonusExp = Affix.objects.get(affix='leoricsBonusExp')
+	manaldMaxResource = Affix.objects.get(affix='manaldMaxResource')
+	obsidianDurability = Affix.objects.get(affix='obsidianDurability')
+	oculusEliteDmg = Affix.objects.get(affix='oculusEliteDmg')
+	pandemoniumFearChance = Affix.objects.get(affix='pandemoniumFearChance')
+	rechelsFearChance = Affix.objects.get(affix='rechelsFearChance')
+	stolenItemPickup = Affix.objects.get(affix='stolenItemPickup')
+	stoneEleDmg = Affix.objects.get(affix='stoneEleDmg')
+	stoneEliteDmg = Affix.objects.get(affix='stoneEliteDmg')
+	stoneMaxResource = Affix.objects.get(affix='stoneMaxResource')
+	unityEliteDmg = Affix.objects.get(affix='unityEliteDmg')
+
+
 	arcstone = Ring(id=0,
 		name='Arcstone',
 		pic='/assets/media/items/legendaries/accessories/rings/arcstone.png',
@@ -140,42 +156,36 @@ def load_rings(apps, schema_editor):
 	halo.save()
 	halo.affixes.add(mainStat, sockets)
 
-	hellfire_35 = Ring(id=9,
-		name='Hellfire Ring (60)',
-		pic='/assets/media/items/legendaries/accessories/rings/hellfire_ring_35.png',
-		unique='Increases Bonus Experience by 35%',
-		unique_is_primary=False,
-		unique2='Chance to launch an explosive ball of Hellfire when you attack.',
-		unique2_is_primary=False,
-		random_primaries='3',
-		random_secondaries='1',
-		notes='Can also have Vit')
-	hellfire_35.save()
-	hellfire_35.affixes.add(mainStat)
+	# hellfire_35 = Ring(id=9,
+	# 	name='Hellfire Ring (60)',
+	# 	pic='/assets/media/items/legendaries/accessories/rings/hellfire_ring_35.png',
+	# 	unique='Increases Bonus Experience by 35%',
+	# 	unique_is_primary=False,
+	# 	unique2='Chance to launch an explosive ball of Hellfire when you attack.',
+	# 	unique2_is_primary=False,
+	# 	random_primaries='3',
+	# 	random_secondaries='1',
+	# 	notes='Can also have Vit')
+	# hellfire_35.save()
+	# hellfire_35.affixes.add(mainStat)
 
 	hellfire_45 = Ring(id=10,
 		name='Hellfire Ring (70)',
 		pic='/assets/media/items/legendaries/accessories/rings/hellfire_ring_45.png',
-		unique='Increases Bonus Experience by <span class="silver">45%</span>',
+		unique='Chance on hit to engulf the ground in lava, dealing <span class="silver">200%</span> weapon damage per second for <span class="silver">6</span> seconds.',
 		unique_is_primary=False,
-		unique2='Chance on hit to engulf the ground in lava, dealing <span class="silver">200%</span> weapon damage per second for <span class="silver">6</span> seconds.',
-		unique2_is_primary=False,
 		random_primaries='4',
 		random_secondaries='1')
 	hellfire_45.save()
-	# hellfire_45.affixes.add()
+	hellfire_45.affixes.add(hellfireBonusExp)
 
 	justice = Ring(id=11,
 		name='Justice Lantern',
 		pic='/assets/media/items/legendaries/accessories/rings/justice_lantern.png',
-		unique='<span class="silver">+12%</span> Chance to Block',
-		unique_is_primary=True,
-		unique2='<span>+35 - 50%</span> Crowd Control Duration Reduction',
-		unique2_is_primary=False,
 		random_primaries='2',
 		random_secondaries='1')
 	justice.save()
-	justice.affixes.add(mainStat)
+	justice.affixes.add(mainStat, justiceBlockChance, justiceCCReduction)
 
 	kredes = Ring(id=12,
 		name='Krede\'s Flame',
@@ -190,23 +200,18 @@ def load_rings(apps, schema_editor):
 	leorics = Ring(id=13,
 		name='Leoric\'s Signet',
 		pic='/assets/media/items/legendaries/accessories/rings/leorics_signet.png',
-		unique='Increases Bonus Experience by <span>20 - 30%</span>',
-		unique_is_primary=False,
 		random_primaries='2',
 		random_secondaries='1')
 	leorics.save()
-	leorics.affixes.add(mainStat, chc)
+	leorics.affixes.add(mainStat, chc, leoricsBonusExp)
 
 	manald = Ring(id=14,
 		name='Manald Heal',
 		pic='/assets/media/items/legendaries/accessories/rings/manald_heal.png',
-		unique='+Max {<span>Class Resource</span>}',
-		unique_is_primary=False,
 		random_primaries='3',
-		random_secondaries='1',
-		notes='???')
+		random_secondaries='1',)
 	manald.save()
-	manald.affixes.add(mainStat)
+	manald.affixes.add(mainStat, manaldMaxResource)
 
 	nagel = Ring(id=15,
 		name='Nagelring',
@@ -225,33 +230,27 @@ def load_rings(apps, schema_editor):
 		pic='/assets/media/items/legendaries/accessories/rings/obsidian_ring_of_the_zodiac.png',
 		unique='Reduce the remaining cooldown of one of your skills by <span class="silver">1</span> seconds when you hit with a resource-spending attack.',
 		unique_is_primary=False,
-		unique2='Ignores Durability Loss',
-		unique2_is_primary=False,
 		random_secondaries='1')
 	obsidian.save()
-	obsidian.affixes.add(ias, chc, cdr, rcr)
+	obsidian.affixes.add(ias, chc, cdr, rcr, obsidianDurability)
 
 	oculus = Ring(id=17,
 		name='Oculus Ring',
 		pic='/assets/media/items/legendaries/accessories/rings/oculus_ring.png',
-		unique='<span>+12.0 - 16.0%</span> Elite Damage Reduction',
-		unique_is_primary=True,
-		unique2='Chance to create an area of focused power on killing a monster. Damage is increased by <span>35 - 40%</span> while standing in the area.',
-		unique2_is_primary=False,
+		unique='Chance to create an area of focused power on killing a monster. Damage is increased by <span>35 - 40%</span> while standing in the area.',
+		unique_is_primary=False,
 		random_secondaries='1')
 	oculus.save()
-	oculus.affixes.add(mainStat, allRes, ias)
+	oculus.affixes.add(mainStat, allRes, ias, oculusEliteDmg)
 
 	pandemonium = Ring(id=18,
 		name='Pandemonium Loop',
 		pic='/assets/media/items/legendaries/accessories/rings/pandemonium_loop.png',
-		unique='<span>+10.0 - 15.0%</span> chance to Fear on Hit',
+		unique='Enemies slain while Feared die in a bloody explosion and cause other nearby enemies to flee in Fear.',
 		unique_is_primary=False,
-		unique2='Enemies slain while Feared die in a bloody explosion and cause other nearby enemies to flee in Fear.',
-		unique2_is_primary=False,
 		random_primaries='3')
 	pandemonium.save()
-	pandemonium.affixes.add(mainStat)
+	pandemonium.affixes.add(mainStat, pandemoniumFearChance)
 
 	puzzle = Ring(id=19,
 		name='Puzzle Ring',
@@ -265,13 +264,11 @@ def load_rings(apps, schema_editor):
 	rechels = Ring(id=20,
 		name='Rechel\'s Ring of Larceny',
 		pic='/assets/media/items/legendaries/accessories/rings/rechels_ring_of_larceny.png',
-		unique='<span>+1.0 - 5.1%</span> chance to Fear on Hit',
+		unique='Gain <span>45 - 60%</span> increased movement speed for 4 seconds after Fearing an enemy.',
 		unique_is_primary=False,
-		unique2='Gain <span>45 - 60%</span> increased movement speed for 4 seconds after Fearing an enemy.',
-		unique2_is_primary=False,
 		random_primaries='3')
 	rechels.save()
-	rechels.affixes.add(mainStat)
+	rechels.affixes.add(mainStat, rechelsFearChance)
 
 	rorg = Ring(id=21,
 		name='Ring of Royal Grandeur',
@@ -306,26 +303,17 @@ def load_rings(apps, schema_editor):
 	stolen = Ring(id=24,
 		name='Stolen Ring',
 		pic='/assets/media/items/legendaries/accessories/rings/stolen_ring.png',
-		unique='Increases Gold and Health Pickup by <span>1 - 2</span> Yards.',
-		unique_is_primary=False,
 		random_primaries='3')
 	stolen.save()
-	stolen.affixes.add(mainStat, extraGold)
+	stolen.affixes.add(mainStat, extraGold, stolenItemPickup)
 
 	soj = Ring(id=25,
 		name='Stone of Jordan',
 		pic='/assets/media/items/legendaries/accessories/rings/stone_of_jordan.png',
-		unique='Skills of {<span>One Element</span>} do <span>15 - 20%</span> more damage',
-		unique_is_primary=True,
-		unique2='Increases damage against elites by <span>25.0 - 30.0%</span>',
-		unique2_is_primary=True,
-		unique3='+Max {<span>Class Resource</span>}',
-		unique3_is_primary=False,
 		random_primaries='1',
-		random_secondaries='1',
-		notes='???')
+		random_secondaries='1')
 	soj.save()
-	soj.affixes.add(mainStat)
+	soj.affixes.add(mainStat, stoneEleDmg, stoneEliteDmg, stoneMaxResource)
 
 	short_mans = Ring(id=26,
 		name='The Short Man\'s Finger',
@@ -350,14 +338,12 @@ def load_rings(apps, schema_editor):
 	unity = Ring(id=28,
 		name='Unity',
 		pic='/assets/media/items/legendaries/accessories/rings/unity.png',
-		unique='Increases damage against elites by <span>12.0 - 15.0%</span>',
-		unique_is_primary=True,
-		unique2='All damage taken is split between wearers of this item.',
-		unique2_is_primary=False,
+		unique='All damage taken is split between wearers of this item.',
+		unique_is_primary=False,
 		random_primaries='1',
 		random_secondaries='1')
 	unity.save()
-	unity.affixes.add(mainStat, chc)
+	unity.affixes.add(mainStat, chc, unityEliteDmg)
 
 	wyrdward = Ring(id=29,
 		name='Wyrdward',

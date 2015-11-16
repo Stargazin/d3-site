@@ -1,8 +1,6 @@
 #Primaries
 #==============================================================================
 #==============================================================================
-	sockets = Affix.objects.get(affix='sockets')
-
 	dmg = Affix.objects.get(affix='dmg')
 	mainStat = Affix.objects.get(affix='mainStat')
 	dext = Affix.objects.get(affix='dext')
@@ -19,6 +17,14 @@
 	arcaneDmg = Affix.objects.get(affix='arcaneDmg')
 	holyDmg = Affix.objects.get(affix='holyDmg')
 
+	ias = Affix.objects.get(affix='ias')
+	chc = Affix.objects.get(affix='chc')
+	chd = Affix.objects.get(affix='chd')
+	cdr = Affix.objects.get(affix='cdr')
+	eliteDmg = Affix.objects.get(affix='eliteDmg')
+	areaDmg = Affix.objects.get(affix='areaDmg')
+	bleedChance = Affix.objects.get(affix='bleedChance')
+
 	armor = Affix.objects.get(affix='armor')
 	allRes = Affix.objects.get(affix='allRes')
 	blockChance = Affix.objects.get(affix='blockChance')
@@ -28,19 +34,15 @@
 	lph = Affix.objects.get(affix='lph')
 	lifePerWrath = Affix.objects.get(affix='lifePerWrath')
 
-	ias = Affix.objects.get(affix='ias')
-	chc = Affix.objects.get(affix='chc')
-	chd = Affix.objects.get(affix='chd')
-	cdr = Affix.objects.get(affix='cdr')
-	eliteDmg = Affix.objects.get(affix='eliteDmg')
-	areaDmg = Affix.objects.get(affix='areaDmg')
-	bleedChance = Affix.objects.get(affix='bleedChance')
-
 	rcr = Affix.objects.get(affix='rcr')
 	wrathRegen = Affix.objects.get(affix='wrathRegen')
 	hatredRegen = Affix.objects.get(affix='hatredRegen')
 	apCrit = Affix.objects.get(affix='apCrit')
 	manaRegen = Affix.objects.get(affix='manaRegen')
+
+	sockets = Affix.objects.get(affix='sockets')
+
+	skillDmg = Affix.objects.get(affix='skillDmg')
 
 #Crusader Skills
 #==============================================================================
@@ -78,6 +80,13 @@
 	sentry = Affix.objects.get(affix='sentry')
 	spikeTrap = Affix.objects.get(affix='spikeTrap')
 	strafe = Affix.objects.get(affix='strafe')
+
+#Monk Skills
+#==============================================================================
+	explodingPalm = Affix.objects.get(affix='explodingPalm')
+	lashingTailKick = Affix.objects.get(affix='lashingTailKick')
+	tempestRush = Affix.objects.get(affix='tempestRush')
+	waveOfLight = Affix.objects.get(affix='waveOfLight')
 
 #Witch Doctor Skills
 #==============================================================================
@@ -135,12 +144,13 @@
 	maxAP = Affix.objects.get(affix='maxAP')
 	maxMana = Affix.objects.get(affix='maxMana')
 
-	reducedRangeDmg = Affix.objects.get(affix='reducedRangeDmg')
+	reducedRangedDmg = Affix.objects.get(affix='reducedRangedDmg')
 	reducedMeleeDmg = Affix.objects.get(affix='reducedMeleeDmg')
 	ccReduction = Affix.objects.get(affix='ccReduction')
 
 	lpk = Affix.objects.get(affix='lpk')
 	itemHealing = Affix.objects.get(affix='itemHealing')
+	itemPickup = Affix.objects.get(affix='itemPickup')
 
 	fearChance = Affix.objects.get(affix='fearChance')
 	stunChance = Affix.objects.get(affix='stunChance')

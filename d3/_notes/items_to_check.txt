@@ -25,3 +25,8 @@ Boots of Disregard
 CLOAKS
 Cloak of Deception
 -base_armor='1033-1354'
+
+
+SHOULDERS
+Vile Ward
+-how many affixes

@@ -49,7 +49,7 @@ def load_amulets(apps, schema_editor):
 	poisRes = Affix.objects.get(affix='poisRes')
 	arcaneRes = Affix.objects.get(affix='arcaneRes')
 
-	reducedRangeDmg = Affix.objects.get(affix='reducedRangeDmg')
+	reducedRangedDmg = Affix.objects.get(affix='reducedRangedDmg')
 	reducedMeleeDmg = Affix.objects.get(affix='reducedMeleeDmg')
 	ccReduction = Affix.objects.get(affix='ccReduction')
 
@@ -62,6 +62,13 @@ def load_amulets(apps, schema_editor):
 	thorns = Affix.objects.get(affix='thorns')
 	killExp = Affix.objects.get(affix='killExp')
 
+
+	eyeReducedRangedDmg = Affix.objects.get(affix='eyeReducedRangedDmg')
+	holySpiritRegen = Affix.objects.get(affix='holySpiritRegen')
+	kymbosExtraGold = Affix.objects.get(affix='kymbosExtraGold')
+	moonlightArcaneDmg = Affix.objects.get(affix='moonlightArcaneDmg')
+	rondalsItemPickup = Affix.objects.get(affix='rondalsItemPickup')
+	flavorMovementSpeed = Affix.objects.get(affix='flavorMovementSpeed')
 
 	ancestors = Amulet(id=0,
 		name='Ancestors\' Grace',
@@ -96,12 +103,10 @@ def load_amulets(apps, schema_editor):
 	eye = Amulet(id=3,
 		name='Eye of Elitch',
 		pic='/assets/media/items/legendaries/accessories/amulets/eye_of_elitch.png',
-		unique='Reduces damage from ranged attacks by <span>27.7 - 32.9%</span>.',
-		unique_is_primary=False,
 		random_primaries='3',
 		random_secondaries='1')
 	eye.save()
-	eye.affixes.add(eleDmg)
+	eye.affixes.add(eleDmg,eyeReducedRangedDmg)
 
 	gorget = Amulet(id=4,
 		name='Golden Gorget of Leoric',
@@ -152,18 +157,16 @@ def load_amulets(apps, schema_editor):
 		random_primaries='1',
 		random_secondaries='2')
 	holy.save()
-	holy.affixes.add(mainStat, holyDmg)
+	holy.affixes.add(mainStat, holyDmg, holySpiritRegen)
 
 	kymbos = Amulet(id=9,
 		name='Kymbo\'s Gold',
 		pic='/assets/media/items/legendaries/accessories/amulets/kymbos_gold.png',
-		unique='<span>+75 - 100%</span> Extra Gold from Monsters',
+		unique='Picking up gold heals you for an amount equal to the gold that was picked up.',
 		unique_is_primary=False,
-		unique2='Picking up gold heals you for an amount equal to the gold that was picked up.',
-		unique2_is_primary=False,
 		random_primaries='3')
 	kymbos.save()
-	# kymbos.affixes.add()
+	kymbos.affixes.add(kymbosExtraGold)
 
 	maras = Amulet(id=10,
 		name='Mara\'s Kaleidoscope',
@@ -178,14 +181,12 @@ def load_amulets(apps, schema_editor):
 	moonlight = Amulet(id=11,
 		name='Moonlight Ward',
 		pic='/assets/media/items/legendaries/accessories/amulets/moonlight_ward.png',
-		unique='Arcane skills do <span>+20 - 25%</span> more damage.',
-		unique_is_primary=True,
-		unique2='Enemies hit within <span class="silver">15</span> yards have a chance to spawn Arcane shards that explode and deal <span>240 - 320%</span> Arcane damage to enemies within <span class="silver">15</span> yards.',
-		unique2_is_primary=False,
+		unique='Enemies hit within <span class="silver">15</span> yards have a chance to spawn Arcane shards that explode and deal <span>240 - 320%</span> Arcane damage to enemies within <span class="silver">15</span> yards.',
+		unique_is_primary=False,
 		random_primaries='2',
 		random_secondaries='1')
 	moonlight.save()
-	moonlight.affixes.add(chc)
+	moonlight.affixes.add(chc, moonlightArcaneDmg)
 
 	ouroboros = Amulet(id=12,
 		name='Ouroboros',
@@ -218,11 +219,9 @@ def load_amulets(apps, schema_editor):
 	rondals = Amulet(id=15,
 		name='Rondal\'s Locket',
 		pic='/assets/media/items/legendaries/accessories/amulets/rondals_locket.png',
-		unique='<span>+4 - 6</span> Yards to Gold and Health Pickup',
-		unique_is_primary=False,
 		random_primaries='3')
 	rondals.save()
-	rondals.affixes.add(mainStat, itemHealing)
+	rondals.affixes.add(mainStat, itemHealing, rondalsItemPickup)
 
 	squirts = Amulet(id=16,
 		name='Squirt\'s Necklace',
@@ -255,12 +254,10 @@ def load_amulets(apps, schema_editor):
 	flavor = Amulet(id=19,
 		name='The Flavor of Time',
 		pic='/assets/media/items/legendaries/accessories/amulets/the_flavor_of_time.png',
-		unique='<span>+10 - 12%</span> Movement Speed',
-		unique_is_primary=True,
 		random_primaries='3',
 		random_secondaries='1')
 	flavor.save()
-	flavor.affixes.add(cdr)
+	flavor.affixes.add(cdr, flavorMovementSpeed)
 
 	star = Amulet(id=20,
 		name='The Star of Azkaranth',

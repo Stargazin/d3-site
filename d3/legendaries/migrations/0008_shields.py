@@ -19,6 +19,11 @@ def load_shields(apps, schema_editor):
 	thorns = Affix.objects.get(affix='thorns')
 
 
+	lidlessEleDmg = Affix.objects.get(affix='lidlessEleDmg')
+	lidlessMaxResource = Affix.objects.get(affix='lidlessMaxResource')
+	stormReducedMeleeDmg = Affix.objects.get(affix='stormReducedMeleeDmg')
+
+
 	covensCriterion = Shield(name='Coven\'s Criterion',
 		pic='/assets/media/items/legendaries/offhands/shields/covens_criterion.png',
 		unique='You take <span>45 - 60%</span> less damage from blocked attacks.',
@@ -75,23 +80,19 @@ def load_shields(apps, schema_editor):
 
 	lidlessWall = Shield(name='Lidless Wall',
 		pic='/assets/media/items/legendaries/offhands/shields/lidless_wall.png',
-		unique='Skills of {<span>One Element</span>} do <span>15 - 20%</span> more damage',
-		unique_is_primary=True,
-		unique2='Increase Max {<span>Resource</span>}',
 		random_primaries='2',
 		random_secondaries='1',
 		block_chance='10.0 - 20.0%')
 	lidlessWall.save()
-	lidlessWall.affixes.add(mainStat)
+	lidlessWall.affixes.add(mainStat, lidlessEleDmg, lidlessMaxResource)
 
 	stormshield = Shield(name='stormshield',
 		pic='/assets/media/items/legendaries/offhands/shields/stormshield.png',
-		unique='Reduces damage from melee attacks by <span>25.0 - 30.0%</span>',
 		random_primaries='3',
 		random_secondaries='1',
 		block_chance='19.0 - 24.0%')
 	stormshield.save()
-	stormshield.affixes.add(mainStat)
+	stormshield.affixes.add(mainStat, stormReducedMeleeDmg)
 
 	votoyiasSpiker = Shield(name='Vo\'Toyias Spiker',
 		pic='/assets/media/items/legendaries/offhands/shields/votoyias_spiker.png',

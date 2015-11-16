@@ -66,9 +66,11 @@ def load_mojos(apps, schema_editor):
 	durability = Affix.objects.get(affix='durability')
 
 
+	thingItemPickup = Affix.objects.get(affix='thingItemPickup')
+
+
 	gazingDemise = Mojo(name='Gazing Demise',
 		pic='/assets/media/items/legendaries/offhands/mojos/gazing_demise.png',
-		unique='',
 		random_primaries='1',
 		random_secondaries='2')
 	gazingDemise.save()
@@ -106,10 +108,9 @@ def load_mojos(apps, schema_editor):
 
 	thingOfTheDeep = Mojo(name='Thing Of The Deep',
 		pic='/assets/media/items/legendaries/offhands/mojos/thing_of_the_deep.png',
-		unique='Increases Gold and Health Pickup by <span class="silver">20</span> Yards.',
 		random_primaries='1')
 	thingOfTheDeep.save()
-	thingOfTheDeep.affixes.add(dmg, inte, chc, manaRegen, maxMana)
+	thingOfTheDeep.affixes.add(dmg, inte, chc, manaRegen, maxMana, thingItemPickup)
 
 	uhkapianSerpent = Mojo(name='Uhkapian Serpent',
 		pic='/assets/media/items/legendaries/offhands/mojos/uhkapian_serpent.png',

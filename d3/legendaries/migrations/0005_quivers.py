@@ -66,6 +66,9 @@ def load_quivers(apps, schema_editor):
 	durability = Affix.objects.get(affix='durability')
 
 
+	holyEleDmg = Affix.objects.get(affix='holyEleDmg')
+
+
 	archfiendArrows = Quiver(name='Archfiend Arrows',
 		pic='/assets/media/items/legendaries/offhands/quivers/archfiend_arrows.png',
 		random_primaries='2',
@@ -106,12 +109,10 @@ def load_quivers(apps, schema_editor):
 
 	holyPointShot = Quiver(name='Holy Point Shot',
 		pic='/assets/media/items/legendaries/offhands/quivers/holy_point_shot.png',
-		unique='Skills of {<span>One Element</span>} do <span>15 - 20%</span> more damage',
-		unique_is_primary=True,
 		random_primaries='2',
 		random_secondaries='2')
 	holyPointShot.save()
-	holyPointShot.affixes.add(dext, ias)
+	holyPointShot.affixes.add(dext, ias, holyEleDmg)
 
 	meticulousBolts = Quiver(name='Meticulous Bolts',
 		pic='/assets/media/items/legendaries/offhands/quivers/meticulous_bolts.png',
