@@ -221,6 +221,12 @@ def load_ring_affixes(apps, schema_editor):
 		notes='Fury<br>Wrath<br>Discipline<br>Spirit<br>Mana<br>Arcane Power')
 	manaldMaxResource.save()
 
+#Nagelring
+	nagelringMagicFind = Affix(affix='nagelringMagicFind',
+		is_primary=False,
+		desc='<span>25 - 50%</span> Better Chance of Finding Magical Items')
+	nagelringMagicFind.save()
+
 #Obsidian Ring
 	obsidianDurability = Affix(affix='obsidianDurability',
 		is_primary=False,

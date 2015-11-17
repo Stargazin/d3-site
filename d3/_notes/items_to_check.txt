@@ -1,3 +1,5 @@
+check armor stats
+
 
 Manald Heal
 Puzzle Ring -- crit or no
@@ -30,3 +32,17 @@ Cloak of Deception
 SHOULDERS
 Vile Ward
 -how many affixes
+
+WRISTS
+Slave Bonds
+-guarenteed affixes?
+Lacuni Prowlers
+-4 primary 2 secondaries?
+
+BELT
+Angel hair braid
+2 or 3 secondaries?
+
+MIGHTYBELT
+Ageless Might
+-exists? stats?

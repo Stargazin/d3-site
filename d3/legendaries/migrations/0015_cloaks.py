@@ -49,7 +49,7 @@ def load_cloaks(apps, schema_editor):
 
 	theCloakOfTheGarwulf = Cloak(name='The Cloak of the Garwulf',
 		pic='/assets/media/items/legendaries/armor/torso/cloaks/the_cloak_of_the_garwulf.png',
-		unique='Companion - Wolf Companion now summons <span class="silver">3<span> wolves.',
+		unique='Companion - Wolf Companion now summons <span class="silver">3</span> wolves.',
 		random_primaries='3',
 		random_secondaries='1')
 	theCloakOfTheGarwulf.save()

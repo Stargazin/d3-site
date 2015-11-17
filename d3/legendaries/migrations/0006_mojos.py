@@ -78,7 +78,7 @@ def load_mojos(apps, schema_editor):
 
 	henrisPerquisition = Mojo(name='Henri\'s Perquisition',
 		pic='/assets/media/items/legendaries/offhands/mojos/henris_perquisition.png',
-		unique='The first time an enemy deals damage to you, reduce that damage by <span>60 - 80%</span> and Charm the enemy for <span class="silver>3</span> seconds.',
+		unique='The first time an enemy deals damage to you, reduce that damage by <span>60 - 80%</span> and Charm the enemy for <span class="silver">3</span> seconds.',
 		random_primaries='2',
 		random_secondaries='1')
 	henrisPerquisition.save()
@@ -86,7 +86,7 @@ def load_mojos(apps, schema_editor):
 
 	homunculus = Mojo(name='homunculus',
 		pic='/assets/media/items/legendaries/offhands/mojos/homunculus.png',
-		unique='A Zombie Dog is automatically summoned to your side every <span class="silver>2</span> seconds.',
+		unique='A Zombie Dog is automatically summoned to your side every <span class="silver">2</span> seconds.',
 		random_primaries='2')
 	homunculus.save()
 	homunculus.affixes.add(dmg, inte, chc, sacrifice, maxMana)

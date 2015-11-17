@@ -4,7 +4,7 @@ from .models import Helmet, SpiritStone, VoodooMask, WizardHat, Shoulders, Chest
 
 
 class LegendaryAdmin(admin.ModelAdmin):
-	list_display = ('name', 'pk', 'unique', 'random_primaries', 'random_secondaries')
+	list_display = ('name', 'pk', 'unique', 'notes', 'random_primaries', 'random_secondaries')
 
 #Armor
 #==============================================================================

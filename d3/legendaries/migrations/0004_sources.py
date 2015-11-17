@@ -74,7 +74,8 @@ def load_sources(apps, schema_editor):
 		unique='Teleport gains the effect of the Wormhole rune.',
 		# unique_is_primary=False,
 		random_primaries='4',
-		random_secondaries='1')
+		random_secondaries='1',
+		notes='crafted')
 	cosmicStrand.save()
 	cosmicStrand.affixes.add(dmg)
 

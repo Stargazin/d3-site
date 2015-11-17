@@ -69,7 +69,8 @@ def load_chest_armor(apps, schema_editor):
 	mantleOfTheRydraelm = ChestArmor(name='Mantle of the Rydraelm',
 		pic='/assets/media/items/legendaries/armor/torso/chestarmor/mantle_of_the_rydraelm.png',
 		random_primaries='4',
-		random_secondaries='6')
+		random_secondaries='6',
+		notes='crafted')
 	mantleOfTheRydraelm.save()
 
 	shiMizusHaori = ChestArmor(name='Shi Mizu\'s Haori',

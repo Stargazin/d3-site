@@ -148,8 +148,8 @@ def load__affixes(apps, schema_editor):
 
 	lps = Affix(affix='lps',
 		is_primary=True,
-		desc='<span>+</span> Life Regeneration per Second',
-		ancient='<span>+</span> Life Regeneration per Second')
+		desc='<span>+6,448 - 7,678</span> Life Regeneration per Second',
+		ancient='<span>+8,445 - 10,000</span> Life Regeneration per Second')
 	lps.save()
 
 	lph = Affix(affix='lph',
@@ -167,7 +167,7 @@ def load__affixes(apps, schema_editor):
 
 	rcr = Affix(affix='rcr',
 		is_primary=True,
-		desc='<span>+%</span> Resource Cost Reduction')
+		desc='<span>+5 - 8%</span> Resource Cost Reduction')
 	rcr.save()
 
 	wrathRegen = Affix(affix='wrathRegen',
@@ -190,6 +190,11 @@ def load__affixes(apps, schema_editor):
 		desc='<span>+12.00 - 14.00</span> Mana Regeneratioin per Second')
 	manaRegen.save()
 
+
+	movementSpeed = Affix(affix='movementSpeed',
+		desc='<span>+10 - 12%</span> Movement Speed',
+		is_primary=True)
+	movementSpeed.save()
 
 	sockets = Affix(affix='sockets',
 		is_primary=True,
@@ -564,45 +569,45 @@ def load__affixes(apps, schema_editor):
 #==============================================================================
 	eleRes = Affix(affix='eleRes',
 		is_primary=False,
-		desc='<span>+</span> Resistance to {<span class="vary">One Element</span>}',
-		ancient='<span>+</span> Resistance to {<span class="vary">One Element</span>}',
+		desc='<span>+141 - 160</span> Resistance to {<span class="vary">One Element</span>}',
+		ancient='<span>+176 - 210</span> Resistance to {<span class="vary">One Element</span>}',
 		notes='Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane')
 	eleRes.save()
 
 	physRes = Affix(affix='physRes',
 		is_primary=False,
-		desc='<span>+</span> Physical Resistance',
-		ancient='<span>+</span> Physical Resistance')
+		desc='<span>+141 - 160</span> Physical Resistance',
+		ancient='<span>+176 - 210</span> Physical Resistance')
 	physRes.save()
 
 	coldRes = Affix(affix='coldRes',
 		is_primary=False,
-		desc='<span>+</span> Cold Resistance',
-		ancient='<span>+</span> Cold Resistance')
+		desc='<span>+141 - 160</span> Cold Resistance',
+		ancient='<span>+176 - 210</span> Cold Resistance')
 	coldRes.save()
 
 	fireRes = Affix(affix='fireRes',
 		is_primary=False,
-		desc='<span>+</span> Fire Resistance',
-		ancient='<span>+</span> Fire Resistance')
+		desc='<span>+141 - 160</span> Fire Resistance',
+		ancient='<span>+176 - 210</span> Fire Resistance')
 	fireRes.save()
 
 	lightRes = Affix(affix='lightRes',
 		is_primary=False,
-		desc='<span>+</span> Lightning Resistance',
-		ancient='<span>+</span> Lightning Resistance')
+		desc='<span>+141 - 160</span> Lightning Resistance',
+		ancient='<span>+176 - 210</span> Lightning Resistance')
 	lightRes.save()
 
 	poisRes = Affix(affix='poisRes',
 		is_primary=False,
-		desc='<span>+</span> Poison Resistance',
-		ancient='<span>+</span> Poison Resistance')
+		desc='<span>+141 - 160</span> Poison Resistance',
+		ancient='<span>+176 - 210</span> Poison Resistance')
 	poisRes.save()
 
 	arcaneRes = Affix(affix='arcaneRes',
 		is_primary=False,
-		desc='<span>+</span> Arcane Resistance',
-		ancient='<span>+</span> Arcane Resistance')
+		desc='<span>+141 - 160</span> Arcane Resistance',
+		ancient='<span>+176 - 210</span> Arcane Resistance')
 	arcaneRes.save()
 
 	maxResource = Affix(affix='maxResource',
@@ -610,6 +615,11 @@ def load__affixes(apps, schema_editor):
 		desc='Increase Max {<span class="vary">Resource</span>}',
 		notes='Fury<br>Wrath<br>Discipline<br>Spirit<br>Mana<br>Arcane Power')
 	maxResource.save()
+
+	maxFury = Affix(affix='maxFury',
+		is_primary=False,
+		desc='<span>+</span> Max Fury')
+	maxFury.save()
 
 	maxWrath = Affix(affix='maxWrath',
 		is_primary=False,

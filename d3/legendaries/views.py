@@ -80,12 +80,14 @@ class BeltView(LegendaryItemsMixin, TemplateView):
 	def get_context_data(self, **kwargs):
 		context = super(BeltView, self).get_context_data(**kwargs)
 		context['items'] = Belt.objects.all()
+		context['pic'] = 1
 		return context
 
 class MightyBeltView(LegendaryItemsMixin, TemplateView):
 	def get_context_data(self, **kwargs):
 		context = super(MightyBeltView, self).get_context_data(**kwargs)
 		context['items'] = MightyBelt.objects.all()
+		context['pic'] = 1
 		return context
 
 

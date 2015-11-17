@@ -56,6 +56,7 @@ def load_rings(apps, schema_editor):
 	hellfireBonusExp = Affix.objects.get(affix='hellfireBonusExp')
 	leoricsBonusExp = Affix.objects.get(affix='leoricsBonusExp')
 	manaldMaxResource = Affix.objects.get(affix='manaldMaxResource')
+	nagelringMagicFind = Affix.objects.get(affix='nagelringMagicFind')
 	obsidianDurability = Affix.objects.get(affix='obsidianDurability')
 	oculusEliteDmg = Affix.objects.get(affix='oculusEliteDmg')
 	pandemoniumFearChance = Affix.objects.get(affix='pandemoniumFearChance')
@@ -156,19 +157,6 @@ def load_rings(apps, schema_editor):
 	halo.save()
 	halo.affixes.add(mainStat, sockets)
 
-	# hellfire_35 = Ring(id=9,
-	# 	name='Hellfire Ring (60)',
-	# 	pic='/assets/media/items/legendaries/accessories/rings/hellfire_ring_35.png',
-	# 	unique='Increases Bonus Experience by 35%',
-	# 	unique_is_primary=False,
-	# 	unique2='Chance to launch an explosive ball of Hellfire when you attack.',
-	# 	unique2_is_primary=False,
-	# 	random_primaries='3',
-	# 	random_secondaries='1',
-	# 	notes='Can also have Vit')
-	# hellfire_35.save()
-	# hellfire_35.affixes.add(mainStat)
-
 	hellfire_45 = Ring(id=10,
 		name='Hellfire Ring (70)',
 		pic='/assets/media/items/legendaries/accessories/rings/hellfire_ring_45.png',
@@ -216,14 +204,12 @@ def load_rings(apps, schema_editor):
 	nagel = Ring(id=15,
 		name='Nagelring',
 		pic='/assets/media/items/legendaries/accessories/rings/nagelring.png',
-		unique='<span>25 - 50%</span> Better Chance of Finding Magical Items',
+		unique='Summons a Fallen Lunatic to your side every <span>10 - 12</span> seconds.',
 		unique_is_primary=False,
-		unique2='Summons a Fallen Lunatic to your side every <span>10 - 12</span> seconds.',
-		unique2_is_primary=False,
 		random_primaries='2',
 		random_secondaries='1')
 	nagel.save()
-	nagel.affixes.add(mainStat)
+	nagel.affixes.add(mainStat, nagelringMagicFind)
 
 	obsidian = Ring(id=16,
 		name='Obsidian Ring of the Zodiac',

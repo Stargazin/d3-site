@@ -28,19 +28,33 @@
         {% if item.unique %}
         <div class="leg__info__affix leg__info__affix--unique">
           <li class="unique"><p>{{ item.unique|safe }}</p></li>
-          {% if item.unique2 %}
-          <li class="unique"><p>{{ item.unique2|safe }}</p></li>
-          {% endif %}
         </div> <!-- .leg__info__affix-unique -->
         {% endif %}
 
-        {% if item.affixes %}
+        {% if item.affixes.all %}
         <div class="leg__info__affix leg__info__affix--guarenteed">
           {% for affix in item.affixes.all %}
           <li><p>{{ affix.desc|safe }}</p></li>
           {% endfor %}
         </div> <!-- .leg__info__affix-gaurenteed -->
         {% endif %}
+
+        {% if not item.unique and not item.affixes.all %}
+        <div class="leg__info__affix leg__info__affix--guarenteed">
+          {% if item.random_primaries %}
+          <li>
+            <p><span>+{{ item.random_primaries }}</span> Random Affixes</p>
+          </li>
+          {% endif %}
+
+          {% if item.random_secondaries %}
+          <li>
+            <p><span>+{{ item.random_secondaries }}</span> Random Affixes</p>
+          </li>
+          {% endif %}
+        </div> <!-- .leg__info__affix-gaurenteed -->
+        {% endif %}
+
 
       </div> <!-- .leg__info__affix-container -->
     </div> <!-- .leg__info -->
@@ -82,23 +96,17 @@
         <li class="unique"><p>{{ item.unique|safe }}</p></li>
         {% endif %}
 
-        {% if item.unique2 and item.unique2_is_primary %}
-        <li class="unique"><p>{{ item.unique2|safe }}</p></li>
-        {% endif %}
-
-        {% if item.unique3 and item.unique3_is_primary %}
-        <li class="unique"><p>{{ item.unique3|safe }}</p></li>
-        {% endif %}
-
         {% if item.primary_affixes %}
         {% for affix in item.primary_affixes %}
         <li><p>{{ affix.desc|safe }}</p></li>
         {% endfor %}
         {% endif %}
 
+        {% if item.random_primaries %}
         <li>
           <p><span>+{{ item.random_primaries }}</span> Random Affixes</p>
         </li>
+        {% endif %}
       </div> <!-- .lb__leg__affix-primary -->
 
       <div class="lb__leg__affix lb__leg__affix--secondary">
@@ -107,23 +115,17 @@
         <li class="unique"><p>{{ item.unique|safe }}</p></li>
         {% endif %}
 
-        {% if item.unique2 and not item.unique2_is_primary %}
-        <li class="unique"><p>{{ item.unique2|safe }}</p></li>
-        {% endif %}
-
-        {% if item.unique3 and not item.unique3_is_primary %}
-        <li class="unique"><p>{{ item.unique3|safe }}</p></li>
-        {% endif %}
-
         {% if item.secondary_affixes %}
         {% for affix in item.secondary_affixes %}
         <li><p>{{ affix.desc|safe }}</p></li>
         {% endfor %}
         {% endif %}
         
+        {% if item.random_secondaries %}
         <li>
           <p><span>+{{ item.random_secondaries }}</span> Random Affixes</p>
         </li>
+        {% endif %}
       </div> <!-- .lb__leg__affix-secondary -->
 
       <div class="lb__leg__note">

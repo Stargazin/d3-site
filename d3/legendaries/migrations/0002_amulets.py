@@ -111,7 +111,7 @@ def load_amulets(apps, schema_editor):
 	gorget = Amulet(id=4,
 		name='Golden Gorget of Leoric',
 		pic='/assets/media/items/legendaries/accessories/amulets/golden_gorget_of_leoric.png',
-		unique='After earning a massacre bonus, <span>4 - 6</span> Skeletons are summoned to fight by your side for <span class="silver>10</span> seconds.',
+		unique='After earning a massacre bonus, <span>4 - 6</span> Skeletons are summoned to fight by your side for <span class="silver">10</span> seconds.',
 		unique_is_primary=False,
 		random_primaries='1',
 		random_secondaries='1')

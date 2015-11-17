@@ -26,7 +26,7 @@ def load_shoulders(apps, schema_editor):
 		random_secondaries='2',
 		notes='crafted')
 	corruption.save()
-	corruption.affixes.add()
+	# corruption.affixes.add()
 
 	deathWatchMantle = Shoulders(name='Death Watch Mantle',
 		pic='/assets/media/items/legendaries/armor/shoulders/death_watch_mantle.png',
@@ -53,7 +53,7 @@ def load_shoulders(apps, schema_editor):
 
 	pauldronsOfTheSkeletonKing = Shoulders(name='Pauldrons of the Skeleton King',
 		pic='/assets/media/items/legendaries/armor/shoulders/pauldrons_of_the_skeleton_king.png',
-		unique='When receiving fatal damage, there is a chance that you are instead restored to <span class="silver">25%<span> of maximum Life and cause nearby enemies to flee in fear.',
+		unique='When receiving fatal damage, there is a chance that you are instead restored to <span class="silver">25%</span> of maximum Life and cause nearby enemies to flee in fear.',
 		random_primaries='1',
 		random_secondaries='1')
 	pauldronsOfTheSkeletonKing.save()
