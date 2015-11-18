@@ -9,15 +9,13 @@ def load_shields(apps, schema_editor):
 	Shield = apps.get_model("legendaries", "Shield")
 	Affix = apps.get_model("affixes", "ShieldAffix")
 
+
 	mainStat = Affix.objects.get(affix='mainStat')
 	vita = Affix.objects.get(affix='vita')
-
 	allRes = Affix.objects.get(affix='allRes')
 	blockChance = Affix.objects.get(affix='blockChance')
 
-
 	thorns = Affix.objects.get(affix='thorns')
-
 
 	lidlessEleDmg = Affix.objects.get(affix='lidlessEleDmg')
 	lidlessMaxResource = Affix.objects.get(affix='lidlessMaxResource')

@@ -255,6 +255,7 @@ class CrusaderShield(ShieldModel):
 class Shield(ShieldModel):
 	affixes = models.ManyToManyField(ShieldAffix, blank=True)
 	base_armor = models.TextField(default="1,760 - 2,024")
+
 	def __str__(self):
 		return self.name
 
@@ -262,17 +263,156 @@ class Shield(ShieldModel):
 #==============================================================================
 #==============================================================================
 class WeaponModel(LegendaryModel):
-	dps = models.TextField(blank=True)
-	damage = models.TextField(blank=True)
-	aps = models.TextField(blank=True)
+	# dps = models.TextField(blank=True)
+	# damage = models.TextField(blank=True)
+	# aps = models.TextField(blank=True)
 
 	class Meta:
 		abstract = True
 
+class Axe1H(WeaponModel):
+	affixes = models.ManyToManyField(Axe1HAffix, blank=True)
+	aps = models.TextField(default="")
 
-# @python_2_unicode_compatible
-# class (LegendaryModel):
-# 	affixes = models.ManyToManyField(Affix, blank=True)
+	def __str__(self):
+		return self.name
 
-# 	def __str__(self):
-# 		return self.name
+class CeremonialKnife1H(WeaponModel):
+	affixes = models.ManyToManyField(CeremonialKnife1HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class Dagger1H(WeaponModel):
+	affixes = models.ManyToManyField(Dagger1HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class FistWeapon1H(WeaponModel):
+	affixes = models.ManyToManyField(FistWeapon1HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class Flail1H(WeaponModel):
+	affixes = models.ManyToManyField(Flail1HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class HandCrossbow1H(WeaponModel):
+	affixes = models.ManyToManyField(HandCrossbow1HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class Mace1H(WeaponModel):
+	affixes = models.ManyToManyField(Mace1HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class MightyWeapon1H(WeaponModel):
+	affixes = models.ManyToManyField(MightyWeapon1HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class Spear1H(WeaponModel):
+	affixes = models.ManyToManyField(Spear1HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class Sword1H(WeaponModel):
+	affixes = models.ManyToManyField(Sword1HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class Wand1H(WeaponModel):
+	affixes = models.ManyToManyField(Wand1HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class Axe2H(WeaponModel):
+	affixes = models.ManyToManyField(Axe2HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class Bow2H(WeaponModel):
+	affixes = models.ManyToManyField(Bow2HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class Crossbow2H(WeaponModel):
+	affixes = models.ManyToManyField(Crossbow2HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class Daibo2H(WeaponModel):
+	affixes = models.ManyToManyField(Daibo2HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class Flail2H(WeaponModel):
+	affixes = models.ManyToManyField(Flail2HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class Mace2H(WeaponModel):
+	affixes = models.ManyToManyField(Mace2HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class MightyWeapon2H(WeaponModel):
+	affixes = models.ManyToManyField(MightyWeapon2HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class Polearm2H(WeaponModel):
+	affixes = models.ManyToManyField(Polearm2HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class Staff2H(WeaponModel):
+	affixes = models.ManyToManyField(Staff2HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
+
+class Sword2H(WeaponModel):
+	affixes = models.ManyToManyField(Sword2HAffix, blank=True)
+	aps = models.TextField(default="")
+
+	def __str__(self):
+		return self.name
