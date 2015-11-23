@@ -46,3 +46,24 @@ Angel hair braid
 MIGHTYBELT
 Ageless Might
 -exists? stats?
+
+CEREMONIAL KNIFE
+Deadly Rebirth
+-comes with skill dmg?
+
+The spider Queen's Grasp
+-primary mana regen? 
+
+1H DAGGER
+The Barber
+primaries and secondaries?
+
+BOWS
+Etrayu
+-- 5 primaries(including Dmg) or 4
+The Raven's Wings
+how many primaries/secondaries
+
+POLEARMS
+Heart slaughter
+1 + 2ondary

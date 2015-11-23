@@ -21,108 +21,112 @@
       <li class="link drop__link"><a href="">Legendaries</a>
         <ul class="drop drop--right">
           <!-- add a dropdown header where applicable -->
-          <li class="link drop__link"><a href="">1-H Weapons</a>
+          <li class="link drop__link"><a href="{% url 'legendary' 'weapons' %}">Weapons</a>
             <ul class="drop drop--right">
-              <li class="link drop__link"><a href="">Axes</a></li>
-              <li class="link drop__link"><a href="">Ceremonial Knives</a></li>
-              <li class="link drop__link"><a href="">Daggers</a></li>
-              <li class="link drop__link"><a href="">Fist Weapons</a></li>
-              <li class="link drop__link"><a href="">Flails</a></li>
-              <li class="link drop__link"><a href="">Hand Crossbows</a></li>
-              <li class="link drop__link"><a href="">Maces</a></li>
-              <li class="link drop__link"><a href="">Mighty Weapons</a></li>
-              <li class="link drop__link"><a href="">Spears</a></li>
-              <li class="link drop__link"><a href="">Swords</a></li>
-              <li class="link drop__link"><a href="">Wands</a></li>
-              <li class="link drop__link drop__link--all">
-                <a href="">Show All</a></li>
-            </ul> <!-- .drop-right -->
-          </li> <!-- .link.drop__link -->
-
-          <li class="link drop__link"><a href="">2-H Weapons</a>
-            <ul class="drop drop--right">
-              <li class="link drop__link"><a href="">Axes</a></li>
-              <li class="link drop__link"><a href="">Bows</a></li>
-              <li class="link drop__link"><a href="">Crossbows</a></li>
-              <li class="link drop__link"><a href="">Daibos</a></li>
-              <li class="link drop__link"><a href="">Flails</a></li>
-              <li class="link drop__link"><a href="">Maces</a></li>
-              <li class="link drop__link"><a href="">Mighty Weapons</a></li>
-              <li class="link drop__link"><a href="">Polearms</a></li>
-              <li class="link drop__link"><a href="">Staves</a></li>
-              <li class="link drop__link"><a href="">Swords</a></li>
-              <li class="link drop__link drop__link--all">
-                <a href="">Show All</a></li>
-            </ul> <!-- .drop-right -->
-          </li> <!-- .link.drop__link -->
-
-          <li class="link drop__link"><a href="">Armor</a>
-            <ul class="drop drop--right">
-              <li class="link drop__link"><a href="">Head</a>
+              <li class="link drop__link"><a href="{% url 'slot' 'weapons' '1h-weapons' %}">1H Weapons</a>
                 <ul class="drop drop--right">
-                  <li class="link drop__link"><a href="{% url 'helmets' %}">Helmets</a></li>
-                  <li class="link drop__link"><a href="{% url 'spiritstones' %}">Spirit Stones</a></li>
-                  <li class="link drop__link"><a href="{% url 'voodoomasks' %}">Voodoo Masks</a></li>
-                  <li class="link drop__link"><a href="{% url 'wizardhats' %}">Wizard Hats</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '1h-weapons' '1h-axes' %}">1H Axes</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '1h-weapons' 'ceremonial-knives' %}">Ceremonial Knives</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '1h-weapons' '1h-daggers' %}">1H Daggers</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '1h-weapons' 'fist-weapons' %}">Fist Weapons</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '1h-weapons' '1h-flails' %}">1H Flails</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '1h-weapons' 'hand-crossbows' %}">Hand Crossbows</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '1h-weapons' '1h-maces' %}">1H Maces</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '1h-weapons' '1h-mighty-weapons' %}">1H Mighty Weapons</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '1h-weapons' '1h-spears' %}">1H Spears</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '1h-weapons' '1h-swords' %}"> 1HSwords</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '1h-weapons' 'wands' %}">Wands</a></li>
+                  <li class="link drop__link drop__link--all">
+                    <a href="{% url 'slot' 'weapons' '1h-weapons' %}"><strong>Show All</strong></a></li>
+                </ul> <!-- .drop-right -->
+              </li> <!-- .link.drop__link -->
+
+              <li class="link drop__link"><a href="{% url 'slot' 'weapons' '2h-weapons' %}">2H Weapons</a>
+                <ul class="drop drop--right">
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '2h-weapons' '2h-axes' %}">2H Axes</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '2h-weapons' 'bows' %}">Bows</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '2h-weapons' 'crossbows' %}">Crossbows</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '2h-weapons' 'daibos' %}">Daibos</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '2h-weapons' '2h-flails' %}">2H Flails</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '2h-weapons' '2h-maces' %}">2H Maces</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '2h-weapons' '2h-mighty-weapons' %}">2H Mighty Weapons</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '2h-weapons' 'polearms' %}">Polearms</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '2h-weapons' 'staves' %}">Staves</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' '2h-weapons' '2h-swords' %}">2H Swords</a></li>
+                  <li class="link drop__link drop__link--all">
+                    <a href="{% url 'slot' 'weapons' '2h-weapons' %}">Show All</a></li>
+                </ul> <!-- .drop-right -->
+              </li> <!-- .link.drop__link -->
+              
+              <li class="link drop__link"><a href="{% url 'slot' 'weapons' 'offhands' %}">Off-hands</a>
+                <ul class="drop drop--right">
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' 'offhands' 'crusader-shields' %}">Crusader Shields</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' 'offhands' 'mojos' %}">Mojos</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' 'offhands' 'sources' %}">Sources</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' 'offhands' 'quivers' %}">Quivers</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'weapons' 'offhands' 'shields' %}">Shields</a></li>
+                  <li class="link drop__link drop__link--all">
+                    <a href="">Show All</a></li>
+                </ul> <!-- .drop-right -->
+              </li> <!-- .link.drop__link -->
+            </ul> <!-- .drop-right -->
+          </li> <!-- .link.drop__link -->
+
+
+          <li class="link drop__link"><a href="{% url 'legendary' 'armor' %}">Armor</a>
+            <ul class="drop drop--right">
+              <li class="link drop__link"><a href="{% url 'slot' 'armor' 'head' %}">Head</a>
+                <ul class="drop drop--right">
+                  <li class="link drop__link"><a href="{% url 'category' 'armor' 'head' 'helmets' %}">Helmets</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'armor' 'head' 'spirit-stones' %}">Spirit Stones</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'armor' 'head' 'voodoo-masks' %}">Voodoo Masks</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'armor' 'head' 'wizard-hats' %}">Wizard Hats</a></li>
                   <li class="link drop__link drop__link--all">
                     <a href="">Show All</a></li>
                 </ul> <!-- .drop-right -->
               </li> <!-- .link.drop__link -->
 
-              <li class="link drop__link"><a href="{% url 'shoulders' %}">Shoulders</a></li>
+              <li class="link drop__link"><a href="{% url 'slot' 'armor' 'shoulders' %}">Shoulders</a></li>
 
-              <li class="link drop__link"><a href="">Torso</a>
+              <li class="link drop__link"><a href="{% url 'slot' 'armor' 'torso' %}">Torso</a>
                 <ul class="drop drop--right">
-                  <li class="link drop__link"><a href="{% url 'chestarmor' %}">Chest Armor</a></li>
-                  <li class="link drop__link"><a href="{% url 'cloaks' %}">Cloaks</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'armor' 'torso' 'chest-armors' %}">Chest Armor</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'armor' 'torso' 'cloaks' %}">Cloaks</a></li>
                   <li class="link drop__link drop__link--all">
                     <a href="">Show All</a></li>
                 </ul> <!-- .drop-right -->
               </li> <!-- .link.drop__link -->
 
-              <li class="link drop__link"><a href="{% url 'bracers' %}">Bracers</a></li>
-              <li class="link drop__link"><a href="{% url 'gloves' %}">Gloves</a></li>
+              <li class="link drop__link"><a href="{% url 'slot' 'armor' 'bracers' %}">Bracers</a></li>
+              <li class="link drop__link"><a href="{% url 'slot' 'armor' 'gloves' %}">Gloves</a></li>
 
-              <li class="link drop__link"><a href="">Waist</a>
+              <li class="link drop__link"><a href="{% url 'slot' 'armor' 'waist' %}">Waist</a>
                 <ul class="drop drop--right">
-                  <li class="link drop__link"><a href="{% url 'belts' %}">Belts</a></li>
-                  <li class="link drop__link"><a href="{% url 'mightybelts' %}">Mighty Belts</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'armor' 'waist' 'belts' %}">Belts</a></li>
+                  <li class="link drop__link"><a href="{% url 'category' 'armor' 'waist' 'mighty-belts' %}">Mighty Belts</a></li>
                   <li class="link drop__link drop__link--all">
                     <a href="">Show All</a></li>
                 </ul> <!-- .drop-right -->
               </li> <!-- .link.drop__link -->
 
-              <li class="link drop__link"><a href="{% url 'pants' %}">Pants</a></li>
-              <li class="link drop__link"><a href="{% url 'boots' %}">Boots</a></li>
+              <li class="link drop__link"><a href="{% url 'slot' 'armor' 'pants' %}">Pants</a></li>
+              <li class="link drop__link"><a href="{% url 'slot' 'armor' 'boots' %}">Boots</a></li>
               <li class="link drop__link drop__link--all">
                 <a href="">Show All</a></li>
             </ul> <!-- .drop-right -->
           </li> <!-- .link.drop__link -->
 
-          <li class="link drop__link"><a href="">Off-hands</a>
-            <ul class="drop drop--right">
-              <li class="link drop__link"><a href="{% url 'crusadershields' %}">Crusader Shields</a></li>
-              <li class="link drop__link"><a href="{% url 'mojos' %}">Mojos</a></li>
-              <li class="link drop__link"><a href="{% url 'sources' %}">Sources</a></li>
-              <li class="link drop__link"><a href="{% url 'quivers' %}">Quivers</a></li>
-              <li class="link drop__link"><a href="{% url 'shields' %}">Shields</a></li>
-              <li class="link drop__link drop__link--all">
-                <a href="">Show All</a></li>
-            </ul> <!-- .drop-right -->
-          </li> <!-- .link.drop__link -->
 
-          <li class="link drop__link"><a href="">Accessories</a>
+          <li class="link drop__link"><a href="{% url 'legendary' 'accessories' %}">Accessories</a>
             <ul class="drop drop--right">
-              <li class="link drop__link"><a href="{% url 'rings' %}">Rings</a></li>
-              <li class="link drop__link"><a href="{% url 'amulets' %}">Amulets</a></li>
+              <li class="link drop__link"><a href="{% url 'slot' 'accessories' 'rings' %}">Rings</a></li>
+              <li class="link drop__link"><a href="{% url 'slot' 'accessories' 'amulets' %}">Amulets</a></li>
               <li class="link drop__link"><a href="">Follower</a></li>
               <li class="link drop__link drop__link--all">
                 <a href="">Show All</a></li>
             </ul> <!-- .drop-right -->
           </li> <!-- .link.drop__link -->
-          
-          <li class="link drop__link drop__link--all">
-            <a href="">Show All</a></li>
+
         </ul> <!-- .drop-right -->
       </li> <!-- .link.drop__link -->
 

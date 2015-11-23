@@ -24,6 +24,15 @@ TODODODO
 {# Pants #}
 {# Boots #}
 
+lazyload when loading huge models like armor/weap/etc
+
+
+--jk check mirror Add owners to all items... make it like this: dh wiz barb
+--add an owner if class can use it
+--later do check boxes and if class is checked, make .leg display: none and
+  give class (ex. dh) display: block !important
+----test this first though!
+
 change lps from life regeneration per second to life regen
 
 ** may have to do each type in seperate model/admin

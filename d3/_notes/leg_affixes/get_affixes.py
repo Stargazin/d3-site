@@ -2,6 +2,7 @@
 #==============================================================================
 #==============================================================================
 	dmg = Affix.objects.get(affix='dmg')
+	percentDmg = Affix.objects.get(affix='percentDmg')
 	mainStat = Affix.objects.get(affix='mainStat')
 	dext = Affix.objects.get(affix='dext')
 	inte = Affix.objects.get(affix='inte')

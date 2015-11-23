@@ -14,14 +14,12 @@
 
   {% for item in items %}
   <div class="leg">
-    <a href="#{{ item.slug }}" class="leg__name">{{ item.name }}</a>
+    <a href="#{{ item.name_slug }}" class="leg__name">{{ item.name }}</a>
     <div class="leg__info">
-      <a href="#{{ item.slug }}" class="leg__info__pic">
-        {% if pic == 1 %}
-        <span class="pic-sm" style="background: url({{ item.pic }})"></span>
-        {% else %}
+      <a href="#{{ item.name_slug }}" class="leg__info__pic">
+
         <span class="pic-lg" style="background: url({{ item.pic }})"></span>
-        {% endif %}
+
       </a> <!-- .leg__info__pic -->
       <div class="leg__info__affix-container">
 
@@ -66,17 +64,15 @@
 
 
 {% for item in items %}
-  <div class="lb" id="{{ item.slug }}">
+  <div class="lb" id="{{ item.name_slug }}">
     <a class="lb__back" href="#"></a>
     <div class="lb__leg">
 
       <div class="lb__leg__info">
         <div class="lb__leg__info__pic">
-          {% if pic == 1 %}
-          <span class="pic-sm" style="background: url({{ item.pic }})"></span>
-          {% else %}
+
           <span class="pic-lg" style="background: url({{ item.pic }})"></span>
-          {% endif %}
+
         </div> <!-- .lb__leg__info__pic -->
 
         <div class="lb__leg__info__details">
@@ -84,7 +80,13 @@
             <span>{{ item.name }}</span>
           </div> <!-- .lb__leg__info__details__name -->
           <div class="lb__leg__info__details__type">
-            <span>{{ item.category }}</span> 
+
+          {% if item.category_singular %}
+            <span>{{ item.category_singular }}</span>
+          {% else %}
+            <span>{{ item.slot_singular }}</span>
+          {% endif %}
+
           </div> <!-- .lb__leg__info__details__type -->
         </div> <!-- .lb__leg__info__details -->
       </div> <!-- .lb__leg__info -->
