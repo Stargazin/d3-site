@@ -3,17 +3,17 @@ from django.contrib import admin
 from .models import Accessory, Weapon, Armor
 
 
-class LegendaryAdmin(admin.ModelAdmin):
-	list_display = ('name', 'name_slug', 'slot', 'slot_slug', 'category', 'category_slug', 'pk', 'notes')
+class LegendaryItemAdmin(admin.ModelAdmin):
+	list_display = ('name', 'slot', 'slot_slug', 'category', 'category_slug', 'pk', 'notes')
 
 
-class ArmorAdmin(LegendaryAdmin):
+class ArmorAdmin(LegendaryItemAdmin):
 	pass
 
-class WeaponAdmin(LegendaryAdmin):
+class WeaponAdmin(LegendaryItemAdmin):
 	pass
 
-class AccessoryAdmin(LegendaryAdmin):
+class AccessoryAdmin(LegendaryItemAdmin):
 	pass
 
 

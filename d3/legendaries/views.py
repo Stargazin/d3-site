@@ -1,8 +1,8 @@
 from __future__ import absolute_import
 
 from django.db.models.loading import get_model
-from django.http import HttpResponse
-from django.shortcuts import render, get_list_or_404, get_object_or_404
+# from django.http import HttpResponse
+# from django.shortcuts import render, get_list_or_404, get_object_or_404
 from django.views.generic import TemplateView, ListView
 
 from .models import Accessory, Weapon, Armor
@@ -44,16 +44,6 @@ class CategoryView(LegendaryView):
 		model = get_model("legendaries", self.kwargs['model'])
 		self.items = model.objects.filter(category_slug=self.kwargs['category_slug'])
 		return self.items
-
-
-
-
-
-
-
-
-
-
 
 
 class PlaygroundView(TemplateView):

@@ -67,7 +67,6 @@ class Weapon(WeaponArmorModel):
 	def __str__(self):
 		return self.name
 
-
 @python_2_unicode_compatible
 class Armor(WeaponArmorModel):
 	affixes = models.ManyToManyField(ArmorAffix, blank=True)

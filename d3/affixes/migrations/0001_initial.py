@@ -14,8 +14,8 @@ class Migration(migrations.Migration):
             name='AccessoryAffix',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('category', models.TextField(blank=True)),
                 ('slot', models.TextField(blank=True)),
+                ('category', models.TextField(blank=True)),
                 ('affix', models.TextField()),
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
@@ -30,8 +30,8 @@ class Migration(migrations.Migration):
             name='ArmorAffix',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('category', models.TextField(blank=True)),
                 ('slot', models.TextField(blank=True)),
+                ('category', models.TextField(blank=True)),
                 ('affix', models.TextField()),
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),
@@ -46,8 +46,8 @@ class Migration(migrations.Migration):
             name='WeaponAffix',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('category', models.TextField(blank=True)),
                 ('slot', models.TextField(blank=True)),
+                ('category', models.TextField(blank=True)),
                 ('affix', models.TextField()),
                 ('is_primary', models.BooleanField()),
                 ('desc', models.TextField()),

@@ -378,7 +378,7 @@ header {
   .leg__info__affix--unique .unique p {
     color: #D27500; }
 
-.leg__info__affix-guarenteed {
+.leg__info__affix--guarenteed {
   padding-bottom: 1.2rem; }
 
 /* partials/lightbox

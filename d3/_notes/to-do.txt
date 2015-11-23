@@ -24,6 +24,11 @@ TODODODO
 {# Pants #}
 {# Boots #}
 
+potions + gems
+--finished setting up views/urls/admin/etc
+
+sets
+
 lazyload when loading huge models like armor/weap/etc
 
 

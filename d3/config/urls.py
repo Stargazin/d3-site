@@ -21,7 +21,8 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^items/', include('legendaries.urls')),
+    url(r'^items/legendaries', include('legendaries.urls')),
+    url(r'^items/misc/', include('miscitems.urls')),
 ]
 
 # if settings.DEBUG:

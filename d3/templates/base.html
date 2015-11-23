@@ -66,7 +66,7 @@
                   <li class="link drop__link"><a href="{% url 'category' 'weapons' 'offhands' 'quivers' %}">Quivers</a></li>
                   <li class="link drop__link"><a href="{% url 'category' 'weapons' 'offhands' 'shields' %}">Shields</a></li>
                   <li class="link drop__link drop__link--all">
-                    <a href="">Show All</a></li>
+                    <a href="{% url 'slot' 'weapons' 'offhands' %}">Show All</a></li>
                 </ul> <!-- .drop-right -->
               </li> <!-- .link.drop__link -->
             </ul> <!-- .drop-right -->
@@ -82,7 +82,7 @@
                   <li class="link drop__link"><a href="{% url 'category' 'armor' 'head' 'voodoo-masks' %}">Voodoo Masks</a></li>
                   <li class="link drop__link"><a href="{% url 'category' 'armor' 'head' 'wizard-hats' %}">Wizard Hats</a></li>
                   <li class="link drop__link drop__link--all">
-                    <a href="">Show All</a></li>
+                    <a href="{% url 'slot' 'armor' 'head' %}">Show All</a></li>
                 </ul> <!-- .drop-right -->
               </li> <!-- .link.drop__link -->
 
@@ -105,14 +105,14 @@
                   <li class="link drop__link"><a href="{% url 'category' 'armor' 'waist' 'belts' %}">Belts</a></li>
                   <li class="link drop__link"><a href="{% url 'category' 'armor' 'waist' 'mighty-belts' %}">Mighty Belts</a></li>
                   <li class="link drop__link drop__link--all">
-                    <a href="">Show All</a></li>
+                    <a href="{% url 'slot' 'armor' 'waist' %}">Show All</a></li>
                 </ul> <!-- .drop-right -->
               </li> <!-- .link.drop__link -->
 
               <li class="link drop__link"><a href="{% url 'slot' 'armor' 'pants' %}">Pants</a></li>
               <li class="link drop__link"><a href="{% url 'slot' 'armor' 'boots' %}">Boots</a></li>
               <li class="link drop__link drop__link--all">
-                <a href="">Show All</a></li>
+                <a href="{% url 'legendary' 'armor' %}">Show All</a></li>
             </ul> <!-- .drop-right -->
           </li> <!-- .link.drop__link -->
 
@@ -123,7 +123,7 @@
               <li class="link drop__link"><a href="{% url 'slot' 'accessories' 'amulets' %}">Amulets</a></li>
               <li class="link drop__link"><a href="">Follower</a></li>
               <li class="link drop__link drop__link--all">
-                <a href="">Show All</a></li>
+                <a href="{% url 'legendary' 'accessories' %}">Show All</a></li>
             </ul> <!-- .drop-right -->
           </li> <!-- .link.drop__link -->
 
@@ -144,7 +144,7 @@
         </ul> <!-- .drop-right -->
       </li> <!-- .link.drop__link -->
 
-      <li class="link drop__link"><a href="">Gems</a>
+      <li class="link drop__link"><a href="{% url 'gem' %}">Gems</a>
         <ul class="drop drop--right">
           <li class="link drop__link"><a href="">Legendary Gems</a></li>
           <li class="link drop__link"><a href="">Regular Gems</a></li>
@@ -153,7 +153,7 @@
         </ul> <!-- .drop-right -->
       </li> <!-- .link.drop__link -->
       <li class="link drop__link"><a href="">Materials</a></li>
-      <li class="link drop__link"><a href="">Potions</a></li>
+      <li class="link drop__link"><a href="{% url 'potion' %}">Potions</a></li>
       <li class="link drop__link"><a href="">Misc</a></li>
     </ul> <!-- .drop-down -->
   </li> <!-- .link-items -->

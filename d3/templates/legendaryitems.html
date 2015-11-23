@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load staticfiles %}
 
 
@@ -12,16 +12,19 @@
 
 <div class="leg-container">
 
+
   {% for item in items %}
   <div class="leg">
     <a href="#{{ item.name_slug }}" class="leg__name">{{ item.name }}</a>
     <div class="leg__info">
       <a href="#{{ item.name_slug }}" class="leg__info__pic">
-
+        {% block item_pic %}
         <span class="pic-lg" style="background: url({{ item.pic }})"></span>
-
+        {% endblock item_pic %}
       </a> <!-- .leg__info__pic -->
+
       <div class="leg__info__affix-container">
+        {% block item_type %}
 
         {% if item.unique %}
         <div class="leg__info__affix leg__info__affix--unique">
@@ -53,7 +56,7 @@
         </div> <!-- .leg__info__affix-gaurenteed -->
         {% endif %}
 
-
+        {% endblock item_type %}
       </div> <!-- .leg__info__affix-container -->
     </div> <!-- .leg__info -->
   </div> <!-- .leg -->
@@ -70,9 +73,7 @@
 
       <div class="lb__leg__info">
         <div class="lb__leg__info__pic">
-
           <span class="pic-lg" style="background: url({{ item.pic }})"></span>
-
         </div> <!-- .lb__leg__info__pic -->
 
         <div class="lb__leg__info__details">

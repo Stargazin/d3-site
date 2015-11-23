@@ -7,8 +7,8 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('miscitems', '0003_crafting_mats'),
-        ('affixes', '0001_initial'),
+        ('affixes', '0006_armor_affixes'),
+        ('miscitems', '0001_initial'),
     ]
 
     operations = [
