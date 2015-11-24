@@ -1,31 +1,11 @@
 TODODODO
-{# primary and secondary randoms add to database and model -> remigrate #}
-{# add hrefs to anchor tags using slugs #}
-{# lightbox with template tags #}
-{# swap [] with {} #}
-{# add href to nav links
---do as you go along; not all at once #}
-{# refactor legendaryitems template classes #}
-{# refactor/get rid of amulets
-++extend css files from base for items #}
-{# make scss file for items
---combine lightbox and items into legendaryitems
---or idk... just refactor the two and see #}
-{# add color to fixed stat or something?
---decide before getting all items
----b/c you may have to add spans or something #}
-{# Shoulders #}
-{# ChestArmor #}
-{# Cloak #}
-{# Bracers #}
-{# Gloves #}
-{# Belt #}
-{# MightyBelt #}
-{# Pants #}
-{# Boots #}
 
-potions + gems
---finished setting up views/urls/admin/etc
+
+make css files for mats/potions/gems
+-- change colors of text...
+-- .silver for affixes in gems
+---- rename affixes!
+-- .colors for materials
 
 sets
 

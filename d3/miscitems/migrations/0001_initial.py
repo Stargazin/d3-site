@@ -34,8 +34,10 @@ class Migration(migrations.Migration):
                 ('pic', models.ImageField(upload_to=b'', blank=True)),
                 ('unique', models.TextField(blank=True)),
                 ('notes', models.TextField(blank=True)),
-                ('rarity', models.TextField(blank=True)),
+                ('rarity', models.TextField(default=b'L')),
                 ('stack_amount', models.TextField(default=b'5000')),
+                ('category', models.TextField(blank=True)),
+                ('category_slug', models.SlugField(blank=True)),
             ],
             options={
                 'abstract': False,

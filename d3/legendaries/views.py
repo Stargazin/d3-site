@@ -9,7 +9,7 @@ from .models import Accessory, Weapon, Armor
 
 
 class LegendaryView(ListView):
-	template_name = 'legendaryitems.html'
+	template_name = 'items.html'
 
 	def get_queryset(self):
 		if self.kwargs['model'] == 'weapons':
@@ -47,4 +47,4 @@ class CategoryView(LegendaryView):
 
 
 class PlaygroundView(TemplateView):
-	template_name = "playground.html"
+	template_name = "zzplayground.html"

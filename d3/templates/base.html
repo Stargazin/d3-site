@@ -6,7 +6,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% block css %}
-  <link rel="stylesheet" href="{% static 'css/base.min.css' %}">
   {% endblock css %}
   <title>{% block title %}D3 Kings{% endblock title%}</title>
 </head>
@@ -145,15 +144,17 @@
       </li> <!-- .link.drop__link -->
 
       <li class="link drop__link"><a href="{% url 'gem' %}">Gems</a>
-        <ul class="drop drop--right">
-          <li class="link drop__link"><a href="">Legendary Gems</a></li>
-          <li class="link drop__link"><a href="">Regular Gems</a></li>
-          <li class="link drop__link drop__link--all">
-            <a href="">Show All</a></li>
-        </ul> <!-- .drop-right -->
       </li> <!-- .link.drop__link -->
-      <li class="link drop__link"><a href="">Materials</a></li>
       <li class="link drop__link"><a href="{% url 'potion' %}">Potions</a></li>
+      <li class="link drop__link"><a href="{% url 'material' %}">Materials</a>
+        <ul class="drop drop--right">
+          <li class="link drop__link"><a href="{% url 'material-category' 'hellfire-materials' %}">Hellfire Mats</a></li>
+          <li class="link drop__link"><a href="{% url 'material-category' 'cache-materials' %}">Horadric Cache</a></li>
+          <li class="link drop__link"><a href="{% url 'material-category' 'crafting-materials' %}">Crafting Mats</a></li>
+          <li class="link drop__link"><a href="{% url 'material-category' 'gem-essences' %}">Gem Essences</a></li>
+        </ul>
+      </li>
+      <li class="link drop__link"><a href="{% url 'material-category' 'hellfire-materials' %}">Hellfire Mats</a></li>
       <li class="link drop__link"><a href="">Misc</a></li>
     </ul> <!-- .drop-down -->
   </li> <!-- .link-items -->
@@ -199,9 +200,11 @@
 </nav>
 </header>
 
-{% block main %}
+{% block heading %}{% endblock heading %}
+
+{% block content %}
 <main style="min-height: 1000px"></main>
-{% endblock main %}
+{% endblock content %}
 
 <footer></footer>
 

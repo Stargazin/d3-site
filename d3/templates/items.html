@@ -7,24 +7,29 @@
 {% endblock css %}
 
 
-{% block main %}
+{% block heading %}
+{% endblock heading %}
+
+
+{% block content %}
+
 <main>
-
 <div class="leg-container">
-
 
   {% for item in items %}
   <div class="leg">
     <a href="#{{ item.name_slug }}" class="leg__name">{{ item.name }}</a>
     <div class="leg__info">
       <a href="#{{ item.name_slug }}" class="leg__info__pic">
+
         {% block item_pic %}
         <span class="pic-lg" style="background: url({{ item.pic }})"></span>
         {% endblock item_pic %}
+
       </a> <!-- .leg__info__pic -->
 
       <div class="leg__info__affix-container">
-        {% block item_type %}
+        {% block item_details %}
 
         {% if item.unique %}
         <div class="leg__info__affix leg__info__affix--unique">
@@ -56,11 +61,10 @@
         </div> <!-- .leg__info__affix-gaurenteed -->
         {% endif %}
 
-        {% endblock item_type %}
+        {% endblock item_details %}
       </div> <!-- .leg__info__affix-container -->
     </div> <!-- .leg__info -->
   </div> <!-- .leg -->
-
   {% endfor %}
 
 </div> <!-- .leg-container -->
@@ -136,7 +140,8 @@
 
     </div> <!-- .lb__leg -->
   </div> <!-- .lb -->
-{% endfor %}
+  {% endfor %}
 
 </main>
-{% endblock main %}
+
+{% endblock content %}

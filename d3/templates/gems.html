@@ -1,0 +1,32 @@
+{% extends 'items.html' %}
+{% load staticfiles %}
+
+{% block css %}
+<!-- change this -->
+<link rel="stylesheet" href="{% static 'css/legendaryitems.min.css' %}">
+{% endblock css %}
+
+
+{% block heading %}
+{% endblock heading %}
+
+
+{% block item_pic %}
+
+<span class="pic-sm" style="background: url({{ item.pic }})"></span>
+
+{% endblock item_pic %}
+
+{% block item_details %}
+
+<div class="leg__info__affix leg__info__affix--unique">
+  <li class="unique"><p>{{ item.unique|safe }}</p></li>
+</div> <!-- .leg__info__affix-unique -->
+
+{% if item.rank_unique %}
+<div class="leg__info__affix leg__info__affix--guarenteed">
+  <li><p>{{ item.rank_unique|safe }}</p></li>
+</div> <!-- .leg__info__affix-gaurenteed -->
+{% endif %}
+
+{% endblock item_details %}

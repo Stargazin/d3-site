@@ -1,0 +1,23 @@
+{% extends 'items.html' %}
+{% load staticfiles %}
+
+
+{% block css %}
+<!-- change this -->
+<link rel="stylesheet" href="{% static 'css/legendaryitems.min.css' %}">
+{% endblock css %}
+
+{% block item_pic %}
+
+<span class="pic-sm" style="background: url({{ item.pic }})"></span>
+
+{% endblock item_pic %}
+
+
+{% block item_details %}
+
+<div class="leg__info__affix leg__info__affix--unique">
+  <li class="unique"><p>{{ item.unique|safe }}</p></li>
+</div> <!-- .leg__info__affix-unique -->
+
+{% endblock item_details %}

@@ -83,8 +83,8 @@ PREREQ_APPS = (
 PROJECT_APPS = (
     'core',
     'affixes',
-    'legendaries',
     'miscitems',
+    'legendaries',
 )
 
 INSTALLED_APPS = PREREQ_APPS + PROJECT_APPS
