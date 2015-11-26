@@ -7,7 +7,7 @@ from django.template.defaultfilters import slugify
 
 def load_helmets(apps, schema_editor):
 	Armor = apps.get_model("legendaries", "Armor")
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix.objects.get(category='Helmets',
 		affix='mainStat')
@@ -122,7 +122,7 @@ def load_helmets(apps, schema_editor):
 
 def load_spirit_stones(apps, schema_editor):
 	Armor = apps.get_model("legendaries", "Armor")
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	dext = Affix.objects.get(category='Spirit Stones',
 		affix='dext')
@@ -248,7 +248,7 @@ def load_spirit_stones(apps, schema_editor):
 
 def load_voodoo_masks(apps, schema_editor):
 	Armor = apps.get_model("legendaries", "Armor")
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	inte = Affix.objects.get(category='Voodoo Masks',
 		affix='inte')
@@ -332,7 +332,7 @@ def load_voodoo_masks(apps, schema_editor):
 
 def load_wizard_hats(apps, schema_editor):
 	Armor = apps.get_model("legendaries", "Armor")
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	inte = Affix.objects.get(category='Wizard Hats',
 		affix='inte')
@@ -419,7 +419,7 @@ def load_wizard_hats(apps, schema_editor):
 
 def load_shoulders(apps, schema_editor):
 	Armor = apps.get_model("legendaries", "Armor")
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix.objects.get(slot="Shoulders",
 		affix='mainStat')
@@ -514,7 +514,7 @@ def load_shoulders(apps, schema_editor):
 
 def load_chest_armor(apps, schema_editor):
 	Armor = apps.get_model("legendaries", "Armor")
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix.objects.get(category='Chest Armors',
 		affix='mainStat')
@@ -618,7 +618,7 @@ def load_chest_armor(apps, schema_editor):
 
 def load_cloaks(apps, schema_editor):
 	Armor = apps.get_model("legendaries", "Armor")
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	dext = Affix.objects.get(category='Cloaks',
 		affix='dext')
@@ -682,7 +682,7 @@ def load_cloaks(apps, schema_editor):
 
 def load_bracers(apps, schema_editor):
 	Armor = apps.get_model("legendaries", "Armor")
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix.objects.get(slot='Bracers',
 		affix='mainStat')
@@ -922,7 +922,7 @@ def load_bracers(apps, schema_editor):
 
 def load_gloves(apps, schema_editor):
 	Armor = apps.get_model("legendaries", "Armor")
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix.objects.get(slot='Gloves',
 		affix='mainStat')
@@ -1020,7 +1020,7 @@ def load_gloves(apps, schema_editor):
 
 def load_belts(apps, schema_editor):
 	Armor = apps.get_model("legendaries", "Armor")
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix.objects.get(category='Belts',
 		affix='mainStat')
@@ -1309,7 +1309,7 @@ def load_belts(apps, schema_editor):
 
 def load_mighty_belts(apps, schema_editor):
 	Armor = apps.get_model("legendaries", "Armor")
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 
 	stre = Affix.objects.get(category='Mighty Belts',
@@ -1406,7 +1406,7 @@ def load_mighty_belts(apps, schema_editor):
 
 def load_pants(apps, schema_editor):
 	Armor = apps.get_model("legendaries", "Armor")
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix.objects.get(slot='Pants',
 		affix='mainStat')
@@ -1494,7 +1494,7 @@ def load_pants(apps, schema_editor):
 
 def load_boots(apps, schema_editor):
 	Armor = apps.get_model("legendaries", "Armor")
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix.objects.get(slot='Boots',
 		affix='mainStat')

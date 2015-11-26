@@ -5,7 +5,7 @@ from django.db import migrations, models
 
 
 def load_helmet_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix(category='Helmets',
 		affix='mainStat',
@@ -90,7 +90,7 @@ def load_helmet_affixes(apps, schema_editor):
 
 
 def load_spirit_stone_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	dext = Affix(category='Spirit Stones',
 		affix='dext',
@@ -147,7 +147,7 @@ def load_spirit_stone_affixes(apps, schema_editor):
 
 
 def load_voodoo_mask_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 
 	inte = Affix(category='Voodoo Masks',
@@ -184,7 +184,7 @@ def load_voodoo_mask_affixes(apps, schema_editor):
 
 
 def load_wizard_hat_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	inte = Affix(category='Wizard Hats',
 		affix='inte', 
@@ -220,7 +220,7 @@ def load_wizard_hat_affixes(apps, schema_editor):
 
 
 def load_shoulders_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix(slot='Shoulders',
 		affix='mainStat',
@@ -265,7 +265,7 @@ def load_shoulders_affixes(apps, schema_editor):
 
 
 def load_chest_armor_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix(category='Chest Armors',
 		affix='mainStat',
@@ -318,7 +318,7 @@ def load_chest_armor_affixes(apps, schema_editor):
 
 
 def load_cloak_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	dext = Affix(category='Cloaks',
 		affix='dext',
@@ -349,7 +349,7 @@ def load_cloak_affixes(apps, schema_editor):
 
 
 def load_bracers_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix(slot='Bracers',
 		affix='mainStat',
@@ -441,7 +441,7 @@ def load_bracers_affixes(apps, schema_editor):
 
 
 def load_gloves_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix(slot='Gloves',
 		affix='mainStat',
@@ -499,7 +499,7 @@ def load_gloves_affixes(apps, schema_editor):
 
 
 def load_belt_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix(category='Belts',
 		affix='mainStat',
@@ -617,7 +617,7 @@ def load_belt_affixes(apps, schema_editor):
 
 
 def load_mighty_belt_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	stre = Affix(category='Mighty Belts',
 		affix='stre',
@@ -662,7 +662,7 @@ def load_mighty_belt_affixes(apps, schema_editor):
 
 
 def load_pants_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix(slot='Pants',
 		affix='mainStat',
@@ -714,7 +714,7 @@ def load_pants_affixes(apps, schema_editor):
 
 
 def load_boots_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 
 	mainStat = Affix(slot='Boots',
@@ -776,7 +776,7 @@ def load_boots_affixes(apps, schema_editor):
 
 
 def load_ancient_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "ArmorAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	for affix in Affix.objects.all():
 		if not affix.ancient:

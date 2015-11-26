@@ -5,7 +5,7 @@ from django.db import migrations, models
 
 
 def load_amulet_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "AccessoryAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	dmg = Affix(slot='Amulets',
 		affix='dmg',
@@ -328,7 +328,7 @@ def load_amulet_affixes(apps, schema_editor):
 
 
 def load_ring_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "AccessoryAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	dmg = Affix(slot='Rings',
 		affix='dmg',
@@ -652,7 +652,7 @@ def load_ring_affixes(apps, schema_editor):
 
 
 def load_ancient_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	for affix in Affix.objects.all():
 		if not affix.ancient:

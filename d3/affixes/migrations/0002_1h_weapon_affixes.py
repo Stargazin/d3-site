@@ -5,7 +5,7 @@ from django.db import migrations, models
 
 
 def load_1h_axe_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix(category='1H Axes',
 		affix='mainStat',
@@ -43,7 +43,7 @@ def load_1h_axe_affixes(apps, schema_editor):
 
 
 def load_ceremonial_knife_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	inte = Affix(category='Ceremonial Knives',
 		affix='inte', 
@@ -88,7 +88,7 @@ def load_ceremonial_knife_affixes(apps, schema_editor):
 	spiderCorpseSpiders.save()
 
 def load_1h_dagger_affixes(apps, schema_edtior):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	percentDmg = Affix(category='1H Daggers',
 		affix='percentDmg',
@@ -131,7 +131,7 @@ def load_1h_dagger_affixes(apps, schema_edtior):
 	barberCHD.save()
 
 def load_fist_weapon_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	percentDmg = Affix(category='Fist Weapons',
 		affix='percentDmg',
@@ -207,7 +207,7 @@ def load_fist_weapon_affixes(apps, schema_editor):
 	wonLightDmg.save()
 
 def load_1h_flail_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	stre = Affix(category='1H Flails',
 		affix='stre',
@@ -230,7 +230,7 @@ def load_1h_flail_affixes(apps, schema_editor):
 	goldenHolyDmg.save()
 
 def load_hand_crossbow_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	dext = Affix(category='Hand Crossbows',
 		affix='dext',
@@ -267,7 +267,7 @@ def load_hand_crossbow_affixes(apps, schema_editor):
 
 
 def load_1h_mace_affixes(apps,schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	percentDmg = Affix(category='1H Maces',
 		affix='percentDmg',
@@ -381,7 +381,7 @@ def load_1h_mace_affixes(apps,schema_editor):
 
 
 def load_1h_mighty_weapon_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	stre = Affix(category='1H Mighty Weapons',
 		affix='stre',
@@ -417,7 +417,7 @@ def load_1h_mighty_weapon_affixes(apps, schema_editor):
 	nightsLife.save()
 
 def load_1h_spear_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix(category='1H Spears',
 		affix='mainStat',
@@ -462,7 +462,7 @@ def load_1h_spear_affixes(apps, schema_editor):
 
 
 def load_1h_sword_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 
 	percentDmg = Affix(category='1H Swords',
@@ -563,7 +563,7 @@ def load_1h_sword_affixes(apps, schema_editor):
 
 
 def load_wand_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	inte = Affix(category='Wands',
 		affix='inte', 
@@ -602,7 +602,7 @@ def load_wand_affixes(apps, schema_editor):
 
 
 def load_ancient_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	for affix in Affix.objects.all():
 		if not affix.ancient:

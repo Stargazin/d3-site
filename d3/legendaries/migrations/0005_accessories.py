@@ -7,7 +7,7 @@ from django.template.defaultfilters import slugify
 
 def load_amulets(apps, schema_editor):
 	Accessory = apps.get_model("legendaries", "Accessory")
-	Affix = apps.get_model("affixes", "AccessoryAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix.objects.get(slot='Amulets',
 		affix='mainStat')
@@ -244,7 +244,7 @@ def load_amulets(apps, schema_editor):
 
 def load_rings(apps, schema_editor):
 	Accessory = apps.get_model("legendaries", "Accessory")
-	Affix = apps.get_model("affixes", "AccessoryAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix.objects.get(slot='Rings',
 		affix='mainStat')

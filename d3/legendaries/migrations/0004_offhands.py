@@ -7,7 +7,7 @@ from django.template.defaultfilters import slugify
 
 def load_sources(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	dmg = Affix.objects.get(category='Sources',
 		affix='dmg')
@@ -99,7 +99,7 @@ def load_sources(apps, schema_editor):
 
 def load_quivers(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	dext = Affix.objects.get(category='Quivers', affix='dext')
 	ias = Affix.objects.get(category='Quivers', affix='ias')
@@ -213,7 +213,7 @@ def load_quivers(apps, schema_editor):
 
 def load_mojos(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	dmg = Affix.objects.get(category='Mojos',
 		affix='dmg')
@@ -308,7 +308,7 @@ def load_mojos(apps, schema_editor):
 
 def load_crusader_shields(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	stre = Affix.objects.get(category='Crusader Shields',
 		affix='stre')
@@ -443,7 +443,7 @@ def load_crusader_shields(apps, schema_editor):
 
 def load_shields(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix.objects.get(category='Shields',
 		affix='mainStat')

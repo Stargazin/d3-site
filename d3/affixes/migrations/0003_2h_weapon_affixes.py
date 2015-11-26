@@ -5,7 +5,7 @@ from django.db import migrations, models
 
 
 def load_2h_axe_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix(category='2H Axes',
 		affix='mainStat',
@@ -43,7 +43,7 @@ def load_2h_axe_affixes(apps, schema_editor):
 
 
 def load_bow_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix(category='Bows',
 		affix='mainStat',
@@ -121,7 +121,7 @@ def load_bow_affixes(apps, schema_editor):
 
 
 def load_crossbow_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 
 	mainStat = Affix(category='Crossbows',
@@ -147,7 +147,7 @@ def load_crossbow_affixes(apps, schema_editor):
 
 
 def load_daibo_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	dext = Affix(category='Daibos',
 		affix='dext',
@@ -178,7 +178,7 @@ def load_daibo_affixes(apps, schema_editor):
 
 
 def load_2h_flail_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	stre = Affix(category='2H Flails',
 		affix='stre',
@@ -195,7 +195,7 @@ def load_2h_flail_affixes(apps, schema_editor):
 
 
 def load_2h_mace_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	percentDmg = Affix(category='2H Maces',
 		affix='percentDmg',
@@ -246,7 +246,7 @@ def load_2h_mace_affixes(apps, schema_editor):
 	wrathColdDmg.save()
 
 def load_2h_mighty_weapon_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	stre = Affix(category='2H Mighty Weapons',
 		affix='stre',
@@ -277,7 +277,7 @@ def load_2h_mighty_weapon_affixes(apps, schema_editor):
 
 
 def load_polearm_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix(category='Polearms',
 		affix='mainStat',
@@ -309,7 +309,7 @@ def load_polearm_affixes(apps, schema_editor):
 
 
 def load_staff_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	percentDmg = Affix(category='Staves',
 		affix='percentDmg',
@@ -367,7 +367,7 @@ def load_staff_affixes(apps, schema_editor):
 
 
 def load_2h_sword_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	percentDmg = Affix(category='2H Swords',
 		affix='percentDmg',
@@ -460,7 +460,7 @@ def load_2h_sword_affixes(apps, schema_editor):
 
 
 def load_ancient_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	for affix in Affix.objects.all():
 		if not affix.ancient:

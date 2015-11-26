@@ -1,86 +1,28 @@
-owners
-barb
-sader
-dh
-monk
-wd
-wiz
+@@@WEAPONS@@@
 
-AFFIXES!!
+@@@ARMOR@@@
+Helm
+Spirit Stone
+Voodoo Mask
+Wizard Hat
 
-DONT DELETE SAVE FOR URL!!!
+Shoulders
 
-{# 	for armor in Armor.objects.filter(category='Spirit Stones'):
-		armor.inherent = '<span class="inherent"><span>660 - 759</span> Armor</span>'
-		armor.slot = 'Head'
-		armor.owner = 'monk'
-		armor.save() #}
+Chest Armor
+Cloak
 
-{# 	for armor in Armor.objects.filter(category='Voodoo Masks'):
-		armor.inherent = '<span class="inherent"><span>660 - 759</span> Armor</span>'
-		armor.slot = 'Head'
-		armor.owner = 'wd'
-		armor.save() #}
+Bracers
 
-{# 	for armor in Armor.objects.filter(category='Wizard Hats'):
-		armor.inherent = '<span class="inherent"><span>660 - 759</span> Armor</span>'
-		armor.slot = 'Head'
-		armor.owner = 'wiz'
-		armor.save() #}
+Gloves
 
+Belt
+Mighty Belt
 
-{# 	for armor in Armor.objects.filter(slot='Shoulders'):
-		armor.inherent = '<span class="inherent"><span>586 - 674</span> Armor</span>'
-		armor.owner = 'all'
-		armor.save() #}
+Pants
 
+Boots
 
-{# 	for armor in Armor.objects.filter(category='Chest Armor'):
-		armor.inherent = '<span class="inherent"><span>660 - 759</span> Armor</span>'
-		armor.slot = 'Torso'
-		armor.owner = 'all'
-		armor.save() #}
+@@@ACCESSORIES@@@
+Amulet
 
-{# 	for armor in Armor.objects.filter(category='Cloaks'):
-		armor.inherent = '<span class="inherent"><span>660 - 759</span> Armor</span>'
-		armor.slot = 'Torso'
-		armor.owner = 'dh'
-		armor.save() #}
-
-
-{# 	for armor in Armor.objects.filter(slot='Bracers'):
-		armor.inherent = '<span class="inherent"><span>366 - 421</span> Armor</span>'
-		armor.owner = 'all'
-		armor.save() #}
-
-
-{# 	for armor in Armor.objects.filter(slot='Gloves'):
-		armor.inherent = '<span class="inherent"><span>513 - 590</span> Armor</span>'
-		armor.owner = 'all'
-		armor.save() #}
-
-
-{# 	for armor in Armor.objects.filter(category='Belts'):
-		armor.inherent = '<span class="inherent"><span>440 - 506</span> Armor</span>'
-		armor.slot = 'Waist'
-		armor.owner = 'all'
-		armor.save()
- #}
-
-{# 	for armor in Armor.objects.filter(category='Mighty Belts'):
-		armor.inherent = '<span class="inherent"><span>516 - 675</span> Armor</span>'
-		armor.slot = 'Waist'
-		armor.owner = 'barb'
-		armor.save() #}
-
-
-{# 	for armor in Armor.objects.filter(slot='Pants'):
-		armor.inherent = '<span class="inherent"><span>660 - 759</span> Armor</span>'
-		armor.owner = 'all'
-		armor.save()
- #}
-
-{# 	for armor in Armor.objects.filter(slot='Boots'):
-		armor.inherent = '<span class="inherent"><span>513 - 590</span> Armor</span>'
-		armor.owner = 'all'
-		armor.save() #}
+Ring

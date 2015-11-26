@@ -5,7 +5,7 @@ from django.db import migrations, models
 
 
 def load_source_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	dmg = Affix(category='Sources',
 		affix='dmg',
@@ -297,7 +297,7 @@ def load_source_affixes(apps, schema_editor):
 
 
 def load_quiver_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	dext = Affix(category='Quivers',
 		affix='dext',
@@ -589,7 +589,7 @@ def load_quiver_affixes(apps, schema_editor):
 
 
 def load_mojo_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	dmg = Affix(category='Mojos',
 		affix='dmg',
@@ -880,7 +880,7 @@ def load_mojo_affixes(apps, schema_editor):
 
 
 def load_crusader_shield_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	sockets = Affix(category='Crusader Shields',
 		affix='sockets',
@@ -1236,7 +1236,7 @@ def load_crusader_shield_affixes(apps, schema_editor):
 
 
 def load_shield_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix(category='Shields',
 		affix='mainStat',
@@ -1297,7 +1297,7 @@ def load_shield_affixes(apps, schema_editor):
 
 
 def load_ancient_affixes(apps, schema_editor):
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	for affix in Affix.objects.all():
 		if not affix.ancient:

@@ -7,7 +7,7 @@ from django.template.defaultfilters import slugify
 
 def load_2h_axes(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix.objects.get(affix='mainStat', category='2H Axes')
 	bleedChance = Affix.objects.get(affix='bleedChance', category='2H Axes')
@@ -79,7 +79,7 @@ def load_2h_axes(apps, schema_editor):
 
 def load_bows(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix.objects.get(affix='mainStat',
 		category='Bows')
@@ -222,7 +222,7 @@ def load_bows(apps, schema_editor):
 
 def load_crossbows(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix.objects.get(affix='mainStat',
 		category='Crossbows')
@@ -327,7 +327,7 @@ def load_crossbows(apps, schema_editor):
 
 def load_daibos(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	dext = Affix.objects.get(affix='dext',
 		category='Daibos')
@@ -434,7 +434,7 @@ def load_daibos(apps, schema_editor):
 
 def load_2h_flails(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	stre = Affix.objects.get(affix='stre', category='2H Flails')
 	sockets = Affix.objects.get(affix='sockets', category='2H Flails')
@@ -487,7 +487,7 @@ def load_2h_flails(apps, schema_editor):
 
 def load_2h_maces(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	percentDmg = Affix.objects.get(affix='percentDmg',
 		category='2H Maces')
@@ -598,7 +598,7 @@ def load_2h_maces(apps, schema_editor):
 
 def load_2h_mighty_weapons(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	stre = Affix.objects.get(affix='stre',
 		category='2H Mighty Weapons')
@@ -668,7 +668,7 @@ def load_2h_mighty_weapons(apps, schema_editor):
 
 def load_polearms(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	mainStat = Affix.objects.get(affix='mainStat', category='Polearms')
 	sockets = Affix.objects.get(affix='sockets', category='Polearms')
@@ -732,7 +732,7 @@ def load_polearms(apps, schema_editor):
 
 def load_staves(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	percentDmg = Affix.objects.get(affix='percentDmg',
 		category='Staves')
@@ -869,7 +869,7 @@ def load_staves(apps, schema_editor):
 
 def load_2h_swords(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
-	Affix = apps.get_model("affixes", "WeaponAffix")
+	Affix = apps.get_model("affixes", "Affix")
 
 	percentDmg = Affix.objects.get(affix='percentDmg',
 		category='2H Swords')

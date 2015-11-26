@@ -2,7 +2,7 @@ from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
 
 from miscitems.models import Material
-from affixes.models import AccessoryAffix, WeaponAffix, ArmorAffix
+from affixes.models import Affix
 
 
 class LegendaryModel(models.Model):
@@ -15,6 +15,7 @@ class LegendaryModel(models.Model):
 	category_slug = models.SlugField(blank=True)
 	unique = models.TextField(blank=True)
 	unique_is_primary = models.NullBooleanField(default=False)
+	affixes = models.ManyToManyField(Affix, blank=True)
 	random_primaries = models.TextField(blank=True)
 	random_secondaries = models.TextField(blank=True)
 	owner = models.TextField(blank=True)
@@ -53,7 +54,6 @@ class WeaponArmorModel(LegendaryModel):
 
 @python_2_unicode_compatible
 class Weapon(WeaponArmorModel):
-	affixes = models.ManyToManyField(WeaponAffix, blank=True)
 
 	def category_singular(self):
 		if self.category == "Ceremonial Knives" or self.category == "Staves":
@@ -69,7 +69,6 @@ class Weapon(WeaponArmorModel):
 
 @python_2_unicode_compatible
 class Armor(WeaponArmorModel):
-	affixes = models.ManyToManyField(ArmorAffix, blank=True)
 
 	def category_singular(self):
 		return self.category[:-1]
@@ -80,7 +79,6 @@ class Armor(WeaponArmorModel):
 
 @python_2_unicode_compatible
 class Accessory(LegendaryModel):
-	affixes = models.ManyToManyField(AccessoryAffix, blank=True)
 
 	def category_singular(self):
 		return False

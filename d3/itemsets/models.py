@@ -2,19 +2,21 @@ from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
 
 from miscitems.models import Material
-from affixes.models import AccessoryAffix, WeaponAffix, ArmorAffix
+from affixes.models import Affix
 
 
 @python_2_unicode_compatible
 class ItemSet(models.Model):
 	name = models.TextField()
 	name_slug = models.SlugField()
-	#barb, sader, dh, monk, wd, wiz, all
 	owner = models.TextField()
 	notes = models.TextField(blank=True)
 
 	def __str__(self):
 		return self.name
+
+	class Meta:
+		verbose_name_plural = "Item Sets"
 
 
 @python_2_unicode_compatible
@@ -27,6 +29,9 @@ class SetEffect(models.Model):
 	def __str__(self):
 		return self.effect
 
+	class Meta:
+		verbose_name_plural = "Set Effects"
+
 
 @python_2_unicode_compatible
 class SetPiece(models.Model):
@@ -35,10 +40,10 @@ class SetPiece(models.Model):
 	pic = models.ImageField()
 	category = models.TextField(blank=True)
 	itemSet = models.ForeignKey(ItemSet)
-	# affixes = models.ManyToManyField(Affix, blank=True)
+	affixes = models.ManyToManyField(Affix, blank=True)
 #do this for now instead of primary and secondary random affixes
 #just say x Random Magic Properties
-	random_affixes = 
+	random_affixes = models.TextField(blank=True)
 	notes = models.TextField(blank=True)
 #pull owner from itemSet.owner
 	# mats = models.ManyToManyField(Material, blank=True)
@@ -46,3 +51,6 @@ class SetPiece(models.Model):
 
 	def __str__(self):
 		return self.name
+
+	class Meta:
+		verbose_name_plural = "Set Pieces"

@@ -7,8 +7,8 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('affixes', '0006_armor_affixes'),
-        ('miscitems', '0001_initial'),
+        ('affixes', '0001_initial'),
+        ('miscitems', '0002_misc_items'),
     ]
 
     operations = [
@@ -30,7 +30,7 @@ class Migration(migrations.Migration):
                 ('owner', models.TextField(blank=True)),
                 ('number_of_mats', models.CommaSeparatedIntegerField(max_length=32, blank=True)),
                 ('notes', models.TextField(blank=True)),
-                ('affixes', models.ManyToManyField(to='affixes.AccessoryAffix', blank=True)),
+                ('affixes', models.ManyToManyField(to='affixes.Affix', blank=True)),
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
@@ -56,7 +56,7 @@ class Migration(migrations.Migration):
                 ('number_of_mats', models.CommaSeparatedIntegerField(max_length=32, blank=True)),
                 ('notes', models.TextField(blank=True)),
                 ('inherent', models.TextField(blank=True)),
-                ('affixes', models.ManyToManyField(to='affixes.ArmorAffix', blank=True)),
+                ('affixes', models.ManyToManyField(to='affixes.Affix', blank=True)),
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
@@ -82,7 +82,7 @@ class Migration(migrations.Migration):
                 ('number_of_mats', models.CommaSeparatedIntegerField(max_length=32, blank=True)),
                 ('notes', models.TextField(blank=True)),
                 ('inherent', models.TextField(blank=True)),
-                ('affixes', models.ManyToManyField(to='affixes.WeaponAffix', blank=True)),
+                ('affixes', models.ManyToManyField(to='affixes.Affix', blank=True)),
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
