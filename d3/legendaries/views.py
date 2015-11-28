@@ -47,4 +47,4 @@ class CategoryView(LegendaryView):
 
 
 class PlaygroundView(TemplateView):
-	template_name = "zzplayground.html"
+	template_name = "itemsets.html"

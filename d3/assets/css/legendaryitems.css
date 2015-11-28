@@ -328,7 +328,7 @@ header {
   margin-top: 0.8rem;
   margin-right: 3.2rem;
   min-width: 70px;
-  height: 134px;
+  height: 132px;
   border: 2px solid #EC7211;
   -webkit-border-radius: 9px;
           border-radius: 9px;
@@ -337,17 +337,18 @@ header {
 .pic-sm {
   display: inline-block;
   top: 50%;
+  left: 50%;
   width: 64px;
   height: 64px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center; }
 
 .pic-lg {
   display: inline-block;
-  height: 128px;
   width: 64px;
+  height: 128px;
   text-align: center; }
 
 .leg__info__affix-container {
