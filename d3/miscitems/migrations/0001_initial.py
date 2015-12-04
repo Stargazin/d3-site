@@ -20,6 +20,7 @@ class Migration(migrations.Migration):
                 ('unique', models.TextField(blank=True)),
                 ('notes', models.TextField(blank=True)),
                 ('rank_unique', models.TextField(blank=True)),
+                ('category', models.TextField(default=b'Legendary Gem')),
             ],
             options={
                 'abstract': False,
@@ -52,6 +53,7 @@ class Migration(migrations.Migration):
                 ('pic', models.ImageField(upload_to=b'', blank=True)),
                 ('unique', models.TextField(blank=True)),
                 ('notes', models.TextField(blank=True)),
+                ('category', models.TextField(default=b'Legendary Potion')),
             ],
             options={
                 'abstract': False,

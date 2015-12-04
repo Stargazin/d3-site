@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+<main>
+<div class="item-container">
+
+
+{% for item in items %}
+<div class="item">
+
+
+  {% block item_name %}
+  <a href="#" class="item__name">{{ item.name }}</a>
+  {% endblock item_name %}
+
+
+  <div class="item__info">
+
+
+    {% block item_pic %}
+    <a href="#" class="item__info__pic">
+    {% endblock item_pic %}
+
+      <span class="pic" style="background: url({{ item.pic }})"></span>
+    </a> <!-- .item__info__pic -->
+
+    <div class="item__info__affix-container">
+
+
+      {% block item_unique %}
+
+      <div class="item__info__affix">
+        <li class="unique"><p>{{ item.unique|safe }}</p></li>
+      </div> <!-- .item__info__affix -->
+
+      {% endblock item_unique %}
+
+
+      {% block item_affixes %}{% endblock item_affixes %}
+
+
+    </div> <!-- .item__info__affix-container -->
+  </div> <!-- .item__info -->
+</div> <!-- .item -->
+{% endfor %}
+
+
+</div> <!-- .item-container -->
+</main>
+
+{% endblock content %}

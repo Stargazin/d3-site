@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block title %}
+{% endblock title %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/itemsetsall.min.css' %}">
+{% endblock css %}
+
+
+{% block heading %}{% endblock heading %}
+
+
+{% block content %}
+
+<main>
+<div class="set-container">
+  {% for itemset in itemsets %}
+  <div class="set">
+
+    <div class="set__name">
+      <span><a href="{% url 'single-set' itemset.owner_slug itemset.name_slug %}">{{ itemset.name }}</a></span>
+    </div> <!-- .set__name -->
+
+    <div class="set__pic-container">
+      <a href="{% url 'single-set' itemset.owner_slug itemset.name_slug %}" class="set__pic" style="background: url({{ itemset.set_piece }})"></a>
+    </div> <!-- .set__pic-container -->
+
+    <div class="set__piece-container">
+      {% for piece in itemset.pieces.all %}
+      <div class="set__piece"><a href="#">{{ piece }}</a></div>
+      {% endfor %}
+    </div> <!-- .set__piece-container -->
+
+    <div class="set__effect-container">
+      {% for effect in itemset.effects.all %}
+      <div class="set__effect">
+        <span class="set__effect__need">(<strong>{{ effect.pieces }}</strong>) Piece Bonus:</span>
+        <span class="set__effect__desc">{{ effect.effect|safe }}</span>
+      </div> <!-- .set__effect -->
+      {% endfor %}
+    </div> <!-- .set__effect-container -->
+
+  </div> <!-- .set -->
+  {% endfor %}
+</div> <!-- .set-container -->
+</main>
+
+{% endblock content %}

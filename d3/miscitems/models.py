@@ -15,7 +15,7 @@ class ItemModel(models.Model):
 
 @python_2_unicode_compatible
 class Potion(ItemModel):
-	# slot = models.TextField(default='Legendary Potion')
+	category = models.TextField(default='Legendary Potion')
 
 	def __str__(self):
 		return self.name
@@ -23,7 +23,7 @@ class Potion(ItemModel):
 @python_2_unicode_compatible
 class Gem(ItemModel):
 	rank_unique = models.TextField(blank=True)
-	# slot = models.TextField(default='Legendary Gem')
+	category = models.TextField(default='Legendary Gem')
 
 	def __str__(self):
 		return self.name
@@ -34,6 +34,7 @@ class Material(ItemModel):
 	stack_amount = models.TextField(default='5000')
 	category = models.TextField(blank=True)
 	category_slug = models.SlugField(blank=True)
+	# group = models.TextField(default='material')
 
 	def __str__(self):
 		return self.name

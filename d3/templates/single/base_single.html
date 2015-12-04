@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/singlelegendary.min.css.gz' %}">
+{% endblock css %}
+
+
+{% block title %}{{ item.name }}{% endblock title %}
+
+
+{% block heading %}
+{% endblock heading %}
+
+
+{% block content %}
+
+<main>
+<div class="item">
+
+
+<div class="item__name"><span>{{ item.name }}</span></div>
+
+<div class="item__info">
+  <div class="item__info__pic">
+    <span class="pic" style="background: url({{ item.pic }})"></span>
+  </div> <!-- .item__info__pic -->
+
+  <div class="item__info__details">
+    <div class="item__info__details__type">
+
+
+    {% block item_type %}
+      <span>{{ item.category }}</span>
+    {% endblock item_type %}
+
+
+    </div> <!-- .item__info__details__type -->
+  </div> <!-- .item__info__details -->
+</div> <!-- .item__info -->
+
+
+{% block item_affixes %}
+
+<div class="item__affix">
+  <span>Details:</span>
+  <li class="unique"><p>{{ item.unique|safe }}</p></li>
+</div> <!-- .item__affix -->
+
+{% endblock item_affixes %}
+
+
+{% block item_notes %}
+
+{% if item.notes %}
+<div class="item__note">
+</div> <!-- .item__note -->
+{% endif %}
+
+{% endblock item_notes %}
+
+
+</div> <!-- .item -->
+</main>
+
+{% endblock content %}

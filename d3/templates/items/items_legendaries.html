@@ -1,0 +1,64 @@
+{% extends 'items/base_items.html' %}
+{% load staticfiles %}
+
+
+{% block title %}
+{% endblock title %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/legendaryitems.min.css.gz' %}">
+{% endblock css %}
+
+
+{% block heading %}
+{% endblock heading %}
+
+
+{% block item_name %}
+<a href="{% url 'single-legendary' item.group item.name_slug %}" class="item__name">{{ item.name }}</a>
+{% endblock item_name %}
+
+
+{% block item_pic %}
+<a href="{% url 'single-legendary' item.group item.name_slug %}" class="item__info__pic">
+{% endblock item_pic %}
+
+
+{% block item_unique %}
+
+{% if item.unique %}
+<div class="item__info__affix">
+  <li class="unique"><p>{{ item.unique|safe }}</p></li>
+</div> <!-- .item__info__affix -->
+{% endif %}
+
+{% endblock item_unique %}
+
+
+{% block item_affixes %}
+
+{% if item.affixes.all %}
+<div class="item__info__affix">
+  {% for affix in item.affixes.all %}
+  <li><p>{{ affix.desc|safe }}</p></li>
+  {% endfor %}
+</div> <!-- .item__info__affix -->
+
+{% elif not item.unique %}
+<div class="item__info__affix">
+  {% if item.random_primaries %}
+  <li>
+    <p><span>+{{ item.random_primaries }}</span> Random Affixes</p>
+  </li>
+  {% endif %}
+
+  {% if item.random_secondaries %}
+  <li>
+    <p><span>+{{ item.random_secondaries }}</span> Random Affixes</p>
+  </li>
+  {% endif %}
+</div> <!-- .item__info__affix -->
+{% endif %}
+
+{% endblock item_affixes %}

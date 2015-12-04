@@ -5,23 +5,12 @@
   display: inline-block;
   vertical-align: middle;
   height: 100%;
-  
 }
 
 .inner-container {
   display: inline-block;
   vertical-align: middle;
-
 }
-
-.inner-content {
-  
-}
-
-// /* Sample breakpoint mixin
-//  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-$break-small: 320px;
-$break-large: 1024px;
 
 /**
  * Use example:

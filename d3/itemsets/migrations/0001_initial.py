@@ -18,6 +18,7 @@ class Migration(migrations.Migration):
                 ('name', models.TextField()),
                 ('name_slug', models.SlugField()),
                 ('owner', models.TextField()),
+                ('owner_slug', models.SlugField()),
                 ('notes', models.TextField(blank=True)),
             ],
             options={
@@ -31,7 +32,7 @@ class Migration(migrations.Migration):
                 ('effect', models.TextField()),
                 ('pieces', models.TextField()),
                 ('notes', models.TextField(blank=True)),
-                ('itemSet', models.ForeignKey(to='itemsets.ItemSet')),
+                ('itemSet', models.ForeignKey(related_name='effects', to='itemsets.ItemSet')),
             ],
             options={
                 'verbose_name_plural': 'Set Effects',
@@ -48,7 +49,7 @@ class Migration(migrations.Migration):
                 ('random_affixes', models.TextField(blank=True)),
                 ('notes', models.TextField(blank=True)),
                 ('affixes', models.ManyToManyField(to='affixes.Affix', blank=True)),
-                ('itemSet', models.ForeignKey(to='itemsets.ItemSet')),
+                ('itemSet', models.ForeignKey(related_name='pieces', to='itemsets.ItemSet')),
             ],
             options={
                 'verbose_name_plural': 'Set Pieces',

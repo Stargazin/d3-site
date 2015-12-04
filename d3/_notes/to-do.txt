@@ -1,12 +1,35 @@
 TODODODO
 
+{# remake migrations
+--added default 'groups' to legs.models #}
+{# fix up views
+--see legs.views for notes #}
+{# change up urls
+--add set 'group' urls
+------do (group)/(name_slug)/
+----/weapons/(?P)
+----/armor/(?P)
+----/accessories/(?P)
+--move the singles down to bottom, remove 'single'
+----move to bottom so it doesn't capture the 3 'groups' #}
+{# refactor/split items.html as the base...
+--need to rename legs to items
+--remove whatever is inside blocks in the content block
+----move that to legendaries.html + keep as empty block
+------this way, gems/pots/etc can use it w/o needing to make blank block
+--rename html/scss files #}
+{# rename views/urls/etc #}
+{# use url template tags for itemsets.html #}
 
 
+modularize scss
+--get everything you need for 'items'
+----move affixes and stuff for 'single-legendary' 'legendaries'
 
 
-sets
---html+css
-
+add the "faders" to bottom of legs/miscitems/sets
+0 for 1/row; 1 for 2/row; 2 for 3/row
+--use n;2n;3n or something, idk look it up!~
 
 
 make css files for mats/potions/gems
@@ -16,7 +39,15 @@ make css files for mats/potions/gems
 -- .colors for materials
 
 
+
+remove conditionals from templates (see two scoops)
+
+
+
+
 lazyload when loading huge models like armor/weap/etc
+
+
 
 
 --jk check mirror Add owners to all items... make it like this: dh wiz barb

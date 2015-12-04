@@ -1,0 +1,21 @@
+{% extends 'single/base_single.html' %}
+{% load staticfiles %}
+
+<!-- change this -->
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/singlelegendary.min.css.gz' %}">
+{% endblock css %}
+
+
+{% block heading %}
+{% endblock heading %}
+
+
+{% block item_affixes %}
+
+<div class="item__affix">
+  <span>Effect:</span>
+  <li class="unique"><p>{{ item.unique|safe }}</p></li>
+</div> <!-- .item__affix -->
+
+{% endblock item_affixes %}

@@ -11,15 +11,7 @@
   margin: 10rem auto;
   padding: 0.7rem 0.3rem 0.1rem;
   font-size: 1.5em;
-  background-color: $alice-blue;
-
-  @media #{$break-xl} {
-    max-width: 87%;
-  }
-
-  @media #{$break-l} {
-    max-width: 90%;
-  }
+  font-family: $roboto;
 
   @media #{$break-m} {
     max-width: 75%;
@@ -33,9 +25,10 @@
 
 .set {
   width: 32.7%;
+  //38.9rem test and breaks
   margin-bottom: 0.6rem;
   border: 2px solid rgb(175,180,185);
-  padding: 0.8rem 1.5rem 1.4rem 1.5rem;
+  padding: 1.2rem 1.5rem 1.4rem 1.5rem;
   background-color: $ebony-clay;
 
   @media #{$break-xl} {
@@ -51,17 +44,29 @@
   width: 100%;
   margin-bottom: 1.5rem;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-family: $playfair;
+  line-height: 2.5rem;
 
   a {
-    border-bottom: 1px solid rgb(87, 167, 16);
+    // border-bottom: 1px solid rgb(87, 167, 16);
     color: rgb(117, 217, 17);
+    // display: block;
 
     &:hover {
       font-weight: 700;
       color: rgb(102, 212, 17);
-      letter-spacing: 0.1rem;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      height: 1px;
+      margin: 5px 0 2px;
+      background: linear-gradient(to right,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(87, 167, 16, 1) 50%,
+        rgba(0, 0, 0, 0) 100%);
     }
   }
 }
@@ -120,7 +125,6 @@
   width: 97%;
   margin: 0 auto;
   padding-right: 1rem;
-  cursor: default;
 
   .set__effect__need {
     display: block;
@@ -142,6 +146,10 @@
     p { color: rgb(255, 186, 22); }
 
     .silver { color: rgb(255, 159, 0); }
+
+    li:nth-child(n+2) {
+      padding-top: 0.3rem;
+    }
   }
 }
 

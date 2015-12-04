@@ -7,8 +7,8 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
+        ('miscitems', '0001_initial'),
         ('affixes', '0001_initial'),
-        ('miscitems', '0002_misc_items'),
     ]
 
     operations = [
@@ -30,11 +30,12 @@ class Migration(migrations.Migration):
                 ('owner', models.TextField(blank=True)),
                 ('number_of_mats', models.CommaSeparatedIntegerField(max_length=32, blank=True)),
                 ('notes', models.TextField(blank=True)),
+                ('group', models.TextField(default=b'accessory')),
                 ('affixes', models.ManyToManyField(to='affixes.Affix', blank=True)),
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
-                'abstract': False,
+                'verbose_name_plural': 'Accessories',
             },
         ),
         migrations.CreateModel(
@@ -56,11 +57,12 @@ class Migration(migrations.Migration):
                 ('number_of_mats', models.CommaSeparatedIntegerField(max_length=32, blank=True)),
                 ('notes', models.TextField(blank=True)),
                 ('inherent', models.TextField(blank=True)),
+                ('group', models.TextField(default=b'armor')),
                 ('affixes', models.ManyToManyField(to='affixes.Affix', blank=True)),
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
-                'abstract': False,
+                'verbose_name_plural': 'Armor',
             },
         ),
         migrations.CreateModel(
@@ -82,6 +84,7 @@ class Migration(migrations.Migration):
                 ('number_of_mats', models.CommaSeparatedIntegerField(max_length=32, blank=True)),
                 ('notes', models.TextField(blank=True)),
                 ('inherent', models.TextField(blank=True)),
+                ('group', models.TextField(default=b'weapon')),
                 ('affixes', models.ManyToManyField(to='affixes.Affix', blank=True)),
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],

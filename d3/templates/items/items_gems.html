@@ -1,0 +1,33 @@
+{% extends 'items/base_items.html' %}
+{% load staticfiles %}
+
+{% block title %}
+{% endblock title %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/legendaryitems.min.css.gz' %}">
+{% endblock css %}
+
+
+{% block heading %}
+{% endblock heading %}
+
+
+{% block item_name %}
+<a href="{% url 'single-gem' item.name_slug %}" class="item__name">{{ item.name }}</a>
+{% endblock item_name %}
+
+
+{% block item_pic %}
+<a href="{% url 'single-gem' item.name_slug %}" class="item__info__pic">
+{% endblock item_pic %}
+
+
+{% block item_affixes %}
+
+<div class="item__info__affix">
+  <li><p>{{ item.rank_unique|safe }}</p></li>
+</div> <!-- .item__info__affix -->
+
+{% endblock item_affixes %}

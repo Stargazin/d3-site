@@ -10,93 +10,93 @@ def load_crafting_mats(apps, schema_editor):
 
 	#Machine of Bones -- Odeg -- Leoric and Maghda
 	leoricsRegret = Mat(name='Leoric\'s Regret',
-		category='Hellfire Materials',
+		category='Hellfire Material',
 		pic='/assets/media/items/mats/leorics_regret.png',
 		unique='Act <span class="silver">I</span> -- Machine of Bones dropped by Odeg the Keywarden in the Fields of Misery')
 	leoricsRegret.save()
 
 	#Machine of Gluttony -- Sokahr -- Rakanotha and Ghom
 	vialOfPutridness = Mat(name='Vial of Putridness',
-		category='Hellfire Materials',
+		category='Hellfire Material',
 		pic='/assets/media/items/mats/vial_of_putridness.png',
 		unique='Act <span class="silver">II</span> -- Machine of Gluttony dropped by Sokahr the Keywarden in the Dahlgur Oasis')
 	vialOfPutridness.save()
 
 	#Machine of War -- Xah'Rith -- Siegebreaker and Zoltan Kulle
 	idolOfTerror = Mat(name='Idol of Terror',
-		category='Hellfire Materials',
+		category='Hellfire Material',
 		pic='/assets/media/items/mats/idol_of_terror.png',
 		unique='Act <span class="silver">III</span> -- Machine of War dropped by Xah\'Rith the Keywarden in Stonefort')
 	idolOfTerror.save()
 
 	#Machine of Evil -- Nekarat -- Diablo + Random
 	heartOfEvil = Mat(name='Heart of Evil',
-		category='Hellfire Materials',
+		category='Hellfire Material',
 		pic='/assets/media/items/mats/heart_of_evil.png',
 		unique='Act <span class="silver">IV</span> -- Machine of Evil dropped by Nekarat the Keywarden in the Gardens of Hope 2nd Tier')
 	heartOfEvil.save()
 
 
 	khanduranRune = Mat(name='Khanduran Rune',
-		category='Cache Materials',
+		category='Horadric Cache Material',
 		pic='/assets/media/items/mats/khanduran_rune.png',
 		unique='Act <span class="silver">I</span> Horadric Caches')
 	khanduranRune.save()
 
 	caldeumNightshade = Mat(name='Caldeum Nightshade',
-		category='Cache Materials',
+		category='Horadric Cache Material',
 		pic='/assets/media/items/mats/caldeum_nightshade.png',
 		unique='Act <span class="silver">II</span> Horadric Caches')
 	caldeumNightshade.save()
 
 	arreatWarTapestry = Mat(name='Arreat War Tapestry',
-		category='Cache Materials',
+		category='Horadric Cache Material',
 		pic='/assets/media/items/mats/arreat_war_tapestry.png',
 		unique='Act <span class="silver">III</span> Horadric Caches')
 	arreatWarTapestry.save()
 
 	corruptedAngelFlesh = Mat(name='Corrupted Angel Flesh',
-		category='Cache Materials',
+		category='Horadric Cache Material',
 		pic='/assets/media/items/mats/corrupted_angel_flesh.png',
 		unique='Act <span class="silver">IV</span> Horadric Caches')
 	corruptedAngelFlesh.save()
 
 	westmarchHolyWater = Mat(name='Westmarch Holy Water',
-		category='Cache Materials',
+		category='Horadric Cache Material',
 		pic='/assets/media/items/mats/westmarch_holy_water.png',
 		unique='Act <span class="silver">V</span> Horadric Caches')
 	westmarchHolyWater.save()
 
 
 	reuseableParts = Mat(name='Reusable Parts',
-		category='Crafting Materials',
+		category='Crafting Material',
 		pic='/assets/media/items/mats/reuseable_parts.png',
 		rarity='N',
 		unique='Salvage <span class="white">Normal</span> items at the Blacksmith')
 	reuseableParts.save()
 
 	arcaneDust = Mat(name='Arcane Dust',
-		category='Crafting Materials',
+		category='Crafting Material',
 		pic='/assets/media/items/mats/arcane_dust.png',
 		rarity='M',
 		unique='Salvage <span class="blue">Magic</span> items at the Blacksmith')
 	arcaneDust.save()
 
 	veiledCrystal = Mat(name='Veiled Crystal',
-		category='Crafting Materials',
-		pic='/assets/media/items/mats/arcane_dust.png',
+		category='Crafting Material',
+		pic='/assets/media/items/mats/veiled_crystal.png',
 		rarity='R',
 		unique='Salvage <span class="yellow">Rare</span> items at the Blacksmith')
 	veiledCrystal.save()
 
 	forgottenSoul = Mat(name='Forgotten Soul',
-		category='Crafting Materials',
+		category='Crafting Material',
 		pic='/assets/media/items/mats/forgotten_soul.png',
 		unique='Salvage <span class="orange">Legendary</span> items at the Blacksmith')
 	forgottenSoul.save()
 
 	deathsBreath = Mat(name='Death\'s Breath',
-		category='Crafting Materials',
+		category='Crafting Material',
 		pic='/assets/media/items/mats/deaths_breath.png',
 		rarity='R',
 		unique='Dropped by Elite monsters')
@@ -104,35 +104,35 @@ def load_crafting_mats(apps, schema_editor):
 
 
 	essenceOfDiamond = Mat(name='Essence of Diamond',
-		category='Gem Essences',
+		category='Gem Essence',
 		pic='/assets/media/items/mats/essence_of_diamond.png',
 		unique='Transmute gems into Diamonds',
 		notes='Sold by Squirt the Peddler in Act <span class="silver">II</span>')
 	essenceOfDiamond.save()
 
 	essenceOfTopaz = Mat(name='Essence of Topaz',
-		category='Gem Essences',
+		category='Gem Essence',
 		pic='/assets/media/items/mats/essence_of_topaz.png',
 		unique='Transmute gems into Topazes',
 		notes='Sold by Squirt the Peddler in Act <span class="silver">II</span>')
 	essenceOfTopaz.save()
 
 	essenceOfRuby = Mat(name='Essence of Ruby',
-		category='Gem Essences',
+		category='Gem Essence',
 		pic='/assets/media/items/mats/essence_of_ruby.png',
 		unique='Transmute gems into Rubies',
 		notes='Sold by Squirt the Peddler in Act <span class="silver">II</span>')
 	essenceOfRuby.save()
 
 	essenceOfAmethyst = Mat(name='Essence of Amethyst',
-		category='Gem Essences',
+		category='Gem Essence',
 		pic='/assets/media/items/mats/essence_of_amethyst.png',
 		unique='Transmute gems into Amethysts',
 		notes='Sold by Squirt the Peddler in Act <span class="silver">II</span>')
 	essenceOfAmethyst.save()
 
 	essenceOfEmerald = Mat(name='Essence of Emerald',
-		category='Gem Essences',
+		category='Gem Essence',
 		pic='/assets/media/items/mats/essence_of_emerald.png',
 		unique='Transmute gems into Emeralds',
 		notes='Sold by Squirt the Peddler in Act <span class="silver">II</span>')
@@ -173,12 +173,12 @@ def load_potions(apps, schema_editor):
 
 	Mutilation = Potion(name='Bottomless Potion of Mutilation',
 	 	pic='/assets/media/items/potions/potion_of_mutilation.png',
-	 	unique='Increases Life per Kill by <span>40000 - 50000</span> for <span class="silver">5</span> seconds')
+	 	unique='Increases Life per Kill by <span>40,000 - 50,000</span> for <span class="silver">5</span> seconds')
 	Mutilation.save()
 
 	Regeneration = Potion(name='Bottomless Potion of Regeneration',
 	 	pic='/assets/media/items/potions/potion_of_regeneration.png',
-	 	unique='Restores an additional <span>75000 - 100000</span> Life over <span class="silver">5</span> seconds')
+	 	unique='Restores an additional <span>75,000 - 100,000</span> Life over <span class="silver">5</span> seconds')
 	Regeneration.save()
 
 	Rejuvenation = Potion(name='Bottomless Potion of Rejuvenation',
@@ -193,7 +193,7 @@ def load_potions(apps, schema_editor):
 
 	Leech = Potion(name='Bottomless Potion of the Leech',
 	 	pic='/assets/media/items/potions/potion_of_the_leech.png',
-	 	unique='Increases Life per Hit by <span>15000 - 20000</span> for <span class="silver">5</span> seconds')
+	 	unique='Increases Life per Hit by <span>15,000 - 20,000</span> for <span class="silver">5</span> seconds')
 	Leech.save()
 
 	Tower = Potion(name='Bottomless Potion of the Tower',

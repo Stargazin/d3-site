@@ -54,21 +54,24 @@ class WeaponArmorModel(LegendaryModel):
 
 @python_2_unicode_compatible
 class Weapon(WeaponArmorModel):
+	group = models.TextField(default='weapon')
 
 	def category_singular(self):
-		if self.category == "Ceremonial Knives" or self.category == "Staves":
-			if self.category == "Ceremonial Knives":
+		category = self.category
+		if category == "Ceremonial Knives" or category == "Staves":
+			if category == "Ceremonial Knives":
 				return "Ceremonial Knife"
-			if self.category == "Staves":
+			if category == "Staves":
 				return "Staff"
 		else:
-			return self.category[:-1]
+			return category[:-1]
 
 	def __str__(self):
 		return self.name
 
 @python_2_unicode_compatible
 class Armor(WeaponArmorModel):
+	group = models.TextField(default='armor')
 
 	def category_singular(self):
 		return self.category[:-1]
@@ -76,9 +79,12 @@ class Armor(WeaponArmorModel):
 	def __str__(self):
 		return self.name
 
+	class Meta:
+		verbose_name_plural = "Armor"
 
 @python_2_unicode_compatible
 class Accessory(LegendaryModel):
+	group = models.TextField(default='accessory')
 
 	def category_singular(self):
 		return False
@@ -88,3 +94,6 @@ class Accessory(LegendaryModel):
 
 	def __str__(self):
 		return self.name
+
+	class Meta:
+		verbose_name_plural = "Accessories"
