@@ -2,11 +2,6 @@
 {% load staticfiles %}
 
 
-{% block css %}
-<link rel="stylesheet" href="{% static 'css/singlelegendary.min.css.gz' %}">
-{% endblock css %}
-
-
 {% block title %}{{ item.name }}{% endblock title %}
 
 
@@ -20,10 +15,19 @@
 <div class="item">
 
 
+{% block item_name %}
 <div class="item__name"><span>{{ item.name }}</span></div>
+{% endblock item_name %}
+
 
 <div class="item__info">
+
+
+  {% block item_pic %}
   <div class="item__info__pic">
+  {% endblock item_pic %}
+
+
     <span class="pic" style="background: url({{ item.pic }})"></span>
   </div> <!-- .item__info__pic -->
 

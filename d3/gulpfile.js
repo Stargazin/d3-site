@@ -27,10 +27,10 @@ gulp.task('sass', function() {
 	return gulp.src(['assets/_scss/*.scss', 'assets/_scss/*.sass'])
 		.pipe(sass()).on('e', errorHandler)
 		.pipe(prefix(['last 10 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-		.pipe(gulp.dest('assets/css'))
+		.pipe(gulp.dest('assets/css/css'))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(minifycss())
-		.pipe(gulp.dest('assets/css'))
+		.pipe(gulp.dest('assets/css/css'))
 		.pipe(gzip(gzip_options))
 		.pipe(gulp.dest('assets/css'))
 		.pipe(livereload(server));

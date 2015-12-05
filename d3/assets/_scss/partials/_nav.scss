@@ -1,0 +1,97 @@
+/* partials/nav
+============================================================================ 
+============================================================================ */
+nav {
+  z-index: 100;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 0 0 1rem 1rem;
+  margin: auto;
+  width: 97%;
+  text-align: center;
+  background-color: $alice-blue;
+
+  @media #{$break-xl} {
+    width: 92%;
+  }
+
+  @media #{$break-l} {
+    width: 97%;
+  }
+
+  @media #{$break-m} {
+    width: 95%;
+  }
+
+  @media #{$break-s} {
+    width: 100%;
+  }
+
+  & > .link {
+    flex: 0 1 auto;
+
+    & > a {
+      color: $madison;
+    }
+  }
+}
+
+.link {
+  width: 14rem;
+  line-height: 4rem;
+  font-family: $playfair;
+
+  &:hover {
+    background-color: $lynch;
+
+    & > .drop {
+      display: block;
+    }
+
+    a {
+      color: $cararra;
+    }
+  }
+
+  a {
+    display: block;
+  }
+}
+
+.drop {
+  display: none;
+  position: absolute;
+  background: $lynch;
+}
+
+.drop--down {
+  font-size: 0.85em;
+}
+
+.drop--down > .drop__link:nth-child(1) {
+  border-top: 0.1rem solid #5B6978;
+}
+
+.drop__link {
+  width: 14rem;
+  border-bottom: 0.1rem solid #62707F;
+  line-height: 3.4rem !important;
+  font-weight: 400;
+  font-family: $roboto;
+
+  &:hover {
+    background-color: $madison;
+  }
+}
+
+.drop--right {
+  top: 0;
+  left: 14rem;
+  border-left: 0.1rem solid $gallery;
+}

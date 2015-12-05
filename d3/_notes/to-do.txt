@@ -20,16 +20,13 @@ TODODODO
 --rename html/scss files #}
 {# rename views/urls/etc #}
 {# use url template tags for itemsets.html #}
-
-
-modularize scss
+{# modularize scss
 --get everything you need for 'items'
-----move affixes and stuff for 'single-legendary' 'legendaries'
-
-
-add the "faders" to bottom of legs/miscitems/sets
+----move affixes and stuff for 'single-legendary' 'legendaries' #}
+{# add the "faders" to bottom of legs/miscitems/sets
 0 for 1/row; 1 for 2/row; 2 for 3/row
 --use n;2n;3n or something, idk look it up!~
+NICE! #}
 
 
 make css files for mats/potions/gems
@@ -41,7 +38,11 @@ make css files for mats/potions/gems
 
 
 remove conditionals from templates (see two scoops)
-
+--did as much as i can so far i think
+----think about how many times you have to query
+------and re-query
+-----try to assign to variables if you do same query a lot
+------mostly applies to views/
 
 
 
@@ -66,8 +67,6 @@ follower relics
 
 offhands
 --see above follower relics
-
-add tiny tiny bit of padding to guarenteed stats?
 
 
 ===============================================

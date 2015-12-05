@@ -1,0 +1,73 @@
+/* partials/items/items_materials
+============================================================================ 
+============================================================================ */
+.item__name--C {
+  // color: rgb(236, 114, 17);
+
+  &:after {
+    // background: linear-gradient(to right,
+    // rgba(0, 0, 0, 0) 0%,
+    // rgba(215, 100, 15, 1) 50%,
+    // rgba(0, 0, 0, 0) 100%);
+  }
+}
+
+.item__name--M {
+  // color: rgb(236, 114, 17);
+
+  &:after {
+    // background: linear-gradient(to right,
+    // rgba(0, 0, 0, 0) 0%,
+    // rgba(215, 100, 15, 1) 50%,
+    // rgba(0, 0, 0, 0) 100%);
+  }
+}
+
+.item__name--R {
+  // color: rgb(236, 114, 17);
+
+  &:after {
+    // background: linear-gradient(to right,
+    // rgba(0, 0, 0, 0) 0%,
+    // rgba(215, 100, 15, 1) 50%,
+    // rgba(0, 0, 0, 0) 100%);
+  }
+}
+
+.item__info__pic--C {
+  // border-color: rgb(236, 114, 17);
+}
+
+.item__info__pic--M {
+  // border-color: rgb(236, 114, 17);
+}
+
+.item__info__pic--R {
+  // border-color: rgb(236, 114, 17);
+}
+
+
+.item__info__affix {
+
+  .unique {
+
+    p {
+      color: #D27500;
+    }
+
+    .silver {
+      color: $iron;
+    }
+  }
+
+  li {
+
+    p {
+      color: #7D7DFF;
+    }
+
+    span {
+      color: #C89DFF;
+    }
+  }
+}

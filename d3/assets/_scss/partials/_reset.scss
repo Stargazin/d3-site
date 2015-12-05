@@ -1,9 +1,9 @@
 /* partials/reset
- =========================================================================== 
- =========================================================================== */
+============================================================================ 
+============================================================================ */
 
 /* Universal
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 * {
   position: relative;
@@ -17,10 +17,10 @@
   -moz-box-sizing: border-box;
 }
 
-/**
- * 1. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
+///**
+// * 1. Prevent iOS text size adjust after orientation change, without disabling
+// *    user zoom.
+// */
 
 html {
   box-sizing: border-box;
@@ -33,12 +33,12 @@ html {
 /* HTML5 display definitions
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/**
- * Correct `block` display not defined for-- 
- *  --any HTML5 element in IE 8/9
- *  --`details` or `summary` in IE 10/11 and Firefox.
- *  --`main` in IE 11.
- */
+///**
+// * Correct `block` display not defined for-- 
+// *  --any HTML5 element in IE 8/9
+// *  --`details` or `summary` in IE 10/11 and Firefox.
+// *  --`main` in IE 11.
+// */
 
 footer,
 header,
@@ -50,12 +50,12 @@ section {
 }
 
 /* Links
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/**
- * 1. Remove the gray background color from active links in IE 10.
- * 2. Improve readability when focused and also mouse hovered in all browsers.
- */
+///**
+// * 1. Remove the gray background color from active links in IE 10.
+// * 2. Improve readability when focused and also mouse hovered in all browsers.
+// */
 
 a {
   background-color: transparent; /* 1 */
@@ -68,33 +68,34 @@ a {
 
 
 /* Text-level semantics
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
- */
+///**
+// * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+// */
+
 b,
 strong {
   font-weight: bold;
 }
 
 /* Embedded content
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/**
- * Remove border when inside `a` element in IE 8/9/10.
- */
+///**
+// * Remove border when inside `a` element in IE 8/9/10.
+// */
 
 img {
   border: 0;
 }
 
 /* Grouping content
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/**
- * Address differences between Firefox and other browsers.
- */
+///**
+// * Address differences between Firefox and other browsers.
+// */
 
 hr {
   -moz-box-sizing: content-box;
@@ -103,13 +104,13 @@ hr {
 }
 
 /* Forms
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/**
- * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
- * 2. Correct font properties not being inherited. 
- */
+///**
+// * 1. Correct color not being inherited.
+// *    Known issue: affects color of disabled elements.
+// * 2. Correct font properties not being inherited. 
+// */
 
 button,
 input,
@@ -119,20 +120,20 @@ textarea {
   font: inherit; /* 2 */
 }
 
-/**
- * Address `overflow` set to `hidden` in IE 8/9/10/11.
- */
+///**
+// * Address `overflow` set to `hidden` in IE 8/9/10/11.
+// */
 
 button {
   overflow: visible;
 }
 
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
- * Correct `select` style inheritance in Firefox. 
- */
+///**
+// * Address inconsistent `text-transform` inheritance for `button` and `select`.
+// * All other form control elements do not inherit `text-transform` values.
+// * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+// * Correct `select` style inheritance in Firefox. 
+// */
 
 button,
 select {
@@ -140,7 +141,7 @@ select {
 }
 
 ///* Reset sources
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 ///**
 // * box-sizing: border-box

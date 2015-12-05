@@ -9,8 +9,8 @@
   <title>{% block title %}D3{% endblock title%}</title>
   {% block css %}{% endblock css %}
 </head>
+
 <body>
-<header>
 <nav>
 <ul class="link-container">
   <li class="link link--news"><a href="#">News</a></li>
@@ -92,7 +92,7 @@
                   <li class="link drop__link"><a href="{% url 'category-armor' 'torso' 'chest-armors' %}">Chest Armor</a></li>
                   <li class="link drop__link"><a href="{% url 'category-armor' 'torso' 'cloaks' %}">Cloaks</a></li>
                   <li class="link drop__link drop__link--all">
-                    <a href="#">Show All</a></li>
+                    <a href="{% url 'slot-armor' 'torso' %}">Show All</a></li>
                 </ul> <!-- .drop-right -->
               </li> <!-- .link.drop__link -->
 
@@ -148,25 +148,25 @@
       <li class="link drop__link"><a href="{% url 'potions' %}">Potions</a></li>
       <li class="link drop__link"><a href="{% url 'group-materials' %}">Materials</a>
         <ul class="drop drop--right">
-          <li class="link drop__link"><a href="{% url 'category-materials' 'hellfire-materials' %}">Hellfire Mats</a></li>
-          <li class="link drop__link"><a href="{% url 'category-materials' 'cache-materials' %}">Horadric Cache</a></li>
-          <li class="link drop__link"><a href="{% url 'category-materials' 'crafting-materials' %}">Crafting Mats</a></li>
-          <li class="link drop__link"><a href="{% url 'category-materials' 'gem-essences' %}">Gem Essences</a></li>
+          <li class="link drop__link"><a href="{% url 'category-materials' 'hellfire-material' %}">Hellfire Mats</a></li>
+          <li class="link drop__link"><a href="{% url 'category-materials' 'cache-material' %}">Horadric Cache</a></li>
+          <li class="link drop__link"><a href="{% url 'category-materials' 'crafting-material' %}">Crafting Mats</a></li>
+          <li class="link drop__link"><a href="{% url 'category-materials' 'gem-essence' %}">Gem Essences</a></li>
         </ul>
       </li>
-      <li class="link drop__link"><a href="{% url 'category-materials' 'hellfire-materials' %}">Hellfire Mats</a></li>
+      <li class="link drop__link"><a href="{% url 'category-materials' 'hellfire-material' %}">Hellfire Mats</a></li>
       <li class="link drop__link"><a href="#">Misc</a></li>
     </ul> <!-- .drop-down -->
   </li> <!-- .link-items -->
 
-  <li class="link link--classes"><a href="">Classes</a>
+  <li class="link link--classes"><a href="#">Classes</a>
     <ul class="drop drop--down">
-      <li class="link drop__link"><a href="">Barbarian</a></li>
-      <li class="link drop__link"><a href="">Crusader</a></li>
-      <li class="link drop__link"><a href="">Demon Hunter</a></li>
-      <li class="link drop__link"><a href="">Monk</a></li>
-      <li class="link drop__link"><a href="">Witch Doctor</a></li>
-      <li class="link drop__link"><a href="">Wizard</a></li>
+      <li class="link drop__link"><a href="#">Barbarian</a></li>
+      <li class="link drop__link"><a href="#">Crusader</a></li>
+      <li class="link drop__link"><a href="#">Demon Hunter</a></li>
+      <li class="link drop__link"><a href="#">Monk</a></li>
+      <li class="link drop__link"><a href="#">Witch Doctor</a></li>
+      <li class="link drop__link"><a href="#">Wizard</a></li>
     </ul> <!-- .drop-down -->
   </li> <!-- .link-classes -->
 
@@ -198,7 +198,6 @@
   <li class="link link--search"><a href="#">Search</a></li>
 </ul> <!-- .link-container -->
 </nav>
-</header>
 
 {% block heading %}{% endblock heading %}
 

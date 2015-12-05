@@ -7,7 +7,7 @@
 
 
 {% block css %}
-<link rel="stylesheet" href="{% static 'css/legendaryitems.min.css.gz' %}">
+<link rel="stylesheet" href="{% static 'css/items_materials.min.css.gz' %}">
 {% endblock css %}
 
 
@@ -16,10 +16,10 @@
 
 
 {% block item_name %}
-<a href="{% url 'single-material' item.name_slug %}" class="item__name">{{ item.name }}</a>
+<a href="{% url 'single-material' item.name_slug %}" class="item__name item__name--{{ item.rarity }}">{{ item.name }}</a>
 {% endblock item_name %}
 
 
 {% block item_pic %}
-<a href="{% url 'single-material' item.name_slug %}" class="item__info__pic">
+<a href="{% url 'single-material' item.name_slug %}" class="item__info__pic item__info__pic--{{ item.rarity }}">
 {% endblock item_pic %}
