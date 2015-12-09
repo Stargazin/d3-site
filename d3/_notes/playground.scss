@@ -1,0 +1,34 @@
+// .filler blocks to balance out uneven flexbox items
+// { visibility: hidden } on .filler was a better solution
+.filler--1 {
+  display: block;
+
+  &:nth-child(3n+1) {
+    display: none;
+  }
+}
+
+.filler--2 {
+  display: block;
+
+  &:nth-child(3n+1), &:nth-child(3n+2) {
+    display: none;
+  }
+}
+
+
+@media #{$break-xl} {
+  .filler--1:nth-child(3n+1) {
+    display: block;
+  }
+
+  .filler--1:nth-child(odd), .filler--2 {
+    display: none;
+  }
+}
+
+@media #{$break-m} {
+  .filler--1, .filler--1:nth-child(3n+1) {
+    display: none;
+  }
+}

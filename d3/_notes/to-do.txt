@@ -29,6 +29,12 @@ TODODODO
 NICE! #}
 
 
+extra affixes
+
+add owner filters to items_legendaries
+
+make headers
+
 make css files for mats/potions/gems
 -- change colors of text...
 -- .silver for affixes in gems
@@ -36,6 +42,13 @@ make css files for mats/potions/gems
 -- .colors for materials
 
 
+
+//test out scoping + overriding variables in nested functions.
+
+
+
+
+add "updated for 2.4"
 
 remove conditionals from templates (see two scoops)
 --did as much as i can so far i think
