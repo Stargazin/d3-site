@@ -22,14 +22,13 @@ class ItemSet(models.Model):
 		return pic
 
 	class Meta:
-		verbose_name_plural = "Item Sets"
+		verbose_name_plural = 'Item Sets'
+		ordering = ['pk']
 
 
 @python_2_unicode_compatible
 class SetEffect(models.Model):
-	#change to desc?
 	effect = models.TextField()
-	#change to need or pieces_needed?
 	pieces = models.TextField()
 	itemSet = models.ForeignKey(ItemSet, related_name='effects')
 	notes = models.TextField(blank=True)
@@ -38,7 +37,8 @@ class SetEffect(models.Model):
 		return self.effect
 
 	class Meta:
-		verbose_name_plural = "Set Effects"
+		verbose_name_plural = 'Set Effects'
+		ordering = ['pk']
 
 
 @python_2_unicode_compatible
@@ -49,8 +49,6 @@ class SetPiece(models.Model):
 	category = models.TextField(blank=True)
 	itemSet = models.ForeignKey(ItemSet, related_name='pieces')
 	affixes = models.ManyToManyField(Affix, blank=True)
-#do this for now instead of primary and secondary random affixes
-#just say x Random Magic Properties
 	random_affixes = models.TextField(blank=True)
 	notes = models.TextField(blank=True)
 	# owner = models.TextField(blank=True)
@@ -61,4 +59,5 @@ class SetPiece(models.Model):
 		return self.name
 
 	class Meta:
-		verbose_name_plural = "Set Pieces"
+		verbose_name_plural = 'Set Pieces'
+		ordering = ['pk']

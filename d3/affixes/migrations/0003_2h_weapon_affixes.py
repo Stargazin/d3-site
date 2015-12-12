@@ -10,9 +10,8 @@ def load_2h_axe_affixes(apps, schema_editor):
 	mainStat = Affix(category='2H Axes',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+946 - 1,125</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+1,237 - 1,465</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+946 - 1,125</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+1,237 - 1,465</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	bleedChance = Affix(category='2H Axes',
@@ -48,9 +47,8 @@ def load_bow_affixes(apps, schema_editor):
 	mainStat = Affix(category='Bows',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	percentDmg = Affix(category='Bows',
@@ -127,9 +125,8 @@ def load_crossbow_affixes(apps, schema_editor):
 	mainStat = Affix(category='Crossbows',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	sockets = Affix(category='Crossbows',
@@ -206,15 +203,14 @@ def load_2h_mace_affixes(apps, schema_editor):
 	mainStat = Affix(category='2H Maces',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+946 - 1,125</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+1,237 - 1,465</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+946 - 1,125</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+1,237 - 1,465</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	ccChance = Affix(category='2H Maces',
 		affix='ccChance',
 		is_primary=False,
-		desc='<span>+1.0 - 5.1%</span> chance to {<span class="vary">Crowd Control</span>} on Hit')
+		desc='<span>+1.0 - 5.1%</span> chance to {<span class="vary">Crowd Control</span>} on Hit<div class="extra"><div class="extra-x">X</div><span>Fear<br>Stun<br>Blind<br>Freeze<br>Chill<br>Slow<br>Immobilize<br>Knockback</span></div>')
 	ccChance.save()
 
 	lpk = Affix(category='2H Maces',
@@ -282,9 +278,8 @@ def load_polearm_affixes(apps, schema_editor):
 	mainStat = Affix(category='Polearms',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+946 - 1,125</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+1,237 - 1,465</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+946 - 1,125</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+1,237 - 1,465</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	lpk = Affix(category='Polearms',
@@ -320,9 +315,8 @@ def load_staff_affixes(apps, schema_editor):
 	mainStat = Affix(category='Staves',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+946 - 1,125</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+1,237 - 1,465</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence')
+		desc='<span>+946 - 1,125</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence</span></div>',
+		ancient='<span>+1,237 - 1,465</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence</span></div>')
 	mainStat.save()
 
 	sockets = Affix(category='Staves',
@@ -378,9 +372,8 @@ def load_2h_sword_affixes(apps, schema_editor):
 	mainStat = Affix(category='2H Swords',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+946 - 1,125</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+1,237 - 1,465</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+946 - 1,125</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+1,237 - 1,465</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	cdr = Affix(category='2H Swords',

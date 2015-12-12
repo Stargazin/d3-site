@@ -1,17 +1,12 @@
 /* partials/itemsets/itemsets_all
 ============================================================================ 
 ============================================================================ */
-*::selection {
-  background: rgb(178, 219, 255);
-  color: black;
-}
-
 .set-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   max-width: 90%;
-  margin: 10rem auto;
+  margin: 2.5rem auto 10rem auto;
   padding: 0.7rem 0.3rem 0.1rem;
   font-size: 1.5em;
   font-family: $roboto;
@@ -21,18 +16,16 @@
   }
 
   @media #{$break-s} {
-    padding: 0.4rem;
     max-width: 92%;
+    padding: 0.4rem;
   }
 }
 
 .set {
   width: 32.7%;
-  //38.9rem test and breaks
   margin-bottom: 0.6rem;
   border: 2px solid rgb(175,180,185);
   padding: 1.2rem 1.5rem 1.4rem 1.5rem;
-  // background-color: $ebony-clay;
   background-color: rgba(34, 49, 63, 0.8);
 
   @media #{$break-xl} {
@@ -48,9 +41,9 @@
   width: 100%;
   margin-bottom: 1.5rem;
   text-align: center;
+  line-height: 2.5rem;
   font-size: 1.4em;
   font-family: $playfair;
-  line-height: 2.5rem;
 
   a {
     color: rgb(117, 217, 17);
@@ -87,7 +80,6 @@
     border-color: rgb(95, 190, 5);
     background-color: rgb(48, 67, 86);
   }
-
 }
 
 .set__pic {
@@ -107,12 +99,12 @@
 
   .set__piece {
     display: block;
-    padding-bottom: 0.2rem;
     width: 100%;
+    padding-bottom: 0.2rem;
 
     a {
-      color: rgb(208, 210, 213);
       border-bottom: 1px dotted rgb(70, 90, 110);
+      color: rgb(208, 210, 213);
 
       &:hover {
         border-bottom: 1px dotted rgb(98, 123, 150);
@@ -165,4 +157,9 @@
       padding-top: 0.3rem;
     }
   }
+}
+
+.filler {
+  @extend .set;
+  visibility: hidden;
 }

@@ -1,21 +1,12 @@
 {% extends 'single/base_single.html' %}
 {% load staticfiles %}
 
-<!-- change this -->
+
 {% block css %}
 <link rel="stylesheet" href="{% static 'css/single_material.min.css.gz' %}">
 {% endblock css %}
 
 
-{% block heading %}
-{% endblock heading %}
-
-
-{% block item_name %}
-<div class="item__name item__name--{{ item.rarity }}"><span>{{ item.name }}</span></div>
-{% endblock item_name %}
-
-
-{% block item_pic %}
-<div class="item__info__pic item__info__pic--{{ item.rarity }}">
-{% endblock item_pic %}
+{% block item_div %}
+<div class="item item--{{ item.rarity }}">
+{% endblock item_div %}

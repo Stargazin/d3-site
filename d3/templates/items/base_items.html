@@ -2,30 +2,34 @@
 {% load staticfiles %}
 
 
-{% block heading %}
-{% endblock heading %}
-
-
 {% block content %}
 
 <main>
 <div class="item-container">
 
-
 {% for item in items %}
+
+
+{% block item_div %}
 <div class="item">
+{% endblock item_div %}
 
 
-  {% block item_name %}
-  <a href="#" class="item__name">{{ item.name }}</a>
-  {% endblock item_name %}
+  <div class="item__name-container">
 
+
+    {% block item_name %}
+    <a href="#check-block" class="item__name">{{ item.name }}</a>
+    {% endblock item_name %}
+
+
+  </div> <!-- .item__name-container -->
 
   <div class="item__info">
 
 
     {% block item_pic %}
-    <a href="#" class="item__info__pic">
+    <a href="#check-block" class="item__info__pic">
     {% endblock item_pic %}
 
       <span class="pic" style="background: url({{ item.pic }})"></span>
@@ -51,9 +55,8 @@
 </div> <!-- .item -->
 {% endfor %}
 
-<div class="item filler--1"></div>
-<div class="item filler--2"></div>
-
+<div class="filler"></div>
+<div class="filler"></div>
 
 </div> <!-- .item-container -->
 </main>

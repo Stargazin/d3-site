@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.overview {
+  margin: 5rem 2rem 0 0;
+  text-align: center;
+  font-size: 3.5em;
+  color: rgb(250, 250, 250);
+
+  h1 {
+    line-height: 7rem;
+  }
+
+  h3 {
+    margin-left: 4.5rem;
+
+    @media #{$break-xl} {
+      margin-bottom: 2.2rem;
+      margin-left: 0;
+      line-height: 6.5rem;
+    }
+  }
+
+  @media #{$break-xl} {
+    width: 100%;
+  }
+}

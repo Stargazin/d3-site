@@ -10,9 +10,8 @@ def load_helmet_affixes(apps, schema_editor):
 	mainStat = Affix(category='Helmets',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	vita = Affix(category='Helmets',
@@ -57,8 +56,7 @@ def load_helmet_affixes(apps, schema_editor):
 	andarielsEleDmg = Affix(category='Helmets',
 		affix='andarielsEleDmg',
 		is_primary=True,
-		desc='Skills of {<span class="vary">One Element</span>} do <span>15 - 20%</span> more damage',
-		notes='Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane<br>Holy')
+		desc='Skills of {<span class="vary">One Element</span>} do <span>15 - 20%</span> more damage<div class="extra"><div class="extra-x">X</div><span>Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane<br>Holy</span></div>')
 	andarielsEleDmg.save()
 
 	andarielsPoisRes = Affix(category='Helmets',
@@ -114,8 +112,7 @@ def load_spirit_stone_affixes(apps, schema_editor):
 	skillDmg = Affix(category='Spirit Stones',
 		affix='skillDmg',
 		is_primary=True,
-		desc='Increases {<span class="vary">Skill Damage</span>} by <span>10 - 15%</span>',
-		notes='Tempest Rush<br>Exploding Palm<br>Wave of Light<br>Lashing Tail Kick')
+		desc='Increases {<span class="vary">Skill Damage</span>} by <span>10 - 15%</span><div class="extra"><div class="extra-x">X</div><span>Tempest Rush<br>Exploding Palm<br>Wave of Light<br>Lashing Tail Kick</span></div>')
 	skillDmg.save()
 
 	ccReduction = Affix(category='Spirit Stones',
@@ -225,9 +222,8 @@ def load_shoulders_affixes(apps, schema_editor):
 	mainStat = Affix(slot='Shoulders',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+416 - 500</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+550 - 650</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+416 - 500</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+550 - 650</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	vita = Affix(slot='Shoulders',
@@ -270,9 +266,8 @@ def load_chest_armor_affixes(apps, schema_editor):
 	mainStat = Affix(category='Chest Armors',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+416 - 500</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+550 - 650</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+416 - 500</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+550 - 650</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	vita = Affix(category='Chest Armors',
@@ -354,9 +349,8 @@ def load_bracers_affixes(apps, schema_editor):
 	mainStat = Affix(slot='Bracers',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+416 - 500</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+550 - 650</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+416 - 500</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+550 - 650</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	vita = Affix(slot='Bracers',
@@ -369,8 +363,7 @@ def load_bracers_affixes(apps, schema_editor):
 	eleDmg = Affix(slot='Bracers',
 		affix='eleDmg',
 		is_primary=True,
-		desc='Skills of {<span class="vary">One Element</span>} do <span>15 - 20%</span> more damage',
-		notes='Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane<br>Holy')
+		desc='Skills of {<span class="vary">One Element</span>} do <span>15 - 20%</span> more damage<div class="extra"><div class="extra-x">X</div><span>Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane<br>Holy</span></div>')
 	eleDmg.save()
 
 	chc = Affix(slot='Bracers',
@@ -446,9 +439,8 @@ def load_gloves_affixes(apps, schema_editor):
 	mainStat = Affix(slot='Gloves',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	ias = Affix(slot='Gloves',
@@ -504,9 +496,8 @@ def load_belt_affixes(apps, schema_editor):
 	mainStat = Affix(category='Belts',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+416 - 500</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+550 - 650</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+416 - 500</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+550 - 650</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	vita = Affix(category='Belts',
@@ -667,9 +658,8 @@ def load_pants_affixes(apps, schema_editor):
 	mainStat = Affix(slot='Pants',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+416 - 500</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+550 - 650</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+416 - 500</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+550 - 650</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	lps = Affix(slot='Pants',
@@ -720,9 +710,8 @@ def load_boots_affixes(apps, schema_editor):
 	mainStat = Affix(slot='Boots',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+416 - 500</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+550 - 650</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+416 - 500</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+550 - 650</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	vita = Affix(slot='Boots',
@@ -763,8 +752,7 @@ def load_boots_affixes(apps, schema_editor):
 	bojSkillDmg = Affix(slot='Boots',
 		affix='bojSkillDmg',
 		is_primary=True,
-		desc='Increases {<span class="vary">Skill Damage</span>} by <span>10 - 15%</span>',
-		notes='<strong>Barbarian: </strong>Ancient Spear | Hammer of the Ancients | Seismic Slam | Whirlwind<br><strong>Crusader: </strong>Blessed Hammer | Blessed Shield | Fist of the Heavens | Phalanx | Shield Bash | Sweep Attack<br><strong>Demon Hunter: </strong>Chakram | Cluster Arrow | Elemental Arrow | Impale | Multishot | Rapid Fire | Strafe<br><strong>Monk: </strong>Exploding Palm | Lashing Tail Kick | Tempest Rush | Wave of Light<br><strong>Witch Doctor: </strong>Acid Cloud | Firebats | Sacrifice | Spirit Barrage | Zombie Charger<br><strong>Wizard: </strong>Arcane Orb | Arcane Torrent | Disintegrate | Energy Twister | Meteor | Ray of Frost | Wave of Force')
+		desc='Increases {<span class="vary">Skill Damage</span>} by <span>10 - 15%</span><div class="extra"><div class="extra-x">X</div><span><strong>Barbarian: </strong>Ancient Spear | Hammer of the Ancients | Seismic Slam | Whirlwind<br><strong>Crusader: </strong>Blessed Hammer | Blessed Shield | Fist of the Heavens | Phalanx | Shield Bash | Sweep Attack<br><strong>Demon Hunter: </strong>Chakram | Cluster Arrow | Elemental Arrow | Impale | Multishot | Rapid Fire | Strafe<br><strong>Monk: </strong>Exploding Palm | Lashing Tail Kick | Tempest Rush | Wave of Light<br><strong>Witch Doctor: </strong>Acid Cloud | Firebats | Sacrifice | Spirit Barrage | Zombie Charger<br><strong>Wizard: </strong>Arcane Orb | Arcane Torrent | Disintegrate | Energy Twister | Meteor | Ray of Frost | Wave of Force</span></div>')
 	bojSkillDmg.save()
 
 #Ice Climbers

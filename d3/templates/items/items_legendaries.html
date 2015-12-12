@@ -3,6 +3,7 @@
 
 
 {% block title %}
+{{ title }}
 {% endblock title %}
 
 
@@ -11,8 +12,31 @@
 {% endblock css %}
 
 
-{% block heading %}
-{% endblock heading %}
+{% block header %}
+
+<header>
+  <div class="overview">
+    <h1>{{ header }}</h1>
+    <h3>Patch 2.3</h3>
+  </div> <!-- .overview -->
+
+  <div class="toggle-container">
+  <span style="background: url(/assets/media/portraits/42/all.png)" class="toggle toggle--all"></span>
+  <span style="background: url(/assets/media/portraits/42/barb.png)" class="toggle toggle--barb"></span>
+  <span style="background: url(/assets/media/portraits/42/sader.png)" class="toggle toggle--sader"></span>
+  <span style="background: url(/assets/media/portraits/42/dh.png)" class="toggle toggle--dh"></span>
+  <span style="background: url(/assets/media/portraits/42/monk.png)" class="toggle toggle--monk"></span>
+  <span style="background: url(/assets/media/portraits/42/wd.png)" class="toggle toggle--wd"></span>
+  <span style="background: url(/assets/media/portraits/42/wiz.png)" class="toggle toggle--wiz"></span>
+  </div> <!-- .toggle-container -->
+</header>
+
+{% endblock header %}
+
+
+{% block item_div %}
+<div class="item {{ item.owner }}">
+{% endblock item_div %}
 
 
 {% block item_name %}
@@ -28,6 +52,7 @@
 {% block item_unique %}
 
 {% if item.unique %}
+
 <div class="item__info__affix">
   <li class="unique"><p>{{ item.unique|safe }}</p></li>
 </div> <!-- .item__info__affix -->
@@ -41,7 +66,14 @@
 {% if item.affixes.all %}
 <div class="item__info__affix">
   {% for affix in item.affixes.all %}
-  <li><p>{{ affix.desc|safe }}</p></li>
+  <li class="affix">
+    <p>{{ affix.desc|safe }}</p>
+
+  <!--  {% if affix.notes %}
+    <div class="extra">{{ affix.notes|safe }}</div>
+    {% endif %} -->
+  </li>
+
   {% endfor %}
 </div> <!-- .item__info__affix -->
 
@@ -49,16 +81,21 @@
 <div class="item__info__affix">
   {% if item.random_primaries %}
   <li>
-    <p><span>+{{ item.random_primaries }}</span> Random Affixes</p>
+    <p><span class="random">+{{ item.random_primaries }}</span> Random Affixes</p>
   </li>
   {% endif %}
 
   {% if item.random_secondaries %}
   <li>
-    <p><span>+{{ item.random_secondaries }}</span> Random Affixes</p>
+    <p><span class="random">+{{ item.random_secondaries }}</span> Random Affixes</p>
   </li>
   {% endif %}
 </div> <!-- .item__info__affix -->
 {% endif %}
 
 {% endblock item_affixes %}
+
+
+{% block js %}
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock js %}

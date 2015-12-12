@@ -2,17 +2,17 @@
 {% load staticfiles %}
 
 
-{% block title %}{{ item.name }}{% endblock title %}
-
-
-{% block heading %}
-{% endblock heading %}
+{% block title %}{{ item.name }} | Diablo 3{% endblock title %}
 
 
 {% block content %}
 
 <main>
+
+
+{% block item_div %}
 <div class="item">
+{% endblock item_div %}
 
 
 {% block item_name %}

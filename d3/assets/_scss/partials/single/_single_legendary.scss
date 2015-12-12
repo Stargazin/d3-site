@@ -1,13 +1,12 @@
 /* partials/single/single_legendary
 ============================================================================ 
 ============================================================================ */
-
 .item__affix {
 
   p {
     color: #7D7DFF;
 
-    span {
+    & > span {
       color: #C89DFF;
     }
   }
@@ -20,6 +19,43 @@
 
     p {
       color: #D27500;
+    }
+  }
+
+  .vary {
+    cursor: pointer;
+  }
+
+  .extra {
+    display: none;
+    position: absolute;
+    text-indent: 0;
+    z-index: 99;
+    border: 2px solid rgb(225, 225, 225);
+    background-color: $ebony-clay;
+    padding: 0.5rem 0.6rem 1.4rem 1.5rem;
+
+    .extra-x {
+      float: right;
+      cursor: pointer;
+      padding-right: 0.4rem;
+      z-index: 999;
+
+      &:hover {
+        color: rgb(222, 222, 222);
+      }
+    }
+
+    span {
+      display: block;
+      color: rgb(140, 140, 255);
+      padding-top: 0.9rem;
+      padding-right: 2.2rem;
+      width: 100%;
+
+      strong {
+        color: $silver;
+      }
     }
   }
 }

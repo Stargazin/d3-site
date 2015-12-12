@@ -3,25 +3,46 @@
 ============================================================================ */
 .item__info__affix {
 
-  .unique {
+  .vary {
+    cursor: pointer;
+  }
 
-    p {
-      color: #D27500;
+  .extra {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    left: -30%;
+    border: 2px solid rgb(225, 225, 225);
+    padding: 0.5rem 0.6rem 1.4rem 1.5rem;
+    text-indent: 0;
+    background-color: $ebony-clay;
+
+    .extra-x {
+      float: right;
+      z-index: 999;
+      padding-right: 0.4rem;
+      cursor: pointer;
+      color: rgb(150, 150, 150);
+
+      &:hover {
+        color: rgb(222, 222, 222);
+      }
     }
 
-    .silver {
-      color: $iron;
+    & > span {
+      display: block;
+      width: 100%;
+      padding-top: 0.9rem;
+      padding-right: 2.2rem;
+      color: rgb(140, 140, 255);
+
+      strong {
+        color: $silver;
+      }
     }
   }
 
-  li {
-
-    p {
-      color: #7D7DFF;
-    }
-
-    span {
-      color: #C89DFF;
-    }
+  .random {
+    color: #C89DFF;
   }
 }

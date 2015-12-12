@@ -35,6 +35,7 @@ class Migration(migrations.Migration):
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
+                'ordering': ['pk'],
                 'verbose_name_plural': 'Accessories',
             },
         ),
@@ -62,6 +63,7 @@ class Migration(migrations.Migration):
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
+                'ordering': ['pk'],
                 'verbose_name_plural': 'Armor',
             },
         ),
@@ -89,7 +91,7 @@ class Migration(migrations.Migration):
                 ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
-                'abstract': False,
+                'ordering': ['pk'],
             },
         ),
     ]

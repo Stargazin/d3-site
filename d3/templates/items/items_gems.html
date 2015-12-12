@@ -3,6 +3,7 @@
 
 
 {% block title %}
+Legendary {{ header }}s
 {% endblock title %}
 
 
@@ -11,8 +12,16 @@
 {% endblock css %}
 
 
-{% block heading %}
-{% endblock heading %}
+{% block header %}
+
+<header>
+  <div class="overview">
+    <h1>Legendary {{ header }}s</h1>
+    <h3>Patch 2.3</h3>
+  </div> <!-- .overview -->
+</header>
+
+{% endblock header %}
 
 
 {% block item_name %}

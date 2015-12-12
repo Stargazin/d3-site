@@ -131,7 +131,7 @@ def load_quivers(apps, schema_editor):
 
 	deadMansLegacy = Weapon(slot='Offhands',
 		category='Quivers',
-		name='DeadMan\'s Legacy',
+		name='Dead Man\'s Legacy',
 		pic='/assets/media/items/legendaries/offhands/quivers/dead_mans_legacy.png',
 		unique='Multishot hits enemies below <span>50 - 60%</span> health twice.',
 		random_primaries='2',
@@ -188,7 +188,7 @@ def load_quivers(apps, schema_editor):
 
 	spinesOfSeethingHatred = Weapon(slot='Offhands',
 		category='Quivers',
-		name='Spines of Seeth ingHatred',
+		name='Spines of Seething Hatred',
 		pic='/assets/media/items/legendaries/offhands/quivers/spines_of_seething_hatred.png',
 		unique='Chakram now generates <span>3 - 4</span> Hatred.',
 		random_primaries='3',
@@ -285,7 +285,7 @@ def load_mojos(apps, schema_editor):
 
 	thingOfTheDeep = Weapon(slot='Offhands',
 		category='Mojos',
-		name='Thing Of The Deep',
+		name='Thing of the Deep',
 		pic='/assets/media/items/legendaries/offhands/mojos/thing_of_the_deep.png',
 		random_primaries='1')
 	thingOfTheDeep.save()
@@ -471,18 +471,20 @@ def load_shields(apps, schema_editor):
 		unique='You take <span>45 - 60%</span> less damage from blocked attacks.',
 		random_primaries='2',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>21.0 - 31.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>21.0 - 31.0%</span> Block Chance</span>',
+		owner='all')
 	covensCriterion.save()
 	covensCriterion.affixes.add(vita, blockChance)
 
 	defenderOfWestmarch = Weapon(slot='Offhands',
 		category='Shields',
-		name='Defender Of Westmarch',
+		name='Defender of Westmarch',
 		pic='/assets/media/items/legendaries/offhands/shields/defender_of_westmarch.png',
 		unique='Blocks have a chance of summoning a charging wolf that deals <span>800 - 1000%</span> weapon damage to all enemies it passes through.',
 		random_primaries='2',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>21.0 - 31.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>21.0 - 31.0%</span> Block Chance</span>',
+		owner='all')
 	defenderOfWestmarch.save()
 	defenderOfWestmarch.affixes.add(mainStat, blockChance)
 
@@ -493,7 +495,8 @@ def load_shields(apps, schema_editor):
 		unique='Each enemy hit by your Sweep Attack increases the damage of your next Sweep Attack by <span class="silver">30 - 40%</span>, stacking up to <span>5</span> times.',
 		random_primaries='3',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
+		owner='sader')
 	denial.save()
 	denial.affixes.add(mainStat)
 
@@ -504,18 +507,20 @@ def load_shields(apps, schema_editor):
 		unique='Reduces the cooldown of Heaven\'s Fury by <span>45 - 50%</span>.',
 		random_primaries='3',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
+		owner='sader')
 	eberliCharo.save()
 	eberliCharo.affixes.add(mainStat)
 
 	freezeOfDeflection = Weapon(slot='Offhands',
 		category='Shields',
-		name='Freeze Of Deflection',
+		name='Freeze of Deflection',
 		pic='/assets/media/items/legendaries/offhands/shields/freeze_of_deflection.png',
 		unique='Blocking an attack has a chance to Freeze the attacker for <span>0.5 - 1.5</span> seconds.',
 		random_primaries='3',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
+		owner='all')
 	freezeOfDeflection.save()
 	freezeOfDeflection.affixes.add(mainStat)
 
@@ -526,7 +531,8 @@ def load_shields(apps, schema_editor):
 		unique='Blocks release forward a Fires of Heaven.',
 		random_primaries='2',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
+		owner='sader')
 	ivoryTower.save()
 	ivoryTower.affixes.add(mainStat, vita)
 
@@ -536,7 +542,8 @@ def load_shields(apps, schema_editor):
 		pic='/assets/media/items/legendaries/offhands/shields/lidless_wall.png',
 		random_primaries='2',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
+		owner='all')
 	lidlessWall.save()
 	lidlessWall.affixes.add(mainStat, lidlessEleDmg, lidlessMaxResource)
 
@@ -546,7 +553,8 @@ def load_shields(apps, schema_editor):
 		pic='/assets/media/items/legendaries/offhands/shields/stormshield.png',
 		random_primaries='3',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>19.0 - 24.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>19.0 - 24.0%</span> Block Chance</span>',
+		owner='all')
 	stormshield.save()
 	stormshield.affixes.add(mainStat, stormReducedMeleeDmg)
 
@@ -557,24 +565,22 @@ def load_shields(apps, schema_editor):
 		unique='Enemies affected by Provoke take double damage from Thorns.',
 		random_primaries='2',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
+		owner='sader')
 	votoyiasSpiker.save()
 	votoyiasSpiker.affixes.add(mainStat, thorns)
 
 	wallOfBone = Weapon(slot='Offhands',
 		category='Shields',
-		name='Wall Of Bone',
+		name='Wall of Bone',
 		pic='/assets/media/items/legendaries/offhands/shields/wall_of_man.png',
 		unique='<span>20 - 30%</span> chance to be protected by a shield of bones when you are hit.',
 		random_primaries='4',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
+		owner='all')
 	wallOfBone.save()
 	# wallOfBone.affixes.add()
-
-	for weapon in Weapon.objects.filter(category='Shields'):
-		weapon.owner = 'all'
-		weapon.save()
 
 
 def load_slugs(apps, schema_editor):

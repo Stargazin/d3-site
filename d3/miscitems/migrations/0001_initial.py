@@ -20,10 +20,10 @@ class Migration(migrations.Migration):
                 ('unique', models.TextField(blank=True)),
                 ('notes', models.TextField(blank=True)),
                 ('rank_unique', models.TextField(blank=True)),
-                ('category', models.TextField(default=b'Legendary Gem')),
+                ('category', models.TextField(default=b'Gem')),
             ],
             options={
-                'abstract': False,
+                'ordering': ['pk'],
             },
         ),
         migrations.CreateModel(
@@ -37,11 +37,12 @@ class Migration(migrations.Migration):
                 ('notes', models.TextField(blank=True)),
                 ('rarity', models.TextField(default=b'L')),
                 ('stack_amount', models.TextField(default=b'5000')),
-                ('category', models.TextField(blank=True)),
-                ('category_slug', models.SlugField(blank=True)),
+                ('category', models.TextField(default=b'Material')),
+                ('slot', models.TextField(blank=True)),
+                ('slot_slug', models.SlugField(blank=True)),
             ],
             options={
-                'abstract': False,
+                'ordering': ['pk'],
             },
         ),
         migrations.CreateModel(
@@ -53,10 +54,10 @@ class Migration(migrations.Migration):
                 ('pic', models.ImageField(upload_to=b'', blank=True)),
                 ('unique', models.TextField(blank=True)),
                 ('notes', models.TextField(blank=True)),
-                ('category', models.TextField(default=b'Legendary Potion')),
+                ('category', models.TextField(default=b'Potion')),
             ],
             options={
-                'abstract': False,
+                'ordering': ['pk'],
             },
         ),
     ]

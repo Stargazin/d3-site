@@ -17,9 +17,8 @@ def load_amulet_affixes(apps, schema_editor):
 	mainStat = Affix(slot='Amulets',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	dext = Affix(slot='Amulets',
@@ -53,8 +52,7 @@ def load_amulet_affixes(apps, schema_editor):
 	eleDmg = Affix(slot='Amulets',
 		affix='eleDmg',
 		is_primary=True,
-		desc='Skills of {<span class="vary">One Element</span>} do <span>15 - 20%</span> more damage',
-		notes='Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane<br>Holy')
+		desc='Skills of {<span class="vary">One Element</span>} do <span>15 - 20%</span> more damage<div class="extra"><div class="extra-x">X</div><span>Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane<br>Holy</span></div>')
 	eleDmg.save()
 
 	physDmg = Affix(slot='Amulets',
@@ -175,9 +173,8 @@ def load_amulet_affixes(apps, schema_editor):
 	eleRes = Affix(slot='Amulets',
 		affix='eleRes',
 		is_primary=False,
-		desc='<span>+141 - 160</span> Resistance to {<span class="vary">One Element</span>}',
-		ancient='<span>+176 - 210</span> Resistance to {<span class="vary">One Element</span>}',
-		notes='Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane')
+		desc='<span>+141 - 160</span> Resistance to {<span class="vary">One Element</span>}<div class="extra"><div class="extra-x">X</div><span>Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane</span></div>',
+		ancient='<span>+176 - 210</span> Resistance to {<span class="vary">One Element</span>}<div class="extra"><div class="extra-x">X</div><span>Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane</span></div>')
 	eleRes.save()
 
 	physRes = Affix(slot='Amulets',
@@ -340,9 +337,8 @@ def load_ring_affixes(apps, schema_editor):
 	mainStat = Affix(slot='Rings',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+416 - 500</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+550 - 650</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+416 - 500</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+550 - 650</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	dext = Affix(slot='Rings',
@@ -456,9 +452,8 @@ def load_ring_affixes(apps, schema_editor):
 	eleRes = Affix(slot='Rings',
 		affix='eleRes',
 		is_primary=False,
-		desc='<span>+141 - 160</span> Resistance to {<span class="vary">One Element</span>}',
-		ancient='<span>+176 - 210</span> Resistance to {<span class="vary">One Element</span>}',
-		notes='Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane')
+		desc='<span>+141 - 160</span> Resistance to {<span class="vary">One Element</span>}<div class="extra"><div class="extra-x">X</div><span>Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane</span></div>',
+		ancient='<span>+176 - 210</span> Resistance to {<span class="vary">One Element</span>}<div class="extra"><div class="extra-x">X</div><span>Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane</span></div>')
 	eleRes.save()
 
 	physRes = Affix(slot='Rings',
@@ -576,8 +571,7 @@ def load_ring_affixes(apps, schema_editor):
 	manaldMaxResource = Affix(slot='Rings',
 		affix='manaldMaxResource',
 		is_primary=False,
-		desc='+Max {<span class="vary">Resource</span>}',
-		notes='Fury<br>Wrath<br>Discipline<br>Spirit<br>Mana<br>Arcane Power')
+		desc='+Max {<span class="vary">Resource</span>}<div class="extra"><div class="extra-x">X</div><span>+10-12 Fury<br>+8-10 Wrath<br>+9-12 Discipline<br>+13-15 Spirit<br>+120-150 Mana<br>+10-14 Arcane Power</span></div>')
 	manaldMaxResource.save()
 
 #Nagelring
@@ -626,8 +620,7 @@ def load_ring_affixes(apps, schema_editor):
 	stoneEleDmg = Affix(slot='Rings',
 		affix='stoneEleDmg',
 		is_primary=True,
-		desc='Skills of {<span class="vary">One Element</span>} do <span>15 - 20%</span> more damage',
-		notes='Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane<br>Holy')
+		desc='Skills of {<span class="vary">One Element</span>} do <span>15 - 20%</span> more damage<div class="extra"><div class="extra-x">X</div><span>Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane<br>Holy</span></div>')
 	stoneEleDmg.save()
 
 	stoneEliteDmg = Affix(slot='Rings',
@@ -639,8 +632,7 @@ def load_ring_affixes(apps, schema_editor):
 	stoneMaxResource = Affix(slot='Rings',
 		affix='stoneMaxResource',
 		is_primary=False,
-		desc='+Max {<span class="vary">Resource</span>}',
-		notes='Fury<br>Wrath<br>Discipline<br>Spirit<br>Mana<br>Arcane Power')
+		desc='+Max {<span class="vary">Resource</span>}<div class="extra"><div class="extra-x">X</div><span>+10-12 Fury<br>+8-10 Wrath<br>+9-12 Discipline<br>+13-15 Spirit<br>+120-150 Mana<br>+10-14 Arcane Power</span></div>')
 	stoneMaxResource.save()
 
 #Unity

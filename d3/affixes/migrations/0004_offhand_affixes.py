@@ -583,8 +583,7 @@ def load_quiver_affixes(apps, schema_editor):
 	holyEleDmg = Affix(category='Quivers',
 		affix='holyEleDmg',
 		is_primary=True,
-		desc='Skills of {<span class="vary">One Element</span>} do <span>15 - 20%</span> more damage',
-		notes='Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane<br>Holy')
+		desc='Skills of {<span class="vary">One Element</span>} do <span>15 - 20%</span> more damage<div class="extra"><div class="extra-x">X</div><span>Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane<br>Holy</span></div>')
 	holyEleDmg.save()
 
 
@@ -1077,8 +1076,8 @@ def load_crusader_shield_affixes(apps, schema_editor):
 	eleRes = Affix(category='Crusader Shields',
 		affix='eleRes',
 		is_primary=False,
-		desc='<span>+141 - 160</span> Resistance to {<span>One Element</span>}',
-		ancient='<span>+176 - 210</span> Resistance to {<span>One Element</span>}')
+		desc='<span>+141 - 160</span> Resistance to {<span>One Element</span>}<div class="extra"><div class="extra-x">X</div><span>Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane</span></div>',
+		ancient='<span>+176 - 210</span> Resistance to {<span>One Element</span>}<div class="extra"><div class="extra-x">X</div><span>Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane</span></div>')
 	eleRes.save()
 
 	physRes = Affix(category='Crusader Shields',
@@ -1241,9 +1240,8 @@ def load_shield_affixes(apps, schema_editor):
 	mainStat = Affix(category='Shields',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	vita = Affix(category='Shields',
@@ -1277,15 +1275,13 @@ def load_shield_affixes(apps, schema_editor):
 	lidlessEleDmg = Affix(category='Shields',
 		affix='lidlessEleDmg',
 		is_primary=True,
-		desc='Skills of {<span class="vary">One Element</span>} do <span>15 - 20%</span> more damage',
-		notes='Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane<br>Holy')
+		desc='Skills of {<span class="vary">One Element</span>} do <span>15 - 20%</span> more damage<div class="extra"><div class="extra-x">X</div><span>Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane<br>Holy</span></div>')
 	lidlessEleDmg.save()
 
 	lidlessMaxResource = Affix(category='Shields',
 		affix='lidlessMaxResource',
 		is_primary=False,
-		desc='Increase Max {<span class="vary">Resource</span>}',
-		notes='Fury<br>Wrath<br>Discipline<br>Spirit<br>Mana<br>Arcane Power')
+		desc='Increase Max {<span class="vary">Resource</span>}<div class="extra"><div class="extra-x">X</div><span>+10-12 Fury<br>+8-10 Wrath<br>+9-12 Discipline<br>+13-15 Spirit<br>+120-150 Mana<br>+10-14 Arcane Power</span></div>')
 	lidlessMaxResource.save()
 
 #Storm Shield

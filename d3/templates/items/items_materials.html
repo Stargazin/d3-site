@@ -3,6 +3,7 @@
 
 
 {% block title %}
+{{ header }}s
 {% endblock title %}
 
 
@@ -11,15 +12,28 @@
 {% endblock css %}
 
 
-{% block heading %}
-{% endblock heading %}
+{% block header %}
+
+<header>
+  <div class="overview">
+    <h1>{{ header }}s</h1>
+    <h3>Patch 2.3</h3>
+  </div> <!-- .overview -->
+</header>
+
+{% endblock header %}
+
+
+{% block item_div %}
+<div class="item item--{{ item.rarity }}">
+{% endblock item_div %}
 
 
 {% block item_name %}
-<a href="{% url 'single-material' item.name_slug %}" class="item__name item__name--{{ item.rarity }}">{{ item.name }}</a>
+<a href="{% url 'single-material' item.name_slug %}" class="item__name">{{ item.name }}</a>
 {% endblock item_name %}
 
 
 {% block item_pic %}
-<a href="{% url 'single-material' item.name_slug %}" class="item__info__pic item__info__pic--{{ item.rarity }}">
+<a href="{% url 'single-material' item.name_slug %}" class="item__info__pic">
 {% endblock item_pic %}

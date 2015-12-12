@@ -1,0 +1,39 @@
+/* partials/toggle
+============================================================================ 
+============================================================================ */
+.toggle-container {
+  display: block;
+  margin: 0 0 0.2rem 2.5rem;
+
+  @media #{$break-xl} {
+    margin: 0;
+  }
+}
+
+.toggle {
+  display: inline-block;
+  min-width: 44px;
+  height: 44px;
+  margin: 0 0.5rem;
+  border: 2px solid;
+  border-color: rgb(100, 105, 110);
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: rgb(150, 155, 160);
+  }
+
+  @media #{$break-s} {
+    margin: 0 0.3rem;
+    transform: scale(0.9, 0.9);
+  }
+}
+
+.toggle--selected {
+  border-color: rgb(200, 205, 200);
+
+  &:hover {
+    border-color: rgb(200, 205, 200);
+  }
+}

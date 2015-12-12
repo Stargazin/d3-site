@@ -3,15 +3,13 @@
 
 
 {% block title %}
+{{ itemset.name }}
 {% endblock title %}
 
 
 {% block css %}
 <link rel="stylesheet" href="{% static 'css/itemsets_single.min.css.gz' %}">
 {% endblock css %}
-
-
-{% block heading %}{% endblock heading %}
 
 
 {% block content %}
@@ -26,28 +24,31 @@
     </div> <!-- .set__info__name -->
 
     <div class="set__info__effect-container">
+
       {% for effect in itemset.effects.all %}
       <div class="set__info__effect">
         <span class="set__info__effect__need">(<strong>{{ effect.pieces }}</strong>) Piece Bonus:</span>
         <span class="set__info__effect__desc">{{ effect.effect|safe }}</span>
       </div> <!-- .set__info__effect -->
       {% endfor %}
+
     </div> <!-- .set__info__effect-container -->
 
   </div> <!-- .set__info -->
 
   <div class="set__piece-container">
+
     {% for piece in itemset.pieces.all %}
     <div class="set__piece">
 
       <div class="set__pic">
-        <a href="#{{ piece.name_slug }}" style="background: url({{ piece.pic }})"></a>
+        <span style="background: url({{ piece.pic }})"></span>
       </div> <!-- .set__pic -->
 
       <div class="set__piece__info">
 
         <div class="set__piece__info__name">
-          <a href="#{{ piece.name_slug }}">{{ piece.name }}</a>
+          <span>{{ piece.name }}</span>
         </div> <!-- .set__piece__info__name -->
 
         <div class="set__piece__info__category">
@@ -58,6 +59,7 @@
 
     </div> <!-- .set__piece -->
     {% endfor %}
+
   </div> <!-- .set__piece-container -->
 
 </div> <!-- .set -->

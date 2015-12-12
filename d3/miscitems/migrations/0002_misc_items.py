@@ -10,93 +10,93 @@ def load_crafting_mats(apps, schema_editor):
 
 	#Machine of Bones -- Odeg -- Leoric and Maghda
 	leoricsRegret = Mat(name='Leoric\'s Regret',
-		category='Hellfire Material',
+		slot='Hellfire Amulet Material',
 		pic='/assets/media/items/mats/leorics_regret.png',
 		unique='Act <span class="silver">I</span> -- Machine of Bones dropped by Odeg the Keywarden in the Fields of Misery')
 	leoricsRegret.save()
 
 	#Machine of Gluttony -- Sokahr -- Rakanotha and Ghom
 	vialOfPutridness = Mat(name='Vial of Putridness',
-		category='Hellfire Material',
+		slot='Hellfire Amulet Material',
 		pic='/assets/media/items/mats/vial_of_putridness.png',
 		unique='Act <span class="silver">II</span> -- Machine of Gluttony dropped by Sokahr the Keywarden in the Dahlgur Oasis')
 	vialOfPutridness.save()
 
 	#Machine of War -- Xah'Rith -- Siegebreaker and Zoltan Kulle
 	idolOfTerror = Mat(name='Idol of Terror',
-		category='Hellfire Material',
+		slot='Hellfire Amulet Material',
 		pic='/assets/media/items/mats/idol_of_terror.png',
 		unique='Act <span class="silver">III</span> -- Machine of War dropped by Xah\'Rith the Keywarden in Stonefort')
 	idolOfTerror.save()
 
 	#Machine of Evil -- Nekarat -- Diablo + Random
 	heartOfEvil = Mat(name='Heart of Evil',
-		category='Hellfire Material',
+		slot='Hellfire Amulet Material',
 		pic='/assets/media/items/mats/heart_of_evil.png',
 		unique='Act <span class="silver">IV</span> -- Machine of Evil dropped by Nekarat the Keywarden in the Gardens of Hope 2nd Tier')
 	heartOfEvil.save()
 
 
 	khanduranRune = Mat(name='Khanduran Rune',
-		category='Horadric Cache Material',
+		slot='Horadric Cache Material',
 		pic='/assets/media/items/mats/khanduran_rune.png',
 		unique='Act <span class="silver">I</span> Horadric Caches')
 	khanduranRune.save()
 
 	caldeumNightshade = Mat(name='Caldeum Nightshade',
-		category='Horadric Cache Material',
+		slot='Horadric Cache Material',
 		pic='/assets/media/items/mats/caldeum_nightshade.png',
 		unique='Act <span class="silver">II</span> Horadric Caches')
 	caldeumNightshade.save()
 
 	arreatWarTapestry = Mat(name='Arreat War Tapestry',
-		category='Horadric Cache Material',
+		slot='Horadric Cache Material',
 		pic='/assets/media/items/mats/arreat_war_tapestry.png',
 		unique='Act <span class="silver">III</span> Horadric Caches')
 	arreatWarTapestry.save()
 
 	corruptedAngelFlesh = Mat(name='Corrupted Angel Flesh',
-		category='Horadric Cache Material',
+		slot='Horadric Cache Material',
 		pic='/assets/media/items/mats/corrupted_angel_flesh.png',
 		unique='Act <span class="silver">IV</span> Horadric Caches')
 	corruptedAngelFlesh.save()
 
 	westmarchHolyWater = Mat(name='Westmarch Holy Water',
-		category='Horadric Cache Material',
+		slot='Horadric Cache Material',
 		pic='/assets/media/items/mats/westmarch_holy_water.png',
 		unique='Act <span class="silver">V</span> Horadric Caches')
 	westmarchHolyWater.save()
 
 
 	reuseableParts = Mat(name='Reusable Parts',
-		category='Crafting Material',
+		slot='Crafting Material',
 		pic='/assets/media/items/mats/reuseable_parts.png',
 		rarity='N',
 		unique='Salvage <span class="white">Normal</span> items at the Blacksmith')
 	reuseableParts.save()
 
 	arcaneDust = Mat(name='Arcane Dust',
-		category='Crafting Material',
+		slot='Crafting Material',
 		pic='/assets/media/items/mats/arcane_dust.png',
 		rarity='M',
 		unique='Salvage <span class="blue">Magic</span> items at the Blacksmith')
 	arcaneDust.save()
 
 	veiledCrystal = Mat(name='Veiled Crystal',
-		category='Crafting Material',
+		slot='Crafting Material',
 		pic='/assets/media/items/mats/veiled_crystal.png',
 		rarity='R',
 		unique='Salvage <span class="yellow">Rare</span> items at the Blacksmith')
 	veiledCrystal.save()
 
 	forgottenSoul = Mat(name='Forgotten Soul',
-		category='Crafting Material',
+		slot='Crafting Material',
 		pic='/assets/media/items/mats/forgotten_soul.png',
 		unique='Salvage <span class="orange">Legendary</span> items at the Blacksmith')
 	forgottenSoul.save()
 
 	deathsBreath = Mat(name='Death\'s Breath',
-		category='Crafting Material',
+		slot='Crafting Material',
 		pic='/assets/media/items/mats/deaths_breath.png',
 		rarity='R',
 		unique='Dropped by Elite monsters')
@@ -104,52 +104,43 @@ def load_crafting_mats(apps, schema_editor):
 
 
 	essenceOfDiamond = Mat(name='Essence of Diamond',
-		category='Gem Essence',
+		slot='Gem Essence',
 		pic='/assets/media/items/mats/essence_of_diamond.png',
 		unique='Transmute gems into Diamonds',
 		notes='Sold by Squirt the Peddler in Act <span class="silver">II</span>')
 	essenceOfDiamond.save()
 
 	essenceOfTopaz = Mat(name='Essence of Topaz',
-		category='Gem Essence',
+		slot='Gem Essence',
 		pic='/assets/media/items/mats/essence_of_topaz.png',
 		unique='Transmute gems into Topazes',
 		notes='Sold by Squirt the Peddler in Act <span class="silver">II</span>')
 	essenceOfTopaz.save()
 
 	essenceOfRuby = Mat(name='Essence of Ruby',
-		category='Gem Essence',
+		slot='Gem Essence',
 		pic='/assets/media/items/mats/essence_of_ruby.png',
 		unique='Transmute gems into Rubies',
 		notes='Sold by Squirt the Peddler in Act <span class="silver">II</span>')
 	essenceOfRuby.save()
 
 	essenceOfAmethyst = Mat(name='Essence of Amethyst',
-		category='Gem Essence',
+		slot='Gem Essence',
 		pic='/assets/media/items/mats/essence_of_amethyst.png',
 		unique='Transmute gems into Amethysts',
 		notes='Sold by Squirt the Peddler in Act <span class="silver">II</span>')
 	essenceOfAmethyst.save()
 
 	essenceOfEmerald = Mat(name='Essence of Emerald',
-		category='Gem Essence',
+		slot='Gem Essence',
 		pic='/assets/media/items/mats/essence_of_emerald.png',
 		unique='Transmute gems into Emeralds',
 		notes='Sold by Squirt the Peddler in Act <span class="silver">II</span>')
 	essenceOfEmerald.save()
 
-	#lvl 60 hf ammy -- drops for lvl 61-70
-	#have to be lvl 60 to get right machine
-		#realm of discord -- act 1 -- Odeg
-		# writhing_spine
-		# #realm of chaos -- act 2 -- Sokahr
-		# devils_fang
-		# #realm of turmoil -- act 3 -- Xah'Rith
-		# vengeful_eye
-
 	for mat in Mat.objects.all():
 		mat.name_slug = slugify(mat.name)
-		mat.category_slug = slugify(mat.category)
+		mat.slot_slug = slugify(mat.slot)
 		mat.save()
 
 

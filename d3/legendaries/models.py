@@ -6,9 +6,9 @@ from affixes.models import Affix
 
 
 class LegendaryModel(models.Model):
-	name = models.TextField(blank=True)
+	name = models.TextField()
 	name_slug = models.SlugField(blank=True)
-	pic = models.ImageField(blank=True)
+	pic = models.ImageField()
 	slot = models.TextField(blank=True)
 	slot_slug = models.SlugField(blank=True)
 	category = models.TextField(blank=True)
@@ -58,16 +58,19 @@ class Weapon(WeaponArmorModel):
 
 	def category_singular(self):
 		category = self.category
-		if category == "Ceremonial Knives" or category == "Staves":
-			if category == "Ceremonial Knives":
-				return "Ceremonial Knife"
-			if category == "Staves":
-				return "Staff"
+		if category == 'Ceremonial Knives' or category == 'Staves':
+			if category == 'Ceremonial Knives':
+				return 'Ceremonial Knife'
+			if category == 'Staves':
+				return 'Staff'
 		else:
 			return category[:-1]
 
 	def __str__(self):
 		return self.name
+
+	class Meta:
+		ordering = ['pk']
 
 @python_2_unicode_compatible
 class Armor(WeaponArmorModel):
@@ -80,7 +83,8 @@ class Armor(WeaponArmorModel):
 		return self.name
 
 	class Meta:
-		verbose_name_plural = "Armor"
+		verbose_name_plural = 'Armor'
+		ordering = ['pk']
 
 @python_2_unicode_compatible
 class Accessory(LegendaryModel):
@@ -96,4 +100,5 @@ class Accessory(LegendaryModel):
 		return self.name
 
 	class Meta:
-		verbose_name_plural = "Accessories"
+		verbose_name_plural = 'Accessories'
+		ordering = ['pk']

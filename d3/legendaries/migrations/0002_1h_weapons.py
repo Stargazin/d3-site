@@ -92,6 +92,7 @@ def load_1h_axes(apps, schema_editor):
 
 	for weapon in Weapon.objects.filter(category="1H Axes"):
 		weapon.inherent = '<span class="inherent"><span>1.30</span> Attacks per Second</span>'
+		weapon.owner = 'all'
 		weapon.save()
 
 
@@ -309,6 +310,7 @@ def load_1h_daggers(apps, schema_editor):
 
 	for weapon in Weapon.objects.filter(category="1H Daggers"):
 		weapon.inherent = '<span class="inherent"><span>1.50</span> Attacks per Second</span>'
+		weapon.owner = 'all'
 		weapon.save()
 
 
@@ -698,7 +700,8 @@ def load_1h_maces(apps, schema_editor):
 		category='1H Maces',
 		random_primaries='2',
 		random_secondaries='2',
-		notes='crafted')
+		notes='crafted',
+		owner='all')
 	devastator.save()
 	devastator.affixes.add(devastatorFireDmg)
 
@@ -706,7 +709,8 @@ def load_1h_maces(apps, schema_editor):
 		name='Echoing Fury',
 		pic='/assets/media/items/legendaries/weapons/1h/maces/echoing_fury.png',
 		category='1H Maces',
-		random_secondaries='1')
+		random_secondaries='1',
+		owner='all')
 	echoingFury.save()
 	echoingFury.affixes.add(percentDmg, mainStat, ias, echoingFearChance)
 
@@ -716,7 +720,8 @@ def load_1h_maces(apps, schema_editor):
 		category='1H Maces',
 		unique='Increase the size of your Blessed Hammers.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		owner='sader')
 	jacesHammerOfVigilance.save()
 	jacesHammerOfVigilance.affixes.add(jacesBlessedHammer)
 
@@ -726,7 +731,8 @@ def load_1h_maces(apps, schema_editor):
 		category='1H Maces',
 		unique='After killing <span class="silver">10</span> enemies, you release a Poison Nova that deals <span>1050 - 1400%</span> weapon damage as Poison to enemies within <span class="silver">30</span> yards.',
 		random_primaries='1',
-		random_secondaries='1')
+		random_secondaries='1',
+		owner='all')
 	madMonarchsScepter.save()
 	madMonarchsScepter.affixes.add(percentDmg, mainStat)
 
@@ -735,7 +741,8 @@ def load_1h_maces(apps, schema_editor):
 		pic='/assets/media/items/legendaries/weapons/1h/maces/nailbiter.png',
 		category='1H Maces',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		owner='all')
 	nailbiter.save()
 	nailbiter.affixes.add(percentDmg, nailbiterThorns)
 
@@ -743,7 +750,8 @@ def load_1h_maces(apps, schema_editor):
 		name='Neanderthal',
 		pic='/assets/media/items/legendaries/weapons/1h/maces/neanderthal.png',
 		category='1H Maces',
-		random_primaries='2')
+		random_primaries='2',
+		owner='all')
 	neanderthal.save()
 	neanderthal.affixes.add(mainStat, neanderthalThorns, killExp)
 
@@ -752,7 +760,8 @@ def load_1h_maces(apps, schema_editor):
 		pic='/assets/media/items/legendaries/weapons/1h/maces/nutcracker.png',
 		category='1H Maces',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		owner='all')
 	nutcracker.save()
 	nutcracker.affixes.add(nutcrackerCHD, nutcrackerStunChance)
 
@@ -762,7 +771,8 @@ def load_1h_maces(apps, schema_editor):
 		category='1H Maces',
 		unique='<span>20 - 40%</span> chance to Chain Lightning enemies when you hit them.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		owner='all')
 	odynSon.save()
 	odynSon.affixes.add(odynLightDmg)
 
@@ -772,7 +782,8 @@ def load_1h_maces(apps, schema_editor):
 		category='1H Maces',
 		unique='Critical Hits have a <span>3 - 4%</span> chance to spawn a health globe.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		owner='all')
 	solanium.save()
 	solanium.affixes.add(sockets)
 
@@ -781,7 +792,8 @@ def load_1h_maces(apps, schema_editor):
 		pic='/assets/media/items/legendaries/weapons/1h/maces/sun_keeper.png',
 		category='1H Maces',
 		random_primaries='1',
-		random_secondaries='1')
+		random_secondaries='1',
+		owner='all')
 	sunKeeper.save()
 	sunKeeper.affixes.add(mainStat, sunEliteDmg, sunExtraGold)
 
@@ -790,7 +802,8 @@ def load_1h_maces(apps, schema_editor):
 		pic='/assets/media/items/legendaries/weapons/1h/maces/telrandens_hand.png',
 		category='1H Maces',
 		random_primaries='1',
-		random_secondaries='2')
+		random_secondaries='2',
+		owner='all')
 	telrandensHand.save()
 	telrandensHand.affixes.add(mainStat, ias)
 
@@ -900,7 +913,8 @@ def load_1h_spears(apps, schema_editor):
 		pic='/assets/media/items/legendaries/weapons/1h/spears/akanesh_the_herald_of_righteousness.png',
 		category='1H Spears',
 		random_primaries='1',
-		random_secondaries='2')
+		random_secondaries='2',
+		owner='all')
 	akaneshTheHeraldOfRighteousness.save()
 	akaneshTheHeraldOfRighteousness.affixes.add(mainStat, akaneshHolyDmg)
 
@@ -910,7 +924,8 @@ def load_1h_spears(apps, schema_editor):
 		category='1H Spears',
 		unique='Weapon Throw generates up to <span>15 - 20</span> additional Fury based on how far away the enemy hit is. Maximum benefit when the enemy hit is <span class="silver">20</span> or more yards away.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		owner='barb')
 	arreatsLaw.save()
 	arreatsLaw.affixes.add(mainStat)
 
@@ -919,7 +934,8 @@ def load_1h_spears(apps, schema_editor):
 		pic='/assets/media/items/legendaries/weapons/1h/spears/empyrean_messenger.png',
 		category='1H Spears',
 		random_primaries='1',
-		random_secondaries='2')
+		random_secondaries='2',
+		owner='all')
 	empyreanMessenger.save()
 	empyreanMessenger.affixes.add(mainStat, eliteDmg)
 
@@ -929,7 +945,8 @@ def load_1h_spears(apps, schema_editor):
 		category='1H Spears',
 		unique='Reduces the Mana cost of Zombie Charger by <span>40 - 50%</span>.',
 		random_primaries='1',
-		random_secondaries='1')
+		random_secondaries='1',
+		owner='wd')
 	scrimshaw.save()
 	scrimshaw.affixes.add(mainStat, scrimshawZombieCharger)
 
@@ -937,7 +954,8 @@ def load_1h_spears(apps, schema_editor):
 		name='The Three Hundredth Spear',
 		pic='/assets/media/items/legendaries/weapons/1h/spears/the_three_hundredth_spear.png',
 		category='1H Spears',
-		random_secondaries='2')
+		random_secondaries='2',
+		owner='all')
 	theThreeHundredthSpear.save()
 	theThreeHundredthSpear.affixes.add(mainStat, threeWeaponThrow, threeAncientSpear)
 
@@ -1088,10 +1106,9 @@ def load_1h_swords(apps, schema_editor):
 		name='Shard of Hate',
 		pic='/assets/media/items/legendaries/weapons/1h/swords/shard_of_hate.png',
 		category='1H Swords',
-		unique='Elemental skills have a chance to trigger a powerful {<span class="vary">Attack</span>} that deals <span>200 - 250%</span> weapon damage',
+		unique='Elemental skills have a chance to trigger a powerful {<span class="vary">Attack</span>} that deals <span>200 - 250%</span> weapon damage<div class="extra"><div class="extra-x">X</div><span><strong>Cold Skills :</strong>  Freezing Skull<br><strong>Poison Skills :</strong> Poison Nova<br><strong>Lightning Skills :</strong> Charged Bolt</span></div>',
 		random_primaries='2',
-		random_secondaries='1',
-		notes='Cold skills trigger Freezing Skull<br>Poison skills trigger Poison Nova<br>Lightning Skills trigger Charged Bolt')
+		random_secondaries='1')
 	shardOfHate.save()
 	shardOfHate.affixes.add(mainStat)
 
@@ -1145,6 +1162,7 @@ def load_1h_swords(apps, schema_editor):
 
 	for weapon in Weapon.objects.filter(category="1H Swords"):
 		weapon.inherent = '<span class="inherent"><span>1.40</span> Attacks per Second</span>'
+		weapon.owner = 'all'
 		weapon.save()
 
 

@@ -10,9 +10,8 @@ def load_1h_axe_affixes(apps, schema_editor):
 	mainStat = Affix(category='1H Axes',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	bleedChance = Affix(category='1H Axes',
@@ -99,9 +98,8 @@ def load_1h_dagger_affixes(apps, schema_edtior):
 	mainStat = Affix(category='1H Daggers',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	ias = Affix(category='1H Daggers',
@@ -278,9 +276,8 @@ def load_1h_mace_affixes(apps,schema_editor):
 	mainStat = Affix(category='1H Maces',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	ias = Affix(category='1H Maces',
@@ -422,9 +419,8 @@ def load_1h_spear_affixes(apps, schema_editor):
 	mainStat = Affix(category='1H Spears',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	eliteDmg = Affix(category='1H Spears',
@@ -474,9 +470,8 @@ def load_1h_sword_affixes(apps, schema_editor):
 	mainStat = Affix(category='1H Swords',
 		affix='mainStat',
 		is_primary=True,
-		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}',
-		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}',
-		notes='Dexterity<br>Intelligence<br>Strength')
+		desc='<span>+626 - 750</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>',
+		ancient='<span>+825 - 1,000</span> {<span class="vary">Main Stat</span>}<div class="extra"><div class="extra-x">X</div><span>Dexterity<br>Intelligence<br>Strength</span></div>')
 	mainStat.save()
 
 	ias = Affix(category='1H Swords',
@@ -589,8 +584,7 @@ def load_wand_affixes(apps, schema_editor):
 	gestureEleDmg = Affix(category='Wands',
 		affix='gestureEleDmg',
 		is_primary=True,
-		desc='Skills of {<span class="vary">One Element</span>} do <span>15 - 20%</span> more damage',
-		notes='Cold<br>Fire<br>Lightning<br>Arcane')
+		desc='Skills of {<span class="vary">One Element</span>} do <span>15 - 20%</span> more damage<div class="extra"><div class="extra-x">X</div><span>Cold<br>Fire<br>Lightning<br>Arcane</div>')
 	gestureEleDmg.save()
 
 #Slorak's Madness
