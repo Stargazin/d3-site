@@ -13,7 +13,7 @@
   position: relative;
   border-top: 0;
   text-align: center;
-  background-color: rgba(34, 49, 63, 0.8);
+  background-color: rgba($ebony-clay, 0.8);
 }
 
 .link {
@@ -47,7 +47,7 @@
 
 .drop__link {
   width: 14rem;
-  border-bottom: 0.1rem solid #62707F;
+  border-bottom: 0.1rem solid rgb(98, 112, 127);
   line-height: 2rem;
   font-family: $roboto;
 
@@ -166,3 +166,19 @@
     }
   }
 }
+
+.coming-soon {
+  width: 100%;
+  font-size: 1.8em;
+  background-color: $ebony-clay;
+  color: white;
+}
+
+.coming-soon--guides {
+  position: absolute;
+  z-index: 200;
+  height: 100%;
+  padding-top: 100%;
+  background-color: rgba(black, 0.75);
+}
+

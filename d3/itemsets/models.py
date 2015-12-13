@@ -9,14 +9,15 @@ from affixes.models import Affix
 class ItemSet(models.Model):
 	name = models.TextField()
 	name_slug = models.SlugField()
+	#Class that uses set
 	owner = models.TextField()
 	owner_slug = models.SlugField()
 	notes = models.TextField(blank=True)
 
-
 	def __str__(self):
 		return self.name
 
+	#Used in itemsets_all; get a set piece pic to represent whole set
 	def set_piece(self):
 		pic = self.pieces.all()[0].pic
 		return pic
@@ -29,6 +30,7 @@ class ItemSet(models.Model):
 @python_2_unicode_compatible
 class SetEffect(models.Model):
 	effect = models.TextField()
+	#Number of pieces from set needed for effect
 	pieces = models.TextField()
 	itemSet = models.ForeignKey(ItemSet, related_name='effects')
 	notes = models.TextField(blank=True)
@@ -49,8 +51,10 @@ class SetPiece(models.Model):
 	category = models.TextField(blank=True)
 	itemSet = models.ForeignKey(ItemSet, related_name='pieces')
 	affixes = models.ManyToManyField(Affix, blank=True)
+	#Not in use;
 	random_affixes = models.TextField(blank=True)
 	notes = models.TextField(blank=True)
+	##Not in use;
 	# owner = models.TextField(blank=True)
 	# mats = models.ManyToManyField(Material, blank=True)
 	# number_of_mats = models.CommaSeparatedIntegerField(max_length=32, blank=True)

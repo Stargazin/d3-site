@@ -3,10 +3,12 @@
 ============================================================================ */
 .item__info__affix {
 
+  //Affixes with {Affix}
   .vary {
     cursor: pointer;
   }
 
+  //Pop-up block containing {extraAffix} information
   .extra {
     display: none;
     position: absolute;
@@ -17,6 +19,7 @@
     text-indent: 0;
     background-color: $ebony-clay;
 
+    //'X' to close .extra
     .extra-x {
       float: right;
       z-index: 999;
@@ -42,7 +45,8 @@
     }
   }
 
+  //Random affixes
   .random {
-    color: #C89DFF;
+    color: rgb(200, 157, 255);
   }
 }

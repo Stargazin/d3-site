@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  //Set width to prevent really large container
   max-width: 138rem;
   margin: 2rem auto 3rem auto;
   padding: 0.3rem 0;
@@ -39,7 +40,7 @@
   width: 32.6%;
   margin: 0.5rem 0;
   border: 2px solid rgb(175,180,185);
-  background-color: rgba(34, 49, 63, 0.75);
+  background-color: rgba($ebony-clay, 0.75);
 
   @media #{$break-xl} {
     width: 48.8%;
@@ -76,10 +77,10 @@
   line-height: 2.5rem;
   font-size: 1.4em;
   font-family: $playfair;
-  color: rgb(236, 114, 17);
+  color: $legendary;
 
   &:hover {
-    font-weight: 700;
+    font-weight: $bold;
     color: rgb(221, 99, 17);
   }
 }
@@ -98,7 +99,7 @@
   height: 132px;
   margin-right: 3rem;
   border: 2px solid;
-  border-color: rgb(236, 114, 17);
+  border-color: $legendary;
   border-radius: 9px;
   background-color: $madison;
 
@@ -153,6 +154,7 @@
   }
 }
 
+//Filler blocks to keep items in columns
 .filler {
   @extend .item;
   visibility: hidden;

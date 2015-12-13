@@ -6,6 +6,7 @@ class ItemModel(models.Model):
 	name = models.TextField()
 	name_slug = models.SlugField(blank=True)
 	pic = models.ImageField()
+	#Description of item
 	unique = models.TextField(blank=True)
 	notes = models.TextField(blank=True)
 
@@ -41,6 +42,7 @@ class Material(ItemModel):
 	rarity = models.TextField(default='L')
 	stack_amount = models.TextField(default='5000')
 	category = models.TextField(default='Material')
+	#Specific type of material
 	slot = models.TextField(blank=True)
 	slot_slug = models.SlugField(blank=True)
 

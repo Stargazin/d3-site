@@ -22,6 +22,7 @@ class Migration(migrations.Migration):
                 ('notes', models.TextField(blank=True)),
             ],
             options={
+                'ordering': ['pk'],
                 'verbose_name_plural': 'Item Sets',
             },
         ),
@@ -35,6 +36,7 @@ class Migration(migrations.Migration):
                 ('itemSet', models.ForeignKey(related_name='effects', to='itemsets.ItemSet')),
             ],
             options={
+                'ordering': ['pk'],
                 'verbose_name_plural': 'Set Effects',
             },
         ),
@@ -52,6 +54,7 @@ class Migration(migrations.Migration):
                 ('itemSet', models.ForeignKey(related_name='pieces', to='itemsets.ItemSet')),
             ],
             options={
+                'ordering': ['pk'],
                 'verbose_name_plural': 'Set Pieces',
             },
         ),

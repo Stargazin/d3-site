@@ -1,3 +1,9 @@
+'''
+Everything about itemsets, their effects, and pieces.
+Ordered by classes: Universal -> Barb -> Crusader -> etc.
+
+Defined in order from item set -> set pieces -> set effects
+'''
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
@@ -9,7 +15,6 @@ def load_item_sets(apps, schema_editor):
 	ItemSet = apps.get_model("itemsets", "ItemSet")
 	Effect = apps.get_model("itemsets", "SetEffect")
 	SetPiece = apps.get_model("itemsets", "SetPiece")
-
 
 #Universal
 #==============================================================================

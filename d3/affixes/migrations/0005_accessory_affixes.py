@@ -7,6 +7,9 @@ from django.db import migrations, models
 def load_amulet_affixes(apps, schema_editor):
 	Affix = apps.get_model("affixes", "Affix")
 
+#Amulet primaries
+#==============================================================================
+#==============================================================================
 	dmg = Affix(slot='Amulets',
 		affix='dmg',
 		is_primary=True,
@@ -167,7 +170,7 @@ def load_amulet_affixes(apps, schema_editor):
 		desc='Sockets (<span>1</span>)')
 	sockets.save()
 
-#Secondaries
+#Amulet secondaries
 #==============================================================================
 #==============================================================================
 	eleRes = Affix(slot='Amulets',
@@ -327,6 +330,9 @@ def load_amulet_affixes(apps, schema_editor):
 def load_ring_affixes(apps, schema_editor):
 	Affix = apps.get_model("affixes", "Affix")
 
+#Ring Primaries
+#==============================================================================
+#==============================================================================
 	dmg = Affix(slot='Rings',
 		affix='dmg',
 		is_primary=True,
@@ -445,10 +451,9 @@ def load_ring_affixes(apps, schema_editor):
 		desc='Sockets (<span>1</span>)')
 	sockets.save()
 
-#Secondaries
+#Ring secondaries
 #==============================================================================
 #==============================================================================
-
 	eleRes = Affix(slot='Rings',
 		affix='eleRes',
 		is_primary=False,

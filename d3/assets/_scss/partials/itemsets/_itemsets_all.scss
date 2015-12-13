@@ -46,13 +46,14 @@
   font-family: $playfair;
 
   a {
-    color: rgb(117, 217, 17);
+    color: $set-name;
 
     &:hover {
-      font-weight: 700;
+      font-weight: $bold;
       color: rgb(102, 212, 17);
     }
 
+    //Gradient underline to set name
     &:after {
       content: "";
       display: block;
@@ -72,7 +73,7 @@
   min-width: 70px;
   height: 132px;
   margin-left: 1rem;
-  border: 2px solid rgb(87, 172, 16);
+  border: 2px solid $set-pic;
   border-radius: 9px;
   background-color: $madison;
 
@@ -159,6 +160,7 @@
   }
 }
 
+//Filler blocks to keep sets in columns
 .filler {
   @extend .set;
   visibility: hidden;

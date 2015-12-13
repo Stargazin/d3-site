@@ -4,10 +4,10 @@
 .item__affix {
 
   p {
-    color: #7D7DFF;
+    color: rgb(125, 125, 255);
 
     & > span {
-      color: #C89DFF;
+      color: rgb(200, 157, 255);
     }
   }
 
@@ -18,14 +18,16 @@
     }
 
     p {
-      color: #D27500;
+      color: rgb(210, 117, 0);
     }
   }
 
+  //Affixes with {Affix}
   .vary {
     cursor: pointer;
   }
 
+  //Pop-up block containing {extraAffix} information
   .extra {
     display: none;
     position: absolute;
@@ -35,6 +37,7 @@
     background-color: $ebony-clay;
     padding: 0.5rem 0.6rem 1.4rem 1.5rem;
 
+    //'X' to close .extra
     .extra-x {
       float: right;
       cursor: pointer;
@@ -46,7 +49,7 @@
       }
     }
 
-    span {
+    & > span {
       display: block;
       color: rgb(140, 140, 255);
       padding-top: 0.9rem;

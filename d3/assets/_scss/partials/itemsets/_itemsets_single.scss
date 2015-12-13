@@ -29,10 +29,11 @@
   font-family: $playfair;
 
   span {
-    font-weight: 700;
+    font-weight: $bold;
     line-height: 1rem;
-    color: rgb(117, 217, 17);
+    color: $set-name;
 
+    //Gradient underline to set name
     &:after {
       content: "";
       display: block;
@@ -142,7 +143,7 @@
     min-width: 70px;
     height: 132px;
     margin: 0 0.8rem 0 0.5rem;
-    border: 2px solid rgb(87, 172, 16);
+    border: 2px solid $set-pic;
     border-radius: 9px;
     background-color: $madison;
 

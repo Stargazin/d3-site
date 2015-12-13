@@ -1,3 +1,7 @@
+'''
+Needed affixes and item-specific affixes are defined first.
+Items of category/slot defined after.
+'''
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 

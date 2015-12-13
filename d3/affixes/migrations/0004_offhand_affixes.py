@@ -7,6 +7,9 @@ from django.db import migrations, models
 def load_source_affixes(apps, schema_editor):
 	Affix = apps.get_model("affixes", "Affix")
 
+#Source primaries
+#==============================================================================
+#==============================================================================
 	dmg = Affix(category='Sources',
 		affix='dmg',
 		is_primary=True,
@@ -91,7 +94,6 @@ def load_source_affixes(apps, schema_editor):
 
 #Wizard Skills
 #==============================================================================
-
 	arcaneOrb = Affix(category='Sources',
 		affix='arcaneOrb',
 		is_primary=True,
@@ -188,10 +190,9 @@ def load_source_affixes(apps, schema_editor):
 		desc='Increase Hydra damage by <span>10 - 15%</span>')
 	hydra.save()
 
-#Secondaries
+#Source secondaries
 #==============================================================================
 #==============================================================================
-
 	maxAP = Affix(category='Sources',
 		affix='maxAP',
 		is_primary=False,
@@ -299,6 +300,9 @@ def load_source_affixes(apps, schema_editor):
 def load_quiver_affixes(apps, schema_editor):
 	Affix = apps.get_model("affixes", "Affix")
 
+#Quiver primaries
+#==============================================================================
+#==============================================================================
 	dext = Affix(category='Quivers',
 		affix='dext',
 		is_primary=True,
@@ -382,7 +386,6 @@ def load_quiver_affixes(apps, schema_editor):
 
 #Demon Hunter Skills
 #==============================================================================
-
 	bolas = Affix(category='Quivers',
 		affix='bolas',
 		is_primary=True,
@@ -485,7 +488,9 @@ def load_quiver_affixes(apps, schema_editor):
 		desc='Increase Strafe damage by <span>10 - 15%</span>')
 	strafe.save()
 
-
+#Quiver secondaries
+#==============================================================================
+#==============================================================================
 	maxDisc = Affix(category='Quivers',
 		affix='maxDisc',
 		is_primary=False,
@@ -590,6 +595,9 @@ def load_quiver_affixes(apps, schema_editor):
 def load_mojo_affixes(apps, schema_editor):
 	Affix = apps.get_model("affixes", "Affix")
 
+#Mojo primaries
+#==============================================================================
+#==============================================================================
 	dmg = Affix(category='Mojos',
 		affix='dmg',
 		is_primary=True,
@@ -776,7 +784,9 @@ def load_mojo_affixes(apps, schema_editor):
 		desc='Increase Zombie Charger damage by <span>10 - 15%</span>')
 	zombieCharger.save()
 
-
+#Mojo secondaries
+#==============================================================================
+#==============================================================================
 	maxMana = Affix(category='Mojos',
 		affix='maxMana',
 		is_primary=False,
@@ -881,6 +891,9 @@ def load_mojo_affixes(apps, schema_editor):
 def load_crusader_shield_affixes(apps, schema_editor):
 	Affix = apps.get_model("affixes", "Affix")
 
+#Crusader shield primaries
+#==============================================================================
+#==============================================================================
 	sockets = Affix(category='Crusader Shields',
 		affix='sockets',
 		is_primary=True,
@@ -989,6 +1002,8 @@ def load_crusader_shield_affixes(apps, schema_editor):
 		desc='<span>+1.85 - 2.00</span> Wrath Regeneration')
 	wrathRegen.save()
 
+#Crusader skills
+#==============================================================================
 	blessedHammer = Affix(category='Crusader Shields',
 		affix='blessedHammer',
 		is_primary=True,
@@ -1080,6 +1095,9 @@ def load_crusader_shield_affixes(apps, schema_editor):
 		ancient='<span>+176 - 210</span> Resistance to {<span>One Element</span>}<div class="extra"><div class="extra-x">X</div><span>Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane</span></div>')
 	eleRes.save()
 
+#Crusader shield secondaries
+#==============================================================================
+#==============================================================================
 	physRes = Affix(category='Crusader Shields',
 		affix='physRes',
 		is_primary=False,

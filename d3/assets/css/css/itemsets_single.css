@@ -166,7 +166,7 @@ button:hover {
 
 .drop__link {
   width: 14rem;
-  border-bottom: 0.1rem solid #62707F;
+  border-bottom: 0.1rem solid #62707f;
   line-height: 2rem;
   font-family: "Roboto", sans-serif; }
   .drop__link:hover {
@@ -233,6 +233,19 @@ button:hover {
     width: 8.9rem; }
   .link--items .drop--right--3 {
     left: 8.9rem; } }
+
+.coming-soon {
+  width: 100%;
+  font-size: 1.8em;
+  background-color: #22313f;
+  color: white; }
+
+.coming-soon--guides {
+  position: absolute;
+  z-index: 200;
+  height: 100%;
+  padding-top: 100%;
+  background-color: rgba(0, 0, 0, 0.75); }
 
 /* partials/itemsets/itemsets_single
 ============================================================================ 

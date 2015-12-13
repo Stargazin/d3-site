@@ -1,6 +1,7 @@
 /* partials/items/items_materials
 ============================================================================ 
 ============================================================================ */
+//Normal rarity items
 .item--N {
 
   .item__name-container {
@@ -32,6 +33,7 @@
   }
 }
 
+//Magic rarity items
 .item--M {
 
   .item__name-container {
@@ -63,6 +65,7 @@
   }
 }
 
+//Rare rarity items
 .item--R {
 
   .item__name-container {
@@ -94,6 +97,7 @@
   }
 }
 
+//Legendary rarity items
 .item--L {
 
   .unique {
@@ -104,6 +108,7 @@
   }
 }
 
+//Override styliung from base_items; want white instead of orange
 .item__info__affix {
 
   .unique {

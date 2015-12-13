@@ -10,6 +10,8 @@ from .models import Accessory, Weapon, Armor
 class ItemsTemplateMixin(object):
 	template_name = 'items/items_legendaries.html'
 
+##self.group used for get_model() in get_queryset()
+##self.group_header used for headers/titles in GroupView context
 class WeaponMixin(object):
 
 	def __init__(self, *args, **kwargs):
@@ -31,6 +33,7 @@ class AccessoryMixin(object):
 
 class AllLegendariesView(ItemsTemplateMixin, ListView):
 
+	#Return all legendaries
 	def get_queryset(self):
 		weapons = get_model('legendaries', 'Weapon')
 		armor = get_model('legendaries', 'Armor')
@@ -44,6 +47,7 @@ class AllLegendariesView(ItemsTemplateMixin, ListView):
 			self.items.append(accessory)
 		return self.items
 
+	#Return queryset and header + title for template
 	def get_context_data(self, **kwargs):
 		context = super(AllLegendariesView, self).get_context_data(**kwargs)
 		context['items'] = self.items
@@ -54,11 +58,13 @@ class AllLegendariesView(ItemsTemplateMixin, ListView):
 
 class GroupView(ItemsTemplateMixin, ListView):
 
+	#Return legendaries of matching group
 	def get_queryset(self):
 		model = get_model('legendaries', self.group)
 		self.items = get_list_or_404(model)
 		return self.items
 
+	#Return queryset and header + title for template
 	def get_context_data(self, **kwargs):
 		context = super(GroupView, self).get_context_data(**kwargs)
 		context['items'] = self.items
@@ -78,11 +84,13 @@ class GroupAccessoryView(AccessoryMixin, GroupView):
 
 class SlotView(ItemsTemplateMixin, ListView):
 
+	#Return legendaries of matching group and slot
 	def get_queryset(self):
 		model = get_model('legendaries', self.group)
 		self.items = get_list_or_404(model, slot_slug=self.kwargs['slot_slug'])
 		return self.items
 
+	#Return queryset and header + title for template
 	def get_context_data(self, **kwargs):
 		context = super(SlotView, self).get_context_data(**kwargs)
 		context['items'] = self.items
@@ -102,11 +110,13 @@ class SlotAccessoryView(AccessoryMixin, SlotView):
 
 class CategoryView(ItemsTemplateMixin, ListView):
 
+	#Return legendaries of matching group, slot, and category
 	def get_queryset(self):
 		model = get_model('legendaries', self.group)
 		self.items = get_list_or_404(model, category_slug=self.kwargs['category_slug'])
 		return self.items
 
+	#Return queryset and header + title for template
 	def get_context_data(self, **kwargs):
 		context = super(CategoryView, self).get_context_data(**kwargs)
 		context['items'] = self.items
@@ -124,11 +134,13 @@ class CategoryArmorView(ArmorMixin, CategoryView):
 class SingleLegendaryView(ListView):
 	template_name = 'single/single_legendary.html'
 
+	#Get legendary of matching group and name
 	def get_queryset(self):
 		model = get_model('legendaries', self.kwargs['group'])
 		self.item = get_object_or_404(model, name_slug=self.kwargs['name_slug'])
 		return self.item
 
+	#Return query object for template
 	def get_context_data(self, **kwargs):
 		context = super(SingleLegendaryView, self).get_context_data(**kwargs)
 		context['item'] = self.item

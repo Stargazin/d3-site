@@ -7,9 +7,9 @@
   justify-content: space-around;
   width: 46rem;
   margin: 10rem auto;
-  border: 2px solid #F0F0F0;
+  border: 2px solid rgb(240, 240, 240);
   padding-bottom: 2rem;
-  background-color: rgba(34,49,63,0.75);
+  background-color: rgba($ebony-clay, 0.75);
   font-size: 1.5em;
 
   @media #{$break-m} {
@@ -29,7 +29,7 @@
   line-height: 2.5rem;
   font-size: 1.6em;
   font-family: $playfair;
-  color: rgb(236, 114, 17);
+  color: $legendary;
 
   &:after {
     content: "";
@@ -57,7 +57,7 @@
   min-width: 70px;
   height: 134px;
   border: 2px solid;
-  border-color: rgb(236, 114, 17);
+  border-color: $legendary;
   border-radius: 9px;
   background-color: $madison;
 
@@ -141,5 +141,3 @@
     }
   }
 }
-
-// .item__note {}

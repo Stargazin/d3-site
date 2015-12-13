@@ -8,6 +8,9 @@ from django.template.defaultfilters import slugify
 def load_crafting_mats(apps, schema_editor):
 	Mat = apps.get_model("miscitems", "Material")
 
+#Hellfire Amulet Materials
+#==============================================================================
+#==============================================================================
 	#Machine of Bones -- Odeg -- Leoric and Maghda
 	leoricsRegret = Mat(name='Leoric\'s Regret',
 		slot='Hellfire Amulet Material',
@@ -36,7 +39,9 @@ def load_crafting_mats(apps, schema_editor):
 		unique='Act <span class="silver">IV</span> -- Machine of Evil dropped by Nekarat the Keywarden in the Gardens of Hope 2nd Tier')
 	heartOfEvil.save()
 
-
+#Horadric Cache Materials
+#==============================================================================
+#==============================================================================
 	khanduranRune = Mat(name='Khanduran Rune',
 		slot='Horadric Cache Material',
 		pic='/assets/media/items/mats/khanduran_rune.png',
@@ -67,7 +72,9 @@ def load_crafting_mats(apps, schema_editor):
 		unique='Act <span class="silver">V</span> Horadric Caches')
 	westmarchHolyWater.save()
 
-
+#Crafting Materials
+#==============================================================================
+#==============================================================================
 	reuseableParts = Mat(name='Reusable Parts',
 		slot='Crafting Material',
 		pic='/assets/media/items/mats/reuseable_parts.png',
@@ -102,7 +109,9 @@ def load_crafting_mats(apps, schema_editor):
 		unique='Dropped by Elite monsters')
 	deathsBreath.save()
 
-
+#Essence of Gems
+#==============================================================================
+#==============================================================================
 	essenceOfDiamond = Mat(name='Essence of Diamond',
 		slot='Gem Essence',
 		pic='/assets/media/items/mats/essence_of_diamond.png',
@@ -138,6 +147,7 @@ def load_crafting_mats(apps, schema_editor):
 		notes='Sold by Squirt the Peddler in Act <span class="silver">II</span>')
 	essenceOfEmerald.save()
 
+	#Slugify name and slot
 	for mat in Mat.objects.all():
 		mat.name_slug = slugify(mat.name)
 		mat.slot_slug = slugify(mat.slot)
@@ -192,6 +202,7 @@ def load_potions(apps, schema_editor):
 	 	unique='Increases Armor by <span class="silver">10%</span> for <span class="silver">5</span> seconds')
 	Tower.save()
 
+	#Slugify name
 	for potion in Potion.objects.all():
 		potion.name_slug = slugify(potion.name)
 		potion.save()
@@ -320,6 +331,7 @@ def load_gems(apps, schema_editor):
 	 	rank_unique='Rank <span class="silver">25</span>: <span class="silver">20%</span> chance on hit to Stun the enemy for <span class="silver">1</span> second')
 	zeisStoneOfVengeance.save()
 
+	#Slugify name
 	for gem in Gem.objects.all():
 		gem.name_slug = slugify(gem.name)
 		gem.save()

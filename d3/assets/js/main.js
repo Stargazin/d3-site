@@ -1,17 +1,17 @@
 var nav = (function() {
-  //cache DOM
+  //*cache DOM
   var $navMain = $('.nav-main');
   var $allButNav = $navMain.nextAll('*');
   var $link = $('.link');
   var $drop = $('.drop');
   var $linkDrop = $('.link > .drop');
 
-  //bind events
-    //Fade out everything but the nav bar
+  //*bind events
+  //Fade out everything but the nav bar
   $navMain.hover(_fade, _unfade);
-    //Hover nav links to show drop menus
+  //Hover nav links to show drop menus
   $link.hover(_showMenu, _hideMenu);
-    //Hide opened nav bar on touch devices
+  //Hide opened nav bar on touch devices
   $allButNav.on('click', _hideNav);
 
 
@@ -37,12 +37,12 @@ var nav = (function() {
 })();
 
 var toggleLegendaries = (function() {
-  //cache DOM
+  //*cache DOM
   var $toggle = $('.toggle');
   var $item = $('.item');
 
-  //bind events
-    //Click a class-toggler to hide non-class items
+  //*bind events
+  //Click a class-toggler to hide non-class items
   $toggle.on('click', _toggleItems);
 
 
@@ -64,19 +64,19 @@ var toggleLegendaries = (function() {
         };
       });
     };
-      //Adds a brighter border when selected.
+    //Adds a brighter border when selected.
     $(this).siblings().removeClass('toggle--selected');
     $(this).addClass('toggle--selected');
   }
 })();
 
 var toggleItemSets = (function() {
-  //cache DOM
+  //*cache DOM
   var $toggle = $('.toggle');
   var $set = $('.set');
 
-  //bind events
-    //Click a class-toggler to hide non-class items
+  //*bind events
+  //Click a class-toggler to hide non-class items
   $toggle.on('click', _toggleSets);
 
   function _toggleSets() {
@@ -101,14 +101,14 @@ var toggleItemSets = (function() {
 })();
 
 var affixExtra = (function() {
-  //cache DOM
+  //*cache DOM
   var $vary = $('.vary');
   var $extraX = $('.extra-x');
 
-  //bind events
-    //Toggles .extra when clicking .vary
+  //*bind events
+  //Toggles .extra when clicking .vary
   $vary.on('click', _showExtra);
-    //Closes .extra when clicking the 'x'
+  //Closes .extra when clicking the 'x'
   $extraX.on('click', _hideExtra);
 
 
