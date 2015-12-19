@@ -34,7 +34,9 @@ var nav = (function() {
   function _hideNav() {
     $drop.hide();
   }
+
 })();
+
 
 var toggleLegendaries = (function() {
   //*cache DOM
@@ -68,7 +70,9 @@ var toggleLegendaries = (function() {
     $(this).siblings().removeClass('toggle--selected');
     $(this).addClass('toggle--selected');
   }
+
 })();
+
 
 var toggleItemSets = (function() {
   //*cache DOM
@@ -98,7 +102,9 @@ var toggleItemSets = (function() {
       });
     };
   }
+
 })();
+
 
 var affixExtra = (function() {
   //*cache DOM
@@ -119,4 +125,5 @@ var affixExtra = (function() {
   function _hideExtra() {
     $(this).parent().hide();
   }
+
 })();

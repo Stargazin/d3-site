@@ -142,6 +142,13 @@ def load_crossbow_affixes(apps, schema_editor):
 		desc='<span>+7.5 - 10.0%</span> chance to Freeze on Hit')
 	burizadoFreezeChance.save()
 
+#Added in 2.4
+#Manticore
+	manticoreClusterArrow = Affix(category='Crossbows',
+		affix='manticoreClusterArrow',
+		is_primary=True,
+		desc='Increase Cluster Arrow damag by <span>60 - 80%</span>')
+	manticoreClusterArrow.save()
 
 def load_daibo_affixes(apps, schema_editor):
 	Affix = apps.get_model("affixes", "Affix")
@@ -158,6 +165,14 @@ def load_daibo_affixes(apps, schema_editor):
 		is_primary=True,
 		desc='Sockets (<span>1</span>)')
 	sockets.save()
+
+#Added in 2.4
+#Balance
+	balanceTempestRush = Affix(category='Daibos',
+		affix='balanceTempestRush',
+		is_primary=True,
+		desc='Increase Tempest Rush damage by <span>150 - 200%</span>')
+	balanceTempestRush.save()
 
 #Incense Torch of the Grand Temple
 	incenseWaveOfLight = Affix(category='Daibos',
@@ -189,6 +204,14 @@ def load_2h_flail_affixes(apps, schema_editor):
 		is_primary=True,
 		desc='Sockets (<span>1</span>)')
 	sockets.save()
+
+#Added in 2.4
+#Golden Flense
+	goldenSweepAttack = Affix(category='2H Flails',
+		affix='goldenSweepAttack',
+		is_primary=True,
+		desc='Increases Sweep Attack damage by <span>150 - 200%</span>')
+	goldenSweepAttack.save()
 
 
 def load_2h_mace_affixes(apps, schema_editor):
@@ -261,14 +284,14 @@ def load_2h_mighty_weapon_affixes(apps, schema_editor):
 	furySeismicSlam = Affix(category='2H Mighty Weapons',
 		affix='furySeismicSlam',
 		is_primary=True,
-		desc='Increase Seismic Slam damage by <span>25 - 30%</span>')
+		desc='Increase Seismic Slam damage by <span>100 - 125%</span>')
 	furySeismicSlam.save()
 
 #The Gavel of Judgement
 	gavelHammerOfTheAncients = Affix(category='2H Mighty Weapons',
 		affix='gavelHammerOfTheAncients',
 		is_primary=True,
-		desc='Increase Hammer of the Ancients damage by <span>30 - 40%</span>')
+		desc='Increase Hammer of the Ancients damage by <span>75 - 100%</span>')
 	gavelHammerOfTheAncients.save()
 
 
@@ -414,6 +437,14 @@ def load_2h_sword_affixes(apps, schema_editor):
 		is_primary=False,
 		desc='<span>+20 - 40%</span> Crowd Control Duration Reduction')
 	blackguardCCReduction.save()
+
+#Added in 2.4
+#Blade of Prophecy
+	bladeCondemn = Affix(category='2H Swords',
+		affix='bladeCondemn',
+		is_primary=True,
+		desc='Increases Condemn damage by <span>75 - 100%</span>')
+	bladeCondemn.save()
 
 #Corrupted Ashbringer
 	corruptedUndeadDmg = Affix(category='2H Swords',

@@ -28,6 +28,7 @@ TODODODO
 --use n;2n;3n or something, idk look it up!~
 NICE! #}
 
+check sizes of 2.4 items...
 
 extra affixes
 
@@ -50,6 +51,10 @@ make css files for mats/potions/gems
 
 add "updated for 2.4"
 
+lazyload when loading huge models like armor/weap/etc
+
+add a class='vary' for generators and etc..
+
 remove conditionals from templates (see two scoops)
 --did as much as i can so far i think
 ----think about how many times you have to query
@@ -59,7 +64,6 @@ remove conditionals from templates (see two scoops)
 
 
 
-lazyload when loading huge models like armor/weap/etc
 
 
 

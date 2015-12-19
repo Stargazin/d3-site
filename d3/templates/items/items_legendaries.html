@@ -17,17 +17,17 @@
 <header>
   <div class="overview">
     <h1>{{ header }}</h1>
-    <h3>Patch 2.3</h3>
+    <h3>Patch 2.4</h3>
   </div> <!-- .overview -->
 
   <div class="toggle-container">
-  <span style="background: url(/assets/media/portraits/42/all.png)" class="toggle toggle--all"></span>
-  <span style="background: url(/assets/media/portraits/42/barb.png)" class="toggle toggle--barb"></span>
-  <span style="background: url(/assets/media/portraits/42/sader.png)" class="toggle toggle--sader"></span>
-  <span style="background: url(/assets/media/portraits/42/dh.png)" class="toggle toggle--dh"></span>
-  <span style="background: url(/assets/media/portraits/42/monk.png)" class="toggle toggle--monk"></span>
-  <span style="background: url(/assets/media/portraits/42/wd.png)" class="toggle toggle--wd"></span>
-  <span style="background: url(/assets/media/portraits/42/wiz.png)" class="toggle toggle--wiz"></span>
+    <span style="background: url(/assets/media/portraits/42/all.png)" class="toggle toggle--all toggle--selected"></span>
+    <span style="background: url(/assets/media/portraits/42/barb.png)" class="toggle toggle--barb"></span>
+    <span style="background: url(/assets/media/portraits/42/sader.png)" class="toggle toggle--sader"></span>
+    <span style="background: url(/assets/media/portraits/42/dh.png)" class="toggle toggle--dh"></span>
+    <span style="background: url(/assets/media/portraits/42/monk.png)" class="toggle toggle--monk"></span>
+    <span style="background: url(/assets/media/portraits/42/wd.png)" class="toggle toggle--wd"></span>
+    <span style="background: url(/assets/media/portraits/42/wiz.png)" class="toggle toggle--wiz"></span>
   </div> <!-- .toggle-container -->
 </header>
 
@@ -68,11 +68,7 @@
   {% for affix in item.affixes.all %}
   <li class="affix">
     <p>{{ affix.desc|safe }}</p>
-
-  <!--  {% if affix.notes %}
-    <div class="extra">{{ affix.notes|safe }}</div>
-    {% endif %} -->
-  </li>
+  </li> <!-- li.affix -->
 
   {% endfor %}
 </div> <!-- .item__info__affix -->

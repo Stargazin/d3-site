@@ -584,12 +584,36 @@ def load_quiver_affixes(apps, schema_editor):
 		desc='Lower item level requirement by <span>2 - 30</span>')
 	lvlReq.save()
 
+#Added in 2.4
+#Bombadier's Rucksack
+	bombadiersSentry = Affix(category='Quivers',
+		affix='bombadiersSentry',
+		is_primary=True,
+		desc='Increases Sentry damage by <span>75 - 100%</span>')
+	bombadiersSentry.save()
+
+#Added in 2.4
+#Dead Man's Legacy
+	deadMultishot = Affix(category='Quivers',
+		affix='deadMultishot',
+		is_primary=True,
+		desc='Increases Multishot damage by <span>75 - 100%</span>')
+	deadMultishot.save()
+
 #Holy Point Shot
 	holyEleDmg = Affix(category='Quivers',
 		affix='holyEleDmg',
 		is_primary=True,
 		desc='Skills of {<span class="vary">One Element</span>} do <span>15 - 20%</span> more damage<div class="extra"><div class="extra-x">X</div><span>Physical<br>Cold<br>Fire<br>Lightning<br>Poison<br>Arcane<br>Holy</span></div>')
 	holyEleDmg.save()
+
+#Added in 2.4
+#Sin Seekers
+	sinRapidFire = Affix(category='Quivers',
+		affix='sinRapidFire',
+		is_primary=True,
+		desc='Increases Rapid Fire damage by <span>45 - 60%</span>')
+	sinRapidFire.save()
 
 
 def load_mojo_affixes(apps, schema_editor):
@@ -880,12 +904,13 @@ def load_mojo_affixes(apps, schema_editor):
 		desc='Lower item level requirement by <span>2 - 30</span>')
 	lvlReq.save()
 
-#Thing of the Deep
-	thingItemPickup = Affix(category='Mojos',
-		affix='thingItemPickup',
-		is_primary=False,
-		desc='<span class="silver">+20</span> Yards to Gold and Globe Pickup')
-	thingItemPickup.save()
+#Removed in 2.4
+# #Thing of the Deep
+# 	thingItemPickup = Affix(category='Mojos',
+# 		affix='thingItemPickup',
+# 		is_primary=False,
+# 		desc='<span class="silver">+20</span> Yards to Gold and Globe Pickup')
+# 	thingItemPickup.save()
 
 
 def load_crusader_shield_affixes(apps, schema_editor):
@@ -1250,6 +1275,30 @@ def load_crusader_shield_affixes(apps, schema_editor):
 		is_primary=False,
 		desc='Item ignores Durability Loss')
 	durability.save()
+
+#Added in 2.4
+#Frydehr's Wrath
+	frydehrsCondemn = Affix(category='Crusader Shields',
+		affix='frydehrsCondemn',
+		is_primary=True,
+		desc='Increases Condemn damage by <span>150 - 200%</span>')
+	frydehrsCondemn.save()
+
+#2.4
+#Jekangbord
+	jekangbordBlessedShield = Affix(category='Crusader Shields',
+		affix='jekangbordBlessedShield',
+		is_primary=True,
+		desc='Increases Blessed Shield damage by <span>150 - 200%</span>')
+	jekangbordBlessedShield.save()
+
+#Added in 2.4
+#Unrelenting Phalanx
+	unrelentingPhalanxDmg = Affix(category='Crusader Shields',
+		affix='unrelentingPhalanxDmg',
+		is_primary=True,
+		desc='Increases Phalanx damage by <span>45 - 60%</span>')
+	unrelentingPhalanxDmg.save()
 
 
 def load_shield_affixes(apps, schema_editor):

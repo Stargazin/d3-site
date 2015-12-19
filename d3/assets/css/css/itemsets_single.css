@@ -13,11 +13,6 @@
   margin: 0;
   padding: 0; }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; }
-
 html {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -26,6 +21,10 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 1 */ }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
 
 /* HTML5 display definitions
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -133,9 +132,6 @@ button:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
@@ -145,7 +141,7 @@ button:hover {
   background-color: rgba(34, 49, 63, 0.8); }
 
 .link {
-  width: 14rem;
+  width: 15rem;
   line-height: 4rem;
   font-family: "Playfair Display SC", serif; }
   .link:hover {
@@ -156,6 +152,9 @@ button:hover {
     display: block;
     color: #f2f1ef; }
 
+.link--misc {
+  display: none; }
+
 .drop {
   display: none;
   position: absolute;
@@ -165,7 +164,7 @@ button:hover {
   font-size: 0.85em; }
 
 .drop__link {
-  width: 14rem;
+  width: 15rem;
   border-bottom: 0.1rem solid #62707f;
   line-height: 2rem;
   font-family: "Roboto", sans-serif; }
@@ -178,74 +177,40 @@ button:hover {
 
 .drop--right {
   top: 0;
-  left: 14rem;
+  left: 15rem;
   border-right: 0.1rem solid #54606d;
   border-left: 0.1rem solid #54606d; }
 
-@media only screen and (max-width: 992px) {
-  .link {
-    line-height: 3.5rem; }
-    .link:hover {
-      background-color: transparent; }
-  .link--home {
-    width: 100%; }
-    .link--home:after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 2px;
-      background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, rgba(90, 95, 120, 0.5)), to(transparent));
-      background: -webkit-linear-gradient(left, transparent 0%, rgba(90, 95, 120, 0.5) 50%, transparent 100%);
-      background: linear-gradient(to right, transparent 0%, rgba(90, 95, 120, 0.5) 50%, transparent 100%); } }
-
 @media only screen and (max-width: 768px) {
-  .link-container {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .link-container:hover {
-      background-color: #233242; }
-  .link {
-    width: 25%;
-    line-height: 3.3rem; }
-  .link--home {
-    width: 100%; }
-  .link--items .drop__link {
-    width: 11rem; }
-    .link--items .drop__link:hover {
-      background-color: #1e3656; }
-    .link--items .drop__link > a {
-      padding: 1rem 0; }
-  .link--items .drop--right {
-    left: 11rem; }
-  .link--guides .drop {
-    width: 100%; }
-  .link--guides .link {
-    width: 100%; } }
+  .link--gems, .link--potions, .link--materials {
+    display: none; }
+  .link--sets {
+    left: 1.8rem; }
+  .link--misc {
+    display: list-item; }
+    .link--misc > span {
+      display: block;
+      color: #f2f1ef; }
+    .link--misc:hover > span {
+      color: #ff791f; }
+  .drop__link--materials:hover .splitter {
+    display: block;
+    height: 1px;
+    background: #a0a0a0; } }
 
 @media only screen and (max-width: 480px) {
-  .link--items .drop__link {
-    width: 9.4rem; }
-  .link--items .drop--right {
-    left: 9.4rem; }
-  .link--items .drop__link--3 {
-    width: 8.9rem; }
-  .link--items .drop--right--3 {
-    left: 8.9rem; } }
-
-.coming-soon {
-  width: 100%;
-  font-size: 1.8em;
-  background-color: #22313f;
-  color: white; }
-
-.coming-soon--guides {
-  position: absolute;
-  z-index: 200;
-  height: 100%;
-  padding-top: 100%;
-  background-color: rgba(0, 0, 0, 0.75); }
+  .nav-main {
+    font-size: 1.7em; }
+  .link {
+    width: 12rem; }
+    .link .drop--down {
+      font-size: 1em; }
+    .link .drop__link {
+      width: 12rem; }
+    .link .drop--right {
+      left: 12rem; }
+  .link--sets {
+    left: 1.4rem; } }
 
 /* partials/itemsets/itemsets_single
 ============================================================================ 

@@ -352,8 +352,10 @@ def load_item_sets(apps, schema_editor):
 		itemSet=endlessWalk)
 	theCompassRose.save()
 
+#2.4
 	endlessWalk2 = Effect(pieces='2',
-		effect='<li><p><span class="silver">+250</span> Vitality</p></li><li><p>Critical Hit Damage Increased by <span class="silver">50.0%</span></p></li>',
+		# effect='<li><p><span class="silver">+250</span> Vitality</p></li><li><p>Critical Hit Damage Increased by <span class="silver">50.0%</span></p></li>',
+		effect='<li><p>While moving, damage taken is reduced by up to <span class="silver">50%</span></p><li><li><p>While standing still, damage dealt is increased by up to <span class="silver">100%</span></p></li>',
 		itemSet=endlessWalk)
 	endlessWalk2.save()
 
@@ -462,8 +464,9 @@ def load_item_sets(apps, schema_editor):
 		itemSet=istvansPairedBlades)
 	theSlanderer.save()
 
+#2.4
 	istvansPairedBlades2 = Effect(pieces='2',
-		effect='<li><p>Every time you spend primary resource, you gain <span class="silver">6%</span> increased attack speed for <span class="silver">5</span> seconds. This effect stacks up to <span class="silver">5</span> times</p></li>',
+		effect='<li><p>Every time you spend primary resource, you gain <span class="silver">6%</span> increased Attack Speed, Damage, and Armor for <span class="silver">5</span> seconds. This effect stacks up to <span class="silver">5</span> times</p></li>',
 		itemSet=istvansPairedBlades)
 	istvansPairedBlades2.save()
 
@@ -508,8 +511,10 @@ def load_item_sets(apps, schema_editor):
 		itemSet=legacyOfNightmares)
 	theWailingHost.save()
 
+#2.4
 	legacyOfNightmares2 = Effect(pieces='2',
-		effect='<li><p><span class="silver">+15%</span> Extra Gold from Monsters</p></li><li><p><span class="silver">+15%</span> Better Chance of Finding Magical Items</p></li><li><p>This ring sometimes summons a Skeleton when you attack</p></li>',
+		# effect='<li><p><span class="silver">+15%</span> Extra Gold from Monsters</p></li><li><p><span class="silver">+15%</span> Better Chance of Finding Magical Items</p></li><li><p>This ring sometimes summons a Skeleton when you attack</p></li>',
+		effect='<li><p>While this is your only item Set Bonus your damage dealt is increased by <span class="silver">100%</span> and damage taken is reduced by <span class="silver">4%</span> for every Ancient item you have equipped',
 		itemSet=legacyOfNightmares)
 	legacyOfNightmares2.save()
 
@@ -577,15 +582,31 @@ def load_item_sets(apps, schema_editor):
 		itemSet=thornsOfTheInvoker)
 	shacklesOfTheInvoker.save()
 
+	renewalOfTheInvoker = SetPiece(name='Renewal of the Invoker',
+		pic='/assets/media/items/sets/universal/renewal_of_the_invoker.png',
+		category='Pants',
+		itemSet=thornsOfTheInvoker)
+	renewalOfTheInvoker.save()
+
+#2.4
 	thornsOfTheInvoker2 = Effect(pieces='2',
-		effect='<li><p>Ranged and melee attackers take <span class="silver">4000</span> damage per hit</p></li>',
+		# effect='<li><p>Ranged and melee attackers take <span class="silver">4000</span> damage per hit</p></li>',
+		effect='<li><p>Your Thorns damage now hits all enemies in a <span class="silver">15</span> yard radius</p></li><li><p>Each time you hit an enemy with Punish or Slash or block an attack, your Thorns damage is increased by <span class="silver">25%</span> for <span class="silver">2</span> seconds</p></li>',
 		itemSet=thornsOfTheInvoker)
 	thornsOfTheInvoker2.save()
 
+#2.4
 	thornsOfTheInvoker4 = Effect(pieces='4',
-		effect='<li><p>Your Thorns damage now hits all enemies in a <span class="silver">15</span> yard radius</p></li>',
+		# effect='<li><p>Your Thorns damage now hits all enemies in a <span class="silver">15</span> yard radius</p></li>',
+		effect='<li><p>You take <span class="silver">50%</span> less damage for <span class="silver">20</span> seconds after casting Bombardment</p></li>',
 		itemSet=thornsOfTheInvoker)
 	thornsOfTheInvoker4.save()
+
+#2.4
+	thornsOfTheInvoker6 = Effect(pieces='6',
+		effect='<li><p>Attack speed of Punish and Slash are increased by <span class="silver">50%</span> and deal <span class="silver">600%</span> of your Thorns damage to the first enemy hit</p></li>',
+		itemSet=thornsOfTheInvoker)
+	thornsOfTheInvoker6.save()
 
 #Barbarian
 #==============================================================================
@@ -628,6 +649,14 @@ def load_item_sets(apps, schema_editor):
 		itemSet=mightOfTheEarth)
 	spiresOfTheEarth.save()
 
+#Added in 2.4
+	spiritOfTheEarth = SetPiece(name='Spirit of the Earth',
+		pic='/assets/media/items/sets/barb/spirit_of_the_earth.png',
+		category='Chest Armor',
+		itemSet=mightOfTheEarth)
+	spiritOfTheEarth.save()
+	spiritOfTheEarth
+
 	pullOfTheEarth = SetPiece(name='Pull of the Earth',
 		pic='/assets/media/items/sets/barb/pull_of_the_earth.png',
 		category='Gloves',
@@ -640,15 +669,32 @@ def load_item_sets(apps, schema_editor):
 		itemSet=mightOfTheEarth)
 	weightOfTheEarth.save()
 
+#Added in 2.4
+	foundationOfTheEarth = SetPiece(name='Foundation of the Earth',
+		pic='/assets/media/items/sets/barb/foundation_of_the_earth.png',
+		category='Boots',
+		itemSet=mightOfTheEarth)
+	foundationOfTheEarth.save()
+
+#2.4
 	mightOfTheEarth2 = Effect(pieces='2',
-		effect='<li><p>Reduce the cooldown of Earthquake by <span class="silver">2</span> seconds every time it kills an enemy</p></li>',
+		# effect='<li><p>Reduce the cooldown of Earthquake by <span class="silver">2</span> seconds every time it kills an enemy</p></li>',
+		effect='<li><p>Reduce the cooldown of Earthquake, Avalanche, Leap, and Ground Stomp by <span class="silver">1</span> second for every <span class="silver">30</span> Fury you spend</p></li>',
 		itemSet=mightOfTheEarth)
 	mightOfTheEarth2.save()
 
-	mightOfTheEarth3 = Effect(pieces='4',
-		effect='<li><p>Cause an Earthquake when you land after using Leap</p></li>',
+#2.4
+	mightOfTheEarth4 = Effect(pieces='4',
+		# effect='<li><p>Cause an Earthquake when you land after using Leap</p></li>',
+		effect='<li><p>Leap causes an Earthquake when you land</p></li><li><p>Leap gains the effect of the Iron Impact rune and the duration and Armor bonus is increased by <span class="silver">150%</span></p></li>',
 		itemSet=mightOfTheEarth)
-	mightOfTheEarth3.save()
+	mightOfTheEarth4.save()
+
+#Added in 2.4
+	mightOfTheEarth6 = Effect(pieces='6',
+		effect='<li><p>Increases the damage of Earthquake, Avalanche, Leap, Ground Stomp, Ancient Spear, and Seismic Slam by <span class="silver">800%</span></p></li>',
+		itemSet=mightOfTheEarth)
+	mightOfTheEarth6.save()
 
 
 
@@ -755,18 +801,24 @@ def load_item_sets(apps, schema_editor):
 		itemSet=theLegacyOfRaekor)
 	raekorsStriders.save()
 
+#2.4
 	theLegacyOfRaekor2 = Effect(pieces='2',
-		effect='<li><p>The first enemy hit by Furious Charge takes <span class="silver">100%</span> additional damage</p></li>',
+		# effect='<li><p>The first enemy hit by Furious Charge takes <span class="silver">100%</span> additional damage</p></li>',
+		effect='<li><p>Furious Charge refunds a charge if it hits only <span class="silver">1</span> enemy</p></li>',
 		itemSet=theLegacyOfRaekor)
 	theLegacyOfRaekor2.save()
 
+#2.4
 	theLegacyOfRaekor4 = Effect(pieces='4',
-		effect='<li><p>Furious Charge gains the effect of every rune</p></li>',
+		# effect='<li><p>Furious Charge gains the effect of every rune</p></li>',
+		effect='<li><p>Furious Charge gains the effect of every rune and deals <span class="silver">300%</span> increased damage</p></li>',
 		itemSet=theLegacyOfRaekor)
 	theLegacyOfRaekor4.save()
 
+#2.4
 	theLegacyOfRaekor6 = Effect(pieces='6',
-		effect='<li><p>Enemies hit by your Furious Charge take <span class="silver">3000%</span> weapon damage over <span class="silver">3</span> seconds</p></li>',
+		# effect='<li><p>Enemies hit by your Furious Charge take <span class="silver">3000%</span> weapon damage over <span class="silver">3</span> seconds</p></li>',
+		effect='<li><p>Every use of Furious Charge grants a stacking effect that increases the damage of your next Fury-spending attack by <span class="silver">300%</span></p></li><li><p>Every use of a Fury-spending attack consumes up to <span class="silver">5</span> stacks</p></li>',
 		itemSet=theLegacyOfRaekor)
 	theLegacyOfRaekor6.save()
 
@@ -869,18 +921,24 @@ def load_item_sets(apps, schema_editor):
 		itemSet=armorOfAkkhan)
 	sabatonsOfAkkhan.save()
 
+#2.4
 	armorOfAkkhan2 = Effect(pieces='2',
-		effect='<li><p><span class="silver">+500</span> Strength</p></li>',
+		# effect='<li><p><span class="silver">+500</span> Strength</p></li>',
+		effect='<li><p>Reduces the cost of all abilities by <span class="silver">50%</span> while Akarat\'s Champion is active</p></li>',
 		itemSet=armorOfAkkhan)
 	armorOfAkkhan2.save()
 
+#2.4
 	armorOfAkkhan4 = Effect(pieces='4',
-		effect='<li><p>Reduce the cost of all abilities by <span class="silver">50%</span> while Akarat\'s Champion is active</p></li>',
+		# effect='<li><p>Reduce the cost of all abilities by <span class="silver">50%</span> while Akarat\'s Champion is active</p></li>',
+		effect='<li><p>Reduce the cooldown of Akarat\'s Champion by <span class="silver">50%</span></p></li>',
 		itemSet=armorOfAkkhan)
 	armorOfAkkhan4.save()
 
+#2.4
 	armorOfAkkhan6 = Effect(pieces='6',
-		effect='<li><p>Reduce the cooldown of Akarat\'s Champion by <span class="silver">50%</span></p></li>',
+		# effect='<li><p>Reduce the cooldown of Akarat\'s Champion by <span class="silver">50%</span></p></li>',
+		effect='<li><p>While Akarat\'s Champion is active, you deal <span class="silver">450%</span> increased damage</p></li>',
 		itemSet=armorOfAkkhan)
 	armorOfAkkhan6.save()
 
@@ -936,8 +994,10 @@ def load_item_sets(apps, schema_editor):
 		itemSet=rolandsLegacy)
 	rolandsLegacy4.save()
 
+#2.4
 	rolandsLegacy6 = Effect(pieces='6',
-		effect='<li><p>Every use of Shield Bash or Sweep Attack that hits an enemy grants <span class="silver">30%</span> increased Attack Speed for <span class="silver">3</span> seconds. This effect stacks up to <span class="silver">5</span> times</p></li>',
+		# effect='<li><p>Every use of Shield Bash or Sweep Attack that hits an enemy grants <span class="silver">30%</span> increased Attack Speed for <span class="silver">3</span> seconds. This effect stacks up to <span class="silver">5</span> times</p></li>',
+		effect='<li><p>Every use of Shield Bash or Sweep Attack that hits an enemy grants <span class="silver">50%</span> increased Attack Speed and <span class="silver">10%</span> damage reduction for <span class="silver">5</span> seconds. This effect stacks up to <span class="silver">5</span> times</p></li>',
 		itemSet=rolandsLegacy)
 	rolandsLegacy6.save()
 
@@ -993,8 +1053,9 @@ def load_item_sets(apps, schema_editor):
 		itemSet=seekerOfTheLight)
 	seekerOfTheLight4.save()
 
+#2.4
 	seekerOfTheLight6 = Effect(pieces='6',
-		effect='<li><p>Increase the damage of Blessed Hammer by <span class="silver">750%</span> and Falling Sword by <span class="silver">500%</span></p></li>',
+		effect='<li><p>Increase the damage of Blessed Hammer by <span class="silver">1250%</span> and Falling Sword by <span class="silver">500%</span></p></li>',
 		itemSet=seekerOfTheLight)
 	seekerOfTheLight6.save()
 
@@ -1016,8 +1077,9 @@ def load_item_sets(apps, schema_editor):
 		itemSet=danettasHatred)
 	danettasSpite.save()
 
+#2.4
 	danettasHatred2 = Effect(pieces='2',
-		effect='<li><p>Vault now costs <span class="silver">8</span> Hatred instead of Discipline</p></li>',
+		effect='<li><p>Vault costs <span class="silver">8</span> Hatred instead of Discipline</p></li><li><p>Vault deals <span class="silver">800%</span> increased damage</p></li>',
 		itemSet=danettasHatred)
 	danettasHatred2.save()
 
@@ -1068,13 +1130,15 @@ def load_item_sets(apps, schema_editor):
 		itemSet=embodimentOfTheMarauder)
 	embodimentOfTheMarauder2.save()
 
+#2.4
 	embodimentOfTheMarauder4 = Effect(pieces='4',
-		effect='<li><p>Sentries cast Elemental Arrow, Chakram, Impale, Multishot, and Cluster Arrow when you do</p></li>',
+		effect='<li><p>Sentries deal <span class="silver">300%</span> increased damage and cast Elemental Arrow, Chakram, Impale, Multishot, and Cluster Arrow when you do</p></li>',
 		itemSet=embodimentOfTheMarauder)
 	embodimentOfTheMarauder4.save()
 
+#2.4
 	embodimentOfTheMarauder6 = Effect(pieces='6',
-		effect='<li><p>Your generators, Elemental Arrow, Chakram, Impale, Multishot, and Cluster Arrow deal <span class="silver">100%</span> increased damage for every active Sentry</p></li>',
+		effect='<li><p>Your primary skills, Elemental Arrow, Chakram, Impale, Multishot, Cluster Arrow, Companions, and Vengeance deal <span class="silver">600%</span> increased damage for each active Sentry</p></li>',
 		itemSet=embodimentOfTheMarauder)
 	embodimentOfTheMarauder6.save()
 
@@ -1126,8 +1190,9 @@ def load_item_sets(apps, schema_editor):
 		itemSet=natalyasVengeance)
 	natalyasReflection.save()
 
+#2.4
 	natalyasVengeance2 = Effect(pieces='2',
-		effect='<li><p>Reduce the cooldown of Rain of Vengeance by <span class="silver">2</span> seconds when you hit with a Hatred-generating attack or Hatred-spending attack</p></li>',
+		effect='<li><p>Reduce the cooldown of Rain of Vengeance by <span class="silver">4</span> seconds when you hit with a Hatred-generating attack or Hatred-spending attack</p></li>',
 		itemSet=natalyasVengeance)
 	natalyasVengeance2.save()
 
@@ -1136,8 +1201,9 @@ def load_item_sets(apps, schema_editor):
 		itemSet=natalyasVengeance)
 	natalyasVengeance4.save()
 
+#2.4
 	natalyasVengeance6 = Effect(pieces='6',
-		effect='<li><p>After casting Rain of Vengeance, deal <span class="silver">400%</span> increased damage and take <span class="silver">30%</span> reduced damage for <span class="silver">5</span> seconds</p></li>',
+		effect='<li><p>After casting Rain of Vengeance, deal <span class="silver">400%</span> increased damage and take <span class="silver">60%</span> reduced damage for <span class="silver">10</span> seconds</p></li>',
 		itemSet=natalyasVengeance)
 	natalyasVengeance6.save()
 
@@ -1146,6 +1212,20 @@ def load_item_sets(apps, schema_editor):
 	theShadowsMantle = ItemSet(name='The Shadow\'s Mantle',
 		owner='Demon Hunter')
 	theShadowsMantle.save()
+
+#Added in 2.4
+	theShadowsMask = SetPiece(name='The Shadow\'s Mask',
+		pic='/assets/media/items/sets/dh/the_shadows_mask.png',
+		category='Helmet',
+		itemSet=theShadowsMantle)
+	theShadowsMask.save()
+
+#Added in 2.4
+	theShadowsBurden = SetPiece(name='The Shadow\'s Burden',
+		pic='/assets/media/items/sets/dh/the_shadows_burden.png',
+		category='Shoulders',
+		itemSet=theShadowsMantle)
+	theShadowsBurden.save()
 
 	theShadowsBane = SetPiece(name='The Shadow\'s Bane',
 		pic='/assets/media/items/sets/dh/the_shadows_bane.png',
@@ -1171,16 +1251,25 @@ def load_item_sets(apps, schema_editor):
 		itemSet=theShadowsMantle)
 	theShadowsHeels.save()
 
+#2.4
 	theShadowsMantle2 = Effect(pieces='2',
-		effect='<li><p>When receiving fatal damage, you instead automatically cast Smoke Screen and are healed to <span class="silver">25%</span> Life. This effect may occur once every <span class="silver">120</span> seconds</p></li>',
+		# effect='<li><p>When receiving fatal damage, you instead automatically cast Smoke Screen and are healed to <span class="silver">25%</span> Life. This effect may occur once every <span class="silver">120</span> seconds</p></li>',
+		effect='<li><p>Your damage is increased by <span class="silver">600%</span> while you have a melee weapon equipped</p></li>',
 		itemSet=theShadowsMantle)
 	theShadowsMantle2.save()
 
+#2.4
 	theShadowsMantle4 = Effect(pieces='4',
-		effect='<li><p>Shadow Power gains the effect of every rune</p></li>',
+		# effect='<li><p>Shadow Power gains the effect of every rune</p></li>',
+		effect='<li><p>Shadow Power gains the effect of all runes and lasts forever</p></li>',
 		itemSet=theShadowsMantle)
 	theShadowsMantle4.save()
 
+#Added in 2.4
+	theShadowsMantle6 = Effect(pieces='6',
+		effect='<li><p>Impale deals an additional <span class="silver">40,000</span> weapon damage to the first enemy hit</p></li>',
+		itemSet=theShadowsMantle)
+	theShadowsMantle6.save()
 
 
 	unhallowedEssence = ItemSet(name='Unhallowed Essence',
@@ -1223,18 +1312,22 @@ def load_item_sets(apps, schema_editor):
 		itemSet=unhallowedEssence)
 	hellWalkers.save()
 
+#2.4 check
 	unhallowedEssence2 = Effect(pieces='2',
-		effect='<li><p>Your generators also generate <span class="silver">1</span> Discipline</p></li>',
+		# effect='<li><p>Your generators also generate <span class="silver">1</span> Discipline</p></li>',
+		effect='<li><p>Your generators also generate <span class="silver">2</span> Discipline</p></li>',
 		itemSet=unhallowedEssence)
 	unhallowedEssence2.save()
 
+#2.4
 	unhallowedEssence4 = Effect(pieces='4',
-		effect='<li><p>Gain <span class="silver">20%</span> damage reduction and deal <span class="silver">20%</span> increased damage for <span class="silver">4</span> seconds if no enemy is within <span class="silver">10</span> yards of you</p></li>',
+		effect='<li><p>Gain <span class="silver">80%</span> damage reduction and deal <span class="silver">80%</span> increased damage for <span class="silver">8</span> seconds if no enemy is within <span class="silver">10</span> yards of you</p></li>',
 		itemSet=unhallowedEssence)
 	unhallowedEssence4.save()
 
+#2.4
 	unhallowedEssence6 = Effect(pieces='6',
-		effect='<li><p>Your generators and Multishot deal <span class="silver">15%</span> increased damage for every point of Discipline you have</p></li>',
+		effect='<li><p>Your generators, Multishot, and Vengeance deal <span class="silver">20%</span> increased damage for every point of Discipline you have</p></li>',
 		itemSet=unhallowedEssence)
 	unhallowedEssence6.save()
 
@@ -1296,8 +1389,10 @@ def load_item_sets(apps, schema_editor):
 		itemSet=innasMantra)
 	innasMantra4.save()
 
+#2.4
 	innasMantra6 = Effect(pieces='6',
-		effect='<li><p>Mystic Ally casts Cyclone Strike, Exploding Palm, Lashing Tail Kick, Seven-Sided Strike, and Wave of Light when you do</p></li>',
+		# effect='<li><p>Mystic Ally casts Cyclone Strike, Exploding Palm, Lashing Tail Kick, Seven-Sided Strike, and Wave of Light when you do</p></li>',
+		effect='<li><p>Gain the effects of every Mystic Ally rune at all times and your damage is increased by <span class="silver">50%</span> for each Mystic Ally you have</p></li>',
 		itemSet=innasMantra)
 	innasMantra6.save()
 
@@ -1331,16 +1426,26 @@ def load_item_sets(apps, schema_editor):
 		itemSet=monkeyKingsGarb)
 	sunwukosShines.save()
 
+#2.4
 	monkeyKingsGarb2 = Effect(pieces='2',
-		effect='<li><p>Casting Cyclone Strike, Exploding Palm, Lashing Tail Kick, Tempest Rush or Wave of Light causes a decoy to spawn that taunts nearby enemies and then explodes for <span class="silver">1000%</span> weapon damage</p></li>',
+		# effect='<li><p>Casting Cyclone Strike, Exploding Palm, Lashing Tail Kick, Tempest Rush or Wave of Light causes a decoy to spawn that taunts nearby enemies and then explodes for <span class="silver">1000%</span> weapon damage</p></li>',
+		effect='<li><p>Your damage taken is reduced by <span class="silver">50%</span> while Sweeping Wind is active</p></li>',
 		itemSet=monkeyKingsGarb)
 	monkeyKingsGarb2.save()
 
+#2.4
 	monkeyKingsGarb4 = Effect(pieces='4',
-		effect='<li><p>When your decoys explode, you gain a buff that increases the damage of Cyclone Strike, Exploding Palm, Lashing Tail Kick, Tempest Rush and Wave of Light by <span class="silver">500%</span> for <span class="silver">3</span> seconds</p></li>',
+		# effect='<li><p>When your decoys explode, you gain a buff that increases the damage of Cyclone Strike, Exploding Palm, Lashing Tail Kick, Tempest Rush and Wave of Light by <span class="silver">500%</span> for <span class="silver">3</span> seconds</p></li>',
+		effect='<li><p>Every second Sweeping Wind spawns a decoy next to the last enemy you hit that taunts nearby enemies and then explodes for <span class="silver">500%</span> weapon damage for each stack of Sweeping Wind you have</p></li>',
 		itemSet=monkeyKingsGarb)
 	monkeyKingsGarb4.save()
 
+#2.4
+	monkeyKingsGarb6 = Effect(pieces='6',
+		# effect='<li><p>When your decoys explode, you gain a buff that increases the damage of Cyclone Strike, Exploding Palm, Lashing Tail Kick, Tempest Rush and Wave of Light by <span class="silver">500%</span> for <span class="silver">3</span> seconds</p></li>',
+		effect='<li><p>Lashing Tail Kick, Tempest Rush, and Wave of Light consume a stack of Sweeping Wind to deal <span class="silver">1500%</span> increased damage</p></li>',
+		itemSet=monkeyKingsGarb)
+	monkeyKingsGarb6.save()
 
 
 	raimentOfAThousandStorms = ItemSet(name='Raiment of a Thousand Storms',
@@ -1383,8 +1488,9 @@ def load_item_sets(apps, schema_editor):
 		itemSet=raimentOfAThousandStorms)
 	eightDemonBoots.save()
 
+#2.4
 	raimentOfAThousandStorms2 = Effect(pieces='2',
-		effect='<li><p>Your Spirit Generators have <span class="silver">25%</span> increased attack speed and <span class="silver">300%</span> increased damage</p></li>',
+		effect='<li><p>Your Spirit Generators have <span class="silver">25%</span> increased attack speed and <span class="silver">100%</span> increased damage</p></li>',
 		itemSet=raimentOfAThousandStorms)
 	raimentOfAThousandStorms2.save()
 
@@ -1554,8 +1660,9 @@ def load_item_sets(apps, schema_editor):
 		itemSet=manajumasWay)
 	manajumasGoryFetch.save()
 
+#2.4
 	manajumasWay2 = Effect(pieces='2',
-		effect='<li><p>Hex - Angry Chicken explosion damage is increased by <span class="silver">200%</span> and slain enemies trigger an additional explosion</p></li><li><p>Hex - Angry Chicken lasts <span class="silver">15</span> seconds and movement speed as a chicken is increased by an additional <span class="silver">100%</span></p></li>',
+		effect='<li><p>Hex - Angry Chicken explosion damage is increased by <span class="silver">400%</span> and slain enemies trigger an additional explosion</p></li><li><p>Hex - Angry Chicken lasts <span class="silver">15</span> seconds and movement speed as a chicken is increased by an additional <span class="silver">100%</span></p></li>',
 		itemSet=manajumasWay)
 	manajumasWay2.save()
 
@@ -1601,18 +1708,21 @@ def load_item_sets(apps, schema_editor):
 		itemSet=raimentOfTheJadeHarvester)
 	jadeHarvestersSwiftness.save()
 
+#2.4
 	raimentOfTheJadeHarvester2 = Effect(pieces='2',
-		effect='<li><p>When Haunt lands on an enemy already affected by Haunt, it instantly deals <span class="silver">10</span> seconds worth of Haunt damage</p></li>',
+		effect='<li><p>When Haunt lands on an enemy already affected by Haunt, it instantly deals <span class="silver">60</span> seconds worth of Haunt damage</p></li>',
 		itemSet=raimentOfTheJadeHarvester)
 	raimentOfTheJadeHarvester2.save()
 
+#2.4
 	raimentOfTheJadeHarvester4 = Effect(pieces='4',
-		effect='<li><p>Soul Harvest gains the effect of every rune</p></li>',
+		effect='<li><p>Soul Harvest gains the effect of every rune and has its cooldown lowered by <span class="silver">1</span> second every time you cast Haunt or Locust Swarm</p></li>',
 		itemSet=raimentOfTheJadeHarvester)
 	raimentOfTheJadeHarvester4.save()
 
+#2.4
 	raimentOfTheJadeHarvester6 = Effect(pieces='6',
-		effect='<li><p>Soul Harvest consumes your damage over time effects on enemies, instantly dealing their remaining damage</p></li>',
+		effect='<li><p>Soul Harvest consumes your damage over time effects on enemies, instantly dealing <span class="silver">150</span> seconds worth of remaining damage</p></li>',
 		itemSet=raimentOfTheJadeHarvester)
 	raimentOfTheJadeHarvester6.save()
 
@@ -1663,13 +1773,15 @@ def load_item_sets(apps, schema_editor):
 		itemSet=spiritOfArachyr)
 	spiritOfArachyr2.save()
 
+#2.4
 	spiritOfArachyr4 = Effect(pieces='4',
-		effect='<li><p>Hex gains the effect of the Toad of Hugeness rune. While Toad of Hugeness is active, you take <span class="silver">40%</span> reduced damage. After Toad of Hugeness finishes his meal, you will heal for <span class="silver">10%</span> of your maximum Life per second for <span class="silver">10</span> seconds</p></li>',
+		effect='<li><p>Hex gains the effect of the Toad of Hugeness rune. While Toad of Hugeness is active, you take <span class="silver">50%</span> reduced damage. After Toad of Hugeness is summoned, you will heal for <span class="silver">10%</span> of your maximum Life per second for <span class="silver">15</span> seconds</p></li>',
 		itemSet=spiritOfArachyr)
 	spiritOfArachyr4.save()
 
+#2.4
 	spiritOfArachyr6 = Effect(pieces='6',
-		effect='<li><p>The damage of your creature skills is increased by <span class="silver">800%</span>. Creature skills are Corpse Spiders, Plague of Toads, Firebats, Locust Swarm, Hex, and Piranhas</p></li>',
+		effect='<li><p>The damage of your creature skills is increased by <span class="silver">1200%</span>. Creature skills are Corpse Spiders, Plague of Toads, Firebats, Locust Swarm, Hex, and Piranhas</p></li>',
 		itemSet=spiritOfArachyr)
 	spiritOfArachyr6.save()
 
@@ -1731,8 +1843,9 @@ def load_item_sets(apps, schema_editor):
 		itemSet=zunimassasHaunt)
 	zunimassasHaunt4.save()
 
+#2.4
 	zunimassasHaunt6 = Effect(pieces='6',
-		effect='<li><p>Enemies hit by your Mana spenders take <span class="silver">275%</span> more damage from your pets for <span class="silver">4</span> seconds</p></li>',
+		effect='<li><p>Enemies hit by your Mana spenders take <span class="silver">800%</span> more damage from your pets for <span class="silver">8</span> seconds</p></li>',
 		itemSet=zunimassasHaunt)
 	zunimassasHaunt6.save()
 
@@ -1801,18 +1914,22 @@ def load_item_sets(apps, schema_editor):
 		itemSet=delseresMagnumOpus)
 	stridersOfDestiny.save()
 
+#2.4
 	delseresMagnumOpus2 = Effect(pieces='2',
-		effect='<li><p>Casting Arcane Orb, Energy Twister, Magic Missile or Shock Pulse reduces the cooldown of Slow Time by <span class="silver">2</span> seconds</p></li>',
+		effect='<li><p>Casting Arcane Orb, Energy Twister, Magic Missile, Shock Pulse, Explosive Blast, Spectral Blade, or Wave of Force reduces the cooldown of Slow Time by <span class="silver">2</span> seconds</p></li>',
 		itemSet=delseresMagnumOpus)
 	delseresMagnumOpus2.save()
 
+#2.4
 	delseresMagnumOpus4 = Effect(pieces='4',
-		effect='<li><p>Enemies affected by your Slow Time take <span class="silver">2000%</span> weapon damage every second</p></li>',
+		# effect='<li><p>Enemies affected by your Slow Time take <span class="silver">2000%</span> weapon damage every second</p></li>',
+		effect='<li><p>You take <span class="silver">50%</span> reduced damage while inside your Slow Time. Allies gain half this benefit.</p></li>',
 		itemSet=delseresMagnumOpus)
 	delseresMagnumOpus4.save()
 
+#2.4
 	delseresMagnumOpus6 = Effect(pieces='6',
-		effect='<li><p>Enemies affected by your Slow Time take <span class="silver">750%</span> more damage from your Arcane Orb, Energy Twister, Magic Missile and Shock Pulse abilities</p></li>',
+		effect='<li><p>Enemies affected by your Slow Time take <span class="silver">2000%</span> more damage from your Arcane Orb, Energy Twister, Magic Missile and Shock Pulse abilities</p></li>',
 		itemSet=delseresMagnumOpus)
 	delseresMagnumOpus6.save()
 
@@ -1864,18 +1981,21 @@ def load_item_sets(apps, schema_editor):
 		itemSet=firebirdsFinery)
 	firebirdsTarsi.save()
 
+#2.4
 	firebirdsFinery2 = Effect(pieces='2',
-		effect='<li><p>When you die, a meteor falls from the sky and revives you. This effect has a <span class="silver">300</span> second cooldown</p></li>',
+		effect='<li><p>When you die, a meteor falls from the sky and revives you. This effect has a <span class="silver">60</span> second cooldown</p></li>',
 		itemSet=firebirdsFinery)
 	firebirdsFinery2.save()
 
+#2.4
 	firebirdsFinery4 = Effect(pieces='4',
-		effect='<li><p>Your Fire Spells cause up to <span class="silver">3</span> enemies to explode, dealing <span class="silver">400%</span> weapon damage as Fire to enemies within <span class="silver">10</span> yards</p></li>',
+		effect='<li><p>Dealing Fire damage causes the enemy to take the same amount of damage over <span class="silver">3</span> seceonds, stacking up to <span class="silver">3000%</span> weapon damage as Fire per second. After reaching <span class="silver">3000%</span> damage per second, the enemy will burn until they die</p></li>',
 		itemSet=firebirdsFinery)
 	firebirdsFinery4.save()
 
+#2.4
 	firebirdsFinery6 = Effect(pieces='6',
-		effect='<li><p>Dealing Fire damage causes the enemy to take the same amount of damage over <span class="silver">3</span> seconds, stacking up to <span class="silver">3000%</span> weapon damage as Fire per second. After reaching <span class="silver">3000%</span> damage per second, the enemy will burn until they die</p></li>',
+		effect='<li><p>Your damage is increased by <span class="silver">25%</span> for each enemy that is burning. Elites that are burning increase your damage by <span class="silver">600%</span>. You can only have one Elite damage bonus active at a time.</p></li>',
 		itemSet=firebirdsFinery)
 	firebirdsFinery6.save()
 
@@ -1932,13 +2052,16 @@ def load_item_sets(apps, schema_editor):
 		itemSet=talRashasElements)
 	talRashasElements2.save()
 
+#2.4
 	talRashasElements4 = Effect(pieces='4',
-		effect='<li><p>Attacks increase your resistance to that damage type by <span class="silver">100%</span> for <span class="silver">6</span> seconds</p></li>',
+		# effect='<li><p>Attacks increase your resistance to that damage type by <span class="silver">100%</span> for <span class="silver">6</span> seconds</p></li>',
+		effect='<li><p>Arcane, Cold, Fire, and Lightning Attacks each increase all of your resistances by <span class="silver">25%</span> for <span class="silver">8</span> seconds</p></li>',
 		itemSet=talRashasElements)
 	talRashasElements4.save()
 
+#2.4
 	talRashasElements6 = Effect(pieces='6',
-		effect='<li><p>Attacks increase your damage by <span class="silver">150%</span> for <span class="silver">6</span> seconds. Arcane, Cold, Fire, and Lightning attacks each add one stack. Adding a stack refreshes the duration</p></li>',
+		effect='<li><p>Attacks increase your damage by <span class="silver">300%</span> for <span class="silver">8</span> seconds. Arcane, Cold, Fire, and Lightning attacks each add one stack. At <span class="silver">4</span> stacks, each different elemental attack extends the duration by <span class="silver">2</span> seconds, up to a maximum of <span class="silver">8</span> seconds</p></li>',
 		itemSet=talRashasElements)
 	talRashasElements6.save()
 

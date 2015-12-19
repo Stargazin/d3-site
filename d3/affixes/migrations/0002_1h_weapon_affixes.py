@@ -65,12 +65,13 @@ def load_ceremonial_knife_affixes(apps, schema_editor):
 		desc='Increase Grasp of the Dead damage by <span>45 - 60%</span>')
 	deadlyGraspOfTheDead.save()
 
-#Last Breath
-	lastMassConfusionCDR = Affix(category='Ceremonial Knives',
-		affix='lastMassConfusionCDR',
-		is_primary=True,
-		desc='Reduce the cooldown of Mass Confusion by <span>15 - 20</span> seconds')
-	lastMassConfusionCDR.save()
+#Removed in 2.4
+# #Last Breath
+# 	lastMassConfusionCDR = Affix(category='Ceremonial Knives',
+# 		affix='lastMassConfusionCDR',
+# 		is_primary=True,
+# 		desc='Reduce the cooldown of Mass Confusion by <span>15 - 20</span> seconds')
+# 	lastMassConfusionCDR.save()
 
 #Starmetal Kukri
 	starmetalCHD = Affix(category='Ceremonial Knives',
@@ -262,6 +263,22 @@ def load_hand_crossbow_affixes(apps, schema_editor):
 		is_primary=False,
 		desc='<span>+1.0 - 5.0%</span> chance to Stun on Hit')
 	dawnStunChance.save()
+
+#Added in 2.4
+#K'mar Tenclip
+	kmarStrafe = Affix(category='Hand Crossbows',
+		affix='kmarStrafe',
+		is_primary=True,
+		desc='Increases Strafe damage by <span>75 - 100%</span>')
+	kmarStrafe.save()
+
+#Added in 2.4
+#Valla's Bequest
+	vallasStrafe = Affix(category='Hand Crossbows',
+		affix='vallasStrafe',
+		is_primary=True,
+		desc='Increases Strafe damage by <span>75 - 100%</span>')
+	vallasStrafe.save()
 
 
 def load_1h_mace_affixes(apps,schema_editor):
@@ -594,6 +611,13 @@ def load_wand_affixes(apps, schema_editor):
 		desc='Increase Disintegrate damage by <span>15 - 30%</span>')
 	sloraksDisintegrate.save()
 
+#Added in 2.4
+#Wand of Woh
+	wandExplosiveBlast = Affix(category='Wands',
+		affix='wandExplosiveBlast',
+		is_primary=True,
+		desc='Increase Explosive Blast damage by <span>75 - 100%</span>')
+	wandExplosiveBlast.save()
 
 def load_ancient_affixes(apps, schema_editor):
 	Affix = apps.get_model("affixes", "Affix")

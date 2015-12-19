@@ -38,10 +38,13 @@
     <p><span>+{{ item.random_primaries }}</span> Random Affixes</p>
   </li>
   {% endif %}
+
 </div> <!-- .item__affix -->
 
 <div class="item__affix">
+
   <span>Secondaries:</span>
+
   {% if item.unique and not item.unique_is_primary %}
   <li class="unique"><p>{{ item.unique|safe }}</p></li>
   {% endif %}
@@ -57,6 +60,7 @@
     <p><span>+{{ item.random_secondaries }}</span> Random Affixes</p>
   </li>
   {% endif %}
+
 </div> <!-- .item__affix -->
 
 {% endblock item_affixes %}

@@ -11,12 +11,6 @@
   padding: 0;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-
 ///**
 // * 1. Prevent iOS text size adjust after orientation change, without disabling
 // *    user zoom.
@@ -28,6 +22,11 @@ html {
   -moz-box-sizing: border-box;
   -ms-text-size-adjust: 100%; /* 1 */
   -webkit-text-size-adjust: 100%; /* 1 */
+}
+
+// Inherit to prevent messing with other libraries
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 /* HTML5 display definitions

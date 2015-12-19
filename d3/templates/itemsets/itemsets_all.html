@@ -17,17 +17,17 @@
 <header>
   <div class="overview">
     <h1>{{ header }} Sets</h1>
-    <h3>Patch 2.3</h3>
+    <h3>Patch 2.4</h3>
   </div> <!-- .overview -->
 
   <div class="toggle-container">
-  <span style="background: url(/assets/media/portraits/42/all.png)" class="toggle toggle--all"></span>
-  <span style="background: url(/assets/media/portraits/42/barb.png)" class="toggle toggle--Barbarian"></span>
-  <span style="background: url(/assets/media/portraits/42/sader.png)" class="toggle toggle--Crusader"></span>
-  <span style="background: url(/assets/media/portraits/42/dh.png)" class="toggle toggle--Demon"></span>
-  <span style="background: url(/assets/media/portraits/42/monk.png)" class="toggle toggle--Monk"></span>
-  <span style="background: url(/assets/media/portraits/42/wd.png)" class="toggle toggle--Witch"></span>
-  <span style="background: url(/assets/media/portraits/42/wiz.png)" class="toggle toggle--Wizard"></span>
+    <span style="background: url(/assets/media/portraits/42/all.png)" class="toggle toggle--all toggle--selected"></span>
+    <span style="background: url(/assets/media/portraits/42/barb.png)" class="toggle toggle--Barbarian"></span>
+    <span style="background: url(/assets/media/portraits/42/sader.png)" class="toggle toggle--Crusader"></span>
+    <span style="background: url(/assets/media/portraits/42/dh.png)" class="toggle toggle--Demon"></span>
+    <span style="background: url(/assets/media/portraits/42/monk.png)" class="toggle toggle--Monk"></span>
+    <span style="background: url(/assets/media/portraits/42/wd.png)" class="toggle toggle--Witch"></span>
+    <span style="background: url(/assets/media/portraits/42/wiz.png)" class="toggle toggle--Wizard"></span>
   </div> <!-- .toggle-container -->
 </header>
 
@@ -53,7 +53,7 @@
     <div class="set__piece-container">
 
       {% for piece in itemset.pieces.all %}
-      <div class="set__piece"><a href="#coming-soon">{{ piece }}</a></div>
+      <div class="set__piece"><a href="{% url 'single-set' itemset.owner_slug itemset.name_slug %}">{{ piece }}</a></div>
       {% endfor %}
 
     </div> <!-- .set__piece-container -->

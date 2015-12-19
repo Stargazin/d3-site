@@ -80,7 +80,7 @@ def load_sources(apps, schema_editor):
 		category='Sources',
 		name='Triumvirate',
 		pic='/assets/media/items/legendaries/offhands/sources/triumvirate.png',
-		unique='Your Signature Spells increase the damage of Arcane Orb by <span>75 - 100%</span> for <span class="silver">6</span> seconds, stacking up to <span class="silver">3</span> times.',
+		unique='Your Signature Spells increase the damage of Arcane Orb by <span>150 - 200%</span> for <span class="silver">6</span> seconds, stacking up to <span class="silver">3</span> times.',
 		random_primaries='2',
 		random_secondaries='1')
 	triumvirate.save()
@@ -112,6 +112,12 @@ def load_quivers(apps, schema_editor):
 	rcr = Affix.objects.get(category='Quivers', affix='rcr')
 
 	holyEleDmg = Affix.objects.get(category='Quivers', affix='holyEleDmg')
+	bombadiersSentry = Affix.objects.get(category='Quivers',
+		affix='bombadiersSentry')
+	deadMultishot = Affix.objects.get(category='Quivers',
+		affix='deadMultishot')
+	sinRapidFire = Affix.objects.get(category='Quivers',
+		affix='sinRapidFire')
 
 
 	archfiendArrows = Weapon(slot='Offhands',
@@ -123,6 +129,7 @@ def load_quivers(apps, schema_editor):
 	archfiendArrows.save()
 	archfiendArrows.affixes.add(ias, chc, eliteDmg)
 
+#2.4
 	bombadiersRucksack = Weapon(slot='Offhands',
 		category='Quivers',
 		name='Bombadier\'s Rucksack',
@@ -131,7 +138,7 @@ def load_quivers(apps, schema_editor):
 		random_primaries='2',
 		random_secondaries='1')
 	bombadiersRucksack.save()
-	bombadiersRucksack.affixes.add(dext, ias, chc)
+	bombadiersRucksack.affixes.add(dext, ias, chc, bombadiersSentry)
 
 	deadMansLegacy = Weapon(slot='Offhands',
 		category='Quivers',
@@ -141,7 +148,7 @@ def load_quivers(apps, schema_editor):
 		random_primaries='2',
 		random_secondaries='1')
 	deadMansLegacy.save()
-	deadMansLegacy.affixes.add(dext, ias, chc)
+	deadMansLegacy.affixes.add(dext, ias, chc, deadMultishot)
 
 	emimeisDuffel = Weapon(slot='Offhands',
 		category='Quivers',
@@ -181,14 +188,16 @@ def load_quivers(apps, schema_editor):
 	meticulousBolts.save()
 	meticulousBolts.affixes.add(dext, ias)
 
+#2.4
 	sinSeekers = Weapon(slot='Offhands',
 		category='Quivers',
 		name='Sin Seekers',
 		pic='/assets/media/items/legendaries/offhands/quivers/sin_seekers.png',
+		unique='Rapid Fire no longer has a channel cost',
 		random_primaries='2',
-		random_secondaries='2')
+		random_secondaries='1')
 	sinSeekers.save()
-	sinSeekers.affixes.add(dext, ias, chc)
+	sinSeekers.affixes.add(dext, ias, chc, sinRapidFire)
 
 	spinesOfSeethingHatred = Weapon(slot='Offhands',
 		category='Quivers',
@@ -236,8 +245,8 @@ def load_mojos(apps, schema_editor):
 	durability = Affix.objects.get(category='Mojos',
 		affix='durability')
 
-	thingItemPickup = Affix.objects.get(category='Mojos',
-		affix='thingItemPickup')
+	# thingItemPickup = Affix.objects.get(category='Mojos',
+	# 	affix='thingItemPickup')
 
 
 	gazingDemise = Weapon(slot='Offhands',
@@ -287,13 +296,15 @@ def load_mojos(apps, schema_editor):
 	spite.save()
 	spite.affixes.add(dmg, chc, maxMana)
 
+#2.4
 	thingOfTheDeep = Weapon(slot='Offhands',
 		category='Mojos',
 		name='Thing of the Deep',
 		pic='/assets/media/items/legendaries/offhands/mojos/thing_of_the_deep.png',
+		unique='<span class="silver">+20</span> Yards to Gold and Globe Pickup',
 		random_primaries='1')
 	thingOfTheDeep.save()
-	thingOfTheDeep.affixes.add(dmg, inte, chc, manaRegen, maxMana, thingItemPickup)
+	thingOfTheDeep.affixes.add(dmg, inte, chc, manaRegen, maxMana)
 
 	uhkapianSerpent = Weapon(slot='Offhands',
 		category='Mojos',
@@ -319,6 +330,15 @@ def load_crusader_shields(apps, schema_editor):
 	blockChance = Affix.objects.get(category='Crusader Shields',
 		affix='blockChance')
 
+	frydehrsCondemn = Affix.objects.get(category='Crusader Shields',
+		affix='frydehrsCondemn')
+
+	jekangbordBlessedShield = Affix.objects.get(category='Crusader Shields',
+		affix='jekangbordBlessedShield')
+
+	unrelentingPhalanxDmg = Affix.objects.get(category='Crusader Shields',
+		affix='unrelentingPhalanxDmg')
+
 	akaratsAwakening = Weapon(slot='Offhands',
 		category='Crusader Shields',
 		name='Akarat\'s Awakening',
@@ -330,6 +350,7 @@ def load_crusader_shields(apps, schema_editor):
 	akaratsAwakening.save()
 	akaratsAwakening.affixes.add(stre, blockChance)
 
+#2.4
 	frydehrsWrath = Weapon(slot='Offhands',
 		category='Crusader Shields',
 		name='Frydehr\'s Wrath',
@@ -339,7 +360,7 @@ def load_crusader_shields(apps, schema_editor):
 		random_secondaries='1',
 		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
 	frydehrsWrath.save()
-	frydehrsWrath.affixes.add(stre)
+	frydehrsWrath.affixes.add(stre, frydehrsCondemn)
 
 	guardOfJohanna = Weapon(slot='Offhands',
 		category='Crusader Shields',
@@ -374,6 +395,7 @@ def load_crusader_shields(apps, schema_editor):
 	hellskull.save()
 	hellskull.affixes.add(stre)
 
+#2.4
 	jekangbord = Weapon(slot='Offhands',
 		category='Crusader Shields',
 		name='jekangbord',
@@ -383,7 +405,7 @@ def load_crusader_shields(apps, schema_editor):
 		random_secondaries='1',
 		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
 	jekangbord.save()
-	jekangbord.affixes.add(stre)
+	jekangbord.affixes.add(stre, jekangbordBlessedShield)
 
 	piroMarella = Weapon(slot='Offhands',
 		category='Crusader Shields',
@@ -429,6 +451,7 @@ def load_crusader_shields(apps, schema_editor):
 	theFinalWitness.save()
 	theFinalWitness.affixes.add(stre)
 
+#2.4
 	unrelentingPhalanx = Weapon(slot='Offhands',
 		category='Crusader Shields',
 		name='Unrelenting Phalanx',
@@ -438,7 +461,7 @@ def load_crusader_shields(apps, schema_editor):
 		random_secondaries='1',
 		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
 	unrelentingPhalanx.save()
-	unrelentingPhalanx.affixes.add(stre)
+	unrelentingPhalanx.affixes.add(stre, unrelentingPhalanxDmg)
 
 	for weapon in Weapon.objects.filter(category='Crusader Shields'):
 		weapon.owner = 'sader'

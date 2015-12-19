@@ -152,6 +152,8 @@ def load_spirit_stones(apps, schema_editor):
 
 	eyeLightDmg = Affix.objects.get(category='Spirit Stones',
 		affix='eyeLightDmg')
+	gyanaLashingTailKick = Affix.objects.get(category='Spirit Stones',
+		affix='gyanaLashingTailKick')
 	tzoWaveOfLight = Affix.objects.get(category='Spirit Stones',
 		affix='tzoWaveOfLight')
 
@@ -181,6 +183,7 @@ def load_spirit_stones(apps, schema_editor):
 	eyeOfPeshkov.save()
 	eyeOfPeshkov.affixes.add(dext, sockets)
 
+#2.4
 	gyanaNaKashu = Armor(category='Spirit Stones',
 		name='Gyana Na Kashu',
 		pic='/assets/media/items/legendaries/armor/head/spiritstones/gyana_na_kashu.png',
@@ -188,7 +191,7 @@ def load_spirit_stones(apps, schema_editor):
 		random_primaries='2',
 		random_secondaries='1')
 	gyanaNaKashu.save()
-	gyanaNaKashu.affixes.add(dext, sockets)
+	gyanaNaKashu.affixes.add(dext, gyanaLashingTailKick, sockets)
 
 	kekegisUnbreakableSpirit = Armor(category='Spirit Stones',
 		name='Kekegi\'s Unbreakable Spirit',
@@ -445,18 +448,19 @@ def load_shoulders(apps, schema_editor):
 	extraGold = Affix.objects.get(slot="Shoulders",
 		affix='extraGold')
 
-	profaneItemPickup = Affix.objects.get(slot="Shoulders",
-		affix='profaneItemPickup')
+	corruptionItemPickup = Affix.objects.get(slot="Shoulders",
+		affix='corruptionItemPickup')
 
+#Changed for 2.4
 	corruption = Armor(slot='Shoulders',
 		name='Corruption',
 		pic='/assets/media/items/legendaries/armor/shoulders/corruption.png',
 		random_primaries='4',
-		random_secondaries='2',
+		# random_secondaries='2',
 		notes='crafted',
 		owner='all')
 	corruption.save()
-	# corruption.affixes.add()
+	corruption.affixes.add(itemHealing, corruptionItemPickup)
 
 	deathWatchMantle = Armor(slot='Shoulders',
 		name='Death Watch Mantle',
@@ -497,13 +501,14 @@ def load_shoulders(apps, schema_editor):
 	pauldronsOfTheSkeletonKing.save()
 	pauldronsOfTheSkeletonKing.affixes.add(mainStat, vita, armor)
 
-	profanePauldrons = Armor(slot='Shoulders',
-		name='Profane Pauldrons',
-		pic='/assets/media/items/legendaries/armor/shoulders/profane_pauldrons.png',
-		random_primaries='3',
-		owner='all')
-	profanePauldrons.save()
-	profanePauldrons.affixes.add(mainStat, itemHealing, profaneItemPickup)
+#No longer drops in 2.4
+	# profanePauldrons = Armor(slot='Shoulders',
+	# 	name='Profane Pauldrons',
+	# 	pic='/assets/media/items/legendaries/armor/shoulders/profane_pauldrons.png',
+	# 	random_primaries='3',
+	# 	owner='all')
+	# profanePauldrons.save()
+	# profanePauldrons.affixes.add(mainStat, itemHealing, profaneItemPickup)
 
 	spauldersOfZakara = Armor(slot='Shoulders',
 		name='Spaulders of Zakara',
@@ -552,11 +557,13 @@ def load_chest_armor(apps, schema_editor):
 	tyraelsDemonDmg = Affix.objects.get(category='Chest Armors',
 		affix='tyraelsDemonDmg')
 
+#2.4
 	aquilaCuirass = Armor(category='Chest Armors',
 		name='Aquila Cuirass',
 		pic='/assets/media/items/legendaries/armor/torso/chestarmor/aquila_cuirass.png',
+		unique='While above <span>90 - 95%</span> primary resource, all damage taken is reduced by <span class="silver">50%</span>',
 		random_primaries='2',
-		random_secondaries='2',
+		random_secondaries='1',
 		owner='all')
 	aquilaCuirass.save()
 	aquilaCuirass.affixes.add(mainStat, vita)
@@ -564,7 +571,7 @@ def load_chest_armor(apps, schema_editor):
 	armorOfTheKindRegent = Armor(category='Chest Armors',
 		name='Armor of the KindRegent',
 		pic='/assets/media/items/legendaries/armor/torso/chestarmor/armor_of_the_kind_regent.png',
-		unique='Smite will now also be cast at a second nearby enemy.',
+		unique='Smite will now also be cast at a second nearby enemy',
 		random_primaries='3',
 		random_secondaries='1',
 		owner='sader')
@@ -600,12 +607,14 @@ def load_chest_armor(apps, schema_editor):
 	goldskin.save()
 	goldskin.affixes.add(mainStat, allRes, goldskinExtraGold)
 
+#2.4
 	heartOfIron = Armor(category='Chest Armors',
 		name='Heart of Iron',
 		pic='/assets/media/items/legendaries/armor/torso/chestarmor/heart_of_iron.png',
+		unique='Gain Thorns equal to <span>250 - 300%</span> of your Vitality',
 		random_primaries='2',
-		random_secondaries='2',
-		owner='all')
+		random_secondaries='1',
+		owner='sader')
 	heartOfIron.save()
 	heartOfIron.affixes.add(mainStat, allRes)
 
@@ -737,8 +746,8 @@ def load_bracers(apps, schema_editor):
 		affix='slaveMovementSpeed')
 	slaveLPK = Affix.objects.get(slot='Bracers',
 		affix='slaveLPK')
-	steadyIAS = Affix.objects.get(slot='Bracers',
-		affix='steadyIAS')
+	# steadyIAS = Affix.objects.get(slot='Bracers',
+	# 	affix='steadyIAS')
 
 	ancientParthanDefenders = Armor(slot='Bracers',
 		name='Ancient Parthan Defenders',
@@ -789,10 +798,11 @@ def load_bracers(apps, schema_editor):
 	custerianWristguards.save()
 	custerianWristguards.affixes.add(chc, extraGold)
 
+#2.4
 	drakonsLesson = Armor(slot='Bracers',
 		name='Drakon\'s Lesson',
 		pic='/assets/media/items/legendaries/armor/wrists/drakons_lesson.png',
-		unique='When your Shield Bash hits <span class="silver">3</span> or fewer enemies, its damage is increased by <span>150 - 200%</span> and <span class="silver">25%</span> of its Wrath Cost is refunded.',
+		unique='When your Shield Bash hits <span class="silver">3</span> or fewer enemies, its damage is increased by <span>300 - 400%</span> and <span class="silver">25%</span> of its Wrath Cost is refunded.',
 		random_primaries='2',
 		random_secondaries='1',
 		owner='sader')
@@ -916,14 +926,15 @@ def load_bracers(apps, schema_editor):
 	spiritGuards.save()
 	spiritGuards.affixes.add(mainStat, chc)
 
-	steadyStrikers = Armor(slot='Bracers',
-		name='Steady Strikers',
-		pic='/assets/media/items/legendaries/armor/wrists/steady_strikers.png',
-		random_primaries='2',
-		random_secondaries='2',
-		owner='all')
-	steadyStrikers.save()
-	steadyStrikers.affixes.add(mainStat, steadyIAS)
+#Removed in 2.4
+	# steadyStrikers = Armor(slot='Bracers',
+	# 	name='Steady Strikers',
+	# 	pic='/assets/media/items/legendaries/armor/wrists/steady_strikers.png',
+	# 	random_primaries='2',
+	# 	random_secondaries='2',
+	# 	owner='all')
+	# steadyStrikers.save()
+	# steadyStrikers.affixes.add(mainStat, steadyIAS)
 
 	strongarmBracers = Armor(slot='Bracers',
 		name='Strongarm Bracers',
@@ -1095,8 +1106,8 @@ def load_belts(apps, schema_editor):
 		affix='hellcatIAS')
 	saffronCCReduction = Affix.objects.get(category='Belts',
 		affix='saffronCCReduction')
-	stringReducedMeleeDmg = Affix.objects.get(category='Belts',
-		affix='stringReducedMeleeDmg')
+	# stringReducedMeleeDmg = Affix.objects.get(category='Belts',
+	# 	affix='stringReducedMeleeDmg')
 	witchingIAS = Affix.objects.get(category='Belts',
 		affix='witchingIAS')
 	witchingCHD = Affix.objects.get(category='Belts',
@@ -1177,10 +1188,11 @@ def load_belts(apps, schema_editor):
 	crashingRain.save()
 	crashingRain.affixes.add(mainStat, vita)
 
+#2.4
 	fazulasImprobableChain = Armor(category='Belts',
 		name='Fazula\'s Improbable Chain',
 		pic='/assets/media/items/legendaries/armor/waist/belts/fazulas_improbable_chain.png',
-		unique='You automatically start with <span>15 - 20</span> Archon stacks when entering Archon form.',
+		unique='You automatically start with <span>40 - 50</span> Archon stacks when entering Archon form.',
 		random_primaries='3',
 		random_secondaries='1',
 		owner='wiz')
@@ -1341,14 +1353,17 @@ def load_belts(apps, schema_editor):
 	seborsNightmare.save()
 	seborsNightmare.affixes.add(mainStat, itemPickup)
 
+#2.4
 	stringOfEars = Armor(category='Belts',
 		name='String of Ears',
 		pic='/assets/media/items/legendaries/armor/waist/belts/string_of_ears.png',
+		unique='<span>+25.0 - 30.0%</span> Melee Damage Reduction',
 		random_primaries='3',
-		random_secondaries='1',
+		# random_secondaries='1',
 		owner='all')
 	stringOfEars.save()
-	stringOfEars.affixes.add(mainStat, stringReducedMeleeDmg)
+	# stringOfEars.affixes.add(mainStat, stringReducedMeleeDmg)
+	stringOfEars.affixes.add(mainStat)
 
 	theWitchingHour = Armor(category='Belts',
 		name='The Witching Hour',
@@ -1398,6 +1413,8 @@ def load_mighty_belts(apps, schema_editor):
 	maxFury = Affix.objects.get(category='Mighty Belts',
 		affix='maxFury')
 
+	dreadAvalanche = Affix.objects.get(category='Mighty Belts',
+		affix='dreadAvalanche')
 	girdleIAS = Affix.objects.get(category='Mighty Belts',
 		affix='girdleIAS')
 	kotuursBlockChance = Affix.objects.get(category='Mighty Belts',
@@ -1421,14 +1438,15 @@ def load_mighty_belts(apps, schema_editor):
 	chilaniksChain.save()
 	chilaniksChain.affixes.add(stre)
 
+#2.4
 	dreadIron = Armor(category='Mighty Belts',
 		name='Dread Iron',
 		pic='/assets/media/items/legendaries/armor/waist/mightybelts/dread_iron.png',
 		unique='Ground Stomp causes an Avalanche.',
-		random_primaries='2',
+		random_primaries='1',
 		random_secondaries='1')
 	dreadIron.save()
-	dreadIron.affixes.add(stre, vita)
+	dreadIron.affixes.add(stre, vita, dreadAvalanche)
 
 	girdleOfGiants = Armor(category='Mighty Belts',
 		name='Girdle of Giants',
@@ -1506,7 +1524,8 @@ def load_pants(apps, schema_editor):
 		pic='/assets/media/items/legendaries/armor/legs/deaths_bargain.png',
 		unique='Gain an aura of death that deals <span>750 - 1000%</span> of your Life per Second as Physical damage to enemies within <span class="silver">16</span> yards. You no longer regenerate Life.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		owner='all')
 	deathsBargain.save()
 	deathsBargain.affixes.add(mainStat, lps)
 
@@ -1515,15 +1534,19 @@ def load_pants(apps, schema_editor):
 		pic='/assets/media/items/legendaries/armor/legs/depth_diggers.png',
 		unique='Primary skills that generate resource deal <span>80 - 100%</span> additional damage.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		owner='all')
 	depthDiggers.save()
 	depthDiggers.affixes.add(mainStat, allRes)
 
+#2.4
 	hammerJammers = Armor(slot='Pants',
 		name='Hammer Jammers',
 		pic='/assets/media/items/legendaries/armor/legs/hammer_jammers.png',
+		unique='Enemies take <span>300 - 400%</span> increased damage from your Blessed Hammers for <span class="silver">10</span> seconds after you hit them with a Blind, Immobilize, or Stun',
 		random_primaries='2',
-		random_secondaries='1')
+		# random_secondaries='1',
+		owner='sader')
 	hammerJammers.save()
 	hammerJammers.affixes.add(mainStat, hammerMovementSpeed, extraGold)
 
@@ -1532,7 +1555,8 @@ def load_pants(apps, schema_editor):
 		pic='/assets/media/items/legendaries/armor/legs/hexing_pants_of_mr_yan.png',
 		unique='Your resource generation and damage is increased by <span class="silver">25%</span> while moving and decreased by <span>20 - 25%</span> while standing still.',
 		random_primaries='3',
-		random_secondaries='1')
+		random_secondaries='1',
+		owner='all')
 	hexingPantsOfMrYan.save()
 	hexingPantsOfMrYan.affixes.add(mainStat)
 
@@ -1541,7 +1565,8 @@ def load_pants(apps, schema_editor):
 		pic='/assets/media/items/legendaries/armor/legs/pox_faulds.png',
 		unique='When <span class="silver">3</span> or more enemies are within <span class="silver">12</span> yards, you release a vile stench that deals <span>450 - 550%</span> weapon damage as Poison every second for <span class="silver">5</span> seconds to enemies within <span class="silver">15</span> yards.',
 		random_primaries='3',
-		random_secondaries='1')
+		random_secondaries='1',
+		owner='all')
 	poxFaulds.save()
 	poxFaulds.affixes.add(mainStat)
 
@@ -1550,7 +1575,8 @@ def load_pants(apps, schema_editor):
 		pic='/assets/media/items/legendaries/armor/legs/skelons_deceit.png',
 		random_primaries='4',
 		random_secondaries='2',
-		notes='crafted')
+		notes='crafted',
+		owner='all')
 	skelonsDeceit.save()
 	# skelonsDeceit.affixes.add()
 
@@ -1558,13 +1584,14 @@ def load_pants(apps, schema_editor):
 		name='Swamp Land Waders',
 		pic='/assets/media/items/legendaries/armor/legs/swamp_land_waders.png',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		owner='all')
 	swampLandWaders.save()
 	swampLandWaders.affixes.add(mainStat, swampPoisDmg, swampCCReduction)
 
 	for armor in Armor.objects.filter(slot='Pants'):
 		armor.inherent = '<span class="inherent"><span>660 - 759</span> Armor</span>'
-		armor.owner = 'all'
+		# armor.owner = 'all'
 		armor.save()
 
 

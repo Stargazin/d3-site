@@ -101,6 +101,7 @@ def load_amulets(apps, schema_editor):
 	gorget.save()
 	gorget.affixes.add(mainStat, chc, allRes)
 
+#2.4
 	halcyon = Accessory(slot='Amulets',
 		name='Halcyon\'s Ascent',
 		pic='/assets/media/items/legendaries/accessories/amulets/halcyons_ascent.png',
@@ -109,7 +110,7 @@ def load_amulets(apps, schema_editor):
 		random_secondaries='1',
 		owner='all')
 	halcyon.save()
-	halcyon.affixes.add(mainStat, cdr)
+	halcyon.affixes.add(mainStat, sockets)
 
 	haunt = Accessory(slot='Amulets',
 		name='Haunt of Vaxo',
@@ -307,8 +308,8 @@ def load_rings(apps, schema_editor):
 		affix='nagelringMagicFind')
 	obsidianDurability = Affix.objects.get(slot='Rings',
 		affix='obsidianDurability')
-	oculusEliteDmg = Affix.objects.get(slot='Rings',
-		affix='oculusEliteDmg')
+	# oculusEliteDmg = Affix.objects.get(slot='Rings',
+	# 	affix='oculusEliteDmg')
 	pandemoniumFearChance = Affix.objects.get(slot='Rings',
 		affix='pandemoniumFearChance')
 	rechelsFearChance = Affix.objects.get(slot='Rings',
@@ -423,11 +424,13 @@ def load_rings(apps, schema_editor):
 	hellfire.save()
 	hellfire.affixes.add(hellfireBonusExp)
 
+#2.4
 	justice = Accessory(slot='Rings',
 		name='Justice Lantern',
 		pic='/assets/media/items/legendaries/accessories/rings/justice_lantern.png',
+		unique='Gain damage reduction equal to <span>45 - 55%</span> of your Block Chance',
 		random_primaries='2',
-		random_secondaries='1',
+		# random_secondaries='1',
 		owner='all')
 	justice.save()
 	justice.affixes.add(mainStat, justiceBlockChance, justiceCCReduction)
@@ -479,14 +482,17 @@ def load_rings(apps, schema_editor):
 	obsidian.save()
 	obsidian.affixes.add(ias, chc, cdr, rcr, obsidianDurability)
 
+#2.4
 	oculus = Accessory(slot='Rings',
 		name='Oculus Ring',
 		pic='/assets/media/items/legendaries/accessories/rings/oculus_ring.png',
-		unique='Chance to create an area of focused power on killing a monster. Damage is increased by <span>35 - 40%</span> while standing in the area.',
+		unique='Create an area of focused power near a monster when it is killed. Damage is increased by <span>70 - 85%</span> while standing in the area.',
+		random_primaries='2',
 		random_secondaries='1',
 		owner='all')
 	oculus.save()
-	oculus.affixes.add(mainStat, allRes, ias, oculusEliteDmg)
+	# oculus.affixes.add(mainStat, allRes, ias, oculusEliteDmg)
+	oculus.affixes.add(mainStat, sockets)
 
 	pandemonium = Accessory(slot='Rings',
 		name='Pandemonium Loop',

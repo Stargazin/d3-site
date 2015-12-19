@@ -593,12 +593,13 @@ def load_ring_affixes(apps, schema_editor):
 		desc='Ignores Durability Loss')
 	obsidianDurability.save()
 
-#Oculus Ring
-	oculusEliteDmg = Affix(slot='Rings',
-		affix='oculusEliteDmg',
-		is_primary=True,
-		desc='<span>+12.0 - 16.0%</span> Elite Damage Reduction')
-	oculusEliteDmg.save()
+#No longer in 2.4
+# #Oculus Ring
+# 	oculusEliteDmg = Affix(slot='Rings',
+# 		affix='oculusEliteDmg',
+# 		is_primary=True,
+# 		desc='<span>+12.0 - 16.0%</span> Elite Damage Reduction')
+# 	oculusEliteDmg.save()
 
 #Pandemonium Loop
 	pandemoniumFearChance = Affix(slot='Rings',

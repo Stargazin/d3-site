@@ -128,6 +128,14 @@ def load_spirit_stone_affixes(apps, schema_editor):
 		ancient='<span>+220 - 260</span> Experience per Kill')
 	killExp.save()
 
+#Added in 2.4
+#Gyana Na Kashu
+	gyanaLashingTailKick = Affix(category='Spirit Stones',
+		affix='gyanaLashingTailKick',
+		is_primary=True,
+		desc='Increase Lashing Tail Kick damage by <span>75 - 100%</span>')
+	gyanaLashingTailKick.save()
+
 #The Eye of the Storm
 	eyeLightDmg = Affix(category='Spirit Stones',
 		affix='eyeLightDmg',
@@ -135,11 +143,12 @@ def load_spirit_stone_affixes(apps, schema_editor):
 		desc='Lightning skills do <span>15 - 30%</span> more damage')
 	eyeLightDmg.save()
 
+#2.4
 #Tzo Krin's Gaze
 	tzoWaveOfLight = Affix(category='Spirit Stones',
 		affix='tzoWaveOfLight',
 		is_primary=True,
-		desc='Increase Wave of Light damage by <span>20 - 25%</span>')
+		desc='Increase Wave of Light damage by <span>125 - 150%</span>')
 	tzoWaveOfLight.save()
 
 
@@ -253,11 +262,20 @@ def load_shoulders_affixes(apps, schema_editor):
 		desc='<span>+32 - 35%</span> Extra Gold from Monsters')
 	extraGold.save()
 
-	profaneItemPickup = Affix(slot='Shoulders',
-		affix='profaneItemPickup',
+#CorruptionItemPickup
+	corruptionItemPickup = Affix(slot='Shoulders',
+		affix='corruptionItemPickup',
 		is_primary=False,
-		desc='<span>+4 - 6</span> Yards to Gold and Globe Pickup')
-	profaneItemPickup.save()
+		desc='<span>+6 - 7</span> Yards to Gold and Globe Pickup')
+	corruptionItemPickup.save()
+
+#No longer drops in 2.4
+# #Profane Pauldrons
+# 	profaneItemPickup = Affix(slot='Shoulders',
+# 		affix='profaneItemPickup',
+# 		is_primary=False,
+# 		desc='<span>+4 - 6</span> Yards to Gold and Globe Pickup')
+# 	profaneItemPickup.save()
 
 
 def load_chest_armor_affixes(apps, schema_editor):
@@ -425,12 +443,13 @@ def load_bracers_affixes(apps, schema_editor):
 		ancient='<span>+9,805 - 11,590</span> Life per Kill')
 	slaveLPK.save()
 
-#Steady Strikers
-	steadyIAS = Affix(slot='Bracers',
-		affix='steadyIAS',
-		is_primary=True,
-		desc='<span>+5.0 - 7.0%</span> Attack Speed')
-	steadyIAS.save()
+#Removed in 2.4
+# #Steady Strikers
+# 	steadyIAS = Affix(slot='Bracers',
+# 		affix='steadyIAS',
+# 		is_primary=True,
+# 		desc='<span>+5.0 - 7.0%</span> Attack Speed')
+# 	steadyIAS.save()
 
 
 def load_gloves_affixes(apps, schema_editor):
@@ -566,12 +585,13 @@ def load_belt_affixes(apps, schema_editor):
 		desc='<span>+20 - 40%</span> Crowd Control Duration Reduction')
 	saffronCCReduction.save()
 
-#String of Ears
-	stringReducedMeleeDmg = Affix(category='Belts',
-		affix='stringReducedMeleeDmg',
-		is_primary=False,
-		desc='<span>+25.0 - 30.0%</span> Melee Damage Reduction')
-	stringReducedMeleeDmg.save()
+#Legendary in 2.4
+# #String of Ears
+# 	stringReducedMeleeDmg = Affix(category='Belts',
+# 		affix='stringReducedMeleeDmg',
+# 		is_primary=False,
+# 		desc='<span>+25.0 - 30.0%</span> Melee Damage Reduction')
+# 	stringReducedMeleeDmg.save()
 
 #The Witching Hour
 	witchingIAS = Affix(category='Belts',
@@ -636,6 +656,14 @@ def load_mighty_belt_affixes(apps, schema_editor):
 		is_primary=False,
 		desc='<span>+10 - 12</span> Max Fury')
 	maxFury.save()
+
+#Added in 2.4
+#Dread Iron
+	dreadAvalanche = Affix(category='Mighty Belts',
+		affix='dreadAvalanche',
+		is_primary=True,
+		desc='Increases Avalanche damage by <span>150 - 200%</span>')
+	dreadAvalanche.save()
 
 #Girdle of Giants
 	girdleIAS = Affix(category='Mighty Belts',

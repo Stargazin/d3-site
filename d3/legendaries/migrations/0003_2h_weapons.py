@@ -246,6 +246,8 @@ def load_crossbows(apps, schema_editor):
 
 	burizadoFreezeChance = Affix.objects.get(affix='burizadoFreezeChance',
 		category='Crossbows')
+	manticoreClusterArrow = Affix.objects.get(affix='manticoreClusterArrow',
+		category='Crossbows')
 
 	arcaneBarb = Weapon(slot='2H Weapons',
 		name='Arcane Barb',
@@ -300,6 +302,7 @@ def load_crossbows(apps, schema_editor):
 	demonMachine.save()
 	demonMachine.affixes.add(mainStat)
 
+#2.4
 	hellrack = Weapon(slot='2H Weapons',
 		name='Hellrack',
 		pic='/assets/media/items/legendaries/weapons/2h/crossbows/hellrack.png',
@@ -309,17 +312,19 @@ def load_crossbows(apps, schema_editor):
 		random_secondaries='1',
 		owner='all')
 	hellrack.save()
-	hellrack.affixes.add(sockets)
+	hellrack.affixes.add(mainStat, sockets)
 
+#2.4
 	manticore = Weapon(slot='2H Weapons',
 		name='Manticore',
 		pic='/assets/media/items/legendaries/weapons/2h/crossbows/manticore.png',
 		category='Crossbows',
-		random_primaries='1',
-		random_secondaries='2',
-		owner='all')
+		unique='Reduces the cost of Cluster Arrow by <span>75 - 100%</span>',
+		# random_primaries='1',
+		random_secondaries='1',
+		owner='dh')
 	manticore.save()
-	manticore.affixes.add(mainStat, sockets)
+	manticore.affixes.add(mainStat, manticoreClusterArrow, sockets)
 
 	pusSpitter = Weapon(slot='2H Weapons',
 		name='Pus Spitter',
@@ -332,16 +337,17 @@ def load_crossbows(apps, schema_editor):
 	pusSpitter.save()
 	pusSpitter.affixes.add(mainStat)
 
+#2.4
 	wojahnniAssaulter = Weapon(slot='2H Weapons',
 		name='Wojahnni Assaulter',
 		pic='/assets/media/items/legendaries/weapons/2h/crossbows/wojahnni_assaulter.png',
 		category='Crossbows',
 		unique='Rapid Fire deals <span>30 - 40%</span> more damage for every second that you channel. Stacks up to <span class="silver">4</span> times.',
-		random_primaries='1',
-		random_secondaries='2',
+		random_primaries='2',
+		random_secondaries='1',
 		owner='dh')
 	wojahnniAssaulter.save()
-	wojahnniAssaulter.affixes.add(sockets)
+	wojahnniAssaulter.affixes.add(mainStat, sockets)
 
 	for weapon in Weapon.objects.filter(category="Crossbows"):
 		weapon.inherent = '<span class="inherent"><span>1.10</span> Attacks per Second</span>'
@@ -357,19 +363,23 @@ def load_daibos(apps, schema_editor):
 	sockets = Affix.objects.get(affix='sockets',
 		category='Daibos')
 
+	balanceTempestRush = Affix.objects.get(affix='balanceTempestRush',
+		category='Daibos')
 	incenseWaveOfLight = Affix.objects.get(affix='incenseWaveOfLight',
 		category='Daibos')
 	staffDeadlyReach = Affix.objects.get(affix='staffDeadlyReach',
 		category='Daibos')
 
+#2.4
 	balance = Weapon(slot='2H Weapons',
 		name='Balance',
 		pic='/assets/media/items/legendaries/weapons/2h/daibos/balance.png',
 		category='Daibos',
+		unique='When your Tempest Rush hits <span class="silver">3</span> or fewer enemies, it gains <span class="silver">100%</span> Critical Hit Chance',
 		random_primaries='2',
-		random_secondaries='2')
+		random_secondaries='1')
 	balance.save()
-	balance.affixes.add(dext)
+	balance.affixes.add(dext, balanceTempestRush)
 
 	flyingDragon = Weapon(slot='2H Weapons',
 		name='Flying Dragon',
@@ -462,6 +472,9 @@ def load_2h_flails(apps, schema_editor):
 	stre = Affix.objects.get(affix='stre', category='2H Flails')
 	sockets = Affix.objects.get(affix='sockets', category='2H Flails')
 
+	goldenSweepAttack = Affix.objects.get(affix='goldenSweepAttack', category='2H Flails')
+
+
 	balefulRemnant = Weapon(slot='2H Weapons',
 		name='Baleful Remnant',
 		pic='/assets/media/items/legendaries/weapons/2h/flails/baleful_remnant.png',
@@ -482,6 +495,7 @@ def load_2h_flails(apps, schema_editor):
 	fateOfTheFell.save()
 	fateOfTheFell.affixes.add(stre)
 
+#2.4
 	goldenFlense = Weapon(slot='2H Weapons',
 		name='Golden Flense',
 		pic='/assets/media/items/legendaries/weapons/2h/flails/golden_flense.png',
@@ -490,7 +504,7 @@ def load_2h_flails(apps, schema_editor):
 		random_primaries='2',
 		random_secondaries='1')
 	goldenFlense.save()
-	goldenFlense.affixes.add(stre)
+	goldenFlense.affixes.add(stre, goldenSweepAttack)
 
 	theMortalDrama = Weapon(slot='2H Weapons',
 		name='The Mortal Drama',
@@ -644,7 +658,7 @@ def load_2h_mighty_weapons(apps, schema_editor):
 	bastionsRevered.affixes.add(stre, sockets)
 
 	furyOfTheVanishedPeak = Weapon(slot='2H Weapons',
-		name='Fury of the VanishedPeak',
+		name='Fury of the Vanished Peak',
 		pic='/assets/media/items/legendaries/weapons/2h/mightyweapons/fury_of_the_vanished_peak.png',
 		category='2H Mighty Weapons',
 		unique='Reduces the Fury cost of Seismic Slam by <span>40 - 50%</span>.',
@@ -731,13 +745,15 @@ def load_polearms(apps, schema_editor):
 	pledgeOfCaldeum.save()
 	pledgeOfCaldeum.affixes.add(mainStat)
 
+#2.4
 	standoff = Weapon(slot='2H Weapons',
 		name='Standoff',
 		pic='/assets/media/items/legendaries/weapons/2h/polearms/standoff.png',
 		category='Polearms',
+		unique='Furious Charge gains increased damage equal to <span>200 - 250%</span> of your bonus Movement Speed',
 		random_primaries='1',
-		random_secondaries='2',
-		owner='all')
+		random_secondaries='1',
+		owner='barb')
 	standoff.save()
 	standoff.affixes.add(mainStat, sockets)
 
@@ -926,6 +942,8 @@ def load_2h_swords(apps, schema_editor):
 
 	blackguardCCReduction = Affix.objects.get(affix='blackguardCCReduction',
 		category='2H Swords')
+	bladeCondemn = Affix.objects.get(affix='bladeCondemn',
+		category='2H Swords')
 	corruptedUndeadDmg = Affix.objects.get(affix='corruptedUndeadDmg',
 		category='2H Swords')
 	faithfulThorns = Affix.objects.get(affix='faithfulThorns',
@@ -947,6 +965,7 @@ def load_2h_swords(apps, schema_editor):
 	blackguard.save()
 	blackguard.affixes.add(percentDmg, mainStat, blackguardCCReduction)
 
+#2.4
 	bladeOfProphecy = Weapon(slot='2H Weapons',
 		name='Blade of Prophecy',
 		pic='/assets/media/items/legendaries/weapons/2h/swords/blade_of_prophecy.png',
@@ -956,7 +975,7 @@ def load_2h_swords(apps, schema_editor):
 		random_secondaries='1',
 		owner='sader')
 	bladeOfProphecy.save()
-	bladeOfProphecy.affixes.add(cdr)
+	bladeOfProphecy.affixes.add(mainStat, cdr, bladeCondemn)
 
 	bloodBrother = Weapon(slot='2H Weapons',
 		name='Blood Brother',

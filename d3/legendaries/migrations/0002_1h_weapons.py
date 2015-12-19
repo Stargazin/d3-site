@@ -111,8 +111,8 @@ def load_ceremonial_knives(apps, schema_editor):
 
 	deadlyGraspOfTheDead = Affix.objects.get(affix='deadlyGraspOfTheDead',
 		category='Ceremonial Knives')
-	lastMassConfusionCDR = Affix.objects.get(affix='lastMassConfusionCDR',
-		category='Ceremonial Knives')
+	# lastMassConfusionCDR = Affix.objects.get(affix='lastMassConfusionCDR',
+	# 	category='Ceremonial Knives')
 	starmetalCHD = Affix.objects.get(affix='starmetalCHD',
 		category='Ceremonial Knives')
 	spiderCorpseSpiders = Affix.objects.get(affix='spiderCorpseSpiders',
@@ -138,14 +138,16 @@ def load_ceremonial_knives(apps, schema_editor):
 	deadlyRebirth.save()
 	deadlyRebirth.affixes.add(inte, manaRegen, deadlyGraspOfTheDead)
 
+#2.4
 	lastBreath = Weapon(slot='1H Weapons',
 		name='Last Breath',
 		pic='/assets/media/items/legendaries/weapons/1h/ceremonialknives/last_breath.png',
+		unique='Reduce the cooldown of Mass Confusion by <span>15 - 20</span> seconds',
 		category='Ceremonial Knives',
-		random_primaries='1',
-		random_secondaries='2')
+		random_primaries='2',
+		random_secondaries='1')
 	lastBreath.save()
-	lastBreath.affixes.add(inte, lastMassConfusionCDR)
+	lastBreath.affixes.add(inte,)
 
 	livingUmbralOath = Weapon(slot='1H Weapons',
 		name='Living Umbral Oath',
@@ -431,21 +433,23 @@ def load_fist_weapons(apps, schema_editor):
 	sledgeFist.save()
 	sledgeFist.affixes.add(dext, sledgeStunChance)
 
+#2.4
 	theFistOfAzTurrasq = Weapon(slot='1H Weapons',
 		name='The Fist of Az\'Turrasq',
 		pic='/assets/media/items/legendaries/weapons/1h/fistweapons/the_fist_of_azturrasq.png',
 		category='Fist Weapons',
-		unique='Exploding Palm\'s on-death explosion damage is increased by <span>75 - 100%</span>.',
+		unique='Exploding Palm\'s on-death explosion damage is increased by <span>250 - 300%</span>.',
 		random_primaries='1',
 		random_secondaries='1')
 	theFistOfAzTurrasq.save()
 	theFistOfAzTurrasq.affixes.add(dext, spiritRegen)
 
+#2.4
 	vengefulWind = Weapon(slot='1H Weapons',
 		name='Vengeful Wind',
 		pic='/assets/media/items/legendaries/weapons/1h/fistweapons/vengeful_wind.png',
 		category='Fist Weapons',
-		unique='Increases the maximum stack count of Sweeping Wind by <span class="silver">3</span>.',
+		unique='Increases the maximum stack count of Sweeping Wind by <span>6 - 7</span>.',
 		random_primaries='2',
 		random_secondaries='1')
 	vengefulWind.save()
@@ -576,6 +580,10 @@ def load_hand_crossbows(apps, schema_editor):
 		category='Hand Crossbows')
 	dawnStunChance = Affix.objects.get(affix='dawnStunChance',
 		category='Hand Crossbows')
+	kmarStrafe = Affix.objects.get(affix='kmarStrafe',
+		category='Hand Crossbows')
+	vallasStrafe = Affix.objects.get(affix='vallasStrafe',
+		category='Hand Crossbows')
 
 	balefireCaster = Weapon(slot='1H Weapons',
 		name='Balefire Caster',
@@ -606,12 +614,13 @@ def load_hand_crossbows(apps, schema_editor):
 	calamity.save()
 	calamity.affixes.add(dext)
 
+#2.4
 	dawn = Weapon(slot='1H Weapons',
 		name='Dawn',
 		pic='/assets/media/items/legendaries/weapons/1h/handcrossbows/dawn.png',
 		category='Hand Crossbows',
-		random_primaries='2',
-		random_secondaries='1')
+		unique=',Reduces the cooldown of Vengeance by <span>50 - 65%</span>',
+		random_primaries='2')
 	dawn.save()
 	dawn.affixes.add(dext, dawnStunChance)
 
@@ -625,6 +634,7 @@ def load_hand_crossbows(apps, schema_editor):
 	helltrapper.save()
 	helltrapper.affixes.add(dext)
 
+#2.4
 	kmarTenclip = Weapon(slot='1H Weapons',
 		name='K\'mar Tenclip',
 		pic='/assets/media/items/legendaries/weapons/1h/handcrossbows/kmar_tenclip.png',
@@ -633,7 +643,7 @@ def load_hand_crossbows(apps, schema_editor):
 		random_primaries='1',
 		random_secondaries='1')
 	kmarTenclip.save()
-	kmarTenclip.affixes.add(dext, sockets)
+	kmarTenclip.affixes.add(dext, sockets, kmarStrafe)
 
 	theDemonsDemise = Weapon(slot='1H Weapons',
 		name='The Demon\'s Demise',
@@ -645,6 +655,7 @@ def load_hand_crossbows(apps, schema_editor):
 	theDemonsDemise.save()
 	theDemonsDemise.affixes.add(dext)
 
+#2.4
 	vallasBequest = Weapon(slot='1H Weapons',
 		name='Valla\'s Bequest',
 		pic='/assets/media/items/legendaries/weapons/1h/handcrossbows/vallas_bequest.png',
@@ -652,7 +663,7 @@ def load_hand_crossbows(apps, schema_editor):
 		unique='Strafe projectiles pierce.',
 		random_primaries='2')
 	vallasBequest.save()
-	vallasBequest.affixes.add(dext, maxDisc)
+	vallasBequest.affixes.add(dext, maxDisc, vallasStrafe)
 
 	for weapon in Weapon.objects.filter(category="Hand Crossbows"):
 		weapon.inherent = '<span class="inherent"><span>1.60</span> Attacks per Second</span>'
@@ -718,6 +729,7 @@ def load_1h_maces(apps, schema_editor):
 	echoingFury.save()
 	echoingFury.affixes.add(percentDmg, mainStat, ias, echoingFearChance)
 
+#2.4
 	jacesHammerOfVigilance = Weapon(slot='1H Weapons',
 		name='Jace\'s Hammer of Vigilance',
 		pic='/assets/media/items/legendaries/weapons/1h/maces/jaces_hammer_of_vigilance.png',
@@ -727,7 +739,7 @@ def load_1h_maces(apps, schema_editor):
 		random_secondaries='1',
 		owner='sader')
 	jacesHammerOfVigilance.save()
-	jacesHammerOfVigilance.affixes.add(jacesBlessedHammer)
+	jacesHammerOfVigilance.affixes.add(mainStat, jacesBlessedHammer)
 
 	madMonarchsScepter = Weapon(slot='1H Weapons',
 		name='Mad Monarch\'s Scepter',
@@ -954,12 +966,14 @@ def load_1h_spears(apps, schema_editor):
 	scrimshaw.save()
 	scrimshaw.affixes.add(mainStat, scrimshawZombieCharger)
 
+#2.4
 	theThreeHundredthSpear = Weapon(slot='1H Weapons',
 		name='The Three Hundredth Spear',
 		pic='/assets/media/items/legendaries/weapons/1h/spears/the_three_hundredth_spear.png',
 		category='1H Spears',
-		random_secondaries='2',
-		owner='all')
+		unique='Increase the damage of Weapon Throw and Ancient Spear by <span>45 - 60%</span>',
+		random_secondaries='1',
+		owner='barb')
 	theThreeHundredthSpear.save()
 	theThreeHundredthSpear.affixes.add(mainStat, threeWeaponThrow, threeAncientSpear)
 
@@ -1187,6 +1201,9 @@ def load_wands(apps, schema_editor):
 	sloraksDisintegrate =  Affix.objects.get(affix='sloraksDisintegrate',
 		category='Wands')
 
+	wandExplosiveBlast =  Affix.objects.get(affix='wandExplosiveBlast',
+		category='Wands')
+
 	aetherWalker = Weapon(slot='1H Weapons',
 		name='Aether Walker',
 		pic='/assets/media/items/legendaries/weapons/1h/wands/aether_walker.png',
@@ -1216,12 +1233,14 @@ def load_wands(apps, schema_editor):
 	blackhandKey.save()
 	blackhandKey.affixes.add(inte, maxAP)
 
+#2.4
 	fragmentOfDestiny = Weapon(slot='1H Weapons',
 		name='Fragment of Destiny',
 		pic='/assets/media/items/legendaries/weapons/1h/wands/fragment_of_destiny.png',
 		category='Wands',
+		unique='Spectral Blade attacks <span class="silver">50%</span> faster and deals <span>150 - 200%</span> increased damage',
 		random_primaries='1',
-		random_secondaries='2')
+		random_secondaries='1')
 	fragmentOfDestiny.save()
 	fragmentOfDestiny.affixes.add(inte, fragmentSpectralBlade)
 
@@ -1264,6 +1283,7 @@ def load_wands(apps, schema_editor):
 	starfire.save()
 	starfire.affixes.add(inte)
 
+#2.4
 	wandOfWoh = Weapon(slot='1H Weapons',
 		name='Wand of Woh',
 		pic='/assets/media/items/legendaries/weapons/1h/wands/wand_of_woh.png',
@@ -1272,7 +1292,7 @@ def load_wands(apps, schema_editor):
 		random_primaries='2',
 		random_secondaries='1')
 	wandOfWoh.save()
-	wandOfWoh.affixes.add(inte)
+	wandOfWoh.affixes.add(inte, wandExplosiveBlast)
 
 	for weapon in Weapon.objects.filter(category="Wands"):
 		weapon.inherent = '<span class="inherent"><span>1.40</span> Attacks per Second</span>'

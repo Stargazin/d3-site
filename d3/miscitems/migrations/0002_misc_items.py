@@ -289,16 +289,18 @@ def load_gems(apps, schema_editor):
 	 	rank_unique='Rank <span class="silver">25</span>: After not taking damage for <span class="silver">4</span> seconds, gain an absorb shield for <span class="silver">200%</span> of your total Life per Second')
 	moltenWildebeestsGizzard.save()
 
+#2.4
 	moratorium = Gem(name='Moratorium',
 	 	pic='/assets/media/items/gems/moratorium.png',
-	 	unique='<span class="silver">25%</span> of all damage taken is instead staggered and dealt to you over <span>3.0 (+0.1)</span> seconds',
+	 	unique='<span class="silver">35%</span> of all damage taken is instead staggered and dealt to you over <span>3.0 (+0.1)</span> seconds',
 	 	rank_unique='Rank <span class="silver">25</span>: <span class="silver">10%</span> chance on kill to clear all staggered damage')
 	moratorium.save()
 
+#2.4
 	mutilationGuard = Gem(name='Mutilation Guard',
 	 	pic='/assets/media/items/gems/mutilation_guard.png',
 	 	unique='Gain <span>10.0% (+0.5%)</span> melee damage reduction',
-	 	rank_unique='Rank <span class="silver">25</span>: While below <span class="silver">30%</span> Life, you may move unhindered through enemies')
+	 	rank_unique='Rank <span class="silver">25</span>: While below <span class="silver">50%</span> Life, you may move unhindered through enemies')
 	mutilationGuard.save()
 
 	painEnhancer = Gem(name='Pain Enhancer',
