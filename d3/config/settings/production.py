@@ -14,6 +14,17 @@ DATABASES = {
 	}
 }
 
+ALLOWED_HOSTS = [
+	'.diablo3-items.com',
+	'45.55.67.133'
+	]
+
+
+STATIC_URL = '/static/'
+
+#static_root is where collectstatic pulls everything
+STATIC_ROOT = BASE_DIR.parent.child("staticfiles")
+
 SECURE_CONTENT_TYPE_NOSNIFF = True
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_SSL_REDIRECT = True

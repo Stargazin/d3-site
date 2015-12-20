@@ -22,14 +22,12 @@ from django.core.exceptions import ImproperlyConfigured
 #settings -> config -> d3
 BASE_DIR = Path(__file__).ancestor(3)
 MEDIA_ROOT = BASE_DIR.child("media")
-#static_root is where collectstatic pulls everything
-STATIC_ROOT = BASE_DIR.parent.child("staticfiles")
 #staticfiles_dirs is what {% load staticfiles %} pulls from
 STATICFILES_DIRS = (
     BASE_DIR.child("assets"),
 )
 #static_url is for URL conf
-STATIC_URL = '/static/'
+# STATIC_URL = '/assets/'
 # MEDIA_URL = '/media/'
 TEMPLATES = [
     {
@@ -63,10 +61,6 @@ def get_secret(setting, secrets=secrets):
         raise ImproperlyConfigured(error_msg)
 
 SECRET_KEY = get_secret("SECRET_KEY")
-
-
-ALLOWED_HOSTS = ['.diablo3-items.com']
-
 
 # Apps
 PREREQ_APPS = (

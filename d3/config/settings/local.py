@@ -14,4 +14,6 @@ DATABASES = {
 	}
 }
 
+STATIC_URL = '/assets/'
+
 INSTALLED_APPS += ()
