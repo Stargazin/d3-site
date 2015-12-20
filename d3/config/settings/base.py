@@ -23,13 +23,13 @@ from django.core.exceptions import ImproperlyConfigured
 BASE_DIR = Path(__file__).ancestor(3)
 MEDIA_ROOT = BASE_DIR.child("media")
 #static_root is where collectstatic pulls everything
-STATIC_ROOT = BASE_DIR.child("static")
+STATIC_ROOT = BASE_DIR.parent.child("staticfiles")
 #staticfiles_dirs is what {% load staticfiles %} pulls from
 STATICFILES_DIRS = (
     BASE_DIR.child("assets"),
 )
 #static_url is for URL conf
-STATIC_URL = '/assets/'
+STATIC_URL = '/static/'
 # MEDIA_URL = '/media/'
 TEMPLATES = [
     {
