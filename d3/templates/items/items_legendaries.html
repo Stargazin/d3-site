@@ -8,7 +8,7 @@
 
 
 {% block css %}
-<link rel="stylesheet" href="{% static 'css/items_legendaries.min.css.gz' %}">
+<link rel="stylesheet" href="{% static 'css/items_legendaries.min.css' %}">
 {% endblock css %}
 
 
@@ -21,13 +21,13 @@
   </div> <!-- .overview -->
 
   <div class="toggle-container">
-    <span style="background: url(/assets/media/portraits/42/all.png)" class="toggle toggle--all toggle--selected"></span>
-    <span style="background: url(/assets/media/portraits/42/barb.png)" class="toggle toggle--barb"></span>
-    <span style="background: url(/assets/media/portraits/42/sader.png)" class="toggle toggle--sader"></span>
-    <span style="background: url(/assets/media/portraits/42/dh.png)" class="toggle toggle--dh"></span>
-    <span style="background: url(/assets/media/portraits/42/monk.png)" class="toggle toggle--monk"></span>
-    <span style="background: url(/assets/media/portraits/42/wd.png)" class="toggle toggle--wd"></span>
-    <span style="background: url(/assets/media/portraits/42/wiz.png)" class="toggle toggle--wiz"></span>
+    <span style="background: url({% static 'media/portraits/42/all.png' %})" class="toggle toggle--all toggle--selected"></span>
+    <span style="background: url({% static 'media/portraits/42/barb.png' %})" class="toggle toggle--barb"></span>
+    <span style="background: url({% static 'media/portraits/42/sader.png' %})" class="toggle toggle--sader"></span>
+    <span style="background: url({% static 'media/portraits/42/dh.png' %})" class="toggle toggle--dh"></span>
+    <span style="background: url({% static 'media/portraits/42/monk.png' %})" class="toggle toggle--monk"></span>
+    <span style="background: url({% static 'media/portraits/42/wd.png' %})" class="toggle toggle--wd"></span>
+    <span style="background: url({% static 'media/portraits/42/wiz.png' %})" class="toggle toggle--wiz"></span>
   </div> <!-- .toggle-container -->
 </header>
 
@@ -90,8 +90,3 @@
 {% endif %}
 
 {% endblock item_affixes %}
-
-
-{% block js %}
-<script src="{% static 'js/main.js' %}"></script>
-{% endblock js %}

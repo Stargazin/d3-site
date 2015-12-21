@@ -8,7 +8,7 @@
 
 
 {% block css %}
-<link rel="stylesheet" href="{% static 'css/itemsets_single.min.css.gz' %}">
+<link rel="stylesheet" href="{% static 'css/itemsets_single.min.css' %}">
 {% endblock css %}
 
 
@@ -42,7 +42,7 @@
     <div class="set__piece">
 
       <div class="set__pic">
-        <span style="background: url({{ piece.pic }})"></span>
+        <span style="background: url({% static piece.pic %})"></span>
       </div> <!-- .set__pic -->
 
       <div class="set__piece__info">

@@ -3,9 +3,8 @@ from django.contrib import admin
 
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^items/legendaries/', include('legendaries.urls')),
-    url(r'^items/sets/', include('itemsets.urls')),
-    url(r'^items/misc/', include('miscitems.urls')),
-    # url(r'^$',),
+    url(r'^administrator/', include(admin.site.urls)),
+    url(r'^legendaries/', include('legendaries.urls')),
+    url(r'^sets/', include('itemsets.urls')),
+    url(r'^', include('miscitems.urls')),
 ]

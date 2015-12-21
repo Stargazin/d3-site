@@ -30,9 +30,9 @@ gulp.task('sass', function() {
 		.pipe(gulp.dest('assets/css/css'))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(minifycss())
-		.pipe(gulp.dest('assets/css/css'))
-		.pipe(gzip(gzip_options))
 		.pipe(gulp.dest('assets/css'))
+		.pipe(gzip(gzip_options))
+		.pipe(gulp.dest('assets/css/css'))
 		.pipe(livereload(server));
 });
 

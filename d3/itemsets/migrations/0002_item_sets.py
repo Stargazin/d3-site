@@ -23,25 +23,25 @@ def load_item_sets(apps, schema_editor):
 	ashearasVestments.save()
 
 	ashearasCustodian = SetPiece(name='Asheara\'s Custodian',
-		pic='/assets/media/items/sets/universal/ashearas_custodian.png',
+		pic='media/items/sets/universal/ashearas_custodian.png',
 		category='Shoulders',
 		itemSet=ashearasVestments)
 	ashearasCustodian.save()
 
 	ashearasWard = SetPiece(name='Asheara\'s Ward',
-		pic='/assets/media/items/sets/universal/ashearas_ward.png',
+		pic='media/items/sets/universal/ashearas_ward.png',
 		category='Gloves',
 		itemSet=ashearasVestments)
 	ashearasWard.save()
 
 	ashearasPace = SetPiece(name='Asheara\'s Pace',
-		pic='/assets/media/items/sets/universal/ashearas_pace.png',
+		pic='media/items/sets/universal/ashearas_pace.png',
 		category='Pants',
 		itemSet=ashearasVestments)
 	ashearasPace.save()
 
 	ashearasFinders = SetPiece(name='Asheara\'s Finders',
-		pic='/assets/media/items/sets/universal/ashearas_finders.png',
+		pic='media/items/sets/universal/ashearas_finders.png',
 		category='Boots',
 		itemSet=ashearasVestments)
 	ashearasFinders.save()
@@ -68,25 +68,25 @@ def load_item_sets(apps, schema_editor):
 	aughildsAuthority.save()
 
 	aughildsSpike = SetPiece(name='Aughild\'s Spike',
-		pic='/assets/media/items/sets/universal/aughilds_spike.png',
+		pic='media/items/sets/universal/aughilds_spike.png',
 		category='Helmet',
 		itemSet=aughildsAuthority)
 	aughildsSpike.save()
 
 	aughildsPower = SetPiece(name='Aughild\'s Power',
-		pic='/assets/media/items/sets/universal/aughilds_power.png',
+		pic='media/items/sets/universal/aughilds_power.png',
 		category='Shoulders',
 		itemSet=aughildsAuthority)
 	aughildsPower.save()
 
 	aughildsRule = SetPiece(name='Aughild\'s Rule',
-		pic='/assets/media/items/sets/universal/aughilds_rule.png',
+		pic='media/items/sets/universal/aughilds_rule.png',
 		category='Chest Armor',
 		itemSet=aughildsAuthority)
 	aughildsRule.save()
 
 	aughildsSearch = SetPiece(name='Aughild\'s Search',
-		pic='/assets/media/items/sets/universal/aughilds_search.png',
+		pic='media/items/sets/universal/aughilds_search.png',
 		category='Bracers',
 		itemSet=aughildsAuthority)
 	aughildsSearch.save()
@@ -108,13 +108,13 @@ def load_item_sets(apps, schema_editor):
 	bastionsOfWill.save()
 
 	focus = SetPiece(name='Focus',
-		pic='/assets/media/items/sets/universal/focus.png',
+		pic='media/items/sets/universal/focus.png',
 		category='Ring',
 		itemSet=bastionsOfWill)
 	focus.save()
 
 	restraint = SetPiece(name='Restraint',
-		pic='/assets/media/items/sets/universal/restraint.png',
+		pic='media/items/sets/universal/restraint.png',
 		category='Ring',
 		itemSet=bastionsOfWill)
 	restraint.save()
@@ -131,31 +131,31 @@ def load_item_sets(apps, schema_editor):
 	blackthornesBattlegear.save()
 
 	blackthornesSurcoat = SetPiece(name='Blackthorne\'s Surcoat',
-		pic='/assets/media/items/sets/universal/blackthornes_surcoat.png',
+		pic='media/items/sets/universal/blackthornes_surcoat.png',
 		category='Chest Armor',
 		itemSet=blackthornesBattlegear)
 	blackthornesSurcoat.save()
 
 	blackthornesNotchedBelt = SetPiece(name='Blackthorne\'s Notched Belt',
-		pic='/assets/media/items/sets/universal/blackthornes_notched_belt.png',
+		pic='media/items/sets/universal/blackthornes_notched_belt.png',
 		category='Belt',
 		itemSet=blackthornesBattlegear)
 	blackthornesNotchedBelt.save()
 
 	blackthornesJoustingMail = SetPiece(name='Blackthorne\'s Jousting Mail',
-		pic='/assets/media/items/sets/universal/blackthornes_jousting_mail.png',
+		pic='media/items/sets/universal/blackthornes_jousting_mail.png',
 		category='Pants',
 		itemSet=blackthornesBattlegear)
 	blackthornesJoustingMail.save()
 
 	blackthornesSpurs = SetPiece(name='Blackthorne\'s Spurs',
-		pic='/assets/media/items/sets/universal/blackthornes_spurs.png',
+		pic='media/items/sets/universal/blackthornes_spurs.png',
 		category='Boots',
 		itemSet=blackthornesBattlegear)
 	blackthornesSpurs.save()
 
 	blackthornesDuncraigCross = SetPiece(name='Blackthorne\'s Duncraig Cross',
-		pic='/assets/media/items/sets/universal/blackthornes_duncraig_cross.png',
+		pic='media/items/sets/universal/blackthornes_duncraig_cross.png',
 		category='Amulet',
 		itemSet=blackthornesBattlegear)
 	blackthornesDuncraigCross.save()
@@ -182,19 +182,19 @@ def load_item_sets(apps, schema_editor):
 	bornsCommand.save()
 
 	bornsFuriousWrath = SetPiece(name='Born\'s Furious Wrath',
-		pic='/assets/media/items/sets/universal/borns_furious_wrath.png',
+		pic='media/items/sets/universal/borns_furious_wrath.png',
 		category='1H Sword',
 		itemSet=bornsCommand)
 	bornsFuriousWrath.save()
 
 	bornsPrivilege = SetPiece(name='Born\'s Privilege',
-		pic='/assets/media/items/sets/universal/borns_privilege.png',
+		pic='media/items/sets/universal/borns_privilege.png',
 		category='Shoulders',
 		itemSet=bornsCommand)
 	bornsPrivilege.save()
 
 	bornsFrozenSoul = SetPiece(name='Born\'s Frozen Soul',
-		pic='/assets/media/items/sets/universal/borns_frozen_soul.png',
+		pic='media/items/sets/universal/borns_frozen_soul.png',
 		category='Chest Armor',
 		itemSet=bornsCommand)
 	bornsFrozenSoul.save()
@@ -216,25 +216,25 @@ def load_item_sets(apps, schema_editor):
 	cainsDestiny.save()
 
 	cainsInsight = SetPiece(name='Cain\'s Insight',
-		pic='/assets/media/items/sets/universal/cains_insight.png',
+		pic='media/items/sets/universal/cains_insight.png',
 		category='Helmet',
 		itemSet=cainsDestiny)
 	cainsInsight.save()
 
 	cainsScrivener = SetPiece(name='Cain\'s Scrivener',
-		pic='/assets/media/items/sets/universal/cains_scrivener.png',
+		pic='media/items/sets/universal/cains_scrivener.png',
 		category='Gloves',
 		itemSet=cainsDestiny)
 	cainsScrivener.save()
 
 	cainsHabit = SetPiece(name='Cain\'s Habit',
-		pic='/assets/media/items/sets/universal/cains_habit.png',
+		pic='media/items/sets/universal/cains_habit.png',
 		category='Pants',
 		itemSet=cainsDestiny)
 	cainsHabit.save()
 
 	cainsTravelers = SetPiece(name='Cain\'s Travelers',
-		pic='/assets/media/items/sets/universal/cains_travelers.png',
+		pic='media/items/sets/universal/cains_travelers.png',
 		category='Boots',
 		itemSet=cainsDestiny)
 	cainsTravelers.save()
@@ -256,19 +256,19 @@ def load_item_sets(apps, schema_editor):
 	captainCrimsonsTrimmings.save()
 
 	captainCrimsonsSilkGirdle = SetPiece(name='Captain Crimson\'s Silk Girdle',
-		pic='/assets/media/items/sets/universal/captain_crimsons_silk_girdle.png',
+		pic='media/items/sets/universal/captain_crimsons_silk_girdle.png',
 		category='Belt',
 		itemSet=captainCrimsonsTrimmings)
 	captainCrimsonsSilkGirdle.save()
 
 	captainCrimsonsThrust = SetPiece(name='Captain Crimson\'s Thrust',
-		pic='/assets/media/items/sets/universal/captain_crimsons_thrust.png',
+		pic='media/items/sets/universal/captain_crimsons_thrust.png',
 		category='Pants',
 		itemSet=captainCrimsonsTrimmings)
 	captainCrimsonsThrust.save()
 
 	captainCrimsonsWaders = SetPiece(name='Captain Crimson\'s Waders',
-		pic='/assets/media/items/sets/universal/captain_crimsons_waders.png',
+		pic='media/items/sets/universal/captain_crimsons_waders.png',
 		category='Boots',
 		itemSet=captainCrimsonsTrimmings)
 	captainCrimsonsWaders.save()
@@ -290,31 +290,31 @@ def load_item_sets(apps, schema_editor):
 	demonsHide.save()
 
 	demonsAileron = SetPiece(name='Demon\'s Aileron',
-		pic='/assets/media/items/sets/universal/demons_aileron.png',
+		pic='media/items/sets/universal/demons_aileron.png',
 		category='Shoulders',
 		itemSet=demonsHide)
 	demonsAileron.save()
 
 	demonsMarrow = SetPiece(name='Demon\'s Marrow',
-		pic='/assets/media/items/sets/universal/demons_marrow.png',
+		pic='media/items/sets/universal/demons_marrow.png',
 		category='Chest Armor',
 		itemSet=demonsHide)
 	demonsMarrow.save()
 
 	demonsAnimus = SetPiece(name='Demon\'s Animus',
-		pic='/assets/media/items/sets/universal/demons_animus.png',
+		pic='media/items/sets/universal/demons_animus.png',
 		category='Bracers',
 		itemSet=demonsHide)
 	demonsAnimus.save()
 
 	demonsRestraint = SetPiece(name='Demon\'s Restraint',
-		pic='/assets/media/items/sets/universal/demons_restraint.png',
+		pic='media/items/sets/universal/demons_restraint.png',
 		category='Belt',
 		itemSet=demonsHide)
 	demonsRestraint.save()
 
 	demonsPlate = SetPiece(name='Demon\'s Plate',
-		pic='/assets/media/items/sets/universal/demons_plate.png',
+		pic='media/items/sets/universal/demons_plate.png',
 		category='Pants',
 		itemSet=demonsHide)
 	demonsPlate.save()
@@ -341,13 +341,13 @@ def load_item_sets(apps, schema_editor):
 	endlessWalk.save()
 
 	theTravelersPledge = SetPiece(name='The Traveler\'s Pledge',
-		pic='/assets/media/items/sets/universal/the_travelers_pledge.png',
+		pic='media/items/sets/universal/the_travelers_pledge.png',
 		category='Amulet',
 		itemSet=endlessWalk)
 	theTravelersPledge.save()
 
 	theCompassRose = SetPiece(name='The Compass Rose',
-		pic='/assets/media/items/sets/universal/the_compass_rose.png',
+		pic='media/items/sets/universal/the_compass_rose.png',
 		category='Ring',
 		itemSet=endlessWalk)
 	theCompassRose.save()
@@ -366,19 +366,19 @@ def load_item_sets(apps, schema_editor):
 	guardiansJeopardy.save()
 
 	guardiansGaze = SetPiece(name='Guardian\'s Gaze',
-		pic='/assets/media/items/sets/universal/guardians_gaze.png',
+		pic='media/items/sets/universal/guardians_gaze.png',
 		category='Helmet',
 		itemSet=guardiansJeopardy)
 	guardiansGaze.save()
 
 	guardiansAversion = SetPiece(name='Guardian\'s Aversion',
-		pic='/assets/media/items/sets/universal/guardians_aversion.png',
+		pic='media/items/sets/universal/guardians_aversion.png',
 		category='Bracers',
 		itemSet=guardiansJeopardy)
 	guardiansAversion.save()
 
 	guardiansCase = SetPiece(name='Guardian\'s Case',
-		pic='/assets/media/items/sets/universal/guardians_case.png',
+		pic='media/items/sets/universal/guardians_case.png',
 		category='Belt',
 		itemSet=guardiansJeopardy)
 	guardiansCase.save()
@@ -400,43 +400,43 @@ def load_item_sets(apps, schema_editor):
 	hallowedProtectors.save()
 
 	hallowedBarricade = SetPiece(name='Hallowed Barricade',
-		pic='/assets/media/items/sets/universal/hallowed_barricade.png',
+		pic='media/items/sets/universal/hallowed_barricade.png',
 		category='Shield',
 		itemSet=hallowedProtectors)
 	hallowedBarricade.save()
 
 	hallowedBreach = SetPiece(name='Hallowed Breach',
-		pic='/assets/media/items/sets/universal/hallowed_breach.png',
+		pic='media/items/sets/universal/hallowed_breach.png',
 		category='1H Axe',
 		itemSet=hallowedProtectors)
 	hallowedBreach.save()
 
 	hallowedSufferance = SetPiece(name='Hallowed Sufferance',
-		pic='/assets/media/items/sets/universal/hallowed_sufferance.png',
+		pic='media/items/sets/universal/hallowed_sufferance.png',
 		category='Ceremonial Knife',
 		itemSet=hallowedProtectors)
 	hallowedSufferance.save()
 
 	hallowedHold = SetPiece(name='Hallowed Hold',
-		pic='/assets/media/items/sets/universal/hallowed_hold.png',
+		pic='media/items/sets/universal/hallowed_hold.png',
 		category='Fist Weapon',
 		itemSet=hallowedProtectors)
 	hallowedHold.save()
 
 	hallowedCondemnation = SetPiece(name='Hallowed Condemnation',
-		pic='/assets/media/items/sets/universal/hallowed_condemnation.png',
+		pic='media/items/sets/universal/hallowed_condemnation.png',
 		category='Hand Crossbow',
 		itemSet=hallowedProtectors)
 	hallowedCondemnation.save()
 
 	hallowedNemesis = SetPiece(name='Hallowed Nemesis',
-		pic='/assets/media/items/sets/universal/hallowed_nemesis.png',
+		pic='media/items/sets/universal/hallowed_nemesis.png',
 		category='1H Mighty Weapon',
 		itemSet=hallowedProtectors)
 	hallowedNemesis.save()
 
 	hallowedBaton = SetPiece(name='Hallowed Baton',
-		pic='/assets/media/items/sets/universal/hallowed_baton.png',
+		pic='media/items/sets/universal/hallowed_baton.png',
 		category='Wand',
 		itemSet=hallowedProtectors)
 	hallowedBaton.save()
@@ -453,13 +453,13 @@ def load_item_sets(apps, schema_editor):
 	istvansPairedBlades.save()
 
 	littleRogue = SetPiece(name='Little Rogue',
-		pic='/assets/media/items/sets/universal/little_rogue.png',
+		pic='media/items/sets/universal/little_rogue.png',
 		category='1H Sword',
 		itemSet=istvansPairedBlades)
 	littleRogue.save()
 
 	theSlanderer = SetPiece(name='The Slanderer',
-		pic='/assets/media/items/sets/universal/the_slanderer.png',
+		pic='media/items/sets/universal/the_slanderer.png',
 		category='1H Sword',
 		itemSet=istvansPairedBlades)
 	theSlanderer.save()
@@ -477,13 +477,13 @@ def load_item_sets(apps, schema_editor):
 	krelmsBuffBulkwark.save()
 
 	krelmsBuffBracers = SetPiece(name='Krelm\'s Buff Bracers',
-		pic='/assets/media/items/sets/universal/krelms_buff_bracers.png',
+		pic='media/items/sets/universal/krelms_buff_bracers.png',
 		category='Bracers',
 		itemSet=krelmsBuffBulkwark)
 	krelmsBuffBracers.save()
 
 	krelmsBuffBelt = SetPiece(name='Krelm\'s Buff Belt',
-		pic='/assets/media/items/sets/universal/krelms_buff_belt.png',
+		pic='media/items/sets/universal/krelms_buff_belt.png',
 		category='Belt',
 		itemSet=krelmsBuffBulkwark)
 	krelmsBuffBelt.save()
@@ -500,13 +500,13 @@ def load_item_sets(apps, schema_editor):
 	legacyOfNightmares.save()
 
 	litanyOfTheUndaunted = SetPiece(name='Litany of the Undaunted',
-		pic='/assets/media/items/sets/universal/litany_of_the_undaunted.png',
+		pic='media/items/sets/universal/litany_of_the_undaunted.png',
 		category='Ring',
 		itemSet=legacyOfNightmares)
 	litanyOfTheUndaunted.save()
 
 	theWailingHost = SetPiece(name='The Wailing Host',
-		pic='/assets/media/items/sets/universal/the_wailing_host.png',
+		pic='media/items/sets/universal/the_wailing_host.png',
 		category='Ring',
 		itemSet=legacyOfNightmares)
 	theWailingHost.save()
@@ -525,19 +525,19 @@ def load_item_sets(apps, schema_editor):
 	sagesJourney.save()
 
 	sagesApogee = SetPiece(name='Sage\'s Apogee',
-		pic='/assets/media/items/sets/universal/sages_apogee.png',
+		pic='media/items/sets/universal/sages_apogee.png',
 		category='Helmet',
 		itemSet=sagesJourney)
 	sagesApogee.save()
 
 	sagesPurchase = SetPiece(name='Sage\'s Purchase',
-		pic='/assets/media/items/sets/universal/sages_purchase.png',
+		pic='media/items/sets/universal/sages_purchase.png',
 		category='Gloves',
 		itemSet=sagesJourney)
 	sagesPurchase.save()
 
 	sagesPassage = SetPiece(name='Sage\'s Passage',
-		pic='/assets/media/items/sets/universal/sages_passage.png',
+		pic='media/items/sets/universal/sages_passage.png',
 		category='Boots',
 		itemSet=sagesJourney)
 	sagesPassage.save()
@@ -559,31 +559,31 @@ def load_item_sets(apps, schema_editor):
 	thornsOfTheInvoker.save()
 
 	crownOfTheInvoker = SetPiece(name='Crown of the Invoker',
-		pic='/assets/media/items/sets/universal/crown_of_the_invoker.png',
+		pic='media/items/sets/universal/crown_of_the_invoker.png',
 		category='Helmet',
 		itemSet=thornsOfTheInvoker)
 	crownOfTheInvoker.save()
 
 	burdenOfTheInvoker = SetPiece(name='Burden of the Invoker',
-		pic='/assets/media/items/sets/universal/burden_of_the_invoker.png',
+		pic='media/items/sets/universal/burden_of_the_invoker.png',
 		category='Shoulders',
 		itemSet=thornsOfTheInvoker)
 	burdenOfTheInvoker.save()
 
 	prideOfTheInvoker = SetPiece(name='Pride of the Invoker',
-		pic='/assets/media/items/sets/universal/pride_of_the_invoker.png',
+		pic='media/items/sets/universal/pride_of_the_invoker.png',
 		category='Gloves',
 		itemSet=thornsOfTheInvoker)
 	prideOfTheInvoker.save()
 
 	shacklesOfTheInvoker = SetPiece(name='Shackles of the Invoker',
-		pic='/assets/media/items/sets/universal/shackles_of_the_invoker.png',
+		pic='media/items/sets/universal/shackles_of_the_invoker.png',
 		category='Bracers',
 		itemSet=thornsOfTheInvoker)
 	shacklesOfTheInvoker.save()
 
 	renewalOfTheInvoker = SetPiece(name='Renewal of the Invoker',
-		pic='/assets/media/items/sets/universal/renewal_of_the_invoker.png',
+		pic='media/items/sets/universal/renewal_of_the_invoker.png',
 		category='Pants',
 		itemSet=thornsOfTheInvoker)
 	renewalOfTheInvoker.save()
@@ -615,13 +615,13 @@ def load_item_sets(apps, schema_editor):
 	bulKathossOath.save()
 
 	bulKathossWarriorBlood = SetPiece(name='Bul-Kathos\'s Warrior Blood',
-		pic='/assets/media/items/sets/barb/bulkathoss_warrior_blood.png',
+		pic='media/items/sets/barb/bulkathoss_warrior_blood.png',
 		category='1H Mighty Weapon',
 		itemSet=bulKathossOath)
 	bulKathossWarriorBlood.save()
 
 	bulKathossSolemnVow = SetPiece(name='Bul-Kathos\'s Solemn Vow',
-		pic='/assets/media/items/sets/barb/bulkathoss_solemn_vow.png',
+		pic='media/items/sets/barb/bulkathoss_solemn_vow.png',
 		category='1H Mighty Weapon',
 		itemSet=bulKathossOath)
 	bulKathossSolemnVow.save()
@@ -638,40 +638,40 @@ def load_item_sets(apps, schema_editor):
 	mightOfTheEarth.save()
 
 	eyesOfTheEarth = SetPiece(name='Eyes of the Earth',
-		pic='/assets/media/items/sets/barb/eyes_of_the_earth.png',
+		pic='media/items/sets/barb/eyes_of_the_earth.png',
 		category='Helmet',
 		itemSet=mightOfTheEarth)
 	eyesOfTheEarth.save()
 
 	spiresOfTheEarth = SetPiece(name='Spires of the Earth',
-		pic='/assets/media/items/sets/barb/spires_of_the_earth.png',
+		pic='media/items/sets/barb/spires_of_the_earth.png',
 		category='Shoulders',
 		itemSet=mightOfTheEarth)
 	spiresOfTheEarth.save()
 
 #Added in 2.4
 	spiritOfTheEarth = SetPiece(name='Spirit of the Earth',
-		pic='/assets/media/items/sets/barb/spirit_of_the_earth.png',
+		pic='media/items/sets/barb/spirit_of_the_earth.png',
 		category='Chest Armor',
 		itemSet=mightOfTheEarth)
 	spiritOfTheEarth.save()
 	spiritOfTheEarth
 
 	pullOfTheEarth = SetPiece(name='Pull of the Earth',
-		pic='/assets/media/items/sets/barb/pull_of_the_earth.png',
+		pic='media/items/sets/barb/pull_of_the_earth.png',
 		category='Gloves',
 		itemSet=mightOfTheEarth)
 	pullOfTheEarth.save()
 
 	weightOfTheEarth = SetPiece(name='Weight of the Earth',
-		pic='/assets/media/items/sets/barb/weight_of_the_earth.png',
+		pic='media/items/sets/barb/weight_of_the_earth.png',
 		category='Pants',
 		itemSet=mightOfTheEarth)
 	weightOfTheEarth.save()
 
 #Added in 2.4
 	foundationOfTheEarth = SetPiece(name='Foundation of the Earth',
-		pic='/assets/media/items/sets/barb/foundation_of_the_earth.png',
+		pic='media/items/sets/barb/foundation_of_the_earth.png',
 		category='Boots',
 		itemSet=mightOfTheEarth)
 	foundationOfTheEarth.save()
@@ -703,43 +703,43 @@ def load_item_sets(apps, schema_editor):
 	immortalKingsCall.save()
 
 	immortalKingsBoulderBreaker = SetPiece(name='Immortal King\'s Boulder Breaker',
-		pic='/assets/media/items/sets/barb/immortal_kings_boulder_breaker.png',
+		pic='media/items/sets/barb/immortal_kings_boulder_breaker.png',
 		category='2H Mighty Weapon',
 		itemSet=immortalKingsCall)
 	immortalKingsBoulderBreaker.save()
 
 	immortalKingsTriumph = SetPiece(name='Immortal King\'s Triumph',
-		pic='/assets/media/items/sets/barb/immortal_kings_triumph.png',
+		pic='media/items/sets/barb/immortal_kings_triumph.png',
 		category='Helmet',
 		itemSet=immortalKingsCall)
 	immortalKingsTriumph.save()
 
 	immortalKingsEternalReign = SetPiece(name='Immortal King\'s Eternal Reign',
-		pic='/assets/media/items/sets/barb/immortal_kings_eternal_reign.png',
+		pic='media/items/sets/barb/immortal_kings_eternal_reign.png',
 		category='Chest Armor',
 		itemSet=immortalKingsCall)
 	immortalKingsEternalReign.save()
 
 	immortalKingsIrons = SetPiece(name='Immortal King\'s Irons',
-		pic='/assets/media/items/sets/barb/immortal_kings_irons.png',
+		pic='media/items/sets/barb/immortal_kings_irons.png',
 		category='Gloves',
 		itemSet=immortalKingsCall)
 	immortalKingsIrons.save()
 
 	immortalKingsTribalBinding = SetPiece(name='Immortal King\'s Tribal Binding',
-		pic='/assets/media/items/sets/barb/immortal_kings_tribal_binding.png',
+		pic='media/items/sets/barb/immortal_kings_tribal_binding.png',
 		category='Belt',
 		itemSet=immortalKingsCall)
 	immortalKingsTribalBinding.save()
 
 	immortalKingsStature = SetPiece(name='Immortal King\'s Stature',
-		pic='/assets/media/items/sets/barb/immortal_kings_stature.png',
+		pic='media/items/sets/barb/immortal_kings_stature.png',
 		category='Pants',
 		itemSet=immortalKingsCall)
 	immortalKingsStature.save()
 
 	immortalKingsStride = SetPiece(name='Immortal King\'s Stride',
-		pic='/assets/media/items/sets/barb/immortal_kings_stride.png',
+		pic='media/items/sets/barb/immortal_kings_stride.png',
 		category='Boots',
 		itemSet=immortalKingsCall)
 	immortalKingsStride.save()
@@ -766,37 +766,37 @@ def load_item_sets(apps, schema_editor):
 	theLegacyOfRaekor.save()
 
 	raekorsWill = SetPiece(name='Raekor\'s Will',
-		pic='/assets/media/items/sets/barb/raekors_will.png',
+		pic='media/items/sets/barb/raekors_will.png',
 		category='Helm',
 		itemSet=theLegacyOfRaekor)
 	raekorsWill.save()
 
 	raekorsBurden = SetPiece(name='Raekor\'s Burden',
-		pic='/assets/media/items/sets/barb/raekors_burden.png',
+		pic='media/items/sets/barb/raekors_burden.png',
 		category='Shoulders',
 		itemSet=theLegacyOfRaekor)
 	raekorsBurden.save()
 
 	raekorsHeart = SetPiece(name='Raekor\'s Heart',
-		pic='/assets/media/items/sets/barb/raekors_heart.png',
+		pic='media/items/sets/barb/raekors_heart.png',
 		category='Chest Armor',
 		itemSet=theLegacyOfRaekor)
 	raekorsHeart.save()
 
 	raekorsWraps = SetPiece(name='Raekor\'s Wraps',
-		pic='/assets/media/items/sets/barb/raekors_wraps.png',
+		pic='media/items/sets/barb/raekors_wraps.png',
 		category='Gloves',
 		itemSet=theLegacyOfRaekor)
 	raekorsWraps.save()
 
 	raekorsBreeches = SetPiece(name='Raekor\'s Breeches',
-		pic='/assets/media/items/sets/barb/raekors_breeches.png',
+		pic='media/items/sets/barb/raekors_breeches.png',
 		category='Pants',
 		itemSet=theLegacyOfRaekor)
 	raekorsBreeches.save()
 
 	raekorsStriders = SetPiece(name='Raekor\'s Striders',
-		pic='/assets/media/items/sets/barb/raekors_striders.png',
+		pic='media/items/sets/barb/raekors_striders.png',
 		category='Boots',
 		itemSet=theLegacyOfRaekor)
 	raekorsStriders.save()
@@ -829,37 +829,37 @@ def load_item_sets(apps, schema_editor):
 	wrathOfTheWastes.save()
 
 	helmOfTheWastes = SetPiece(name='Helm of the Wastes',
-		pic='/assets/media/items/sets/barb/helm_of_the_wastes.png',
+		pic='media/items/sets/barb/helm_of_the_wastes.png',
 		category='Helmet',
 		itemSet=wrathOfTheWastes)
 	helmOfTheWastes.save()
 
 	pauldronsOfTheWastes = SetPiece(name='Pauldrons of the Wastes',
-		pic='/assets/media/items/sets/barb/pauldrons_of_the_wastes.png',
+		pic='media/items/sets/barb/pauldrons_of_the_wastes.png',
 		category='Shoulders',
 		itemSet=wrathOfTheWastes)
 	pauldronsOfTheWastes.save()
 
 	cuirassOfTheWastes = SetPiece(name='Cuirass of the Wastes',
-		pic='/assets/media/items/sets/barb/cuirass_of_the_wastes.png',
+		pic='media/items/sets/barb/cuirass_of_the_wastes.png',
 		category='Chest Armor',
 		itemSet=wrathOfTheWastes)
 	cuirassOfTheWastes.save()
 
 	gauntletOfTheWastes = SetPiece(name='Gauntlet of the Wastes',
-		pic='/assets/media/items/sets/barb/gauntlet_of_the_wastes.png',
+		pic='media/items/sets/barb/gauntlet_of_the_wastes.png',
 		category='Gloves',
 		itemSet=wrathOfTheWastes)
 	gauntletOfTheWastes.save()
 
 	tassetOfTheWastes = SetPiece(name='Tasset of the Wastes',
-		pic='/assets/media/items/sets/barb/tasset_of_the_wastes.png',
+		pic='media/items/sets/barb/tasset_of_the_wastes.png',
 		category='Pants',
 		itemSet=wrathOfTheWastes)
 	tassetOfTheWastes.save()
 
 	sabatonOfTheWastes = SetPiece(name='Sabaton of the Wastes',
-		pic='/assets/media/items/sets/barb/sabaton_of_the_wastes.png',
+		pic='media/items/sets/barb/sabaton_of_the_wastes.png',
 		category='Boots',
 		itemSet=wrathOfTheWastes)
 	sabatonOfTheWastes.save()
@@ -886,37 +886,37 @@ def load_item_sets(apps, schema_editor):
 	armorOfAkkhan.save()
 
 	helmOfAkkhan = SetPiece(name='Helm of Akkhan',
-		pic='/assets/media/items/sets/sader/helm_of_akkhan.png',
+		pic='media/items/sets/sader/helm_of_akkhan.png',
 		category='Helmet',
 		itemSet=armorOfAkkhan)
 	helmOfAkkhan.save()
 
 	pauldronsOfAkkhan = SetPiece(name='Pauldrons of Akkhan',
-		pic='/assets/media/items/sets/sader/pauldrons_of_akkhan.png',
+		pic='media/items/sets/sader/pauldrons_of_akkhan.png',
 		category='Shoulders',
 		itemSet=armorOfAkkhan)
 	pauldronsOfAkkhan.save()
 
 	breastplateOfAkkhan = SetPiece(name='Breastplate of Akkhan',
-		pic='/assets/media/items/sets/sader/breastplate_of_akkhan.png',
+		pic='media/items/sets/sader/breastplate_of_akkhan.png',
 		category='Chest Armor',
 		itemSet=armorOfAkkhan)
 	breastplateOfAkkhan.save()
 
 	gauntletsOfAkkhan = SetPiece(name='Gauntlets of Akkhan',
-		pic='/assets/media/items/sets/sader/gauntlets_of_akkhan.png',
+		pic='media/items/sets/sader/gauntlets_of_akkhan.png',
 		category='Gloves',
 		itemSet=armorOfAkkhan)
 	gauntletsOfAkkhan.save()
 
 	cuissesOfAkkhan = SetPiece(name='Cuisses of Akkhan',
-		pic='/assets/media/items/sets/sader/cuisses_of_akkhan.png',
+		pic='media/items/sets/sader/cuisses_of_akkhan.png',
 		category='Pants',
 		itemSet=armorOfAkkhan)
 	cuissesOfAkkhan.save()
 
 	sabatonsOfAkkhan = SetPiece(name='Sabatons of Akkhan',
-		pic='/assets/media/items/sets/sader/sabatons_of_akkhan.png',
+		pic='media/items/sets/sader/sabatons_of_akkhan.png',
 		category='Boots',
 		itemSet=armorOfAkkhan)
 	sabatonsOfAkkhan.save()
@@ -943,43 +943,66 @@ def load_item_sets(apps, schema_editor):
 	armorOfAkkhan6.save()
 
 
+#2.4
+	norvaldsFervor = ItemSet(name='Norvald\'s Fervor',
+		owner='Crusader')
+	norvaldsFervor.save()
+
+	flailOfTheCharge = SetPiece(name='Flail of the Charge',
+		pic='media/items/sets/sader/flail_of_the_charge.png',
+		category='2H Flail',
+		itemSet=norvaldsFervor)
+	flailOfTheCharge.save()
+
+	shieldOfTheSteed = SetPiece(name='Shield of the Steed',
+		pic='media/items/sets/sader/shield_of_the_steed.png',
+		category='Crusader Shield',
+		itemSet=norvaldsFervor)
+	shieldOfTheSteed.save()
+
+	norvaldsFervor2 = Effect(pieces='2',
+		effect='<li><p>Increases the duration of Steed Charge by <span class="silver">2</span> seconds</p></li><li><p>Every enemy killed while Steed Charge is active reduces the cooldown by <span class="silver">1</span> second</p></li><li><p>Gain <span class="silver">100%</span> increased damage while Steed Charge is active and for <span class="silver">5</span> seconds after Steed Charge ends</p></li>',
+		itemSet=norvaldsFervor)
+	norvaldsFervor2.save()
+
+
 
 	rolandsLegacy = ItemSet(name='Roland\'s Legacy',
 		owner='Crusader')
 	rolandsLegacy.save()
 
 	rolandsVisage = SetPiece(name='Roland\'s Visage',
-		pic='/assets/media/items/sets/sader/rolands_visage.png',
+		pic='media/items/sets/sader/rolands_visage.png',
 		category='Helmet',
 		itemSet=rolandsLegacy)
 	rolandsVisage.save()
 
 	rolandsMantle = SetPiece(name='Roland\'s Mantle',
-		pic='/assets/media/items/sets/sader/rolands_mantle.png',
+		pic='media/items/sets/sader/rolands_mantle.png',
 		category='Shoulders',
 		itemSet=rolandsLegacy)
 	rolandsMantle.save()
 
 	rolandsBearing = SetPiece(name='Roland\'s Bearing',
-		pic='/assets/media/items/sets/sader/rolands_bearing.png',
+		pic='media/items/sets/sader/rolands_bearing.png',
 		category='Chest Armor',
 		itemSet=rolandsLegacy)
 	rolandsBearing.save()
 
 	rolandsGrasp = SetPiece(name='Roland\'s Grasp',
-		pic='/assets/media/items/sets/sader/rolands_grasp.png',
+		pic='media/items/sets/sader/rolands_grasp.png',
 		category='Gloves',
 		itemSet=rolandsLegacy)
 	rolandsGrasp.save()
 
 	rolandsDetermination = SetPiece(name='Roland\'s Determination',
-		pic='/assets/media/items/sets/sader/rolands_determination.png',
+		pic='media/items/sets/sader/rolands_determination.png',
 		category='Pants',
 		itemSet=rolandsLegacy)
 	rolandsDetermination.save()
 
 	rolandsStride = SetPiece(name='Roland\'s Stride',
-		pic='/assets/media/items/sets/sader/rolands_stride.png',
+		pic='media/items/sets/sader/rolands_stride.png',
 		category='Boots',
 		itemSet=rolandsLegacy)
 	rolandsStride.save()
@@ -1008,37 +1031,37 @@ def load_item_sets(apps, schema_editor):
 	seekerOfTheLight.save()
 
 	crownOfTheLight = SetPiece(name='Crown of the Light',
-		pic='/assets/media/items/sets/sader/crown_of_the_light.png',
+		pic='media/items/sets/sader/crown_of_the_light.png',
 		category='Helmet',
 		itemSet=seekerOfTheLight)
 	crownOfTheLight.save()
 
 	mountainOfTheLight = SetPiece(name='Mountain of the Light',
-		pic='/assets/media/items/sets/sader/mountain_of_the_light.png',
+		pic='media/items/sets/sader/mountain_of_the_light.png',
 		category='Shoulders',
 		itemSet=seekerOfTheLight)
 	mountainOfTheLight.save()
 
 	heartOfTheLight = SetPiece(name='Heart of the Light',
-		pic='/assets/media/items/sets/sader/heart_of_the_light.png',
+		pic='media/items/sets/sader/heart_of_the_light.png',
 		category='Chest Armor',
 		itemSet=seekerOfTheLight)
 	heartOfTheLight.save()
 
 	willOfTheLight = SetPiece(name='Will of the Light',
-		pic='/assets/media/items/sets/sader/will_of_the_light.png',
+		pic='media/items/sets/sader/will_of_the_light.png',
 		category='Gloves',
 		itemSet=seekerOfTheLight)
 	willOfTheLight.save()
 
 	towersOfTheLight = SetPiece(name='Towers of the Light',
-		pic='/assets/media/items/sets/sader/towers_of_the_light.png',
+		pic='media/items/sets/sader/towers_of_the_light.png',
 		category='Pants',
 		itemSet=seekerOfTheLight)
 	towersOfTheLight.save()
 
 	foundationOfTheLight = SetPiece(name='Foundation of the Light',
-		pic='/assets/media/items/sets/sader/foundation_of_the_light.png',
+		pic='media/items/sets/sader/foundation_of_the_light.png',
 		category='Boots',
 		itemSet=seekerOfTheLight)
 	foundationOfTheLight.save()
@@ -1066,13 +1089,13 @@ def load_item_sets(apps, schema_editor):
 	danettasHatred.save()
 
 	danettasRevenge = SetPiece(name='Danetta\'s Revenge',
-		pic='/assets/media/items/sets/dh/danettas_revenge.png',
+		pic='media/items/sets/dh/danettas_revenge.png',
 		category='Hand Crossbow',
 		itemSet=danettasHatred)
 	danettasRevenge.save()
 
 	danettasSpite = SetPiece(name='Danetta\'s Spite',
-		pic='/assets/media/items/sets/dh/danettas_spite.png',
+		pic='media/items/sets/dh/danettas_spite.png',
 		category='Hand Crossbow',
 		itemSet=danettasHatred)
 	danettasSpite.save()
@@ -1090,37 +1113,37 @@ def load_item_sets(apps, schema_editor):
 	embodimentOfTheMarauder.save()
 
 	maraudersVisage = SetPiece(name='Marauder\'s Visage',
-		pic='/assets/media/items/sets/dh/marauders_visage.png',
+		pic='media/items/sets/dh/marauders_visage.png',
 		category='Helmet',
 		itemSet=embodimentOfTheMarauder)
 	maraudersVisage.save()
 
 	maraudersSpines = SetPiece(name='Marauder\'s Spines',
-		pic='/assets/media/items/sets/dh/marauders_spines.png',
+		pic='media/items/sets/dh/marauders_spines.png',
 		category='Shoulders',
 		itemSet=embodimentOfTheMarauder)
 	maraudersSpines.save()
 
 	maraudersCarapace = SetPiece(name='Marauder\'s Carapace',
-		pic='/assets/media/items/sets/dh/marauders_carapace.png',
+		pic='media/items/sets/dh/marauders_carapace.png',
 		category='Chest Armor',
 		itemSet=embodimentOfTheMarauder)
 	maraudersCarapace.save()
 
 	maraudersGloves = SetPiece(name='Marauder\'s Gloves',
-		pic='/assets/media/items/sets/dh/marauders_gloves.png',
+		pic='media/items/sets/dh/marauders_gloves.png',
 		category='Gloves',
 		itemSet=embodimentOfTheMarauder)
 	maraudersGloves.save()
 
 	maraudersEncasement = SetPiece(name='Marauder\'s Encasement',
-		pic='/assets/media/items/sets/dh/marauders_encasement.png',
+		pic='media/items/sets/dh/marauders_encasement.png',
 		category='Pants',
 		itemSet=embodimentOfTheMarauder)
 	maraudersEncasement.save()
 
 	maraudersTreads = SetPiece(name='Marauder\'s Treads',
-		pic='/assets/media/items/sets/dh/marauders_treads.png',
+		pic='media/items/sets/dh/marauders_treads.png',
 		category='Boots',
 		itemSet=embodimentOfTheMarauder)
 	maraudersTreads.save()
@@ -1149,43 +1172,43 @@ def load_item_sets(apps, schema_editor):
 	natalyasVengeance.save()
 
 	natalyasSlayer = SetPiece(name='Natalya\'s Slayer',
-		pic='/assets/media/items/sets/dh/natalyas_slayer.png',
+		pic='media/items/sets/dh/natalyas_slayer.png',
 		category='Hand Crossbow',
 		itemSet=natalyasVengeance)
 	natalyasSlayer.save()
 
 	natalyasSight = SetPiece(name='Natalya\'s Sight',
-		pic='/assets/media/items/sets/dh/natalyas_sight.png',
+		pic='media/items/sets/dh/natalyas_sight.png',
 		category='Helmet',
 		itemSet=natalyasVengeance)
 	natalyasSight.save()
 
 	natalyasEmbrace = SetPiece(name='Natalya\'s Embrace',
-		pic='/assets/media/items/sets/dh/natalyas_embrace.png',
+		pic='media/items/sets/dh/natalyas_embrace.png',
 		category='Cloak',
 		itemSet=natalyasVengeance)
 	natalyasEmbrace.save()
 
 	natalyasTouch = SetPiece(name='Natalya\'s Touch',
-		pic='/assets/media/items/sets/dh/natalyas_touch.png',
+		pic='media/items/sets/dh/natalyas_touch.png',
 		category='Gloves',
 		itemSet=natalyasVengeance)
 	natalyasTouch.save()
 
 	natalyasLeggings = SetPiece(name='Natalya\'s Leggings',
-		pic='/assets/media/items/sets/dh/natalyas_leggings.png',
+		pic='media/items/sets/dh/natalyas_leggings.png',
 		category='Pants',
 		itemSet=natalyasVengeance)
 	natalyasLeggings.save()
 
 	natalyasBloodyFootprints = SetPiece(name='Natalya\'s Bloody Footprints',
-		pic='/assets/media/items/sets/dh/natalyas_bloody_footprints.png',
+		pic='media/items/sets/dh/natalyas_bloody_footprints.png',
 		category='Boots',
 		itemSet=natalyasVengeance)
 	natalyasBloodyFootprints.save()
 
 	natalyasReflection = SetPiece(name='Natalya\'s Reflection',
-		pic='/assets/media/items/sets/dh/natalyas_reflection.png',
+		pic='media/items/sets/dh/natalyas_reflection.png',
 		category='Ring',
 		itemSet=natalyasVengeance)
 	natalyasReflection.save()
@@ -1215,38 +1238,38 @@ def load_item_sets(apps, schema_editor):
 
 #Added in 2.4
 	theShadowsMask = SetPiece(name='The Shadow\'s Mask',
-		pic='/assets/media/items/sets/dh/the_shadows_mask.png',
+		pic='media/items/sets/dh/the_shadows_mask.png',
 		category='Helmet',
 		itemSet=theShadowsMantle)
 	theShadowsMask.save()
 
 #Added in 2.4
 	theShadowsBurden = SetPiece(name='The Shadow\'s Burden',
-		pic='/assets/media/items/sets/dh/the_shadows_burden.png',
+		pic='media/items/sets/dh/the_shadows_burden.png',
 		category='Shoulders',
 		itemSet=theShadowsMantle)
 	theShadowsBurden.save()
 
 	theShadowsBane = SetPiece(name='The Shadow\'s Bane',
-		pic='/assets/media/items/sets/dh/the_shadows_bane.png',
+		pic='media/items/sets/dh/the_shadows_bane.png',
 		category='Chest Armor',
 		itemSet=theShadowsMantle)
 	theShadowsBane.save()
 
 	theShadowsGrasp = SetPiece(name='The Shadow\'s Grasp',
-		pic='/assets/media/items/sets/dh/the_shadows_grasp.png',
+		pic='media/items/sets/dh/the_shadows_grasp.png',
 		category='Gloves',
 		itemSet=theShadowsMantle)
 	theShadowsGrasp.save()
 
 	theShadowsCoil = SetPiece(name='The Shadow\'s Coil',
-		pic='/assets/media/items/sets/dh/the_shadows_coil.png',
+		pic='media/items/sets/dh/the_shadows_coil.png',
 		category='Pants',
 		itemSet=theShadowsMantle)
 	theShadowsCoil.save()
 
 	theShadowsHeels = SetPiece(name='The Shadow\'s Heels',
-		pic='/assets/media/items/sets/dh/the_shadows_heels.png',
+		pic='media/items/sets/dh/the_shadows_heels.png',
 		category='Boots',
 		itemSet=theShadowsMantle)
 	theShadowsHeels.save()
@@ -1277,37 +1300,37 @@ def load_item_sets(apps, schema_editor):
 	unhallowedEssence.save()
 
 	accursedVisage = SetPiece(name='Accursed Visage',
-		pic='/assets/media/items/sets/dh/accursed_visage.png',
+		pic='media/items/sets/dh/accursed_visage.png',
 		category='Helmet',
 		itemSet=unhallowedEssence)
 	accursedVisage.save()
 
 	unsanctifiedShoulders = SetPiece(name='Unsanctified Shoulders',
-		pic='/assets/media/items/sets/dh/unsanctified_shoulders.png',
+		pic='media/items/sets/dh/unsanctified_shoulders.png',
 		category='Shoulders',
 		itemSet=unhallowedEssence)
 	unsanctifiedShoulders.save()
 
 	cageOfTheHellborn = SetPiece(name='Cage of the Hellborn',
-		pic='/assets/media/items/sets/dh/cage_of_the_hellborn.png',
+		pic='media/items/sets/dh/cage_of_the_hellborn.png',
 		category='Chest Armor',
 		itemSet=unhallowedEssence)
 	cageOfTheHellborn.save()
 
 	fiendishGrips = SetPiece(name='Fiendish Grips',
-		pic='/assets/media/items/sets/dh/fiendish_grips.png',
+		pic='media/items/sets/dh/fiendish_grips.png',
 		category='Gloves',
 		itemSet=unhallowedEssence)
 	fiendishGrips.save()
 
 	unholyPlates = SetPiece(name='Unholy Plates',
-		pic='/assets/media/items/sets/dh/unholy_plates.png',
+		pic='media/items/sets/dh/unholy_plates.png',
 		category='Pants',
 		itemSet=unhallowedEssence)
 	unholyPlates.save()
 
 	hellWalkers = SetPiece(name='Hell Walkers',
-		pic='/assets/media/items/sets/dh/hell_walkers.png',
+		pic='media/items/sets/dh/hell_walkers.png',
 		category='Boots',
 		itemSet=unhallowedEssence)
 	hellWalkers.save()
@@ -1338,43 +1361,43 @@ def load_item_sets(apps, schema_editor):
 	innasMantra.save()
 
 	innasReach = SetPiece(name='Inna\'s Reach',
-		pic='/assets/media/items/sets/monk/innas_reach.png',
+		pic='media/items/sets/monk/innas_reach.png',
 		category='Daibo',
 		itemSet=innasMantra)
 	innasReach.save()
 
 	innasRadiance = SetPiece(name='Inna\'s Radiance',
-		pic='/assets/media/items/sets/monk/innas_radiance.png',
+		pic='media/items/sets/monk/innas_radiance.png',
 		category='Spirit Stone',
 		itemSet=innasMantra)
 	innasRadiance.save()
 
 	innasVastExpanse = SetPiece(name='Inna\'s Vast Expanse',
-		pic='/assets/media/items/sets/monk/innas_vast_expanse.png',
+		pic='media/items/sets/monk/innas_vast_expanse.png',
 		category='Chest Armor',
 		itemSet=innasMantra)
 	innasVastExpanse.save()
 
 	innasHold = SetPiece(name='Inna\'s Hold',
-		pic='/assets/media/items/sets/monk/innas_hold.png',
+		pic='media/items/sets/monk/innas_hold.png',
 		category='Gloves',
 		itemSet=innasMantra)
 	innasHold.save()
 
 	innasFavor = SetPiece(name='Inna\'s Favor',
-		pic='/assets/media/items/sets/monk/innas_favor.png',
+		pic='media/items/sets/monk/innas_favor.png',
 		category='Belt',
 		itemSet=innasMantra)
 	innasFavor.save()
 
 	innasTemperance = SetPiece(name='Inna\'s Temperance',
-		pic='/assets/media/items/sets/monk/innas_temperance.png',
+		pic='media/items/sets/monk/innas_temperance.png',
 		category='Pants',
 		itemSet=innasMantra)
 	innasTemperance.save()
 
 	innasSandals = SetPiece(name='Inna\'s Sandals',
-		pic='/assets/media/items/sets/monk/innas_sandals.png',
+		pic='media/items/sets/monk/innas_sandals.png',
 		category='Boots',
 		itemSet=innasMantra)
 	innasSandals.save()
@@ -1403,25 +1426,25 @@ def load_item_sets(apps, schema_editor):
 	monkeyKingsGarb.save()
 
 	sunwukosCrown = SetPiece(name='Sunwuko\'s Crown',
-		pic='/assets/media/items/sets/monk/sunwukos_crown.png',
+		pic='media/items/sets/monk/sunwukos_crown.png',
 		category='Helmet',
 		itemSet=monkeyKingsGarb)
 	sunwukosCrown.save()
 
 	sunwukosBalance = SetPiece(name='Sunwuko\'s Balance',
-		pic='/assets/media/items/sets/monk/sunwukos_balance.png',
+		pic='media/items/sets/monk/sunwukos_balance.png',
 		category='Shoulders',
 		itemSet=monkeyKingsGarb)
 	sunwukosBalance.save()
 
 	sunwukosPaws = SetPiece(name='Sunwuko\'s Paws',
-		pic='/assets/media/items/sets/monk/sunwukos_paws.png',
+		pic='media/items/sets/monk/sunwukos_paws.png',
 		category='Gloves',
 		itemSet=monkeyKingsGarb)
 	sunwukosPaws.save()
 
 	sunwukosShines = SetPiece(name='Sunwuko\'s Shines',
-		pic='/assets/media/items/sets/monk/sunwukos_shines.png',
+		pic='media/items/sets/monk/sunwukos_shines.png',
 		category='Amulet',
 		itemSet=monkeyKingsGarb)
 	sunwukosShines.save()
@@ -1453,37 +1476,37 @@ def load_item_sets(apps, schema_editor):
 	raimentOfAThousandStorms.save()
 
 	maskOfTheSearingSky = SetPiece(name='Mask of the Searing Sky',
-		pic='/assets/media/items/sets/monk/mask_of_the_searing_sky.png',
+		pic='media/items/sets/monk/mask_of_the_searing_sky.png',
 		category='Helmet',
 		itemSet=raimentOfAThousandStorms)
 	maskOfTheSearingSky.save()
 
 	mantleOfTheUpsideDownSinners = SetPiece(name='Mantle of the Upside-Down Sinners',
-		pic='/assets/media/items/sets/monk/mantle_of_the_upsidedown_sinners.png',
+		pic='media/items/sets/monk/mantle_of_the_upsidedown_sinners.png',
 		category='Shoulders',
 		itemSet=raimentOfAThousandStorms)
 	mantleOfTheUpsideDownSinners.save()
 
 	heartOfTheCrashingWave = SetPiece(name='Heart of the Crashing Wave',
-		pic='/assets/media/items/sets/monk/heart_of_the_crashing_wave.png',
+		pic='media/items/sets/monk/heart_of_the_crashing_wave.png',
 		category='Chest Armor',
 		itemSet=raimentOfAThousandStorms)
 	heartOfTheCrashingWave.save()
 
 	fistsOfThunder = SetPiece(name='Fists of Thunder',
-		pic='/assets/media/items/sets/monk/fists_of_thunder.png',
+		pic='media/items/sets/monk/fists_of_thunder.png',
 		category='Gloves',
 		itemSet=raimentOfAThousandStorms)
 	fistsOfThunder.save()
 
 	scalesOfTheDancingSerpent = SetPiece(name='Scales of the Dancing Serpent',
-		pic='/assets/media/items/sets/monk/scales_of_the_dancing_serpent.png',
+		pic='media/items/sets/monk/scales_of_the_dancing_serpent.png',
 		category='Pants',
 		itemSet=raimentOfAThousandStorms)
 	scalesOfTheDancingSerpent.save()
 
 	eightDemonBoots = SetPiece(name='Eight-Demon Boots',
-		pic='/assets/media/items/sets/monk/eightdemon_boots.png',
+		pic='media/items/sets/monk/eightdemon_boots.png',
 		category='Boots',
 		itemSet=raimentOfAThousandStorms)
 	eightDemonBoots.save()
@@ -1512,13 +1535,13 @@ def load_item_sets(apps, schema_editor):
 
 
 	shenlongsFistOfLegend = SetPiece(name='Shenlong\'s Fist of Legend',
-		pic='/assets/media/items/sets/monk/shenlongs_fist_of_legend.png',
+		pic='media/items/sets/monk/shenlongs_fist_of_legend.png',
 		category='Fist Weapon',
 		itemSet=shenlongsSpirit)
 	shenlongsFistOfLegend.save()
 
 	shenlongsRelentlessAssault = SetPiece(name='Shenlong\'s Relentless Assault',
-		pic='/assets/media/items/sets/monk/shenlongs_relentless_assault.png',
+		pic='media/items/sets/monk/shenlongs_relentless_assault.png',
 		category='Fist Weapon',
 		itemSet=shenlongsSpirit)
 	shenlongsRelentlessAssault.save()
@@ -1535,37 +1558,37 @@ def load_item_sets(apps, schema_editor):
 	ulianasStrategem.save()
 
 	ulianasSpirit = SetPiece(name='Uliana\'s Spirit',
-		pic='/assets/media/items/sets/monk/ulianas_spirit.png',
+		pic='media/items/sets/monk/ulianas_spirit.png',
 		category='Helmet',
 		itemSet=ulianasStrategem)
 	ulianasSpirit.save()
 
 	ulianasStrength = SetPiece(name='Uliana\'s Strength',
-		pic='/assets/media/items/sets/monk/ulianas_strength.png',
+		pic='media/items/sets/monk/ulianas_strength.png',
 		category='Shoulders',
 		itemSet=ulianasStrategem)
 	ulianasStrength.save()
 
 	ulianasHeart = SetPiece(name='Uliana\'s Heart',
-		pic='/assets/media/items/sets/monk/ulianas_heart.png',
+		pic='media/items/sets/monk/ulianas_heart.png',
 		category='Chest Armor',
 		itemSet=ulianasStrategem)
 	ulianasHeart.save()
 
 	ulianasFury = SetPiece(name='Uliana\'s Fury',
-		pic='/assets/media/items/sets/monk/ulianas_fury.png',
+		pic='media/items/sets/monk/ulianas_fury.png',
 		category='Gloves',
 		itemSet=ulianasStrategem)
 	ulianasFury.save()
 
 	ulianasBurden = SetPiece(name='Uliana\'s Burden',
-		pic='/assets/media/items/sets/monk/ulianas_burden.png',
+		pic='media/items/sets/monk/ulianas_burden.png',
 		category='Pants',
 		itemSet=ulianasStrategem)
 	ulianasBurden.save()
 
 	ulianasDestiny = SetPiece(name='Uliana\'s Destiny',
-		pic='/assets/media/items/sets/monk/ulianas_destiny.png',
+		pic='media/items/sets/monk/ulianas_destiny.png',
 		category='Boots',
 		itemSet=ulianasStrategem)
 	ulianasDestiny.save()
@@ -1592,37 +1615,37 @@ def load_item_sets(apps, schema_editor):
 	helltoothHarness.save()
 
 	helltoothMask = SetPiece(name='Helltooth Mask',
-		pic='/assets/media/items/sets/wd/helltooth_mask.png',
+		pic='media/items/sets/wd/helltooth_mask.png',
 		category='Helmet',
 		itemSet=helltoothHarness)
 	helltoothMask.save()
 
 	helltoothMantle = SetPiece(name='Helltooth Mantle',
-		pic='/assets/media/items/sets/wd/helltooth_mantle.png',
+		pic='media/items/sets/wd/helltooth_mantle.png',
 		category='Shoulders',
 		itemSet=helltoothHarness)
 	helltoothMantle.save()
 
 	helltoothTunic = SetPiece(name='Helltooth Tunic',
-		pic='/assets/media/items/sets/wd/helltooth_tunic.png',
+		pic='media/items/sets/wd/helltooth_tunic.png',
 		category='Chest Armor',
 		itemSet=helltoothHarness)
 	helltoothTunic.save()
 
 	helltoothGauntlets = SetPiece(name='Helltooth Gauntlets',
-		pic='/assets/media/items/sets/wd/helltooth_gauntlets.png',
+		pic='media/items/sets/wd/helltooth_gauntlets.png',
 		category='Gloves',
 		itemSet=helltoothHarness)
 	helltoothGauntlets.save()
 
 	helltoothLegGuards = SetPiece(name='Helltooth Leg Guards',
-		pic='/assets/media/items/sets/wd/helltooth_leg_guards.png',
+		pic='media/items/sets/wd/helltooth_leg_guards.png',
 		category='Pants',
 		itemSet=helltoothHarness)
 	helltoothLegGuards.save()
 
 	helltoothGreaves = SetPiece(name='Helltooth Greaves',
-		pic='/assets/media/items/sets/wd/helltooth_greaves.png',
+		pic='media/items/sets/wd/helltooth_greaves.png',
 		category='Boots',
 		itemSet=helltoothHarness)
 	helltoothGreaves.save()
@@ -1649,13 +1672,13 @@ def load_item_sets(apps, schema_editor):
 	manajumasWay.save()
 
 	manajumasCarvingKnife = SetPiece(name='Manajuma\'s Carving Knife',
-		pic='/assets/media/items/sets/wd/manajumas_carving_knife.png',
+		pic='media/items/sets/wd/manajumas_carving_knife.png',
 		category='Ceremonial Knife',
 		itemSet=manajumasWay)
 	manajumasCarvingKnife.save()
 
 	manajumasGoryFetch = SetPiece(name='Manajuma\'s Gory Fetch',
-		pic='/assets/media/items/sets/wd/manajumas_gory_fetch.png',
+		pic='media/items/sets/wd/manajumas_gory_fetch.png',
 		category='Mojo',
 		itemSet=manajumasWay)
 	manajumasGoryFetch.save()
@@ -1673,37 +1696,37 @@ def load_item_sets(apps, schema_editor):
 	raimentOfTheJadeHarvester.save()
 
 	jadeHarvestersWisdom = SetPiece(name='Jade Harvester\'s Wisdom',
-		pic='/assets/media/items/sets/wd/jade_harvesters_wisdom.png',
+		pic='media/items/sets/wd/jade_harvesters_wisdom.png',
 		category='Helmet',
 		itemSet=raimentOfTheJadeHarvester)
 	jadeHarvestersWisdom.save()
 
 	jadeHarvestersJoy = SetPiece(name='Jade Harvester\'s Joy',
-		pic='/assets/media/items/sets/wd/jade_harvesters_joy.png',
+		pic='media/items/sets/wd/jade_harvesters_joy.png',
 		category='Shoulders',
 		itemSet=raimentOfTheJadeHarvester)
 	jadeHarvestersJoy.save()
 
 	jadeHarvestersPeace = SetPiece(name='Jade Harvester\'s Peace',
-		pic='/assets/media/items/sets/wd/jade_harvesters_peace.png',
+		pic='media/items/sets/wd/jade_harvesters_peace.png',
 		category='Chest Armor',
 		itemSet=raimentOfTheJadeHarvester)
 	jadeHarvestersPeace.save()
 
 	jadeHarvestersMercy = SetPiece(name='Jade Harvester\'s Mercy',
-		pic='/assets/media/items/sets/wd/jade_harvesters_mercy.png',
+		pic='media/items/sets/wd/jade_harvesters_mercy.png',
 		category='Gloves',
 		itemSet=raimentOfTheJadeHarvester)
 	jadeHarvestersMercy.save()
 
 	jadeHarvestersCourage = SetPiece(name='Jade Harvester\'s Courage',
-		pic='/assets/media/items/sets/wd/jade_harvesters_courage.png',
+		pic='media/items/sets/wd/jade_harvesters_courage.png',
 		category='Pants',
 		itemSet=raimentOfTheJadeHarvester)
 	jadeHarvestersCourage.save()
 
 	jadeHarvestersSwiftness = SetPiece(name='Jade Harvester\'s Swiftness',
-		pic='/assets/media/items/sets/wd/jade_harvesters_swiftness.png',
+		pic='media/items/sets/wd/jade_harvesters_swiftness.png',
 		category='Boots',
 		itemSet=raimentOfTheJadeHarvester)
 	jadeHarvestersSwiftness.save()
@@ -1733,37 +1756,37 @@ def load_item_sets(apps, schema_editor):
 	spiritOfArachyr.save()
 
 	arachyrsVisage = SetPiece(name='Arachyr\'s Visage',
-		pic='/assets/media/items/sets/wd/arachyrs_visage.png',
+		pic='media/items/sets/wd/arachyrs_visage.png',
 		category='Helmet',
 		itemSet=spiritOfArachyr)
 	arachyrsVisage.save()
 
 	arachyrsMantle = SetPiece(name='Arachyr\'s Mantle',
-		pic='/assets/media/items/sets/wd/arachyrs_mantle.png',
+		pic='media/items/sets/wd/arachyrs_mantle.png',
 		category='Shoulders',
 		itemSet=spiritOfArachyr)
 	arachyrsMantle.save()
 
 	arachyrsCarapace = SetPiece(name='Arachyr\'s Carapace',
-		pic='/assets/media/items/sets/wd/arachyrs_carapace.png',
+		pic='media/items/sets/wd/arachyrs_carapace.png',
 		category='Chest Armor',
 		itemSet=spiritOfArachyr)
 	arachyrsCarapace.save()
 
 	arachyrsClaws = SetPiece(name='Arachyr\'s Claws',
-		pic='/assets/media/items/sets/wd/arachyrs_claws.png',
+		pic='media/items/sets/wd/arachyrs_claws.png',
 		category='Gloves',
 		itemSet=spiritOfArachyr)
 	arachyrsClaws.save()
 
 	arachyrsLegs = SetPiece(name='Arachyr\'s Legs',
-		pic='/assets/media/items/sets/wd/arachyrs_legs.png',
+		pic='media/items/sets/wd/arachyrs_legs.png',
 		category='Pants',
 		itemSet=spiritOfArachyr)
 	arachyrsLegs.save()
 
 	arachyrsStride = SetPiece(name='Arachyr\'s Stride',
-		pic='/assets/media/items/sets/wd/arachyrs_stride.png',
+		pic='media/items/sets/wd/arachyrs_stride.png',
 		category='Boots',
 		itemSet=spiritOfArachyr)
 	arachyrsStride.save()
@@ -1792,43 +1815,43 @@ def load_item_sets(apps, schema_editor):
 	zunimassasHaunt.save()
 
 	zunimassasVision = SetPiece(name='Zunimassa\'s Vision',
-		pic='/assets/media/items/sets/wd/zunimassas_vision.png',
+		pic='media/items/sets/wd/zunimassas_vision.png',
 		category='Voodoo Mask',
 		itemSet=zunimassasHaunt)
 	zunimassasVision.save()
 
 	zunimassasMarrow = SetPiece(name='Zunimassa\'s Marrow',
-		pic='/assets/media/items/sets/wd/zunimassas_marrow.png',
+		pic='media/items/sets/wd/zunimassas_marrow.png',
 		category='Chest Armor',
 		itemSet=zunimassasHaunt)
 	zunimassasMarrow.save()
 
 	zunimassasFingerWraps = SetPiece(name='Zunimassa\'s Finger Wraps',
-		pic='/assets/media/items/sets/wd/zunimassas_finger_wraps.png',
+		pic='media/items/sets/wd/zunimassas_finger_wraps.png',
 		category='Gloves',
 		itemSet=zunimassasHaunt)
 	zunimassasFingerWraps.save()
 
 	zunimassasCloth = SetPiece(name='Zunimassa\'s Cloth',
-		pic='/assets/media/items/sets/wd/zunimassas_cloth.png',
+		pic='media/items/sets/wd/zunimassas_cloth.png',
 		category='Pants',
 		itemSet=zunimassasHaunt)
 	zunimassasCloth.save()
 
 	zunimassasTrail = SetPiece(name='Zunimassa\'s Trail',
-		pic='/assets/media/items/sets/wd/zunimassas_trail.png',
+		pic='media/items/sets/wd/zunimassas_trail.png',
 		category='Boots',
 		itemSet=zunimassasHaunt)
 	zunimassasTrail.save()
 
 	zunimassasStringOfSkulls = SetPiece(name='Zunimassa\'s String of Skulls',
-		pic='/assets/media/items/sets/wd/zunimassas_string_of_skulls.png',
+		pic='media/items/sets/wd/zunimassas_string_of_skulls.png',
 		category='Mojo',
 		itemSet=zunimassasHaunt)
 	zunimassasStringOfSkulls.save()
 
 	zunimassasPox = SetPiece(name='Zunimassa\'s Pox',
-		pic='/assets/media/items/sets/wd/zunimassas_pox.png',
+		pic='media/items/sets/wd/zunimassas_pox.png',
 		category='Ring',
 		itemSet=zunimassasHaunt)
 	zunimassasPox.save()
@@ -1856,13 +1879,13 @@ def load_item_sets(apps, schema_editor):
 	chantodosResolve.save()
 
 	chantodosWill = SetPiece(name='Chantodo\'s Will',
-		pic='/assets/media/items/sets/wiz/chantodos_will.png',
+		pic='media/items/sets/wiz/chantodos_will.png',
 		category='Wand',
 		itemSet=chantodosResolve)
 	chantodosWill.save()
 
 	chantodosForce = SetPiece(name='Chantodo\'s Force',
-		pic='/assets/media/items/sets/wiz/chantodos_force.png',
+		pic='media/items/sets/wiz/chantodos_force.png',
 		category='Source',
 		itemSet=chantodosResolve)
 	chantodosForce.save()
@@ -1879,37 +1902,37 @@ def load_item_sets(apps, schema_editor):
 	delseresMagnumOpus.save()
 
 	shroudedMask = SetPiece(name='Shrouded Mask',
-		pic='/assets/media/items/sets/wiz/shrouded_mask.png',
+		pic='media/items/sets/wiz/shrouded_mask.png',
 		category='Helmet',
 		itemSet=delseresMagnumOpus)
 	shroudedMask.save()
 
 	dashingPauldronsOfDespair = SetPiece(name='Dashing Pauldrons of Despair',
-		pic='/assets/media/items/sets/wiz/dashing_pauldrons_of_despair.png',
+		pic='media/items/sets/wiz/dashing_pauldrons_of_despair.png',
 		category='Shoulders',
 		itemSet=delseresMagnumOpus)
 	dashingPauldronsOfDespair.save()
 
 	harnessOfTruth = SetPiece(name='Harness of Truth',
-		pic='/assets/media/items/sets/wiz/harness_of_truth.png',
+		pic='media/items/sets/wiz/harness_of_truth.png',
 		category='Chest Armor',
 		itemSet=delseresMagnumOpus)
 	harnessOfTruth.save()
 
 	fierceGauntlets = SetPiece(name='Fierce Gauntlets',
-		pic='/assets/media/items/sets/wiz/fierce_gauntlets.png',
+		pic='media/items/sets/wiz/fierce_gauntlets.png',
 		category='Gloves',
 		itemSet=delseresMagnumOpus)
 	fierceGauntlets.save()
 
 	legGuardsOfMystery = SetPiece(name='Leg Guards of Mystery',
-		pic='/assets/media/items/sets/wiz/leg_guards_of_mystery.png',
+		pic='media/items/sets/wiz/leg_guards_of_mystery.png',
 		category='Pants',
 		itemSet=delseresMagnumOpus)
 	legGuardsOfMystery.save()
 
 	stridersOfDestiny = SetPiece(name='Striders of Destiny',
-		pic='/assets/media/items/sets/wiz/striders_of_destiny.png',
+		pic='media/items/sets/wiz/striders_of_destiny.png',
 		category='Boots',
 		itemSet=delseresMagnumOpus)
 	stridersOfDestiny.save()
@@ -1940,43 +1963,43 @@ def load_item_sets(apps, schema_editor):
 	firebirdsFinery.save()
 
 	firebirdsEye = SetPiece(name='Firebird\'s Eye',
-		pic='/assets/media/items/sets/wiz/firebirds_eye.png',
+		pic='media/items/sets/wiz/firebirds_eye.png',
 		category='Source',
 		itemSet=firebirdsFinery)
 	firebirdsEye.save()
 
 	firebirdsPlume = SetPiece(name='Firebird\'s Plume',
-		pic='/assets/media/items/sets/wiz/firebirds_plume.png',
+		pic='media/items/sets/wiz/firebirds_plume.png',
 		category='Helmet',
 		itemSet=firebirdsFinery)
 	firebirdsPlume.save()
 
 	firebirdsPinions = SetPiece(name='Firebird\'s Pinions',
-		pic='/assets/media/items/sets/wiz/firebirds_pinions.png',
+		pic='media/items/sets/wiz/firebirds_pinions.png',
 		category='Shoulders',
 		itemSet=firebirdsFinery)
 	firebirdsPinions.save()
 
 	firebirdsBreast = SetPiece(name='Firebird\'s Breast',
-		pic='/assets/media/items/sets/wiz/firebirds_breast.png',
+		pic='media/items/sets/wiz/firebirds_breast.png',
 		category='Chest Armor',
 		itemSet=firebirdsFinery)
 	firebirdsBreast.save()
 
 	firebirdsTalons = SetPiece(name='Firebird\'s Talons',
-		pic='/assets/media/items/sets/wiz/firebirds_talons.png',
+		pic='media/items/sets/wiz/firebirds_talons.png',
 		category='Gloves',
 		itemSet=firebirdsFinery)
 	firebirdsTalons.save()
 
 	firebirdsDown = SetPiece(name='Firebird\'s Down',
-		pic='/assets/media/items/sets/wiz/firebirds_down.png',
+		pic='media/items/sets/wiz/firebirds_down.png',
 		category='Pants',
 		itemSet=firebirdsFinery)
 	firebirdsDown.save()
 
 	firebirdsTarsi = SetPiece(name='Firebird\'s Tarsi',
-		pic='/assets/media/items/sets/wiz/firebirds_tarsi.png',
+		pic='media/items/sets/wiz/firebirds_tarsi.png',
 		category='Boots',
 		itemSet=firebirdsFinery)
 	firebirdsTarsi.save()
@@ -2006,43 +2029,43 @@ def load_item_sets(apps, schema_editor):
 	talRashasElements.save()
 
 	talRashasUnwaveringGlare = SetPiece(name='Tal Rasha\'s Unwavering Glare',
-		pic='/assets/media/items/sets/wiz/tal_rashas_unwavering_glare.png',
+		pic='media/items/sets/wiz/tal_rashas_unwavering_glare.png',
 		category='Source',
 		itemSet=talRashasElements)
 	talRashasUnwaveringGlare.save()
 
 	talRashasGuiseOfWisdom = SetPiece(name='Tal Rasha\'s Guise of Wisdom',
-		pic='/assets/media/items/sets/wiz/tal_rashas_guise_of_wisdom.png',
+		pic='media/items/sets/wiz/tal_rashas_guise_of_wisdom.png',
 		category='Helmet',
 		itemSet=talRashasElements)
 	talRashasGuiseOfWisdom.save()
 
 	talRashasRelentlessPursuit = SetPiece(name='Tal Rasha\'s Relentless Pursuit',
-		pic='/assets/media/items/sets/wiz/tal_rashas_relentless_pursuit.png',
+		pic='media/items/sets/wiz/tal_rashas_relentless_pursuit.png',
 		category='Chest Armor',
 		itemSet=talRashasElements)
 	talRashasRelentlessPursuit.save()
 
 	talRashasGrasp = SetPiece(name='Tal Rasha\'s Grasp',
-		pic='/assets/media/items/sets/wiz/tal_rashas_grasp.png',
+		pic='media/items/sets/wiz/tal_rashas_grasp.png',
 		category='Gloves',
 		itemSet=talRashasElements)
 	talRashasGrasp.save()
 
 	talRashasBrace = SetPiece(name='Tal Rasha\'s Brace',
-		pic='/assets/media/items/sets/wiz/tal_rashas_brace.png',
+		pic='media/items/sets/wiz/tal_rashas_brace.png',
 		category='Belt',
 		itemSet=talRashasElements)
 	talRashasBrace.save()
 
 	talRashasStride = SetPiece(name='Tal Rasha\'s Stride',
-		pic='/assets/media/items/sets/wiz/tal_rashas_stride.png',
+		pic='media/items/sets/wiz/tal_rashas_stride.png',
 		category='Pants',
 		itemSet=talRashasElements)
 	talRashasStride.save()
 
 	talRashasAllegiance = SetPiece(name='Tal Rasha\'s Allegiance',
-		pic='/assets/media/items/sets/wiz/tal_rashas_allegiance.png',
+		pic='media/items/sets/wiz/tal_rashas_allegiance.png',
 		category='Amulet',
 		itemSet=talRashasElements)
 	talRashasAllegiance.save()
@@ -2072,37 +2095,37 @@ def load_item_sets(apps, schema_editor):
 	vyrsAmazingArcana.save()
 
 	vyrsSightlessSkull = SetPiece(name='Vyr\'s Sightless Skull',
-		pic='/assets/media/items/sets/wiz/vyrs_sightless_skull.png',
+		pic='media/items/sets/wiz/vyrs_sightless_skull.png',
 		category='Helmet',
 		itemSet=vyrsAmazingArcana)
 	vyrsSightlessSkull.save()
 
 	vyrsProudPauldrons = SetPiece(name='Vyr\'s Proud Pauldrons',
-		pic='/assets/media/items/sets/wiz/vyrs_proud_pauldrons.png',
+		pic='media/items/sets/wiz/vyrs_proud_pauldrons.png',
 		category='Shoulders',
 		itemSet=vyrsAmazingArcana)
 	vyrsProudPauldrons.save()
 
 	vyrsAstonishingAura = SetPiece(name='Vyr\'s Astonishing Aura',
-		pic='/assets/media/items/sets/wiz/vyrs_astonishing_aura.png',
+		pic='media/items/sets/wiz/vyrs_astonishing_aura.png',
 		category='Chest Armor',
 		itemSet=vyrsAmazingArcana)
 	vyrsAstonishingAura.save()
 
 	vyrsGraspingGauntlets = SetPiece(name='Vyr\'s Grasping Gauntlets',
-		pic='/assets/media/items/sets/wiz/vyrs_grasping_gauntlets.png',
+		pic='media/items/sets/wiz/vyrs_grasping_gauntlets.png',
 		category='Gloves',
 		itemSet=vyrsAmazingArcana)
 	vyrsGraspingGauntlets.save()
 
 	vyrsFantasticFinery = SetPiece(name='Vyr\'s Fantastic Finery',
-		pic='/assets/media/items/sets/wiz/vyrs_fantastic_finery.png',
+		pic='media/items/sets/wiz/vyrs_fantastic_finery.png',
 		category='Pants',
 		itemSet=vyrsAmazingArcana)
 	vyrsFantasticFinery.save()
 
 	vyrsSwaggeringStance = SetPiece(name='Vyr\'s Swaggering Stance',
-		pic='/assets/media/items/sets/wiz/vyrs_swaggering_stance.png',
+		pic='media/items/sets/wiz/vyrs_swaggering_stance.png',
 		category='Boots',
 		itemSet=vyrsAmazingArcana)
 	vyrsSwaggeringStance.save()

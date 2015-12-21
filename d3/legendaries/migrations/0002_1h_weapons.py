@@ -27,7 +27,7 @@ def load_1h_axes(apps, schema_editor):
 
 	fleshTearer = Weapon(slot='1H Weapons',
 		name='Flesh Tearer',
-		pic='/assets/media/items/legendaries/weapons/1h/axes/flesh_tearer.png',
+		pic='media/items/legendaries/weapons/1h/axes/flesh_tearer.png',
 		category='1H Axes',
 		random_primaries='2',
 		random_secondaries='2')
@@ -36,7 +36,7 @@ def load_1h_axes(apps, schema_editor):
 
 	genzaniku = Weapon(slot='1H Weapons',
 		name='Genzaniku',
-		pic='/assets/media/items/legendaries/weapons/1h/axes/genzaniku.png',
+		pic='media/items/legendaries/weapons/1h/axes/genzaniku.png',
 		category='1H Axes',
 		unique='Chance to summon a ghostly Fallen Champion when attacking.',
 		random_primaries='3',
@@ -46,7 +46,7 @@ def load_1h_axes(apps, schema_editor):
 
 	hack = Weapon(slot='1H Weapons',
 		name='Hack',
-		pic='/assets/media/items/legendaries/weapons/1h/axes/hack.png',
+		pic='media/items/legendaries/weapons/1h/axes/hack.png',
 		category='1H Axes',
 		unique='<span>75 - 100%</span> of your Thorns damage is applied on every attack.',
 		random_primaries='2',
@@ -56,7 +56,7 @@ def load_1h_axes(apps, schema_editor):
 
 	skySplitter = Weapon(slot='1H Weapons',
 		name='Sky Splitter',
-		pic='/assets/media/items/legendaries/weapons/1h/axes/sky_splitter.png',
+		pic='media/items/legendaries/weapons/1h/axes/sky_splitter.png',
 		category='1H Axes',
 		unique='<span>15 - 20%</span> chance to Smite enemies for <span>600 - 750%</span> weapon damage as Lightning when you hit them.',
 		random_primaries='2',
@@ -66,7 +66,7 @@ def load_1h_axes(apps, schema_editor):
 
 	theBurningAxeOfSankis = Weapon(slot='1H Weapons',
 		name='The Burning Axe of Sankis',
-		pic='/assets/media/items/legendaries/weapons/1h/axes/the_burning_axe_of_sankis.png',
+		pic='media/items/legendaries/weapons/1h/axes/the_burning_axe_of_sankis.png',
 		category='1H Axes',
 		unique='Chance to fight through the pain when enemies hit you.',
 		random_primaries='2',
@@ -76,7 +76,7 @@ def load_1h_axes(apps, schema_editor):
 
 	theButchersSickle = Weapon(slot='1H Weapons',
 		name='The Butcher\'s Sickle',
-		pic='/assets/media/items/legendaries/weapons/1h/axes/the_butchers_sickle.png',
+		pic='media/items/legendaries/weapons/1h/axes/the_butchers_sickle.png',
 		category='1H Axes',
 		unique='<span>20 - 25%</span> chance to drag enemies to you when attacking.',
 		random_primaries='3',
@@ -86,7 +86,7 @@ def load_1h_axes(apps, schema_editor):
 
 	utarsRoar = Weapon(slot='1H Weapons',
 		name='Utar\'s Roar',
-		pic='/assets/media/items/legendaries/weapons/1h/axes/utars_roar.png',
+		pic='media/items/legendaries/weapons/1h/axes/utars_roar.png',
 		category='1H Axes',
 		random_primaries='2',
 		random_secondaries='2',
@@ -120,7 +120,7 @@ def load_ceremonial_knives(apps, schema_editor):
 
 	anessaziEdge = Weapon(slot='1H Weapons',
 		name='Anessazi Edge',
-		pic='/assets/media/items/legendaries/weapons/1h/ceremonialknives/anessazi_edge.png',
+		pic='media/items/legendaries/weapons/1h/ceremonialknives/anessazi_edge.png',
 		category='Ceremonial Knives',
 		unique='Zombie Dogs stuns enemies around them for <span class="silver">1.5</span> seconds when summoned.',
 		random_primaries='2',
@@ -130,7 +130,7 @@ def load_ceremonial_knives(apps, schema_editor):
 
 	deadlyRebirth = Weapon(slot='1H Weapons',
 		name='Deadly Rebirth',
-		pic='/assets/media/items/legendaries/weapons/1h/ceremonialknives/deadly_rebirth.png',
+		pic='media/items/legendaries/weapons/1h/ceremonialknives/deadly_rebirth.png',
 		category='Ceremonial Knives',
 		unique='Grasp of the Dead gains the effect of the Rain of Corpses rune.',
 		random_secondaries='1',
@@ -141,7 +141,7 @@ def load_ceremonial_knives(apps, schema_editor):
 #2.4
 	lastBreath = Weapon(slot='1H Weapons',
 		name='Last Breath',
-		pic='/assets/media/items/legendaries/weapons/1h/ceremonialknives/last_breath.png',
+		pic='media/items/legendaries/weapons/1h/ceremonialknives/last_breath.png',
 		unique='Reduce the cooldown of Mass Confusion by <span>15 - 20</span> seconds',
 		category='Ceremonial Knives',
 		random_primaries='2',
@@ -151,7 +151,7 @@ def load_ceremonial_knives(apps, schema_editor):
 
 	livingUmbralOath = Weapon(slot='1H Weapons',
 		name='Living Umbral Oath',
-		pic='/assets/media/items/legendaries/weapons/1h/ceremonialknives/living_umbral_oath.png',
+		pic='media/items/legendaries/weapons/1h/ceremonialknives/living_umbral_oath.png',
 		category='Ceremonial Knives',
 		random_primaries='3',
 		random_secondaries='2',
@@ -161,7 +161,7 @@ def load_ceremonial_knives(apps, schema_editor):
 
 	rhenhoFlayer = Weapon(slot='1H Weapons',
 		name='Rhen\'ho Flayer',
-		pic='/assets/media/items/legendaries/weapons/1h/ceremonialknives/rhenho_flayer.png',
+		pic='media/items/legendaries/weapons/1h/ceremonialknives/rhenho_flayer.png',
 		category='Ceremonial Knives',
 		unique='Plague of Toads now seek out enemies and can explode twice.',
 		random_primaries='2',
@@ -171,7 +171,7 @@ def load_ceremonial_knives(apps, schema_editor):
 
 	sacredHarvester = Weapon(slot='1H Weapons',
 		name='Sacred Harvester',
-		pic='/assets/media/items/legendaries/weapons/1h/ceremonialknives/sacred_harvester.png',
+		pic='media/items/legendaries/weapons/1h/ceremonialknives/sacred_harvester.png',
 		category='Ceremonial Knives',
 		unique='Soul Harvest now stacks up to <span class="silver">10</span> times.',
 		random_primaries='2',
@@ -181,7 +181,7 @@ def load_ceremonial_knives(apps, schema_editor):
 
 	starmetalKukri = Weapon(slot='1H Weapons',
 		name='Starmetal Kukri',
-		pic='/assets/media/items/legendaries/weapons/1h/ceremonialknives/starmetal_kukri.png',
+		pic='media/items/legendaries/weapons/1h/ceremonialknives/starmetal_kukri.png',
 		category='Ceremonial Knives',
 		unique='Reduce the cooldown of Fetish Army and Big Bad Voodoo by <span class="silver">1</span> second each time your fetishes deal damage.',
 		random_primaries='1',
@@ -191,7 +191,7 @@ def load_ceremonial_knives(apps, schema_editor):
 
 	theDaggerOfDarts = Weapon(slot='1H Weapons',
 		name='The Dagger of Darts',
-		pic='/assets/media/items/legendaries/weapons/1h/ceremonialknives/the_dagger_of_darts.png',
+		pic='media/items/legendaries/weapons/1h/ceremonialknives/the_dagger_of_darts.png',
 		category='Ceremonial Knives',
 		unique='Your Poison Darts and your Fetishes\' Poison Darts now pierce.',
 		random_primaries='2',
@@ -201,7 +201,7 @@ def load_ceremonial_knives(apps, schema_editor):
 
 	theGidbinn = Weapon(slot='1H Weapons',
 		name='The Gidbinn',
-		pic='/assets/media/items/legendaries/weapons/1h/ceremonialknives/the_gidbinn.png',
+		pic='media/items/legendaries/weapons/1h/ceremonialknives/the_gidbinn.png',
 		category='Ceremonial Knives',
 		unique='Chance to summon a Fetish when attacking.',
 		random_primaries='1',
@@ -211,7 +211,7 @@ def load_ceremonial_knives(apps, schema_editor):
 
 	theSpiderQueensGrasp = Weapon(slot='1H Weapons',
 		name='The Spider Queen\'s Grasp',
-		pic='/assets/media/items/legendaries/weapons/1h/ceremonialknives/the_spider_queens_grasp.png',
+		pic='media/items/legendaries/weapons/1h/ceremonialknives/the_spider_queens_grasp.png',
 		category='Ceremonial Knives',
 		unique='Corpse Spiders releases a web on impact that Slows enemies by <span>60 - 80%</span>.',
 		random_secondaries='1')
@@ -238,7 +238,7 @@ def load_1h_daggers(apps, schema_editor):
 
 	bloodMagicEdge = Weapon(slot='1H Weapons',
 		name='Blood-Magic Edge',
-		pic='/assets/media/items/legendaries/weapons/1h/daggers/bloodmagic_edge.png',
+		pic='media/items/legendaries/weapons/1h/daggers/bloodmagic_edge.png',
 		category='1H Daggers',
 		unique='Blood oozes from you.',
 		random_primaries='2',
@@ -249,7 +249,7 @@ def load_1h_daggers(apps, schema_editor):
 
 	enviousBlade = Weapon(slot='1H Weapons',
 		name='Envious Blade',
-		pic='/assets/media/items/legendaries/weapons/1h/daggers/envious_blade.png',
+		pic='media/items/legendaries/weapons/1h/daggers/envious_blade.png',
 		category='1H Daggers',
 		unique='Gain <span class="silver">100%</span> Critical Hit Chance against enemies at full health.',
 		random_primaries='2',
@@ -259,7 +259,7 @@ def load_1h_daggers(apps, schema_editor):
 
 	eunjangdo = Weapon(slot='1H Weapons',
 		name='Eun-jang-do',
-		pic='/assets/media/items/legendaries/weapons/1h/daggers/eunjangdo.png',
+		pic='media/items/legendaries/weapons/1h/daggers/eunjangdo.png',
 		category='1H Daggers',
 		unique='Attacking enemies below <span>17 - 20%</span> Life freezes them for <span class="silver">3</span> seconds.',
 		random_primaries='2',
@@ -269,7 +269,7 @@ def load_1h_daggers(apps, schema_editor):
 
 	kill = Weapon(slot='1H Weapons',
 		name='Kill',
-		pic='/assets/media/items/legendaries/weapons/1h/daggers/kill.png',
+		pic='media/items/legendaries/weapons/1h/daggers/kill.png',
 		category='1H Daggers',
 		random_primaries='2',
 		random_secondaries='2')
@@ -278,7 +278,7 @@ def load_1h_daggers(apps, schema_editor):
 
 	pigSticker = Weapon(slot='1H Weapons',
 		name='Pig Sticker',
-		pic='/assets/media/items/legendaries/weapons/1h/daggers/pig_sticker.png',
+		pic='media/items/legendaries/weapons/1h/daggers/pig_sticker.png',
 		category='1H Daggers',
 		unique='Squeal!',
 		random_primaries='3')
@@ -287,7 +287,7 @@ def load_1h_daggers(apps, schema_editor):
 
 	theBarber = Weapon(slot='1H Weapons',
 		name='The Barber',
-		pic='/assets/media/items/legendaries/weapons/1h/daggers/the_barber.png',
+		pic='media/items/legendaries/weapons/1h/daggers/the_barber.png',
 		category='1H Daggers',
 		random_primaries='1',
 		random_secondaries='1',
@@ -297,7 +297,7 @@ def load_1h_daggers(apps, schema_editor):
 
 	theHoradricHamburger = Weapon(slot='1H Weapons',
 		name='The Horadric Hamburger',
-		pic='/assets/media/items/legendaries/weapons/1h/daggers/the_horadric_hamburger.png',
+		pic='media/items/legendaries/weapons/1h/daggers/the_horadric_hamburger.png',
 		category='1H Daggers',
 		random_primaries='2',
 		random_secondaries='2')
@@ -306,7 +306,7 @@ def load_1h_daggers(apps, schema_editor):
 
 	wizardspike = Weapon(slot='1H Weapons',
 		name='Wizardspike',
-		pic='/assets/media/items/legendaries/weapons/1h/daggers/wizardspike.png',
+		pic='media/items/legendaries/weapons/1h/daggers/wizardspike.png',
 		category='1H Daggers',
 		unique='Performing an attack has a <span>20 - 25%</span> chance to hurl a Frozen Orb.',
 		random_primaries='',
@@ -351,7 +351,7 @@ def load_fist_weapons(apps, schema_editor):
 
 	crystalFist = Weapon(slot='1H Weapons',
 		name='Crystal Fist',
-		pic='/assets/media/items/legendaries/weapons/1h/fistweapons/crystal_fist.png',
+		pic='media/items/legendaries/weapons/1h/fistweapons/crystal_fist.png',
 		category='Fist Weapons',
 		random_primaries='1',
 		random_secondaries='1')
@@ -360,7 +360,7 @@ def load_fist_weapons(apps, schema_editor):
 
 	demonClaw = Weapon(slot='1H Weapons',
 		name='Demon Claw',
-		pic='/assets/media/items/legendaries/weapons/1h/fistweapons/demon_claw.png',
+		pic='media/items/legendaries/weapons/1h/fistweapons/demon_claw.png',
 		category='Fist Weapons',
 		random_primaries='3',
 		random_secondaries='2',
@@ -370,7 +370,7 @@ def load_fist_weapons(apps, schema_editor):
 
 	fleshrake = Weapon(slot='1H Weapons',
 		name='Fleshrake',
-		pic='/assets/media/items/legendaries/weapons/1h/fistweapons/fleshrake.png',
+		pic='media/items/legendaries/weapons/1h/fistweapons/fleshrake.png',
 		category='Fist Weapons',
 		random_primaries='1',
 		random_secondaries='2')
@@ -379,7 +379,7 @@ def load_fist_weapons(apps, schema_editor):
 
 	jawbreaker = Weapon(slot='1H Weapons',
 		name='Jawbreaker',
-		pic='/assets/media/items/legendaries/weapons/1h/fistweapons/jawbreaker.png',
+		pic='media/items/legendaries/weapons/1h/fistweapons/jawbreaker.png',
 		category='Fist Weapons',
 		unique='When Dashing Strike hits an enemy more than <span>30 - 35</span> yards away, its Charge cost is refunded.',
 		random_primaries='2',
@@ -389,7 +389,7 @@ def load_fist_weapons(apps, schema_editor):
 
 	lionsClaw = Weapon(slot='1H Weapons',
 		name='Lion\'s Claw',
-		pic='/assets/media/items/legendaries/weapons/1h/fistweapons/lions_claw.png',
+		pic='media/items/legendaries/weapons/1h/fistweapons/lions_claw.png',
 		category='Fist Weapons',
 		unique='Seven-Sided Strike performs an additional <span class="silver">7</span> strikes.',
 		random_primaries='2',
@@ -399,7 +399,7 @@ def load_fist_weapons(apps, schema_editor):
 
 	logansClaw = Weapon(slot='1H Weapons',
 		name='Logan\'s Claw',
-		pic='/assets/media/items/legendaries/weapons/1h/fistweapons/logans_claw.png',
+		pic='media/items/legendaries/weapons/1h/fistweapons/logans_claw.png',
 		category='Fist Weapons',
 		random_primaries='1',
 		random_secondaries='2')
@@ -408,7 +408,7 @@ def load_fist_weapons(apps, schema_editor):
 
 	rabidStrike = Weapon(slot='1H Weapons',
 		name='Rabid Strike',
-		pic='/assets/media/items/legendaries/weapons/1h/fistweapons/rabid_strike.png',
+		pic='media/items/legendaries/weapons/1h/fistweapons/rabid_strike.png',
 		category='Fist Weapons',
 		random_primaries='1',
 		random_secondaries='1')
@@ -417,7 +417,7 @@ def load_fist_weapons(apps, schema_editor):
 
 	scarbringer = Weapon(slot='1H Weapons',
 		name='Scarbringer',
-		pic='/assets/media/items/legendaries/weapons/1h/fistweapons/scarbringer.png',
+		pic='media/items/legendaries/weapons/1h/fistweapons/scarbringer.png',
 		category='Fist Weapons',
 		random_primaries='2',
 		random_secondaries='2')
@@ -426,7 +426,7 @@ def load_fist_weapons(apps, schema_editor):
 
 	sledgeFist = Weapon(slot='1H Weapons',
 		name='Sledge Fist',
-		pic='/assets/media/items/legendaries/weapons/1h/fistweapons/sledge_fist.png',
+		pic='media/items/legendaries/weapons/1h/fistweapons/sledge_fist.png',
 		category='Fist Weapons',
 		random_primaries='2',
 		random_secondaries='1')
@@ -436,7 +436,7 @@ def load_fist_weapons(apps, schema_editor):
 #2.4
 	theFistOfAzTurrasq = Weapon(slot='1H Weapons',
 		name='The Fist of Az\'Turrasq',
-		pic='/assets/media/items/legendaries/weapons/1h/fistweapons/the_fist_of_azturrasq.png',
+		pic='media/items/legendaries/weapons/1h/fistweapons/the_fist_of_azturrasq.png',
 		category='Fist Weapons',
 		unique='Exploding Palm\'s on-death explosion damage is increased by <span>250 - 300%</span>.',
 		random_primaries='1',
@@ -447,7 +447,7 @@ def load_fist_weapons(apps, schema_editor):
 #2.4
 	vengefulWind = Weapon(slot='1H Weapons',
 		name='Vengeful Wind',
-		pic='/assets/media/items/legendaries/weapons/1h/fistweapons/vengeful_wind.png',
+		pic='media/items/legendaries/weapons/1h/fistweapons/vengeful_wind.png',
 		category='Fist Weapons',
 		unique='Increases the maximum stack count of Sweeping Wind by <span>6 - 7</span>.',
 		random_primaries='2',
@@ -457,7 +457,7 @@ def load_fist_weapons(apps, schema_editor):
 
 	wonKhimLau = Weapon(slot='1H Weapons',
 		name='Won Khim Lau',
-		pic='/assets/media/items/legendaries/weapons/1h/fistweapons/won_khim_lau.png',
+		pic='media/items/legendaries/weapons/1h/fistweapons/won_khim_lau.png',
 		category='Fist Weapons',
 		random_primaries='2',
 		random_secondaries='1')
@@ -481,7 +481,7 @@ def load_1h_flails(apps, schema_editor):
 
 	darklight = Weapon(slot='1H Weapons',
 		name='Darklight',
-		pic='/assets/media/items/legendaries/weapons/1h/flails/darklight.png',
+		pic='media/items/legendaries/weapons/1h/flails/darklight.png',
 		category='1H Flails',
 		unique='Fist of the Heavens has a <span>45 - 60%</span> chance to also be cast at your location.',
 		random_primaries='2',
@@ -491,7 +491,7 @@ def load_1h_flails(apps, schema_editor):
 
 	goldenScourge = Weapon(slot='1H Weapons',
 		name='Golden Scourge',
-		pic='/assets/media/items/legendaries/weapons/1h/flails/golden_scourge.png',
+		pic='media/items/legendaries/weapons/1h/flails/golden_scourge.png',
 		category='1H Flails',
 		unique='Smite now jumps to <span class="silver">3</span> additional enemies.',
 		random_primaries='2',
@@ -501,7 +501,7 @@ def load_1h_flails(apps, schema_editor):
 
 	gyrfalconsFoote = Weapon(slot='1H Weapons',
 		name='Gyrfalcon\'s Foote',
-		pic='/assets/media/items/legendaries/weapons/1h/flails/gyrfalcons_foote.png',
+		pic='media/items/legendaries/weapons/1h/flails/gyrfalcons_foote.png',
 		category='1H Flails',
 		unique='Removes the resource cost of Blessed Shield.',
 		random_primaries='2',
@@ -511,7 +511,7 @@ def load_1h_flails(apps, schema_editor):
 
 	inviolableFaith = Weapon(slot='1H Weapons',
 		name='Inviolable Faith',
-		pic='/assets/media/items/legendaries/weapons/1h/flails/inviolable_faith.png',
+		pic='media/items/legendaries/weapons/1h/flails/inviolable_faith.png',
 		category='1H Flails',
 		unique='Casting Consecration also casts Consecration beneath all of your allies.',
 		random_primaries='2',
@@ -521,7 +521,7 @@ def load_1h_flails(apps, schema_editor):
 
 	johannasArgument = Weapon(slot='1H Weapons',
 		name='Johanna\'s Argument',
-		pic='/assets/media/items/legendaries/weapons/1h/flails/johannas_argument.png',
+		pic='media/items/legendaries/weapons/1h/flails/johannas_argument.png',
 		category='1H Flails',
 		unique='Increase the attack speed of Blessed Hammer by <span class="silver">100%</span>.',
 		random_primaries='2',
@@ -531,7 +531,7 @@ def load_1h_flails(apps, schema_editor):
 
 	justiniansMercy = Weapon(slot='1H Weapons',
 		name='Justinian\'s Mercy',
-		pic='/assets/media/items/legendaries/weapons/1h/flails/justinians_mercy.png',
+		pic='media/items/legendaries/weapons/1h/flails/justinians_mercy.png',
 		category='1H Flails',
 		unique='Blessed Hammer gains the effect of the Dominion rune.',
 		random_primaries='2',
@@ -541,7 +541,7 @@ def load_1h_flails(apps, schema_editor):
 
 	kassarsRetribution = Weapon(slot='1H Weapons',
 		name='Kassar\'s Retribution',
-		pic='/assets/media/items/legendaries/weapons/1h/flails/kassars_retribution.png',
+		pic='media/items/legendaries/weapons/1h/flails/kassars_retribution.png',
 		category='1H Flails',
 		unique='Casting Justice increases your movement speed by <span>15 - 20%</span> for <span class="silver">2</span> seconds.',
 		random_primaries='2',
@@ -551,7 +551,7 @@ def load_1h_flails(apps, schema_editor):
 
 	swiftmount = Weapon(slot='1H Weapons',
 		name='Swiftmount',
-		pic='/assets/media/items/legendaries/weapons/1h/flails/swiftmount.png',
+		pic='media/items/legendaries/weapons/1h/flails/swiftmount.png',
 		category='1H Flails',
 		unique='Doubles the duration of Steed Charge.',
 		random_primaries='2',
@@ -587,7 +587,7 @@ def load_hand_crossbows(apps, schema_editor):
 
 	balefireCaster = Weapon(slot='1H Weapons',
 		name='Balefire Caster',
-		pic='/assets/media/items/legendaries/weapons/1h/handcrossbows/balefire_caster.png',
+		pic='media/items/legendaries/weapons/1h/handcrossbows/balefire_caster.png',
 		category='Hand Crossbows',
 		random_primaries='1',
 		random_secondaries='2')
@@ -596,7 +596,7 @@ def load_hand_crossbows(apps, schema_editor):
 
 	blitzbolter = Weapon(slot='1H Weapons',
 		name='Blitzbolter',
-		pic='/assets/media/items/legendaries/weapons/1h/handcrossbows/blitzbolter.png',
+		pic='media/items/legendaries/weapons/1h/handcrossbows/blitzbolter.png',
 		category='Hand Crossbows',
 		random_primaries='3',
 		random_secondaries='2',
@@ -606,7 +606,7 @@ def load_hand_crossbows(apps, schema_editor):
 
 	calamity = Weapon(slot='1H Weapons',
 		name='Calamity',
-		pic='/assets/media/items/legendaries/weapons/1h/handcrossbows/calamity.png',
+		pic='media/items/legendaries/weapons/1h/handcrossbows/calamity.png',
 		category='Hand Crossbows',
 		unique='Enemies you hit become Marked for Death.',
 		random_primaries='2',
@@ -617,7 +617,7 @@ def load_hand_crossbows(apps, schema_editor):
 #2.4
 	dawn = Weapon(slot='1H Weapons',
 		name='Dawn',
-		pic='/assets/media/items/legendaries/weapons/1h/handcrossbows/dawn.png',
+		pic='media/items/legendaries/weapons/1h/handcrossbows/dawn.png',
 		category='Hand Crossbows',
 		unique=',Reduces the cooldown of Vengeance by <span>50 - 65%</span>',
 		random_primaries='2')
@@ -626,7 +626,7 @@ def load_hand_crossbows(apps, schema_editor):
 
 	helltrapper = Weapon(slot='1H Weapons',
 		name='Helltrapper',
-		pic='/assets/media/items/legendaries/weapons/1h/handcrossbows/helltrapper.png',
+		pic='media/items/legendaries/weapons/1h/handcrossbows/helltrapper.png',
 		category='Hand Crossbows',
 		unique='<span>7 - 10%</span> chance on hit to summon a Spike Trap, Caltrops or Sentry.',
 		random_primaries='2',
@@ -637,7 +637,7 @@ def load_hand_crossbows(apps, schema_editor):
 #2.4
 	kmarTenclip = Weapon(slot='1H Weapons',
 		name='K\'mar Tenclip',
-		pic='/assets/media/items/legendaries/weapons/1h/handcrossbows/kmar_tenclip.png',
+		pic='media/items/legendaries/weapons/1h/handcrossbows/kmar_tenclip.png',
 		category='Hand Crossbows',
 		unique='Strafe gains the effect of the Drifting Shadow rune.',
 		random_primaries='1',
@@ -647,7 +647,7 @@ def load_hand_crossbows(apps, schema_editor):
 
 	theDemonsDemise = Weapon(slot='1H Weapons',
 		name='The Demon\'s Demise',
-		pic='/assets/media/items/legendaries/weapons/1h/handcrossbows/the_demons_demise.png',
+		pic='media/items/legendaries/weapons/1h/handcrossbows/the_demons_demise.png',
 		category='Hand Crossbows',
 		unique='Spike Trap - Sticky Trap spreads to nearby enemies when it explodes.',
 		random_primaries='2',
@@ -658,7 +658,7 @@ def load_hand_crossbows(apps, schema_editor):
 #2.4
 	vallasBequest = Weapon(slot='1H Weapons',
 		name='Valla\'s Bequest',
-		pic='/assets/media/items/legendaries/weapons/1h/handcrossbows/vallas_bequest.png',
+		pic='media/items/legendaries/weapons/1h/handcrossbows/vallas_bequest.png',
 		category='Hand Crossbows',
 		unique='Strafe projectiles pierce.',
 		random_primaries='2')
@@ -711,7 +711,7 @@ def load_1h_maces(apps, schema_editor):
 
 	devastator = Weapon(slot='1H Weapons',
 		name='Devastator',
-		pic='/assets/media/items/legendaries/weapons/1h/maces/devastator.png',
+		pic='media/items/legendaries/weapons/1h/maces/devastator.png',
 		category='1H Maces',
 		random_primaries='2',
 		random_secondaries='2',
@@ -722,7 +722,7 @@ def load_1h_maces(apps, schema_editor):
 
 	echoingFury = Weapon(slot='1H Weapons',
 		name='Echoing Fury',
-		pic='/assets/media/items/legendaries/weapons/1h/maces/echoing_fury.png',
+		pic='media/items/legendaries/weapons/1h/maces/echoing_fury.png',
 		category='1H Maces',
 		random_secondaries='1',
 		owner='all')
@@ -732,7 +732,7 @@ def load_1h_maces(apps, schema_editor):
 #2.4
 	jacesHammerOfVigilance = Weapon(slot='1H Weapons',
 		name='Jace\'s Hammer of Vigilance',
-		pic='/assets/media/items/legendaries/weapons/1h/maces/jaces_hammer_of_vigilance.png',
+		pic='media/items/legendaries/weapons/1h/maces/jaces_hammer_of_vigilance.png',
 		category='1H Maces',
 		unique='Increase the size of your Blessed Hammers.',
 		random_primaries='2',
@@ -743,7 +743,7 @@ def load_1h_maces(apps, schema_editor):
 
 	madMonarchsScepter = Weapon(slot='1H Weapons',
 		name='Mad Monarch\'s Scepter',
-		pic='/assets/media/items/legendaries/weapons/1h/maces/mad_monarchs_scepter.png',
+		pic='media/items/legendaries/weapons/1h/maces/mad_monarchs_scepter.png',
 		category='1H Maces',
 		unique='After killing <span class="silver">10</span> enemies, you release a Poison Nova that deals <span>1050 - 1400%</span> weapon damage as Poison to enemies within <span class="silver">30</span> yards.',
 		random_primaries='1',
@@ -754,7 +754,7 @@ def load_1h_maces(apps, schema_editor):
 
 	nailbiter = Weapon(slot='1H Weapons',
 		name='Nailbiter',
-		pic='/assets/media/items/legendaries/weapons/1h/maces/nailbiter.png',
+		pic='media/items/legendaries/weapons/1h/maces/nailbiter.png',
 		category='1H Maces',
 		random_primaries='2',
 		random_secondaries='1',
@@ -764,7 +764,7 @@ def load_1h_maces(apps, schema_editor):
 
 	neanderthal = Weapon(slot='1H Weapons',
 		name='Neanderthal',
-		pic='/assets/media/items/legendaries/weapons/1h/maces/neanderthal.png',
+		pic='media/items/legendaries/weapons/1h/maces/neanderthal.png',
 		category='1H Maces',
 		random_primaries='2',
 		owner='all')
@@ -773,7 +773,7 @@ def load_1h_maces(apps, schema_editor):
 
 	nutcracker = Weapon(slot='1H Weapons',
 		name='Nutcracker',
-		pic='/assets/media/items/legendaries/weapons/1h/maces/nutcracker.png',
+		pic='media/items/legendaries/weapons/1h/maces/nutcracker.png',
 		category='1H Maces',
 		random_primaries='2',
 		random_secondaries='1',
@@ -783,7 +783,7 @@ def load_1h_maces(apps, schema_editor):
 
 	odynSon = Weapon(slot='1H Weapons',
 		name='Odyn Son',
-		pic='/assets/media/items/legendaries/weapons/1h/maces/odyn_son.png',
+		pic='media/items/legendaries/weapons/1h/maces/odyn_son.png',
 		category='1H Maces',
 		unique='<span>20 - 40%</span> chance to Chain Lightning enemies when you hit them.',
 		random_primaries='2',
@@ -794,7 +794,7 @@ def load_1h_maces(apps, schema_editor):
 
 	solanium = Weapon(slot='1H Weapons',
 		name='Solanium',
-		pic='/assets/media/items/legendaries/weapons/1h/maces/solanium.png',
+		pic='media/items/legendaries/weapons/1h/maces/solanium.png',
 		category='1H Maces',
 		unique='Critical Hits have a <span>3 - 4%</span> chance to spawn a health globe.',
 		random_primaries='2',
@@ -805,7 +805,7 @@ def load_1h_maces(apps, schema_editor):
 
 	sunKeeper = Weapon(slot='1H Weapons',
 		name='Sun Keeper',
-		pic='/assets/media/items/legendaries/weapons/1h/maces/sun_keeper.png',
+		pic='media/items/legendaries/weapons/1h/maces/sun_keeper.png',
 		category='1H Maces',
 		random_primaries='1',
 		random_secondaries='1',
@@ -815,7 +815,7 @@ def load_1h_maces(apps, schema_editor):
 
 	telrandensHand = Weapon(slot='1H Weapons',
 		name='Telranden\'s Hand',
-		pic='/assets/media/items/legendaries/weapons/1h/maces/telrandens_hand.png',
+		pic='media/items/legendaries/weapons/1h/maces/telrandens_hand.png',
 		category='1H Maces',
 		random_primaries='1',
 		random_secondaries='2',
@@ -845,7 +845,7 @@ def load_1h_mighty_weapons(apps, schema_editor):
 
 	ambosPride = Weapon(slot='1H Weapons',
 		name='Ambo\'s Pride',
-		pic='/assets/media/items/legendaries/weapons/1h/mightyweapons/ambos_pride.png',
+		pic='media/items/legendaries/weapons/1h/mightyweapons/ambos_pride.png',
 		category='1H Mighty Weapons',
 		random_primaries='1',
 		random_secondaries='2')
@@ -854,7 +854,7 @@ def load_1h_mighty_weapons(apps, schema_editor):
 
 	bladeOfTheWarlord = Weapon(slot='1H Weapons',
 		name='Blade of the Warlord',
-		pic='/assets/media/items/legendaries/weapons/1h/mightyweapons/blade_of_the_warlord.png',
+		pic='media/items/legendaries/weapons/1h/mightyweapons/blade_of_the_warlord.png',
 		category='1H Mighty Weapons',
 		random_primaries='1',
 		random_secondaries='2')
@@ -863,7 +863,7 @@ def load_1h_mighty_weapons(apps, schema_editor):
 
 	dishonoredLegacy = Weapon(slot='1H Weapons',
 		name='Dishonored Legacy',
-		pic='/assets/media/items/legendaries/weapons/1h/mightyweapons/dishonored_legacy.png',
+		pic='media/items/legendaries/weapons/1h/mightyweapons/dishonored_legacy.png',
 		category='1H Mighty Weapons',
 		unique='Cleave deals up to <span>300 - 400%</span> increased damage based on percentage of missing Fury.',
 		random_primaries='2',
@@ -873,7 +873,7 @@ def load_1h_mighty_weapons(apps, schema_editor):
 
 	fjordCutter = Weapon(slot='1H Weapons',
 		name='Fjord Cutter',
-		pic='/assets/media/items/legendaries/weapons/1h/mightyweapons/fjord_cutter.png',
+		pic='media/items/legendaries/weapons/1h/mightyweapons/fjord_cutter.png',
 		category='1H Mighty Weapons',
 		unique='You are surrounded by a Chilling Aura when attacking.',
 		random_primaries='2')
@@ -882,7 +882,7 @@ def load_1h_mighty_weapons(apps, schema_editor):
 
 	nightsReaping = Weapon(slot='1H Weapons',
 		name='Night\'s Reaping',
-		pic='/assets/media/items/legendaries/weapons/1h/mightyweapons/nights_reaping.png',
+		pic='media/items/legendaries/weapons/1h/mightyweapons/nights_reaping.png',
 		category='1H Mighty Weapons',
 		random_primaries='2',
 		random_secondaries='2',
@@ -892,7 +892,7 @@ def load_1h_mighty_weapons(apps, schema_editor):
 
 	remorseless = Weapon(slot='1H Weapons',
 		name='Remorseless',
-		pic='/assets/media/items/legendaries/weapons/1h/mightyweapons/remorseless.png',
+		pic='media/items/legendaries/weapons/1h/mightyweapons/remorseless.png',
 		category='1H Mighty Weapons',
 		unique='Hammer of the Ancients has a <span>25 - 30%</span> chance to summon an Ancient for <span class="silver">20</span> seconds.',
 		random_primaries='2',
@@ -926,7 +926,7 @@ def load_1h_spears(apps, schema_editor):
 
 	akaneshTheHeraldOfRighteousness = Weapon(slot='1H Weapons',
 		name='Akanesh, the Herald of Righteousness',
-		pic='/assets/media/items/legendaries/weapons/1h/spears/akanesh_the_herald_of_righteousness.png',
+		pic='media/items/legendaries/weapons/1h/spears/akanesh_the_herald_of_righteousness.png',
 		category='1H Spears',
 		random_primaries='1',
 		random_secondaries='2',
@@ -936,7 +936,7 @@ def load_1h_spears(apps, schema_editor):
 
 	arreatsLaw = Weapon(slot='1H Weapons',
 		name='Arreat\'s Law',
-		pic='/assets/media/items/legendaries/weapons/1h/spears/arreats_law.png',
+		pic='media/items/legendaries/weapons/1h/spears/arreats_law.png',
 		category='1H Spears',
 		unique='Weapon Throw generates up to <span>15 - 20</span> additional Fury based on how far away the enemy hit is. Maximum benefit when the enemy hit is <span class="silver">20</span> or more yards away.',
 		random_primaries='2',
@@ -947,7 +947,7 @@ def load_1h_spears(apps, schema_editor):
 
 	empyreanMessenger = Weapon(slot='1H Weapons',
 		name='Empyrean Messenger',
-		pic='/assets/media/items/legendaries/weapons/1h/spears/empyrean_messenger.png',
+		pic='media/items/legendaries/weapons/1h/spears/empyrean_messenger.png',
 		category='1H Spears',
 		random_primaries='1',
 		random_secondaries='2',
@@ -957,7 +957,7 @@ def load_1h_spears(apps, schema_editor):
 
 	scrimshaw = Weapon(slot='1H Weapons',
 		name='Scrimshaw',
-		pic='/assets/media/items/legendaries/weapons/1h/spears/scrimshaw.png',
+		pic='media/items/legendaries/weapons/1h/spears/scrimshaw.png',
 		category='1H Spears',
 		unique='Reduces the Mana cost of Zombie Charger by <span>40 - 50%</span>.',
 		random_primaries='1',
@@ -969,7 +969,7 @@ def load_1h_spears(apps, schema_editor):
 #2.4
 	theThreeHundredthSpear = Weapon(slot='1H Weapons',
 		name='The Three Hundredth Spear',
-		pic='/assets/media/items/legendaries/weapons/1h/spears/the_three_hundredth_spear.png',
+		pic='media/items/legendaries/weapons/1h/spears/the_three_hundredth_spear.png',
 		category='1H Spears',
 		unique='Increase the damage of Weapon Throw and Ancient Spear by <span>45 - 60%</span>',
 		random_secondaries='1',
@@ -1019,7 +1019,7 @@ def load_1h_swords(apps, schema_editor):
 
 	azurewrath = Weapon(slot='1H Weapons',
 		name='Azurewrath',
-		pic='/assets/media/items/legendaries/weapons/1h/swords/azurewrath.png',
+		pic='media/items/legendaries/weapons/1h/swords/azurewrath.png',
 		category='1H Swords',
 		unique='Undead and Demon enemies within <span class="silver">25</span> yards take <span>500 - 650%</span> weapon damage as Holy every second and are sometimes knocked into the air.',
 		random_primaries='2')
@@ -1028,7 +1028,7 @@ def load_1h_swords(apps, schema_editor):
 
 	devilTongue = Weapon(slot='1H Weapons',
 		name='Devil Tongue',
-		pic='/assets/media/items/legendaries/weapons/1h/swords/devil_tongue.png',
+		pic='media/items/legendaries/weapons/1h/swords/devil_tongue.png',
 		category='1H Swords',
 		random_primaries='1',
 		random_secondaries='1')
@@ -1037,7 +1037,7 @@ def load_1h_swords(apps, schema_editor):
 
 	doombringer = Weapon(slot='1H Weapons',
 		name='Doombringer',
-		pic='/assets/media/items/legendaries/weapons/1h/swords/doombringer.png',
+		pic='media/items/legendaries/weapons/1h/swords/doombringer.png',
 		category='1H Swords',
 		random_primaries='1',
 		random_secondaries='2')
@@ -1046,7 +1046,7 @@ def load_1h_swords(apps, schema_editor):
 
 	exarian = Weapon(slot='1H Weapons',
 		name='Exarian',
-		pic='/assets/media/items/legendaries/weapons/1h/swords/exarian.png',
+		pic='media/items/legendaries/weapons/1h/swords/exarian.png',
 		category='1H Swords',
 		random_primaries='2',
 		random_secondaries='2')
@@ -1055,7 +1055,7 @@ def load_1h_swords(apps, schema_editor):
 
 	fulminator = Weapon(slot='1H Weapons',
 		name='Fulminator',
-		pic='/assets/media/items/legendaries/weapons/1h/swords/fulminator.png',
+		pic='media/items/legendaries/weapons/1h/swords/fulminator.png',
 		category='1H Swords',
 		unique='Lightning damage has a chance to turn enemies into lightning rods, causing them to pulse <span>444 - 555%</span> weapon damage as Lightning every second to nearby enemies for <span class="silver">6</span> seconds.',
 		random_primaries='2',
@@ -1065,7 +1065,7 @@ def load_1h_swords(apps, schema_editor):
 
 	giftOfSilaria = Weapon(slot='1H Weapons',
 		name='Gift of Silaria',
-		pic='/assets/media/items/legendaries/weapons/1h/swords/gift_of_silaria.png',
+		pic='media/items/legendaries/weapons/1h/swords/gift_of_silaria.png',
 		category='1H Swords',
 		random_primaries='1',
 		random_secondaries='2')
@@ -1074,7 +1074,7 @@ def load_1h_swords(apps, schema_editor):
 
 	griswoldsPerfection = Weapon(slot='1H Weapons',
 		name='Griswold\'s Perfection',
-		pic='/assets/media/items/legendaries/weapons/1h/swords/griswolds_perfection.png',
+		pic='media/items/legendaries/weapons/1h/swords/griswolds_perfection.png',
 		category='1H Swords',
 		random_primaries='3',
 		random_secondaries='2',
@@ -1084,7 +1084,7 @@ def load_1h_swords(apps, schema_editor):
 
 	ingeom = Weapon(slot='1H Weapons',
 		name='In-geom',
-		pic='/assets/media/items/legendaries/weapons/1h/swords/in-geom.png',
+		pic='media/items/legendaries/weapons/1h/swords/in-geom.png',
 		category='1H Swords',
 		unique='Your skill cooldowns are reduced by <span>8 - 10</span> seconds for <span class="silver">15</span> seconds after killing an elite pack.',
 		random_primaries='1',
@@ -1094,7 +1094,7 @@ def load_1h_swords(apps, schema_editor):
 
 	monsterHunter = Weapon(slot='1H Weapons',
 		name='Monster Hunter',
-		pic='/assets/media/items/legendaries/weapons/1h/swords/monster_hunter.png',
+		pic='media/items/legendaries/weapons/1h/swords/monster_hunter.png',
 		category='1H Swords',
 		random_primaries='2',
 		random_secondaries='2')
@@ -1103,7 +1103,7 @@ def load_1h_swords(apps, schema_editor):
 
 	rimeheart = Weapon(slot='1H Weapons',
 		name='Rimeheart',
-		pic='/assets/media/items/legendaries/weapons/1h/swords/rimeheart.png',
+		pic='media/items/legendaries/weapons/1h/swords/rimeheart.png',
 		category='1H Swords',
 		unique='<span class="silver">10%</span> chance on hit to instantly deal <span class="silver">10000%</span> weapon damage as Cold to enemies that are Frozen.',
 		random_primaries='2',
@@ -1113,7 +1113,7 @@ def load_1h_swords(apps, schema_editor):
 
 	sever = Weapon(slot='1H Weapons',
 		name='Sever',
-		pic='/assets/media/items/legendaries/weapons/1h/swords/sever.png',
+		pic='media/items/legendaries/weapons/1h/swords/sever.png',
 		category='1H Swords',
 		unique='Slain enemies rest in pieces.',
 		random_primaries='1')
@@ -1122,7 +1122,7 @@ def load_1h_swords(apps, schema_editor):
 
 	shardOfHate = Weapon(slot='1H Weapons',
 		name='Shard of Hate',
-		pic='/assets/media/items/legendaries/weapons/1h/swords/shard_of_hate.png',
+		pic='media/items/legendaries/weapons/1h/swords/shard_of_hate.png',
 		category='1H Swords',
 		unique='Elemental skills have a chance to trigger a powerful {<span class="vary">Attack</span>} that deals <span>200 - 250%</span> weapon damage<div class="extra"><div class="extra-x">X</div><span><strong>Cold Skills :</strong>  Freezing Skull<br><strong>Poison Skills :</strong> Poison Nova<br><strong>Lightning Skills :</strong> Charged Bolt</span></div>',
 		random_primaries='2',
@@ -1132,7 +1132,7 @@ def load_1h_swords(apps, schema_editor):
 
 	skycutter = Weapon(slot='1H Weapons',
 		name='Skycutter',
-		pic='/assets/media/items/legendaries/weapons/1h/swords/skycutter.png',
+		pic='media/items/legendaries/weapons/1h/swords/skycutter.png',
 		category='1H Swords',
 		unique='Chance to summon angelic assistance when attacking.',
 		random_primaries='1',
@@ -1142,7 +1142,7 @@ def load_1h_swords(apps, schema_editor):
 
 	spectrum = Weapon(slot='1H Weapons',
 		name='spectrum',
-		pic='/assets/media/items/legendaries/weapons/1h/swords/spectrum.png',
+		pic='media/items/legendaries/weapons/1h/swords/spectrum.png',
 		category='1H Swords',
 		random_primaries='?',
 		random_secondaries='?')
@@ -1151,7 +1151,7 @@ def load_1h_swords(apps, schema_editor):
 
 	theAncientBonesaberOfZumakalis = Weapon(slot='1H Weapons',
 		name='The Ancient Bonesaber of Zumakalis',
-		pic='/assets/media/items/legendaries/weapons/1h/swords/the_ancient_bonesaber_of_zumakalis.png',
+		pic='media/items/legendaries/weapons/1h/swords/the_ancient_bonesaber_of_zumakalis.png',
 		category='1H Swords',
 		random_primaries='1',
 		random_secondaries='2')
@@ -1160,7 +1160,7 @@ def load_1h_swords(apps, schema_editor):
 
 	thunderfuryBlessedBladeOfTheWindseeker = Weapon(slot='1H Weapons',
 		name='Thunderfury, Blessed Blade of the Windseeker',
-		pic='/assets/media/items/legendaries/weapons/1h/swords/thunderfury_blessed_blade_of_the_windseeker.png',
+		pic='media/items/legendaries/weapons/1h/swords/thunderfury_blessed_blade_of_the_windseeker.png',
 		category='1H Swords',
 		unique='Chance on hit to blast your enemy with Lightning, dealing <span>279 - 372%</span> weapon damage as Lightning and then jumping to additional nearby enemies. Each enemy hit has their attack speed and movement speed reduced by <span class="silver">30%</span> for <span class="silver">3</span> seconds. Jumps up to <span class="silver">5</span> targets.',
 		random_primaries='1',
@@ -1170,7 +1170,7 @@ def load_1h_swords(apps, schema_editor):
 
 	wildwood = Weapon(slot='1H Weapons',
 		name='Wildwood',
-		pic='/assets/media/items/legendaries/weapons/1h/swords/wildwood.png',
+		pic='media/items/legendaries/weapons/1h/swords/wildwood.png',
 		category='1H Swords',
 		random_primaries='1',
 		random_secondaries='1')
@@ -1206,7 +1206,7 @@ def load_wands(apps, schema_editor):
 
 	aetherWalker = Weapon(slot='1H Weapons',
 		name='Aether Walker',
-		pic='/assets/media/items/legendaries/weapons/1h/wands/aether_walker.png',
+		pic='media/items/legendaries/weapons/1h/wands/aether_walker.png',
 		category='Wands',
 		unique='Teleport no longer has a cooldown but costs <span class="silver">25</span> Arcane Power.',
 		random_primaries='2',
@@ -1216,7 +1216,7 @@ def load_wands(apps, schema_editor):
 
 	atrophy = Weapon(slot='1H Weapons',
 		name='Atrophy',
-		pic='/assets/media/items/legendaries/weapons/1h/wands/atrophy.png',
+		pic='media/items/legendaries/weapons/1h/wands/atrophy.png',
 		category='Wands',
 		random_primaries='3',
 		random_secondaries='2',
@@ -1226,7 +1226,7 @@ def load_wands(apps, schema_editor):
 
 	blackhandKey = Weapon(slot='1H Weapons',
 		name='Blackhand Key',
-		pic='/assets/media/items/legendaries/weapons/1h/wands/blackhand_key.png',
+		pic='media/items/legendaries/weapons/1h/wands/blackhand_key.png',
 		category='Wands',
 		random_primaries='2',
 		random_secondaries='1')
@@ -1236,7 +1236,7 @@ def load_wands(apps, schema_editor):
 #2.4
 	fragmentOfDestiny = Weapon(slot='1H Weapons',
 		name='Fragment of Destiny',
-		pic='/assets/media/items/legendaries/weapons/1h/wands/fragment_of_destiny.png',
+		pic='media/items/legendaries/weapons/1h/wands/fragment_of_destiny.png',
 		category='Wands',
 		unique='Spectral Blade attacks <span class="silver">50%</span> faster and deals <span>150 - 200%</span> increased damage',
 		random_primaries='1',
@@ -1246,7 +1246,7 @@ def load_wands(apps, schema_editor):
 
 	gestureOfOrpheus = Weapon(slot='1H Weapons',
 		name='Gesture of Orpheus',
-		pic='/assets/media/items/legendaries/weapons/1h/wands/gesture_of_orpheus.png',
+		pic='media/items/legendaries/weapons/1h/wands/gesture_of_orpheus.png',
 		category='Wands',
 		unique='Reduces the cooldown of Slow Time by <span>30 - 40%</span>.',
 		random_primaries='1',
@@ -1256,7 +1256,7 @@ def load_wands(apps, schema_editor):
 
 	serpentsSparker = Weapon(slot='1H Weapons',
 		name='Serpent\'s Sparker',
-		pic='/assets/media/items/legendaries/weapons/1h/wands/serpents_sparker.png',
+		pic='media/items/legendaries/weapons/1h/wands/serpents_sparker.png',
 		category='Wands',
 		unique='You may have <span class="silver">1</span> extra Hydra active at a time.',
 		random_primaries='2',
@@ -1266,7 +1266,7 @@ def load_wands(apps, schema_editor):
 
 	sloraksMadness = Weapon(slot='1H Weapons',
 		name='Slorak\'s Madness',
-		pic='/assets/media/items/legendaries/weapons/1h/wands/sloraks_madness.png',
+		pic='media/items/legendaries/weapons/1h/wands/sloraks_madness.png',
 		category='Wands',
 		unique='This wand finds your death humorous.',
 		random_primaries='2',
@@ -1276,7 +1276,7 @@ def load_wands(apps, schema_editor):
 
 	starfire = Weapon(slot='1H Weapons',
 		name='Starfire',
-		pic='/assets/media/items/legendaries/weapons/1h/wands/starfire.png',
+		pic='media/items/legendaries/weapons/1h/wands/starfire.png',
 		category='Wands',
 		random_primaries='2',
 		random_secondaries='2')
@@ -1286,7 +1286,7 @@ def load_wands(apps, schema_editor):
 #2.4
 	wandOfWoh = Weapon(slot='1H Weapons',
 		name='Wand of Woh',
-		pic='/assets/media/items/legendaries/weapons/1h/wands/wand_of_woh.png',
+		pic='media/items/legendaries/weapons/1h/wands/wand_of_woh.png',
 		category='Wands',
 		unique='<span class="silver">3</span> additional Explosive Blasts are triggered after casting Explosive Blast.',
 		random_primaries='2',

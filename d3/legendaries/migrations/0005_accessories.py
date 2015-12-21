@@ -54,7 +54,7 @@ def load_amulets(apps, schema_editor):
 
 	ancestors = Accessory(slot='Amulets',
 		name='Ancestors\' Grace',
-		pic='/assets/media/items/legendaries/accessories/amulets/ancestors_grace.png',
+		pic='media/items/legendaries/accessories/amulets/ancestors_grace.png',
 		unique='When receiving fatal damage, you are instead restored to <span class="silver">100%</span> of maximum Life and resources. This item is destroyed in the process.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -64,7 +64,7 @@ def load_amulets(apps, schema_editor):
 
 	countess = Accessory(slot='Amulets',
 		name='Countess Julia\'s Cameo',
-		pic='/assets/media/items/legendaries/accessories/amulets/countess_julias_cameo.png',
+		pic='media/items/legendaries/accessories/amulets/countess_julias_cameo.png',
 		unique='Prevent all Arcane damage taken and heal yourself for <span>20 - 25%</span> of the amount prevented.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -74,7 +74,7 @@ def load_amulets(apps, schema_editor):
 
 	dovu = Accessory(slot='Amulets',
 		name='Dovu Energy Trap',
-		pic='/assets/media/items/legendaries/accessories/amulets/dovu_energy_trap.png',
+		pic='media/items/legendaries/accessories/amulets/dovu_energy_trap.png',
 		unique='Increases duration of Stun effects by <span>20 - 25%</span>.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -84,7 +84,7 @@ def load_amulets(apps, schema_editor):
 
 	eye = Accessory(slot='Amulets',
 		name='Eye of Elitch',
-		pic='/assets/media/items/legendaries/accessories/amulets/eye_of_elitch.png',
+		pic='media/items/legendaries/accessories/amulets/eye_of_elitch.png',
 		random_primaries='3',
 		random_secondaries='1',
 		owner='all')
@@ -93,7 +93,7 @@ def load_amulets(apps, schema_editor):
 
 	gorget = Accessory(slot='Amulets',
 		name='Golden Gorget of Leoric',
-		pic='/assets/media/items/legendaries/accessories/amulets/golden_gorget_of_leoric.png',
+		pic='media/items/legendaries/accessories/amulets/golden_gorget_of_leoric.png',
 		unique='After earning a massacre bonus, <span>4 - 6</span> Skeletons are summoned to fight by your side for <span class="silver">10</span> seconds.',
 		random_primaries='1',
 		random_secondaries='1',
@@ -104,7 +104,7 @@ def load_amulets(apps, schema_editor):
 #2.4
 	halcyon = Accessory(slot='Amulets',
 		name='Halcyon\'s Ascent',
-		pic='/assets/media/items/legendaries/accessories/amulets/halcyons_ascent.png',
+		pic='media/items/legendaries/accessories/amulets/halcyons_ascent.png',
 		unique='When you use {<span class="vary">Class Skill</span>}, you mesmerize nearby enemies with your skill, causing them to jump uncontrollably for <span>6 - 8</span> seconds.<div class="extra"><div class="extra-x">X</div><span><strong>Barbarian: </strong>Wrath of the Berserker<br><strong>Crusader: </strong>Akarat\'s Champion<br><strong>Demon Hunter: </strong>Vengeance<br><strong>Monk: </strong>Epiphany<br><strong>Witch Doctor: </strong>Big Bad Voodoo<br><strong>Wizard: </strong>Archon</span></div>',
 		random_primaries='2',
 		random_secondaries='1',
@@ -114,7 +114,7 @@ def load_amulets(apps, schema_editor):
 
 	haunt = Accessory(slot='Amulets',
 		name='Haunt of Vaxo',
-		pic='/assets/media/items/legendaries/accessories/amulets/haunt_of_vaxo.png',
+		pic='media/items/legendaries/accessories/amulets/haunt_of_vaxo.png',
 		unique='Summons shadow clones to your aid when you Stun an enemy. This effect may occur once every <span class="silver">30</span> seconds.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -124,7 +124,7 @@ def load_amulets(apps, schema_editor):
 
 	hellfire = Accessory(slot='Amulets',
 		name='Hellfire Amulet',
-		pic='/assets/media/items/legendaries/accessories/amulets/hellfire_amulet.png',
+		pic='media/items/legendaries/accessories/amulets/hellfire_amulet.png',
 		unique='Gain a [random] {<span class="vary">Class</span>} specific passive.<div class="extra"><div class="extra-x">X</div><span>Barbarian<br>Crusader<br>Demon Hunter<br>Monk<br>Witich Doctor<br>Wizard</span></div>',
 		random_primaries='2',
 		random_secondaries='1',
@@ -134,7 +134,7 @@ def load_amulets(apps, schema_editor):
 
 	holy = Accessory(slot='Amulets',
 		name='Holy Beacon',
-		pic='/assets/media/items/legendaries/accessories/amulets/holy_beacon.png',
+		pic='media/items/legendaries/accessories/amulets/holy_beacon.png',
 		unique='<span>+2.2 - 3.0</span> Spirit Regeneration per Second',
 		unique_is_primary=True,
 		random_primaries='1',
@@ -145,7 +145,7 @@ def load_amulets(apps, schema_editor):
 
 	kymbos = Accessory(slot='Amulets',
 		name='Kymbo\'s Gold',
-		pic='/assets/media/items/legendaries/accessories/amulets/kymbos_gold.png',
+		pic='media/items/legendaries/accessories/amulets/kymbos_gold.png',
 		unique='Picking up gold heals you for an amount equal to the gold that was picked up.',
 		random_primaries='3',
 		owner='all')
@@ -154,7 +154,7 @@ def load_amulets(apps, schema_editor):
 
 	maras = Accessory(slot='Amulets',
 		name='Mara\'s Kaleidoscope',
-		pic='/assets/media/items/legendaries/accessories/amulets/maras_kaleidoscope.png',
+		pic='media/items/legendaries/accessories/amulets/maras_kaleidoscope.png',
 		unique='Prevent all Poison damage taken and heal yourself for <span>10 - 15%</span> of the amount prevented.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -164,7 +164,7 @@ def load_amulets(apps, schema_editor):
 
 	moonlight = Accessory(slot='Amulets',
 		name='Moonlight Ward',
-		pic='/assets/media/items/legendaries/accessories/amulets/moonlight_ward.png',
+		pic='media/items/legendaries/accessories/amulets/moonlight_ward.png',
 		unique='Enemies hit within <span class="silver">15</span> yards have a chance to spawn Arcane shards that explode and deal <span>240 - 320%</span> Arcane damage to enemies within <span class="silver">15</span> yards.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -174,7 +174,7 @@ def load_amulets(apps, schema_editor):
 
 	ouroboros = Accessory(slot='Amulets',
 		name='Ouroboros',
-		pic='/assets/media/items/legendaries/accessories/amulets/ouroboros.png',
+		pic='media/items/legendaries/accessories/amulets/ouroboros.png',
 		random_primaries='2',
 		random_secondaries='2',
 		owner='all')
@@ -183,7 +183,7 @@ def load_amulets(apps, schema_editor):
 
 	overwhelming = Accessory(slot='Amulets',
 		name='Overwhelming Desire',
-		pic='/assets/media/items/legendaries/accessories/amulets/overwhelming_desire.png',
+		pic='media/items/legendaries/accessories/amulets/overwhelming_desire.png',
 		unique='Chance on hit to charm the enemy. While charmed, the enemy takes <span class="silver">35%</span> more damage.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -193,7 +193,7 @@ def load_amulets(apps, schema_editor):
 
 	rakoffs = Accessory(slot='Amulets',
 		name='Rakoff\'s Glass of Life',
-		pic='/assets/media/items/legendaries/accessories/amulets/rakoffs_glass_of_life.png',
+		pic='media/items/legendaries/accessories/amulets/rakoffs_glass_of_life.png',
 		unique='Enemies you kill have a <span>3 - 4%</span> additional chance to drop a health globe.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -203,7 +203,7 @@ def load_amulets(apps, schema_editor):
 
 	rondals = Accessory(slot='Amulets',
 		name='Rondal\'s Locket',
-		pic='/assets/media/items/legendaries/accessories/amulets/rondals_locket.png',
+		pic='media/items/legendaries/accessories/amulets/rondals_locket.png',
 		random_primaries='3',
 		owner='all')
 	rondals.save()
@@ -211,7 +211,7 @@ def load_amulets(apps, schema_editor):
 
 	squirts = Accessory(slot='Amulets',
 		name='Squirt\'s Necklace',
-		pic='/assets/media/items/legendaries/accessories/amulets/squirts_necklace.png',
+		pic='media/items/legendaries/accessories/amulets/squirts_necklace.png',
 		random_primaries='2',
 		random_secondaries='1',
 		owner='all')
@@ -220,7 +220,7 @@ def load_amulets(apps, schema_editor):
 
 	talisman = Accessory(slot='Amulets',
 		name='Talisman of Aranoch',
-		pic='/assets/media/items/legendaries/accessories/amulets/talisman_of_aranoch.png',
+		pic='media/items/legendaries/accessories/amulets/talisman_of_aranoch.png',
 		unique='Prevent all Cold damage taken and heal yourself for <span>10 - 15%</span> of the amount prevented.',
 		random_primaries='3',
 		random_secondaries='1',
@@ -230,7 +230,7 @@ def load_amulets(apps, schema_editor):
 
 	ess = Accessory(slot='Amulets',
 		name='The Ess of Johan',
-		pic='/assets/media/items/legendaries/accessories/amulets/the_ess_of_johan.png',
+		pic='media/items/legendaries/accessories/amulets/the_ess_of_johan.png',
 		unique='Chance on hit to pull in enemies toward your target and Slow them by <span>60 - 80%</span>.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -240,7 +240,7 @@ def load_amulets(apps, schema_editor):
 
 	flavor = Accessory(slot='Amulets',
 		name='The Flavor of Time',
-		pic='/assets/media/items/legendaries/accessories/amulets/the_flavor_of_time.png',
+		pic='media/items/legendaries/accessories/amulets/the_flavor_of_time.png',
 		random_primaries='3',
 		random_secondaries='1',
 		owner='all')
@@ -249,7 +249,7 @@ def load_amulets(apps, schema_editor):
 
 	star = Accessory(slot='Amulets',
 		name='The Star of Azkaranth',
-		pic='/assets/media/items/legendaries/accessories/amulets/the_star_of_azkaranth.png',
+		pic='media/items/legendaries/accessories/amulets/the_star_of_azkaranth.png',
 		unique='Prevent all Fire damage taken and heal yourself for <span>10 - 15%</span> of the amount prevented.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -259,7 +259,7 @@ def load_amulets(apps, schema_editor):
 
 	xephirian = Accessory(slot='Amulets',
 		name='Xephirian Amulet',
-		pic='/assets/media/items/legendaries/accessories/amulets/xephirian_amulet.png',
+		pic='media/items/legendaries/accessories/amulets/xephirian_amulet.png',
 		unique='Prevent all Lightning damage taken and heal yourself for <span>10 - 15%</span> of the amount prevented.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -327,7 +327,7 @@ def load_rings(apps, schema_editor):
 
 	arcstone = Accessory(slot='Rings',
 		name='Arcstone',
-		pic='/assets/media/items/legendaries/accessories/rings/arcstone.png',
+		pic='media/items/legendaries/accessories/rings/arcstone.png',
 		unique='Lightning pulses periodically between all wearers of this item, dealing <span>1000 - 1500%</span> weapon damage.',
 		random_primaries='3',
 		random_secondaries='1',
@@ -337,7 +337,7 @@ def load_rings(apps, schema_editor):
 
 	avarice = Accessory(slot='Rings',
 		name='Avarice Band',
-		pic='/assets/media/items/legendaries/accessories/rings/avarice_band.png',
+		pic='media/items/legendaries/accessories/rings/avarice_band.png',
 		unique='Each time you pick up gold, increase your Gold and Health Pickup radius by <span class="silver">1</span> yard for <span class="silver">10</span> seconds, stacking up to <span class="silver">30</span> times.',
 		random_primaries='2',
 		owner='all')
@@ -346,7 +346,7 @@ def load_rings(apps, schema_editor):
 
 	hollow_whispers = Accessory(slot='Rings',
 		name='Band of Hollow Whispers',
-		pic='/assets/media/items/legendaries/accessories/rings/band_of_hollow_whispers.png',
+		pic='media/items/legendaries/accessories/rings/band_of_hollow_whispers.png',
 		unique='This ring occasionally haunts nearby enemies.',
 		random_primaries='3',
 		random_secondaries='1',
@@ -356,7 +356,7 @@ def load_rings(apps, schema_editor):
 
 	rue_chambers = Accessory(slot='Rings',
 		name='Band of the Rue Chambers',
-		pic='/assets/media/items/legendaries/accessories/rings/band_of_the_rue_chambers.png',
+		pic='media/items/legendaries/accessories/rings/band_of_the_rue_chambers.png',
 		unique='Your Spirit Generators generate <span>40 - 50%</span> more Spirit.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -366,7 +366,7 @@ def load_rings(apps, schema_editor):
 
 	broken_promises = Accessory(slot='Rings',
 		name='Broken Promises',
-		pic='/assets/media/items/legendaries/accessories/rings/broken_promises.png',
+		pic='media/items/legendaries/accessories/rings/broken_promises.png',
 		unique='After <span class="silver">5</span> consecutive non-critical hits, your chance to critically hit is increased to <span class="silver">100%</span> for <span class="silver">3</span> seconds.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -376,7 +376,7 @@ def load_rings(apps, schema_editor):
 
 	bulkathoss = Accessory(slot='Rings',
 		name='Bul-Kathos\'s Wedding Band',
-		pic='/assets/media/items/legendaries/accessories/rings/bul-kathoss_wedding_band.png',
+		pic='media/items/legendaries/accessories/rings/bul-kathoss_wedding_band.png',
 		unique='You drain life from enemies around you.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -386,7 +386,7 @@ def load_rings(apps, schema_editor):
 
 	convention = Accessory(slot='Rings',
 		name='Convention of Elements',
-		pic='/assets/media/items/legendaries/accessories/rings/convention_of_elements.png',
+		pic='media/items/legendaries/accessories/rings/convention_of_elements.png',
 		unique='Gain <span>150 - 200%</span> increased damage to a single element for <span class="silver">4</span> seconds. This effect rotates through the elements available to your class in the following order: Arcane, Cold, Fire, Holy, Lightning, Physical, Poison.',
 		random_primaries='1',
 		random_secondaries='1',
@@ -396,7 +396,7 @@ def load_rings(apps, schema_editor):
 
 	eternal = Accessory(slot='Rings',
 		name='Eternal Union',
-		pic='/assets/media/items/legendaries/accessories/rings/eternal_union.png',
+		pic='media/items/legendaries/accessories/rings/eternal_union.png',
 		unique='Increases the duration of Phalanx avatars by <span class="silver">200%</span>.',
 		random_primaries='3',
 		random_secondaries='1',
@@ -406,7 +406,7 @@ def load_rings(apps, schema_editor):
 
 	halo = Accessory(slot='Rings',
 		name='Halo of Arlyse',
-		pic='/assets/media/items/legendaries/accessories/rings/halo_of_arlyse.png',
+		pic='media/items/legendaries/accessories/rings/halo_of_arlyse.png',
 		unique='Your Ice Armor now reduces damage from melee attacks by <span>50 - 60%</span> and automatically casts Frost Nova whenever you take <span class="silver">10%</span> of your Life in damage.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -416,7 +416,7 @@ def load_rings(apps, schema_editor):
 
 	hellfire = Accessory(slot='Rings',
 		name='Hellfire Ring',
-		pic='/assets/media/items/legendaries/accessories/rings/hellfire_ring.png',
+		pic='media/items/legendaries/accessories/rings/hellfire_ring.png',
 		unique='Chance on hit to engulf the ground in lava, dealing <span class="silver">200%</span> weapon damage per second for <span class="silver">6</span> seconds.',
 		random_primaries='4',
 		random_secondaries='1',
@@ -427,7 +427,7 @@ def load_rings(apps, schema_editor):
 #2.4
 	justice = Accessory(slot='Rings',
 		name='Justice Lantern',
-		pic='/assets/media/items/legendaries/accessories/rings/justice_lantern.png',
+		pic='media/items/legendaries/accessories/rings/justice_lantern.png',
 		unique='Gain damage reduction equal to <span>45 - 55%</span> of your Block Chance',
 		random_primaries='2',
 		# random_secondaries='1',
@@ -437,7 +437,7 @@ def load_rings(apps, schema_editor):
 
 	kredes = Accessory(slot='Rings',
 		name='Krede\'s Flame',
-		pic='/assets/media/items/legendaries/accessories/rings/kredes_flame.png',
+		pic='media/items/legendaries/accessories/rings/kredes_flame.png',
 		unique='Taking Fire damage restores your primary resource.',
 		random_primaries='3',
 		random_secondaries='1',
@@ -447,7 +447,7 @@ def load_rings(apps, schema_editor):
 
 	leorics = Accessory(slot='Rings',
 		name='Leoric\'s Signet',
-		pic='/assets/media/items/legendaries/accessories/rings/leorics_signet.png',
+		pic='media/items/legendaries/accessories/rings/leorics_signet.png',
 		random_primaries='2',
 		random_secondaries='1',
 		owner='all')
@@ -456,7 +456,7 @@ def load_rings(apps, schema_editor):
 
 	manald = Accessory(slot='Rings',
 		name='Manald Heal',
-		pic='/assets/media/items/legendaries/accessories/rings/manald_heal.png',
+		pic='media/items/legendaries/accessories/rings/manald_heal.png',
 		random_primaries='3',
 		random_secondaries='1',
 		owner='all')
@@ -465,7 +465,7 @@ def load_rings(apps, schema_editor):
 
 	nagel = Accessory(slot='Rings',
 		name='Nagelring',
-		pic='/assets/media/items/legendaries/accessories/rings/nagelring.png',
+		pic='media/items/legendaries/accessories/rings/nagelring.png',
 		unique='Summons a Fallen Lunatic to your side every <span>10 - 12</span> seconds.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -475,7 +475,7 @@ def load_rings(apps, schema_editor):
 
 	obsidian = Accessory(slot='Rings',
 		name='Obsidian Ring of the Zodiac',
-		pic='/assets/media/items/legendaries/accessories/rings/obsidian_ring_of_the_zodiac.png',
+		pic='media/items/legendaries/accessories/rings/obsidian_ring_of_the_zodiac.png',
 		unique='Reduce the remaining cooldown of one of your skills by <span class="silver">1</span> seconds when you hit with a resource-spending attack.',
 		random_secondaries='1',
 		owner='all')
@@ -485,7 +485,7 @@ def load_rings(apps, schema_editor):
 #2.4
 	oculus = Accessory(slot='Rings',
 		name='Oculus Ring',
-		pic='/assets/media/items/legendaries/accessories/rings/oculus_ring.png',
+		pic='media/items/legendaries/accessories/rings/oculus_ring.png',
 		unique='Create an area of focused power near a monster when it is killed. Damage is increased by <span>70 - 85%</span> while standing in the area.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -496,7 +496,7 @@ def load_rings(apps, schema_editor):
 
 	pandemonium = Accessory(slot='Rings',
 		name='Pandemonium Loop',
-		pic='/assets/media/items/legendaries/accessories/rings/pandemonium_loop.png',
+		pic='media/items/legendaries/accessories/rings/pandemonium_loop.png',
 		unique='Enemies slain while Feared die in a bloody explosion and cause other nearby enemies to flee in Fear.',
 		random_primaries='3',
 		owner='all')
@@ -505,7 +505,7 @@ def load_rings(apps, schema_editor):
 
 	puzzle = Accessory(slot='Rings',
 		name='Puzzle Ring',
-		pic='/assets/media/items/legendaries/accessories/rings/puzzle_ring.png',
+		pic='media/items/legendaries/accessories/rings/puzzle_ring.png',
 		unique='Summon a treasure goblin who picks up normal-quality items for you. After picking up <span>12 - 16</span> items, he drops a rare item with a chance for a legendary.',
 		random_primaries='2',
 		owner='all')
@@ -514,7 +514,7 @@ def load_rings(apps, schema_editor):
 
 	rechels = Accessory(slot='Rings',
 		name='Rechel\'s Ring of Larceny',
-		pic='/assets/media/items/legendaries/accessories/rings/rechels_ring_of_larceny.png',
+		pic='media/items/legendaries/accessories/rings/rechels_ring_of_larceny.png',
 		unique='Gain <span>45 - 60%</span> increased movement speed for 4 seconds after Fearing an enemy.',
 		random_primaries='3',
 		owner='all')
@@ -523,7 +523,7 @@ def load_rings(apps, schema_editor):
 
 	rorg = Accessory(slot='Rings',
 		name='Ring of Royal Grandeur',
-		pic='/assets/media/items/legendaries/accessories/rings/ring_of_royal_grandeur.png',
+		pic='media/items/legendaries/accessories/rings/ring_of_royal_grandeur.png',
 		unique='Reduces the number of items needed for set bonuses by <span class="silver">1</span> (to a minimum of <span class="silver">2</span>).',
 		random_primaries='1',
 		random_secondaries='1',
@@ -533,7 +533,7 @@ def load_rings(apps, schema_editor):
 
 	rogars = Accessory(slot='Rings',
 		name='Rogar\'s Huge Stone',
-		pic='/assets/media/items/legendaries/accessories/rings/rogars_huge_stone.png',
+		pic='media/items/legendaries/accessories/rings/rogars_huge_stone.png',
 		unique='Increase your Life per Second by up to <span>75 - 100%</span> based on your missing Life.',
 		random_primaries='3',
 		random_secondaries='1',
@@ -543,7 +543,7 @@ def load_rings(apps, schema_editor):
 
 	skull = Accessory(slot='Rings',
 		name='Skull Grasp',
-		pic='/assets/media/items/legendaries/accessories/rings/skull_grasp.png',
+		pic='media/items/legendaries/accessories/rings/skull_grasp.png',
 		unique='Increase the damage of Whirlwind by <span>300 - 400%</span> weapon damage.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -553,7 +553,7 @@ def load_rings(apps, schema_editor):
 
 	stolen = Accessory(slot='Rings',
 		name='Stolen Ring',
-		pic='/assets/media/items/legendaries/accessories/rings/stolen_ring.png',
+		pic='media/items/legendaries/accessories/rings/stolen_ring.png',
 		random_primaries='3',
 		owner='all')
 	stolen.save()
@@ -561,7 +561,7 @@ def load_rings(apps, schema_editor):
 
 	soj = Accessory(slot='Rings',
 		name='Stone of Jordan',
-		pic='/assets/media/items/legendaries/accessories/rings/stone_of_jordan.png',
+		pic='media/items/legendaries/accessories/rings/stone_of_jordan.png',
 		random_primaries='1',
 		random_secondaries='1',
 		owner='all')
@@ -570,7 +570,7 @@ def load_rings(apps, schema_editor):
 
 	short_mans = Accessory(slot='Rings',
 		name='The Short Man\'s Finger',
-		pic='/assets/media/items/legendaries/accessories/rings/the_short_mans_finger.png',
+		pic='media/items/legendaries/accessories/rings/the_short_mans_finger.png',
 		unique='Gargantuan instead summons <span class="silver">3</span> smaller gargantuans each more powerful than before.',
 		random_primaries='2',
 		random_secondaries='1',
@@ -580,7 +580,7 @@ def load_rings(apps, schema_editor):
 
 	tall_mans = Accessory(slot='Rings',
 		name='The Tall Man\'s Finger',
-		pic='/assets/media/items/legendaries/accessories/rings/the_tall_mans_finger.png',
+		pic='media/items/legendaries/accessories/rings/the_tall_mans_finger.png',
 		unique='Zombie Dogs instead summons a single gargantuan dog with more damage and health than all other dogs combined.',
 		random_primaries='3',
 		random_secondaries='1',
@@ -590,7 +590,7 @@ def load_rings(apps, schema_editor):
 
 	unity = Accessory(slot='Rings',
 		name='Unity',
-		pic='/assets/media/items/legendaries/accessories/rings/unity.png',
+		pic='media/items/legendaries/accessories/rings/unity.png',
 		unique='All damage taken is split between wearers of this item.',
 		random_primaries='1',
 		random_secondaries='1',
@@ -600,7 +600,7 @@ def load_rings(apps, schema_editor):
 
 	wyrdward = Accessory(slot='Rings',
 		name='Wyrdward',
-		pic='/assets/media/items/legendaries/accessories/rings/wyrdward.png',
+		pic='media/items/legendaries/accessories/rings/wyrdward.png',
 		unique='Lightning damage has a <span>25 - 35%</span> chance to Stun for <span class="silver">1.5</span> seconds.',
 		random_primaries='3',
 		random_secondaries='1',
@@ -614,7 +614,7 @@ def load_follower_items(apps, schema_editor):
 
 	handOfTheProphet = Accessory(slot='Followers',
 		name='Hand of the Prophet',
-		pic='/assets/media/items/legendaries/accessories/followeritems/enchantress_focus.png',
+		pic='media/items/legendaries/accessories/followeritems/enchantress_focus.png',
 		unique='Equip on Follower: Gain access to all skills.',
 		random_primaries='4',
 		owner='all')
@@ -622,7 +622,7 @@ def load_follower_items(apps, schema_editor):
 
 	smokingThurible = Accessory(slot='Followers',
 		name='Smoking Thurible',
-		pic='/assets/media/items/legendaries/accessories/followeritems/enchantress_focus.png',
+		pic='media/items/legendaries/accessories/followeritems/enchantress_focus.png',
 		unique='Equip on Follower: Your follower cannot die.',
 		random_primaries='4',
 		owner='all')
@@ -630,7 +630,7 @@ def load_follower_items(apps, schema_editor):
 
 	vadimsSurge = Accessory(slot='Followers',
 		name='Vadim\'s Surge',
-		pic='/assets/media/items/legendaries/accessories/followeritems/enchantress_focus.png',
+		pic='media/items/legendaries/accessories/followeritems/enchantress_focus.png',
 		unique='Equip on Follower: Reduce the cooldown of all Follower skills by <span class="silver">50%</span>.',
 		random_primaries='4',
 		owner='all')
@@ -638,7 +638,7 @@ def load_follower_items(apps, schema_editor):
 
 	ribaldEtchings = Accessory(slot='Followers',
 		name='Ribald Etchings',
-		pic='/assets/media/items/legendaries/accessories/followeritems/scoundrel_token.png',
+		pic='media/items/legendaries/accessories/followeritems/scoundrel_token.png',
 		unique='Equip on Follower: Gain access to all skills.',
 		random_primaries='4',
 		owner='all')
@@ -646,7 +646,7 @@ def load_follower_items(apps, schema_editor):
 
 	skeletonKey = Accessory(slot='Followers',
 		name='Skeleton Key',
-		pic='/assets/media/items/legendaries/accessories/followeritems/scoundrel_token.png',
+		pic='media/items/legendaries/accessories/followeritems/scoundrel_token.png',
 		unique='Equip on Follower: Your follower cannot die.',
 		random_primaries='4',
 		owner='all')
@@ -654,7 +654,7 @@ def load_follower_items(apps, schema_editor):
 
 	slipkasLetterOpener = Accessory(slot='Followers',
 		name='Slipka\'s Letter Opener',
-		pic='/assets/media/items/legendaries/accessories/followeritems/scoundrel_token.png',
+		pic='media/items/legendaries/accessories/followeritems/scoundrel_token.png',
 		unique='Equip on Follower: Reduce the cooldown of all Follower skills by <span class="silver">50%</span>.',
 		random_primaries='4',
 		owner='all')
@@ -662,7 +662,7 @@ def load_follower_items(apps, schema_editor):
 
 	enchantingFavor = Accessory(slot='Followers',
 		name='Enchanting Favor',
-		pic='/assets/media/items/legendaries/accessories/followeritems/templar_relic.png',
+		pic='media/items/legendaries/accessories/followeritems/templar_relic.png',
 		unique='Equip on Follower: Your follower cannot die.',
 		random_primaries='4',
 		owner='all')
@@ -670,7 +670,7 @@ def load_follower_items(apps, schema_editor):
 
 	hillenbrandsTrainingSword = Accessory(slot='Followers',
 		name='Hillenbrand\'s Training Sword',
-		pic='/assets/media/items/legendaries/accessories/followeritems/templar_relic.png',
+		pic='media/items/legendaries/accessories/followeritems/templar_relic.png',
 		unique='Equip on Follower: Reduce the cooldown of all Follower skills by <span class="silver">50%</span>.',
 		random_primaries='4',
 		owner='all')
@@ -678,7 +678,7 @@ def load_follower_items(apps, schema_editor):
 
 	relicOfAkart = Accessory(slot='Followers',
 		name='Relic of Akart',
-		pic='/assets/media/items/legendaries/accessories/followeritems/templar_relic.png',
+		pic='media/items/legendaries/accessories/followeritems/templar_relic.png',
 		unique='Equip on Follower: Gain access to all skills.',
 		random_primaries='4',
 		owner='all')
