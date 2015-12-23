@@ -19,7 +19,8 @@ def load_item_sets(apps, schema_editor):
 #Universal
 #==============================================================================
 	ashearasVestments = ItemSet(name='Asheara\'s Vestments',
-		owner='Universal')
+		owner='Universal',
+		patch='23')
 	ashearasVestments.save()
 
 	ashearasCustodian = SetPiece(name='Asheara\'s Custodian',
@@ -64,7 +65,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	aughildsAuthority = ItemSet(name='Aughild\'s Authority',
-		owner='Universal')
+		owner='Universal',
+		patch='23')
 	aughildsAuthority.save()
 
 	aughildsSpike = SetPiece(name='Aughild\'s Spike',
@@ -104,7 +106,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	bastionsOfWill = ItemSet(name='Bastions of Will',
-		owner='Universal')
+		owner='Universal',
+		patch='23')
 	bastionsOfWill.save()
 
 	focus = SetPiece(name='Focus',
@@ -127,7 +130,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	blackthornesBattlegear = ItemSet(name='Blackthorne\'s Battlegear',
-		owner='Universal')
+		owner='Universal',
+		patch='23')
 	blackthornesBattlegear.save()
 
 	blackthornesSurcoat = SetPiece(name='Blackthorne\'s Surcoat',
@@ -178,7 +182,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	bornsCommand = ItemSet(name='Born\'s Command',
-		owner='Universal')
+		owner='Universal',
+		patch='23')
 	bornsCommand.save()
 
 	bornsFuriousWrath = SetPiece(name='Born\'s Furious Wrath',
@@ -212,7 +217,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	cainsDestiny = ItemSet(name='Cain\'s Destiny',
-		owner='Universal')
+		owner='Universal',
+		patch='23')
 	cainsDestiny.save()
 
 	cainsInsight = SetPiece(name='Cain\'s Insight',
@@ -252,7 +258,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	captainCrimsonsTrimmings = ItemSet(name='Captain Crimson\'s Trimmings',
-		owner='Universal')
+		owner='Universal',
+		patch='23')
 	captainCrimsonsTrimmings.save()
 
 	captainCrimsonsSilkGirdle = SetPiece(name='Captain Crimson\'s Silk Girdle',
@@ -286,7 +293,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	demonsHide = ItemSet(name='Demon\'s Hide',
-		owner='Universal')
+		owner='Universal',
+		patch='23')
 	demonsHide.save()
 
 	demonsAileron = SetPiece(name='Demon\'s Aileron',
@@ -337,7 +345,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	endlessWalk = ItemSet(name='Endless Walk',
-		owner='Universal')
+		owner='Universal',
+		patch='24')
 	endlessWalk.save()
 
 	theTravelersPledge = SetPiece(name='The Traveler\'s Pledge',
@@ -362,7 +371,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	guardiansJeopardy = ItemSet(name='Guardian\'s Jeopardy',
-		owner='Universal')
+		owner='Universal',
+		patch='23')
 	guardiansJeopardy.save()
 
 	guardiansGaze = SetPiece(name='Guardian\'s Gaze',
@@ -396,7 +406,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	hallowedProtectors = ItemSet(name='Hallowed Protectors',
-		owner='Universal')
+		owner='Universal',
+		patch='23')
 	hallowedProtectors.save()
 
 	hallowedBarricade = SetPiece(name='Hallowed Barricade',
@@ -449,7 +460,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	istvansPairedBlades = ItemSet(name='Istvan\'s Paired Blades',
-		owner='Universal')
+		owner='Universal',
+		patch='24')
 	istvansPairedBlades.save()
 
 	littleRogue = SetPiece(name='Little Rogue',
@@ -473,7 +485,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	krelmsBuffBulkwark = ItemSet(name='Krelm\'s Buff Bulkwark',
-		owner='Universal')
+		owner='Universal',
+		patch='23')
 	krelmsBuffBulkwark.save()
 
 	krelmsBuffBracers = SetPiece(name='Krelm\'s Buff Bracers',
@@ -496,7 +509,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	legacyOfNightmares = ItemSet(name='Legacy of Nightmares',
-		owner='Universal')
+		owner='Universal',
+		patch='24')
 	legacyOfNightmares.save()
 
 	litanyOfTheUndaunted = SetPiece(name='Litany of the Undaunted',
@@ -521,7 +535,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	sagesJourney = ItemSet(name='Sage\'s Journey',
-		owner='Universal')
+		owner='Universal',
+		patch='23')
 	sagesJourney.save()
 
 	sagesApogee = SetPiece(name='Sage\'s Apogee',
@@ -555,7 +570,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	thornsOfTheInvoker = ItemSet(name='Thorns of the Invoker',
-		owner='Universal')
+		owner='Universal',
+		patch='24')
 	thornsOfTheInvoker.save()
 
 	crownOfTheInvoker = SetPiece(name='Crown of the Invoker',
@@ -611,7 +627,8 @@ def load_item_sets(apps, schema_editor):
 #Barbarian
 #==============================================================================
 	bulKathossOath = ItemSet(name='Bul-Kathos\'s Oath',
-		owner='Barbarian')
+		owner='Barbarian',
+		patch='23')
 	bulKathossOath.save()
 
 	bulKathossWarriorBlood = SetPiece(name='Bul-Kathos\'s Warrior Blood',
@@ -634,7 +651,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	mightOfTheEarth = ItemSet(name='Might of the Earth',
-		owner='Barbarian')
+		owner='Barbarian',
+		patch='24')
 	mightOfTheEarth.save()
 
 	eyesOfTheEarth = SetPiece(name='Eyes of the Earth',
@@ -699,7 +717,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	immortalKingsCall = ItemSet(name='Immortal King\'s Call',
-		owner='Barbarian')
+		owner='Barbarian',
+		patch='23')
 	immortalKingsCall.save()
 
 	immortalKingsBoulderBreaker = SetPiece(name='Immortal King\'s Boulder Breaker',
@@ -762,7 +781,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	theLegacyOfRaekor = ItemSet(name='The Legacy of Raekor',
-		owner='Barbarian')
+		owner='Barbarian',
+		patch='24')
 	theLegacyOfRaekor.save()
 
 	raekorsWill = SetPiece(name='Raekor\'s Will',
@@ -825,7 +845,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	wrathOfTheWastes = ItemSet(name='Wrath of the Wastes',
-		owner='Barbarian')
+		owner='Barbarian',
+		patch='23')
 	wrathOfTheWastes.save()
 
 	helmOfTheWastes = SetPiece(name='Helm of the Wastes',
@@ -882,7 +903,8 @@ def load_item_sets(apps, schema_editor):
 #Crusader
 #==============================================================================
 	armorOfAkkhan = ItemSet(name='Armor of Akkhan',
-		owner='Crusader')
+		owner='Crusader',
+		patch='24')
 	armorOfAkkhan.save()
 
 	helmOfAkkhan = SetPiece(name='Helm of Akkhan',
@@ -945,7 +967,8 @@ def load_item_sets(apps, schema_editor):
 
 #2.4
 	norvaldsFervor = ItemSet(name='Norvald\'s Fervor',
-		owner='Crusader')
+		owner='Crusader',
+		patch='24')
 	norvaldsFervor.save()
 
 	flailOfTheCharge = SetPiece(name='Flail of the Charge',
@@ -968,7 +991,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	rolandsLegacy = ItemSet(name='Roland\'s Legacy',
-		owner='Crusader')
+		owner='Crusader',
+		patch='24')
 	rolandsLegacy.save()
 
 	rolandsVisage = SetPiece(name='Roland\'s Visage',
@@ -1027,7 +1051,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	seekerOfTheLight = ItemSet(name='Seeker of the Light',
-		owner='Crusader')
+		owner='Crusader',
+		patch='24')
 	seekerOfTheLight.save()
 
 	crownOfTheLight = SetPiece(name='Crown of the Light',
@@ -1085,7 +1110,8 @@ def load_item_sets(apps, schema_editor):
 #Demon Hunter
 #==============================================================================
 	danettasHatred = ItemSet(name='Danetta\'s Hatred',
-		owner='Demon Hunter')
+		owner='Demon Hunter',
+		patch='24')
 	danettasHatred.save()
 
 	danettasRevenge = SetPiece(name='Danetta\'s Revenge',
@@ -1109,7 +1135,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	embodimentOfTheMarauder = ItemSet(name='Embodiment of the Marauder',
-		owner='Demon Hunter')
+		owner='Demon Hunter',
+		patch='24')
 	embodimentOfTheMarauder.save()
 
 	maraudersVisage = SetPiece(name='Marauder\'s Visage',
@@ -1168,7 +1195,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	natalyasVengeance = ItemSet(name='Natalya\'s Vengeance',
-		owner='Demon Hunter')
+		owner='Demon Hunter',
+		patch='24')
 	natalyasVengeance.save()
 
 	natalyasSlayer = SetPiece(name='Natalya\'s Slayer',
@@ -1233,7 +1261,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	theShadowsMantle = ItemSet(name='The Shadow\'s Mantle',
-		owner='Demon Hunter')
+		owner='Demon Hunter',
+		patch='24')
 	theShadowsMantle.save()
 
 #Added in 2.4
@@ -1296,7 +1325,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	unhallowedEssence = ItemSet(name='Unhallowed Essence',
-		owner='Demon Hunter')
+		owner='Demon Hunter',
+		patch='24')
 	unhallowedEssence.save()
 
 	accursedVisage = SetPiece(name='Accursed Visage',
@@ -1357,7 +1387,8 @@ def load_item_sets(apps, schema_editor):
 #Monk
 #==============================================================================
 	innasMantra = ItemSet(name='Inna\'s Mantra',
-		owner='Monk')
+		owner='Monk',
+		patch='24')
 	innasMantra.save()
 
 	innasReach = SetPiece(name='Inna\'s Reach',
@@ -1422,7 +1453,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	monkeyKingsGarb = ItemSet(name='Monkey King\'s Garb',
-		owner='Monk')
+		owner='Monk',
+		patch='24')
 	monkeyKingsGarb.save()
 
 	sunwukosCrown = SetPiece(name='Sunwuko\'s Crown',
@@ -1472,7 +1504,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	raimentOfAThousandStorms = ItemSet(name='Raiment of a Thousand Storms',
-		owner='Monk')
+		owner='Monk',
+		patch='24')
 	raimentOfAThousandStorms.save()
 
 	maskOfTheSearingSky = SetPiece(name='Mask of the Searing Sky',
@@ -1530,7 +1563,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	shenlongsSpirit = ItemSet(name='Shenlong\'s Spirit',
-		owner='Monk')
+		owner='Monk',
+		patch='23')
 	shenlongsSpirit.save()
 
 
@@ -1554,7 +1588,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	ulianasStrategem = ItemSet(name='Uliana\'s Strategem',
-		owner='Monk')
+		owner='Monk',
+		patch='23')
 	ulianasStrategem.save()
 
 	ulianasSpirit = SetPiece(name='Uliana\'s Spirit',
@@ -1611,7 +1646,8 @@ def load_item_sets(apps, schema_editor):
 #Witch Doctor
 #==============================================================================
 	helltoothHarness = ItemSet(name='Helltooth Harness',
-		owner='Witch Doctor')
+		owner='Witch Doctor',
+		patch='23')
 	helltoothHarness.save()
 
 	helltoothMask = SetPiece(name='Helltooth Mask',
@@ -1668,7 +1704,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	manajumasWay = ItemSet(name='Manajuma\'s Way',
-		owner='Witch Doctor')
+		owner='Witch Doctor',
+		patch='24')
 	manajumasWay.save()
 
 	manajumasCarvingKnife = SetPiece(name='Manajuma\'s Carving Knife',
@@ -1692,7 +1729,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	raimentOfTheJadeHarvester = ItemSet(name='Raiment of the Jade Harvester',
-		owner='Witch Doctor')
+		owner='Witch Doctor',
+		patch='24')
 	raimentOfTheJadeHarvester.save()
 
 	jadeHarvestersWisdom = SetPiece(name='Jade Harvester\'s Wisdom',
@@ -1752,7 +1790,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	spiritOfArachyr = ItemSet(name='Spirit of Arachyr',
-		owner='Witch Doctor')
+		owner='Witch Doctor',
+		patch='24')
 	spiritOfArachyr.save()
 
 	arachyrsVisage = SetPiece(name='Arachyr\'s Visage',
@@ -1811,7 +1850,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	zunimassasHaunt = ItemSet(name='Zunimassa\'s Haunt',
-		owner='Witch Doctor')
+		owner='Witch Doctor',
+		patch='24')
 	zunimassasHaunt.save()
 
 	zunimassasVision = SetPiece(name='Zunimassa\'s Vision',
@@ -1875,7 +1915,8 @@ def load_item_sets(apps, schema_editor):
 #Wizard
 #==============================================================================
 	chantodosResolve = ItemSet(name='Chantodo\'s Resolve',
-		owner='Wizard')
+		owner='Wizard',
+		patch='23')
 	chantodosResolve.save()
 
 	chantodosWill = SetPiece(name='Chantodo\'s Will',
@@ -1898,7 +1939,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	delseresMagnumOpus = ItemSet(name='Delsere\'s Magnum Opus',
-		owner='Wizard')
+		owner='Wizard',
+		patch='24')
 	delseresMagnumOpus.save()
 
 	shroudedMask = SetPiece(name='Shrouded Mask',
@@ -1959,7 +2001,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	firebirdsFinery = ItemSet(name='Firebird\'s Finery',
-		owner='Wizard')
+		owner='Wizard',
+		patch='24')
 	firebirdsFinery.save()
 
 	firebirdsEye = SetPiece(name='Firebird\'s Eye',
@@ -2025,7 +2068,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	talRashasElements = ItemSet(name='Tal Rasha\'s Elements',
-		owner='Wizard')
+		owner='Wizard',
+		patch='24')
 	talRashasElements.save()
 
 	talRashasUnwaveringGlare = SetPiece(name='Tal Rasha\'s Unwavering Glare',
@@ -2091,7 +2135,8 @@ def load_item_sets(apps, schema_editor):
 
 
 	vyrsAmazingArcana = ItemSet(name='Vyr\'s Amazing Arcana',
-		owner='Wizard')
+		owner='Wizard',
+		patch='23')
 	vyrsAmazingArcana.save()
 
 	vyrsSightlessSkull = SetPiece(name='Vyr\'s Sightless Skull',

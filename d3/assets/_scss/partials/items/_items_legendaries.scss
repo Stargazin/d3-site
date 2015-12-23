@@ -1,6 +1,11 @@
 /* partials/items/items_legendaries
 ============================================================================ 
 ============================================================================ */
+  //Show rest with JS
+.item:nth-child(n+21) {
+  display: none;
+}
+
 .item__info__affix {
 
   //Affixes with {Affix}

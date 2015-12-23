@@ -3,7 +3,7 @@
 
 
 {% block title %}
-{{ header }} Sets
+Sets
 {% endblock title %}
 
 
@@ -16,19 +16,20 @@
 
 <header>
   <div class="overview">
-    <h1>{{ header }} Sets</h1>
+    <h1>Item Sets</h1>
     <h3>Patch 2.4</h3>
   </div> <!-- .overview -->
 
   <div class="toggle-container">
     <span style="background: url({% static 'media/portraits/42/all.png' %})" class="toggle toggle--all toggle--selected"></span>
-    <span style="background: url({% static 'media/portraits/42/barb.png' %})" class="toggle toggle--Barbarian"></span>
-    <span style="background: url({% static 'media/portraits/42/sader.png' %})" class="toggle toggle--Crusader"></span>
-    <span style="background: url({% static 'media/portraits/42/dh.png' %})" class="toggle toggle--Demon"></span>
-    <span style="background: url({% static 'media/portraits/42/monk.png' %})" class="toggle toggle--Monk"></span>
-    <span style="background: url({% static 'media/portraits/42/wd.png' %})" class="toggle toggle--Witch"></span>
-    <span style="background: url({% static 'media/portraits/42/wiz.png' %})" class="toggle toggle--Wizard"></span>
+    <span style="background: url({% static 'media/portraits/42/barb.png' %})" class="toggle toggle--barbarian"></span>
+    <span style="background: url({% static 'media/portraits/42/sader.png' %})" class="toggle toggle--crusader"></span>
+    <span style="background: url({% static 'media/portraits/42/dh.png' %})" class="toggle toggle--demon-hunter"></span>
+    <span style="background: url({% static 'media/portraits/42/monk.png' %})" class="toggle toggle--monk"></span>
+    <span style="background: url({% static 'media/portraits/42/wd.png' %})" class="toggle toggle--witch-doctor"></span>
+    <span style="background: url({% static 'media/portraits/42/wiz.png' %})" class="toggle toggle--wizard"></span>
   </div> <!-- .toggle-container -->
+  <div class="patch"><span>Show Changed/Added in Patch 2.4</span></div>
 </header>
 
 {% endblock header %}
@@ -40,7 +41,7 @@
 <div class="set-container">
 
   {% for itemset in itemsets %}
-  <div class="set {{ itemset.owner }}">
+  <div class="set {{ itemset.owner_slug }} {{ itemset.patch }}">
 
     <div class="set__name">
       <span><a href="{% url 'single-set' itemset.owner_slug itemset.name_slug %}">{{ itemset.name }}</a></span>
@@ -79,3 +80,8 @@
 </main>
 
 {% endblock content %}
+
+
+{% block js %}
+<script src="{% static 'js/itemsets_all.js' %}"></script>
+{% endblock js %}

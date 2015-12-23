@@ -5,8 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>{% block title %}Diablo 3{% endblock title%} | Diablo 3</title>
+  <title>{% block title %}Diablo 3{% endblock title%} | Diablo 3 Items</title>
   {% block css %}{% endblock css %}
 </head>
 
@@ -119,18 +118,7 @@
     </ul> <!-- ul.drop-down -->
   </li> <!-- li.link-legendaries -->
 
-  <li class="link link--sets"><a href="{% url 'all-sets' 'all' %}">Sets</a>
-    <ul class="drop drop--down">
-      <li class="link drop__link"><a href="{% url 'all-sets' 'barbarian' %}">Barbarian</a></li>
-      <li class="link drop__link"><a href="{% url 'all-sets' 'crusader' %}">Crusader</a></li>
-      <li class="link drop__link"><a href="{% url 'all-sets' 'demon-hunter' %}">Demon Hunter</a></li>
-      <li class="link drop__link"><a href="{% url 'all-sets' 'monk' %}">Monk</a></li>
-      <li class="link drop__link"><a href="{% url 'all-sets' 'witch-doctor' %}">Witch Doctor</a></li>
-      <li class="link drop__link"><a href="{% url 'all-sets' 'wizard' %}">Wizard</a></li>
-      <li class="link drop__link"><a href="{% url 'all-sets' 'universal' %}">Universal</a></li>
-      <li class="link drop__link"><a href="{% url 'all-sets' 'all' %}"><b>Show All</b></a></li>
-    </ul> <!-- ul.drop-down -->
-  </li> <!-- li.link-sets -->
+  <li class="link link--sets"><a href="{% url 'all-sets' %}">Sets</a></li>
 
   <li class="link link--gems"><a href="{% url 'gems' %}">Gems</a>
   </li>
@@ -173,9 +161,8 @@
 {% block content %}{% endblock content %}
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://192.168.1.5:35729/livereload.js?snipver=1"></script>
-{% block js %}
 <script src="{% static 'js/main.js' %}"></script>
-{% endblock js %}
+{% block js %}{% endblock js %}
+<script src="http://192.168.1.5:35729/livereload.js?snipver=1"></script>
 </body>
 </html>

@@ -244,7 +244,11 @@ header {
         line-height: 6.5rem; } }
   @media only screen and (max-width: 1200px) {
     .overview {
-      width: 100%; } }
+      width: 100%;
+      margin: 5rem 0 0 0; } }
+  @media only screen and (max-width: 480px) {
+    .overview {
+      margin: 4.5rem 0 0 0; } }
 
 /* partials/items/base_items
 ============================================================================ 

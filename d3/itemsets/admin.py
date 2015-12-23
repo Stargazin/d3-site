@@ -5,7 +5,7 @@ from .models import ItemSet, SetEffect, SetPiece
 
 class ItemSetAdmin(admin.ModelAdmin):
 	list_display = ('name', 'owner', 'notes',)
-	list_filter = ('owner',)
+	list_filter = ('owner', 'patch',)
 
 
 class SetEffectAdmin(admin.ModelAdmin):

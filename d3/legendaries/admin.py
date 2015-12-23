@@ -4,8 +4,8 @@ from .models import Weapon, Armor, Accessory
 
 
 class LegendaryItemAdmin(admin.ModelAdmin):
-	list_display = ('name', 'owner', 'slot', 'category', 'notes', 'pk')
-	list_filter = ('slot', 'category', 'owner')
+	list_display = ('name', 'owner', 'slot', 'category', 'notes', 'pk',)
+	list_filter = ('slot', 'category', 'owner', 'patch',)
 
 class WeaponAdmin(LegendaryItemAdmin):
 	pass

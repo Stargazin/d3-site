@@ -7,8 +7,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('miscitems', '0001_initial'),
-        ('affixes', '0001_initial'),
+        ('affixes', '0006_armor_affixes'),
     ]
 
     operations = [
@@ -28,11 +27,10 @@ class Migration(migrations.Migration):
                 ('random_primaries', models.TextField(blank=True)),
                 ('random_secondaries', models.TextField(blank=True)),
                 ('owner', models.TextField(blank=True)),
-                ('number_of_mats', models.CommaSeparatedIntegerField(max_length=32, blank=True)),
+                ('patch', models.TextField()),
                 ('notes', models.TextField(blank=True)),
                 ('group', models.TextField(default=b'accessory')),
                 ('affixes', models.ManyToManyField(to='affixes.Affix', blank=True)),
-                ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
                 'ordering': ['pk'],
@@ -55,12 +53,11 @@ class Migration(migrations.Migration):
                 ('random_primaries', models.TextField(blank=True)),
                 ('random_secondaries', models.TextField(blank=True)),
                 ('owner', models.TextField(blank=True)),
-                ('number_of_mats', models.CommaSeparatedIntegerField(max_length=32, blank=True)),
+                ('patch', models.TextField()),
                 ('notes', models.TextField(blank=True)),
                 ('inherent', models.TextField(blank=True)),
                 ('group', models.TextField(default=b'armor')),
                 ('affixes', models.ManyToManyField(to='affixes.Affix', blank=True)),
-                ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
                 'ordering': ['pk'],
@@ -83,12 +80,11 @@ class Migration(migrations.Migration):
                 ('random_primaries', models.TextField(blank=True)),
                 ('random_secondaries', models.TextField(blank=True)),
                 ('owner', models.TextField(blank=True)),
-                ('number_of_mats', models.CommaSeparatedIntegerField(max_length=32, blank=True)),
+                ('patch', models.TextField()),
                 ('notes', models.TextField(blank=True)),
                 ('inherent', models.TextField(blank=True)),
                 ('group', models.TextField(default=b'weapon')),
                 ('affixes', models.ManyToManyField(to='affixes.Affix', blank=True)),
-                ('mats', models.ManyToManyField(to='miscitems.Material', blank=True)),
             ],
             options={
                 'ordering': ['pk'],

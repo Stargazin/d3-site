@@ -244,7 +244,11 @@ header {
         line-height: 6.5rem; } }
   @media only screen and (max-width: 1200px) {
     .overview {
-      width: 100%; } }
+      width: 100%;
+      margin: 5rem 0 0 0; } }
+  @media only screen and (max-width: 480px) {
+    .overview {
+      margin: 4.5rem 0 0 0; } }
 
 /* partials/toggle
 ============================================================================ 
@@ -275,10 +279,43 @@ header {
           -ms-transform: scale(0.9, 0.9);
               transform: scale(0.9, 0.9); } }
 
-.toggle--selected {
-  border-color: #c8cdc8; }
-  .toggle--selected:hover {
-    border-color: #c8cdc8; }
+.patch {
+  width: 100%;
+  margin: 2.5rem 0;
+  text-align: center; }
+  .patch span {
+    display: inline-block;
+    border: 2px solid;
+    border-color: #64696e;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    padding: 0.1rem 1rem 0.4rem 1rem;
+    font-size: 2em;
+    font-family: "Playfair Display SC", serif;
+    color: #dedede;
+    cursor: pointer; }
+    .patch span:hover {
+      border-color: #969ba0; }
+    @media only screen and (max-width: 480px) {
+      .patch span {
+        padding: 0.1rem 0.7rem 0.4rem 0.7rem;
+        font-size: 1.9em;
+        line-height: 1.1em; } }
+  @media only screen and (max-width: 1200px) {
+    .patch {
+      margin: 1.5rem 0 2rem 0; } }
+  @media only screen and (max-width: 480px) {
+    .patch {
+      margin: 1rem 0 1.5rem 0; } }
+
+.toggle--selected, .patch--selected {
+  border-color: #d2d7dc !important;
+  color: #fafafa !important; }
+  .toggle--selected:hover, .patch--selected:hover {
+    border-color: #d2d7dc !important; }
+
+.patch-off {
+  display: none !important; }
 
 /* partials/items/base_items
 ============================================================================ 
@@ -430,6 +467,9 @@ header {
 /* partials/items/items_legendaries
 ============================================================================ 
 ============================================================================ */
+.item:nth-child(n+21), .filler:nth-child(n+21) {
+  display: none; }
+
 .item__info__affix .vary {
   cursor: pointer; }
 

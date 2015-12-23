@@ -26,9 +26,10 @@ class LegendaryModel(models.Model):
 	#Class that uses the legendary
 	owner = models.TextField(blank=True)
 	#Not in use;
-	mats = models.ManyToManyField(Material, blank=True)
-		##If import problem (circular imports), use str 'miscitems.Material'
-	number_of_mats = models.CommaSeparatedIntegerField(max_length=32, blank=True)
+	# mats = models.ManyToManyField(Material, blank=True)
+	# 	##If import problem (circular imports), use str 'miscitems.Material'
+	# number_of_mats = models.CommaSeparatedIntegerField(max_length=32, blank=True)
+	patch = models.TextField()
 	notes = models.TextField(blank=True)
 
 	#Get list of primary affixes from all affixes (is_primary = True)

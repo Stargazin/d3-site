@@ -30,10 +30,52 @@
   }
 }
 
-.toggle--selected {
-  border-color: rgb(200, 205, 200);
+.patch {
+  width: 100%;
+  margin: 2.5rem 0;
+  text-align: center;
+
+  span {
+    display: inline-block;
+    border: 2px solid;
+    border-color: rgb(100, 105, 110);
+    border-radius: 10px;
+    padding: 0.1rem 1rem 0.4rem 1rem;
+    font-size: 2em;
+    font-family: $playfair;
+    color: rgb(222, 222, 222);
+    cursor: pointer;
+
+    &:hover {
+      border-color: rgb(150, 155, 160);
+    }
+
+    @media #{$break-s} {
+      padding: 0.1rem 0.7rem 0.4rem 0.7rem;
+      font-size: 1.9em;
+      line-height: 1.1em;
+    }
+  }
+
+  @media #{$break-xl} {
+    margin: 1.5rem 0 2rem 0;
+  }
+
+  @media #{$break-s} {
+    margin: 1rem 0 1.5rem 0;
+  }
+}
+
+//Added with jQuery
+.toggle--selected, .patch--selected {
+  border-color: rgb(210, 215, 220) !important;
+  color: rgb(250, 250, 250) !important;
 
   &:hover {
-    border-color: rgb(200, 205, 200);
+    border-color: rgb(210, 215, 220) !important;
   }
+}
+
+.patch-off {
+  display: none !important;
 }

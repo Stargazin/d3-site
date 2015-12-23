@@ -29,13 +29,14 @@
     <span style="background: url({% static 'media/portraits/42/wd.png' %})" class="toggle toggle--wd"></span>
     <span style="background: url({% static 'media/portraits/42/wiz.png' %})" class="toggle toggle--wiz"></span>
   </div> <!-- .toggle-container -->
+  <div class="patch"><span>Show Changed/Added in Patch 2.4</span></div>
 </header>
 
 {% endblock header %}
 
 
 {% block item_div %}
-<div class="item {{ item.owner }}">
+<div class="item {{ item.owner }} {{ item.patch }}">
 {% endblock item_div %}
 
 
@@ -90,3 +91,8 @@
 {% endif %}
 
 {% endblock item_affixes %}
+
+
+{% block js %}
+<script src="{% static 'js/items_legendaries.js' %}"></script>
+{% endblock js %}

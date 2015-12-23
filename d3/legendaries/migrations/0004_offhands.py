@@ -32,7 +32,8 @@ def load_sources(apps, schema_editor):
 		unique='Teleport gains the effect of the Wormhole rune.',
 		random_primaries='4',
 		random_secondaries='1',
-		notes='crafted')
+		notes='crafted',
+		patch='23')
 	cosmicStrand.save()
 	cosmicStrand.affixes.add(dmg)
 
@@ -42,7 +43,8 @@ def load_sources(apps, schema_editor):
 		pic='media/items/legendaries/offhands/sources/light_of_grace.png',
 		unique='Ray of Frost now pierces.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	lightOfGrace.save()
 	lightOfGrace.affixes.add(dmg, inte, chc)
 
@@ -52,7 +54,8 @@ def load_sources(apps, schema_editor):
 		pic='media/items/legendaries/offhands/sources/mirrorball.png',
 		unique='Magic Missile fires <span>1 - 2</span> extra missiles.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	mirrorball.save()
 	mirrorball.affixes.add(dmg, inte, chc)
 
@@ -62,7 +65,8 @@ def load_sources(apps, schema_editor):
 		pic='media/items/legendaries/offhands/sources/mykens_ball_of_hate.png',
 		unique='Electrocute can chain to enemies that have already been hit.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	mykensBallOfHate.save()
 	mykensBallOfHate.affixes.add(dmg, inte, chc)
 
@@ -72,7 +76,8 @@ def load_sources(apps, schema_editor):
 		pic='media/items/legendaries/offhands/sources/the_oculus.png',
 		unique='Taking damage has up to a <span>15 - 20%</span> chance to reset the cooldown on Teleport.',
 		random_primaries='',
-		random_secondaries='')
+		random_secondaries='',
+		patch='23')
 	theOculus.save()
 	theOculus.affixes.add(dmg, inte, chc, apCrit)
 
@@ -82,7 +87,8 @@ def load_sources(apps, schema_editor):
 		pic='media/items/legendaries/offhands/sources/triumvirate.png',
 		unique='Your Signature Spells increase the damage of Arcane Orb by <span>150 - 200%</span> for <span class="silver">6</span> seconds, stacking up to <span class="silver">3</span> times.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	triumvirate.save()
 	triumvirate.affixes.add(dmg, inte, chc)
 
@@ -92,7 +98,8 @@ def load_sources(apps, schema_editor):
 		pic='media/items/legendaries/offhands/sources/winter_flurry.png',
 		unique='Enemies killed by Cold damage have a <span>15 - 20%</span> chance to release a Frost Nova.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	winterFlurry.save()
 	winterFlurry.affixes.add(dmg, inte, chc, winterColdDmg)
 
@@ -125,7 +132,8 @@ def load_quivers(apps, schema_editor):
 		name='Archfiend Arrows',
 		pic='media/items/legendaries/offhands/quivers/archfiend_arrows.png',
 		random_primaries='2',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	archfiendArrows.save()
 	archfiendArrows.affixes.add(ias, chc, eliteDmg)
 
@@ -136,7 +144,8 @@ def load_quivers(apps, schema_editor):
 		pic='media/items/legendaries/offhands/quivers/bombardiers_rucksack.png',
 		unique='You may have <span class="silver">2</span> additional Sentries.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='24')
 	bombadiersRucksack.save()
 	bombadiersRucksack.affixes.add(dext, ias, chc, bombadiersSentry)
 
@@ -146,7 +155,8 @@ def load_quivers(apps, schema_editor):
 		pic='media/items/legendaries/offhands/quivers/dead_mans_legacy.png',
 		unique='Multishot hits enemies below <span>50 - 60%</span> health twice.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	deadMansLegacy.save()
 	deadMansLegacy.affixes.add(dext, ias, chc, deadMultishot)
 
@@ -156,7 +166,8 @@ def load_quivers(apps, schema_editor):
 		pic='media/items/legendaries/offhands/quivers/emimeis_duffel.png',
 		unique='Bolas now explode instantly.',
 		random_primaries='3',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	emimeisDuffel.save()
 	emimeisDuffel.affixes.add(dext, ias)
 
@@ -165,7 +176,8 @@ def load_quivers(apps, schema_editor):
 		name='Fletcher\'s Pride',
 		pic='media/items/legendaries/offhands/quivers/fletchers_pride.png',
 		random_primaries='2',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	fletchersPride.save()
 	fletchersPride.affixes.add(dext, ias, rcr)
 
@@ -174,7 +186,8 @@ def load_quivers(apps, schema_editor):
 		name='Holy Point Shot',
 		pic='media/items/legendaries/offhands/quivers/holy_point_shot.png',
 		random_primaries='2',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	holyPointShot.save()
 	holyPointShot.affixes.add(dext, ias, holyEleDmg)
 
@@ -184,7 +197,8 @@ def load_quivers(apps, schema_editor):
 		pic='media/items/legendaries/offhands/quivers/meticulous_bolts.png',
 		unique='Elemental Arrow - Ball Lightning now travels at <span>30 - 40%</span> speed.',
 		random_primaries='3',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	meticulousBolts.save()
 	meticulousBolts.affixes.add(dext, ias)
 
@@ -195,7 +209,8 @@ def load_quivers(apps, schema_editor):
 		pic='media/items/legendaries/offhands/quivers/sin_seekers.png',
 		unique='Rapid Fire no longer has a channel cost',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='24')
 	sinSeekers.save()
 	sinSeekers.affixes.add(dext, ias, chc, sinRapidFire)
 
@@ -205,7 +220,8 @@ def load_quivers(apps, schema_editor):
 		pic='media/items/legendaries/offhands/quivers/spines_of_seething_hatred.png',
 		unique='Chakram now generates <span>3 - 4</span> Hatred.',
 		random_primaries='3',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	spinesOfSeethingHatred.save()
 	spinesOfSeethingHatred.affixes.add(dext, ias)
 
@@ -215,7 +231,8 @@ def load_quivers(apps, schema_editor):
 		pic='media/items/legendaries/offhands/quivers/the_ninth_cirri_satchel.png',
 		unique='Hungering Arrow has <span>20 - 25%</span> additional chance to pierce.',
 		random_primaries='3',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	theNinthCirriSatchel.save()
 	theNinthCirriSatchel.affixes.add(dext, ias)
 
@@ -254,7 +271,8 @@ def load_mojos(apps, schema_editor):
 		name='Gazing Demise',
 		pic='media/items/legendaries/offhands/mojos/gazing_demise.png',
 		random_primaries='1',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	gazingDemise.save()
 	gazingDemise.affixes.add(dmg, inte, lps, manaRegen)
 
@@ -264,7 +282,8 @@ def load_mojos(apps, schema_editor):
 		pic='media/items/legendaries/offhands/mojos/henris_perquisition.png',
 		unique='The first time an enemy deals damage to you, reduce that damage by <span>60 - 80%</span> and Charm the enemy for <span class="silver">3</span> seconds.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	henrisPerquisition.save()
 	henrisPerquisition.affixes.add(dmg, inte, chc, durability)
 
@@ -273,7 +292,8 @@ def load_mojos(apps, schema_editor):
 		name='homunculus',
 		pic='media/items/legendaries/offhands/mojos/homunculus.png',
 		unique='A Zombie Dog is automatically summoned to your side every <span class="silver">2</span> seconds.',
-		random_primaries='2')
+		random_primaries='2',
+		patch='23')
 	homunculus.save()
 	homunculus.affixes.add(dmg, inte, chc, sacrifice, maxMana)
 
@@ -283,7 +303,8 @@ def load_mojos(apps, schema_editor):
 		pic='media/items/legendaries/offhands/mojos/shukranis_triumph.png',
 		unique='Spirit Walk lasts until you attack or until an enemy is within <span class="silver">30</span> yards of you.',
 		random_primaries='1',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	shukranisTriumph.save()
 	shukranisTriumph.affixes.add(dmg, inte, chc, manaRegen)
 
@@ -292,7 +313,8 @@ def load_mojos(apps, schema_editor):
 		name='spite',
 		pic='media/items/legendaries/offhands/mojos/spite.png',
 		random_primaries='3',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	spite.save()
 	spite.affixes.add(dmg, chc, maxMana)
 
@@ -302,7 +324,8 @@ def load_mojos(apps, schema_editor):
 		name='Thing of the Deep',
 		pic='media/items/legendaries/offhands/mojos/thing_of_the_deep.png',
 		unique='<span class="silver">+20</span> Yards to Gold and Globe Pickup',
-		random_primaries='1')
+		random_primaries='1',
+		patch='24')
 	thingOfTheDeep.save()
 	thingOfTheDeep.affixes.add(dmg, inte, chc, manaRegen, maxMana)
 
@@ -312,7 +335,8 @@ def load_mojos(apps, schema_editor):
 		pic='media/items/legendaries/offhands/mojos/uhkapian_serpent.png',
 		unique='<span>25 - 30%</span> of the damage you take is redirected to your Zombie Dogs.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	uhkapianSerpent.save()
 	uhkapianSerpent.affixes.add(dmg, inte, chc)
 
@@ -346,7 +370,8 @@ def load_crusader_shields(apps, schema_editor):
 		unique='Every successful block has a <span>20 - 25%</span> chance to reduce all cooldowns by <span class="silver">1</span> second.',
 		random_primaries='2',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>21.0 - 31.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>21.0 - 31.0%</span> Block Chance</span>',
+		patch='23')
 	akaratsAwakening.save()
 	akaratsAwakening.affixes.add(stre, blockChance)
 
@@ -358,7 +383,8 @@ def load_crusader_shields(apps, schema_editor):
 		unique='Condemn has no cooldown but instead costs <span class="silver">40</span> Wrath.',
 		random_primaries='3',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
+		patch='24')
 	frydehrsWrath.save()
 	frydehrsWrath.affixes.add(stre, frydehrsCondemn)
 
@@ -369,7 +395,8 @@ def load_crusader_shields(apps, schema_editor):
 		unique='Blessed Hammer damage is increased by <span>200 - 250%</span> for the first <span class="silver">3</span> enemies it hits.',
 		random_primaries='3',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
+		patch='23')
 	guardOfJohanna.save()
 	guardOfJohanna.affixes.add(stre)
 
@@ -380,7 +407,8 @@ def load_crusader_shields(apps, schema_editor):
 		unique='Iron Skin also increases your Block Amount by <span>45 - 60%</span>.',
 		random_primaries='3',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
+		patch='23')
 	hallowedBulwark.save()
 	hallowedBulwark.affixes.add(stre)
 
@@ -391,7 +419,8 @@ def load_crusader_shields(apps, schema_editor):
 		unique='Gain <span class="silver">10%</span> increased damage while wielding a two-handed weapon.',
 		random_primaries='3',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
+		patch='23')
 	hellskull.save()
 	hellskull.affixes.add(stre)
 
@@ -403,7 +432,8 @@ def load_crusader_shields(apps, schema_editor):
 		unique='Blessed Shield ricochets to <span>4 - 6</span> additional enemies.',
 		random_primaries='3',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
+		patch='24')
 	jekangbord.save()
 	jekangbord.affixes.add(stre, jekangbordBlessedShield)
 
@@ -414,7 +444,8 @@ def load_crusader_shields(apps, schema_editor):
 		unique='Reduces the Wrath cost of Shield Bash by <span>40 - 50%</span>.',
 		random_primaries='4',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
+		patch='23')
 	piroMarella.save()
 	piroMarella.affixes.add()
 
@@ -425,7 +456,8 @@ def load_crusader_shields(apps, schema_editor):
 		unique='Blocked attacks heal you and your allies for <span>20 - 30%</span> of the amount blocked.',
 		random_primaries='2',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>21.0 - 31.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>21.0 - 31.0%</span> Block Chance</span>',
+		patch='23')
 	salvation.save()
 	salvation.affixes.add(stre, blockChance)
 
@@ -436,7 +468,8 @@ def load_crusader_shields(apps, schema_editor):
 		unique='When you block, you have up to a <span>15 - 20%</span> chance to Stun the attacker for <span class="silver">1.5</span> seconds based on your current Wrath.',
 		random_primaries='2',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>21.0 - 31.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>21.0 - 31.0%</span> Block Chance</span>',
+		patch='23')
 	sublimeConviction.save()
 	sublimeConviction.affixes.add(stre, blockChance)
 
@@ -447,7 +480,8 @@ def load_crusader_shields(apps, schema_editor):
 		unique='Shield Glare now hits all enemies around you.',
 		random_primaries='3',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
+		patch='23')
 	theFinalWitness.save()
 	theFinalWitness.affixes.add(stre)
 
@@ -459,7 +493,8 @@ def load_crusader_shields(apps, schema_editor):
 		unique='Phalanx now casts twice.',
 		random_primaries='3',
 		random_secondaries='1',
-		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>')
+		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
+		patch='24')
 	unrelentingPhalanx.save()
 	unrelentingPhalanx.affixes.add(stre, unrelentingPhalanxDmg)
 
@@ -499,7 +534,8 @@ def load_shields(apps, schema_editor):
 		random_primaries='2',
 		random_secondaries='1',
 		inherent='<span class="inherent"><span>21.0 - 31.0%</span> Block Chance</span>',
-		owner='all')
+		owner='all',
+		patch='23')
 	covensCriterion.save()
 	covensCriterion.affixes.add(vita, blockChance)
 
@@ -511,7 +547,8 @@ def load_shields(apps, schema_editor):
 		random_primaries='2',
 		random_secondaries='1',
 		inherent='<span class="inherent"><span>21.0 - 31.0%</span> Block Chance</span>',
-		owner='all')
+		owner='all',
+		patch='23')
 	defenderOfWestmarch.save()
 	defenderOfWestmarch.affixes.add(mainStat, blockChance)
 
@@ -523,7 +560,8 @@ def load_shields(apps, schema_editor):
 		random_primaries='3',
 		random_secondaries='1',
 		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
-		owner='sader')
+		owner='sader',
+		patch='23')
 	denial.save()
 	denial.affixes.add(mainStat)
 
@@ -535,7 +573,8 @@ def load_shields(apps, schema_editor):
 		random_primaries='3',
 		random_secondaries='1',
 		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
-		owner='sader')
+		owner='sader',
+		patch='23')
 	eberliCharo.save()
 	eberliCharo.affixes.add(mainStat)
 
@@ -547,7 +586,8 @@ def load_shields(apps, schema_editor):
 		random_primaries='3',
 		random_secondaries='1',
 		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
-		owner='all')
+		owner='all',
+		patch='23')
 	freezeOfDeflection.save()
 	freezeOfDeflection.affixes.add(mainStat)
 
@@ -559,7 +599,8 @@ def load_shields(apps, schema_editor):
 		random_primaries='2',
 		random_secondaries='1',
 		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
-		owner='sader')
+		owner='sader',
+		patch='23')
 	ivoryTower.save()
 	ivoryTower.affixes.add(mainStat, vita)
 
@@ -570,7 +611,8 @@ def load_shields(apps, schema_editor):
 		random_primaries='2',
 		random_secondaries='1',
 		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
-		owner='all')
+		owner='all',
+		patch='23')
 	lidlessWall.save()
 	lidlessWall.affixes.add(mainStat, lidlessEleDmg, lidlessMaxResource)
 
@@ -581,7 +623,8 @@ def load_shields(apps, schema_editor):
 		random_primaries='3',
 		random_secondaries='1',
 		inherent='<span class="inherent"><span>19.0 - 24.0%</span> Block Chance</span>',
-		owner='all')
+		owner='all',
+		patch='23')
 	stormshield.save()
 	stormshield.affixes.add(mainStat, stormReducedMeleeDmg)
 
@@ -593,7 +636,8 @@ def load_shields(apps, schema_editor):
 		random_primaries='2',
 		random_secondaries='1',
 		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
-		owner='sader')
+		owner='sader',
+		patch='23')
 	votoyiasSpiker.save()
 	votoyiasSpiker.affixes.add(mainStat, thorns)
 
@@ -605,7 +649,8 @@ def load_shields(apps, schema_editor):
 		random_primaries='4',
 		random_secondaries='1',
 		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
-		owner='all')
+		owner='all',
+		patch='23')
 	wallOfBone.save()
 	# wallOfBone.affixes.add()
 

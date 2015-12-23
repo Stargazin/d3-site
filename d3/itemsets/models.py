@@ -12,6 +12,8 @@ class ItemSet(models.Model):
 	#Class that uses set
 	owner = models.TextField()
 	owner_slug = models.SlugField()
+	#23 & 24; latter is changed/new in Patch 2.4
+	patch = models.TextField()
 	notes = models.TextField(blank=True)
 
 	def __str__(self):

@@ -10,24 +10,16 @@ from .models import ItemSet, SetEffect, SetPiece
 class AllSetsView(ListView):
 	template_name = 'itemsets/itemsets_all.html'
 
-	#Return all sets (if) or sets of matching owners (else)
+	#Return all sets as queryset
 	def get_queryset(self):
 		model = get_model('itemsets', 'ItemSet')
-		if self.kwargs['owner_slug'] == 'all':
-			self.itemsets = get_list_or_404(model.objects.select_related())
-			return self.itemsets
-		else:
-			self.itemsets = get_list_or_404(model.objects.select_related(), owner_slug=self.kwargs['owner_slug'])
-			return self.itemsets
+		self.itemsets = get_list_or_404(model.objects.select_related())
+		return self.itemsets
 
-	#Return queryset and header as item (if) or owner (else) for template
+	#Return context for template
 	def get_context_data(self, **kwargs):
 		context = super(AllSetsView, self).get_context_data(**kwargs)
 		context['itemsets'] = self.itemsets
-		if self.itemsets[0].owner == 'Universal':
-			context['header'] = 'Item'
-		else:
-			context['header'] = self.itemsets[0].owner
 		return context
 
 

@@ -30,7 +30,8 @@ def load_1h_axes(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/axes/flesh_tearer.png',
 		category='1H Axes',
 		random_primaries='2',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	fleshTearer.save()
 	fleshTearer.affixes.add(bleedChance)
 
@@ -40,7 +41,8 @@ def load_1h_axes(apps, schema_editor):
 		category='1H Axes',
 		unique='Chance to summon a ghostly Fallen Champion when attacking.',
 		random_primaries='3',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	genzaniku.save()
 	# genzaniku.affixes.add()
 
@@ -50,7 +52,8 @@ def load_1h_axes(apps, schema_editor):
 		category='1H Axes',
 		unique='<span>75 - 100%</span> of your Thorns damage is applied on every attack.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	hack.save()
 	hack.affixes.add(sockets)
 
@@ -60,7 +63,8 @@ def load_1h_axes(apps, schema_editor):
 		category='1H Axes',
 		unique='<span>15 - 20%</span> chance to Smite enemies for <span>600 - 750%</span> weapon damage as Lightning when you hit them.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	skySplitter.save()
 	skySplitter.affixes.add(mainStat)
 
@@ -70,7 +74,8 @@ def load_1h_axes(apps, schema_editor):
 		category='1H Axes',
 		unique='Chance to fight through the pain when enemies hit you.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	theBurningAxeOfSankis.save()
 	theBurningAxeOfSankis.affixes.add(burningFireDmg)
 
@@ -80,7 +85,8 @@ def load_1h_axes(apps, schema_editor):
 		category='1H Axes',
 		unique='<span>20 - 25%</span> chance to drag enemies to you when attacking.',
 		random_primaries='3',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	theButchersSickle.save()
 	# theButchersSickle.affixes.add()
 
@@ -90,7 +96,8 @@ def load_1h_axes(apps, schema_editor):
 		category='1H Axes',
 		random_primaries='2',
 		random_secondaries='2',
-		notes='crafted')
+		notes='crafted',
+		patch='23')
 	utarsRoar.save()
 	utarsRoar.affixes.add(utarsColdDmg)
 
@@ -124,7 +131,8 @@ def load_ceremonial_knives(apps, schema_editor):
 		category='Ceremonial Knives',
 		unique='Zombie Dogs stuns enemies around them for <span class="silver">1.5</span> seconds when summoned.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	anessaziEdge.save()
 	anessaziEdge.affixes.add(inte)
 
@@ -134,7 +142,8 @@ def load_ceremonial_knives(apps, schema_editor):
 		category='Ceremonial Knives',
 		unique='Grasp of the Dead gains the effect of the Rain of Corpses rune.',
 		random_secondaries='1',
-		notes='double check')
+		notes='double check',
+		patch='23')
 	deadlyRebirth.save()
 	deadlyRebirth.affixes.add(inte, manaRegen, deadlyGraspOfTheDead)
 
@@ -145,7 +154,8 @@ def load_ceremonial_knives(apps, schema_editor):
 		unique='Reduce the cooldown of Mass Confusion by <span>15 - 20</span> seconds',
 		category='Ceremonial Knives',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='24')
 	lastBreath.save()
 	lastBreath.affixes.add(inte,)
 
@@ -155,7 +165,8 @@ def load_ceremonial_knives(apps, schema_editor):
 		category='Ceremonial Knives',
 		random_primaries='3',
 		random_secondaries='2',
-		notes='crafted')
+		notes='crafted',
+		patch='23')
 	livingUmbralOath.save()
 	# livingUmbralOath.affixes.add()
 
@@ -165,7 +176,8 @@ def load_ceremonial_knives(apps, schema_editor):
 		category='Ceremonial Knives',
 		unique='Plague of Toads now seek out enemies and can explode twice.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	rhenhoFlayer.save()
 	rhenhoFlayer.affixes.add(inte)
 
@@ -175,7 +187,8 @@ def load_ceremonial_knives(apps, schema_editor):
 		category='Ceremonial Knives',
 		unique='Soul Harvest now stacks up to <span class="silver">10</span> times.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	sacredHarvester.save()
 	sacredHarvester.affixes.add(inte)
 
@@ -185,7 +198,8 @@ def load_ceremonial_knives(apps, schema_editor):
 		category='Ceremonial Knives',
 		unique='Reduce the cooldown of Fetish Army and Big Bad Voodoo by <span class="silver">1</span> second each time your fetishes deal damage.',
 		random_primaries='1',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	starmetalKukri.save()
 	starmetalKukri.affixes.add(inte, starmetalCHD)
 
@@ -195,7 +209,8 @@ def load_ceremonial_knives(apps, schema_editor):
 		category='Ceremonial Knives',
 		unique='Your Poison Darts and your Fetishes\' Poison Darts now pierce.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	theDaggerOfDarts.save()
 	theDaggerOfDarts.affixes.add(inte)
 
@@ -205,7 +220,8 @@ def load_ceremonial_knives(apps, schema_editor):
 		category='Ceremonial Knives',
 		unique='Chance to summon a Fetish when attacking.',
 		random_primaries='1',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	theGidbinn.save()
 	theGidbinn.affixes.add(inte, manaRegen)
 
@@ -214,7 +230,8 @@ def load_ceremonial_knives(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/ceremonialknives/the_spider_queens_grasp.png',
 		category='Ceremonial Knives',
 		unique='Corpse Spiders releases a web on impact that Slows enemies by <span>60 - 80%</span>.',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	theSpiderQueensGrasp.save()
 	theSpiderQueensGrasp.affixes.add(inte, manaRegen, spiderCorpseSpiders)
 
@@ -243,7 +260,8 @@ def load_1h_daggers(apps, schema_editor):
 		unique='Blood oozes from you.',
 		random_primaries='2',
 		random_secondaries='1',
-		notes='crafted')
+		notes='crafted',
+		patch='23')
 	bloodMagicEdge.save()
 	bloodMagicEdge.affixes.add(ias)
 
@@ -253,7 +271,8 @@ def load_1h_daggers(apps, schema_editor):
 		category='1H Daggers',
 		unique='Gain <span class="silver">100%</span> Critical Hit Chance against enemies at full health.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	enviousBlade.save()
 	enviousBlade.affixes.add(mainStat)
 
@@ -263,7 +282,8 @@ def load_1h_daggers(apps, schema_editor):
 		category='1H Daggers',
 		unique='Attacking enemies below <span>17 - 20%</span> Life freezes them for <span class="silver">3</span> seconds.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	eunjangdo.save()
 	eunjangdo.affixes.add(mainStat)
 
@@ -272,7 +292,8 @@ def load_1h_daggers(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/daggers/kill.png',
 		category='1H Daggers',
 		random_primaries='2',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	kill.save()
 	kill.affixes.add(ias)
 
@@ -281,7 +302,8 @@ def load_1h_daggers(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/daggers/pig_sticker.png',
 		category='1H Daggers',
 		unique='Squeal!',
-		random_primaries='3')
+		random_primaries='3',
+		patch='23')
 	pigSticker.save()
 	pigSticker.affixes.add(mainStat, pigBeastDmg, pigHumanDmg)
 
@@ -291,7 +313,8 @@ def load_1h_daggers(apps, schema_editor):
 		category='1H Daggers',
 		random_primaries='1',
 		random_secondaries='1',
-		notes='double check')
+		notes='double check',
+		patch='23')
 	theBarber.save()
 	theBarber.affixes.add(mainStat, percentDmg, barberCHD)
 
@@ -300,7 +323,8 @@ def load_1h_daggers(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/daggers/the_horadric_hamburger.png',
 		category='1H Daggers',
 		random_primaries='2',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	theHoradricHamburger.save()
 	theHoradricHamburger.affixes.add(mainStat)
 
@@ -309,8 +333,9 @@ def load_1h_daggers(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/daggers/wizardspike.png',
 		category='1H Daggers',
 		unique='Performing an attack has a <span>20 - 25%</span> chance to hurl a Frozen Orb.',
-		random_primaries='',
-		random_secondaries='')
+		random_primaries='2',
+		random_secondaries='1',
+		patch='23')
 	wizardspike.save()
 	wizardspike.affixes.add(mainStat)
 
@@ -354,7 +379,8 @@ def load_fist_weapons(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/fistweapons/crystal_fist.png',
 		category='Fist Weapons',
 		random_primaries='1',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	crystalFist.save()
 	crystalFist.affixes.add(percentDmg, dext, durability)
 
@@ -364,7 +390,8 @@ def load_fist_weapons(apps, schema_editor):
 		category='Fist Weapons',
 		random_primaries='3',
 		random_secondaries='2',
-		notes='crafted')
+		notes='crafted',
+		patch='23')
 	demonClaw.save()
 	demonClaw.affixes.add()
 
@@ -373,7 +400,8 @@ def load_fist_weapons(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/fistweapons/fleshrake.png',
 		category='Fist Weapons',
 		random_primaries='1',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	fleshrake.save()
 	fleshrake.affixes.add(dext, lifePerSpirit)
 
@@ -383,7 +411,8 @@ def load_fist_weapons(apps, schema_editor):
 		category='Fist Weapons',
 		unique='When Dashing Strike hits an enemy more than <span>30 - 35</span> yards away, its Charge cost is refunded.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	jawbreaker.save()
 	jawbreaker.affixes.add(dext)
 
@@ -393,7 +422,8 @@ def load_fist_weapons(apps, schema_editor):
 		category='Fist Weapons',
 		unique='Seven-Sided Strike performs an additional <span class="silver">7</span> strikes.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	lionsClaw.save()
 	lionsClaw.affixes.add(dext)
 
@@ -402,7 +432,8 @@ def load_fist_weapons(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/fistweapons/logans_claw.png',
 		category='Fist Weapons',
 		random_primaries='1',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	logansClaw.save()
 	logansClaw.affixes.add(dext, lph)
 
@@ -411,7 +442,8 @@ def load_fist_weapons(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/fistweapons/rabid_strike.png',
 		category='Fist Weapons',
 		random_primaries='1',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	rabidStrike.save()
 	rabidStrike.affixes.add(dext, rabidCHD, rabidSlowChance)
 
@@ -420,7 +452,8 @@ def load_fist_weapons(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/fistweapons/scarbringer.png',
 		category='Fist Weapons',
 		random_primaries='2',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	scarbringer.save()
 	scarbringer.affixes.add(bleedChance)
 
@@ -429,7 +462,8 @@ def load_fist_weapons(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/fistweapons/sledge_fist.png',
 		category='Fist Weapons',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	sledgeFist.save()
 	sledgeFist.affixes.add(dext, sledgeStunChance)
 
@@ -440,7 +474,8 @@ def load_fist_weapons(apps, schema_editor):
 		category='Fist Weapons',
 		unique='Exploding Palm\'s on-death explosion damage is increased by <span>250 - 300%</span>.',
 		random_primaries='1',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='24')
 	theFistOfAzTurrasq.save()
 	theFistOfAzTurrasq.affixes.add(dext, spiritRegen)
 
@@ -451,7 +486,8 @@ def load_fist_weapons(apps, schema_editor):
 		category='Fist Weapons',
 		unique='Increases the maximum stack count of Sweeping Wind by <span>6 - 7</span>.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='24')
 	vengefulWind.save()
 	vengefulWind.affixes.add(dext)
 
@@ -460,7 +496,8 @@ def load_fist_weapons(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/fistweapons/won_khim_lau.png',
 		category='Fist Weapons',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	wonKhimLau.save()
 	wonKhimLau.affixes.add(dext, wonLightDmg)
 
@@ -485,7 +522,8 @@ def load_1h_flails(apps, schema_editor):
 		category='1H Flails',
 		unique='Fist of the Heavens has a <span>45 - 60%</span> chance to also be cast at your location.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	darklight.save()
 	darklight.affixes.add(stre)
 
@@ -495,7 +533,8 @@ def load_1h_flails(apps, schema_editor):
 		category='1H Flails',
 		unique='Smite now jumps to <span class="silver">3</span> additional enemies.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	goldenScourge.save()
 	goldenScourge.affixes.add(goldenHolyDmg)
 
@@ -505,7 +544,8 @@ def load_1h_flails(apps, schema_editor):
 		category='1H Flails',
 		unique='Removes the resource cost of Blessed Shield.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	gyrfalconsFoote.save()
 	gyrfalconsFoote.affixes.add(stre)
 
@@ -515,7 +555,8 @@ def load_1h_flails(apps, schema_editor):
 		category='1H Flails',
 		unique='Casting Consecration also casts Consecration beneath all of your allies.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	inviolableFaith.save()
 	inviolableFaith.affixes.add(sockets)
 
@@ -525,7 +566,8 @@ def load_1h_flails(apps, schema_editor):
 		category='1H Flails',
 		unique='Increase the attack speed of Blessed Hammer by <span class="silver">100%</span>.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	johannasArgument.save()
 	johannasArgument.affixes.add(stre)
 
@@ -535,7 +577,8 @@ def load_1h_flails(apps, schema_editor):
 		category='1H Flails',
 		unique='Blessed Hammer gains the effect of the Dominion rune.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	justiniansMercy.save()
 	justiniansMercy.affixes.add(sockets)
 
@@ -545,7 +588,8 @@ def load_1h_flails(apps, schema_editor):
 		category='1H Flails',
 		unique='Casting Justice increases your movement speed by <span>15 - 20%</span> for <span class="silver">2</span> seconds.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	kassarsRetribution.save()
 	kassarsRetribution.affixes.add(stre)
 
@@ -555,7 +599,8 @@ def load_1h_flails(apps, schema_editor):
 		category='1H Flails',
 		unique='Doubles the duration of Steed Charge.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	swiftmount.save()
 	swiftmount.affixes.add(stre)
 
@@ -590,7 +635,8 @@ def load_hand_crossbows(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/handcrossbows/balefire_caster.png',
 		category='Hand Crossbows',
 		random_primaries='1',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	balefireCaster.save()
 	balefireCaster.affixes.add(dext, balefireFireDmg)
 
@@ -600,7 +646,8 @@ def load_hand_crossbows(apps, schema_editor):
 		category='Hand Crossbows',
 		random_primaries='3',
 		random_secondaries='2',
-		notes='crafted')
+		notes='crafted',
+		patch='23')
 	blitzbolter.save()
 	# blitzbolter.affixes.add()
 
@@ -610,7 +657,8 @@ def load_hand_crossbows(apps, schema_editor):
 		category='Hand Crossbows',
 		unique='Enemies you hit become Marked for Death.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	calamity.save()
 	calamity.affixes.add(dext)
 
@@ -620,7 +668,8 @@ def load_hand_crossbows(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/handcrossbows/dawn.png',
 		category='Hand Crossbows',
 		unique=',Reduces the cooldown of Vengeance by <span>50 - 65%</span>',
-		random_primaries='2')
+		random_primaries='2',
+		patch='24')
 	dawn.save()
 	dawn.affixes.add(dext, dawnStunChance)
 
@@ -630,7 +679,8 @@ def load_hand_crossbows(apps, schema_editor):
 		category='Hand Crossbows',
 		unique='<span>7 - 10%</span> chance on hit to summon a Spike Trap, Caltrops or Sentry.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	helltrapper.save()
 	helltrapper.affixes.add(dext)
 
@@ -641,7 +691,8 @@ def load_hand_crossbows(apps, schema_editor):
 		category='Hand Crossbows',
 		unique='Strafe gains the effect of the Drifting Shadow rune.',
 		random_primaries='1',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='24')
 	kmarTenclip.save()
 	kmarTenclip.affixes.add(dext, sockets, kmarStrafe)
 
@@ -651,7 +702,8 @@ def load_hand_crossbows(apps, schema_editor):
 		category='Hand Crossbows',
 		unique='Spike Trap - Sticky Trap spreads to nearby enemies when it explodes.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	theDemonsDemise.save()
 	theDemonsDemise.affixes.add(dext)
 
@@ -661,7 +713,8 @@ def load_hand_crossbows(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/handcrossbows/vallas_bequest.png',
 		category='Hand Crossbows',
 		unique='Strafe projectiles pierce.',
-		random_primaries='2')
+		random_primaries='2',
+		patch='24')
 	vallasBequest.save()
 	vallasBequest.affixes.add(dext, maxDisc, vallasStrafe)
 
@@ -716,7 +769,8 @@ def load_1h_maces(apps, schema_editor):
 		random_primaries='2',
 		random_secondaries='2',
 		notes='crafted',
-		owner='all')
+		owner='all',
+		patch='23')
 	devastator.save()
 	devastator.affixes.add(devastatorFireDmg)
 
@@ -725,7 +779,8 @@ def load_1h_maces(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/maces/echoing_fury.png',
 		category='1H Maces',
 		random_secondaries='1',
-		owner='all')
+		owner='all',
+		patch='23')
 	echoingFury.save()
 	echoingFury.affixes.add(percentDmg, mainStat, ias, echoingFearChance)
 
@@ -737,7 +792,8 @@ def load_1h_maces(apps, schema_editor):
 		unique='Increase the size of your Blessed Hammers.',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='sader')
+		owner='sader',
+		patch='24')
 	jacesHammerOfVigilance.save()
 	jacesHammerOfVigilance.affixes.add(mainStat, jacesBlessedHammer)
 
@@ -748,7 +804,8 @@ def load_1h_maces(apps, schema_editor):
 		unique='After killing <span class="silver">10</span> enemies, you release a Poison Nova that deals <span>1050 - 1400%</span> weapon damage as Poison to enemies within <span class="silver">30</span> yards.',
 		random_primaries='1',
 		random_secondaries='1',
-		owner='all')
+		owner='all',
+		patch='23')
 	madMonarchsScepter.save()
 	madMonarchsScepter.affixes.add(percentDmg, mainStat)
 
@@ -758,7 +815,8 @@ def load_1h_maces(apps, schema_editor):
 		category='1H Maces',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all')
+		owner='all',
+		patch='23')
 	nailbiter.save()
 	nailbiter.affixes.add(percentDmg, nailbiterThorns)
 
@@ -767,7 +825,8 @@ def load_1h_maces(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/maces/neanderthal.png',
 		category='1H Maces',
 		random_primaries='2',
-		owner='all')
+		owner='all',
+		patch='23')
 	neanderthal.save()
 	neanderthal.affixes.add(mainStat, neanderthalThorns, killExp)
 
@@ -777,7 +836,8 @@ def load_1h_maces(apps, schema_editor):
 		category='1H Maces',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all')
+		owner='all',
+		patch='23')
 	nutcracker.save()
 	nutcracker.affixes.add(nutcrackerCHD, nutcrackerStunChance)
 
@@ -788,7 +848,8 @@ def load_1h_maces(apps, schema_editor):
 		unique='<span>20 - 40%</span> chance to Chain Lightning enemies when you hit them.',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all')
+		owner='all',
+		patch='23')
 	odynSon.save()
 	odynSon.affixes.add(odynLightDmg)
 
@@ -799,7 +860,8 @@ def load_1h_maces(apps, schema_editor):
 		unique='Critical Hits have a <span>3 - 4%</span> chance to spawn a health globe.',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all')
+		owner='all',
+		patch='23')
 	solanium.save()
 	solanium.affixes.add(sockets)
 
@@ -809,7 +871,8 @@ def load_1h_maces(apps, schema_editor):
 		category='1H Maces',
 		random_primaries='1',
 		random_secondaries='1',
-		owner='all')
+		owner='all',
+		patch='23')
 	sunKeeper.save()
 	sunKeeper.affixes.add(mainStat, sunEliteDmg, sunExtraGold)
 
@@ -819,7 +882,8 @@ def load_1h_maces(apps, schema_editor):
 		category='1H Maces',
 		random_primaries='1',
 		random_secondaries='2',
-		owner='all')
+		owner='all',
+		patch='23')
 	telrandensHand.save()
 	telrandensHand.affixes.add(mainStat, ias)
 
@@ -848,7 +912,8 @@ def load_1h_mighty_weapons(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/mightyweapons/ambos_pride.png',
 		category='1H Mighty Weapons',
 		random_primaries='1',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	ambosPride.save()
 	ambosPride.affixes.add(stre, bleedChance)
 
@@ -857,7 +922,8 @@ def load_1h_mighty_weapons(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/mightyweapons/blade_of_the_warlord.png',
 		category='1H Mighty Weapons',
 		random_primaries='1',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	bladeOfTheWarlord.save()
 	bladeOfTheWarlord.affixes.add(stre, sockets)
 
@@ -867,7 +933,8 @@ def load_1h_mighty_weapons(apps, schema_editor):
 		category='1H Mighty Weapons',
 		unique='Cleave deals up to <span>300 - 400%</span> increased damage based on percentage of missing Fury.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	dishonoredLegacy.save()
 	dishonoredLegacy.affixes.add(stre)
 
@@ -876,7 +943,8 @@ def load_1h_mighty_weapons(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/mightyweapons/fjord_cutter.png',
 		category='1H Mighty Weapons',
 		unique='You are surrounded by a Chilling Aura when attacking.',
-		random_primaries='2')
+		random_primaries='2',
+		patch='23')
 	fjordCutter.save()
 	fjordCutter.affixes.add(stre, fjordFreezeChance)
 
@@ -886,7 +954,8 @@ def load_1h_mighty_weapons(apps, schema_editor):
 		category='1H Mighty Weapons',
 		random_primaries='2',
 		random_secondaries='2',
-		notes='crafted')
+		notes='crafted',
+		patch='23')
 	nightsReaping.save()
 	nightsReaping.affixes.add(nightsLife)
 
@@ -896,7 +965,8 @@ def load_1h_mighty_weapons(apps, schema_editor):
 		category='1H Mighty Weapons',
 		unique='Hammer of the Ancients has a <span>25 - 30%</span> chance to summon an Ancient for <span class="silver">20</span> seconds.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	remorseless.save()
 	remorseless.affixes.add(stre)
 
@@ -930,7 +1000,8 @@ def load_1h_spears(apps, schema_editor):
 		category='1H Spears',
 		random_primaries='1',
 		random_secondaries='2',
-		owner='all')
+		owner='all',
+		patch='23')
 	akaneshTheHeraldOfRighteousness.save()
 	akaneshTheHeraldOfRighteousness.affixes.add(mainStat, akaneshHolyDmg)
 
@@ -941,7 +1012,8 @@ def load_1h_spears(apps, schema_editor):
 		unique='Weapon Throw generates up to <span>15 - 20</span> additional Fury based on how far away the enemy hit is. Maximum benefit when the enemy hit is <span class="silver">20</span> or more yards away.',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='barb')
+		owner='barb',
+		patch='23')
 	arreatsLaw.save()
 	arreatsLaw.affixes.add(mainStat)
 
@@ -951,7 +1023,8 @@ def load_1h_spears(apps, schema_editor):
 		category='1H Spears',
 		random_primaries='1',
 		random_secondaries='2',
-		owner='all')
+		owner='all',
+		patch='23')
 	empyreanMessenger.save()
 	empyreanMessenger.affixes.add(mainStat, eliteDmg)
 
@@ -962,7 +1035,8 @@ def load_1h_spears(apps, schema_editor):
 		unique='Reduces the Mana cost of Zombie Charger by <span>40 - 50%</span>.',
 		random_primaries='1',
 		random_secondaries='1',
-		owner='wd')
+		owner='wd',
+		patch='23')
 	scrimshaw.save()
 	scrimshaw.affixes.add(mainStat, scrimshawZombieCharger)
 
@@ -973,7 +1047,8 @@ def load_1h_spears(apps, schema_editor):
 		category='1H Spears',
 		unique='Increase the damage of Weapon Throw and Ancient Spear by <span>45 - 60%</span>',
 		random_secondaries='1',
-		owner='barb')
+		owner='barb',
+		patch='2.4')
 	theThreeHundredthSpear.save()
 	theThreeHundredthSpear.affixes.add(mainStat, threeWeaponThrow, threeAncientSpear)
 
@@ -1022,7 +1097,8 @@ def load_1h_swords(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/swords/azurewrath.png',
 		category='1H Swords',
 		unique='Undead and Demon enemies within <span class="silver">25</span> yards take <span>500 - 650%</span> weapon damage as Holy every second and are sometimes knocked into the air.',
-		random_primaries='2')
+		random_primaries='2',
+		patch='23')
 	azurewrath.save()
 	azurewrath.affixes.add(azurewrathColdDmg, azurewrathFreezeChance)
 
@@ -1031,7 +1107,8 @@ def load_1h_swords(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/swords/devil_tongue.png',
 		category='1H Swords',
 		random_primaries='1',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	devilTongue.save()
 	devilTongue.affixes.add(percentDmg, mainStat, devilExtraGold)
 
@@ -1040,7 +1117,8 @@ def load_1h_swords(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/swords/doombringer.png',
 		category='1H Swords',
 		random_primaries='1',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	doombringer.save()
 	doombringer.affixes.add(mainStat, doombringerPhysDmg)
 
@@ -1049,7 +1127,8 @@ def load_1h_swords(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/swords/exarian.png',
 		category='1H Swords',
 		random_primaries='2',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	exarian.save()
 	exarian.affixes.add(exarianCHD)
 
@@ -1059,7 +1138,8 @@ def load_1h_swords(apps, schema_editor):
 		category='1H Swords',
 		unique='Lightning damage has a chance to turn enemies into lightning rods, causing them to pulse <span>444 - 555%</span> weapon damage as Lightning every second to nearby enemies for <span class="silver">6</span> seconds.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	fulminator.save()
 	fulminator.affixes.add(mainStat)
 
@@ -1068,7 +1148,8 @@ def load_1h_swords(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/swords/gift_of_silaria.png',
 		category='1H Swords',
 		random_primaries='1',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	giftOfSilaria.save()
 	giftOfSilaria.affixes.add(mainStat, giftMovementSpeed)
 
@@ -1078,7 +1159,8 @@ def load_1h_swords(apps, schema_editor):
 		category='1H Swords',
 		random_primaries='3',
 		random_secondaries='2',
-		notes='crafted')
+		notes='crafted',
+		patch='23')
 	griswoldsPerfection.save()
 	# griswoldsPerfection.affixes.add()
 
@@ -1088,7 +1170,8 @@ def load_1h_swords(apps, schema_editor):
 		category='1H Swords',
 		unique='Your skill cooldowns are reduced by <span>8 - 10</span> seconds for <span class="silver">15</span> seconds after killing an elite pack.',
 		random_primaries='1',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	ingeom.save()
 	ingeom.affixes.add(percentDmg, mainStat)
 
@@ -1097,7 +1180,8 @@ def load_1h_swords(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/swords/monster_hunter.png',
 		category='1H Swords',
 		random_primaries='2',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	monsterHunter.save()
 	monsterHunter.affixes.add(monsterBeastDmg)
 
@@ -1107,7 +1191,8 @@ def load_1h_swords(apps, schema_editor):
 		category='1H Swords',
 		unique='<span class="silver">10%</span> chance on hit to instantly deal <span class="silver">10000%</span> weapon damage as Cold to enemies that are Frozen.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	rimeheart.save()
 	rimeheart.affixes.add(mainStat)
 
@@ -1116,7 +1201,8 @@ def load_1h_swords(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/swords/sever.png',
 		category='1H Swords',
 		unique='Slain enemies rest in pieces.',
-		random_primaries='1')
+		random_primaries='1',
+		patch='23')
 	sever.save()
 	sever.affixes.add(percentDmg, mainStat, severDemonDmg)
 
@@ -1126,7 +1212,8 @@ def load_1h_swords(apps, schema_editor):
 		category='1H Swords',
 		unique='Elemental skills have a chance to trigger a powerful {<span class="vary">Attack</span>} that deals <span>200 - 250%</span> weapon damage<div class="extra"><div class="extra-x">X</div><span><strong>Cold Skills :</strong>  Freezing Skull<br><strong>Poison Skills :</strong> Poison Nova<br><strong>Lightning Skills :</strong> Charged Bolt</span></div>',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	shardOfHate.save()
 	shardOfHate.affixes.add(mainStat)
 
@@ -1136,7 +1223,8 @@ def load_1h_swords(apps, schema_editor):
 		category='1H Swords',
 		unique='Chance to summon angelic assistance when attacking.',
 		random_primaries='1',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	skycutter.save()
 	skycutter.affixes.add(mainStat, skycutterHolyDmg)
 
@@ -1145,7 +1233,8 @@ def load_1h_swords(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/swords/spectrum.png',
 		category='1H Swords',
 		random_primaries='?',
-		random_secondaries='?')
+		random_secondaries='?',
+		patch='23')
 	spectrum.save()
 	spectrum.affixes.add(mainStat)
 
@@ -1154,7 +1243,8 @@ def load_1h_swords(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/swords/the_ancient_bonesaber_of_zumakalis.png',
 		category='1H Swords',
 		random_primaries='1',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	theAncientBonesaberOfZumakalis.save()
 	theAncientBonesaberOfZumakalis.affixes.add(mainStat, ias)
 
@@ -1164,7 +1254,8 @@ def load_1h_swords(apps, schema_editor):
 		category='1H Swords',
 		unique='Chance on hit to blast your enemy with Lightning, dealing <span>279 - 372%</span> weapon damage as Lightning and then jumping to additional nearby enemies. Each enemy hit has their attack speed and movement speed reduced by <span class="silver">30%</span> for <span class="silver">3</span> seconds. Jumps up to <span class="silver">5</span> targets.',
 		random_primaries='1',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	thunderfuryBlessedBladeOfTheWindseeker.save()
 	thunderfuryBlessedBladeOfTheWindseeker.affixes.add(mainStat, sockets)
 
@@ -1173,7 +1264,8 @@ def load_1h_swords(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/swords/wildwood.png',
 		category='1H Swords',
 		random_primaries='1',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	wildwood.save()
 	wildwood.affixes.add(percentDmg, mainStat, killExp)
 
@@ -1210,7 +1302,8 @@ def load_wands(apps, schema_editor):
 		category='Wands',
 		unique='Teleport no longer has a cooldown but costs <span class="silver">25</span> Arcane Power.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	aetherWalker.save()
 	aetherWalker.affixes.add(inte)
 
@@ -1220,7 +1313,8 @@ def load_wands(apps, schema_editor):
 		category='Wands',
 		random_primaries='3',
 		random_secondaries='2',
-		notes='crafted')
+		notes='crafted',
+		patch='23')
 	atrophy.save()
 	# atrophy.affixes.add()
 
@@ -1229,7 +1323,8 @@ def load_wands(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/wands/blackhand_key.png',
 		category='Wands',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	blackhandKey.save()
 	blackhandKey.affixes.add(inte, maxAP)
 
@@ -1240,7 +1335,8 @@ def load_wands(apps, schema_editor):
 		category='Wands',
 		unique='Spectral Blade attacks <span class="silver">50%</span> faster and deals <span>150 - 200%</span> increased damage',
 		random_primaries='1',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='24')
 	fragmentOfDestiny.save()
 	fragmentOfDestiny.affixes.add(inte, fragmentSpectralBlade)
 
@@ -1250,7 +1346,8 @@ def load_wands(apps, schema_editor):
 		category='Wands',
 		unique='Reduces the cooldown of Slow Time by <span>30 - 40%</span>.',
 		random_primaries='1',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	gestureOfOrpheus.save()
 	gestureOfOrpheus.affixes.add(inte, gestureEleDmg)
 
@@ -1260,7 +1357,8 @@ def load_wands(apps, schema_editor):
 		category='Wands',
 		unique='You may have <span class="silver">1</span> extra Hydra active at a time.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	serpentsSparker.save()
 	serpentsSparker.affixes.add(inte)
 
@@ -1270,7 +1368,8 @@ def load_wands(apps, schema_editor):
 		category='Wands',
 		unique='This wand finds your death humorous.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='23')
 	sloraksMadness.save()
 	sloraksMadness.affixes.add(inte, sloraksDisintegrate)
 
@@ -1279,7 +1378,8 @@ def load_wands(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/wands/starfire.png',
 		category='Wands',
 		random_primaries='2',
-		random_secondaries='2')
+		random_secondaries='2',
+		patch='23')
 	starfire.save()
 	starfire.affixes.add(inte)
 
@@ -1290,7 +1390,8 @@ def load_wands(apps, schema_editor):
 		category='Wands',
 		unique='<span class="silver">3</span> additional Explosive Blasts are triggered after casting Explosive Blast.',
 		random_primaries='2',
-		random_secondaries='1')
+		random_secondaries='1',
+		patch='24')
 	wandOfWoh.save()
 	wandOfWoh.affixes.add(inte, wandExplosiveBlast)
 

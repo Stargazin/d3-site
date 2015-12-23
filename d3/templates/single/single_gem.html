@@ -2,6 +2,11 @@
 {% load staticfiles %}
 
 
+{% block title %}
+{{ item.name }}
+{% endblock title %}
+
+
 {% block css %}
 <link rel="stylesheet" href="{% static 'css/single_gem.min.css' %}">
 {% endblock css %}

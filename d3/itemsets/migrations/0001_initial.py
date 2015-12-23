@@ -7,7 +7,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('affixes', '0001_initial'),
+        ('affixes', '0006_armor_affixes'),
     ]
 
     operations = [
@@ -19,6 +19,7 @@ class Migration(migrations.Migration):
                 ('name_slug', models.SlugField()),
                 ('owner', models.TextField()),
                 ('owner_slug', models.SlugField()),
+                ('patch', models.TextField()),
                 ('notes', models.TextField(blank=True)),
             ],
             options={
