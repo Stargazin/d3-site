@@ -46,7 +46,7 @@ def load_source_affixes(apps, schema_editor):
 	eliteDmg = Affix(category='Sources',
 		affix='eliteDmg',
 		is_primary=True,
-		desc='Increases damage against elites by <span>5.0 - 8.0%</span>')
+		desc='Increase damage against elites by <span>5.0 - 8.0%</span>')
 	eliteDmg.save()
 
 	areaDmg = Affix(category='Sources',
@@ -344,7 +344,7 @@ def load_quiver_affixes(apps, schema_editor):
 	eliteDmg = Affix(category='Quivers',
 		affix='eliteDmg',
 		is_primary=True,
-		desc='Increases damage against elites by <span>5.0 - 8.0%</span>')
+		desc='Increase damage against elites by <span>5.0 - 8.0%</span>')
 	eliteDmg.save()
 
 	bleedChance = Affix(category='Quivers',
@@ -589,7 +589,7 @@ def load_quiver_affixes(apps, schema_editor):
 	bombadiersSentry = Affix(category='Quivers',
 		affix='bombadiersSentry',
 		is_primary=True,
-		desc='Increases Sentry damage by <span>75 - 100%</span>')
+		desc='Increase Sentry damage by <span>75 - 100%</span>')
 	bombadiersSentry.save()
 
 #Added in 2.4
@@ -597,7 +597,7 @@ def load_quiver_affixes(apps, schema_editor):
 	deadMultishot = Affix(category='Quivers',
 		affix='deadMultishot',
 		is_primary=True,
-		desc='Increases Multishot damage by <span>75 - 100%</span>')
+		desc='Increase Multishot damage by <span>75 - 100%</span>')
 	deadMultishot.save()
 
 #Holy Point Shot
@@ -612,7 +612,7 @@ def load_quiver_affixes(apps, schema_editor):
 	sinRapidFire = Affix(category='Quivers',
 		affix='sinRapidFire',
 		is_primary=True,
-		desc='Increases Rapid Fire damage by <span>45 - 60%</span>')
+		desc='Increase Rapid Fire damage by <span>45 - 60%</span>')
 	sinRapidFire.save()
 
 
@@ -664,7 +664,7 @@ def load_mojo_affixes(apps, schema_editor):
 	eliteDmg = Affix(category='Mojos',
 		affix='eliteDmg',
 		is_primary=True,
-		desc='Increases damage against elites by <span>5.0 - 8.0%</span>')
+		desc='Increase damage against elites by <span>5.0 - 8.0%</span>')
 	eliteDmg.save()
 
 	bleedChance = Affix(category='Mojos',
@@ -912,6 +912,13 @@ def load_mojo_affixes(apps, schema_editor):
 # 		desc='<span class="silver">+20</span> Yards to Gold and Globe Pickup')
 # 	thingItemPickup.save()
 
+#2.4 new
+	wilkensGraspOfTheDead = Affix(category='Mojos',
+		affix='wilkensGraspOfTheDead',
+		is_primary=True,
+		desc='Increase Grasp of the Dead damage by <span>45 - 60%</span>')
+	wilkensGraspOfTheDead.save()
+
 
 def load_crusader_shield_affixes(apps, schema_editor):
 	Affix = apps.get_model("affixes", "Affix")
@@ -954,7 +961,7 @@ def load_crusader_shield_affixes(apps, schema_editor):
 	eliteDmg = Affix(category='Crusader Shields',
 		affix='eliteDmg',
 		is_primary=True,
-		desc='Increases damage against elites by <span>5.0 - 8.0%</span>')
+		desc='Increase damage against elites by <span>5.0 - 8.0%</span>')
 	eliteDmg.save()
 
 	areaDmg = Affix(category='Crusader Shields',
@@ -1281,7 +1288,7 @@ def load_crusader_shield_affixes(apps, schema_editor):
 	frydehrsCondemn = Affix(category='Crusader Shields',
 		affix='frydehrsCondemn',
 		is_primary=True,
-		desc='Increases Condemn damage by <span>150 - 200%</span>')
+		desc='Increase Condemn damage by <span>150 - 200%</span>')
 	frydehrsCondemn.save()
 
 #2.4
@@ -1289,7 +1296,7 @@ def load_crusader_shield_affixes(apps, schema_editor):
 	jekangbordBlessedShield = Affix(category='Crusader Shields',
 		affix='jekangbordBlessedShield',
 		is_primary=True,
-		desc='Increases Blessed Shield damage by <span>150 - 200%</span>')
+		desc='Increase Blessed Shield damage by <span>150 - 200%</span>')
 	jekangbordBlessedShield.save()
 
 #Added in 2.4
@@ -1297,7 +1304,7 @@ def load_crusader_shield_affixes(apps, schema_editor):
 	unrelentingPhalanxDmg = Affix(category='Crusader Shields',
 		affix='unrelentingPhalanxDmg',
 		is_primary=True,
-		desc='Increases Phalanx damage by <span>45 - 60%</span>')
+		desc='Increase Phalanx damage by <span>45 - 60%</span>')
 	unrelentingPhalanxDmg.save()
 
 

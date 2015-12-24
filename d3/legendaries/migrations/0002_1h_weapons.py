@@ -31,6 +31,7 @@ def load_1h_axes(apps, schema_editor):
 		category='1H Axes',
 		random_primaries='2',
 		random_secondaries='2',
+		owner='all',
 		patch='23')
 	fleshTearer.save()
 	fleshTearer.affixes.add(bleedChance)
@@ -42,6 +43,7 @@ def load_1h_axes(apps, schema_editor):
 		unique='Chance to summon a ghostly Fallen Champion when attacking.',
 		random_primaries='3',
 		random_secondaries='1',
+		owner='all',
 		patch='23')
 	genzaniku.save()
 	# genzaniku.affixes.add()
@@ -53,9 +55,23 @@ def load_1h_axes(apps, schema_editor):
 		unique='<span>75 - 100%</span> of your Thorns damage is applied on every attack.',
 		random_primaries='2',
 		random_secondaries='1',
+		owner='all',
 		patch='23')
 	hack.save()
 	hack.affixes.add(sockets)
+
+#2.4 new
+	mordullusPromise = Weapon(slot='1H Weapons',
+		name='Mordullu\'s Promise',
+		pic='media/items/legendaries/2.4/weapons/mordullus_promise.png',
+		category='1H Axes',
+		unique='Firebomb generates <span>100 - 125</span> Mana',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='wd',
+		patch='24')
+	mordullusPromise.save()
+	mordullusPromise.affixes.add(mainStat)
 
 	skySplitter = Weapon(slot='1H Weapons',
 		name='Sky Splitter',
@@ -64,6 +80,7 @@ def load_1h_axes(apps, schema_editor):
 		unique='<span>15 - 20%</span> chance to Smite enemies for <span>600 - 750%</span> weapon damage as Lightning when you hit them.',
 		random_primaries='2',
 		random_secondaries='1',
+		owner='all',
 		patch='23')
 	skySplitter.save()
 	skySplitter.affixes.add(mainStat)
@@ -75,6 +92,7 @@ def load_1h_axes(apps, schema_editor):
 		unique='Chance to fight through the pain when enemies hit you.',
 		random_primaries='2',
 		random_secondaries='1',
+		owner='all',
 		patch='23')
 	theBurningAxeOfSankis.save()
 	theBurningAxeOfSankis.affixes.add(burningFireDmg)
@@ -86,6 +104,7 @@ def load_1h_axes(apps, schema_editor):
 		unique='<span>20 - 25%</span> chance to drag enemies to you when attacking.',
 		random_primaries='3',
 		random_secondaries='1',
+		owner='all',
 		patch='23')
 	theButchersSickle.save()
 	# theButchersSickle.affixes.add()
@@ -97,13 +116,13 @@ def load_1h_axes(apps, schema_editor):
 		random_primaries='2',
 		random_secondaries='2',
 		notes='crafted',
+		owner='all',
 		patch='23')
 	utarsRoar.save()
 	utarsRoar.affixes.add(utarsColdDmg)
 
 	for weapon in Weapon.objects.filter(category="1H Axes"):
 		weapon.inherent = '<span class="inherent"><span>1.30</span> Attacks per Second</span>'
-		weapon.owner = 'all'
 		weapon.save()
 
 
@@ -252,6 +271,8 @@ def load_1h_daggers(apps, schema_editor):
 	pigBeastDmg = Affix.objects.get(affix='pigBeastDmg', category='1H Daggers')
 	pigHumanDmg = Affix.objects.get(affix='pigHumanDmg', category='1H Daggers')
 	barberCHD = Affix.objects.get(affix='barberCHD', category='1H Daggers')
+	voosGraspOfTheDead = Affix.objects.get(affix='voosGraspOfTheDead', category='1H Daggers')
+
 
 	bloodMagicEdge = Weapon(slot='1H Weapons',
 		name='Blood-Magic Edge',
@@ -261,6 +282,7 @@ def load_1h_daggers(apps, schema_editor):
 		random_primaries='2',
 		random_secondaries='1',
 		notes='crafted',
+		owner='all',
 		patch='23')
 	bloodMagicEdge.save()
 	bloodMagicEdge.affixes.add(ias)
@@ -272,6 +294,7 @@ def load_1h_daggers(apps, schema_editor):
 		unique='Gain <span class="silver">100%</span> Critical Hit Chance against enemies at full health.',
 		random_primaries='2',
 		random_secondaries='1',
+		owner='all',
 		patch='23')
 	enviousBlade.save()
 	enviousBlade.affixes.add(mainStat)
@@ -283,9 +306,36 @@ def load_1h_daggers(apps, schema_editor):
 		unique='Attacking enemies below <span>17 - 20%</span> Life freezes them for <span class="silver">3</span> seconds.',
 		random_primaries='2',
 		random_secondaries='1',
+		owner='all',
 		patch='23')
 	eunjangdo.save()
 	eunjangdo.affixes.add(mainStat)
+
+#2.4 new
+	karleisPoint = Weapon(slot='1H Weapons',
+		name='Karlei\'s Point',
+		pic='media/items/legendaries/2.4/weapons/karleis_point.png',
+		category='1H Daggers',
+		unique='Impale returns <span>15 - 20</span> Hatred if it hits an enemy that has already been Impaled',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='dh',
+		patch='24')
+	karleisPoint.save()
+	karleisPoint.affixes.add(mainStat)
+
+#2.4 new
+	lordGreenstonesFan = Weapon(slot='1H Weapons',
+		name='Lorde Greenstone\'s Fan',
+		pic='media/items/legendaries/2.4/weapons/lord_greenstones_fan.png',
+		category='1H Daggers',
+		unique='Every second gain <span>80 - 100%</span> increased damage for your next Fan of Knives. This stacks up to <span class="silver">30</span> times',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='dh',
+		patch='24')
+	lordGreenstonesFan.save()
+	lordGreenstonesFan.affixes.add(mainStat)
 
 	kill = Weapon(slot='1H Weapons',
 		name='Kill',
@@ -293,6 +343,7 @@ def load_1h_daggers(apps, schema_editor):
 		category='1H Daggers',
 		random_primaries='2',
 		random_secondaries='2',
+		owner='all',
 		patch='23')
 	kill.save()
 	kill.affixes.add(ias)
@@ -303,6 +354,7 @@ def load_1h_daggers(apps, schema_editor):
 		category='1H Daggers',
 		unique='Squeal!',
 		random_primaries='3',
+		owner='all',
 		patch='23')
 	pigSticker.save()
 	pigSticker.affixes.add(mainStat, pigBeastDmg, pigHumanDmg)
@@ -314,6 +366,7 @@ def load_1h_daggers(apps, schema_editor):
 		random_primaries='1',
 		random_secondaries='1',
 		notes='double check',
+		owner='all',
 		patch='23')
 	theBarber.save()
 	theBarber.affixes.add(mainStat, percentDmg, barberCHD)
@@ -324,9 +377,23 @@ def load_1h_daggers(apps, schema_editor):
 		category='1H Daggers',
 		random_primaries='2',
 		random_secondaries='2',
+		owner='all',
 		patch='23')
 	theHoradricHamburger.save()
 	theHoradricHamburger.affixes.add(mainStat)
+
+#2.4 new
+	voosJuicer = Weapon(slot='1H Weapons',
+		name='Voo\'s Juicer',
+		pic='media/items/legendaries/2.4/weapons/voos_juicer.png',
+		category='1H Daggers',
+		unique='Spirit Barrage gains the effects of the Phlebotomize and The Spirit is Willing runes',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='wd',
+		patch='24')
+	voosJuicer.save()
+	voosJuicer.affixes.add(mainStat, voosGraspOfTheDead)
 
 	wizardspike = Weapon(slot='1H Weapons',
 		name='Wizardspike',
@@ -335,13 +402,13 @@ def load_1h_daggers(apps, schema_editor):
 		unique='Performing an attack has a <span>20 - 25%</span> chance to hurl a Frozen Orb.',
 		random_primaries='2',
 		random_secondaries='1',
+		owner='all',
 		patch='23')
 	wizardspike.save()
 	wizardspike.affixes.add(mainStat)
 
 	for weapon in Weapon.objects.filter(category="1H Daggers"):
 		weapon.inherent = '<span class="inherent"><span>1.50</span> Attacks per Second</span>'
-		weapon.owner = 'all'
 		weapon.save()
 
 
@@ -436,6 +503,18 @@ def load_fist_weapons(apps, schema_editor):
 		patch='23')
 	logansClaw.save()
 	logansClaw.affixes.add(dext, lph)
+
+#2.4 new
+	kyoshirosBlade = Weapon(slot='1H Weapons',
+		name='Kyoshiro\'s Blade',
+		pic='media/items/legendaries/2.4/weapons/kyoshiros_blade.png',
+		category='Fist Weapons',
+		unique='Increase the damage of Wave of Light by <span class="silver">150%</span>. When the initial impact of your Wave of Light hits <span class="silver">3</span> or fewer enemies, the damage is increased by <span>200 - 250%</span>',
+		random_primaries='2',
+		random_secondaries='1',
+		patch='24')
+	kyoshirosBlade.save()
+	kyoshirosBlade.affixes.add(dext)
 
 	rabidStrike = Weapon(slot='1H Weapons',
 		name='Rabid Strike',
@@ -673,6 +752,18 @@ def load_hand_crossbows(apps, schema_editor):
 	dawn.save()
 	dawn.affixes.add(dext, dawnStunChance)
 
+#2.4 new
+	fortressBallista = Weapon(slot='1H Weapons',
+		name='Fortress Ballista',
+		pic='media/items/legendaries/2.4/weapons/fortress_ballista.png',
+		category='Hand Crossbows',
+		unique='Attacks grant you an absorb shield for <span>2 - 3%</span> of your maximum Life, stacking up to <span class="silver">10</span> times',
+		random_primaries='2',
+		random_secondaries='1',
+		patch='24')
+	fortressBallista.save()
+	fortressBallista.affixes.add(dext)
+
 	helltrapper = Weapon(slot='1H Weapons',
 		name='Helltrapper',
 		pic='media/items/legendaries/weapons/1h/handcrossbows/helltrapper.png',
@@ -695,6 +786,18 @@ def load_hand_crossbows(apps, schema_editor):
 		patch='24')
 	kmarTenclip.save()
 	kmarTenclip.affixes.add(dext, sockets, kmarStrafe)
+
+#2.4 new
+	liannasWings = Weapon(slot='1H Weapons',
+		name='Lianna\'s Wings',
+		pic='media/items/legendaries/2.4/weapons/liannas_wings.png',
+		category='Hand Crossbows',
+		unique='Shadow Power also triggers Smoke Screen. This item adds a <span class="silver">2.5</span> second cooldown to Shadow Power',
+		random_primaries='2',
+		random_secondaries='1',
+		patch='24')
+	liannasWings.save()
+	liannasWings.affixes.add(dext)
 
 	theDemonsDemise = Weapon(slot='1H Weapons',
 		name='The Demon\'s Demise',
@@ -907,6 +1010,7 @@ def load_1h_mighty_weapons(apps, schema_editor):
 	nightsLife = Affix.objects.get(affix='nightsLife',
 		category='1H Mighty Weapons')
 
+
 	ambosPride = Weapon(slot='1H Weapons',
 		name='Ambo\'s Pride',
 		pic='media/items/legendaries/weapons/1h/mightyweapons/ambos_pride.png',
@@ -917,15 +1021,17 @@ def load_1h_mighty_weapons(apps, schema_editor):
 	ambosPride.save()
 	ambosPride.affixes.add(stre, bleedChance)
 
+#2.4
 	bladeOfTheWarlord = Weapon(slot='1H Weapons',
 		name='Blade of the Warlord',
 		pic='media/items/legendaries/weapons/1h/mightyweapons/blade_of_the_warlord.png',
 		category='1H Mighty Weapons',
-		random_primaries='1',
-		random_secondaries='2',
-		patch='23')
+		unique='Bash consumes up to <span class="silver">40</span> Fury to deal up to <span>400 - 500%</span> increased damage',
+		random_primaries='2',
+		random_secondaries='1',
+		patch='24')
 	bladeOfTheWarlord.save()
-	bladeOfTheWarlord.affixes.add(stre, sockets)
+	bladeOfTheWarlord.affixes.add(stre)
 
 	dishonoredLegacy = Weapon(slot='1H Weapons',
 		name='Dishonored Legacy',
@@ -958,6 +1064,18 @@ def load_1h_mighty_weapons(apps, schema_editor):
 		patch='23')
 	nightsReaping.save()
 	nightsReaping.affixes.add(nightsLife)
+
+#2.4 new
+	oathkeeper = Weapon(slot='1H Weapons',
+		name='Oathkeeper',
+		pic='media/items/legendaries/2.4/weapons/oathkeeper.png',
+		category='1H Mighty Weapons',
+		unique='Your primary skills attack <span class="silver">50%</span> faster and deal <span>150 - 200%</span> increased damage',
+		random_primaries='2',
+		random_secondaries='1',
+		patch='24')
+	oathkeeper.save()
+	oathkeeper.affixes.add(stre)
 
 	remorseless = Weapon(slot='1H Weapons',
 		name='Remorseless',
@@ -1098,9 +1216,23 @@ def load_1h_swords(apps, schema_editor):
 		category='1H Swords',
 		unique='Undead and Demon enemies within <span class="silver">25</span> yards take <span>500 - 650%</span> weapon damage as Holy every second and are sometimes knocked into the air.',
 		random_primaries='2',
+		owner='all',
 		patch='23')
 	azurewrath.save()
 	azurewrath.affixes.add(azurewrathColdDmg, azurewrathFreezeChance)
+
+#2.4 new
+	deathwish = Weapon(slot='1H Weapons',
+		name='Deathwish',
+		pic='media/items/legendaries/2.4/weapons/deathwish.png',
+		category='1H Swords',
+		unique='While channeling Arcane Torrent, Disintegrate, or Ray of Frost, all damage is increased by <span>30 - 35%</span>',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='wiz',
+		patch='24')
+	deathwish.save()
+	deathwish.affixes.add(mainStat)
 
 	devilTongue = Weapon(slot='1H Weapons',
 		name='Devil Tongue',
@@ -1108,6 +1240,7 @@ def load_1h_swords(apps, schema_editor):
 		category='1H Swords',
 		random_primaries='1',
 		random_secondaries='1',
+		owner='all',
 		patch='23')
 	devilTongue.save()
 	devilTongue.affixes.add(percentDmg, mainStat, devilExtraGold)
@@ -1118,6 +1251,7 @@ def load_1h_swords(apps, schema_editor):
 		category='1H Swords',
 		random_primaries='1',
 		random_secondaries='2',
+		owner='all',
 		patch='23')
 	doombringer.save()
 	doombringer.affixes.add(mainStat, doombringerPhysDmg)
@@ -1128,6 +1262,7 @@ def load_1h_swords(apps, schema_editor):
 		category='1H Swords',
 		random_primaries='2',
 		random_secondaries='2',
+		owner='all',
 		patch='23')
 	exarian.save()
 	exarian.affixes.add(exarianCHD)
@@ -1139,6 +1274,7 @@ def load_1h_swords(apps, schema_editor):
 		unique='Lightning damage has a chance to turn enemies into lightning rods, causing them to pulse <span>444 - 555%</span> weapon damage as Lightning every second to nearby enemies for <span class="silver">6</span> seconds.',
 		random_primaries='2',
 		random_secondaries='1',
+		owner='all',
 		patch='23')
 	fulminator.save()
 	fulminator.affixes.add(mainStat)
@@ -1149,6 +1285,7 @@ def load_1h_swords(apps, schema_editor):
 		category='1H Swords',
 		random_primaries='1',
 		random_secondaries='2',
+		owner='all',
 		patch='23')
 	giftOfSilaria.save()
 	giftOfSilaria.affixes.add(mainStat, giftMovementSpeed)
@@ -1160,6 +1297,7 @@ def load_1h_swords(apps, schema_editor):
 		random_primaries='3',
 		random_secondaries='2',
 		notes='crafted',
+		owner='all',
 		patch='23')
 	griswoldsPerfection.save()
 	# griswoldsPerfection.affixes.add()
@@ -1171,6 +1309,7 @@ def load_1h_swords(apps, schema_editor):
 		unique='Your skill cooldowns are reduced by <span>8 - 10</span> seconds for <span class="silver">15</span> seconds after killing an elite pack.',
 		random_primaries='1',
 		random_secondaries='1',
+		owner='all',
 		patch='23')
 	ingeom.save()
 	ingeom.affixes.add(percentDmg, mainStat)
@@ -1181,6 +1320,7 @@ def load_1h_swords(apps, schema_editor):
 		category='1H Swords',
 		random_primaries='2',
 		random_secondaries='2',
+		owner='all',
 		patch='23')
 	monsterHunter.save()
 	monsterHunter.affixes.add(monsterBeastDmg)
@@ -1192,6 +1332,7 @@ def load_1h_swords(apps, schema_editor):
 		unique='<span class="silver">10%</span> chance on hit to instantly deal <span class="silver">10000%</span> weapon damage as Cold to enemies that are Frozen.',
 		random_primaries='2',
 		random_secondaries='1',
+		owner='all',
 		patch='23')
 	rimeheart.save()
 	rimeheart.affixes.add(mainStat)
@@ -1202,6 +1343,7 @@ def load_1h_swords(apps, schema_editor):
 		category='1H Swords',
 		unique='Slain enemies rest in pieces.',
 		random_primaries='1',
+		owner='all',
 		patch='23')
 	sever.save()
 	sever.affixes.add(percentDmg, mainStat, severDemonDmg)
@@ -1213,6 +1355,7 @@ def load_1h_swords(apps, schema_editor):
 		unique='Elemental skills have a chance to trigger a powerful {<span class="vary">Attack</span>} that deals <span>200 - 250%</span> weapon damage<div class="extra"><div class="extra-x">X</div><span><strong>Cold Skills :</strong>  Freezing Skull<br><strong>Poison Skills :</strong> Poison Nova<br><strong>Lightning Skills :</strong> Charged Bolt</span></div>',
 		random_primaries='2',
 		random_secondaries='1',
+		owner='all',
 		patch='23')
 	shardOfHate.save()
 	shardOfHate.affixes.add(mainStat)
@@ -1224,6 +1367,7 @@ def load_1h_swords(apps, schema_editor):
 		unique='Chance to summon angelic assistance when attacking.',
 		random_primaries='1',
 		random_secondaries='1',
+		owner='all',
 		patch='23')
 	skycutter.save()
 	skycutter.affixes.add(mainStat, skycutterHolyDmg)
@@ -1232,11 +1376,25 @@ def load_1h_swords(apps, schema_editor):
 		name='spectrum',
 		pic='media/items/legendaries/weapons/1h/swords/spectrum.png',
 		category='1H Swords',
-		random_primaries='?',
-		random_secondaries='?',
+		random_primaries='3',
+		random_secondaries='2',
+		owner='all',
 		patch='23')
 	spectrum.save()
 	spectrum.affixes.add(mainStat)
+
+#2.4 new
+	swordOfIllWill = Weapon(slot='1H Weapons',
+		name='Sword of Ill Will',
+		pic='media/items/legendaries/2.4/weapons/sword_of_ill_will.png',
+		category='1H Swords',
+		unique='Chakram deals <span>1.0 - 1.4%</span> increased damage for each point of Hatred you have',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='dh',
+		patch='24')
+	swordOfIllWill.save()
+	swordOfIllWill.affixes.add(mainStat)
 
 	theAncientBonesaberOfZumakalis = Weapon(slot='1H Weapons',
 		name='The Ancient Bonesaber of Zumakalis',
@@ -1244,9 +1402,23 @@ def load_1h_swords(apps, schema_editor):
 		category='1H Swords',
 		random_primaries='1',
 		random_secondaries='2',
+		owner='all',
 		patch='23')
 	theAncientBonesaberOfZumakalis.save()
 	theAncientBonesaberOfZumakalis.affixes.add(mainStat, ias)
+
+#2.4 new
+	theTwistedSword = Weapon(slot='1H Weapons',
+		name='The Twisted Sword',
+		pic='media/items/legendaries/2.4/weapons/the_twisted_sword.png',
+		category='1H Swords',
+		unique='Energy Twister damage is increased by <span>125 - 150%</span> for each Energy Twister you have out',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='wiz',
+		patch='24')
+	theTwistedSword.save()
+	theTwistedSword.affixes.add(mainStat)
 
 	thunderfuryBlessedBladeOfTheWindseeker = Weapon(slot='1H Weapons',
 		name='Thunderfury, Blessed Blade of the Windseeker',
@@ -1255,6 +1427,7 @@ def load_1h_swords(apps, schema_editor):
 		unique='Chance on hit to blast your enemy with Lightning, dealing <span>279 - 372%</span> weapon damage as Lightning and then jumping to additional nearby enemies. Each enemy hit has their attack speed and movement speed reduced by <span class="silver">30%</span> for <span class="silver">3</span> seconds. Jumps up to <span class="silver">5</span> targets.',
 		random_primaries='1',
 		random_secondaries='1',
+		owner='all',
 		patch='23')
 	thunderfuryBlessedBladeOfTheWindseeker.save()
 	thunderfuryBlessedBladeOfTheWindseeker.affixes.add(mainStat, sockets)
@@ -1265,6 +1438,7 @@ def load_1h_swords(apps, schema_editor):
 		category='1H Swords',
 		random_primaries='1',
 		random_secondaries='1',
+		owner='all',
 		patch='23')
 	wildwood.save()
 	wildwood.affixes.add(percentDmg, mainStat, killExp)
@@ -1272,7 +1446,6 @@ def load_1h_swords(apps, schema_editor):
 
 	for weapon in Weapon.objects.filter(category="1H Swords"):
 		weapon.inherent = '<span class="inherent"><span>1.40</span> Attacks per Second</span>'
-		weapon.owner = 'all'
 		weapon.save()
 
 
@@ -1292,7 +1465,8 @@ def load_wands(apps, schema_editor):
 		category='Wands')
 	sloraksDisintegrate =  Affix.objects.get(affix='sloraksDisintegrate',
 		category='Wands')
-
+	unstableArcaneOrb =  Affix.objects.get(affix='unstableArcaneOrb',
+		category='Wands')
 	wandExplosiveBlast =  Affix.objects.get(affix='wandExplosiveBlast',
 		category='Wands')
 
@@ -1382,6 +1556,19 @@ def load_wands(apps, schema_editor):
 		patch='23')
 	starfire.save()
 	starfire.affixes.add(inte)
+
+#2.4 new
+	unstableSceptor = Weapon(slot='1H Weapons',
+		name='Unstable Sceptor',
+		pic='media/items/legendaries/2.4/weapons/unstable_sceptor.png',
+		category='Wands',
+		unique='Arcane Orb\'s explosion triggers an additional time',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='wiz',
+		patch='24')
+	unstableSceptor.save()
+	unstableSceptor.affixes.add(inte, unstableArcaneOrb)
 
 #2.4
 	wandOfWoh = Weapon(slot='1H Weapons',

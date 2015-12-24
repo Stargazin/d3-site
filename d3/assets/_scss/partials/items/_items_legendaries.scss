@@ -1,6 +1,26 @@
 /* partials/items/items_legendaries
 ============================================================================ 
 ============================================================================ */
+//Header overrides
+.overview {
+  margin: 5rem 2rem 0 0;
+
+  h3 {
+
+    margin-left: 4.5rem;
+    margin-bottom: 0;
+
+    @media #{$break-xl} {
+      margin-bottom: 2.2rem;
+      margin-left: 0;
+    }
+  }
+
+  @media #{$break-xl} {
+    margin: 5rem 0 0 0;
+  }
+}
+
   //Show rest with JS
 .item:nth-child(n+21) {
   display: none;

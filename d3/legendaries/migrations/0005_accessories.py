@@ -110,7 +110,7 @@ def load_amulets(apps, schema_editor):
 	halcyon = Accessory(slot='Amulets',
 		name='Halcyon\'s Ascent',
 		pic='media/items/legendaries/accessories/amulets/halcyons_ascent.png',
-		unique='When you use {<span class="vary">Class Skill</span>}, you mesmerize nearby enemies with your skill, causing them to jump uncontrollably for <span>6 - 8</span> seconds.<div class="extra"><div class="extra-x">X</div><span><strong>Barbarian: </strong>Wrath of the Berserker<br><strong>Crusader: </strong>Akarat\'s Champion<br><strong>Demon Hunter: </strong>Vengeance<br><strong>Monk: </strong>Epiphany<br><strong>Witch Doctor: </strong>Big Bad Voodoo<br><strong>Wizard: </strong>Archon</span></div>',
+		unique='When you use {<span class="vary">Class Skill</span>}, you mesmerize nearby enemies with your skill, causing them to jump uncontrollably for <span>6 - 8</span> seconds<div class="extra"><div class="extra-x">X</div><span><strong>Barbarian: </strong>Wrath of the Berserker<br><strong>Crusader: </strong>Akarat\'s Champion<br><strong>Demon Hunter: </strong>Vengeance<br><strong>Monk: </strong>Epiphany<br><strong>Witch Doctor: </strong>Big Bad Voodoo<br><strong>Wizard: </strong>Archon</span></div>',
 		random_primaries='2',
 		random_secondaries='1',
 		owner='all',
@@ -368,6 +368,18 @@ def load_rings(apps, schema_editor):
 	avarice.save()
 	avarice.affixes.add(mainStat, chc, extraGold)
 
+#2.4 new
+	bandOfMight = Accessory(slot='Rings',
+		name='Band of Might',
+		pic='media/items/legendaries/2.4/accessories/band_of_might.png',
+		unique='After casting Furious Charge, Ground Stomp, or Leap, take <span>50 - 60%</span> reduced damage for <span class="silver">8</span> seconds',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='barb',
+		patch='24')
+	bandOfMight.save()
+	bandOfMight.affixes.add(mainStat, chc)
+
 	hollow_whispers = Accessory(slot='Rings',
 		name='Band of Hollow Whispers',
 		pic='media/items/legendaries/accessories/rings/band_of_hollow_whispers.png',
@@ -422,6 +434,18 @@ def load_rings(apps, schema_editor):
 		patch='23')
 	convention.save()
 	convention.affixes.add(mainStat, chc, sockets)
+
+#2.4 new
+	elusiveRing = Accessory(slot='Rings',
+		name='Elusive Ring',
+		pic='media/items/legendaries/2.4/accessories/elusive_ring.png',
+		unique='After casting Shadow Power, Smoke Screen, or Vault, take <span>50 - 60%</span> reduced damage for <span class="silver">8</span> seconds',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='dh',
+		patch='24')
+	elusiveRing.save()
+	elusiveRing.affixes.add(mainStat, chc)
 
 	eternal = Accessory(slot='Rings',
 		name='Eternal Union',
@@ -562,6 +586,18 @@ def load_rings(apps, schema_editor):
 		patch='23')
 	rechels.save()
 	rechels.affixes.add(mainStat, rechelsFearChance)
+
+#2.4 new
+	ringOfEmptiness = Accessory(slot='Rings',
+		name='Ring of Emptiness',
+		pic='media/items/legendaries/2.4/accessories/ring_of_emptiness.png',
+		unique='You deal <span>75 - 100%</span> increased damage to enemies affected by both your Haunt and Locust Swarm',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='wd',
+		patch='24')
+	ringOfEmptiness.save()
+	ringOfEmptiness.affixes.add(mainStat, chc)
 
 	rorg = Accessory(slot='Rings',
 		name='Ring of Royal Grandeur',

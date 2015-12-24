@@ -1,6 +1,26 @@
 /* partials/itemsets/itemsets_all
 ============================================================================ 
 ============================================================================ */
+//Header overrides
+.overview {
+  margin: 5rem 2rem 0 0;
+
+  h3 {
+
+    margin-left: 4.5rem;
+    margin-bottom: 0;
+
+    @media #{$break-xl} {
+      margin-bottom: 2.2rem;
+      margin-left: 0;
+    }
+  }
+
+  @media #{$break-xl} {
+    margin: 5rem 0 0 0;
+  }
+}
+
 .set-container {
   display: flex;
   justify-content: space-around;

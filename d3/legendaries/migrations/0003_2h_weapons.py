@@ -510,6 +510,18 @@ def load_2h_flails(apps, schema_editor):
 	goldenSweepAttack = Affix.objects.get(affix='goldenSweepAttack', category='2H Flails')
 
 
+#2.4 new
+	akkhansLeniency = Weapon(slot='2H Weapons',
+		name='Akkhan\'s Leniency',
+		pic='media/items/legendaries/2.4/weapons/akkhans_leniency.png',
+		category='2H Flails',
+		unique='Each enemy hit by your Blessed Shield increases the damage of your Blessed Shield by <span>15 - 20%</span> for <span class="silver">3</span> seconds',
+		random_primaries='2',
+		random_secondaries='1',
+		patch='24')
+	akkhansLeniency.save()
+	akkhansLeniency.affixes.add(stre)
+
 	balefulRemnant = Weapon(slot='2H Weapons',
 		name='Baleful Remnant',
 		pic='media/items/legendaries/weapons/2h/flails/baleful_remnant.png',
@@ -690,10 +702,13 @@ def load_2h_mighty_weapons(apps, schema_editor):
 	sockets = Affix.objects.get(affix='sockets',
 		category='2H Mighty Weapons')
 
+	bladeEarthquake = Affix.objects.get(affix='bladeEarthquake',
+		category='2H Mighty Weapons')
 	furySeismicSlam = Affix.objects.get(affix='furySeismicSlam',
 		category='2H Mighty Weapons')
 	gavelHammerOfTheAncients = Affix.objects.get(affix='gavelHammerOfTheAncients',
 		category='2H Mighty Weapons')
+
 
 	bastionsRevered = Weapon(slot='2H Weapons',
 		name='Bastion\'s Revered',
@@ -705,6 +720,18 @@ def load_2h_mighty_weapons(apps, schema_editor):
 		patch='23')
 	bastionsRevered.save()
 	bastionsRevered.affixes.add(stre, sockets)
+
+#2.4 new
+	bladeOfTheTribes = Weapon(slot='2H Weapons',
+		name='Blade of the Tribes',
+		pic='media/items/legendaries/2.4/weapons/blade_of_the_tribes.png',
+		category='2H Mighty Weapons',
+		unique='War Cry and Threatening Shout cause an Avalanche and Earthquake',
+		random_primaries='2',
+		random_secondaries='1',
+		patch='24')
+	bladeOfTheTribes.save()
+	bladeOfTheTribes.affixes.add(stre, bladeEarthquake)
 
 	furyOfTheVanishedPeak = Weapon(slot='2H Weapons',
 		name='Fury of the Vanished Peak',
@@ -847,12 +874,15 @@ def load_staves(apps, schema_editor):
 	durability = Affix.objects.get(affix='durability',
 		category='Staves')
 
+	staffFirebats = Affix.objects.get(affix='staffFirebats',
+		category='Staves')
 	suwongAcidCloud = Affix.objects.get(affix='suwongAcidCloud',
 		category='Staves')
 	grandMeteor = Affix.objects.get(affix='grandMeteor',
 		category='Staves')
 	wormwoodPoisDmg = Affix.objects.get(affix='wormwoodPoisDmg',
 		category='Staves')
+
 
 	ahvarionSpearOfLycander = Weapon(slot='2H Weapons',
 		name='Ahvarion, Spear of Lycander',
@@ -900,6 +930,19 @@ def load_staves(apps, schema_editor):
 		patch='23')
 	markOfTheMagi.save()
 	# markOfTheMagi.affixes.add()
+
+#2.4 new
+	staffOfChiroptera = Weapon(slot='2H Weapons',
+		name='Staff of Chiroptera',
+		pic='media/items/legendaries/2.4/weapons/staff_of_chiroptera.png',
+		category='Staves',
+		unique='Firebats attacks <span class="silver">100%</span> faster and costs <span>70 - 75%</span> less Mana',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='wd',
+		patch='24')
+	staffOfChiroptera.save()
+	staffOfChiroptera.affixes.add(mainStat, staffFirebats)
 
 	suwongDiviner = Weapon(slot='2H Weapons',
 		name='SuWong Diviner',

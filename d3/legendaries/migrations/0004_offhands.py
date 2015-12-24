@@ -37,6 +37,18 @@ def load_sources(apps, schema_editor):
 	cosmicStrand.save()
 	cosmicStrand.affixes.add(dmg)
 
+#2.4 new
+	etchedSigil = Weapon(slot='Offhands',
+		category='Sources',
+		name='Etched Sigil',
+		pic='media/items/legendaries/2.4/weapons/etched_sigil.png',
+		unique='Your Arcane Torrent, Disintegrate, and Ray of Frost also cast your other damaging Arcane Power Spenders every second',
+		random_primaries='2',
+		random_secondaries='1',
+		patch='24')
+	etchedSigil.save()
+	etchedSigil.affixes.add(dmg, inte, chc)
+
 	lightOfGrace = Weapon(slot='Offhands',
 		category='Sources',
 		name='Light of Grace',
@@ -69,6 +81,18 @@ def load_sources(apps, schema_editor):
 		patch='23')
 	mykensBallOfHate.save()
 	mykensBallOfHate.affixes.add(dmg, inte, chc)
+
+#2.4 new
+	primordialSoul = Weapon(slot='Offhands',
+		category='Sources',
+		name='Primordial Soul',
+		pic='media/items/legendaries/2.4/weapons/primordial_soul.png',
+		unique='Elemental Exposure\'s damage bonus per stack is increased to <span class="silver">10%</span>',
+		random_primaries='2',
+		random_secondaries='1',
+		patch='24')
+	primordialSoul.save()
+	primordialSoul.affixes.add(dmg, inte, chc)
 
 	theOculus = Weapon(slot='Offhands',
 		category='Sources',
@@ -264,7 +288,8 @@ def load_mojos(apps, schema_editor):
 
 	# thingItemPickup = Affix.objects.get(category='Mojos',
 	# 	affix='thingItemPickup')
-
+	wilkensGraspOfTheDead = Affix.objects.get(category='Mojos',
+		affix='wilkensGraspOfTheDead')
 
 	gazingDemise = Weapon(slot='Offhands',
 		category='Mojos',
@@ -339,6 +364,31 @@ def load_mojos(apps, schema_editor):
 		patch='23')
 	uhkapianSerpent.save()
 	uhkapianSerpent.affixes.add(dmg, inte, chc)
+
+#2.4 new
+	vileHive = Weapon(slot='Offhands',
+		category='Mojos',
+		name='Vile Hive',
+		pic='media/items/legendaries/2.4/weapons/vile_hive.png',
+		unique='Locust Swarm gains the effect of the Pestilence rune and deals <span>45 - 60%</span> increased damage',
+		random_primaries='2',
+		random_secondaries='1',
+		patch='24')
+	vileHive.save()
+	vileHive.affixes.add(dmg, inte, chc)
+
+#2.4 new
+	wilkensReach = Weapon(slot='Offhands',
+		category='Mojos',
+		name='Wilken\'s Reach',
+		pic='media/items/legendaries/2.4/weapons/wilkens_reach.png',
+		unique='Removes the cooldown of Grasp of the Dead',
+		random_primaries='2',
+		random_secondaries='1',
+		patch='24')
+	wilkensReach.save()
+	wilkensReach.affixes.add(dmg, inte, chc, wilkensGraspOfTheDead)
+
 
 	for weapon in Weapon.objects.filter(category='Mojos'):
 		weapon.owner = 'wd'
@@ -447,7 +497,7 @@ def load_crusader_shields(apps, schema_editor):
 		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
 		patch='23')
 	piroMarella.save()
-	piroMarella.affixes.add()
+	# piroMarella.affixes.add()
 
 	salvation = Weapon(slot='Offhands',
 		category='Crusader Shields',
@@ -460,6 +510,18 @@ def load_crusader_shields(apps, schema_editor):
 		patch='23')
 	salvation.save()
 	salvation.affixes.add(stre, blockChance)
+
+	#2.4 new
+	shieldOfFury = Weapon(slot='Offhands',
+		category='Crusader Shields',
+		name='Shield of Fury',
+		pic='media/items/legendaries/2.4/weapons/shield_of_fury.png',
+		unique='Each time and enemy takes damage from your Heaven\'s Fury, it increases the damage they take from your Heaven\'s Fury by <span>15 - 20%</span>',
+		random_primaries='3',
+		random_secondaries='1',
+		patch='24')
+	shieldOfFury.save()
+	shieldOfFury.affixes.add(stre)
 
 	sublimeConviction = Weapon(slot='Offhands',
 		category='Crusader Shields',

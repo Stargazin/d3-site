@@ -113,13 +113,13 @@ def load_1h_dagger_affixes(apps, schema_edtior):
 	pigBeastDmg = Affix(category='1H Daggers',
 		affix='pigBeastDmg',
 		is_primary=False,
-		desc='Increases damage against Beasts by <span>15 - 30%</span>')
+		desc='Increase damage against Beasts by <span>15 - 30%</span>')
 	pigBeastDmg.save()
 
 	pigHumanDmg = Affix(category='1H Daggers',
 		affix='pigHumanDmg',
 		is_primary=False,
-		desc='Increases damage against Humans by <span>15 - 30%</span>')
+		desc='Increase damage against Humans by <span>15 - 30%</span>')
 	pigHumanDmg.save()
 
 #The Barber
@@ -128,6 +128,15 @@ def load_1h_dagger_affixes(apps, schema_edtior):
 		is_primary=True,
 		desc='<span>+31.0 - 35.0%</span> Critical Hit Damage')
 	barberCHD.save()
+
+#2.4 new
+#Voo's Juicer
+	voosGraspOfTheDead = Affix(category='1H Daggers',
+		affix='voosGraspOfTheDead',
+		is_primary=True,
+		desc='Increase damage of Spirit Barrage by <span>45 - 60%</span>')
+	voosGraspOfTheDead.save()
+
 
 def load_fist_weapon_affixes(apps, schema_editor):
 	Affix = apps.get_model("affixes", "Affix")
@@ -269,7 +278,7 @@ def load_hand_crossbow_affixes(apps, schema_editor):
 	kmarStrafe = Affix(category='Hand Crossbows',
 		affix='kmarStrafe',
 		is_primary=True,
-		desc='Increases Strafe damage by <span>75 - 100%</span>')
+		desc='Increase Strafe damage by <span>75 - 100%</span>')
 	kmarStrafe.save()
 
 #Added in 2.4
@@ -277,7 +286,7 @@ def load_hand_crossbow_affixes(apps, schema_editor):
 	vallasStrafe = Affix(category='Hand Crossbows',
 		affix='vallasStrafe',
 		is_primary=True,
-		desc='Increases Strafe damage by <span>75 - 100%</span>')
+		desc='Increase Strafe damage by <span>75 - 100%</span>')
 	vallasStrafe.save()
 
 
@@ -384,7 +393,7 @@ def load_1h_mace_affixes(apps,schema_editor):
 	sunEliteDmg = Affix(category='1H Maces',
 		affix='sunEliteDmg',
 		is_primary=True,
-		desc='Increases damage against elites by <span>15 - 30%</span>')
+		desc='Increase damage against elites by <span>15 - 30%</span>')
 	sunEliteDmg.save()
 
 	sunExtraGold = Affix(category='1H Maces',
@@ -443,7 +452,7 @@ def load_1h_spear_affixes(apps, schema_editor):
 	eliteDmg = Affix(category='1H Spears',
 		affix='eliteDmg',
 		is_primary=True,
-		desc='Increases damage against elites by <span>5.0 - 8.0%</span>')
+		desc='Increase damage against elites by <span>5.0 - 8.0%</span>')
 	eliteDmg.save()
 
 #Akanesh, the Herald of Righteousness
@@ -556,14 +565,14 @@ def load_1h_sword_affixes(apps, schema_editor):
 	monsterBeastDmg = Affix(category='1H Swords',
 		affix='monsterBeastDmg',
 		is_primary=False,
-		desc='Increases damage against Beasts by <span>9 - 15%</span>')
+		desc='Increase damage against Beasts by <span>9 - 15%</span>')
 	monsterBeastDmg.save()
 
 #Sever
 	severDemonDmg = Affix(category='1H Swords',
 		affix='severDemonDmg',
 		is_primary=False,
-		desc='Increases damage against Demons by <span>5 - 10%</span>')
+		desc='Increase damage against Demons by <span>5 - 10%</span>')
 	severDemonDmg.save()
 
 #Skycutter
@@ -610,6 +619,14 @@ def load_wand_affixes(apps, schema_editor):
 		is_primary=True,
 		desc='Increase Disintegrate damage by <span>15 - 30%</span>')
 	sloraksDisintegrate.save()
+
+#2.4 new
+#Unstable Sceptor
+	unstableArcaneOrb = Affix(category='Wands',
+		affix='unstableArcaneOrb',
+		is_primary=True,
+		desc='Increase Arcane Orb damage by <span>50 - 65%</span>')
+	unstableArcaneOrb.save()
 
 #Added in 2.4
 #Wand of Woh

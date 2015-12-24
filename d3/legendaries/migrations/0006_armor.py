@@ -135,6 +135,30 @@ def load_helmets(apps, schema_editor):
 	theHelmOfRule.save()
 	theHelmOfRule.affixes.add(vita, helmBlockChance)
 
+#2.4 new
+	visageOfGunes = Armor(category='Helmets',
+		name='Visage of Gunes',
+		pic='media/items/legendaries/2.4/armor/visage_of_gunes.png',
+		unique='Vengeance gains the effect of the Dark Heart rune',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='dh',
+		patch='24')
+	visageOfGunes.save()
+	visageOfGunes.affixes.add(mainStat, sockets)
+
+#2.4 new
+	warhelmOfKassar = Armor(category='Helmets',
+		name='Warhelm of Kassar',
+		pic='media/items/legendaries/2.4/armor/warhelm_of_kassar.png',
+		unique='Reduce the cooldown and increase the damage of Phalanx by <span>45 - 60%</span>',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='sader',
+		patch='24')
+	warhelmOfKassar.save()
+	warhelmOfKassar.affixes.add(mainStat, sockets)
+
 	for armor in Armor.objects.filter(category='Helmets'):
 		armor.inherent = '<span class="inherent"><span>660 - 759</span> Armor</span>'
 		armor.slot = 'Head'
@@ -529,6 +553,30 @@ def load_shoulders(apps, schema_editor):
 	homingPads.save()
 	homingPads.affixes.add(mainStat, extraGold)
 
+#2.4 new
+	lefebvresSoliloquy = Armor(slot='Shoulders',
+		name='Lefebvere\'s Soliloquy',
+		pic='media/items/legendaries/2.4/armor/lefebvres_soliloquy.png',
+		unique='Cyclone Strike reduces your damage taken by <span>40 - 50%</span> for <span class="silver">5</span> seconds',
+		random_primaries='3',
+		random_secondaries='1',
+		owner='monk',
+		patch='24')
+	lefebvresSoliloquy.save()
+	lefebvresSoliloquy.affixes.add(mainStat)
+
+#2.4 new
+	mantleOfChanneling = Armor(slot='Shoulders',
+		name='Mantle of Channeling',
+		pic='media/items/legendaries/2.4/armor/mantle_of_channeling.png',
+		unique='While channeling {<span class="vary">Class Skill</span>}, you deal <span>20 - 25%</span> increased damage and take <span class="silver">25%</span> reduced damage<div class="extra"><div class="extra-x">X</div><span><strong>Barbarian: </strong>Whirlwind<br><strong>Demon Hunter: </strong>Rapid Fire | Strafe<br><strong>Monk: </strong>Tempest Rush<br><strong>Witch Doctor: </strong>Firebats<br><strong>Wizard: </strong>Arcane Torrent | Disintegrate | Ray of Frost</span></div>',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='all',
+		patch='24')
+	mantleOfChanneling.save()
+	mantleOfChanneling.affixes.add(mainStat, vita)
+
 	pauldronsOfTheSkeletonKing = Armor(slot='Shoulders',
 		name='Pauldrons of the Skeleton King',
 		pic='media/items/legendaries/armor/shoulders/pauldrons_of_the_skeleton_king.png',
@@ -804,16 +852,40 @@ def load_bracers(apps, schema_editor):
 	# steadyIAS = Affix.objects.get(slot='Bracers',
 	# 	affix='steadyIAS')
 
+#2.4 new
+	akkhansManacles = Armor(slot='Bracers',
+		name='Akkhan\'s Manacles',
+		pic='media/items/legendaries/2.4/armor/akkhans_manacles.png',
+		unique='Blessed Shield damage is increased by <span>400 - 500%</span> for the first enemy it hits',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='sader',
+		patch='24')
+	akkhansManacles.save()
+	akkhansManacles.affixes.add(mainStat, chc)
+
 	ancientParthanDefenders = Armor(slot='Bracers',
 		name='Ancient Parthan Defenders',
 		pic='media/items/legendaries/armor/wrists/ancient_parthan_defenders.png',
-		unique='Each stunned enemy within <span class="silver">25</span> yards reduces your damage taken by <span>9 - 12%</span>.',
+		unique='Each stunned enemy within <span class="silver">25</span> yards reduces your damage taken by <span>9 - 12%</span>',
 		random_primaries='3',
 		random_secondaries='1',
 		owner='all',
 		patch='23')
 	ancientParthanDefenders.save()
 	ancientParthanDefenders.affixes.add(mainStat)
+
+#2.4 new
+	bindingsOfTheLesserGods = Armor(slot='Bracers',
+		name='Bindings of the Lesser Gods',
+		pic='media/items/legendaries/2.4/armor/bindings_of_the_lesser_gods.png',
+		unique='Enemies hit by your Cyclone Strike take <span>150 - 200%</span> more damage from your Mystic Ally for <span class="silver">5</span> seconds',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='monk',
+		patch='24')
+	bindingsOfTheLesserGods.save()
+	bindingsOfTheLesserGods.affixes.add(mainStat, chc)
 
 	bracersOfDestruction = Armor(slot='Bracers',
 		name='Bracers of Destruction',
@@ -826,6 +898,18 @@ def load_bracers(apps, schema_editor):
 	bracersOfDestruction.save()
 	bracersOfDestruction.affixes.add(mainStat)
 
+#2.4 new
+	bracersOfFury = Armor(slot='Bracers',
+		name='Bracers of Fury',
+		pic='media/items/legendaries/2.4/armor/bracers_of_fury.png',
+		unique='Heaven\'s Fury deals <span>150 - 200%</span> increased damage to enemies that are Blinded, Immobilized, or Stunned',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='sader',
+		patch='24')
+	bracersOfFury.save()
+	bracersOfFury.affixes.add(mainStat, chc)
+
 	bracersOfTheFirstMen = Armor(slot='Bracers',
 		name='Bracers of the FirstMen',
 		pic='media/items/legendaries/armor/wrists/bracers_of_the_first_men.png',
@@ -836,6 +920,18 @@ def load_bracers(apps, schema_editor):
 		patch='23')
 	bracersOfTheFirstMen.save()
 	bracersOfTheFirstMen.affixes.add(mainStat, chc)
+
+#2.4 new
+	cesarsMemento = Armor(slot='Bracers',
+		name='Cesar\'s Memento',
+		pic='media/items/legendaries/2.4/armor/cesars_memento.png',
+		unique='Enemies take <span>300 - 400%</span> increased damage from your Tempest Rush for <span class="silver">5</span> seconds after you hit them with a Blind, Freeze, or Stun',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='monk',
+		patch='24')
+	cesarsMemento.save()
+	cesarsMemento.affixes.add(mainStat, chc)
 
 	coilsOfTheFirstSpider = Armor(slot='Bracers',
 		name='Coils of the First Spider',
@@ -923,6 +1019,18 @@ def load_bracers(apps, schema_editor):
 	lacuniProwlers.save()
 	lacuniProwlers.affixes.add(lacuniIAS, lacuniMovementSpeed, thorns)
 
+#2.4 new
+	lakumbrasOrnament = Armor(slot='Bracers',
+		name='Lakumbra\'s Ornament',
+		pic='media/items/legendaries/2.4/armor/lakumbras_ornament.png',
+		unique='Reduces all damage taken by <span class="silver">6%</span> for each stack of Soul Harvest you have',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='wd',
+		patch='24')
+	lakumbrasOrnament.save()
+	lakumbrasOrnament.affixes.add(mainStat, chc)
+
 	nemesisBracers = Armor(slot='Bracers',
 		name='Nemesis Bracers',
 		pic='media/items/legendaries/armor/wrists/nemesis_bracers.png',
@@ -933,6 +1041,18 @@ def load_bracers(apps, schema_editor):
 		patch='23')
 	nemesisBracers.save()
 	nemesisBracers.affixes.add(mainStat)
+
+#2.4 new
+	pintosPride = Armor(slot='Bracers',
+		name='Pinto\'s Pride',
+		pic='media/items/legendaries/2.4/armor/pintos_pride.png',
+		unique='Wave of Light also Slows enemies by <span class="silver">80%</span> for <span class="silver">3</span> seconds and deals <span>125 - 150%</span> increased damage',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='monk',
+		patch='24')
+	pintosPride.save()
+	pintosPride.affixes.add(mainStat, chc)
 
 	promiseOfGlory = Armor(slot='Bracers',
 		name='Promise of Glory',
@@ -977,6 +1097,18 @@ def load_bracers(apps, schema_editor):
 		patch='23')
 	sanguinaryVambraces.save()
 	sanguinaryVambraces.affixes.add(mainStat, chc, thorns)
+
+#2.4 new
+	skularsSalvation = Armor(slot='Bracers',
+		name='Skular\'s Salvation',
+		pic='media/items/legendaries/2.4/armor/skulars_salvation.png',
+		unique='Increases the damage of Ancient Spear - Boulder Toss by <span class="silver">100%</span>. When your Boulder Toss hits <span class="silver">5</span> or fewer enemies the damage is increased by <span>120 - 150%</span>',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='barb',
+		patch='24')
+	skularsSalvation.save()
+	skularsSalvation.affixes.add(mainStat, chc)
 
 	slaveBonds = Armor(slot='Bracers',
 		name='Slave Bonds',
@@ -1031,6 +1163,18 @@ def load_bracers(apps, schema_editor):
 		patch='23')
 	trangoulCoils.save()
 	trangoulCoils.affixes.add(mainStat)
+
+#2.4 new
+	vambracesOfSescheron = Armor(slot='Bracers',
+		name='Vambraces of Sescheron',
+		pic='media/items/legendaries/2.4/armor/vambraces_of_sescheron.png',
+		unique='Primary skills heal you for <span>5 - 6%</span> of your missing Life',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='all',
+		patch='24')
+	vambracesOfSescheron.save()
+	vambracesOfSescheron.affixes.add(mainStat, chc)
 
 	warzechianArmguards = Armor(slot='Bracers',
 		name='Warzechian Armguards',
@@ -1190,6 +1334,8 @@ def load_belts(apps, schema_editor):
 		affix='fleetingIAS')
 	hellcatIAS = Affix.objects.get(category='Belts',
 		affix='hellcatIAS')
+	kyoshirosSweepingWind = Affix.objects.get(category='Belts',
+		affix='kyoshirosSweepingWind')
 	saffronCCReduction = Affix.objects.get(category='Belts',
 		affix='saffronCCReduction')
 	# stringReducedMeleeDmg = Affix.objects.get(category='Belts',
@@ -1259,6 +1405,18 @@ def load_belts(apps, schema_editor):
 		patch='23')
 	blessedOfHaull.save()
 	blessedOfHaull.affixes.add(mainStat, allRes)
+
+#2.4 new
+	chainOfShadows = Armor(category='Belts',
+		name='Chain of Shadows',
+		pic='media/items/legendaries/2.4/armor/chain_of_shadows.png',
+		unique='After using Impale, your Vault costs no resource for <span class="silver">2</span> seconds',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='dh',
+		patch='24')
+	chainOfShadows.save()
+	chainOfShadows.affixes.add(mainStat, vita)
 
 	cordOfTheSherma = Armor(category='Belts',
 		name='Cord of the Sherma',
@@ -1346,6 +1504,18 @@ def load_belts(apps, schema_editor):
 	hellcatWaistguard.save()
 	hellcatWaistguard.affixes.add(mainStat, vita, hellcatIAS)
 
+#2.4 new
+	hergbrashsBindings = Armor(category='Belts',
+		name='Hergbrash\'s Bindings',
+		pic='media/items/legendaries/2.4/armor/hergbrashs_bindings.png',
+		unique='Reduces the Arcane Power cost of Arcane Torrent, Disintegrate, and Ray of Frost by <span>50 - 65%</span>',
+		random_primaries='3',
+		random_secondaries='1',
+		owner='wiz',
+		patch='24')
+	hergbrashsBindings.save()
+	hergbrashsBindings.affixes.add(mainStat)
+
 	huntersWrath = Armor(category='Belts',
 		name='Hunter\'s Wrath',
 		pic='media/items/legendaries/armor/waist/belts/hunters_wrath.png',
@@ -1388,6 +1558,18 @@ def load_belts(apps, schema_editor):
 		patch='23')
 	jangsEnvelopment.save()
 	jangsEnvelopment.affixes.add(mainStat)
+
+#2.4 new
+	kyoshirosSoul = Armor(category='Belts',
+		name='Kyoshiro\'s Soul',
+		pic='media/items/legendaries/2.4/armor/kyoshiros_soul.png',
+		unique='Sweeping Wind gains <span class="silver">2</span> stacks every second it does not deal damage to any enemies',
+		random_primaries='3',
+		random_secondaries='1',
+		owner='monk',
+		patch='24')
+	kyoshirosSoul.save()
+	kyoshirosSoul.affixes.add(mainStat, kyoshirosSweepingWind)
 
 	omnislash = Armor(category='Belts',
 		name='omnislash',
@@ -1476,6 +1658,18 @@ def load_belts(apps, schema_editor):
 	# stringOfEars.affixes.add(mainStat, stringReducedMeleeDmg)
 	stringOfEars.affixes.add(mainStat)
 
+#2.4 new
+	theShameOfDelsere = Armor(category='Belts',
+		name='The Shame of Deslere',
+		pic='media/items/legendaries/2.4/armor/the_shame_of_delsere.png',
+		unique='Your Signature Spells attack <span class="silver">50%</span> faster and restore <span>9 - 12</span> Arcane Power',
+		random_primaries='3',
+		random_secondaries='1',
+		owner='wiz',
+		patch='24')
+	theShameOfDelsere.save()
+	theShameOfDelsere.affixes.add(mainStat)
+
 	theWitchingHour = Armor(category='Belts',
 		name='The Witching Hour',
 		pic='media/items/legendaries/armor/waist/belts/the_witching_hour.png',
@@ -1505,6 +1699,18 @@ def load_belts(apps, schema_editor):
 		patch='23')
 	vigilanteBelt.save()
 	vigilanteBelt.affixes.add(mainStat, vigilanteCDR)
+
+#2.4 new
+	zoeysSecret = Armor(category='Belts',
+		name='Zoey\'s Secret',
+		pic='media/items/legendaries/2.4/armor/zoeys_secret.png',
+		unique='You take <span>8 - 9%</span> less damage for each Companion you have active',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='dh',
+		patch='24')
+	zoeysSecret.save()
+	zoeysSecret.affixes.add(mainStat, vita)
 
 	for armor in Armor.objects.filter(category='Belts'):
 		armor.inherent = '<span class="inherent"><span>440 - 506</span> Armor</span>'
@@ -1720,7 +1926,6 @@ def load_pants(apps, schema_editor):
 
 	for armor in Armor.objects.filter(slot='Pants'):
 		armor.inherent = '<span class="inherent"><span>660 - 759</span> Armor</span>'
-		# armor.owner = 'all'
 		armor.save()
 
 
@@ -1760,7 +1965,6 @@ def load_boots(apps, schema_editor):
 	bojAnglers = Armor(slot='Boots',
 		name='Boj Anglers',
 		pic='media/items/legendaries/armor/feet/boj_anglers.png',
-		unique='',
 		random_primaries='2',
 		random_secondaries='2',
 		owner='all',
@@ -1844,6 +2048,18 @@ def load_boots(apps, schema_editor):
 		patch='23')
 	nilfursBoast.save()
 	nilfursBoast.affixes.add(mainStat, allRes)
+
+#2.4 new
+	riveraDancers = Armor(slot='Boots',
+		name='Rivera Dancers',
+		pic='media/items/legendaries/2.4/armor/rivera_dancers.png',
+		unique='Lashing Tail Kick attacks <span class="silver">50%</span> faster and deals <span>250 - 300%</span> increased damage',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='monk',
+		patch='24')
+	riveraDancers.save()
+	riveraDancers.affixes.add(mainStat, allRes)
 
 	theCrudestBoots = Armor(slot='Boots',
 		name='The Crudest Boots',

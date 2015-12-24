@@ -112,7 +112,7 @@ def load_spirit_stone_affixes(apps, schema_editor):
 	skillDmg = Affix(category='Spirit Stones',
 		affix='skillDmg',
 		is_primary=True,
-		desc='Increases {<span class="vary">Skill Damage</span>} by <span>10 - 15%</span><div class="extra"><div class="extra-x">X</div><span>Tempest Rush<br>Exploding Palm<br>Wave of Light<br>Lashing Tail Kick</span></div>')
+		desc='Increase {<span class="vary">Skill Damage</span>} by <span>10 - 15%</span><div class="extra"><div class="extra-x">X</div><span>Tempest Rush<br>Exploding Palm<br>Wave of Light<br>Lashing Tail Kick</span></div>')
 	skillDmg.save()
 
 	ccReduction = Affix(category='Spirit Stones',
@@ -326,7 +326,7 @@ def load_chest_armor_affixes(apps, schema_editor):
 	tyraelsDemonDmg = Affix(category='Chest Armors',
 		affix='tyraelsDemonDmg',
 		is_primary=False,
-		desc='Increases damage against Demons by <span>10 - 20%</span>')
+		desc='Increase damage against Demons by <span>10 - 20%</span>')
 	tyraelsDemonDmg.save()
 
 
@@ -578,6 +578,14 @@ def load_belt_affixes(apps, schema_editor):
 		desc='<span>+5.0 - 7.0%</span> Attack Speed')
 	hellcatIAS.save()
 
+#2.4 new
+#Kyoshiro's Soul
+	kyoshirosSweepingWind = Affix(category='Belts',
+		affix='kyoshirosSweepingWind',
+		is_primary=True,
+		desc='Increase Sweeping Wind damage by <span>100 - 125%</span>')
+	kyoshirosSweepingWind.save()
+
 #Saffron Wrap
 	saffronCCReduction = Affix(category='Belts',
 		affix='saffronCCReduction',
@@ -662,7 +670,7 @@ def load_mighty_belt_affixes(apps, schema_editor):
 	dreadAvalanche = Affix(category='Mighty Belts',
 		affix='dreadAvalanche',
 		is_primary=True,
-		desc='Increases Avalanche damage by <span>150 - 200%</span>')
+		desc='Increase Avalanche damage by <span>150 - 200%</span>')
 	dreadAvalanche.save()
 
 #Girdle of Giants
@@ -780,7 +788,7 @@ def load_boots_affixes(apps, schema_editor):
 	bojSkillDmg = Affix(slot='Boots',
 		affix='bojSkillDmg',
 		is_primary=True,
-		desc='Increases {<span class="vary">Skill Damage</span>} by <span>10 - 15%</span><div class="extra"><div class="extra-x">X</div><span><strong>Barbarian: </strong>Ancient Spear | Hammer of the Ancients | Seismic Slam | Whirlwind<br><strong>Crusader: </strong>Blessed Hammer | Blessed Shield | Fist of the Heavens | Phalanx | Shield Bash | Sweep Attack<br><strong>Demon Hunter: </strong>Chakram | Cluster Arrow | Elemental Arrow | Impale | Multishot | Rapid Fire | Strafe<br><strong>Monk: </strong>Exploding Palm | Lashing Tail Kick | Tempest Rush | Wave of Light<br><strong>Witch Doctor: </strong>Acid Cloud | Firebats | Sacrifice | Spirit Barrage | Zombie Charger<br><strong>Wizard: </strong>Arcane Orb | Arcane Torrent | Disintegrate | Energy Twister | Meteor | Ray of Frost | Wave of Force</span></div>')
+		desc='Increase {<span class="vary">Skill Damage</span>} by <span>10 - 15%</span><div class="extra"><div class="extra-x">X</div><span><strong>Barbarian: </strong>Ancient Spear | Hammer of the Ancients | Seismic Slam | Whirlwind<br><strong>Crusader: </strong>Blessed Hammer | Blessed Shield | Fist of the Heavens | Phalanx | Shield Bash | Sweep Attack<br><strong>Demon Hunter: </strong>Chakram | Cluster Arrow | Elemental Arrow | Impale | Multishot | Rapid Fire | Strafe<br><strong>Monk: </strong>Exploding Palm | Lashing Tail Kick | Tempest Rush | Wave of Light<br><strong>Witch Doctor: </strong>Acid Cloud | Firebats | Sacrifice | Spirit Barrage | Zombie Charger<br><strong>Wizard: </strong>Arcane Orb | Arcane Torrent | Disintegrate | Energy Twister | Meteor | Ray of Frost | Wave of Force</span></div>')
 	bojSkillDmg.save()
 
 #Ice Climbers

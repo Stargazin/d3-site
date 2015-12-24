@@ -66,7 +66,7 @@ def load_bow_affixes(apps, schema_editor):
 	eliteDmg = Affix(category='Bows',
 		affix='eliteDmg',
 		is_primary=True,
-		desc='Increases damage against elites by <span>9.0 - 10.0%</span>')
+		desc='Increase damage against elites by <span>9.0 - 10.0%</span>')
 	eliteDmg.save()
 
 	durability = Affix(category='Bows',
@@ -210,7 +210,7 @@ def load_2h_flail_affixes(apps, schema_editor):
 	goldenSweepAttack = Affix(category='2H Flails',
 		affix='goldenSweepAttack',
 		is_primary=True,
-		desc='Increases Sweep Attack damage by <span>150 - 200%</span>')
+		desc='Increase Sweep Attack damage by <span>150 - 200%</span>')
 	goldenSweepAttack.save()
 
 
@@ -279,6 +279,14 @@ def load_2h_mighty_weapon_affixes(apps, schema_editor):
 		is_primary=True,
 		desc='Sockets (<span>1</span>)')
 	sockets.save()
+
+#2.4 new
+#Blade of the Tribes
+	bladeEarthquake = Affix(category='2H Mighty Weapons',
+		affix='bladeEarthquake',
+		is_primary=True,
+		desc='Increase Earthquake damage by <span>150 - 200%</span>')
+	bladeEarthquake.save()
 
 #Fury of the Vanished Peak
 	furySeismicSlam = Affix(category='2H Mighty Weapons',
@@ -360,6 +368,14 @@ def load_staff_affixes(apps, schema_editor):
 		is_primary=False,
 		desc='Item ignores Durability Loss')
 	durability.save()
+
+#2.4 new
+#Staff of Chiroptera
+	staffFirebats = Affix(category='Staves',
+		affix='staffFirebats',
+		is_primary=True,
+		desc='Increase Firebats damage by <span>45 - 60%</span>')
+	staffFirebats.save()
 
 #SuWong Diviner
 	suwongAcidCloud = Affix(category='Staves',
@@ -443,14 +459,14 @@ def load_2h_sword_affixes(apps, schema_editor):
 	bladeCondemn = Affix(category='2H Swords',
 		affix='bladeCondemn',
 		is_primary=True,
-		desc='Increases Condemn damage by <span>75 - 100%</span>')
+		desc='Increase Condemn damage by <span>75 - 100%</span>')
 	bladeCondemn.save()
 
 #Corrupted Ashbringer
 	corruptedUndeadDmg = Affix(category='2H Swords',
 		affix='corruptedUndeadDmg',
 		is_primary=False,
-		desc='Increases damage against Undead by <span>9 - 15%</span>')
+		desc='Increase damage against Undead by <span>9 - 15%</span>')
 	corruptedUndeadDmg.save()
 
 #Faithful Memory

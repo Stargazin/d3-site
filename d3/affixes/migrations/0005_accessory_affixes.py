@@ -549,7 +549,7 @@ def load_ring_affixes(apps, schema_editor):
 	hellfireBonusExp = Affix(slot='Rings',
 		affix='hellfireBonusExp',
 		is_primary=False,
-		desc='Increases Bonus Experience by <span class="silver">45%</span>')
+		desc='Increase Bonus Experience by <span class="silver">45%</span>')
 	hellfireBonusExp.save()
 
 #Justice Lantern
@@ -569,7 +569,7 @@ def load_ring_affixes(apps, schema_editor):
 	leoricsBonusExp = Affix(slot='Rings',
 		affix='leoricsBonusExp',
 		is_primary=False,
-		desc='Increases Bonus Experience by <span>20 - 30%</span>')
+		desc='Increase Bonus Experience by <span>20 - 30%</span>')
 	leoricsBonusExp.save()
 
 #Manald Heal
@@ -632,7 +632,7 @@ def load_ring_affixes(apps, schema_editor):
 	stoneEliteDmg = Affix(slot='Rings',
 		affix='stoneEliteDmg',
 		is_primary=True,
-		desc='Increases damage against elites by <span>25.0 - 30.0%</span>')
+		desc='Increase damage against elites by <span>25.0 - 30.0%</span>')
 	stoneEliteDmg.save()
 
 	stoneMaxResource = Affix(slot='Rings',
@@ -645,7 +645,7 @@ def load_ring_affixes(apps, schema_editor):
 	unityEliteDmg = Affix(slot='Rings',
 		affix='unityEliteDmg',
 		is_primary=True,
-		desc='Increases damage against elites by <span>12.0 - 15.0%</span>')
+		desc='Increase damage against elites by <span>12.0 - 15.0%</span>')
 	unityEliteDmg.save()
 
 
