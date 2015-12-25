@@ -24,11 +24,11 @@ var nav = (function() {
   }
 
   function _showMenu() {
-    $(this).children('.drop').show(50);
+    $(this).children('.drop').show();
   }
 
   function _hideMenu() {
-    $(this).children('.drop').hide(50);
+    $(this).children('.drop').hide();
   }
 
   function _hideNav() {
