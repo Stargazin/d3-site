@@ -24,11 +24,13 @@ var nav = (function() {
   }
 
   function _showMenu() {
-    $(this).children('.drop').show();
+    //Use css instead of .show() so mobile doesn't require double tap for links
+    $(this).children('.drop').css('display', 'block');
   }
 
   function _hideMenu() {
-    $(this).children('.drop').hide();
+    //Use css instead of .hide() so mobile doesn't require double tap for links
+    $(this).children('.drop').css('display', 'none');
   }
 
   function _hideNav() {
