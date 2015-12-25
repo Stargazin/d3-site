@@ -1,3 +1,34 @@
+var nav = (function() {
+  //*cache DOM
+  var $allButNav = $navMain.nextAll('*');
+  var $link = $('.link--legendaries, .link--materials, .link--misc');
+  var $drop = $('.drop');
+  var $linkDrop = $('.link > .drop');
+
+  //*bind events
+  //Hover nav links to show drop menus
+  $link.hover(_showMenu, _hideMenu);
+  //Hide opened nav bar on touch devices
+  $allButNav.on('click', _hideNav);
+
+
+  function _showMenu() {
+    //Use css instead of .show() so mobile doesn't require double tap for links
+    $(this).children('.drop').css('display', 'block');
+  }
+
+  function _hideMenu() {
+    //Use css instead of .hide() so mobile doesn't require double tap for links
+    $(this).children('.drop').css('display', 'none');
+  }
+
+  function _hideNav() {
+    $drop.hide();
+  }
+
+})();
+
+
 var scrollToTop = (function() {
 
   //*cache DOM
