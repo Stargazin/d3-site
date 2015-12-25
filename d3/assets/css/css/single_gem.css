@@ -145,6 +145,8 @@ button:hover {
   font-family: "Playfair Display SC", serif; }
   .link:hover {
     background-color: #2c4154; }
+    .link:hover > .drop {
+      display: block; }
     .link:hover > a {
       color: #ff791f; }
   .link a {
