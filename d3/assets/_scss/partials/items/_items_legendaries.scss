@@ -1,7 +1,7 @@
 /* partials/items/items_legendaries
 ============================================================================ 
 ============================================================================ */
-//Header overrides
+//Header
 .overview {
   margin: 5rem 2rem 0 0;
 
@@ -19,6 +19,12 @@
   @media #{$break-xl} {
     margin: 5rem 0 0 0;
   }
+}
+
+//Toggle; added with jQuery
+.toggle--selected, .toggle--selected:hover,
+.patch--selected, .patch--selected:hover {
+  border-color: $legendary !important;
 }
 
   //Show rest with JS

@@ -151,6 +151,13 @@ button:hover {
     display: block;
     color: #f2f1ef; }
 
+.link--legendaries > span {
+  display: block;
+  color: #f2f1ef; }
+
+.link--legendaries:hover > span {
+  color: #ff791f; }
+
 .link--misc {
   display: none; }
 
@@ -180,6 +187,12 @@ button:hover {
   border-right: 0.1rem solid #54606d;
   border-left: 0.1rem solid #54606d; }
 
+.splitter {
+  background: #a0a0a0; }
+
+.drop__link--legendaries:hover > .splitter {
+  height: 1px; }
+
 @media only screen and (max-width: 768px) {
   .link--gems, .link--potions, .link--materials {
     display: none; }
@@ -192,10 +205,8 @@ button:hover {
       color: #f2f1ef; }
     .link--misc:hover > span {
       color: #ff791f; }
-  .drop__link--materials:hover .splitter {
-    display: block;
-    height: 1px;
-    background: #a0a0a0; } }
+  .drop__link--materials:hover > .splitter {
+    height: 1px; } }
 
 @media only screen and (max-width: 480px) {
   .nav-main {
@@ -284,7 +295,7 @@ header {
   text-align: center; }
   .patch span {
     display: inline-block;
-    border: 2px solid;
+    border: 1px solid;
     border-color: #64696e;
     -webkit-border-radius: 10px;
             border-radius: 10px;
@@ -305,13 +316,50 @@ header {
       margin: 1.5rem 0 1rem 0; } }
 
 .toggle--selected, .patch--selected {
-  border-color: #d2d7dc !important;
   color: #fafafa !important; }
-  .toggle--selected:hover, .patch--selected:hover {
-    border-color: #d2d7dc !important; }
 
 .patch-off {
   display: none !important; }
+
+/* partials/scroll_top
+============================================================================ 
+============================================================================ */
+#scroll-btn {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(0.8, 0.8);
+      -ms-transform: translateX(-50%) scale(0.8, 0.8);
+          transform: translateX(-50%) scale(0.8, 0.8);
+  z-index: 98;
+  width: 46px;
+  height: 46px;
+  margin: 0 0 2rem 0;
+  border: 1px solid transparent;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  cursor: pointer; }
+  #scroll-btn span {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0.8, 0.8);
+        -ms-transform: translate(-50%, -50%) scale(0.8, 0.8);
+            transform: translate(-50%, -50%) scale(0.8, 0.8);
+    width: 50px;
+    height: 50px;
+    opacity: 0.5; }
+
+#scroll-btn.scroll-btn--show {
+  display: inline-block;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
+  #scroll-btn.scroll-btn--show span {
+    display: inline-block; }
+  #scroll-btn.scroll-btn--show:hover {
+    background-color: rgba(180, 180, 180, 0.6); }
+    #scroll-btn.scroll-btn--show:hover span {
+      opacity: 0.9; }
 
 /* partials/itemsets/itemsets_all
 ============================================================================ 
@@ -328,6 +376,10 @@ header {
   @media only screen and (max-width: 1200px) {
     .overview {
       margin: 5rem 0 0 0; } }
+
+.toggle--selected, .toggle--selected:hover,
+.patch--selected, .patch--selected:hover {
+  border-color: #75d911 !important; }
 
 .set-container {
   display: -webkit-box;

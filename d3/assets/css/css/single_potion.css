@@ -151,6 +151,13 @@ button:hover {
     display: block;
     color: #f2f1ef; }
 
+.link--legendaries > span {
+  display: block;
+  color: #f2f1ef; }
+
+.link--legendaries:hover > span {
+  color: #ff791f; }
+
 .link--misc {
   display: none; }
 
@@ -180,6 +187,12 @@ button:hover {
   border-right: 0.1rem solid #54606d;
   border-left: 0.1rem solid #54606d; }
 
+.splitter {
+  background: #a0a0a0; }
+
+.drop__link--legendaries:hover > .splitter {
+  height: 1px; }
+
 @media only screen and (max-width: 768px) {
   .link--gems, .link--potions, .link--materials {
     display: none; }
@@ -192,10 +205,8 @@ button:hover {
       color: #f2f1ef; }
     .link--misc:hover > span {
       color: #ff791f; }
-  .drop__link--materials:hover .splitter {
-    display: block;
-    height: 1px;
-    background: #a0a0a0; } }
+  .drop__link--materials:hover > .splitter {
+    height: 1px; } }
 
 @media only screen and (max-width: 480px) {
   .nav-main {

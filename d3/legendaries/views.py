@@ -31,29 +31,29 @@ class AccessoryMixin(object):
 		self.group_header = 'Accessories'
 
 
-class AllLegendariesView(ItemsTemplateMixin, ListView):
+# class AllLegendariesView(ItemsTemplateMixin, ListView):
 
-	#Return all legendaries
-	def get_queryset(self):
-		weapons = get_model('legendaries', 'Weapon')
-		armor = get_model('legendaries', 'Armor')
-		accessories = get_model('legendaries', 'Accessory')
-		self.items = []
-		for weapon in weapons.objects.all():
-			self.items.append(weapon)
-		for armor in armor.objects.all():
-			self.items.append(armor)
-		for accessory in accessories.objects.all():
-			self.items.append(accessory)
-		return self.items
+# 	#Return all legendaries
+# 	def get_queryset(self):
+# 		weapons = get_model('legendaries', 'Weapon')
+# 		armor = get_model('legendaries', 'Armor')
+# 		accessories = get_model('legendaries', 'Accessory')
+# 		self.items = []
+# 		for weapon in weapons.objects.all():
+# 			self.items.append(weapon)
+# 		for armor in armor.objects.all():
+# 			self.items.append(armor)
+# 		for accessory in accessories.objects.all():
+# 			self.items.append(accessory)
+# 		return self.items
 
-	#Return queryset and header + title for template
-	def get_context_data(self, **kwargs):
-		context = super(AllLegendariesView, self).get_context_data(**kwargs)
-		context['items'] = self.items
-		context['header'] = 'Legendary Items'
-		context['title'] = 'Legendary Items'
-		return context
+# 	#Return queryset and header + title for template
+# 	def get_context_data(self, **kwargs):
+# 		context = super(AllLegendariesView, self).get_context_data(**kwargs)
+# 		context['items'] = self.items
+# 		context['header'] = 'Legendary Items'
+# 		context['title'] = 'Legendary Items'
+# 		return context
 
 
 class GroupView(ItemsTemplateMixin, ListView):

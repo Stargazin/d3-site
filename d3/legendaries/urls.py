@@ -1,6 +1,6 @@
 from django.conf.urls import url
 
-from .views import SingleLegendaryView, GroupWeaponView, SlotWeaponView, CategoryWeaponView, GroupArmorView, SlotArmorView, CategoryArmorView, GroupAccessoryView, SlotAccessoryView, AllLegendariesView
+from .views import SingleLegendaryView, GroupWeaponView, SlotWeaponView, CategoryWeaponView, GroupArmorView, SlotArmorView, CategoryArmorView, GroupAccessoryView, SlotAccessoryView
 
 
 urlpatterns = [
@@ -21,6 +21,6 @@ urlpatterns = [
 	url(r'^accessories/$', GroupAccessoryView.as_view(), name='group-accessories'),
 	url(r'^accessories/(?P<slot_slug>[\w\-]+)/$', SlotAccessoryView.as_view(), name='slot-accessories'),
 
-	#All legendaries
-	url(r'^all/$', AllLegendariesView.as_view(), name='all-legendaries'),
+	# #All legendaries
+	# url(r'^all/$', AllLegendariesView.as_view(), name='all-legendaries'),
 ]
