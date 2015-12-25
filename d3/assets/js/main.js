@@ -1,6 +1,6 @@
 var nav = (function() {
   //*cache DOM
-  var $allButNav = $navMain.nextAll('*');
+  var $allButNav = $('.nav-main');
   var $link = $('.link--legendaries, .link--materials, .link--misc');
   var $drop = $('.drop');
   var $linkDrop = $('.link > .drop');
