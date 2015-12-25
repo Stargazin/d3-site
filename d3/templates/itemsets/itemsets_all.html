@@ -54,7 +54,12 @@ Sets
     <div class="set__piece-container">
 
       {% for piece in itemset.pieces.all %}
-      <div class="set__piece"><a href="{% url 'single-set' itemset.owner_slug itemset.name_slug %}">{{ piece }}</a></div>
+      <div class="set__piece">
+        <span class="set__piece__name">{{ piece }}</span>
+        <div class="set__piece__pic">
+          <span style="background: url({% static piece.pic %})"></span>
+        </div> <!-- .set__piece__pic -->
+      </div> <!-- .set__piece -->
       {% endfor %}
 
     </div> <!-- .set__piece-container -->

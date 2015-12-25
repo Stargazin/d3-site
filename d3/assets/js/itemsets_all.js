@@ -61,3 +61,43 @@ var toggleItemsets = (function() {
   }
 
 })();
+
+
+var setPiecePictures = (function() {
+  //*cache DOM
+  var $setPieceName = $('.set__piece__name');
+  var $setPiecePic = $('.set__piece__pic');
+
+  //Global var for _showPiecePic()
+  var $showing = 0;
+
+  //*bind events
+  //Toggles piece picture when clicking piece name
+  $setPieceName.on('click', _showPiecePic);
+  //Closes piece picture when clicking the picture
+  $setPiecePic.on('click', _hidePiecePic);
+
+
+  function _showPiecePic() {
+    if ( $(this).attr('class').split(' ')[1] !== 'pic-showing' ) {
+      if ( $showing ) {
+        $showing.siblings('.set__piece__pic').hide(50);
+        $showing.removeClass('pic-showing');
+      };
+      $(this).siblings('.set__piece__pic').show(50);
+      $(this).addClass('pic-showing');
+      $showing = $(this);
+    }
+    else {
+      $(this).siblings('.set__piece__pic').hide(50);
+      $(this).removeClass('pic-showing');
+      $showing = 0;
+    };
+  }
+
+  function _hidePiecePic() {
+    $(this).hide(50);
+    $showing.removeClass('pic-showing');
+  }
+
+})();

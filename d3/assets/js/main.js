@@ -24,38 +24,15 @@ var nav = (function() {
   }
 
   function _showMenu() {
-    $(this).children('.drop').css('display', 'block');
+    $(this).children('.drop').show(50);
   }
 
   function _hideMenu() {
-    $(this).children('.drop').css('display', 'none');
+    $(this).children('.drop').hide(50);
   }
 
   function _hideNav() {
     $drop.hide();
-  }
-
-})();
-
-
-var affixExtra = (function() {
-  //*cache DOM
-  var $vary = $('.vary');
-  var $extraX = $('.extra-x');
-
-  //*bind events
-  //Toggles .extra when clicking .vary
-  $vary.on('click', _showExtra);
-  //Closes .extra when clicking the 'x'
-  $extraX.on('click', _hideExtra);
-
-
-  function _showExtra() {
-    $(this).parent().siblings('.extra').toggle(150);
-  }
-
-  function _hideExtra() {
-    $(this).parent().hide();
   }
 
 })();

@@ -71,3 +71,26 @@ var toggleLegendaries = (function() {
   }
 
 })();
+
+
+var affixExtra = (function() {
+  //*cache DOM
+  var $vary = $('.vary');
+  var $extraX = $('.extra-x');
+
+  //*bind events
+  //Toggles .extra when clicking .vary
+  $vary.on('click', _showExtra);
+  //Closes .extra when clicking the 'x'
+  $extraX.on('click', _hideExtra);
+
+
+  function _showExtra() {
+    $(this).parent().siblings('.extra').toggle(100);
+  }
+
+  function _hideExtra() {
+    $(this).parent().hide(100);
+  }
+
+})();
