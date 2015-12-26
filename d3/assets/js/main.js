@@ -1,8 +1,8 @@
 var nav = (function() {
   //*cache DOM
   var $allButNav = $('.nav-main');
-  var $link = $('.link--legendaries, .link--materials, .link--misc');
   var $drop = $('.drop');
+  var $link = $drop.parent();
   var $linkDrop = $('.link > .drop');
 
   //*bind events
