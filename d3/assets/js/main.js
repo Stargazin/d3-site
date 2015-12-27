@@ -1,6 +1,6 @@
 var nav = (function() {
   //*cache DOM
-  var $allButNav = $('.nav-main');
+  var $allButNav = $navMain.nextAll('*');
   var $drop = $('.drop');
   var $link = $drop.parent();
   var $linkDrop = $('.link > .drop');
