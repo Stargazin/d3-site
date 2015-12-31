@@ -66,7 +66,7 @@ def load_bow_affixes(apps, schema_editor):
 	eliteDmg = Affix(category='Bows',
 		affix='eliteDmg',
 		is_primary=True,
-		desc='Increase damage against elites by <span>9.0 - 10.0%</span>')
+		desc='Increase damage against Elites by <span>9.0 - 10.0%</span>')
 	eliteDmg.save()
 
 	durability = Affix(category='Bows',

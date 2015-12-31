@@ -54,7 +54,7 @@ def load_ceremonial_knife_affixes(apps, schema_editor):
 	manaRegen = Affix(category='Ceremonial Knives',
 		affix='manaRegen',
 		is_primary=True,
-		desc='<span>+12.00 - 14.00</span> Mana Regeneratioin per Second')
+		desc='<span>+12.00 - 14.00</span> Mana Regeneration per Second')
 	manaRegen.save()
 
 
@@ -393,7 +393,7 @@ def load_1h_mace_affixes(apps,schema_editor):
 	sunEliteDmg = Affix(category='1H Maces',
 		affix='sunEliteDmg',
 		is_primary=True,
-		desc='Increase damage against elites by <span>15 - 30%</span>')
+		desc='Increase damage against Elites by <span>15 - 30%</span>')
 	sunEliteDmg.save()
 
 	sunExtraGold = Affix(category='1H Maces',
@@ -452,7 +452,7 @@ def load_1h_spear_affixes(apps, schema_editor):
 	eliteDmg = Affix(category='1H Spears',
 		affix='eliteDmg',
 		is_primary=True,
-		desc='Increase damage against elites by <span>5.0 - 8.0%</span>')
+		desc='Increase damage against Elites by <span>5.0 - 8.0%</span>')
 	eliteDmg.save()
 
 #Akanesh, the Herald of Righteousness

@@ -27,81 +27,40 @@ TODODODO
 0 for 1/row; 1 for 2/row; 2 for 3/row
 --use n;2n;3n or something, idk look it up!~
 NICE! #}
-
-check sizes of 2.4 items...
-
-extra affixes
-
+{# 
+check sizes of 2.4 items... #}
+{# 
+extra affixes #}
+{# 
 add owner filters to items_legendaries
 
-make headers
+make headers #}
 
-make css files for mats/potions/gems
+{# make css files for mats/potions/gems
 -- change colors of text...
 -- .silver for affixes in gems
 ---- rename affixes!
--- .colors for materials
+-- .colors for materials #}
 
+{# //test out scoping + overriding variables in nested functions. #}
 
+{# add "updated for 2.4" #}
 
-//test out scoping + overriding variables in nested functions.
+{# add a class='vary' for generators and etc.. #}
 
-
-
-
-add "updated for 2.4"
-
-lazyload when loading huge models like armor/weap/etc
-
-add a class='vary' for generators and etc..
-
-remove conditionals from templates (see two scoops)
---did as much as i can so far i think
-----think about how many times you have to query
-------and re-query
------try to assign to variables if you do same query a lot
-------mostly applies to views/
-
-
-
-
-
-
-
---jk check mirror Add owners to all items... make it like this: dh wiz barb
+{# --jk check mirror Add owners to all items... make it like this: dh wiz barb
 --add an owner if class can use it
 --later do check boxes and if class is checked, make .leg display: none and
   give class (ex. dh) display: block !important
-----test this first though!
+----test this first though! #}
 
-change lps from life regeneration per second to life regen
+{# change lps from life regeneration per second to life regen #}
 
-** may have to do each type in seperate model/admin
+{# ** may have to do each type in seperate model/admin
 --can still do them in same migration file if needed?
 ---probably not a big deal to just seperate them == just more files
 follower relics
 --do seperate models/admin if affixes are diff
 
 offhands
---see above follower relics
-
-
-===============================================
-
-filters for legendaries:
---crafting
---cache
-
-blood shards:
-drop rates in rift
-
-nav bar:
-use js to keep nav bar open for a few seconds after hovering away (see wowhead)
-add small arrows to indivcate expandable.
-
-pick a class:
-have portrait to select class and prefilter
-
-use js to make lightbox snap back to item location after exiting
-check this out for snapping lightboxes back
-https://forums.adobe.com/thread/1545164
+--see above follower relics #}

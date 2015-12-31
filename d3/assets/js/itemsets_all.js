@@ -1,3 +1,9 @@
+$(document).ready(function() {
+  //Initially highlight first set piece for every set
+  //Can be changed later (see setPiecePics)
+  $('.set__piece-container div:first-child a').addClass('pic-showing');
+});
+
 var toggleItemsets = (function() {
 
   //*cache DOM
@@ -62,42 +68,53 @@ var toggleItemsets = (function() {
 
 })();
 
-//**Keep out until you can ajax in
-// var setPiecePictures = (function() {
-//   //*cache DOM
-//   var $setPieceName = $('.set__piece__name');
-//   var $setPiecePic = $('.set__piece__pic');
 
-//   //Global var for _showPiecePic()
-//   var $showing = 0;
+var setPiecePics = (function() {
+  //*cache DOM
+  var $setPiece = $('.set__piece__name');
 
-//   //*bind events
-//   //Toggles piece picture when clicking piece name
-//   $setPieceName.on('click', _showPiecePic);
-//   //Closes piece picture when clicking the picture
-//   $setPiecePic.on('click', _hidePiecePic);
+  //Global var for _switchPiecePic()
+  var $showing = 0;
+
+  //*bind events
+  //Changes picture to selected set piece
+  $setPiece.on('click', _switchPiecePic);
 
 
-//   function _showPiecePic() {
-//     if ( $(this).attr('class').split(' ')[1] !== 'pic-showing' ) {
-//       if ( $showing ) {
-//         $showing.siblings('.set__piece__pic').hide(50);
-//         $showing.removeClass('pic-showing');
-//       };
-//       $(this).siblings('.set__piece__pic').show(50);
-//       $(this).addClass('pic-showing');
-//       $showing = $(this);
-//     }
-//     else {
-//       $(this).siblings('.set__piece__pic').hide(50);
-//       $(this).removeClass('pic-showing');
-//       $showing = 0;
-//     };
-//   }
+  function _switchPiecePic(e) {
+    e.preventDefault();
+    var piece = $(this).parent().attr('id').replace(/-/g, '_');
+    var ownerSet = $(this).parent().parent().parent();
+    var owner = ownerSet.attr('class').split(' ')[1];
+    switch (true) {
+      case owner == 'barbarian':
+        owner = 'barb';
+        break;
+      case owner == 'crusader':
+        owner = 'sader';
+        break;
+      case owner == 'demon-hunter':
+        owner = 'dh';
+        break;
+      case owner == 'monk':
+        owner = 'monk';
+        break;
+      case owner == 'witch-doctor':
+        owner = 'wd';
+        break;
+      case owner == 'wizard':
+        owner = 'wiz';
+        break;
+      default:
+        owner = 'universal';
+    }
+    //Changes pictures
+    $(this).parent().parent().siblings('.set__pic-container').children().attr('style', `background: url(/assets/media/items/sets/${owner}/${piece}.png`);
+    //Changes which set piece name is highlighted
+    if ( $(this).attr('class').split(' ')[1] !== 'pic-showing' ) {
+      $(this).parent().siblings().children().removeClass('pic-showing');
+      $(this).addClass('pic-showing');
+    };
+  }
 
-//   function _hidePiecePic() {
-//     $(this).hide(50);
-//     $showing.removeClass('pic-showing');
-//   }
-
-// })();
+})();

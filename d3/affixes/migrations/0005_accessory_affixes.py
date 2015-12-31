@@ -288,7 +288,7 @@ def load_amulet_affixes(apps, schema_editor):
 	eyeReducedRangedDmg = Affix(slot='Amulets',
 		affix='eyeReducedRangedDmg',
 		is_primary=False,
-		desc='Reduces damage from ranged attacks by <span>27.7 - 32.9%</span>.')
+		desc='Reduces damage from Ranged Attacks by <span>27.7 - 32.9%</span>.')
 	eyeReducedRangedDmg.save()
 
 #Holy Beacon
@@ -632,7 +632,7 @@ def load_ring_affixes(apps, schema_editor):
 	stoneEliteDmg = Affix(slot='Rings',
 		affix='stoneEliteDmg',
 		is_primary=True,
-		desc='Increase damage against elites by <span>25.0 - 30.0%</span>')
+		desc='Increase damage against Elites by <span>25.0 - 30.0%</span>')
 	stoneEliteDmg.save()
 
 	stoneMaxResource = Affix(slot='Rings',
@@ -645,7 +645,7 @@ def load_ring_affixes(apps, schema_editor):
 	unityEliteDmg = Affix(slot='Rings',
 		affix='unityEliteDmg',
 		is_primary=True,
-		desc='Increase damage against elites by <span>12.0 - 15.0%</span>')
+		desc='Increase damage against Elites by <span>12.0 - 15.0%</span>')
 	unityEliteDmg.save()
 
 

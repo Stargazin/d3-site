@@ -21,3 +21,4 @@ class Affix(models.Model):
 
 	class Meta:
 		verbose_name_plural = 'Affixes'
+		ordering = ['pk']

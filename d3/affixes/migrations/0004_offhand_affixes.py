@@ -695,7 +695,7 @@ def load_mojo_affixes(apps, schema_editor):
 	manaRegen = Affix(category='Mojos',
 		affix='manaRegen',
 		is_primary=True,
-		desc='<span>+12.00 - 14.00</span> Mana Regeneratioin per Second')
+		desc='<span>+12.00 - 14.00</span> Mana Regeneration per Second')
 	manaRegen.save()
 
 	sockets = Affix(category='Mojos',

@@ -169,7 +169,7 @@ def load_potions(apps, schema_editor):
 
 	KulleAid = Potion(name='Bottomless Potion of Kulle-Aid',
 	 	pic='media/items/potions/potion_of_kulleaid.png',
-	 	unique='Drinking Kulle-Aid allows you to break walls summoned by Waller elites for <span class="silver">5</span> seconds')
+	 	unique='Drinking Kulle-Aid allows you to break walls summoned by Waller Elites for <span class="silver">5</span> seconds')
 	KulleAid.save()
 
 	Mutilation = Potion(name='Bottomless Potion of Mutilation',
@@ -184,7 +184,7 @@ def load_potions(apps, schema_editor):
 
 	Rejuvenation = Potion(name='Bottomless Potion of Rejuvenation',
 	 	pic='media/items/potions/potion_of_rejuvenation.png',
-	 	unique='Restores <span>20 - 30%</span> resource when used below <span class="silver">50%</span> health')
+	 	unique='Restores <span>20 - 30%</span> Resource when used below <span class="silver">50%</span> health')
 	Rejuvenation.save()
 
 	Diamond = Potion(name='Bottomless Potion of the Diamond',
@@ -213,32 +213,32 @@ def load_gems(apps, schema_editor):
 
 	baneOfThePowerful = Gem(name='Bane of the Powerful',
 	 	pic='media/items/gems/bane_of_the_powerful.png',
-	 	unique='Gain <span class="silver">20%</span> increased damage for <span>30.0 (+1.0)</span> seconds after killing an elite pack',
-	 	rank_unique='Rank <span class="silver">25</span>: Increases damage against elites by <span class="silver">15.0%</span')
+	 	unique='Gain <span class="silver">20%</span> increased damage for <span>30.0 (+1.0)</span> seconds after killing an Elite pack',
+	 	rank_unique='Rank <span class="silver">25</span>: Increases damage against Elites by <span class="silver">15.0%</span')
 	baneOfThePowerful.save()
 
 	baneOfTheStricken = Gem(name='Bane of the Stricken',
 	 	pic='media/items/gems/bane_of_the_stricken.png',
 	 	unique='Each attack you make against an enemy increases the damage it takes from your attacks by <span>0.80% (+0.01%)</span>',
-	 	rank_unique='Rank <span class="silver">25</span>: Gain <span class="silver">25%</span> increased damage against bosses and Rift Guardians')
+	 	rank_unique='Rank <span class="silver">25</span>: Gain <span class="silver">25%</span> increased damage against Bosses and Rift Guardians')
 	baneOfTheStricken.save()
 
 	baneOfTheTrapped = Gem(name='Bane of the Trapped',
 	 	pic='media/items/gems/bane_of_the_trapped.png',
 	 	unique='Increase damage against enemies under the effects of control-impairing effects by <span>15.00% (0.3%)</span>',
-	 	rank_unique='Rank <span class="silver">25</span>: Gain an aura that reduces the movement speed of enemies within <span class="silver">15</span> yards by <span class="silver">30%</span>')
+	 	rank_unique='Rank <span class="silver">25</span>: Gain an aura that reduces the Movement Speed of enemies within <span class="silver">15</span> yards by <span class="silver">30%</span>')
 	baneOfTheTrapped.save()
 
 	boonOfTheHoarder = Gem(name='Boon of the Hoarder',
 	 	pic='media/items/gems/boon_of_the_hoarder.png',
-	 	unique='<span>25.0% (+1.5%)</span> chance on killing an enemy to cause an explosion of gold',
-	 	rank_unique='Rank <span class="silver">25</span>: Gain <span class="silver">30%</span> increased movement speed for <span class="silver">2</span> seconds after picking up gold')
+	 	unique='<span>25.0% (+1.5%)</span> chance on killing an enemy to cause an explosion of Gold',
+	 	rank_unique='Rank <span class="silver">25</span>: Gain <span class="silver">30%</span> increased Movement Speed for <span class="silver">2</span> seconds after picking up Gold')
 	boonOfTheHoarder.save()
 
 	enforcer = Gem(name='Enforcer',
 	 	pic='media/items/gems/enforcer.png',
-	 	unique='Increase the damage of your pets by <span>15.00% (+0.3%)</span>',
-	 	rank_unique='Rank <span class="silver">25</span>: Your pets take <span class="silver">25%</span> less damage')
+	 	unique='Increase the damage of your Pets by <span>15.00% (+0.3%)</span>',
+	 	rank_unique='Rank <span class="silver">25</span>: Your Pets take <span class="silver">25%</span> less damage')
 	enforcer.save()
 
 	esotericAlteration = Gem(name='Esoteric Alteration',
@@ -249,8 +249,8 @@ def load_gems(apps, schema_editor):
 
 	gemOfEase = Gem(name='Gem of Ease',
 	 	pic='media/items/gems/gem_of_ease.png',
-	 	unique='Monster kills grant <span>+500 (+50)</span> experience',
-	 	rank_unique='Rank <span class="silver">25</span>: Level requirement of the item this gem is socketed into is set to <span class="silver">1</span>')
+	 	unique='Monster kills grant <span>+500 (+50)</span> Experience',
+	 	rank_unique='Rank <span class="silver">25</span>: Level Requirement of the item this gem is socketed into is set to <span class="silver">1</span>')
 	gemOfEase.save()
 
 	gemOfEfficaciousToxin = Gem(name='Gem of Efficacious Toxin',
@@ -274,19 +274,19 @@ def load_gems(apps, schema_editor):
 	invigoratingGemstone = Gem(name='Invigorating Gemstone',
 	 	pic='media/items/gems/invigorating_gemstone.png',
 	 	unique='While under any control-impairing effects, reduce all damage taken by <span>30.0% (+0.4%)</span>',
-	 	rank_unique='Rank <span class="silver">25</span>: Heal for <span class="silver">20%</span> of maximum life when hit by a control-impairing effect')
+	 	rank_unique='Rank <span class="silver">25</span>: Heal for <span class="silver">20%</span> of max Life when hit by a control-impairing effect')
 	invigoratingGemstone.save()
 
 	mirinaeTeardropOfTheStarweaver = Gem(name='Mirinae, Teardrop of the Starweaver',
 	 	pic='media/items/gems/mirinae_teardrop_of_the_starweaver.png',
-	 	unique='<span class="silver">15%</span> chance on hit to smite a nearby enemy for <span>2000% (+40%)</span> weapon damage as Holy',
+	 	unique='<span class="silver">15%</span> chance on hit to Smite a nearby enemy for <span>2000% (+40%)</span> weapon damage as Holy',
 	 	rank_unique='Rank <span class="silver">25</span>: Smite a nearby enemy every <span class="silver">5</span> seconds')
 	mirinaeTeardropOfTheStarweaver.save()
 
 	moltenWildebeestsGizzard = Gem(name='Molten Wildebeest\'s Gizzard',
 	 	pic='media/items/gems/molten_wildebeests_gizzard.png',
 	 	unique='Regenerates <span>10,000 (+1,000)</span> Life per Second',
-	 	rank_unique='Rank <span class="silver">25</span>: After not taking damage for <span class="silver">4</span> seconds, gain an absorb shield for <span class="silver">200%</span> of your total Life per Second')
+	 	rank_unique='Rank <span class="silver">25</span>: After not taking damage for <span class="silver">4</span> seconds, gain an Absorb Shield for <span class="silver">200%</span> of your total Life per Second')
 	moltenWildebeestsGizzard.save()
 
 #2.4
@@ -305,26 +305,26 @@ def load_gems(apps, schema_editor):
 
 	painEnhancer = Gem(name='Pain Enhancer',
 	 	pic='media/items/gems/pain_enhancer.png',
-	 	unique='Critical hits cause the enemy to bleed for <span>1200% (+30%)</span> weapon damage as Physical over <span class="silver">3</span> seconds',
+	 	unique='Critical Hits cause the enemy to Bleed for <span>1200% (+30%)</span> weapon damage as Physical over <span class="silver">3</span> seconds',
 	 	rank_unique='Rank <span class="silver">25</span>: Gain Blood Frenzy, granting you <span class="silver">3%</span> increased Attack Speed for each bleeding enemy within <span class="silver">20</span> yards')
 	painEnhancer.save()
 
 	simplicitysStrength = Gem(name='Simplicity\'s Strength',
 	 	pic='media/items/gems/simplicitys_strength.png',
-	 	unique='Increase the damage of primary skills by <span>25.0% (+0.5%)<span>',
-	 	rank_unique='Rank <span class="silver">25</span>: Primary skills heal you for <span class="silver">2%</span> of maximum Life on hit')
+	 	unique='Increase the damage of Primary Skills by <span>25.0% (+0.5%)<span>',
+	 	rank_unique='Rank <span class="silver">25</span>: Primary Skills heal you for <span class="silver">2%</span> of max Life on hit')
 	simplicitysStrength.save()
 
 	taeguk = Gem(name='Taeguk',
 	 	pic='media/items/gems/taeguk.png',
-	 	unique='Gain <span class="silver">0.5%</span> increased damage for <span class="silver">3</span> seconds after spending primary resource. This effect stacks up to <span>20 (+1)</span> times',
+	 	unique='Gain <span class="silver">0.5%</span> increased damage for <span class="silver">3</span> seconds after spending Primary Resource. This effect stacks up to <span>20 (+1)</span> times',
 	 	rank_unique='Rank <span class="silver">25</span>: Gain <span class="silver">0.5%</span> increased Armor for every stack')
 	taeguk.save()
 
 	wreathOfLightning = Gem(name='Wreath of Lightning',
 	 	pic='media/items/gems/wreath_of_lightning.png',
 	 	unique='<span class="silver">15%</span> chance on hit to gain a Wreath of Lightning, dealing <span>600% (+10%)</span> weapon damage as Lightning every second to nearby enemies for <span class="silver">3</span> seconds',
-	 	rank_unique='Rank <span class="silver">25</span>: While under the effect of the Wreath of Lightning, gain <span class="silver">25%</span> increased movement speed')
+	 	rank_unique='Rank <span class="silver">25</span>: While under the effect of the Wreath of Lightning, gain <span class="silver">25%</span> increased Movement Speed')
 	wreathOfLightning.save()
 
 	zeisStoneOfVengeance = Gem(name='Zei\'s Stone of Vengeance',
