@@ -47,9 +47,9 @@ Sets
       <span><a href="{% url 'single-set' itemset.owner_slug itemset.name_slug %}">{{ itemset.name }}</a></span>
     </div> <!-- .set__name -->
 
-    <div class="set__pic-container">
-      <a href="{% url 'single-set' itemset.owner_slug itemset.name_slug %}" class="set__pic" style="background: url({%static itemset.set_piece %})"></a>
-    </div> <!-- .set__pic-container -->
+    <a class="set__pic-container" href="{% url 'single-set' itemset.owner_slug itemset.name_slug %}">
+      <span class="set__pic" style="background: url({%static itemset.set_piece %})"></span>
+    </a> <!-- a.set__pic-container -->
 
     <div class="set__piece-container">
 
@@ -87,5 +87,5 @@ Sets
 
 
 {% block js %}
-<script src="{% static 'js/itemsets_all.js' %}"></script>
+<script src="{% static 'js/itemsets_all.min.js' %}"></script>
 {% endblock js %}

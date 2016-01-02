@@ -92,8 +92,7 @@
 
   .set__info__effect__desc {
     display: block;
-    padding-left: 2rem;
-    text-indent: -1em;
+    padding-left: 0.7rem;
 
     li {
       color: rgb(181, 181, 181);
@@ -128,7 +127,7 @@
     margin-top: 1.2rem;
     border: 2px solid rgb(175, 180, 185);
     padding: 1.5rem 1rem;
-    background-color: rgba(34, 49, 63, 0.6);
+    background-color: $ebony-clay;
 
     @media #{$break-l} {
       width: 47.5%;

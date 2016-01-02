@@ -1,3 +1,59 @@
+/* START main.js */
+var nav = (function() {
+  //*cache DOM
+  var $navMain = $('.nav-main');
+  var $allButNav = $navMain.nextAll('*');
+  var $drop = $('.drop');
+  var $link = $drop.parent();
+  var $linkDrop = $('.link > .drop');
+
+  //*bind events
+  //Hover nav links to show drop menus
+  $link.hover(_showMenu, _hideMenu);
+  //Hide opened nav bar on touch devices
+  $allButNav.on('click', _hideNav);
+
+
+  function _showMenu() {
+    $(this).children('.drop').css('display', 'block');
+  }
+
+  function _hideMenu() {
+    $(this).children('.drop').css('display', 'none');
+  }
+
+  function _hideNav() {
+    $drop.hide();
+  }
+
+})();
+
+
+var scrollToTop = (function() {
+
+  //*cache DOM
+  var $window = $(window);
+  var $bodyHTML = $('body, html');
+  var $scrollBtn = $('#scroll-btn');
+
+  //*bind events
+  $window.scroll(_showToTopButton);
+  $scrollBtn.on('click', _scrollToTop);
+
+
+  function _showToTopButton() {
+    ( $(this).scrollTop() > 550 ) ? $scrollBtn.addClass('scroll-btn--show') :
+      $scrollBtn.removeClass('scroll-btn--show');
+  }
+
+  function _scrollToTop() {
+    $bodyHTML.animate({scrollTop: 0}, 500);
+  }
+
+})();
+/* END main.js */
+
+
 var toggleLegendaries = (function() {
 
   //*cache DOM
@@ -6,6 +62,7 @@ var toggleLegendaries = (function() {
   var patch24 = '24'
   var $itemContainer = $('.item-container');
   var $item = $('.item');
+  var $noItemMsg = $('.nothing-found');
   var $filler = $('.filler');
   var $reverseItem = $($item.get().reverse())
 
@@ -44,9 +101,12 @@ var toggleLegendaries = (function() {
         };
       });
     };
+
     //Changes border color when toggle button is selected
     $(this).siblings().removeClass('toggle--selected');
     $(this).addClass('toggle--selected');
+
+    _visibleItemCheck()
   }
 
   function _togglePatchItems() {
@@ -62,6 +122,19 @@ var toggleLegendaries = (function() {
 
     //Changes border color when patch button is selected
     $(this).toggleClass('patch--selected');
+
+    _visibleItemCheck()
+  }
+
+  //Checks if there are no items to be shown
+  function _visibleItemCheck() {
+    var visibleItem = 0;
+    $item.each(function() {
+      if ($(this).is(':visible')) {
+        visibleItem++;
+      };
+    });
+    visibleItem ? $noItemMsg.hide() : $noItemMsg.show()
   }
 
   //load first 20 items first

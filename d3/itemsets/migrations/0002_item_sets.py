@@ -528,7 +528,7 @@ def load_item_sets(apps, schema_editor):
 #2.4
 	legacyOfNightmares2 = Effect(pieces='2',
 		# effect='<li><p><span class="silver">+15%</span> Extra Gold from Monsters</p></li><li><p><span class="silver">+15%</span> Better Chance of Finding Magical Items</p></li><li><p>This ring sometimes summons a Skeleton when you attack</p></li>',
-		effect='<li><p>While this is your only item Set Bonus your damage dealt is increased by <span class="silver">100%</span> and damage taken is reduced by <span class="silver">4%</span> for every Ancient Item you have equipped',
+		effect='<li><p>While this is your only item Set Bonus your damage dealt is increased by <span class="silver">100%</span> and damage taken is reduced by <span class="silver">4%</span> for every Ancient Item you have equipped</p></li>',
 		itemSet=legacyOfNightmares)
 	legacyOfNightmares2.save()
 

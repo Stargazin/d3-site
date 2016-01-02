@@ -53,7 +53,6 @@
 {% block item_unique %}
 
 {% if item.unique %}
-
 <div class="item__info__affix">
   <li class="unique"><p>{{ item.unique|safe }}</p></li>
 </div> <!-- .item__info__affix -->
@@ -93,6 +92,11 @@
 {% endblock item_affixes %}
 
 
+{% block legendaries_toggle %}
+<div class="nothing-found"><p>No items to show!</p></div>
+{% endblock legendaries_toggle %}
+
+
 {% block js %}
-<script src="{% static 'js/items_legendaries.js' %}"></script>
+<script src="{% static 'js/items_legendaries.min.js' %}"></script>
 {% endblock js %}

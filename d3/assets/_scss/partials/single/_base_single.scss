@@ -9,7 +9,7 @@
   margin: 10rem auto;
   border: 2px solid rgb(240, 240, 240);
   padding-bottom: 2rem;
-  background-color: rgba($ebony-clay, 0.75);
+  background-color: $ebony-clay;
   font-size: 1.5em;
 
   @media #{$break-m} {
@@ -113,8 +113,7 @@
   }
 
   li {
-    padding-left: 1.7rem;
-    text-indent: -1em;
+    padding-left: 0.3rem;
     list-style: circle;
     color: rgb(181, 181, 181)
   }

@@ -301,8 +301,7 @@ button:hover {
     color: #78d911; }
   .set__info__effect .set__info__effect__desc {
     display: block;
-    padding-left: 2rem;
-    text-indent: -1em; }
+    padding-left: 0.7rem; }
     .set__info__effect .set__info__effect__desc li {
       color: #b5b5b5; }
     .set__info__effect .set__info__effect__desc li:nth-child(n+2) {
@@ -339,7 +338,7 @@ button:hover {
     margin-top: 1.2rem;
     border: 2px solid #afb4b9;
     padding: 1.5rem 1rem;
-    background-color: rgba(34, 49, 63, 0.6); }
+    background-color: #22313f; }
     @media only screen and (max-width: 992px) {
       .set__piece-container .set__piece {
         width: 47.5%; } }

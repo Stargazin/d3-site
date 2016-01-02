@@ -27,9 +27,6 @@ MEDIA_ROOT = BASE_DIR.child("media")
 STATICFILES_DIRS = (
     BASE_DIR.child("assets"),
 )
-#static_url is for URL conf
-# STATIC_URL = '/assets/'
-# MEDIA_URL = '/media/'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

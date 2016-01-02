@@ -409,8 +409,8 @@ header {
   width: 32.7%;
   margin-bottom: 0.6rem;
   border: 2px solid #afb4b9;
-  padding: 1.2rem 1.5rem 1.4rem 1.5rem;
-  background-color: rgba(34, 49, 63, 0.8); }
+  padding: 0.8rem 1.5rem 1.4rem 1.5rem;
+  background-color: #22313f; }
   @media only screen and (max-width: 1200px) {
     .set, .filler {
       width: 49.2%; } }
@@ -442,7 +442,7 @@ header {
 .set__pic-container {
   float: left;
   display: inline-block;
-  min-width: 70px;
+  min-width: 68px;
   height: 132px;
   margin-left: 1rem;
   border: 2px solid #57ac10;
@@ -455,13 +455,8 @@ header {
 
 .set__pic {
   display: inline-block;
-  top: 50%;
-  left: 50%;
   width: 64px;
-  height: 128px;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
+  height: 128px; }
 
 .set__piece-container {
   display: inline-block;
@@ -519,8 +514,7 @@ header {
       color: #6ac60f; }
   .set__effect-container .set__effect__desc {
     display: block;
-    padding: 0 0.5rem 0 2rem;
-    text-indent: -1em;
+    padding: 0 0.5rem 0 0.6rem;
     list-style: circle; }
     .set__effect-container .set__effect__desc li {
       color: #b5b5b5; }

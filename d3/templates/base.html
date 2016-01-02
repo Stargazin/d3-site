@@ -10,7 +10,8 @@
   {% block css %}{% endblock css %}
 </head>
 
-<body style="background: url({% static 'media/wallpaper.jpg' %});">
+<body style="background: url({% static 'media/dark_brick_wall.png' %});">
+<!-- Background from subtlepatterns.com -->
 <nav class="nav-main">
 <ul class="link-container">
 
@@ -161,8 +162,7 @@
 {% block content %}{% endblock content %}
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="{% static 'js/main.js' %}"></script>
-{% block js %}{% endblock js %}
+{% block js %}<script src="{% static 'js/main.min.js' %}"></script>{% endblock js %}
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

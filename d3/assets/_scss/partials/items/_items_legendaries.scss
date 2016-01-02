@@ -81,3 +81,24 @@
     color: rgb(200, 157, 255);
   }
 }
+
+//Show with jQuery if no items found with filter
+.nothing-found {
+  display: none;
+
+  p {
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    text-align: center;
+    font-size: 7em;
+    color: white;
+
+    @media #{$break-m} {
+      font-size: 5.1em;
+    }
+
+    @media #{$break-s} {
+      font-size: 4.4em;
+    }
+  }
+}

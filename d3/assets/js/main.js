@@ -14,12 +14,10 @@ var nav = (function() {
 
 
   function _showMenu() {
-    //Use css instead of .show() so mobile doesn't require double tap for links
     $(this).children('.drop').css('display', 'block');
   }
 
   function _hideMenu() {
-    //Use css instead of .hide() so mobile doesn't require double tap for links
     $(this).children('.drop').css('display', 'none');
   }
 
@@ -34,7 +32,7 @@ var scrollToTop = (function() {
 
   //*cache DOM
   var $window = $(window);
-  var $body = $('body');
+  var $bodyHTML = $('body, html');
   var $scrollBtn = $('#scroll-btn');
 
   //*bind events
@@ -48,7 +46,7 @@ var scrollToTop = (function() {
   }
 
   function _scrollToTop() {
-    $body.animate({scrollTop: 0}, 500);
+    $bodyHTML.animate({scrollTop: 0}, 500);
   }
 
 })();
