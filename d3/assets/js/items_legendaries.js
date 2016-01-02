@@ -89,7 +89,7 @@ var toggleLegendaries = (function() {
         var itemOwner = $(this).attr('class').split(' ')[1];
         //Show item if useable by class
         if (itemOwner == owner || itemOwner == 'all') {
-          $(this).show(200);
+          $(this).show();
           //Move class-specific items to top
           if (itemOwner == owner) {
             $(this).prependTo($itemContainer);
