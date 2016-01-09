@@ -1,8 +1,6 @@
 /* modules/variables
  =========================================================================== 
  =========================================================================== */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC);
 /* partials/reset
 ============================================================================ 
 ============================================================================ */
@@ -392,11 +390,14 @@ header {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  max-width: 90%;
+  max-width: 138rem;
   margin: 2.5rem auto 10rem auto;
   padding: 0.7rem 0.3rem 0.1rem;
   font-size: 1.5em;
   font-family: "Roboto", sans-serif; }
+  @media only screen and (max-width: 1450px) {
+    .set-container {
+      max-width: 90%; } }
   @media only screen and (max-width: 768px) {
     .set-container {
       max-width: 75%; } }

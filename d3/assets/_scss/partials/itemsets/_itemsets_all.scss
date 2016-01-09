@@ -30,11 +30,15 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  max-width: 90%;
+  max-width: 138rem;
   margin: 2.5rem auto 10rem auto;
   padding: 0.7rem 0.3rem 0.1rem;
   font-size: 1.5em;
   font-family: $roboto;
+
+  @media #{$break-xxl} {
+    max-width: 90%;
+  }
 
   @media #{$break-m} {
     max-width: 75%;

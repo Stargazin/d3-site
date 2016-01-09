@@ -364,7 +364,7 @@ def load_item_sets(apps, schema_editor):
 #2.4
 	endlessWalk2 = Effect(pieces='2',
 		# effect='<li><p><span class="silver">+250</span> Vitality</p></li><li><p>Critical Hit Damage Increased by <span class="silver">50.0%</span></p></li>',
-		effect='<li><p>While moving, damage taken is reduced by up to <span class="silver">50%</span></p><li><li><p>While standing still, damage dealt is increased by up to <span class="silver">100%</span></p></li>',
+		effect='<li><p>While moving, damage taken is reduced by up to <span class="silver">50%</span></p></li><li><p>While standing still, damage dealt is increased by up to <span class="silver">100%</span></p></li>',
 		itemSet=endlessWalk)
 	endlessWalk2.save()
 
