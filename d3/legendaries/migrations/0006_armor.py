@@ -322,7 +322,7 @@ def load_voodoo_masks(apps, schema_editor):
 		affix='killExp')
 
 	carnevil = Armor(category='Voodoo Masks',
-		name='carnevil',
+		name='Carnevil',
 		pic='media/items/legendaries/armor/head/voodoomasks/carnevil.png',
 		unique='The <span class="silver">5</span> Fetishes closest to you will shoot a powerful Poison Dart every time you do',
 		random_primaries='2',
@@ -660,7 +660,7 @@ def load_chest_armor(apps, schema_editor):
 	aquilaCuirass.affixes.add(mainStat, vita)
 
 	armorOfTheKindRegent = Armor(category='Chest Armors',
-		name='Armor of the KindRegent',
+		name='Armor of the Kind Regent',
 		pic='media/items/legendaries/armor/torso/chestarmor/armor_of_the_kind_regent.png',
 		unique='Smite will now also be cast at a second nearby enemy',
 		random_primaries='3',
@@ -1519,7 +1519,7 @@ def load_belts(apps, schema_editor):
 	huntersWrath = Armor(category='Belts',
 		name='Hunter\'s Wrath',
 		pic='media/items/legendaries/armor/waist/belts/hunters_wrath.png',
-		unique='Your Primary Skills attack <span class="silver">30%</span> faster and deal <span>45 - 60%</span> increased damage',
+		unique='Your Primary skills attack <span class="silver">30%</span> faster and deal <span>45 - 60%</span> increased damage',
 		random_primaries='2',
 		random_secondaries='1',
 		owner='all',
@@ -1884,7 +1884,7 @@ def load_pants(apps, schema_editor):
 	hexingPantsOfMrYan = Armor(slot='Pants',
 		name='Hexing Pants of Mr. Yan',
 		pic='media/items/legendaries/armor/legs/hexing_pants_of_mr_yan.png',
-		unique='Your resource generation and damage is increased by <span class="silver">25%</span> while moving and decreased by <span>20 - 25%</span> while standing still',
+		unique='Your Resource generation and damage is increased by <span class="silver">25%</span> while moving and decreased by <span>20 - 25%</span> while standing still',
 		random_primaries='3',
 		random_secondaries='1',
 		owner='all',

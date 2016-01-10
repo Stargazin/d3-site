@@ -299,7 +299,7 @@ def load_gems(apps, schema_editor):
 #2.4
 	mutilationGuard = Gem(name='Mutilation Guard',
 	 	pic='media/items/gems/mutilation_guard.png',
-	 	unique='Gain <span>10.0% (+0.5%)</span> melee damage reduction',
+	 	unique='Gain <span>10.0% (+0.5%)</span> Melee damage reduction',
 	 	rank_unique='Rank <span class="silver">25</span>: While below <span class="silver">50%</span> Life, you may move unhindered through enemies')
 	mutilationGuard.save()
 
@@ -311,13 +311,13 @@ def load_gems(apps, schema_editor):
 
 	simplicitysStrength = Gem(name='Simplicity\'s Strength',
 	 	pic='media/items/gems/simplicitys_strength.png',
-	 	unique='Increase the damage of Primary Skills by <span>25.0% (+0.5%)<span>',
+	 	unique='Increase the damage of Primary skills by <span>25.0% (+0.5%)<span>',
 	 	rank_unique='Rank <span class="silver">25</span>: Primary Skills heal you for <span class="silver">2%</span> of max Life on hit')
 	simplicitysStrength.save()
 
 	taeguk = Gem(name='Taeguk',
 	 	pic='media/items/gems/taeguk.png',
-	 	unique='Gain <span class="silver">0.5%</span> increased damage for <span class="silver">3</span> seconds after spending Primary Resource. This effect stacks up to <span>20 (+1)</span> times',
+	 	unique='Gain <span class="silver">0.5%</span> increased damage for <span class="silver">3</span> seconds after spending Primary resource. This effect stacks up to <span>20 (+1)</span> times',
 	 	rank_unique='Rank <span class="silver">25</span>: Gain <span class="silver">0.5%</span> increased Armor for every stack')
 	taeguk.save()
 

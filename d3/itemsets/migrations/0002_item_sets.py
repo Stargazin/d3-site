@@ -567,63 +567,6 @@ def load_item_sets(apps, schema_editor):
 		itemSet=sagesJourney)
 	sagesJourney3.save()
 
-
-
-	thornsOfTheInvoker = ItemSet(name='Thorns of the Invoker',
-		owner='Universal',
-		patch='24')
-	thornsOfTheInvoker.save()
-
-	crownOfTheInvoker = SetPiece(name='Crown of the Invoker',
-		pic='media/items/sets/universal/crown_of_the_invoker.png',
-		category='Helmet',
-		itemSet=thornsOfTheInvoker)
-	crownOfTheInvoker.save()
-
-	burdenOfTheInvoker = SetPiece(name='Burden of the Invoker',
-		pic='media/items/sets/universal/burden_of_the_invoker.png',
-		category='Shoulders',
-		itemSet=thornsOfTheInvoker)
-	burdenOfTheInvoker.save()
-
-	prideOfTheInvoker = SetPiece(name='Pride of the Invoker',
-		pic='media/items/sets/universal/pride_of_the_invoker.png',
-		category='Gloves',
-		itemSet=thornsOfTheInvoker)
-	prideOfTheInvoker.save()
-
-	shacklesOfTheInvoker = SetPiece(name='Shackles of the Invoker',
-		pic='media/items/sets/universal/shackles_of_the_invoker.png',
-		category='Bracers',
-		itemSet=thornsOfTheInvoker)
-	shacklesOfTheInvoker.save()
-
-	renewalOfTheInvoker = SetPiece(name='Renewal of the Invoker',
-		pic='media/items/sets/universal/renewal_of_the_invoker.png',
-		category='Pants',
-		itemSet=thornsOfTheInvoker)
-	renewalOfTheInvoker.save()
-
-#2.4
-	thornsOfTheInvoker2 = Effect(pieces='2',
-		# effect='<li><p>Ranged and melee attackers take <span class="silver">4000</span> damage per hit</p></li>',
-		effect='<li><p>Your Thorns damage now hits all enemies in a <span class="silver">15</span> yard radius</p></li><li><p>Each time you hit an enemy with Punish or Slash or block an attack, your Thorns damage is increased by <span class="silver">25%</span> for <span class="silver">2</span> seconds</p></li>',
-		itemSet=thornsOfTheInvoker)
-	thornsOfTheInvoker2.save()
-
-#2.4
-	thornsOfTheInvoker4 = Effect(pieces='4',
-		# effect='<li><p>Your Thorns damage now hits all enemies in a <span class="silver">15</span> yard radius</p></li>',
-		effect='<li><p>You take <span class="silver">50%</span> less damage for <span class="silver">20</span> seconds after casting Bombardment</p></li>',
-		itemSet=thornsOfTheInvoker)
-	thornsOfTheInvoker4.save()
-
-#2.4
-	thornsOfTheInvoker6 = Effect(pieces='6',
-		effect='<li><p>Attack speed of Punish and Slash are increased by <span class="silver">50%</span> and deal <span class="silver">600%</span> of your Thorns damage to the first enemy hit</p></li>',
-		itemSet=thornsOfTheInvoker)
-	thornsOfTheInvoker6.save()
-
 #Barbarian
 #==============================================================================
 	bulKathossOath = ItemSet(name='Bul-Kathos\'s Oath',
@@ -1044,7 +987,7 @@ def load_item_sets(apps, schema_editor):
 #2.4
 	rolandsLegacy6 = Effect(pieces='6',
 		# effect='<li><p>Every use of Shield Bash or Sweep Attack that hits an enemy grants <span class="silver">30%</span> increased Attack Speed for <span class="silver">3</span> seconds. This effect stacks up to <span class="silver">5</span> times</p></li>',
-		effect='<li><p>Every use of Shield Bash or Sweep Attack that hits an enemy grants <span class="silver">50%</span> increased Attack Speed and <span class="silver">10%</span> damage reduction for <span class="silver">5</span> seconds. This effect stacks up to <span class="silver">5</span> times</p></li>',
+		effect='<li><p>Every use of Shield Bash or Sweep Attack that hits an enemy grants <span class="silver">50%</span> increased Attack Speed and <span class="silver">10%</span> Damage Reduction for <span class="silver">5</span> seconds. This effect stacks up to <span class="silver">5</span> times</p></li>',
 		itemSet=rolandsLegacy)
 	rolandsLegacy6.save()
 
@@ -1106,6 +1049,69 @@ def load_item_sets(apps, schema_editor):
 		effect='<li><p>Increase the damage of Blessed Hammer by <span class="silver">1250%</span> and Falling Sword by <span class="silver">500%</span></p></li>',
 		itemSet=seekerOfTheLight)
 	seekerOfTheLight6.save()
+
+
+#2.4 universal -> sader
+	thornsOfTheInvoker = ItemSet(name='Thorns of the Invoker',
+		owner='Crusader',
+		patch='24')
+	thornsOfTheInvoker.save()
+
+	crownOfTheInvoker = SetPiece(name='Crown of the Invoker',
+		pic='media/items/sets/sader/crown_of_the_invoker.png',
+		category='Helmet',
+		itemSet=thornsOfTheInvoker)
+	crownOfTheInvoker.save()
+
+	burdenOfTheInvoker = SetPiece(name='Burden of the Invoker',
+		pic='media/items/sets/sader/burden_of_the_invoker.png',
+		category='Shoulders',
+		itemSet=thornsOfTheInvoker)
+	burdenOfTheInvoker.save()
+
+	prideOfTheInvoker = SetPiece(name='Pride of the Invoker',
+		pic='media/items/sets/sader/pride_of_the_invoker.png',
+		category='Gloves',
+		itemSet=thornsOfTheInvoker)
+	prideOfTheInvoker.save()
+
+	shacklesOfTheInvoker = SetPiece(name='Shackles of the Invoker',
+		pic='media/items/sets/sader/shackles_of_the_invoker.png',
+		category='Bracers',
+		itemSet=thornsOfTheInvoker)
+	shacklesOfTheInvoker.save()
+
+	renewalOfTheInvoker = SetPiece(name='Renewal of the Invoker',
+		pic='media/items/sets/sader/renewal_of_the_invoker.png',
+		category='Pants',
+		itemSet=thornsOfTheInvoker)
+	renewalOfTheInvoker.save()
+
+	zealOfTheInvoker = SetPiece(name='Zeal of the Invoker',
+		pic='media/items/sets/sader/zeal_of_the_invoker.png',
+		category='Boots',
+		itemSet=thornsOfTheInvoker)
+	zealOfTheInvoker.save()
+
+#2.4
+	thornsOfTheInvoker2 = Effect(pieces='2',
+		# effect='<li><p>Ranged and melee attackers take <span class="silver">4000</span> damage per hit</p></li>',
+		effect='<li><p>Your Thorns damage now hits all enemies in a <span class="silver">15</span> yard radius</p></li><li><p>Each time you hit an enemy with Punish or Slash or block an attack, your Thorns damage is increased by <span class="silver">25%</span> for <span class="silver">2</span> seconds</p></li>',
+		itemSet=thornsOfTheInvoker)
+	thornsOfTheInvoker2.save()
+
+#2.4
+	thornsOfTheInvoker4 = Effect(pieces='4',
+		# effect='<li><p>Your Thorns damage now hits all enemies in a <span class="silver">15</span> yard radius</p></li>',
+		effect='<li><p>You take <span class="silver">50%</span> less damage for <span class="silver">20</span> seconds after casting Bombardment</p></li>',
+		itemSet=thornsOfTheInvoker)
+	thornsOfTheInvoker4.save()
+
+#2.4
+	thornsOfTheInvoker6 = Effect(pieces='6',
+		effect='<li><p>Attack speed of Punish and Slash are increased by <span class="silver">50%</span> and deal <span class="silver">600%</span> of your Thorns damage to the first enemy hit</p></li>',
+		itemSet=thornsOfTheInvoker)
+	thornsOfTheInvoker6.save()
 
 #Demon Hunter
 #==============================================================================
@@ -1188,7 +1194,7 @@ def load_item_sets(apps, schema_editor):
 
 #2.4
 	embodimentOfTheMarauder6 = Effect(pieces='6',
-		effect='<li><p>Your primary skills, Elemental Arrow, Chakram, Impale, Multishot, Cluster Arrow, Companions, and Vengeance deal <span class="silver">600%</span> increased damage for each active Sentry</p></li>',
+		effect='<li><p>Your Primary skills, Elemental Arrow, Chakram, Impale, Multishot, Cluster Arrow, Companions, and Vengeance deal <span class="silver">600%</span> increased damage for each active Sentry</p></li>',
 		itemSet=embodimentOfTheMarauder)
 	embodimentOfTheMarauder6.save()
 
@@ -1380,7 +1386,7 @@ def load_item_sets(apps, schema_editor):
 
 #2.4
 	unhallowedEssence6 = Effect(pieces='6',
-		effect='<li><p>Your generators, Multishot, and Vengeance deal <span class="silver">20%</span> increased damage for every point of Discipline you have</p></li>',
+		effect='<li><p>Your Resource generators, Multishot, and Vengeance deal <span class="silver">20%</span> increased damage for every point of Discipline you have</p></li>',
 		itemSet=unhallowedEssence)
 	unhallowedEssence6.save()
 
@@ -1515,7 +1521,7 @@ def load_item_sets(apps, schema_editor):
 	maskOfTheSearingSky.save()
 
 	mantleOfTheUpsideDownSinners = SetPiece(name='Mantle of the Upside-Down Sinners',
-		pic='media/items/sets/monk/mantle_of_the_upsidedown_sinners.png',
+		pic='media/items/sets/monk/mantle_of_the_upside_down_sinners.png',
 		category='Shoulders',
 		itemSet=raimentOfAThousandStorms)
 	mantleOfTheUpsideDownSinners.save()
@@ -1539,7 +1545,7 @@ def load_item_sets(apps, schema_editor):
 	scalesOfTheDancingSerpent.save()
 
 	eightDemonBoots = SetPiece(name='Eight-Demon Boots',
-		pic='media/items/sets/monk/eightdemon_boots.png',
+		pic='media/items/sets/monk/eight_demon_boots.png',
 		category='Boots',
 		itemSet=raimentOfAThousandStorms)
 	eightDemonBoots.save()
@@ -1908,7 +1914,7 @@ def load_item_sets(apps, schema_editor):
 
 #2.4
 	zunimassasHaunt6 = Effect(pieces='6',
-		effect='<li><p>Enemies hit by your Mana spenders take <span class="silver">800%</span> more damage from your pets for <span class="silver">8</span> seconds</p></li>',
+		effect='<li><p>Enemies hit by your Mana spenders take <span class="silver">800%</span> more damage from your Pets for <span class="silver">8</span> seconds</p></li>',
 		itemSet=zunimassasHaunt)
 	zunimassasHaunt6.save()
 

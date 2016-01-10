@@ -1070,7 +1070,7 @@ def load_1h_mighty_weapons(apps, schema_editor):
 		name='Oathkeeper',
 		pic='media/items/legendaries/2.4/weapons/oathkeeper.png',
 		category='1H Mighty Weapons',
-		unique='Your primary skills attack <span class="silver">50%</span> faster and deal <span>150 - 200%</span> increased damage',
+		unique='Your Primary skills attack <span class="silver">50%</span> faster and deal <span>150 - 200%</span> increased damage',
 		random_primaries='2',
 		random_secondaries='1',
 		patch='24')
@@ -1113,7 +1113,7 @@ def load_1h_spears(apps, schema_editor):
 		category='1H Spears')
 
 	akaneshTheHeraldOfRighteousness = Weapon(slot='1H Weapons',
-		name='Akanesh, the Herald of Righteousness',
+		name='Akanesh, The Herald of Righteousness',
 		pic='media/items/legendaries/weapons/1h/spears/akanesh_the_herald_of_righteousness.png',
 		category='1H Spears',
 		random_primaries='1',
@@ -1306,7 +1306,7 @@ def load_1h_swords(apps, schema_editor):
 		name='In-geom',
 		pic='media/items/legendaries/weapons/1h/swords/in-geom.png',
 		category='1H Swords',
-		unique='Your skill cooldowns are reduced by <span>8 - 10</span> seconds for <span class="silver">15</span> seconds after killing an elite pack',
+		unique='Your skill cooldowns are reduced by <span>8 - 10</span> seconds for <span class="silver">15</span> seconds after killing an Elite Pack',
 		random_primaries='1',
 		random_secondaries='1',
 		owner='all',
@@ -1424,7 +1424,7 @@ def load_1h_swords(apps, schema_editor):
 		name='Thunderfury, Blessed Blade of the Windseeker',
 		pic='media/items/legendaries/weapons/1h/swords/thunderfury_blessed_blade_of_the_windseeker.png',
 		category='1H Swords',
-		unique='Chance on hit to blast your enemy with Lightning, dealing <span>279 - 372%</span> weapon damage as Lightning and then jumping to additional nearby enemies. Each enemy hit has their attack speed and movement speed reduced by <span class="silver">30%</span> for <span class="silver">3</span> seconds. Jumps up to <span class="silver">5</span> targets',
+		unique='Chance on hit to blast your enemy with Lightning, dealing <span>279 - 372%</span> weapon damage as Lightning and then jumping to additional nearby enemies. Each enemy hit has their Attack Speed and Movement Speed reduced by <span class="silver">30%</span> for <span class="silver">3</span> seconds. Jumps up to <span class="silver">5</span> targets',
 		random_primaries='1',
 		random_secondaries='1',
 		owner='all',

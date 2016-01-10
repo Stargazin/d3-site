@@ -344,7 +344,7 @@ def load_quiver_affixes(apps, schema_editor):
 	eliteDmg = Affix(category='Quivers',
 		affix='eliteDmg',
 		is_primary=True,
-		desc='Increase damage against elites by <span>5.0 - 8.0%</span>')
+		desc='Increase damage against Elites by <span>5.0 - 8.0%</span>')
 	eliteDmg.save()
 
 	bleedChance = Affix(category='Quivers',
