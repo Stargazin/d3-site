@@ -1475,11 +1475,25 @@ def load_item_sets(apps, schema_editor):
 		itemSet=monkeyKingsGarb)
 	sunwukosBalance.save()
 
+#2.4
+	sunwukosSoul = SetPiece(name='Sunwuko\'s Soul',
+		pic='media/items/sets/monk/sunwukos_soul.png',
+		category='Chest Armor',
+		itemSet=monkeyKingsGarb)
+	sunwukosSoul.save()
+
 	sunwukosPaws = SetPiece(name='Sunwuko\'s Paws',
 		pic='media/items/sets/monk/sunwukos_paws.png',
 		category='Gloves',
 		itemSet=monkeyKingsGarb)
 	sunwukosPaws.save()
+
+#2.4
+	sunwukosLeggings = SetPiece(name='Sunwuko\'s Leggings',
+		pic='media/items/sets/monk/sunwukos_leggings.png',
+		category='Pants',
+		itemSet=monkeyKingsGarb)
+	sunwukosLeggings.save()
 
 	sunwukosShines = SetPiece(name='Sunwuko\'s Shines',
 		pic='media/items/sets/monk/sunwukos_shines.png',
