@@ -235,6 +235,12 @@ def load_gems(apps, schema_editor):
 	 	rank_unique='Rank <span class="silver">25</span>: Gain <span class="silver">30%</span> increased Movement Speed for <span class="silver">2</span> seconds after picking up Gold')
 	boonOfTheHoarder.save()
 
+	boyarskysChip = Gem(name='Boyarsky\'s Chip',
+	 	pic='media/items/gems/boyarskys_chip.png',
+	 	unique='Adds <span>16,000 (+800)</span> Thorns damage',
+	 	rank_unique='Rank <span class="silver">25</span>: Taunt the first enemy hit by your Primary skills for <span class="silver">2</span> seconds')
+	boyarskysChip.save()
+
 	enforcer = Gem(name='Enforcer',
 	 	pic='media/items/gems/enforcer.png',
 	 	unique='Increase the damage of your Pets by <span>15.00% (+0.3%)</span>',

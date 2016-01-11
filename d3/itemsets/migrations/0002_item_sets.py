@@ -1325,7 +1325,7 @@ def load_item_sets(apps, schema_editor):
 
 #Added in 2.4
 	theShadowsMantle6 = Effect(pieces='6',
-		effect='<li><p>Impale deals an additional <span class="silver">40,000</span> weapon damage to the first enemy hit</p></li>',
+		effect='<li><p>Impale deals an additional <span class="silver">40,000%</span> weapon damage to the first enemy hit</p></li>',
 		itemSet=theShadowsMantle)
 	theShadowsMantle6.save()
 
@@ -1374,13 +1374,13 @@ def load_item_sets(apps, schema_editor):
 #2.4 check
 	unhallowedEssence2 = Effect(pieces='2',
 		# effect='<li><p>Your generators also generate <span class="silver">1</span> Discipline</p></li>',
-		effect='<li><p>Your Generators also generate <span class="silver">2</span> Discipline</p></li>',
+		effect='<li><p>Your Generators also generate <span class="silver">1</span> Discipline</li>',
 		itemSet=unhallowedEssence)
 	unhallowedEssence2.save()
 
 #2.4
 	unhallowedEssence4 = Effect(pieces='4',
-		effect='<li><p>Gain <span class="silver">80%</span> damage reduction and deal <span class="silver">80%</span> increased damage for <span class="silver">8</span> seconds if no enemy is within <span class="silver">10</span> yards of you</p></li>',
+		effect='<li><p>Gain <span class="silver">60%</span> damage reduction and deal <span class="silver">60%</span> increased damage for <span class="silver">8</span> seconds if no enemy is within <span class="silver">10</span> yards of you</p></li>',
 		itemSet=unhallowedEssence)
 	unhallowedEssence4.save()
 
