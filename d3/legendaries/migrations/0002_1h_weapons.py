@@ -9,6 +9,7 @@ from django.db import migrations, models
 from django.template.defaultfilters import slugify
 
 
+#1H Axe  all(bb-cs-dh-mk-wd-wz)
 def load_1h_axes(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -126,6 +127,7 @@ def load_1h_axes(apps, schema_editor):
 		weapon.save()
 
 
+#Ceremonial Knife  wd
 def load_ceremonial_knives(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -260,6 +262,7 @@ def load_ceremonial_knives(apps, schema_editor):
 		weapon.save()
 
 
+#Dagger  all(bb-cs-dh-mk-wd-wz)
 def load_1h_daggers(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -412,6 +415,7 @@ def load_1h_daggers(apps, schema_editor):
 		weapon.save()
 
 
+#Fist Weapon  mk
 def load_fist_weapons(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -582,10 +586,11 @@ def load_fist_weapons(apps, schema_editor):
 
 	for weapon in Weapon.objects.filter(category="Fist Weapons"):
 		weapon.inherent = '<span class="inherent"><span>1.40</span> Attacks per Second</span>'
-		weapon.owner = 'monk'
+		weapon.owner = 'mk'
 		weapon.save()
 
 
+#1H Flail  cs
 def load_1h_flails(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -685,10 +690,11 @@ def load_1h_flails(apps, schema_editor):
 
 	for weapon in Weapon.objects.filter(category="1H Flails"):
 		weapon.inherent = '<span class="inherent"><span>1.40</span> Attacks per Second</span>'
-		weapon.owner = 'sader'
+		weapon.owner = 'cs'
 		weapon.save()
 
 
+#Hand Crossbow  dh
 def load_hand_crossbows(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -827,6 +833,7 @@ def load_hand_crossbows(apps, schema_editor):
 		weapon.save()
 
 
+#1H Mace  all(bb-cs-dh-mk-wd-wz)
 def load_1h_maces(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -895,7 +902,7 @@ def load_1h_maces(apps, schema_editor):
 		unique='Increase the size of your Blessed Hammers',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='sader',
+		owner='cs',
 		patch='24')
 	jacesHammerOfVigilance.save()
 	jacesHammerOfVigilance.affixes.add(mainStat, jacesBlessedHammer)
@@ -994,6 +1001,8 @@ def load_1h_maces(apps, schema_editor):
 		weapon.inherent = '<span class="inherent"><span>1.20</span> Attacks per Second</span>'
 		weapon.save()
 
+
+#1H Mighty Weapon  bb
 def load_1h_mighty_weapons(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -1090,10 +1099,11 @@ def load_1h_mighty_weapons(apps, schema_editor):
 
 	for weapon in Weapon.objects.filter(category="1H Mighty Weapons"):
 		weapon.inherent = '<span class="inherent"><span>1.30</span> Attacks per Second</span>'
-		weapon.owner = 'barb'
+		weapon.owner = 'bb'
 		weapon.save()
 
 
+#1H Spear  all(bb-cs-dh-mk-wd-wz)
 def load_1h_spears(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -1130,7 +1140,7 @@ def load_1h_spears(apps, schema_editor):
 		unique='Weapon Throw generates up to <span>15 - 20</span> additional Fury based on how far away the enemy hit is. Maximum benefit when the enemy hit is <span class="silver">20</span> or more yards away',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='barb',
+		owner='bb',
 		patch='23')
 	arreatsLaw.save()
 	arreatsLaw.affixes.add(mainStat)
@@ -1165,7 +1175,7 @@ def load_1h_spears(apps, schema_editor):
 		category='1H Spears',
 		unique='Increase the damage of Weapon Throw and Ancient Spear by <span>45 - 60%</span>',
 		random_secondaries='1',
-		owner='barb',
+		owner='bb',
 		patch='2.4')
 	theThreeHundredthSpear.save()
 	theThreeHundredthSpear.affixes.add(mainStat, threeWeaponThrow, threeAncientSpear)
@@ -1175,6 +1185,7 @@ def load_1h_spears(apps, schema_editor):
 		weapon.save()
 
 
+#1H Sword  all(bb-cs-dh-mk-wd-wz)
 def load_1h_swords(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -1229,7 +1240,7 @@ def load_1h_swords(apps, schema_editor):
 		unique='While channeling Arcane Torrent, Disintegrate, or Ray of Frost, all damage is increased by <span>30 - 35%</span>',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='wiz',
+		owner='wz',
 		patch='24')
 	deathwish.save()
 	deathwish.affixes.add(mainStat)
@@ -1415,7 +1426,7 @@ def load_1h_swords(apps, schema_editor):
 		unique='Energy Twister damage is increased by <span>125 - 150%</span> for each Energy Twister you have out',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='wiz',
+		owner='wz',
 		patch='24')
 	theTwistedSword.save()
 	theTwistedSword.affixes.add(mainStat)
@@ -1449,6 +1460,7 @@ def load_1h_swords(apps, schema_editor):
 		weapon.save()
 
 
+#Wand  wz
 def load_wands(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -1565,7 +1577,7 @@ def load_wands(apps, schema_editor):
 		unique='Arcane Orb\'s explosion triggers an additional time',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='wiz',
+		owner='wz',
 		patch='24')
 	unstableSceptor.save()
 	unstableSceptor.affixes.add(inte, unstableArcaneOrb)
@@ -1584,7 +1596,7 @@ def load_wands(apps, schema_editor):
 
 	for weapon in Weapon.objects.filter(category="Wands"):
 		weapon.inherent = '<span class="inherent"><span>1.40</span> Attacks per Second</span>'
-		weapon.owner = 'wiz'
+		weapon.owner = 'wz'
 		weapon.save()
 
 

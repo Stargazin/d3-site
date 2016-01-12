@@ -128,7 +128,7 @@ def load_sources(apps, schema_editor):
 	winterFlurry.affixes.add(dmg, inte, chc, winterColdDmg)
 
 	for weapon in Weapon.objects.filter(category="Sources"):
-		weapon.owner = 'wiz'
+		weapon.owner = 'wz'
 		weapon.save()
 
 
@@ -561,7 +561,7 @@ def load_crusader_shields(apps, schema_editor):
 	unrelentingPhalanx.affixes.add(stre, unrelentingPhalanxDmg)
 
 	for weapon in Weapon.objects.filter(category='Crusader Shields'):
-		weapon.owner = 'sader'
+		weapon.owner = 'cs'
 		weapon.save()
 
 
@@ -622,7 +622,7 @@ def load_shields(apps, schema_editor):
 		random_primaries='3',
 		random_secondaries='1',
 		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
-		owner='sader',
+		owner='cs',
 		patch='23')
 	denial.save()
 	denial.affixes.add(mainStat)
@@ -635,7 +635,7 @@ def load_shields(apps, schema_editor):
 		random_primaries='3',
 		random_secondaries='1',
 		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
-		owner='sader',
+		owner='cs',
 		patch='23')
 	eberliCharo.save()
 	eberliCharo.affixes.add(mainStat)
@@ -661,7 +661,7 @@ def load_shields(apps, schema_editor):
 		random_primaries='2',
 		random_secondaries='1',
 		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
-		owner='sader',
+		owner='cs',
 		patch='23')
 	ivoryTower.save()
 	ivoryTower.affixes.add(mainStat, vita)
@@ -698,7 +698,7 @@ def load_shields(apps, schema_editor):
 		random_primaries='2',
 		random_secondaries='1',
 		inherent='<span class="inherent"><span>10.0 - 20.0%</span> Block Chance</span>',
-		owner='sader',
+		owner='cs',
 		patch='23')
 	votoyiasSpiker.save()
 	votoyiasSpiker.affixes.add(mainStat, thorns)

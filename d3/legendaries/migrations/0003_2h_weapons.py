@@ -1,6 +1,7 @@
 '''
 Needed affixes and item-specific affixes are defined first.
 Items of category/slot defined after.
+Owners are placed before loading (ex. #2H Axe bb-cs-mk-wd-wz)
 '''
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
@@ -9,6 +10,7 @@ from django.db import migrations, models
 from django.template.defaultfilters import slugify
 
 
+#2H Axe  bb-cs-mk-wd-wz
 def load_2h_axes(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -84,10 +86,11 @@ def load_2h_axes(apps, schema_editor):
 
 	for weapon in Weapon.objects.filter(category="2H Axes"):
 		weapon.inherent = '<span class="inherent"><span>1.00</span> Attacks per Second</span>'
-		weapon.owner = 'all'
+		weapon.owner = 'bb-cs-mk-wd-wz'
 		weapon.save()
 
 
+#Bow  dh-wd-wz
 def load_bows(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -124,7 +127,7 @@ def load_bows(apps, schema_editor):
 		unique='<span>25 - 50%</span> chance to Cluck when attacking',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all',
+		owner='dh-wd-wz',
 		patch='23')
 	cluckeye.save()
 	cluckeye.affixes.add(mainStat)
@@ -136,7 +139,7 @@ def load_bows(apps, schema_editor):
 		random_primaries='1',
 		random_secondaries='1',
 		notes='double check',
-		owner='all',
+		owner='dh-wd-wz',
 		patch='23')
 	etrayu.save()
 	etrayu.affixes.add(mainStat, etrayuColdDmg, durability)
@@ -184,7 +187,7 @@ def load_bows(apps, schema_editor):
 		random_primaries='1',
 		random_secondaries='2',
 		notes='crafted',
-		owner='all',
+		owner='dh-wd-wz',
 		patch='23')
 	sydyruCrust.save()
 	sydyruCrust.affixes.add(ias, eliteDmg)
@@ -196,7 +199,7 @@ def load_bows(apps, schema_editor):
 		unique='A Raven flies to your side',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='dh',
+		owner='dh-wd-wz',
 		patch='23')
 	theRavensWing.save()
 	theRavensWing.affixes.add(mainStat, ravensExtraGold)
@@ -208,7 +211,7 @@ def load_bows(apps, schema_editor):
 		random_primaries='1',
 		random_secondaries='2',
 		notes='crafted',
-		owner='dh',
+		owner='dh-wd-wz',
 		patch='23')
 	unboundBolt.save()
 	unboundBolt.affixes.add(ias, unboundCHD)
@@ -219,7 +222,7 @@ def load_bows(apps, schema_editor):
 		category='Bows',
 		random_primaries='1',
 		random_secondaries='2',
-		owner='dh',
+		owner='dh-wd-wz',
 		patch='23')
 	uskang.save()
 	uskang.affixes.add(mainStat, uskangLightDmg)
@@ -230,7 +233,7 @@ def load_bows(apps, schema_editor):
 		category='Bows',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='dh',
+		owner='dh-wd-wz',
 		patch='23')
 	windforce.save()
 	windforce.affixes.add(mainStat, windforceKnockbackChance)
@@ -242,7 +245,7 @@ def load_bows(apps, schema_editor):
 		unique='Multishot attacks <span class="silver">50%</span> faster',
 		random_primaries='1',
 		random_secondaries='1',
-		owner='all',
+		owner='dh',
 		patch='23')
 	yangsRecurve.save()
 	yangsRecurve.affixes.add(percentDmg, mainStat, yangsRCR)
@@ -252,6 +255,7 @@ def load_bows(apps, schema_editor):
 		weapon.save()
 
 
+#Crossbow  dh-wd-wz
 def load_crossbows(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -273,7 +277,7 @@ def load_crossbows(apps, schema_editor):
 		random_primaries='3',
 		random_secondaries='2',
 		notes='crafted',
-		owner='all',
+		owner='dh-wd-wz',
 		patch='23')
 	arcaneBarb.save()
 	# arcaneBarb.affixes.add()
@@ -284,7 +288,7 @@ def load_crossbows(apps, schema_editor):
 		category='Crossbows',
 		random_primaries='2',
 		random_secondaries='2',
-		owner='all',
+		owner='dh-wd-wz',
 		patch='23')
 	bakkanCaster.save()
 	bakkanCaster.affixes.add(mainStat)
@@ -319,7 +323,7 @@ def load_crossbows(apps, schema_editor):
 		unique='<span>35 - 65%</span> chance to shoot Explosive Bolts when attacking',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all',
+		owner='dh-wd-wz',
 		patch='23')
 	demonMachine.save()
 	demonMachine.affixes.add(mainStat)
@@ -332,7 +336,7 @@ def load_crossbows(apps, schema_editor):
 		unique='Chance to Root enemies to the ground when you hit them',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all',
+		owner='dh-wd-wz',
 		patch='24')
 	hellrack.save()
 	hellrack.affixes.add(mainStat, sockets)
@@ -357,7 +361,7 @@ def load_crossbows(apps, schema_editor):
 		unique='<span>25 - 50%</span> chance to lob an Acid Blob when attacking',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all',
+		owner='dh-wd-wz',
 		patch='23')
 	pusSpitter.save()
 	pusSpitter.affixes.add(mainStat)
@@ -380,6 +384,7 @@ def load_crossbows(apps, schema_editor):
 		weapon.save()
 
 
+#Daibo  mk
 def load_daibos(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -496,10 +501,11 @@ def load_daibos(apps, schema_editor):
 
 	for weapon in Weapon.objects.filter(category="Daibos"):
 		weapon.inherent = '<span class="inherent"><span>1.10</span> Attacks per Second</span>'
-		weapon.owner = 'monk'
+		weapon.owner = 'mk'
 		weapon.save()
 
 
+#2H Flail  cs
 def load_2h_flails(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -508,7 +514,6 @@ def load_2h_flails(apps, schema_editor):
 	sockets = Affix.objects.get(affix='sockets', category='2H Flails')
 
 	goldenSweepAttack = Affix.objects.get(affix='goldenSweepAttack', category='2H Flails')
-
 
 #2.4 new
 	akkhansLeniency = Weapon(slot='2H Weapons',
@@ -569,10 +574,11 @@ def load_2h_flails(apps, schema_editor):
 
 	for weapon in Weapon.objects.filter(category="2H Flails"):
 		weapon.inherent = '<span class="inherent"><span>1.15</span> Attacks per Second</span>'
-		weapon.owner = 'sader'
+		weapon.owner = 'cs'
 		weapon.save()
 
 
+#2H Mace  bb-cs-mk-wd-wz
 def load_2h_maces(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -601,6 +607,7 @@ def load_2h_maces(apps, schema_editor):
 		unique='Heal for <span>3 - 4%</span> of your missing Life when you kill an Undead enemy',
 		random_primaries='2',
 		random_secondaries='1',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	arthefsSparkOfLife.save()
 	arthefsSparkOfLife.affixes.add(mainStat)
@@ -611,6 +618,7 @@ def load_2h_maces(apps, schema_editor):
 		category='2H Maces',
 		random_primaries='2',
 		random_secondaries='2',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	crushbane.save()
 	crushbane.affixes.add(mainStat)
@@ -622,6 +630,7 @@ def load_2h_maces(apps, schema_editor):
 		unique='Casting a Lightning skill charges you with Lightning, causing you to deal <span>650 - 850%</span> weapon damage as Lightning every second for <span class="silver">5</span> seconds to nearby enemies',
 		random_primaries='2',
 		random_secondaries='1',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	schaefersHammer.save()
 	schaefersHammer.affixes.add(schaefersLightDmg)
@@ -633,6 +642,7 @@ def load_2h_maces(apps, schema_editor):
 		unique='Every <span class="silver">60</span> seconds, gain a random Law for <span class="silver">60</span> seconds',
 		random_primaries='2',
 		random_secondaries='1',
+		owner='cs',
 		patch='23')
 	skywarden.save()
 	skywarden.affixes.add(mainStat)
@@ -642,6 +652,7 @@ def load_2h_maces(apps, schema_editor):
 		pic='media/items/legendaries/weapons/2h/maces/sledge_of_athskeleng.png',
 		category='2H Maces',
 		random_secondaries='2',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	sledgeOfAthskeleng.save()
 	sledgeOfAthskeleng.affixes.add(percentDmg, mainStat, sledgeMovementSpeed)
@@ -652,6 +663,7 @@ def load_2h_maces(apps, schema_editor):
 		category='2H Maces',
 		unique='When you kill an enemy, it explodes for <span>450 - 600%</span> of your Life per Kill as damage to all enemies within <span class="silver">20</span> yards. You no longer benefit from your Life per Kill',
 		random_primaries='2',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	soulsmasher.save()
 	soulsmasher.affixes.add(mainStat, lpk)
@@ -663,6 +675,7 @@ def load_2h_maces(apps, schema_editor):
 		unique='<span>25 - 50%</span> chance to Sunder the ground your enemies walk on when you attack',
 		random_primaries='3',
 		random_secondaries='1',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	sunder.save()
 	# sunder.affixes.add()
@@ -674,6 +687,7 @@ def load_2h_maces(apps, schema_editor):
 		unique='Increases damage against Elites by <span>40 - 50%</span>',
 		random_primaries='2',
 		random_secondaries='1',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	theFurnace.save()
 	theFurnace.affixes.add(mainStat)
@@ -683,6 +697,7 @@ def load_2h_maces(apps, schema_editor):
 		pic='media/items/legendaries/weapons/2h/maces/wrath_of_the_bone_king.png',
 		category='2H Maces',
 		random_primaries='2',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	wrathOfTheBoneKing.save()
 	wrathOfTheBoneKing.affixes.add(wrathColdDmg, lpk, ccChance)
@@ -693,6 +708,7 @@ def load_2h_maces(apps, schema_editor):
 		weapon.save()
 
 
+#2H Mighty Weapon  bb
 def load_2h_mighty_weapons(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -779,10 +795,11 @@ def load_2h_mighty_weapons(apps, schema_editor):
 
 	for weapon in Weapon.objects.filter(category="2H Mighty Weapons"):
 		weapon.inherent = '<span class="inherent"><span>1.10</span> Attacks per Second</span>'
-		weapon.owner = 'barb'
+		weapon.owner = 'bb'
 		weapon.save()
 
 
+#Polearm  bb-cs-mk-wd
 def load_polearms(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -801,7 +818,7 @@ def load_polearms(apps, schema_editor):
 		unique='Chance on hit to summon a herd of murderous cows',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all',
+		owner='bb-cs-mk-wd',
 		patch='23')
 	bovineBardiche.save()
 	bovineBardiche.affixes.add(mainStat)
@@ -812,7 +829,7 @@ def load_polearms(apps, schema_editor):
 		category='Polearms',
 		random_primaries='1',
 		random_secondaries='1',
-		owner='all',
+		owner='bb-cs-mk-wd',
 		patch='23')
 	heartSlaughter.save()
 	heartSlaughter.affixes.add(mainStat, heartPhysDmg, lpk)
@@ -823,7 +840,7 @@ def load_polearms(apps, schema_editor):
 		category='Polearms',
 		random_primaries='2',
 		random_secondaries='2',
-		owner='all',
+		owner='bb-cs-mk-wd',
 		patch='23')
 	pledgeOfCaldeum.save()
 	pledgeOfCaldeum.affixes.add(mainStat)
@@ -836,7 +853,7 @@ def load_polearms(apps, schema_editor):
 		unique='Furious Charge gains increased damage equal to <span>200 - 250%</span> of your bonus Movement Speed',
 		random_primaries='1',
 		random_secondaries='1',
-		owner='barb',
+		owner='bb',
 		patch='24')
 	standoff.save()
 	standoff.affixes.add(mainStat, sockets)
@@ -848,7 +865,7 @@ def load_polearms(apps, schema_editor):
 		unique='Getting hit has a chance to automatically cast Inner Sanctuary',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='monk',
+		owner='mk',
 		patch='23')
 	vigilance.save()
 	vigilance.affixes.add(mainStat)
@@ -858,6 +875,7 @@ def load_polearms(apps, schema_editor):
 		weapon.save()
 
 
+#Staff  mk-wd-wz
 def load_staves(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -891,7 +909,7 @@ def load_staves(apps, schema_editor):
 		unique='Chance on killing a Demon to gain a random Shrine effect',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all',
+		owner='mk-wd-wz',
 		patch='23')
 	ahvarionSpearOfLycander.save()
 	ahvarionSpearOfLycander.affixes.add(sockets)
@@ -902,7 +920,7 @@ def load_staves(apps, schema_editor):
 		category='Staves',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all',
+		owner='mk-wd-wz',
 		patch='23')
 	autumnsCall.save()
 	autumnsCall.affixes.add(mainStat, killExp)
@@ -914,7 +932,7 @@ def load_staves(apps, schema_editor):
 		unique='Enemies occasionally Flee at the sight of this staff',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all',
+		owner='mk-wd-wz',
 		patch='23')
 	malothsFocus.save()
 	malothsFocus.affixes.add(mainStat)
@@ -926,7 +944,7 @@ def load_staves(apps, schema_editor):
 		random_primaries='3',
 		random_secondaries='2',
 		notes='crafted',
-		owner='all',
+		owner='mk-wd-wz',
 		patch='23')
 	markOfTheMagi.save()
 	# markOfTheMagi.affixes.add()
@@ -962,7 +980,7 @@ def load_staves(apps, schema_editor):
 		category='Staves',
 		random_primaries='1',
 		random_secondaries='1',
-		owner='all',
+		owner='mk-wd-wz',
 		patch='23')
 	theBrokenStaff.save()
 	theBrokenStaff.affixes.add(mainStat, sockets, durability)
@@ -974,7 +992,7 @@ def load_staves(apps, schema_editor):
 		unique='Reduces the Arcane Power cost of Meteor by <span>40 - 50%</span>',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='wiz',
+		owner='wz',
 		patch='23')
 	theGrandVizier.save()
 	theGrandVizier.affixes.add(mainStat, grandMeteor)
@@ -986,7 +1004,7 @@ def load_staves(apps, schema_editor):
 		unique='Lesser enemies are now lured to your Meteor impact areas',
 		random_primaries='1',
 		random_secondaries='1',
-		owner='wiz',
+		owner='wz',
 		patch='23')
 	theSmolderingCore.save()
 	theSmolderingCore.affixes.add(mainStat, sockets)
@@ -998,7 +1016,7 @@ def load_staves(apps, schema_editor):
 		unique='Chance to Charm enemies when you hit them',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all',
+		owner='mk-wd-wz',
 		patch='23')
 	theTormentor.save()
 	theTormentor.affixes.add(mainStat)
@@ -1010,7 +1028,7 @@ def load_staves(apps, schema_editor):
 		unique='Energy Twister now travels in a straight path',
 		random_primaries='1',
 		random_secondaries='1',
-		owner='wiz',
+		owner='wz',
 		patch='23')
 	valtheksRebuke.save()
 	valtheksRebuke.affixes.add(mainStat, sockets)
@@ -1032,6 +1050,7 @@ def load_staves(apps, schema_editor):
 		weapon.save()
 
 
+#2H Sword  bb-cs-mk-wd-wz
 def load_2h_swords(apps, schema_editor):
 	Weapon = apps.get_model("legendaries", "Weapon")
 	Affix = apps.get_model("affixes", "Affix")
@@ -1073,7 +1092,7 @@ def load_2h_swords(apps, schema_editor):
 		category='2H Swords',
 		random_primaries='1',
 		random_secondaries='1',
-		owner='all',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	blackguard.save()
 	blackguard.affixes.add(percentDmg, mainStat, blackguardCCReduction)
@@ -1086,7 +1105,7 @@ def load_2h_swords(apps, schema_editor):
 		unique='<span class="silver">2</span> Condemned enemies also trigger Condemn\'s explosion',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='sader',
+		owner='cs',
 		patch='24')
 	bladeOfProphecy.save()
 	bladeOfProphecy.affixes.add(mainStat, cdr, bladeCondemn)
@@ -1098,7 +1117,7 @@ def load_2h_swords(apps, schema_editor):
 		unique='Grants a <span>15 - 20%</span> chance to block attacks. Blocked attacks inflict <span class="silver">30%</span> less damage. After blocking an attack, your next attack inflicts <span class="silver">30%</span> additional damage',
 		random_primaries='1',
 		random_secondaries='1',
-		owner='all',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	bloodBrother.save()
 	bloodBrother.affixes.add(percentDmg, mainStat)
@@ -1110,7 +1129,7 @@ def load_2h_swords(apps, schema_editor):
 		unique='Falling Sword can be used again within <span class="silver">4</span> seconds before the cooldown is triggered',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='sader',
+		owner='cs',
 		patch='23')
 	camsRebuttal.save()
 	camsRebuttal.affixes.add(mainStat)
@@ -1121,7 +1140,7 @@ def load_2h_swords(apps, schema_editor):
 		category='2H Swords',
 		unique='Chance on kill to raise a skeleton to fight for you. Upon accumulating <span class="silver">5</span> skeletons, they each explode for <span class="silver">1000%</span> weapon damage and the sword transforms into Ashbringer for a short time. Attacking with Ashbringer burns your enemy for <span>5000 - 6000%</span> weapon damage as Holy',
 		random_primaries='2',
-		owner='all',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	corruptedAshbringer.save()
 	corruptedAshbringer.affixes.add(mainStat, corruptedUndeadDmg, lpk)
@@ -1132,7 +1151,7 @@ def load_2h_swords(apps, schema_editor):
 		category='2H Swords',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	faithfulMemory.save()
 	faithfulMemory.affixes.add(mainStat, faithfulThorns)
@@ -1144,7 +1163,7 @@ def load_2h_swords(apps, schema_editor):
 		unique='Chance on hit to summon a Demonic Slave',
 		random_primaries='1',
 		random_secondaries='1',
-		owner='all',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	maximus.save()
 	maximus.affixes.add(mainStat, maximusFireDmg)
@@ -1156,7 +1175,7 @@ def load_2h_swords(apps, schema_editor):
 		unique='<span>20 - 45%</span> chance when attacking to explode with demonic fury for <span>1800 - 2000%</span> weapon damage as Fire',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	scourge.save()
 	scourge.affixes.add(sockets)
@@ -1168,7 +1187,7 @@ def load_2h_swords(apps, schema_editor):
 		unique='Your Melee attacks throw a piercing axe at a nearby enemy, dealing <span>550 - 700%</span> weapon damage as Physical',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	stalgardsDecimator.save()
 	stalgardsDecimator.affixes.add(mainStat)
@@ -1179,7 +1198,7 @@ def load_2h_swords(apps, schema_editor):
 		category='2H Swords',
 		random_primaries='1',
 		random_secondaries='1',
-		owner='all',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	theGrandfather.save()
 	theGrandfather.affixes.add(mainStat, grandfatherLife, durability)
@@ -1190,7 +1209,7 @@ def load_2h_swords(apps, schema_editor):
 		category='2H Swords',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	theSultanOfBlindingSand.save()
 	theSultanOfBlindingSand.affixes.add(mainStat, sultanBlindChance)
@@ -1201,7 +1220,7 @@ def load_2h_swords(apps, schema_editor):
 		category='2H Swords',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='all',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	theZweihander.save()
 	theZweihander.affixes.add(mainStat, killExp)
@@ -1212,7 +1231,7 @@ def load_2h_swords(apps, schema_editor):
 		category='2H Swords',
 		random_primaries='1',
 		random_secondaries='2',
-		owner='all',
+		owner='bb-cs-mk-wd-wz',
 		patch='23')
 	warmonger.save()
 	warmonger.affixes.add(mainStat, sockets)

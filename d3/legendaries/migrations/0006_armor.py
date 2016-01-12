@@ -120,7 +120,7 @@ def load_helmets(apps, schema_editor):
 		unique='Threatening Shout has a chance to Charm enemies and cause them to join your side',
 		random_primaries='1',
 		random_secondaries='1',
-		owner='barb',
+		owner='bb',
 		patch='23')
 	skullOfResonance.save()
 	skullOfResonance.affixes.add(mainStat, allRes, sockets)
@@ -154,7 +154,7 @@ def load_helmets(apps, schema_editor):
 		unique='Reduce the cooldown and increase the damage of Phalanx by <span>45 - 60%</span>',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='sader',
+		owner='cs',
 		patch='24')
 	warhelmOfKassar.save()
 	warhelmOfKassar.affixes.add(mainStat, sockets)
@@ -301,7 +301,7 @@ def load_spirit_stones(apps, schema_editor):
 	for armor in Armor.objects.filter(category='Spirit Stones'):
 		armor.inherent = '<span class="inherent"><span>660 - 759</span> Armor</span>'
 		armor.slot = 'Head'
-		armor.owner = 'monk'
+		armor.owner = 'mk'
 		armor.save()
 
 
@@ -486,7 +486,7 @@ def load_wizard_hats(apps, schema_editor):
 	for armor in Armor.objects.filter(category='Wizard Hats'):
 		armor.inherent = '<span class="inherent"><span>660 - 759</span> Armor</span>'
 		armor.slot = 'Head'
-		armor.owner = 'wiz'
+		armor.owner = 'wz'
 		armor.save()
 
 
@@ -538,7 +538,7 @@ def load_shoulders(apps, schema_editor):
 		unique='Call of the Ancients gains the effect of the Ancients\' Fury rune',
 		random_primaries='3',
 		random_secondaries='1',
-		owner='barb',
+		owner='bb',
 		patch='23')
 	furyOfTheAncients.save()
 	furyOfTheAncients.affixes.add(mainStat)
@@ -560,7 +560,7 @@ def load_shoulders(apps, schema_editor):
 		unique='Cyclone Strike reduces your damage taken by <span>40 - 50%</span> for <span class="silver">5</span> seconds',
 		random_primaries='3',
 		random_secondaries='1',
-		owner='monk',
+		owner='mk',
 		patch='24')
 	lefebvresSoliloquy.save()
 	lefebvresSoliloquy.affixes.add(mainStat)
@@ -616,7 +616,7 @@ def load_shoulders(apps, schema_editor):
 		random_primaries='3',
 		random_secondaries='2',
 		notes='double check affixes',
-		owner='barb',
+		owner='bb',
 		patch='23')
 	vileWard.save()
 	vileWard.affixes.add(mainStat)
@@ -665,7 +665,7 @@ def load_chest_armor(apps, schema_editor):
 		unique='Smite will now also be cast at a second nearby enemy',
 		random_primaries='3',
 		random_secondaries='1',
-		owner='sader',
+		owner='cs',
 		patch='23')
 	armorOfTheKindRegent.save()
 	armorOfTheKindRegent.affixes.add(mainStat)
@@ -709,7 +709,7 @@ def load_chest_armor(apps, schema_editor):
 		unique='Gain Thorns equal to <span>250 - 300%</span> of your Vitality',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='sader',
+		owner='cs',
 		patch='24')
 	heartOfIron.save()
 	heartOfIron.affixes.add(mainStat, allRes)
@@ -845,12 +845,8 @@ def load_bracers(apps, schema_editor):
 		affix='lacuniIAS')
 	lacuniMovementSpeed = Affix.objects.get(slot='Bracers',
 		affix='lacuniMovementSpeed')
-	slaveMovementSpeed = Affix.objects.get(slot='Bracers',
-		affix='slaveMovementSpeed')
 	slaveLPK = Affix.objects.get(slot='Bracers',
 		affix='slaveLPK')
-	# steadyIAS = Affix.objects.get(slot='Bracers',
-	# 	affix='steadyIAS')
 
 #2.4 new
 	akkhansManacles = Armor(slot='Bracers',
@@ -859,7 +855,7 @@ def load_bracers(apps, schema_editor):
 		unique='Blessed Shield damage is increased by <span>400 - 500%</span> for the first enemy it hits',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='sader',
+		owner='cs',
 		patch='24')
 	akkhansManacles.save()
 	akkhansManacles.affixes.add(mainStat, chc)
@@ -882,7 +878,7 @@ def load_bracers(apps, schema_editor):
 		unique='Enemies hit by your Cyclone Strike take <span>150 - 200%</span> more damage from your Mystic Ally for <span class="silver">5</span> seconds',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='monk',
+		owner='mk',
 		patch='24')
 	bindingsOfTheLesserGods.save()
 	bindingsOfTheLesserGods.affixes.add(mainStat, chc)
@@ -893,7 +889,7 @@ def load_bracers(apps, schema_editor):
 		unique='Seismic Slam deals <span>300 - 400%</span> increased damage to the first <span class="silver">5</span> enemies it hits',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='barb',
+		owner='bb',
 		patch='23')
 	bracersOfDestruction.save()
 	bracersOfDestruction.affixes.add(mainStat)
@@ -905,7 +901,7 @@ def load_bracers(apps, schema_editor):
 		unique='Heaven\'s Fury deals <span>150 - 200%</span> increased damage to enemies that are Blinded, Immobilized, or Stunned',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='sader',
+		owner='cs',
 		patch='24')
 	bracersOfFury.save()
 	bracersOfFury.affixes.add(mainStat, chc)
@@ -916,7 +912,7 @@ def load_bracers(apps, schema_editor):
 		unique='Hammer of the Ancients attacks <span class="silver">50%</span> faster and deals <span>150 - 200%</span> increased damage',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='barb',
+		owner='bb',
 		patch='23')
 	bracersOfTheFirstMen.save()
 	bracersOfTheFirstMen.affixes.add(mainStat, chc)
@@ -928,7 +924,7 @@ def load_bracers(apps, schema_editor):
 		unique='Enemies take <span>300 - 400%</span> increased damage from your Tempest Rush for <span class="silver">5</span> seconds after you hit them with a Blind, Freeze, or Stun',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='monk',
+		owner='mk',
 		patch='24')
 	cesarsMemento.save()
 	cesarsMemento.affixes.add(mainStat, chc)
@@ -961,7 +957,7 @@ def load_bracers(apps, schema_editor):
 		unique='When your Shield Bash hits <span class="silver">3</span> or fewer enemies, its damage is increased by <span>300 - 400%</span> and <span class="silver">25%</span> of its Wrath Cost is refunded',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='sader',
+		owner='cs',
 		patch='24')
 	drakonsLesson.save()
 	drakonsLesson.affixes.add(mainStat, chc)
@@ -972,7 +968,7 @@ def load_bracers(apps, schema_editor):
 		unique='When your Blessed Hammer hits <span class="silver">3</span> or fewer enemies, <span>75 - 100%</span> of its Wrath Cost is refunded',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='sader',
+		owner='cs',
 		patch='23')
 	gabrielsVambraces.save()
 	gabrielsVambraces.affixes.add(mainStat, chc)
@@ -983,7 +979,7 @@ def load_bracers(apps, schema_editor):
 		unique='Exploding Palm\'s on-death explosion applies Exploding Palm',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='monk',
+		owner='mk',
 		patch='23')
 	gungdoGear.save()
 	gungdoGear.affixes.add(mainStat, eleDmg)
@@ -1049,7 +1045,7 @@ def load_bracers(apps, schema_editor):
 		unique='Wave of Light also Slows enemies by <span class="silver">80%</span> for <span class="silver">3</span> seconds and deals <span>125 - 150%</span> increased damage',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='monk',
+		owner='mk',
 		patch='24')
 	pintosPride.save()
 	pintosPride.affixes.add(mainStat, chc)
@@ -1071,7 +1067,7 @@ def load_bracers(apps, schema_editor):
 		unique='Energy Twister periodically pulls in lesser enemies within <span class="silver">30</span> yards',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='wiz',
+		owner='wz',
 		patch='23')
 	ranslorsFolly.save()
 	ranslorsFolly.affixes.add(mainStat, chc)
@@ -1105,20 +1101,21 @@ def load_bracers(apps, schema_editor):
 		unique='Increases the damage of Ancient Spear - Boulder Toss by <span class="silver">100%</span>. When your Boulder Toss hits <span class="silver">5</span> or fewer enemies the damage is increased by <span>120 - 150%</span>',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='barb',
+		owner='bb',
 		patch='24')
 	skularsSalvation.save()
 	skularsSalvation.affixes.add(mainStat, chc)
 
-	slaveBonds = Armor(slot='Bracers',
-		name='Slave Bonds',
-		pic='media/items/legendaries/armor/wrists/slave_bonds.png',
-		random_primaries='2',
-		random_secondaries='1',
-		owner='all',
-		patch='23')
-	slaveBonds.save()
-	slaveBonds.affixes.add(mainStat, slaveMovementSpeed, slaveLPK)
+#Removed in 2.4
+	# slaveBonds = Armor(slot='Bracers',
+	# 	name='Slave Bonds',
+	# 	pic='media/items/legendaries/armor/wrists/slave_bonds.png',
+	# 	random_primaries='2',
+	# 	random_secondaries='1',
+	# 	owner='all',
+	# 	patch='23')
+	# slaveBonds.save()
+	# slaveBonds.affixes.add(mainStat, slaveMovementSpeed, slaveLPK)
 
 	spiritGuards = Armor(slot='Bracers',
 		name='Spirit Guards',
@@ -1126,7 +1123,7 @@ def load_bracers(apps, schema_editor):
 		unique='Your Spirit Generators reduce your damage taken by <span>30 - 40%</span> for <span class="silver">3</span> seconds',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='monk',
+		owner='mk',
 		patch='23')
 	spiritGuards.save()
 	spiritGuards.affixes.add(mainStat, chc)
@@ -1358,7 +1355,7 @@ def load_belts(apps, schema_editor):
 		random_primaries='3',
 		random_secondaries='1',
 		notes='double check secondaries',
-		owner='sader',
+		owner='cs',
 		patch='23')
 	angelHairBraid.save()
 	angelHairBraid.affixes.add(mainStat, durability)
@@ -1368,7 +1365,7 @@ def load_belts(apps, schema_editor):
 		pic='media/items/legendaries/armor/waist/belts/belt_of_the_trove.png',
 		unique='Every <span>6 - 8</span> seconds, call down Bombardment on a random nearby enemy',
 		random_primaries='2',
-		owner='sader',
+		owner='cs',
 		patch='23')
 	beltOfTheTrove.save()
 	beltOfTheTrove.affixes.add(mainStat, allRes, troveReducedMeleeDmg)
@@ -1390,7 +1387,7 @@ def load_belts(apps, schema_editor):
 		unique='Each hit with Seven-Sided Strike grants <span>3.0 - 3.5%</span> damage reduction for <span class="silver">7</span> seconds',
 		random_primaries='3',
 		random_secondaries='1',
-		owner='monk',
+		owner='mk',
 		patch='23')
 	bindingOfTheLost.save()
 	bindingOfTheLost.affixes.add(mainStat)
@@ -1401,7 +1398,7 @@ def load_belts(apps, schema_editor):
 		unique='Justice spawns a Blessed Hammer when it hits an enemy',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='sader',
+		owner='cs',
 		patch='23')
 	blessedOfHaull.save()
 	blessedOfHaull.affixes.add(mainStat, allRes)
@@ -1446,7 +1443,7 @@ def load_belts(apps, schema_editor):
 		unique='You automatically start with <span>40 - 50</span> Archon stacks when entering Archon form',
 		random_primaries='3',
 		random_secondaries='1',
-		owner='wiz',
+		owner='wz',
 		patch='24')
 	fazulasImprobableChain.save()
 	fazulasImprobableChain.affixes.add(mainStat)
@@ -1511,7 +1508,7 @@ def load_belts(apps, schema_editor):
 		unique='Reduces the Arcane Power cost of Arcane Torrent, Disintegrate, and Ray of Frost by <span>50 - 65%</span>',
 		random_primaries='3',
 		random_secondaries='1',
-		owner='wiz',
+		owner='wz',
 		patch='24')
 	hergbrashsBindings.save()
 	hergbrashsBindings.affixes.add(mainStat)
@@ -1554,7 +1551,7 @@ def load_belts(apps, schema_editor):
 		unique='Enemies damaged by Black Hole are also slowed by <span>60 - 80%</span> for <span class="silver">3</span> seconds',
 		random_primaries='3',
 		random_secondaries='1',
-		owner='wiz',
+		owner='wz',
 		patch='23')
 	jangsEnvelopment.save()
 	jangsEnvelopment.affixes.add(mainStat)
@@ -1566,7 +1563,7 @@ def load_belts(apps, schema_editor):
 		unique='Sweeping Wind gains <span class="silver">2</span> stacks every second it does not deal damage to any enemies',
 		random_primaries='3',
 		random_secondaries='1',
-		owner='monk',
+		owner='mk',
 		patch='24')
 	kyoshirosSoul.save()
 	kyoshirosSoul.affixes.add(mainStat, kyoshirosSweepingWind)
@@ -1577,7 +1574,7 @@ def load_belts(apps, schema_editor):
 		unique='Slash attacks in all directions',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='sader',
+		owner='cs',
 		patch='23')
 	omnislash.save()
 	omnislash.affixes.add(mainStat, allRes)
@@ -1609,7 +1606,7 @@ def load_belts(apps, schema_editor):
 		unique='Judgment gains the effect of the Debilitate rune and is cast at your landing location when casting Falling Sword',
 		random_primaries='3',
 		random_secondaries='1',
-		owner='sader',
+		owner='cs',
 		patch='23')
 	sacredHarness.save()
 	sacredHarness.affixes.add(mainStat)
@@ -1665,7 +1662,7 @@ def load_belts(apps, schema_editor):
 		unique='Your Signature Spells attack <span class="silver">50%</span> faster and restore <span>9 - 12</span> Arcane Power',
 		random_primaries='3',
 		random_secondaries='1',
-		owner='wiz',
+		owner='wz',
 		patch='24')
 	theShameOfDelsere.save()
 	theShameOfDelsere.affixes.add(mainStat)
@@ -1822,7 +1819,7 @@ def load_mighty_belts(apps, schema_editor):
 	for armor in Armor.objects.filter(category='Mighty Belts'):
 		armor.inherent = '<span class="inherent"><span>516 - 675</span> Armor</span>'
 		armor.slot = 'Waist'
-		armor.owner = 'barb'
+		armor.owner = 'bb'
 		armor.save()
 
 
@@ -1876,7 +1873,7 @@ def load_pants(apps, schema_editor):
 		unique='Enemies take <span>300 - 400%</span> increased damage from your Blessed Hammers for <span class="silver">10</span> seconds after you hit them with a Blind, Immobilize, or Stun',
 		random_primaries='2',
 		# random_secondaries='1',
-		owner='sader',
+		owner='cs',
 		patch='24')
 	hammerJammers.save()
 	hammerJammers.affixes.add(mainStat, hammerMovementSpeed, extraGold)
@@ -1946,8 +1943,6 @@ def load_boots(apps, schema_editor):
 	movementSpeed = Affix.objects.get(slot='Boots',
 		affix='movementSpeed')
 
-	bojSkillDmg = Affix.objects.get(slot='Boots',
-		affix='bojSkillDmg')
 	iceReducedColdDmg = Affix.objects.get(slot='Boots',
 		affix='iceReducedColdDmg')
 
@@ -1962,15 +1957,16 @@ def load_boots(apps, schema_editor):
 	boardWalkers.save()
 	boardWalkers.affixes.add(movementSpeed)
 
-	bojAnglers = Armor(slot='Boots',
-		name='Boj Anglers',
-		pic='media/items/legendaries/armor/feet/boj_anglers.png',
-		random_primaries='2',
-		random_secondaries='2',
-		owner='all',
-		patch='23')
-	bojAnglers.save()
-	bojAnglers.affixes.add(mainStat, bojSkillDmg)
+#Removed in 2.4
+	# bojAnglers = Armor(slot='Boots',
+	# 	name='Boj Anglers',
+	# 	pic='media/items/legendaries/armor/feet/boj_anglers.png',
+	# 	random_primaries='2',
+	# 	random_secondaries='2',
+	# 	owner='all',
+	# 	patch='23')
+	# bojAnglers.save()
+	# bojAnglers.affixes.add(mainStat, bojSkillDmg)
 
 	bootsOfDisregard = Armor(slot='Boots',
 		name='Boots of Disregard',
@@ -2056,7 +2052,7 @@ def load_boots(apps, schema_editor):
 		unique='Lashing Tail Kick attacks <span class="silver">50%</span> faster and deals <span>250 - 300%</span> increased damage',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='monk',
+		owner='mk',
 		patch='24')
 	riveraDancers.save()
 	riveraDancers.affixes.add(mainStat, allRes)
@@ -2067,7 +2063,7 @@ def load_boots(apps, schema_editor):
 		unique='Mystic Ally summons <span class="silver">2</span> extra Mystic Allies that fight by your side',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='monk',
+		owner='mk',
 		patch='23')
 	theCrudestBoots.save()
 	theCrudestBoots.affixes.add(mainStat, movementSpeed)

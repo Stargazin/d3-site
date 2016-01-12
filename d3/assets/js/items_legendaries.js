@@ -72,13 +72,16 @@ var toggleLegendaries = (function() {
   //Click to toggle displaying 2.4 items only
   $patch.on('click', _togglePatchItems);
 
+  //Load items past first 20; initially display:none by CSS
   _delayLoading()
 
   function _toggleClassItems() {
     $item.hide();
+    //Set owner to selected class (on toggle button)
     var owner = $(this).attr('class').split(' ')[1].substring(8);
-    //Show all items in original order
+    // console.log(owner)
     if (owner == 'all') {
+      //Show all items in original order
       $reverseItem.each(function() {
         $(this).prependTo($itemContainer);
         $(this).show();
@@ -87,17 +90,28 @@ var toggleLegendaries = (function() {
     else {
       $reverseItem.each(function() {
         var itemOwner = $(this).attr('class').split(' ')[1];
-        //Show item if useable by class
-        if (itemOwner == owner || itemOwner == 'all') {
-          $(this).show();
+        console.log(owner);
+        switch (true) {
           //Move class-specific items to top
-          if (itemOwner == owner) {
-            $(this).prependTo($itemContainer);
-          };
-        }
-        //Hide item if not useable by class
-        else {
-          $(this).hide();
+          case itemOwner.indexOf(owner) > -1:
+            //Show if it belongs to selected class and others
+            if (itemOwner.indexOf('-') > -1) {
+              $(this).show();
+            }
+            //Show and prepend if unique to selected class
+            else {
+              $(this).prependTo($itemContainer);
+              $(this).show();
+            };
+            break;
+          //Show items usable by all classes
+          case itemOwner == 'all':
+            $(this).show();
+            break;
+          default:
+            //Hide item if not useable by class
+            $(this).hide();
+            // console.log('hiding');
         };
       });
     };
@@ -108,6 +122,7 @@ var toggleLegendaries = (function() {
 
     _visibleItemCheck()
   }
+
 
   function _togglePatchItems() {
     $itemContainer.fadeTo(25, 0.1);

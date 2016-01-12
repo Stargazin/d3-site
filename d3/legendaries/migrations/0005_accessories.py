@@ -375,7 +375,7 @@ def load_rings(apps, schema_editor):
 		unique='After casting Furious Charge, Ground Stomp, or Leap, take <span>50 - 60%</span> reduced damage for <span class="silver">8</span> seconds',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='barb',
+		owner='bb',
 		patch='24')
 	bandOfMight.save()
 	bandOfMight.affixes.add(mainStat, chc)
@@ -453,7 +453,7 @@ def load_rings(apps, schema_editor):
 		unique='Increases the duration of Phalanx avatars by <span class="silver">200%</span>',
 		random_primaries='3',
 		random_secondaries='1',
-		owner='sader',
+		owner='cs',
 		patch='23')
 	eternal.save()
 	eternal.affixes.add(mainStat)
@@ -464,7 +464,7 @@ def load_rings(apps, schema_editor):
 		unique='Your Ice Armor now reduces damage from melee attacks by <span>50 - 60%</span> and automatically casts Frost Nova whenever you take <span class="silver">10%</span> of your Life in damage',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='wiz',
+		owner='wz',
 		patch='23')
 	halo.save()
 	halo.affixes.add(mainStat, sockets)
@@ -627,7 +627,7 @@ def load_rings(apps, schema_editor):
 		unique='Increase the damage of Whirlwind by <span>300 - 400%</span> weapon damage',
 		random_primaries='2',
 		random_secondaries='1',
-		owner='barb',
+		owner='bb',
 		patch='23')
 	skull.save()
 	skull.affixes.add(mainStat, chc)

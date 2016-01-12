@@ -1374,7 +1374,7 @@ def load_item_sets(apps, schema_editor):
 #2.4 check
 	unhallowedEssence2 = Effect(pieces='2',
 		# effect='<li><p>Your generators also generate <span class="silver">1</span> Discipline</p></li>',
-		effect='<li><p>Your Generators also generate <span class="silver">1</span> Discipline</li>',
+		effect='<li><p>Your Generators now generate <span class="silver">2</span> additional Hatred</li>',
 		itemSet=unhallowedEssence)
 	unhallowedEssence2.save()
 

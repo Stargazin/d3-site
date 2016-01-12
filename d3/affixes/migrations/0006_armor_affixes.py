@@ -429,12 +429,13 @@ def load_bracers_affixes(apps, schema_editor):
 		is_primary=True)
 	lacuniMovementSpeed.save()
 
-#Slave Bonds
-	slaveMovementSpeed = Affix(slot='Bracers',
-		affix='slaveMovementSpeed',
-		desc='<span>+10 - 12%</span> Movement Speed',
-		is_primary=True)
-	slaveMovementSpeed.save()
+#Removed in 2.4
+# #Slave Bonds
+# 	slaveMovementSpeed = Affix(slot='Bracers',
+# 		affix='slaveMovementSpeed',
+# 		desc='<span>+10 - 12%</span> Movement Speed',
+# 		is_primary=True)
+# 	slaveMovementSpeed.save()
 
 	slaveLPK = Affix(slot='Bracers',
 		affix='slaveLPK',
@@ -784,12 +785,13 @@ def load_boots_affixes(apps, schema_editor):
 		is_primary=True)
 	movementSpeed.save()
 
-#Boj Anglers
-	bojSkillDmg = Affix(slot='Boots',
-		affix='bojSkillDmg',
-		is_primary=True,
-		desc='Increase {<span class="vary">Skill Damage</span>} by <span>10 - 15%</span><div class="extra"><div class="extra-x">X</div><span><strong>Barbarian: </strong>Ancient Spear | Hammer of the Ancients | Seismic Slam | Whirlwind<br><strong>Crusader: </strong>Blessed Hammer | Blessed Shield | Fist of the Heavens | Phalanx | Shield Bash | Sweep Attack<br><strong>Demon Hunter: </strong>Chakram | Cluster Arrow | Elemental Arrow | Impale | Multishot | Rapid Fire | Strafe<br><strong>Monk: </strong>Exploding Palm | Lashing Tail Kick | Tempest Rush | Wave of Light<br><strong>Witch Doctor: </strong>Acid Cloud | Firebats | Sacrifice | Spirit Barrage | Zombie Charger<br><strong>Wizard: </strong>Arcane Orb | Arcane Torrent | Disintegrate | Energy Twister | Meteor | Ray of Frost | Wave of Force</span></div>')
-	bojSkillDmg.save()
+# Removed in 2.4
+# #Boj Anglers
+# 	bojSkillDmg = Affix(slot='Boots',
+# 		affix='bojSkillDmg',
+# 		is_primary=True,
+# 		desc='Increase {<span class="vary">Skill Damage</span>} by <span>10 - 15%</span><div class="extra"><div class="extra-x">X</div><span><strong>Barbarian: </strong>Ancient Spear | Hammer of the Ancients | Seismic Slam | Whirlwind<br><strong>Crusader: </strong>Blessed Hammer | Blessed Shield | Fist of the Heavens | Phalanx | Shield Bash | Sweep Attack<br><strong>Demon Hunter: </strong>Chakram | Cluster Arrow | Elemental Arrow | Impale | Multishot | Rapid Fire | Strafe<br><strong>Monk: </strong>Exploding Palm | Lashing Tail Kick | Tempest Rush | Wave of Light<br><strong>Witch Doctor: </strong>Acid Cloud | Firebats | Sacrifice | Spirit Barrage | Zombie Charger<br><strong>Wizard: </strong>Arcane Orb | Arcane Torrent | Disintegrate | Energy Twister | Meteor | Ray of Frost | Wave of Force</span></div>')
+# 	bojSkillDmg.save()
 
 #Ice Climbers
 	iceReducedColdDmg = Affix(slot='Boots',
