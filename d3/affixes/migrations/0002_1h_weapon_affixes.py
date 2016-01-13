@@ -266,12 +266,13 @@ def load_hand_crossbow_affixes(apps, schema_editor):
 		desc='Fire skills do <span>15 - 20%</span> more damage')
 	balefireFireDmg.save()
 
-#Dawn
-	dawnStunChance = Affix(category='Hand Crossbows',
-		affix='dawnStunChance',
-		is_primary=False,
-		desc='<span>+1.0 - 5.0%</span> chance to Stun on Hit')
-	dawnStunChance.save()
+#Removed in 2.4
+# #Dawn
+# 	dawnStunChance = Affix(category='Hand Crossbows',
+# 		affix='dawnStunChance',
+# 		is_primary=False,
+# 		desc='<span>+1.0 - 5.0%</span> chance to Stun on Hit')
+# 	dawnStunChance.save()
 
 #Added in 2.4
 #K'mar Tenclip
@@ -469,18 +470,19 @@ def load_1h_spear_affixes(apps, schema_editor):
 		desc='Increase Zombie Charger damage by <span>60 - 80%</span>')
 	scrimshawZombieCharger.save()
 
-#The Three Hundredth Spear
-	threeWeaponThrow = Affix(category='1H Spears',
-		affix='threeWeaponThrow',
-		is_primary=True,
-		desc='Increase Weapon Throw damage by <span>35 - 50%</span>')
-	threeWeaponThrow.save()
+#Removed in 2.4
+# #The Three Hundredth Spear
+# 	threeWeaponThrow = Affix(category='1H Spears',
+# 		affix='threeWeaponThrow',
+# 		is_primary=True,
+# 		desc='Increase Weapon Throw damage by <span>35 - 50%</span>')
+# 	threeWeaponThrow.save()
 
-	threeAncientSpear = Affix(category='1H Spears',
-		affix='threeAncientSpear',
-		is_primary=True,
-		desc='Increase Zombie Charger damage by <span>35 - 50%</span>')
-	threeAncientSpear.save()
+# 	threeAncientSpear = Affix(category='1H Spears',
+# 		affix='threeAncientSpear',
+# 		is_primary=True,
+# 		desc='Increase Zombie Charger damage by <span>35 - 50%</span>')
+# 	threeAncientSpear.save()
 
 
 def load_1h_sword_affixes(apps, schema_editor):
@@ -599,12 +601,13 @@ def load_wand_affixes(apps, schema_editor):
 		desc='<span>+10 - 14</span> Max Arcane Power')
 	maxAP.save()
 
-#Fragment of Destiny
-	fragmentSpectralBlade = Affix(category='Wands',
-		affix='fragmentSpectralBlade',
-		is_primary=True,
-		desc='Increase Spectral Blade damage by <span>15 - 30%</span>')
-	fragmentSpectralBlade.save()
+#Removed in 2.4
+# #Fragment of Destiny
+# 	fragmentSpectralBlade = Affix(category='Wands',
+# 		affix='fragmentSpectralBlade',
+# 		is_primary=True,
+# 		desc='Increase Spectral Blade damage by <span>15 - 30%</span>')
+# 	fragmentSpectralBlade.save()
 
 #Gesture of Orpheus
 	gestureEleDmg = Affix(category='Wands',

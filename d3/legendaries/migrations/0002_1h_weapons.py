@@ -178,7 +178,7 @@ def load_ceremonial_knives(apps, schema_editor):
 		random_secondaries='1',
 		patch='24')
 	lastBreath.save()
-	lastBreath.affixes.add(inte,)
+	lastBreath.affixes.add(inte)
 
 	livingUmbralOath = Weapon(slot='1H Weapons',
 		name='Living Umbral Oath',
@@ -708,8 +708,6 @@ def load_hand_crossbows(apps, schema_editor):
 
 	balefireFireDmg = Affix.objects.get(affix='balefireFireDmg',
 		category='Hand Crossbows')
-	dawnStunChance = Affix.objects.get(affix='dawnStunChance',
-		category='Hand Crossbows')
 	kmarStrafe = Affix.objects.get(affix='kmarStrafe',
 		category='Hand Crossbows')
 	vallasStrafe = Affix.objects.get(affix='vallasStrafe',
@@ -756,7 +754,7 @@ def load_hand_crossbows(apps, schema_editor):
 		random_primaries='2',
 		patch='24')
 	dawn.save()
-	dawn.affixes.add(dext, dawnStunChance)
+	dawn.affixes.add(dext)
 
 #2.4 new
 	fortressBallista = Weapon(slot='1H Weapons',
@@ -1117,10 +1115,6 @@ def load_1h_spears(apps, schema_editor):
 		category='1H Spears')
 	scrimshawZombieCharger = Affix.objects.get(affix='scrimshawZombieCharger',
 		category='1H Spears')
-	threeWeaponThrow = Affix.objects.get(affix='threeWeaponThrow',
-		category='1H Spears')
-	threeAncientSpear = Affix.objects.get(affix='threeAncientSpear',
-		category='1H Spears')
 
 	akaneshTheHeraldOfRighteousness = Weapon(slot='1H Weapons',
 		name='Akanesh, The Herald of Righteousness',
@@ -1174,11 +1168,12 @@ def load_1h_spears(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/spears/the_three_hundredth_spear.png',
 		category='1H Spears',
 		unique='Increase the damage of Weapon Throw and Ancient Spear by <span>45 - 60%</span>',
+		random_primaries='2',
 		random_secondaries='1',
 		owner='bb',
 		patch='2.4')
 	theThreeHundredthSpear.save()
-	theThreeHundredthSpear.affixes.add(mainStat, threeWeaponThrow, threeAncientSpear)
+	theThreeHundredthSpear.affixes.add(mainStat)
 
 	for weapon in Weapon.objects.filter(category="1H Spears"):
 		weapon.inherent = '<span class="inherent"><span>1.20</span> Attacks per Second</span>'
@@ -1471,8 +1466,6 @@ def load_wands(apps, schema_editor):
 	maxAP =  Affix.objects.get(affix='maxAP',
 		category='Wands')
 
-	fragmentSpectralBlade =  Affix.objects.get(affix='fragmentSpectralBlade',
-		category='Wands')
 	gestureEleDmg =  Affix.objects.get(affix='gestureEleDmg',
 		category='Wands')
 	sloraksDisintegrate =  Affix.objects.get(affix='sloraksDisintegrate',
@@ -1520,11 +1513,11 @@ def load_wands(apps, schema_editor):
 		pic='media/items/legendaries/weapons/1h/wands/fragment_of_destiny.png',
 		category='Wands',
 		unique='Spectral Blade attacks <span class="silver">50%</span> faster and deals <span>150 - 200%</span> increased damage',
-		random_primaries='1',
+		random_primaries='2',
 		random_secondaries='1',
 		patch='24')
 	fragmentOfDestiny.save()
-	fragmentOfDestiny.affixes.add(inte, fragmentSpectralBlade)
+	fragmentOfDestiny.affixes.add(inte)
 
 	gestureOfOrpheus = Weapon(slot='1H Weapons',
 		name='Gesture of Orpheus',

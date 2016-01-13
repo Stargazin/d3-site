@@ -889,7 +889,7 @@ def load_item_sets(apps, schema_editor):
 #2.4
 	armorOfAkkhan2 = Effect(pieces='2',
 		# effect='<li><p><span class="silver">+500</span> Strength</p></li>',
-		effect='<li><p>Reduces the cost of all abilities by <span class="silver">50%</span> while Akarat\'s Champion is active</p></li>',
+		effect='<li><p>Reduce the cost of all abilities by <span class="silver">50%</span> while Akarat\'s Champion is active</p></li>',
 		itemSet=armorOfAkkhan)
 	armorOfAkkhan2.save()
 
@@ -1096,7 +1096,7 @@ def load_item_sets(apps, schema_editor):
 #2.4
 	thornsOfTheInvoker2 = Effect(pieces='2',
 		# effect='<li><p>Ranged and melee attackers take <span class="silver">4000</span> damage per hit</p></li>',
-		effect='<li><p>Your Thorns damage now hits all enemies in a <span class="silver">15</span> yard radius</p></li><li><p>Each time you hit an enemy with Punish or Slash or block an attack, your Thorns damage is increased by <span class="silver">25%</span> for <span class="silver">2</span> seconds</p></li>',
+		effect='<li><p>Your Thorns damage now hits all enemies in a <span class="silver">15</span> yard radius around you</p></li><li><p>Each time you hit an enemy with Punish or Slash or block an attack, your Thorns damage is increased by <span class="silver">25%</span> for <span class="silver">2</span> seconds</p></li>',
 		itemSet=thornsOfTheInvoker)
 	thornsOfTheInvoker2.save()
 

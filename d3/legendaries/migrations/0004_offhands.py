@@ -83,6 +83,18 @@ def load_sources(apps, schema_editor):
 	mykensBallOfHate.affixes.add(dmg, inte, chc)
 
 #2.4 new
+	orbOfInfiniteDepth = Weapon(slot='Offhands',
+		category='Sources',
+		name='Orb of Infinite Depth',
+		pic='media/items/legendaries/2.4/weapons/orb_of_infinite_depth.png',
+		unique='Each time you hit an enemy with Explosive Blast your damage is increased by <span>4 - 5%</span> and your damage reduction is increased by <span class="silver">15%</span> for <span class="silver">6</span> seconds. This effect can stack up to <span class="silver">4</span> times',
+		random_primaries='2',
+		random_secondaries='1',
+		patch='24')
+	orbOfInfiniteDepth.save()
+	orbOfInfiniteDepth.affixes.add(dmg, inte, chc)
+
+#2.4 new
 	primordialSoul = Weapon(slot='Offhands',
 		category='Sources',
 		name='Primordial Soul',
@@ -349,10 +361,10 @@ def load_mojos(apps, schema_editor):
 		name='Thing of the Deep',
 		pic='media/items/legendaries/offhands/mojos/thing_of_the_deep.png',
 		unique='<span class="silver">+20</span> Yards to Gold and Globe Pickup',
-		random_primaries='1',
+		random_primaries='2',
 		patch='24')
 	thingOfTheDeep.save()
-	thingOfTheDeep.affixes.add(dmg, inte, chc, manaRegen, maxMana)
+	thingOfTheDeep.affixes.add(dmg, inte, chc, maxMana)
 
 	uhkapianSerpent = Weapon(slot='Offhands',
 		category='Mojos',

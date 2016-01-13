@@ -289,6 +289,12 @@ def load_2h_mighty_weapon_affixes(apps, schema_editor):
 	bladeEarthquake.save()
 
 #Fury of the Vanished Peak
+	furyLifePerFury = Affix(category='2H Mighty Weapons',
+		affix='furyLifePerFury',
+		is_primary=True,
+		desc='<span>+2,500 - 3,000</span> Life per Fury spent')
+	furyLifePerFury.save()
+
 	furySeismicSlam = Affix(category='2H Mighty Weapons',
 		affix='furySeismicSlam',
 		is_primary=True,

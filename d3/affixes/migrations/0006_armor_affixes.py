@@ -302,6 +302,13 @@ def load_chest_armor_affixes(apps, schema_editor):
 		ancient='<span>+110 - 130</span> Resistance to All Elements')
 	allRes.save()
 
+	thorns = Affix(category='Chest Armors',
+		affix='thorns',
+		is_primary=False,
+		desc='Attackers take <span>5,334 - 7,696</span> damage',
+		ancient='Attackers take <span>7,697 - 9,500</span> damage')
+	thorns.save()
+
 	durability = Affix(category='Chest Armors',
 		affix='durability',
 		is_primary=False,
@@ -429,7 +436,7 @@ def load_bracers_affixes(apps, schema_editor):
 		is_primary=True)
 	lacuniMovementSpeed.save()
 
-#Removed in 2.4
+# Removed in 2.4
 # #Slave Bonds
 # 	slaveMovementSpeed = Affix(slot='Bracers',
 # 		affix='slaveMovementSpeed',
@@ -437,12 +444,12 @@ def load_bracers_affixes(apps, schema_editor):
 # 		is_primary=True)
 # 	slaveMovementSpeed.save()
 
-	slaveLPK = Affix(slot='Bracers',
-		affix='slaveLPK',
-		is_primary=False,
-		desc='<span>+6,428 - 8,914</span> Life per Kill',
-		ancient='<span>+9,805 - 11,590</span> Life per Kill')
-	slaveLPK.save()
+# 	slaveLPK = Affix(slot='Bracers',
+# 		affix='slaveLPK',
+# 		is_primary=False,
+# 		desc='<span>+6,428 - 8,914</span> Life per Kill',
+# 		ancient='<span>+9,805 - 11,590</span> Life per Kill')
+# 	slaveLPK.save()
 
 #Removed in 2.4
 # #Steady Strikers
@@ -713,18 +720,27 @@ def load_pants_affixes(apps, schema_editor):
 		ancient='<span>+110 - 130</span> Resistance to All Elements')
 	allRes.save()
 
+	sockets = Affix(slot='Pants',
+		affix='sockets',
+		is_primary=True,
+		desc='Sockets (<span>2</span>)')
+	sockets.save()
+
+
 	extraGold = Affix(slot='Pants',
 		affix='extraGold',
 		is_primary=False,
 		desc='<span>+32 - 35%</span> Extra Gold from Monsters')
 	extraGold.save()
 
-#Hammer Jammers
-	hammerMovementSpeed = Affix(slot='Pants',
-		affix='hammerMovementSpeed',
-		desc='<span>+10 - 12%</span> Movement Speed',
-		is_primary=True)
-	hammerMovementSpeed.save()
+
+#Removed in 2.4
+# #Hammer Jammers
+# 	hammerMovementSpeed = Affix(slot='Pants',
+# 		affix='hammerMovementSpeed',
+# 		desc='<span>+10 - 12%</span> Movement Speed',
+# 		is_primary=True)
+# 	hammerMovementSpeed.save()
 
 #Swamp Land Waders
 	swampPoisDmg = Affix(slot='Pants',

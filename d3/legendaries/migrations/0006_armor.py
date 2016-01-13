@@ -637,6 +637,8 @@ def load_chest_armor(apps, schema_editor):
 	allRes = Affix.objects.get(category='Chest Armors',
 		affix='allRes')
 
+	thorns = Affix.objects.get(category='Chest Armors',
+		affix='thorns')
 	durability = Affix.objects.get(category='Chest Armors',
 		affix='durability')
 
@@ -712,7 +714,7 @@ def load_chest_armor(apps, schema_editor):
 		owner='cs',
 		patch='24')
 	heartOfIron.save()
-	heartOfIron.affixes.add(mainStat, allRes)
+	heartOfIron.affixes.add(mainStat, vita, thorns)
 
 	mantleOfTheRydraelm = Armor(category='Chest Armors',
 		name='Mantle of the Rydraelm',
@@ -845,8 +847,6 @@ def load_bracers(apps, schema_editor):
 		affix='lacuniIAS')
 	lacuniMovementSpeed = Affix.objects.get(slot='Bracers',
 		affix='lacuniMovementSpeed')
-	slaveLPK = Affix.objects.get(slot='Bracers',
-		affix='slaveLPK')
 
 #2.4 new
 	akkhansManacles = Armor(slot='Bracers',
@@ -870,6 +870,18 @@ def load_bracers(apps, schema_editor):
 		patch='23')
 	ancientParthanDefenders.save()
 	ancientParthanDefenders.affixes.add(mainStat)
+
+#2.4 new
+	ashnagarrsBloodBracer = Armor(slot='Bracers',
+		name='Ashnagarr\'s Blood Bracer',
+		pic='media/items/legendaries/armor/wrists/ashnagarrs_blood_bracer.png',
+		unique='Increases the potency of your shields by <span class="silver">100%</span>',
+		random_primaries='2',
+		random_secondaries='1',
+		owner='wz',
+		patch='24')
+	ashnagarrsBloodBracer.save()
+	ashnagarrsBloodBracer.affixes.add(mainStat, chc)
 
 #2.4 new
 	bindingsOfTheLesserGods = Armor(slot='Bracers',
@@ -1647,8 +1659,8 @@ def load_belts(apps, schema_editor):
 		name='String of Ears',
 		pic='media/items/legendaries/armor/waist/belts/string_of_ears.png',
 		unique='<span>+25.0 - 30.0%</span> Melee Damage Reduction',
-		random_primaries='3',
-		# random_secondaries='1',
+		random_primaries='2',
+		random_secondaries='1',
 		owner='all',
 		patch='24')
 	stringOfEars.save()
@@ -1833,12 +1845,12 @@ def load_pants(apps, schema_editor):
 		affix='lps')
 	allRes = Affix.objects.get(slot='Pants',
 		affix='allRes')
+	sockets = Affix.objects.get(slot='Pants',
+		affix='sockets')
 
 	extraGold = Affix.objects.get(slot='Pants',
 		affix='extraGold')
 
-	hammerMovementSpeed = Affix.objects.get(slot='Pants',
-		affix='hammerMovementSpeed')
 	swampPoisDmg = Affix.objects.get(slot='Pants',
 		affix='swampPoisDmg')
 	swampCCReduction = Affix.objects.get(slot='Pants',
@@ -1872,11 +1884,11 @@ def load_pants(apps, schema_editor):
 		pic='media/items/legendaries/armor/legs/hammer_jammers.png',
 		unique='Enemies take <span>300 - 400%</span> increased damage from your Blessed Hammers for <span class="silver">10</span> seconds after you hit them with a Blind, Immobilize, or Stun',
 		random_primaries='2',
-		# random_secondaries='1',
+		random_secondaries='1',
 		owner='cs',
 		patch='24')
 	hammerJammers.save()
-	hammerJammers.affixes.add(mainStat, hammerMovementSpeed, extraGold)
+	hammerJammers.affixes.add(mainStat, sockets)
 
 	hexingPantsOfMrYan = Armor(slot='Pants',
 		name='Hexing Pants of Mr. Yan',

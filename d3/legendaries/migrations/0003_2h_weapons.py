@@ -346,13 +346,13 @@ def load_crossbows(apps, schema_editor):
 		name='Manticore',
 		pic='media/items/legendaries/weapons/2h/crossbows/manticore.png',
 		category='Crossbows',
-		unique='Reduces the cost of Cluster Arrow by <span>75 - 100%</span>',
-		# random_primaries='1',
+		unique='Reduces the Hatred cost of Cluster Arrow by <span>40 - 50%</span>',
+		random_primaries='2',
 		random_secondaries='1',
 		owner='dh',
 		patch='24')
 	manticore.save()
-	manticore.affixes.add(mainStat, manticoreClusterArrow, sockets)
+	manticore.affixes.add(mainStat, manticoreClusterArrow)
 
 	pusSpitter = Weapon(slot='2H Weapons',
 		name='Pus Spitter',
@@ -514,6 +514,18 @@ def load_2h_flails(apps, schema_editor):
 	sockets = Affix.objects.get(affix='sockets', category='2H Flails')
 
 	goldenSweepAttack = Affix.objects.get(affix='goldenSweepAttack', category='2H Flails')
+
+#2.4 new
+	akkhansAddendum = Weapon(slot='2H Weapons',
+		name='Akkhan\'s Addendum',
+		pic='media/items/legendaries/2.4/weapons/akkhans_addendum.png',
+		category='2H Flails',
+		unique='Akarat\'s Champion gains the effects of the Prophet rune and the Embodiment of Power rune',
+		random_primaries='2',
+		random_secondaries='1',
+		patch='24')
+	akkhansAddendum.save()
+	akkhansAddendum.affixes.add(stre)
 
 #2.4 new
 	akkhansLeniency = Weapon(slot='2H Weapons',
@@ -720,6 +732,8 @@ def load_2h_mighty_weapons(apps, schema_editor):
 
 	bladeEarthquake = Affix.objects.get(affix='bladeEarthquake',
 		category='2H Mighty Weapons')
+	furyLifePerFury = Affix.objects.get(affix='furyLifePerFury',
+		category='2H Mighty Weapons')
 	furySeismicSlam = Affix.objects.get(affix='furySeismicSlam',
 		category='2H Mighty Weapons')
 	gavelHammerOfTheAncients = Affix.objects.get(affix='gavelHammerOfTheAncients',
@@ -758,7 +772,7 @@ def load_2h_mighty_weapons(apps, schema_editor):
 		random_secondaries='1',
 		patch='23')
 	furyOfTheVanishedPeak.save()
-	furyOfTheVanishedPeak.affixes.add(stre, furySeismicSlam)
+	furyOfTheVanishedPeak.affixes.add(stre, furyLifePerFury, furySeismicSlam)
 
 	mawdawcsSorrow = Weapon(slot='2H Weapons',
 		name='Mawdawc\'s Sorrow',
@@ -851,12 +865,12 @@ def load_polearms(apps, schema_editor):
 		pic='media/items/legendaries/weapons/2h/polearms/standoff.png',
 		category='Polearms',
 		unique='Furious Charge gains increased damage equal to <span>200 - 250%</span> of your bonus Movement Speed',
-		random_primaries='1',
+		random_primaries='2',
 		random_secondaries='1',
 		owner='bb',
 		patch='24')
 	standoff.save()
-	standoff.affixes.add(mainStat, sockets)
+	standoff.affixes.add(mainStat)
 
 	vigilance = Weapon(slot='2H Weapons',
 		name='Vigilance',

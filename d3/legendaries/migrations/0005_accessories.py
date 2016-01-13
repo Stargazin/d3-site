@@ -481,16 +481,16 @@ def load_rings(apps, schema_editor):
 	hellfire.affixes.add(hellfireBonusExp)
 
 #2.4
-	justice = Accessory(slot='Rings',
+	justiceLantern = Accessory(slot='Rings',
 		name='Justice Lantern',
 		pic='media/items/legendaries/accessories/rings/justice_lantern.png',
-		unique='Gain damage reduction equal to <span>45 - 55%</span> of your Block Chance',
+		unique='Gain damage reduction equal to <span>45 - 55%</span> of your Block Chance (benefits from Crusader\'s Punish)',
 		random_primaries='2',
 		# random_secondaries='1',
 		owner='all',
 		patch='24')
-	justice.save()
-	justice.affixes.add(mainStat, justiceBlockChance, justiceCCReduction)
+	justiceLantern.save()
+	justiceLantern.affixes.add(mainStat, justiceBlockChance, justiceCCReduction, sockets)
 
 	kredes = Accessory(slot='Rings',
 		name='Krede\'s Flame',
@@ -548,7 +548,7 @@ def load_rings(apps, schema_editor):
 	oculus = Accessory(slot='Rings',
 		name='Oculus Ring',
 		pic='media/items/legendaries/accessories/rings/oculus_ring.png',
-		unique='Create an area of focused power near a monster when it is killed. Damage is increased by <span>70 - 85%</span> while standing in the area',
+		unique='Create an area of focused power near a monster when it is killed (<span class="silver">100%</span> chance). Damage is increased by <span>70 - 85% (multiplicative)</span> while standing in the area (doesn\'t stack with multiple zones)',
 		random_primaries='2',
 		random_secondaries='1',
 		owner='all',
@@ -651,7 +651,7 @@ def load_rings(apps, schema_editor):
 	soj.save()
 	soj.affixes.add(mainStat, stoneEleDmg, stoneEliteDmg, stoneMaxResource)
 
-	short_mans = Accessory(slot='Rings',
+	shortMans = Accessory(slot='Rings',
 		name='The Short Man\'s Finger',
 		pic='media/items/legendaries/accessories/rings/the_short_mans_finger.png',
 		unique='Gargantuan instead summons <span class="silver">3</span> smaller Gargantuans each more powerful than before',
@@ -659,10 +659,10 @@ def load_rings(apps, schema_editor):
 		random_secondaries='1',
 		owner='wd',
 		patch='23')
-	short_mans.save()
-	short_mans.affixes.add(mainStat, chd)
+	shortMans.save()
+	shortMans.affixes.add(mainStat, chd)
 
-	tall_mans = Accessory(slot='Rings',
+	tallMans = Accessory(slot='Rings',
 		name='The Tall Man\'s Finger',
 		pic='media/items/legendaries/accessories/rings/the_tall_mans_finger.png',
 		unique='Zombie Dogs instead summons a single Gargantuan Dog with more damage and health than all other dogs combined',
@@ -670,8 +670,8 @@ def load_rings(apps, schema_editor):
 		random_secondaries='1',
 		owner='wd',
 		patch='23')
-	tall_mans.save()
-	tall_mans.affixes.add(mainStat)
+	tallMans.save()
+	tallMans.affixes.add(mainStat)
 
 	unity = Accessory(slot='Rings',
 		name='Unity',
