@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).ancestor(3)
 MEDIA_ROOT = BASE_DIR.child("media")
 #staticfiles_dirs is what {% load staticfiles %} pulls from
 STATICFILES_DIRS = (
-    BASE_DIR.child("assets"),
+    BASE_DIR.child("static"),
 )
 TEMPLATES = [
     {

@@ -67,8 +67,8 @@ d3_project.sublime-project
 d3_project.sublime-workspace
 
 # Project Files
-d3/assets/media/*
+d3/static/media/*
 d3/_legacy/*
 d3/_notes/*
-d3/assets/css/css/*
+d3/static/css/css/*
 staticfiles/*

@@ -84,7 +84,7 @@ var toggleItemsets = (function() {
     if (owner == 'all') {
       $reverseSet.each(function() {
         $(this).prependTo($setContainer);
-        $(this).show(250);
+        $(this).show();
       });
     }
     else {
@@ -92,7 +92,7 @@ var toggleItemsets = (function() {
         var setOwner = $(this).attr('class').split(' ')[1];
         //Show set if useable by class
         if (setOwner == owner || setOwner == 'universal') {
-          $(this).show(150);
+          $(this).show();
           //Move class-specific sets to top
           if (setOwner == owner) {
             $(this).prependTo($setContainer);
@@ -166,7 +166,7 @@ var setPiecePics = (function() {
         owner = 'universal';
     }
     //Changes pictures
-    $(this).parent().parent().siblings('.set__pic-container').children().attr('style', 'background: url(/assets/media/items/sets/' +owner+ '/' +piece+ '.png)');
+    $(this).parent().parent().siblings('.set__pic-container').children().attr('style', 'background: url(/static/media/items/sets/' +owner+ '/' +piece+ '.png)');
 
     //Changes which set piece name is highlighted
     if ( $(this).attr('class').split(' ')[1] !== 'pic-showing' ) {
