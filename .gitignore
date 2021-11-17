@@ -72,3 +72,5 @@ d3/_legacy/*
 d3/_notes/*
 d3/static/css/css/*
 staticfiles/*
+
+.idea/*
